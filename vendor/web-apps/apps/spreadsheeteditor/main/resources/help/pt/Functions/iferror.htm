@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Função SEERRO</title>
+		<meta charset="utf-8" />
+		<meta name="descricao" content="A função SEERRO é utilizada para verificar se há erro na fórmula no primeiro argumento. Aprenda a usar a função SEERRO em planilhas de Excel com ONLYOFFICE." />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>Função SEERRO</h1>
+			<p>A função <b>SEERRO</b> é uma das funções lógicas. Serve para verificar se existe algum erro na fórmula no primeiro argumento. A função retorna o resultado da fórmula se não houver erro ou o valor_se_erro se houver.</p>
+			<p>A sintaxe da função <b>SEERRO</b> é:</p> 
+			<p style="text-indent: 150px;"><b><em>SEERRO(valor, valor_se_erro,)</em></b></p> 
+			<p>onde <b><em>valor</em></b> e <b><em>valor_se_erro</em></b> são valores inseridos manualmente ou incluídos na célula à qual você faz referência.</p>
+			<h2>Como usar SEERRO</h2>
+			<p>Para aplicar a função <b>SEERRO</b>,</p>
+			<ol>
+			<li>selecione a célula onde deseja exibir o resultado,</li>
+			<li>clique no ícone <b>Inserir função</b> <div class = "icon icon-insertfunction"></div> situado na barra de ferramentas superior,
+				<br />ou clique com o botão direito em uma célula selecionada e selecione a opção <b>Inserir Função</b> no menu,
+				<br />ou clique no ícone <div class = "icon icon-function"></div> situado na barra de fórmulas,
+			</li>
+			<li>selecione o grupo de funções <b>Lógica</b> na lista,</li>
+			<li>selecione o grupo de funções <b>SEERRO</b>,</li>
+			<li>digite os argumentos necessários separando-os por vírgula,</li>
+			<li>pressione o botão <b>Entrar</b>.</li>
+			</ol>
+			<p>O resultado será exibido na célula selecionada.</p>
+			<p><em>Por exemplo:</em></p>
+			<p>Você tem uma lista de estoque de itens disponíveis e seu valor total. Para aprender o preço unitário, usaremos a função <b>SEERRO</b> para ver se há algum erro. Os argumentos são os seguintes: <em>valor</em> = <b>B2/A2</b>, <em>valor_se_erro</em> = <b>"Esgotado"</b>. A fórmula no primeiro argumento não contém nenhum erro para as células C2:C9 e C11:C14, portanto a função retorna o resultado do cálculo. No entanto, é o oposto para C10 e C11, pois a fórmula tenta dividir por zero, portanto, obtemos <em>"Esgotado"</em> como resultado.</p>
+			<p><img class="gif" alt="Função SEERRO: se erro" src="../images/iferror_function.gif" /></p>
+		</div>
+	</body>
+</html>

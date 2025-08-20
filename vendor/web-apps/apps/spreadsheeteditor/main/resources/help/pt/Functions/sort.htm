@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Função CLASSIFICAR</title>
+	<meta charset="utf-8" />
+	<meta name="descrição" content="A função CLASSIFICAR é uma das funções de pesquisa e referência. Aprenda a usar a função SORT em planilhas do Excel e arquivos compatíveis com o ONLYOFFICE." />
+	<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+	<link type="text/css" rel="stylesheet" href="../../images/sprite.css" />
+	<script type="text/javascript" src="../callback.js"></script>
+	<script type="text/javascript" src="../search/js/page-search.js"></script>
+</head>
+<body>
+    <div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+        <h1>Função CLASSIFICAR</h1>
+        <p>A função <b>CLASSIFICAR</b> é uma função de pesquisa e referência. É usado para classificar um intervalo de dados ou uma matriz e retornar a matriz classificada.</p>
+        <p class="note">Observe que esta é uma fórmula de matriz. Para saber mais, leia o <a href="../UsageInstructions/InsertArrayFormulas.htm" onclick="onhyperlinkclick(this)">Inserir fórmulas de matriz</a> artigo.</p>
+        <p>A sintaxe da função <b>CLASSIFICAR</b> é:</p>
+        <p style="text-indent: 150px;"><b><em>=CLASSIFICAR(matriz,[índice_de_classificação],[ordem_de_classificação],[por_col])</em></b></p>
+        <p><em>onde</em></p>
+        <p style="text-indent: 50px;"><b><em>matriz</em></b> é o intervalo de dados a classificar.</p>
+        <p style="text-indent: 50px;"><b><em>[índice_de_classificação]</em></b> é um argumento opcional. Um número que identifica a coluna ou a linha a ser classificada.</p>
+        <p style="text-indent: 50px;">
+            <b><em>[ordem_de_classificação]</em></b> é um argumento opcional. Um número que determina a ordem de classificação:
+             <ul>
+                 <li>1 ou omitido em ordem crescente (por padrão),</li>
+                 <li>-1 para ordem decrescente,</li>
+            </ul>
+        </p>
+        <p style="text-indent: 50px;">
+            <b><em>[por_col]</em></b> é um argumento opcional. Um valor que indica a direção da classificação:
+             <ul>
+                 <li>FALSO ou omitido para classificação por linhas quando seus dados são organizados verticalmente.</li>
+                 <li>VERDADEIRO para classificação por colunas quando seus dados são organizados horizontalmente.</li>
+            </ul>
+        </p>
+        <p>Para aplicar a função <b>CLASSIFICAR</b>,</p>
+        <ol>
+            <li>selecione a célula onde deseja exibir o resultado,</li>
+            <li>
+                clique no ícone <b>Inserir função</b> <span class="icon icon-insertfunction"></span> situado na barra de ferramentas superior,
+                <br />ou clique com o botão direito em uma célula selecionada e selecione a opção <b>Inserir Função</b> no menu,
+                <br />ou clique no ícone <span class="icon icon-function"></span> situado na barra de fórmulas,
+            </li>
+            <li>selecione o grupo de funções <b>Pesquisa e Referência</b> na lista,</li>
+            <li>clique na função <b>CLASSIFICAR</b>,</li>
+            <li>digite os argumentos necessários separando-os por vírgula,</li>
+            <li>pressione o botão <b>Entrar</b>.</li>
+        </ol>
+        <p>O resultado será exibido na célula selecionada.</p>
+        <p style="text-indent: 150px;"><img alt="Função CLASSIFICAR" src="../images/sort.png" /></p>
+    </div>
+</body>
+</html>

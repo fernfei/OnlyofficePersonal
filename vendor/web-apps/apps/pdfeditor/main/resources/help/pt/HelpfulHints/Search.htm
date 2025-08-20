@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Função de pesquisa</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="A descrição da função de pesquisa no PDF Editor" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+			<div class="search-field">
+				<input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+			</div>
+			<h1>Função de pesquisa</h1>
+			<p>Para pesquisar os caracteres, palavras ou frases necessárias usadas no PDF atualmente editado, clique no botão <span class="icon icon-searchicon"></span> ícone situado na barra lateral esquerda do <!--<a href="https://www.onlyoffice.com/pt/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)">--><b>PDF Editor</b><!--</a>-->, the <span class="icon icon-search_icon_header"></span> ícone situado no canto superior direito ou use a combinação de teclas <em>Ctrl+F</em> (<em>Command+F</em> para MacOS) para abrir o pequeno painel Localizar ou o botão <em>Ctrl+ H</em> combinação de teclas para abrir o painel Localizar completo.</p>
+			<p>Um pequeno painel <b>Localizar</b> será aberto no canto superior direito da área de trabalho. O painel inclui o campo de texto para digitar uma consulta de pesquisa, o número de resultados da pesquisa e controles para ir para o resultado anterior ou seguinte e fechar a barra.</p>
+			<p><img alt="Encontre um pequeno painel" src="../../../../../../common/main/resources/help/en/images/find_small.png" /></p>
+			<p>Para acessar as configurações avançadas, clique no botão <span class="icon icon-search_advanced"></span> ícone ou use a combinação de teclas Ctrl+H.</p>
+			<p>O painel <b>Localizar</b> será aberto:</p>
+			<p><img alt="Encontrar" src="../images/search_window.png" /></p>
+			<ol>
+				<li>Digite sua consulta no campo de entrada de dados <b>Localizar</b> correspondente.</li>
+				<li>Para navegar entre as ocorrências encontradas, clique em um dos botões de seta. O <div class="icon icon-searchdownbutton"></div> botão mostra a próxima ocorrência, enquanto o<div class="icon icon-searchupbutton"></div> botão mostra o anterior.</li>
+				<li>
+					Especifique os parâmetros de pesquisa marcando as opções necessárias abaixo dos campos de entrada:
+					<ul>
+						<li><b>Diferencia maiúsculas de minúsculas</b> - é usado para localizar apenas as ocorrências digitadas no mesmo caso da sua consulta (por exemplo, se a sua consulta for 'Editor' e esta opção estiver selecionada, palavras como 'editor' ou 'EDITOR' etc. não será encontrado).</li>
+						<li><b>Apenas palavras inteiras</b> - é usado para destacar apenas palavras inteiras.</li>
+					</ul>
+				</li>
+			</ol>
+			<p>Todas as ocorrências serão destacadas no arquivo e mostradas como uma lista no painel <b>Localizar</b> à esquerda. Use a lista para pular para a ocorrência necessária ou use a navegação <span class="icon icon-searchupbutton"></span> e <span class="icon icon-searchdownbutton"></span> botões.</p>
+			<!--<p>O <b>Editor de PDF</b> oferece suporte à pesquisa de caracteres especiais. Para encontrar um caractere especial, insira-o na caixa de pesquisa.</p>
+			<details class="details-example">
+				<summary>A lista de caracteres especiais que podem ser usados em pesquisas</summary>
+				<table>
+					<tr>
+						<td><b>Special character</b></td>
+						<td><b>Description</b></td>
+					</tr>
+					<tr>
+						<td>^l</td>
+						<td>Line break</td>
+					</tr>
+					<tr>
+						<td>^t</td>
+						<td>Tab stop</td>
+					</tr>
+					<tr>
+						<td>^?</td>
+						<td>Any symbol</td>
+					</tr>
+					<tr>
+						<td>^#</td>
+						<td>Any digit</td>
+					</tr>
+					<tr>
+						<td>^$</td>
+						<td>Any letter</td>
+					</tr>
+					<tr>
+						<td>^n</td>
+						<td>Column break</td>
+					</tr>
+					<tr>
+						<td>^e</td>
+						<td>Endnote</td>
+					</tr>
+					<tr>
+						<td>^f</td>
+						<td>Footnote</td>
+					</tr>
+					<tr>
+						<td>^g</td>
+						<td>Graphic element</td>
+					</tr>
+					<tr>
+						<td>^m</td>
+						<td>Page break</td>
+					</tr>
+					<tr>
+						<td>^~</td>
+						<td>Non-breaking hyphen</td>
+					</tr>
+					<tr>
+						<td>^s</td>
+						<td>Non-breaking space</td>
+					</tr>
+					<tr>
+						<td>^^</td>
+						<td>Escaping the caret itself</td>
+					</tr>
+					<tr>
+						<td>^w</td>
+						<td>Any space</td>
+					</tr>
+					<tr>
+						<td>^+</td>
+						<td>Em dash</td>
+					</tr>
+					<tr>
+						<td>^=</td>
+						<td>En dash</td>
+					</tr>
+					<tr>
+						<td>^y</td>
+						<td>Any dash</td>
+					</tr>
+				</table>
+			</details>
+			<details class="details-example">
+				<summary>Special characters that may be used for replacement too:</summary>
+				<table>
+					<tr>
+						<td><b>Special character</b></td>
+						<td><b>Description</b></td>
+					</tr>
+					<tr>
+						<td>^l</td>
+						<td>Line break</td>
+					</tr>
+					<tr>
+						<td>^t</td>
+						<td>Tab stop</td>
+					</tr>
+					<tr>
+						<td>^n</td>
+						<td>Column break</td>
+					</tr>
+					<tr>
+						<td>^m</td>
+						<td>Page break</td>
+					</tr>
+					<tr>
+						<td>^~</td>
+						<td>Non-breaking hyphen</td>
+					</tr>
+					<tr>
+						<td>^s</td>
+						<td>Non-breaking space</td>
+					</tr>
+					<tr>
+						<td>^+</td>
+						<td>Em dash</td>
+					</tr>
+					<tr>
+						<td>^=</td>
+						<td>En dash</td>
+					</tr>
+				</table>
+			</details>-->
+
+		</div>
+	</body>
+</html>

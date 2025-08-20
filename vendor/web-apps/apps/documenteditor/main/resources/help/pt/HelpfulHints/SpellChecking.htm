@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Verificação ortográfica</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Spell check the text in your language while editing a document" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+		<h1>Verificação ortográfica</h1>
+			<p>O <a href="https://www.onlyoffice.com/pt/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Documentos</b></a> permite que você verifique a ortografia do seu texto em um determinado idioma e corrija erros durante a edição. Na <em>versão para desktop</em>, também é possível adicionar palavras em um dicionário personalizado que é comum para todos os três editores.</p>
+			<p class="note">A partir da <b>versão 6.3</b>, os editores do ONLYOFFICE suportam a interface <b>SharedWorker</b> para uma operação mais suave sem consumo significativo de memória. Se o seu navegador não suportar SharedWorker, apenas <b>Worker</b> estará ativo. Para obter mais informações sobre SharedWorker, consulte <a href="https://javascript.plainenglish.io/introduction-to-shared-workers-533d9abe9de3">este artigo</a>.</p>
+			<p>Em primeiro lugar, <b>escolha um idioma</b> para o seu documento. Clique no ícone <span class="icon icon-document_language"></span> <b>Definir idioma do documento</b> na barra de status. Na janela aberta, selecione o idioma desejado e clique em <b>OK</b>. O idioma selecionado será aplicado a todo o documento. </p>
+			<p><img alt="Janela Definir idioma do documento" src="../../../../../../common/main/resources/help/en/images/document_language_window.png" /></p>
+			<p>Para <b>escolher um idioma diferente</b> para qualquer parte do documento, selecione a passagem de texto necessária com o mouse e use o botão <img alt="Verificação ortográfica - seletor de idioma do texto" src="../images/spellchecking_language.png" /> menu na barra de status.</p>
+            <p>Para <b>ativar</b> a opção de verificação ortográfica, você pode:</p>
+            <ul>
+                <li>clique no ícone de <div class = "icon icon-spellcheckdeactivated"></div> <b>verificação ortográfica</b> na barra de status ou</li>
+                 <li>abra a guia <b>Arquivo</b> da barra de ferramentas superior, selecione a opção <b>Configurações avançadas</b>, marque a caixa <b>Ativar verificação ortográfica</b> e clique no botão <b>Aplicar</b>.</li>
+            </ul>
+            <p>Todas as palavras com erros ortográficos serão sublinhadas por uma linha vermelha.</p>
+<p>Clique com o botão direito na palavra necessária para ativar o menu e:</p>
+<ul>
+<li>escolha uma das palavras semelhantes sugeridas com a grafia correta para substituir a palavra incorreta pela palavra sugerida. Se forem encontradas muitas variantes, a opção <b>Mais variantes...</b> aparecerá no menu;</li>
+<li>use a opção <b>Ignorar</b> para pular apenas aquela palavra e remover o sublinhado ou <b>Ignorar tudo</b> para pular todas as palavras idênticas repetidas no texto;</li>
+             <li>se a palavra atual estiver faltando no dicionário, você pode adicioná-la ao dicionário personalizado. Esta palavra não será tratada como um erro na próxima vez. Esta opção está disponível na <em>versão para desktop</em>.</li>
+<li>selecione um idioma diferente para esta palavra.</li>
+			</ul>  
+            <p><img alt="verificação ortográfica" src="../images/spellchecking.png" /></p>
+            <p>Para <b>desativar</b> a opção de verificação ortográfica, você pode:</p>
+            <ul>
+                <li>Clique no ícone de<div class = "icon icon-spellcheckactivated"></div> <b>verificação ortográfica</b> na barra de status ou</li>
+                 <li>abra a guia <b>Arquivo</b> da barra de ferramentas superior, selecione a opção <b>Configurações avançadas</b>, desmarque a caixa <b>Ativar verificação ortográfica</b> e clique no botão <b>Aplicar</b>.</li>
+            </ul>
+		</div>
+	</body>
+</html>

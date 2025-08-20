@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Comparando documentos</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Instructions on how to compare and merge two documents" />
+    <link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+    <link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+    <script type="text/javascript" src="../callback.js"></script>
+    <script type="text/javascript" src="../search/js/page-search.js"></script>
+</head>
+<body>
+    <div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+        <h1>Comparando documentos</h1>
+        <p>O <a href="https://www.onlyoffice.com/pt/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Documentos</b></a> permite que você mantenha uma abordagem constante de toda a equipe para o fluxo de trabalho: <a href="https://helpcenter.onlyoffice.com/userguides/groups-guides-documents-share-documents.aspx" onclick="onhyperlinkclick(this)">compartilhar</a> arquivos e pastas, <a href="../HelpfulHints/CollaborativeEditing.htm" onclick="onhyperlinkclick(this)">colabore</a> em documentos em tempo real, <a href="../HelpfulHints/Communicating.htm" onclick="onhyperlinkclick(this)">comunicar</a> diretamente no editor, <a href="../HelpfulHints/Commenting.htm" onclick="onhyperlinkclick(this)">comente</a> certas partes de seus documentos que requerem entrada adicional de terceiros, salve <a href="../HelpfulHints/VersionHistory.htm" onclick="onhyperlinkclick(this)">versões do documento</a> para uso futuro, <a href="../HelpfulHints/Review.htm" onclick="onhyperlinkclick(this)">revise</a> documentos e adicione suas alterações sem realmente editar o arquivo.</p>
+        <p>Se você precisar comparar e mesclar dois documentos, o <a href="https://www.onlyoffice.com/pt/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Documentos</b></a> fornece o recurso <b>Comparar</b> de documentos. Permite exibir as diferenças entre dois documentos e mesclar os documentos aceitando as alterações uma a uma ou todas de uma vez.</p>
+         <p>Depois de comparar e mesclar dois documentos, o resultado será armazenado no portal como uma nova versão do arquivo original<!-- (na <em>versão online</em> dos editores)-->. <!--Na versão para desktop, quando você clicar no botão <b>Salvar</b>, a janela de diálogo aparecerá onde será sugerido que você salve um novo arquivo.--></p>
+        <p>Se você não precisa mesclar os documentos que estão sendo comparados, pode rejeitar todas as alterações para que o documento original permaneça inalterado.</p>
+
+        <h3 id="choosedocument">Escolha um documento para comparação</h3>
+        <p>Para comparar dois documentos, abra o documento original que você precisa comparar e selecione o segundo documento para comparação:</p>
+        <ol>
+            <li>mude para a guia <b>Colaboração</b> na barra de ferramentas superior e pressione o botão <div class = "icon icon-comparebutton"></div> <b>Comparar</b>,</li>
+            <li>
+                selecione uma das seguintes opções para carregar o documento:
+                 <ul>
+                     <li>a opção <b>Documento do arquivo</b> abrirá a janela de diálogo padrão para seleção de arquivo. Procure na unidade de disco rígido do seu computador o arquivo <em>.docx</em> necessário e clique no botão <b>Abrir</b>.</li>
+                    <li>
+                        a opção <b>Documento de URL</b> abrirá a janela onde você pode inserir um link para o arquivo armazenado em um armazenamento da web de terceiros (por exemplo, Nextcloud) se você tiver direitos de acesso correspondentes a ele. O link deve ser um <b>link direto para baixar o arquivo</b>. Quando o link for especificado, clique no botão <b>OK</b>.
+                        <p class="note"><b>Nota</b>: O link direto permite baixar o arquivo diretamente sem abri-lo em um navegador da web. Por exemplo, para obter um link direto no Nextcloud, encontre o documento necessário na lista de arquivos, selecione a opção <b>Detalhes</b> no menu de arquivos. Clique no ícone <b>Copiar link direto (funciona apenas para usuários que têm acesso a este arquivo/pasta)</b> à direita do nome do arquivo no painel de detalhes. Para saber como obter um link direto para baixar o arquivo em outro armazenamento da Web de terceiros, consulte a documentação correspondente do serviço de terceiros.</p>
+                    </li>
+                    <li class="onlineDocumentFeatures"> A opção <b>Documento de armazenamento</b> <!--(disponível apenas na <em>versão online</em>)--> abrirá a janela <b>Selecionar fonte de dados</b>. Ele exibe a lista de todos os documentos <em>.docx</em> armazenados em seu portal aos quais você tem direitos de acesso correspondentes. Para navegar pelas seções do módulo <b>Documentos</b>, utilize o menu à esquerda da janela. Selecione o documento <em>.docx</em> necessário e clique no botão <b>OK</b>.</li>
+                </ul>
+            </li>
+        </ol>
+        <p>Quando o segundo documento para comparação for selecionado, o processo de comparação será iniciado e o documento parecerá ter sido aberto no modo <b>Revisão</b>. Todas as alterações são destacadas com uma cor e você pode visualizar as alterações, navegar entre elas, aceitá-las ou rejeitá-las uma a uma ou todas as alterações de uma vez. Também é possível alterar o modo de exibição e ver como o documento fica antes da comparação, no processo de comparação ou como ficará após a comparação se você aceitar todas as alterações.</p>
+
+        <h3 id="displaymode">Escolha o modo de exibição das alterações</h3>
+        <p>Clique no <span class = "icon icon-review_displaymode"></span> <b>Modo de exibição</b> na barra de ferramentas superior e selecione um dos modos disponíveis na lista:</p>
+        <ul>
+            <li>
+                <b>Marcação</b> - esta opção é selecionada por padrão. É usado para exibir o documento <b>em processo de comparação</b>. Este modo permite visualizar as alterações e editar o documento.
+                <p><img alt="Comparar documentos - Marcação" src="../images/compare_markup.png" /></p>
+            </li>
+            <li>
+                <b>Final</b> - este modo é usado para exibir o documento <b>após a comparação</b> como se todas as alterações fossem aceitas. Esta opção não aceita todas as alterações, apenas permite que você veja como o documento ficará depois de aceitar todas as alterações. Neste modo, você não pode editar o documento.
+                <p><img alt="Comparar documentos - Final" src="../images/compare_final.png" /></p>
+            </li>
+            <li>
+                <b>Original</b> - este modo é usado para exibir o documento <b>antes da comparação</b> como se todas as alterações fossem rejeitadas. Na verdade, esta opção não rejeita todas as alterações, apenas permite que você visualize o documento sem alterações. Neste modo, você não pode editar o documento.
+                <p><img alt="Comparar documentos - Original" src="../images/compare_original.png" /></p>
+            </li>
+        </ul>
+
+        <h3 id="managechanges">Aceitar ou rejeitar alterações</h3>
+        <p>Use o <span class = "icon icon-review_previous"></span> <b>Anterior</b> e os botões <span class = "icon icon-review_next"></span> <b>Próximo</b> na barra de ferramentas superior para navegar pelas alterações.</p>
+         <p>Para aceitar a alteração atualmente selecionada, você pode:</p>
+        <ul>
+            <li>clique no botão <div class = "icon icon-review_accepttoptoolbar"></div> <b> Aceitar</b> na barra de ferramentas superior ou</li>
+            <li>clique na seta para baixo abaixo do botão <b>Aceitar</b> e selecione a opção <b>Aceitar alteração atual</b> (neste caso, a alteração será aceita e você passará para a próxima alteração) ou</li>
+            <li>clique no botão <b>Aceitar</b> <div class = "icon icon-review_accept"></div> da janela pop-up de alteração.</li>
+        </ul>
+        <p>Para aceitar rapidamente todas as alterações, clique na seta para baixo abaixo do <span class = "icon icon-review_accepttoptoolbar"></span> <b>Aceitar</b> botão e selecione a opção <b>Aceitar todas as alterações</b>.</p>
+         <p>Para rejeitar a alteração atual, você pode:</p>
+        <ul>
+            <li>clique no botão <div class = "icon icon-review_rejecttoptoolbar"></div> <b>Rejeitar</b> na barra de ferramentas superior ou</li>
+             <li>clique na seta para baixo abaixo do botão <b>Rejeitar</b> e selecione a opção <b>Rejeitar alteração atual</b> (neste caso, a alteração será rejeitada e você passará para a próxima mudança disponível), ou</li>
+            <li>clique no botão <b>Rejeitar</b> <div class = "icon icon-review_reject"></div> da janela pop-up de alteração.</li>
+        </ul>
+        <p>Para rejeitar rapidamente todas as alterações, clique na seta para baixo abaixo do <span class = "icon icon-review_rejecttoptoolbar"></span> <b>Rejeitar</b> e selecione a opção <b>Rejeitar todas as alterações</b>.</p>
+
+        <h3 id="comparisonnotes">Informações adicionais sobre o recurso de comparação</h3>
+         <h4>Método de comparação</h4>
+        <p>Os documentos são comparados <b>por palavras</b>. Se uma palavra contém uma alteração de pelo menos um caractere (por exemplo, se um caractere foi removido ou substituído), no resultado, a diferença será exibida como a alteração da palavra inteira, não do caractere.</p>
+         <p>A imagem abaixo ilustra o caso em que o arquivo original contém a palavra 'Personagens' e o documento de comparação contém a palavra 'Personagens'.</p>
+        <p><img alt="Comparar documentos - método" src="../images/compare_method.png" /></p>
+
+        <h4>Autoria do documento</h4>
+        <p>Quando o processo de comparação é iniciado, o segundo documento para comparação está sendo carregado e comparado com o atual.</p>
+         <ul>
+             <li>Se o documento carregado contiver alguns dados que não estão representados no documento original, os dados serão marcados como adicionados por um revisor.</li>
+             <li>Se o documento original contiver alguns dados que não estão representados no documento carregado, os dados serão marcados como excluídos por um revisor.</li>
+         </ul>
+         <p>Se os autores dos documentos originais e carregados forem a mesma pessoa, o revisor é o mesmo usuário. Seu nome é exibido no balão de alteração.</p>
+         <p>Se os autores de dois arquivos forem usuários diferentes, então o autor do segundo arquivo carregado para comparação é o autor das alterações adicionadas/removidas.</p>
+
+        <h4>Presença das alterações rastreadas no documento comparado</h4>
+        <p>Se o documento original contiver algumas alterações feitas no modo de revisão, elas serão aceitas no processo de comparação. Ao escolher o segundo arquivo para comparação, você verá a mensagem de aviso correspondente.</p>
+         <p>Neste caso, ao escolher o modo de exibição <b>Original</b>, o documento não conterá nenhuma alteração.</p>
+    </div>
+</body>
+</html>

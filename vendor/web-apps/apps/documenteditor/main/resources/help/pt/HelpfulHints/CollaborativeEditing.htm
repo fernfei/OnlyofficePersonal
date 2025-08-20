@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Coedição de documentos em tempo real</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Tips on collaborative editing" />
+    <link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+    <link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+    <script type="text/javascript" src="../callback.js"></script>
+    <script type="text/javascript" src="../search/js/page-search.js"></script>
+</head>
+<body>
+    <div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+        <h1>Coedição de documentos em tempo real</h1>
+        <p>O <a href="https://www.onlyoffice.com/pt/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Documentos</b></a> permite que você mantenha uma abordagem constante de toda a equipe para o fluxo de trabalho: <a href="https://helpcenter.onlyoffice.com/userguides/groups-guides-documents-share-documents.aspx" onclick="onhyperlinkclick(this)">compartilhar</a> arquivos e pastas, <a href="../HelpfulHints/Communicating.htm" onclick="onhyperlinkclick(this)">comunicação</a> direto no editor, <a href="../HelpfulHints/Commenting.htm" onclick="onhyperlinkclick(this)">comente</a> certas partes de seus documentos que requerem entrada adicional de terceiros, salve <a href="../HelpfulHints/VersionHistory.htm" onclick="onhyperlinkclick(this)">versões de documentos</a> para uso futuro, <a href="../HelpfulHints/Review.htm" onclick="onhyperlinkclick(this)">revise</a> documentos e adicione suas alterações sem realmente editar o arquivo, <a href="../HelpfulHints/Comparison.htm" onclick="onhyperlinkclick(this)">comparar e mesclar</a> documentos para facilitar o processamento e a edição.</p>
+        <p>No <b>Editor de Documentos</b> você pode colaborar em documentos em tempo real usando dois modos: <b>Rápido</b> ou <b>Restrito</b>.</p>
+        <p>Os modos podem ser selecionados em <a href="../HelpfulHints/AdvancedSettings.htm" onclick="onhyperlinkclick(this)">Configurações avançadas</a>. Também é possível escolher o modo desejado usando o <span class = "icon icon-coeditingmode"></span> <b>Modo de coedição</b> ícone no <b>Colaboração</b> guia da barra de ferramentas superior:</p>
+        <p><img alt="Menu do modo de coedição" src="../../../../../../common/main/resources/help/en/images/coeditingmodemenu.png" /></p>
+        <p>O número de usuários que estão trabalhando no documento atual é exibido no lado direito do cabeçalho do editor <span class = "icon icon-usersnumber"></span>. Se você quiser ver quem exatamente está editando o arquivo agora, clique neste ícone ou abra o <b>Chat</b> painel com a lista completa dos usuários.</p>
+        <h3>Modo rápido</h3>
+        <p>O modo <b>Rápido</b> é usado por padrão e mostra as alterações feitas por outros usuários em tempo real. Ao coeditar um documento neste modo, a possibilidade de <b>Refazer</b> ta última operação desfeita não está disponível. Este modo mostrará as ações e os nomes dos coeditores quando estiverem editando o texto.</p>
+        <p>Ao passar o cursor do mouse sobre uma das passagens editadas, é exibido o nome do usuário que está editando no momento.</p>
+        <p><img alt="Modo Rápido" src="../images/fastmode.png" /></p>
+        <h3>Modo Restrito</h3>
+        <p>O modo <b>Restrito</b> modo é selecionado para ocultar as alterações feitas por outros usuários até que você clique no botão <b>Salvar</b> <span class = "icon icon-savewhilecoediting"></span> ícone para salvar suas alterações e aceitar as alterações feitas pelos coautores. Quando um documento está sendo editado por vários usuários simultaneamente neste modo, as passagens de texto editadas são marcadas com linhas tracejadas de cores diferentes.</p>
+        <p><img alt="Modo Restrito" src="../images/strictmode.png" /></p>
+        <p>Assim que um dos usuários salvar suas alterações clicando no ícone <span class = "icon icon-savewhilecoediting"></span>, os outros verão uma nota na barra de status informando que eles têm atualizações. Para salvar as alterações feitas, para que outros usuários possam visualizá-las e obter as atualizações salvas por seus coeditores, clique no botão <span class = "icon icon-saveupdate"></span> no canto superior esquerdo da barra de ferramentas superior. As atualizações serão destacadas para que você possa verificar o que exatamente foi alterado.</p>
+        <p>Você pode especificar quais alterações deseja destacar durante a coedição se clicar na guia <b>Arquivo</b> na barra de ferramentas superior, selecionar a opção <b>Configurações avançadas</b> e escolher uma das três opções:</p>
+        <ul>
+            <li><b>Visualizar todos</b> - todas as alterações feitas durante a sessão atual serão destacadas.</li>
+            <li><b>Visualizar último</b> - apenas as alterações feitas desde a última vez que você clicou no <div class = "icon icon-saveupdate"></div> ícone será destacado.</li>
+            <li><b>Visualizar nenhum</b> - alterações feitas durante a sessão atual não serão destacadas.</li>
+        </ul>
+        <h3>Modo de visualização ao vivo</h3>
+        <p>O modo <b>Visualizador ao vivo</b> é usado para ver as alterações feitas por outros usuários em tempo real quando o documento é aberto por um usuário com direitos de acesso <b>Visualizar apenas</b>.</p>
+        <p class="note">Para que o modo funcione corretamente, certifique-se de que a caixa de seleção <b>Mostrar alterações de outros usuários</b> esteja ativa nas <b>Configurações avançadas do editor</b>.</p>
+        <h3>Anônimo</h3>
+        <p>Os usuários do portal que não são cadastrados e não possuem perfil são considerados anônimos, embora ainda possam colaborar em documentos. Para ter um nome atribuído a eles, o usuário anônimo deve inserir um nome de sua preferência no campo correspondente que aparece no canto superior direito da tela quando abre o documento pela primeira vez. Ative a caixa de seleção "Não pergunte novamente" para preservar o nome.</p>
+        <p><img alt="colaboração anônima" src="../images/anonymous_collab.png" /></p>
+    </div>
+</body>
+</html>

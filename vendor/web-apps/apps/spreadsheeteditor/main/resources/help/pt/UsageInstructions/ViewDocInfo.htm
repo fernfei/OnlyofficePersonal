@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ver informações do arquivo</title>
+		<meta charset="utf-8" />
+		<meta name="descrição" content="Veja o título da planilha, autor, local, data de criação e estatísticas" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Ver informações do arquivo</h1>
+			<p>Para acessar as informações detalhadas sobre a planilha atualmente editada no <a href="https://www.onlyoffice.com/pt/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Planilhas</b></a>, clique na guia <b>Arquivo</b> da barra de ferramentas superior e selecione a opção <b>Informações da planilha</b>.</p>
+             <h3>Informações gerais</h3>
+             <p>As informações da planilha incluem várias propriedades de arquivo que descrevem a planilha. Algumas dessas propriedades são atualizadas automaticamente e algumas delas podem ser editadas.</p>
+            <ul>
+                <li class="onlineDocumentFeatures"><b>Localização</b> - a pasta no módulo <b>Documentos</b> onde o arquivo está armazenado. <b>Proprietário</b> - o nome do usuário que criou o arquivo. <b>Enviado</b> - a data e hora em que o arquivo foi criado. Essas propriedades estão disponíveis apenas na <em>versão online</em>.</li>
+                 <li><b>Título</b>, <b>Assunto</b>, <b>Comentário</b> - essas propriedades permitem simplificar a classificação de seus documentos. Você pode especificar o texto necessário nos campos de propriedades.</li>
+                 <li><b>Última modificação</b> - a data e a hora em que o arquivo foi modificado pela última vez.</li>
+                 <li><b>Última modificação por</b> - o nome do usuário que fez a última alteração na planilha se a planilha tiver sido compartilhada e puder ser editada por vários usuários.</li>
+                 <li><b>Aplicativo</b> - o aplicativo com o qual a planilha foi criada.</li>
+                 <li><b>Autor</b> - a pessoa que criou o arquivo. Você pode inserir o nome necessário neste campo. Pressione <em>Enter</em> para adicionar um novo campo que permite especificar mais um autor.</li>
+            </ul>
+            <p>Se você alterou as propriedades do arquivo, clique no botão <b>Aplicar</b> para aplicar as alterações.</p>
+             <div class="onlineDocumentFeatures">
+                 <p class="note"><b>Observação</b>: Os editores on-line permitem que você altere o título da planilha diretamente da interface do editor. Para fazer isso, clique na guia <b>Arquivo</b> da barra de ferramentas superior e selecione a opção <b>Renomear</b>, digite o <b>Nome do arquivo</b> necessário na janela aberta e clique em <b>OK</b>.</p>
+            </div>
+            <div class="onlineDocumentFeatures">
+                <h3>Informações de permissão</h3>
+                 <p>Na <em>versão online</em>, você pode visualizar as informações sobre as permissões atribuídas aos arquivos armazenados na nuvem.</p>
+                 <p class="note"><b>Observação</b>: esta opção não está disponível para usuários com permissões <b>Somente leitura</b>.</p>
+                 <p>Para descobrir quem tem direitos para visualizar ou editar a planilha, selecione a opção <b>Direitos de acesso...</b> na barra lateral esquerda.</p>
+                 <p>Você também pode alterar os direitos de acesso atualmente selecionados clicando no botão <b>Alterar direitos de acesso</b> na seção <b>Pessoas com direitos</b>.</p>
+                 <p>Para fechar o painel <b>Arquivo</b> e retornar à planilha, selecione a opção <b>Fechar menu</b>.</p>
+                <h3>Histórico de versões</h3>
+                 <p>Na <em>versão online</em>, você pode visualizar o histórico de versões dos arquivos armazenados na nuvem.</p>
+                 <p class="note"><b>Observação</b>: esta opção não está disponível para usuários com permissões <b>Somente leitura</b>.</p>
+                 <p>Para visualizar todas as alterações feitas nesta planilha, selecione a opção <b>Histórico de versões</b> na barra lateral esquerda. Também é possível abrir o histórico de versões usando o ícone <span class="icon icon-versionhistoryicon"></span> <b>Histórico de versões</b> na guia <b>Colaboração</b> da parte superior barra de ferramentas. Você verá a lista das versões desta planilha (grandes alterações) e revisões (pequenas alterações) com a indicação do autor de cada versão/revisão e data e hora de criação. Para versões de planilhas, o número da versão também é especificado (por exemplo, <em>ver. 2</em>). Para saber exatamente quais alterações foram feitas em cada versão/revisão separada, você pode visualizar a que precisa clicando na barra lateral esquerda. Você pode usar o link <b>Restaurar</b> abaixo da versão/revisão selecionada para restaurá-la. <!--Para ocultar a lista de revisões em uma determinada versão, use o ícone <img alt="Recolher ícone" src="../images/collapse.png" /> ao lado da versão. Para exibir as revisões novamente, use o ícone <img alt="Expandir ícone" src="../images/expand.png" />.--> </p>
+                <p><img alt="Histórico da versão" src="../images/versionhistory.png" /></p>
+                <p>Para retornar à versão atual da planilha, use a opção <b>Fechar histórico</b> no topo da lista de versões.</p>
+            </div>
+        </div>
+	</body>
+</html>

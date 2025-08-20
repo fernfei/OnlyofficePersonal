@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Apresentando a interface do usuário do Editor de Planilhas</title>
+		<meta charset="utf-8" />
+        <meta name="descrição" content="Apresentando a interface do usuário do Editor de Planilhas" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Apresentando a interface do usuário do Editor de Planilhas</h1>
+			<p>O <a href="https://www.onlyoffice.com/pt/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Planilhas</b></a> usa uma interface com guias onde os comandos de edição são agrupados em guias por funcionalidade.</p>
+            <div class="onlineDocumentFeatures">
+                <p>Janela principal do Editor de Planilhas Online:</p>
+                <p><img alt="Janela do Editor de Planilhas Online" src="../images/interface/editorwindow.png" /></p>
+            </div>
+            <div class="desktopDocumentFeatures">
+                <p>Janela principal do Editor de Planilhas da área de trabalho:</p>
+                <p><img alt="Janela do Editor de Planilhas da área de trabalho" src="../images/interface/desktop_editorwindow.png" /></p>
+            </div>
+            <p>A interface do editor consiste nos seguintes elementos principais:</p>
+            <ol>
+                <li>
+                   O <b>cabeçalho do editor</b> exibe o logotipo, <span class="desktopDocumentFeatures"> guias para todas as planilhas abertas, </span> com seus nomes e guias de menu.
+                     <p>No lado esquerdo do <b>Cabeçalho do editor</b> estão <b>Salvar</b>, <b>Imprimir arquivo</b>, <b>Desfazer</b> e <b>Os botões b>Refazer</b> estão localizados.</p>
+                    <p><img alt="Ícones no cabeçalho do editor" src="../images/interface/leftpart.png" /></p>
+                    <p>No lado direito do <b>cabeçalho do editor</b> junto com o nome do usuário, os seguintes ícones são exibidos:</p>
+                    <ul>
+                        <li><div class="icon icon-gotodocuments"></div> <b>Localização do arquivo aberto</b> - <span class="desktopDocumentFeatures">na <em>versão desktop</em>, permite abrir a pasta, onde o arquivo está armazenado, no <b>Explorador de arquivos</b > janela.</span> <span class="onlineDocumentFeatures"> Na <em>versão online</em>, permite abrir a pasta no módulo <b>Documentos</b> onde o arquivo está armazenado, em uma nova guia do navegador.</span></li>
+                        <li class="onlineDocumentFeatures"><div class="icon icon-access_rights"></div> <b>Compartilhar</b> - (disponível apenas na <em>versão online</em>) permite <a href="../HelpfulHints/CollaborativeEditing.htm" onclick="onhyperlinkclick(this)">definindo direitos de acesso</a> para os documentos armazenados na nuvem.</li>
+                         <li><div class="icon icon-favorites_icon"></div> <b>Marcar como favorito</b> - clique na estrela para adicionar um arquivo aos favoritos para facilitar a localização. O arquivo adicionado é apenas um atalho para que o próprio arquivo permaneça armazenado em seu local original. Excluir um arquivo dos favoritos não remove o arquivo de seu local original.</li>
+                        <li><div class="icon icon-search_icon_header"></div> <b>Pesquisar</b> - permite pesquisar na planilha uma palavra ou símbolo específico, etc.</li>
+                    </ul>
+                </li>
+                <li>A <b>barra de ferramentas superior</b> exibe um conjunto de comandos de edição, dependendo da guia de menu selecionada. Atualmente, as seguintes guias estão disponíveis: <a href="../ProgramInterface/FileTab.htm" onclick="onhyperlinkclick(this)">Arquivo</a>, <a href="../ProgramInterface/HomeTab.htm" onclick="onhyperlinkclick(this)">Home</a>, <a href="../ProgramInterface/InsertTab.htm" onclick="onhyperlinkclick(this)">Inserir</a>, <a href="../ProgramInterface/LayoutTab.htm" onclick="onhyperlinkclick(this)">Layout</a>, <a href="../ProgramInterface/FormulaTab.htm" onclick="onhyperlinkclick(this)">Fórmula</a>, <a href="../ProgramInterface/DataTab.htm" onclick="onhyperlinkclick(this)">Dados</a>, <span class="onlineDocumentFeatures"><a href="../ProgramInterface/PivotTableTab.htm" onclick="onhyperlinkclick(this)">Tabela Dinâmica</a>,</span> <a href="../ProgramInterface/CollaborationTab.htm" onclick="onhyperlinkclick(this)">Colaboração</a>, <a href="../ProgramInterface/ProtectionTab.htm" onclick="onhyperlinkclick(this)">Proteção</a>, <a href="../ProgramInterface/ViewTab.htm" onclick="onhyperlinkclick(this)">Visualizar</a>, <a href="../ProgramInterface/PluginsTab.htm" onclick="onhyperlinkclick(this)">Plugins</a>.
+                    <p>O <span class = "icon icon-copy"></span> <b>Copiar</b>, <span class = "icon icon-paste"></span> <b>Colar</b>, <span class="icon icon-cut"></span> As opções <b>Cortar</b> e <span class="icon icon-select_all"></span> <b>Selecionar tudo</b> são sempre disponível na parte esquerda da <b>barra de ferramentas superior</b> independentemente da guia selecionada.</p>
+                </li>
+                <li>A <b>barra de fórmulas</b> permite inserir e editar <a href="../UsageInstructions/InsertFunction.htm" onclick="onhyperlinkclick(this)">fórmulas</a> ou valores nas células. A <b>barra de fórmulas</b> exibe o conteúdo da célula atualmente selecionada.</li>
+                <li>A <b>barra de status</b> na parte inferior da janela do editor contém alguns <a href="../HelpfulHints/Navigation.htm" onclick="onhyperlinkclick(this)">ferramentas de navegação</a>: botões de navegação de planilha, botão adicionar planilha, botão de lista de planilhas, guias de planilha e botões de zoom. A <b>Barra de status</b> também exibe o status de salvamento em segundo plano e o status da conexão quando não há conexão e o editor está tentando se reconectar, o número de registros filtrados se você aplicar um <a href="../UsageInstructions/SortData.htm#filter" onclick="onhyperlinkclick(this)">filtro</a> ou os resultados de <a href="../UsageInstructions/InsertFunction.htm" onclick="onhyperlinkclick(this)">cálculos automáticos</a> se você selecionar várias células contendo dados.</li>
+                <li>
+                    <b>A barra lateral esquerda</b> contém os seguintes ícones:
+                    <ul>
+                        <li><div class = "icon icon-searchicon"></div> - permite usar o <a href="../HelpfulHints/Search.htm" onclick="onhyperlinkclick(this)">Ferramenta Pesquisar e substituir</a>,</li>
+                        <li><div class = "icon icon-commentsicon"></div> - permite abrir o <a href="../HelpfulHints/CollaborativeEditing.htm#comments" onclick="onhyperlinkclick(this)">Painel de comentários</a>,</li>
+                        <li class="onlineDocumentFeatures"><div class = "icon icon-chaticon"></div> - (disponível apenas na <em>versão online</em>) permite abrir o <a href="../HelpfulHints/CollaborativeEditing.htm#chat" onclick="onhyperlinkclick(this)">Painel de bate-papo</a>,</li>
+                        <li><div class = "icon icon-spellcheckdeactivated"></div> - permite verificar a ortografia do seu texto em um determinado idioma e corrigir erros durante a edição.</li>
+                        <li class="onlineDocumentFeatures"><div class = "icon icon-feedbackicon"></div> - permite entrar em contato com nossa equipe de suporte,</li>
+                        <li class="onlineDocumentFeatures"><div class = "icon icon-about"></div> - (disponível apenas na <em>versão online</em>) permite visualizar as informações sobre o programa.</li>
+                    </ul>
+                </li>
+                <li>A <b>barra lateral direita</b> permite ajustar parâmetros adicionais de diferentes objetos. Ao selecionar um determinado objeto em uma planilha, o ícone correspondente é ativado na barra lateral direita. Clique neste ícone para expandir a barra lateral direita.</li>
+                <li>A <b>Área de trabalho</b> permite visualizar o conteúdo de uma planilha, bem como inserir e editar dados.</li>
+                <li>As <b>barras de rolagem</b> horizontais e verticais permitem rolar para cima/para baixo e para a esquerda/direita.</li>
+            </ol>
+            <p>Para sua conveniência, você pode ocultar alguns componentes e exibi-los novamente quando necessário. Para saber mais sobre como ajustar as configurações de visualização, consulte <a href="../HelpfulHints/Navigation.htm" onclick="onhyperlinkclick(this)">esta página</a>.</p>
+           
+		</div>
+	</body>
+</html>

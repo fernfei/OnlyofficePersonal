@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Salve, baixe e imprima seu PDF</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Salve, baixe e imprima seus PDFs" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+			<div class="search-field">
+				<input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+			</div>
+			<h1>Salve, baixe e imprima seu PDF</h1>
+			<h3>Salvando</h3>
+			<p class="onlineDocumentFeatures">Por padrão, <!--online <a href="https://www.onlyoffice.com/pt/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)">--><b>Editor de PDF</b><!--</a>--> salva automaticamente seu arquivo a cada 2 segundos quando você trabalha nele para evitar perda de dados caso o programa feche inesperadamente. <!--Se você coeditar o arquivo no modo <b>Rápido</b>, o cronômetro solicitará atualizações 25 vezes por segundo e salvará as alterações, caso tenham sido feitas. Quando o arquivo está sendo coeditado no modo <b>Estrito</b>, as alterações são salvas automaticamente em intervalos de 10 minutos. Se necessário, você pode selecionar facilmente o modo de coedição preferido ou desativar o recurso <b>Autosave</b> na guia <a href="../HelpfulHints/AdvancedSettings.htm" onclick="onhyperlinkclick(this)">Página Configurações avançadas</a>.--></p>
+			<p>Para salvar seu PDF atual manualmente no formato e local atuais,</p>
+			<ul>
+				<li>pressione o ícone <b>Salvar</b> <div class="icon icon-save"></div> na parte esquerda do cabeçalho do editor, ou</li>
+				<!--<li>use a combinação de teclas <b>Ctrl+S</b> ou</li>-->
+				<li>clique na guia <b>Arquivo</b> da barra de ferramentas superior e selecione a opção <b>Salvar</b>.</li>
+			</ul>
+			<!--<p class="note desktopDocumentFeatures">Na <em>versão desktop</em>, para evitar a perda de dados caso o programa feche inesperadamente, você pode ativar a opção <b>Autorecuperação</b> no <a href="../HelpfulHints/AdvancedSettings.htm" onclick="onhyperlinkclick(this)">Página Configurações avançadas</a>.</p>
+			<div class="desktopDocumentFeatures">
+				<p>Na <em>versão desktop</em>, você pode salvar o documento com outro nome, em um novo local ou formato,</p>
+				<ol>
+					<li>clique na guia <b>Arquivo</b> da barra de ferramentas superior,</li>
+					<li>selecione a opção <b>Salvar como</b>,</li>
+					<li>escolha um dos formatos disponíveis dependendo de suas necessidades: DOCX, DOCXF, OFORM, DOTX, ODT, OTT, RTF, TXT, HTML, FB2, EPUB, PDF, PDF/A. Você também pode escolher a opção <b>Modelo de documento</b> (DOTX ou OTT).</li>
+				</ol>
+			</div>-->
+			<div class="onlineDocumentFeatures">
+				<h3>Baixando</h3>
+				<p>Na <em>versão online</em>, você pode baixar o PDF resultante no disco rígido do seu computador,</p>
+				<ol>
+					<li>clique na guia <b>Arquivo</b> da barra de ferramentas superior,</li>
+					<li>selecione a opção <b>Baixar como</b>,</li>
+					<li>escolha um dos formatos disponíveis dependendo de suas necessidades: DOCX, PDF, ODT, <!--DOCXF, OFORM,--> DOTX, <!--PDF/A,--> OTT, RTF, TXT, FB2, EPUB , HTML, JPG, PNG.</li>
+				</ol>
+				<h3>Salvando uma cópia</h3>
+				<p>Na <em>versão online</em>, você pode salvar uma cópia do arquivo em seu portal,</p>
+				<ol>
+					<li>clique na guia <b>Arquivo</b> da barra de ferramentas superior,</li>
+					<li>selecione a opção <b>Salvar cópia como</b>,</li>
+					<li>escolha um dos formatos disponíveis dependendo de suas necessidades: DOCX, PDF, ODT, <!--DOCXF, OFORM,--> DOTX, <!--PDF/A,--> OTT, RTF, TXT, FB2, EPUB, HTML, JPG, PNG.</li>
+					<li>selecione o local do arquivo no portal e pressione <b>Salvar</b>.</li>
+				</ol>
+			</div>
+			<h3 id="print">Impressão</h3>
+			<p>Para imprimir o PDF atual,</p>
+			<ul>
+				<li>clique no botão <b>Imprimir</b> <div class="icon icon-print"></div> ícone na parte esquerda do cabeçalho do editor ou</li>
+				<li>use a combinação de teclas <b>Ctrl+P</b> ou</li>
+				<li>clique na guia <b>Arquivo</b> da barra de ferramentas superior e selecione a opção <b>Imprimir</b>.</li>
+			</ul>
+			<div class="note">
+				O navegador Firefox permite a impressão sem primeiro baixar o documento como um arquivo .pdf.
+			</div>
+			<p><img alt="Janela Configurações de impressão" src="../images/printsettingswindow.png" /></p>
+			<p>Ajuste os seguintes parâmetros na janela <b>Imprimir</b> que é aberta:</p>
+			<ul id="printtitles">
+				<li><b>Destino</b> - escolha o destino do arquivo impresso, por exemplo, <b>Salvar em PDF</b>, <b>Microsoft XPS Document Writer</b>, <b>Microsoft Print to PDF</b>, <b>Fax</b>, etc.</li>
+				<li><b>Páginas</b> - escolha uma das opções para impressão das páginas: <b>Todas</b>, <b>Atual</b>, <b>Ímpar</b>, <b>Par</b> > ou <b>Personalizado</b>. Neste último caso, você terá que inserir o número de páginas manualmente.</li>
+				<li>
+					<b>Modo de cor</b> - escolha se deseja que seu arquivo seja impresso em <b>Cor</b> ou <b>Preto e branco</b>. Observe que esta configuração está disponível quando o parâmetro <em>Microsoft XPS Document Writer</em> <b>Destino</b> é selecionado. Para o parâmetro <em>Fax</em> <b>Destino</b>, o modo de cor é definido como <b>preto e branco</b> por padrão.
+					<p>Clique na legenda <b>Mais configurações</b> para abrir as configurações avançadas.</p>
+				</li>
+				<li><b>Tamanho do papel</b> - selecione um dos tamanhos disponíveis na lista suspensa ou defina um tamanho definido pelo usuário.</li>
+				<li><b>Escala</b> - define a escala do arquivo quando impresso; você pode <b>ajustá-lo à largura da página</b> ou definir a escala manualmente através da caixa de seleção <b>Escala</b> e do campo de entrada correspondente.</li>
+				<li><b>Páginas por folha</b> - defina o número de páginas impressas em uma folha, por exemplo, <b>duas</b>, <b>seis</b>, <b>nove</b>, etc.</li>
+				<li><b>Margens</b> - define as margens da página. Você pode escolher margens <b>padrão</b> ou personalizadas, medidas em polegadas. Para margens personalizadas, defina manualmente os valores necessários para as margens superior, inferior, esquerda e direita. Você também pode escolher a opção <b>Nenhum</b> para não ter margens.</li>
+				<li><b>Opções</b> - marque a caixa de seleção <b>Imprimir cabeçalhos e rodapés</b> para imprimi-los ou desmarque esta caixa para não imprimir cabeçalhos e rodapés.</li>
+				<li><b>Imprimir usando a caixa de diálogo do sistema</b> - clique nesta legenda para abrir a caixa de diálogo do sistema e configurar o processo de impressão.</li>
+			</ul>
+			<p><span class="desktopDocumentFeatures">Na <em>versão desktop</em>, as configurações de impressão disponíveis são <b>Intervalo de impressão</b>, número de <b>Páginas</b>, <b>Cópias</b>, <b> Imprima lados</b>, <b>Tamanho da página</b>, <b>Orientação da página</b> e <b>Margens</b>. Você também pode <b>imprimir o arquivo em PDF</b> ou usar o botão <b>Impressão rápida</b> na barra de ferramentas superior para imprimir o arquivo na última impressora selecionada ou padrão.</span></p>
+		</div>
+	</body>
+</html>

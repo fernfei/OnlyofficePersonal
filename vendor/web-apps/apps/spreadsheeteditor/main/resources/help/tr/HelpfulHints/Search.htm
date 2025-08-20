@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Arama ve Değiştirme İşlevleri</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="The description of the search and replace functions in Spreadsheet Editor" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+        </div>
+		<h1>Arama ve Değiştirme İşlevleri</h1>
+		<p><a href="https://www.onlyoffice.com/en/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)">Elektronik Tablo D&uuml;zenleyicide</a> <span class="icon icon-search_icon_header"></span> gerekli karakterleri, s&ouml;zc&uuml;kleri veya ifadeleri aramak i&ccedil;in sol kenar &ccedil;ubuğunda bulunan Ara <b></b> simgesine, sağ &uuml;st k&ouml;şede bulunan <span class="icon icon-searchicon"></span> simgesine tıklayın veya k&uuml;&ccedil;&uuml;k Bul panelini a&ccedil;mak i&ccedil;in <em>Ctrl+F</em> (MacOS i&ccedil;in <em>Command+F</em>) veya b&uuml;y&uuml;k Bul panelini a&ccedil;mak i&ccedil;in <em>Ctrl+H</em> tuş kombinasyonunu kullanın.</p>
+			<p>&Ccedil;alışma alanının sağ &uuml;st k&ouml;şesinde k&uuml;&ccedil;&uuml;k bir <b>Bul</b> paneli a&ccedil;ılacaktır.</p>
+			<p><img alt="K&uuml;&ccedil;&uuml;k bul paneli" src="../../../../../../common/main/resources/help/tr/images/find_small.png" /></p>
+			<p>Gelişmiş ayarlara erişmek i&ccedil;in <span class="icon icon-search_advanced"></span> simgesine tıklayın.</p>
+			<p><b>Bul ve Değiştir</b> paneli a&ccedil;ılacaktır:</p>
+            <img alt="Bul ve Değiştir Penceresi" src="../images/search_window.png" />
+            <ol>
+				<li>Sorgunuzu ilgili <b>Bul</b> veri giriş alanına yazın.</li>
+				<li>Bulunan tekrarlar arasında gezinmek i&ccedil;in ok d&uuml;ğmelerinden birine tıklayın. <div class="icon icon-searchdownbutton"></div> bir sonraki tekrarı g&ouml;sterirken <div class="icon icon-searchupbutton"></div> d&uuml;ğmesi bir &ouml;ncekini g&ouml;sterir.</li>
+				<li>Bulunan karakterlerden bir veya daha fazla sayıda tekrarını değiştirmeniz gerekiyorsa, değiştirme metnini karşılık gelen <b>Şununla değiştir</b> veri giriş alanına yazın. İlgili <b>Değiştir</b> d&uuml;ğmesine tıklayarak se&ccedil;ili tek bir tekrarı ve <b>T&uuml;m&uuml;n&uuml; Değiştir</b> d&uuml;ğmesine tıklayarak t&uuml;m tekrarları değiştirmeyi se&ccedil;ebilirsiniz.</li>
+				<li>
+                    Gerekli se&ccedil;enekleri işaretleyerek arama se&ccedil;eneklerini belirtin:
+                    <ul>
+						<li><b>İ&ccedil;inde</b> - Sadece aktif <em>Sayfa</em> , t&uuml;m <em>&Ccedil;alışma kitabı</em> ya da <em>Belirli aralık</em> i&ccedil;inde arama yapmak i&ccedil;in kullanılır. İkinci durumda, <b>Veri aralığını se&ccedil;</b> alanı, gerekli aralığı belirleyebileceğiniz aktif olacaktır.</li>
+						<li><b>Ara</b> - Arama yapmak istediğiniz y&ouml;n&uuml;, yani sağ <b>satırlara g&ouml;re</b> veya aşağı <b>s&uuml;tunlara g&ouml;re</b> şeklinde belirtmek i&ccedil;in kullanılır.</li>
+						<li><b>Arama Konumu</b> - h&uuml;crelerin <b>Değerini</b> mi yoksa temel <b>Form&uuml;llerini</b> mi aramak isteyip istemediğinizi belirtmek i&ccedil;in kullanılır.</li>
+					</ul>
+				</li>
+				<li>
+                    Giriş alanlarının altındaki gerekli se&ccedil;enekleri işaretleyerek arama parametrelerini belirtin:
+                    <ul>
+						<li><b>B&uuml;y&uuml;k-K&uuml;&ccedil;&uuml;k Harfe Duyarlı</b> - Sadece sorgunuzla aynı şekilde yazılan tekrarları bulmak i&ccedil;in kullanılır (&ouml;rneğin, sorgunuz &apos;Edit&ouml;r&apos; ise ve bu se&ccedil;enek işaretlenmişse, &apos;edit&ouml;r&apos; veya &apos;EDIT&Ouml;R&apos; vb. s&ouml;zc&uuml;kler bulunmaz).</li>
+						<li><b>T&uuml;m h&uuml;cre i&ccedil;eriği</b> - Sadece sorgunuzda belirtilenler dışında herhangi bir karakter i&ccedil;ermeyen h&uuml;creleri bulmak i&ccedil;in kullanılır (&ouml;rneğin, sorgunuz &apos;56&apos; ise ve bu se&ccedil;enek işaretlenmişse, &apos;0.56&apos; veya &apos;156&apos; gibi verileri i&ccedil;eren h&uuml;creler vb. bulunmaz).</li>
+					</ul>
+				</li>
+			</ol>
+			<p>T&uuml;m tekrarlar dosyada vurgulanır ve soldaki <b>Bul</b> panelinde bir liste olarak g&ouml;sterilir. Gerekli tekrarı atlamak i&ccedil;in listeyi veya <span class="icon icon-searchupbutton"></span> ve <span class="icon icon-searchdownbutton"></span> gezinme d&uuml;ğmelerini kullanın.</p> 
+		</div>
+	</body>
+</html>

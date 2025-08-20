@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sayı bi&ccedil;imini değiştirme</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Change the number format to display the numbers in the most convenient way" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Sayı bi&ccedil;imini değiştirme</h1>
+            <h3>Sayı bi&ccedil;imi uygulama</h3>
+			<p><a href="https://www.onlyoffice.com/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Elektronik Tablo D&uuml;zenleyicisinde</b></a>, sayı bi&ccedil;imini, yani sayıların elektronik tabloda g&ouml;r&uuml;nme bi&ccedil;imini kolayca değiştirebilirsiniz. Bunu yapmak i&ccedil;in</p>
+			<ol>
+				<li>Fare ile bir h&uuml;creyi, bir h&uuml;cre aralığını veya <b>Ctrl+A</b> tuş kombinasyonu ile t&uuml;m &ccedil;alışma sayfasını se&ccedil;in,
+                <p class="note"><b>Not</b>: Fare ile h&uuml;creleri/aralıkları se&ccedil;erken <b>Ctrl</b> tuşuna basılı tutarak birden &ccedil;ok bitişik olmayan h&uuml;creyi veya h&uuml;cre aralığını da se&ccedil;ebilirsiniz.</p>
+                </li>
+				<li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Giriş</b> sekmesinde bulunan <b>Sayı bi&ccedil;imi</b> <img alt="Genel biçim düğmesi" src="../images/generalformat.png" /> d&uuml;ğmesi listesini a&ccedil;ın veya se&ccedil;ili h&uuml;crelere sağ tıklayın ve bağlamsal men&uuml;den <b>Sayı Bi&ccedil;imi</b> se&ccedil;eneğini kullanın. Uygulamak istediğiniz sayı bi&ccedil;imini se&ccedil;in:
+                    <ul>
+						<li><b>Genel</b> - Verileri herhangi bir ek işaret olmadan en kompakt şekilde d&uuml;z sayılar olarak g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in kullanılır,</li>
+						<li><b>Sayı</b> - Ondalık virg&uuml;l&uuml;nden sonra 0-30 haneli sayıların g&ouml;sterilmesinde kullanılır, virg&uuml;lden &ouml;nceki her 3 haneli grup arasına binlik ayırıcı eklenir,</li>
+                        <!--<li><b>Integer</b> - is used to display the numbers as an integer,</li>-->
+                        <li><b>Bilimsel</b> (&uuml;stel) - <em>d.dddE+ddd</em> veya <em>d.dddE-ddd</em> t&uuml;r&uuml;nde bir dizide d&ouml;n&uuml;şt&uuml;r&uuml;len sayıları kısaltmak i&ccedil;in kullanılır, burada her <em>d</em>, 0 ila 9 arası bir sayıdır,</li>
+                        <li><b>Muhasebe</b> - Parasal değerleri varsayılan para birimi simgesi ve iki ondalık basamak ile g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in kullanılır. Başka bir para birimi simgesi veya ondalık basamak sayısı uygulamak i&ccedil;in <a href="../UsageInstructions/ChangeNumberFormat.htm#customize" onclick="onhyperlinkclick(this)">aşağıdaki talimatları</a> izleyin. <b>Para Birimi</b> bi&ccedil;iminin aksine, <b>Muhasebe</b> bi&ccedil;imi, para birimi simgelerini h&uuml;crenin sol tarafına hizalar, sıfır değerlerini tire olarak ve negatif değerleri parantez i&ccedil;inde g&ouml;sterir.
+                            <p><img alt="Muhasebe ve Para Birimi sayı biçimleri" src="../images/accounting_currency.png" /></p>
+                            <p class="note"><b>Not</b>: <b>Muhasebe</b> bi&ccedil;imini se&ccedil;ili verilere hızlı bir şekilde uygulamak i&ccedil;in &uuml;st ara&ccedil; &ccedil;ubuğunun <b>Giriş</b> sekmesinde bulunan <b>Muhasebe stili</b> <span class = "icon icon-accountingstyle"></span> simgesine tıklayarak aşağıdaki para birimi simgelerinden birini de se&ccedil;ebilirsiniz: <b>$</b> Dolar, <b>€</b> Euro, <b>£</b> Pound, <b>₽</b> Ruble, <b>¥</b> Yen, <b>kn</b> Hırvat Kunası.</p>
+                        </li>
+                        <li><b>Para Birimi</b> - Parasal değerleri varsayılan para birimi simgesi ve iki ondalık basamak ile g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in kullanılır. Başka bir para birimi simgesi veya ondalık basamak sayısı uygulamak i&ccedil;in <a href="../UsageInstructions/ChangeNumberFormat.htm#customize" onclick="onhyperlinkclick(this)">aşağıdaki talimatları</a> izleyin. <b>Muhasebe</b> bi&ccedil;iminin aksine, <b>Para Birimi</b> bi&ccedil;imi, ilk basamağın hemen &ouml;n&uuml;ne bir para birimi simgesi yerleştirir ve negatif değerleri negatif işaretle (-) g&ouml;sterir.</li>
+						<li><b>Tarih</b> - Tarihleri g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in kullanılır<!--. You can select one of the following date formats: <em>MM-dd-yy</em>, <em>MM-dd-yyyy</em>, <em>dd-MM-yy</em>, <em>dd-MM-yyyy</em>, <em>dd-MMM-yyyy</em>, <em>dd-MMM</em>, <em>MMM-yy</em>-->,</li>
+						<li><b>Zaman</b> - Zamanı g&ouml;stermek i&ccedil;in kullanılır<!--. You can select one of the following time formats: <em>HH:mm</em>, <em>HH:MM:ss</em>, <em>hh:mm tt</em>, <em>hh:mm:ss tt</em>, <em>[h]:mm:ss</em>-->,</li>
+						<li><b>Y&uuml;zde</b> - Verileri y&uuml;zde işareti <b>%</b> ile y&uuml;zde olarak g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in kullanılır,
+                            <p class="note"><b>Not</b>: Y&uuml;zde stilini verilere hızlı bir şekilde uygulamak i&ccedil;in &uuml;st ara&ccedil; &ccedil;ubuğunun <b>Giriş</b> sekmesinde bulunan <b>Y&uuml;zde stili</b> <span class="icon icon-percentstyle"></span> simgesini de kullanabilirsiniz.</p>
+						</li>
+                        <li><b>Kesir</b> - Sayıları ondalık sayılardan ziyade bayağı kesirler olarak g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in kullanılır.</li>
+						<li><b>Metin</b> - Sayısal değerleri m&uuml;mk&uuml;n olduğunca kesin bir şekilde d&uuml;z metin olarak g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in kullanılır.</li>
+                        <li><b>Diğer bi&ccedil;imler</b> - <b>&ouml;zel sayı bi&ccedil;imi</b> oluşturmak veya ek parametreler belirterek halihazırda uygulanan sayı bi&ccedil;imlerini &ouml;zelleştirmek i&ccedil;in (aşağıdaki a&ccedil;ıklamaya bakın) kullanılır.</li>
+                        <li><b>&Ouml;zel</b> - &Ouml;zel bir bi&ccedil;im oluşturmak i&ccedil;in kullanılır:
+                        <ul>
+                            <li>Bi&ccedil;imlendirmek istediğiniz değerler i&ccedil;in bir h&uuml;creyi, bir h&uuml;cre aralığını veya t&uuml;m &ccedil;alışma sayfasını se&ccedil;in,</li>
+                            <li><b>Diğer bi&ccedil;imler</b> men&uuml;s&uuml;nden <b>&Ouml;zel</b> se&ccedil;eneğini se&ccedil;in,</li>
+                            <li>Gerekli kodları girin ve sonucu &ouml;nizleme alanında kontrol edin veya şablonlardan birini se&ccedil;in ve/veya bunları birleştirin. Mevcut bi&ccedil;imi temel alan bir bi&ccedil;im oluşturmak istiyorsanız, &ouml;nce mevcut bi&ccedil;imi uygulayın ve ardından kodları tercihinize g&ouml;re d&uuml;zenleyin,</li>
+                            <li><b>Tamam</b> d&uuml;ğmesine tıklayın.</li>
+                        </ul>
+                        </li>
+					</ul>
+				</li>
+				<li>Gerekirse ondalık basamak sayısını değiştirin:
+                    <ul>
+				        <li>Ondalık ayırıcısından sonra daha fazla basamak g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in &uuml;st ara&ccedil; &ccedil;ubuğunun <b>Giriş</b> sekmesinde bulunan<div class = "icon icon-increasedecimal"></div><b>Ondalık sayıyı artır</b> simgesini kullanın,</li>
+				        <li>Ondalık ayırıcısından sonra daha az basamak g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in &uuml;st ara&ccedil; &ccedil;ubuğunun <b>Giriş</b> sekmesinde bulunan<div class = "icon icon-decreasedecimal"></div><b>Ondalık sayıyı azalt</b> simgesini kullanın,</li>
+				    </ul>
+				 </li>
+			</ol>
+            <p class="note">
+                <b>Not</b>: Sayı bi&ccedil;imini değiştirmek i&ccedil;in ayrıca <a href="../HelpfulHints/KeyboardShortcuts.htm#dataformats" onclick="onhyperlinkclick(this)">klavye kısayollarını</a> da kullanabilirsiniz.
+            </p>
+            <h3 id="customize">Sayı bi&ccedil;imini &ouml;zelleştirme</h3>
+            <p>Uygulanan sayı bi&ccedil;imini aşağıdaki şekilde &ouml;zelleştirebilirsiniz:</p>
+			<ol>
+                <li>Sayı bi&ccedil;imini &ouml;zelleştirmek istediğiniz h&uuml;creleri se&ccedil;in,</li>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Giriş</b> sekmesinde bulunan <b>Sayı bi&ccedil;imi</b> <img alt="Genel biçim düğmesi" src="../images/generalformat.png" /> d&uuml;ğmesi listesini a&ccedil;ın veya se&ccedil;ili h&uuml;crelere sağ tıklayın ve bağlamsal men&uuml;den <b>Sayı Bi&ccedil;imi</b> se&ccedil;eneğini kullanın,</li>
+                <li>A&ccedil;ılan <b>Sayı Bi&ccedil;imi</b> penceresinde</li>
+                <li><b>Diğer bi&ccedil;imler</b> se&ccedil;eneğini se&ccedil;in, mevcut parametreleri ayarlayın. Se&ccedil;enekler, se&ccedil;ili h&uuml;crelere uygulanan sayı bi&ccedil;imine g&ouml;re farklılık g&ouml;sterir. Sayı bi&ccedil;imini değiştirmek i&ccedil;in <b>Kategori</b> listesini kullanabilirsiniz.
+                <p><img alt="Sayı Biçimi penceresi" src="../images/numberformatwindow.png" /></p>  
+                <ul>
+                    <li><b>Sayı</b> bi&ccedil;imi i&ccedil;in <b>Ondalık</b> virg&uuml;l&uuml;n&uuml; ayarlayabilir, <b>1000 ayırıcı kullanın</b> kullanmak isteyip istemediğinizi belirleyebilir ve negatif değerleri g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in mevcut <b>Bi&ccedil;imlerden</b> birini se&ccedil;ebilirsiniz.</li>
+                    <li><b>Bilimsel</b> ve <b>Y&uuml;zde</b> bi&ccedil;imleri i&ccedil;in <b>Ondalık</b> virg&uuml;l&uuml; sayısını ayarlayabilirsiniz.</li>
+                    <li><b>Muhasebe</b> ve <b>Para Birimi</b> bi&ccedil;imleri i&ccedil;in <b>Ondalık</b> virg&uuml;l&uuml;n&uuml; ayarlayabilir, mevcut para birimi <b>Sembollerinden</b> birini se&ccedil;ebilir ve negatif değerleri g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in mevcut <b>Bi&ccedil;imlerden</b> birini se&ccedil;ebilirsiniz.</li>
+                    <li><b>Tarih</b> bi&ccedil;imi i&ccedil;in mevcut tarih bi&ccedil;imlerinden birini se&ccedil;ebilirsiniz: <em>4/15</em>, <em>04/15</em>, <em>4/15/06</em>, <em>04/15/06</em>, <em>4/15/2006</em>, <em>04/15/2006</em>, <em>4/15/06 0:00</em>, <em>04/15/06 0:00</em>, <em>4/15/06 12:00 AM</em>, <em>A</em>, <em>Nisan 15 2006</em>, <em>15-Nis</em>, <em>15-Nis-06</em>, <em>Nis-06</em>, <em>Nis-06</em>, <em>A-06</em>, <em>06-Nis</em>, <em>15-Nis-2006</em>, <em>2006-Nis-15</em>, <em>06-Nis-15</em>, <em>06-4-15</em>, <em>06-04-15</em>, <em>2006-4-15</em>, <em>2006-04-15</em>, <em>15/Nis</em>, <em>15/Nis/06</em>, <em>Nis/06</em>, <em>Nisan/06</em>, <em>A/06</em>, <em>06/Nis</em>, <em>15/Nis/2006</em>, <em>2006/Nis/15</em>, <em>06/Nis/15</em>, <em>06/4/15</em>, <em>06/04/15</em>, <em>2006/4/15</em>, <em>2006/04/15</em>, <em>15 Nis</em>, <em>15 Nis 06</em>, <em>Nis 06</em>, <em>Nisan 06</em>, <em>A 06</em>, <em>06 Nis</em>, <em>15 Nis 2006</em>, <em>2006 Nis 15</em>, <em>06 Nis 15</em>, <em>06 4 15</em>, <em>06 04 15</em>, <em>2006 4 15</em>, <em>2006 04 15</em>.</li>
+                    <li><b>Zaman</b> bi&ccedil;imi i&ccedil;in mevcut zaman bi&ccedil;imlerinden birini se&ccedil;ebilirsiniz: <em>12:48:58 </em>, <em>12:48</em>, <em>12:48 </em>, <em>12:48:58</em>, <em>48:57.6</em>, <em>36:48:58</em>.</li>
+                    <li><b>Kesir</b> bi&ccedil;imi i&ccedil;in mevcut bi&ccedil;imlerinden birini se&ccedil;ebilirsiniz: <em>Bir basamağa kadar (1/3)</em>, <em>İki basamağa kadar (12/25)</em>, <em>&Uuml;&ccedil; basamağa kadar (131/135)</em>, <em>Yarım olarak (1/2)</em>, <em>D&ouml;rtte olarak (2/4)</em>, <em>Sekizde (4/8) olarak</em>, <em>On altıda (8/16) olarak</em>, <em>Onda (5/10) olarak</em> , <em>Y&uuml;zde (50/100) olarak</em>.</li>
+                </ul>
+                </li>
+                <li>Değişiklikleri uygulamak i&ccedil;in <b>Tamam</b> d&uuml;ğmesine tıklayın.</li>
+            </ol>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,233 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Insert field codes</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Insert dynamic fields into your document" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+		<h1>Insert field codes</h1>
+			<p>In the Document Editor, you can add fields with dynamic content that depends on your system info or other content. Please do not confuse fields with content controls, as these are two different features.</p>
+			<p>To insert a field,</p>
+			<ol>
+				<li>Go to the <b>Insert</b> tab.</li>
+				<li>Click the <b>Field</b> button.</li>
+				<li>In the opened dialogue window, enter the field code you need to be displayed and click <b>OK</b>.</li>
+			</ol>
+			<p>The field codes are as follows:</p>
+			<div>
+				<table>
+					<thead>
+						<tr>
+							<th>ONLYOFFICE field code</th>
+							<th>Description</th>
+							<th>Syntax</th>
+							<th>Switches</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>MERGEFIELD</td>
+							<td style="width: 40%">The code inserts a link to a data field from the other source into the current document. When merging, data from the other source will replace the current field value.</td>
+							<td>{ MERGEFIELD FieldName [ Switches ]}</td>
+							<td>
+								<ol>
+									<li>\b - specifies the text to be inserted before the MergeField field, if the latter is not blank.</li>
+									<li>\f - specifies the text to be inserted after the MergeField field, if the latter is not blank.</li>
+									<li>\m - specifies that the MergeField field is a mapped one.</li>
+									<li>\v - enables character conversion for vertical formatting.</li>
+								</ol>
+							</td>
+						</tr>
+						<tr>
+							<td>PAGENUM</td>
+							<td>The code inserts the current page number.</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>PAGECOUNT</td>
+							<td>The code inserts the total number of pages in the current document.</td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>FORMTEXT</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>TOC</td>
+							<td>The code creates a table of contents. The table of contents is based on the applied heading styles, outline levels, captions, etc., specified by Table of Contents Entry fields.</td>
+							<td>{ TOC [Switches ] }</td>
+							<td>
+								<ol>
+									<li>\a - creates a list of objects that does not include labels and numbers.</li>
+									<li>\b - creates a table of contents for the bookmarked part of the document.</li>
+									<li>\с - creates a list of objects of the specified type.</li>
+									<li>\d - determines the separator type for page numbers.</li>
+									<li>\f - creates a table of contents based on the TC fields and not the document structure levels.</li>
+									<li>\h - applies hyperlink formatting to the table of contents.</li>
+									<li>\l - specifies the required levels of TC fields. The levels that are not included in the specified range will be omitted.</li>
+									<li>\n - creates a table of content either fully or using only the elements from the specified range (e.g., "1-9"), omitting page numbers.</li>
+									<li>\o - creates a table of contents using only structure levels of the document and not the TC fields.</li>
+									<li>\p - specifies the separator between the element and the corresponding page number.</li>
+									<li>\s - adds a sequence number to the page number.</li>
+									<li>\t - creates a table of contents using only custom styles instead of the default styles.</li>
+									<li>\u - creates a table of contents using only the applied paragraph formatting outline level.</li>
+									<li>\w - preserves the tabulation in table entries.</li>
+									<li>\x - preserves line breaks in table entries.</li>
+									<li>\z - hides page number while viewing the table of content as a web document layout.</li>
+								</ol>
+							</td>
+						</tr>
+						<tr>
+							<td>PAGEREF</td>
+							<td>The code inserts the page number as a bookmark for cross-reference.</td>
+							<td>{ PAGEREF Bookmark [\* Format Switch ] }</td>
+							<td>
+								<ol>
+									<li>\h - creates a hyperlink to the specified paragraph.</li>
+									<li>\p - inserts the position of the specified paragraph relative to the bookmark.</li>
+								</ol>
+							</td>
+						</tr>
+						<tr>
+							<td>PAGE</td>
+							<td>The code inserts the number of the current page.</td>
+							<td>{ PAGE [\* Format Switch ] }</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>NUMPAGES</td>
+							<td>The code inserts the total number of pages in the document.</td>
+							<td>{ NUMPAGES }</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>ASK</td>
+							<td>The code inserts a field that prompts the user to enter data that will then be stored as a bookmark. The editor will prompt the user each time this field is refreshed or during merging.</td>
+							<td>{ ASK Bookmark"Prompt" [Optional switches ] }</td>
+							<td>
+								<ol>
+									<li>\d - inserts the default replacement text as a bookmark.</li>
+									<li>\o - prompts just once when merging documents.</li>
+								</ol>								
+							</td>
+						</tr>
+						<tr>
+							<td>REF</td>
+							<td>The code inserts the contents of the bookmark. The bookmark should be inserted in the document.</td>
+							<td>{ [REF] Bookmark [Switches ] }</td>
+							<td>
+								<ol>
+									<li>\d - specifies the separator for the page number.</li>
+									<li>\f - increments footnote or note numbers and inserts them into the document.</li>
+									<li>\h - creates a hyperlink to the specified paragraph.</li>
+									<li>\n - adds paragraph numbers, if any.</li>
+									<li>\p - inserts the position of the specified paragraph relative to the bookmark.</li>
+									<li>\r - inserts the relative number of the specified paragraph.</li>
+									<li>\t - omits symbols that are non-numerical or non-delimiter.</li>
+									<li>\w - inserts the full number of the specified paragraph.</li>
+								</ol>
+							</td>
+						</tr>
+						<tr>
+							<td>HYPERLINK</td>
+							<td>The code inserts a hyperlink to an element in the document, to a document on your hard disk drive, portal, or a third-party resource.</td>
+							<td>{ HYPERLINK "Filename" [Switches ] }</td>
+							<td>
+								<ol>
+									<li>\l - specifies the element within the document to go to.</li>
+									<li>\m - specifies coordinates to a hyperlink for a server-side image map.</li>
+									<li>\n - opens the end document in a new window.</li>
+									<li>\o - specifies the ScreenTip text.</li>
+									<li>\t - specifies the target of the hyperlink.</li>
+								</ol>
+							</td>
+						</tr>
+						<tr>
+							<td>TIME</td>
+							<td>The code inserts the current time based on the user's system into the document.</td>
+							<td>{ TIME [\@ "Date-Time Picture"] }</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>DATE</td>
+							<td>The code inserts the current date based on the user's system into the document.</td>
+							<td>{ DATE [ \@ "Date-Time Picture"] [Switches] }</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>FORMULA</td>
+							<td>The code performs calculation as per the entered formula.</td>
+							<td>{ = Formula [Bookmark ] [\#Numeric Picture ] }</td>
+							<td></td>
+						</tr>
+						<tr>
+							<td>SEQ</td>
+							<td>The code provides a way to number chapters, tables, figures, and other elements in a document in order. If you add, remove, or relocate an item along with its Seq field, you can update the other Seq fields in the document to show the revised sequence.</td>
+							<td>{ SEQ Identifier [Bookmark ] [Switches ] }</td>
+							<td>
+								<ol>
+									<li>\c - inserts the closest preceding sequence number.</li>
+									<li>\h - hides the field result (used for cross-referencing).</li>
+									<li>\n - inserts the next sequence number.</li>
+									<li>\r - the numeration starts with the specified number.</li>
+									<li>\s - the numeration starts with the specified outline level.</li>
+								</ol>
+							</td>
+						</tr>
+						<tr>
+							<td>STYLEREF</td>
+							<td>The code adds text that has been formatted using a specific style. When placed in a header or footer, it displays the first or last instance of text formatted with that style from the main content of the current page, enabling the creation of dictionary-style headers or footers.</td>
+							<td>{ STYLEREF StyleIdentifier [Switches ] }</td>
+							<td>
+								<ol>
+									<li>\l - starts the search from the bottom of the current page.</li>
+									<li>\n - inserts the numeration from the specified paragraph.</li>
+									<li>\p - inserts the position of the specified paragraph relative to the bookmark.</li>
+									<li>\r - inserts the relative number of the specified paragraph.</li>
+									<li>\t - omits symbols that are non-numerical or non-delimiter.</li>
+									<li>\w - inserts the full number of the specified paragraph.</li>
+								</ol>								
+							</td>
+						</tr>
+						<tr>
+							<td>NOTEREF</td>
+							<td>The code inserts a footnote or endnote reference mark that is marked with a bookmark to make references to the same note or to cross-reference footnotes and endnotes. If the sequence of the notes is changed, the result of the field will reflect the new numbering.</td>
+							<td>{ NOTEREF Bookmark [Switches] }</td>
+							<td>
+								<ol>
+									<li>\f - inserts a reference mark formatted with the <em>Footnote reference style</em> or the <em>Endnote reference style</em>.</li>
+									<li>\h - creates a hyperlink to the specified foot- or endnote.</li>
+									<li>\p - inserts the relative position of the foot- or endnote.</li>
+								</ol>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<p>The field codes can be edited and updated on the go:</p>
+			<ol>
+				<li>Select the required field and click with the right mouse button to open the context menu.</li>
+				<li>
+					<ul>
+						<li><em>Update field</em> - update the information in the field.</li>
+						<li><em>Edit field</em> - open the window for editing the field.</li>
+						<li><em>Toggle field codes</em> - display the field code.</li>
+					</ul>
+				</li>
+			</ol>
+		</div>
+	</body>
+</html>

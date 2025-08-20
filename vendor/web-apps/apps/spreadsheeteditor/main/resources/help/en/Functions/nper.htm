@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>NPER Function</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>NPER Function</h1>
+			<p>The <b>NPER</b> function is one of the <a href="../UsageInstructions/InsertFunction.htm#financial" onclick="onhyperlinkclick(this)">financial functions</a>. It is used to calculate the number of periods for an investment based on a specified interest rate and a constant payment schedule.</p>
+			<h3>Syntax</h3> 
+			<p><b><em>NPER(rate, pmt, pv, [fv], [type])</em></b></p> 
+			<p>The <b>NPER</b> function has the following arguments:</p>
+			<table style="width: 40%">
+				<tr>
+					<th style="background-color: #f4f4f4" width="150ch"><b>Argument</b></th>
+					<th style="background-color: #f4f4f4"><b>Description</b></th>
+				</tr>
+				<tr>
+					<td><b><em>rate</em></b></td>
+					<td>The interest rate.</td>
+				</tr>
+				<tr>
+					<td><b><em>pmt</em></b></td>
+					<td>A payment amount.</td>
+				</tr>
+				<tr>
+					<td><b><em>pv</em></b></td>
+					<td>A present value of the payments.</td>
+				</tr>
+				<tr>
+					<td><b><em>fv</em></b></td>
+					<td>The future value of an investment. It is an optional argument. If it is omitted, the function will assume <b><em>fv</em></b> to be 0.</td>
+				</tr>
+				<tr>
+					<td><b><em>type</em></b></td>
+					<td>A period when the payments are due. It is an optional argument. If it is set to 0 or omitted, the function will assume the payments to be due at the end of the period. If <b><em>type</em></b> is set to 1, the payments are due at the beginning of the period.</td>
+				</tr>
+			</table>
+			<h3>Notes</h3>
+            <p>Cash paid out (such as deposits to savings) is represented by negative numbers; cash received (such as dividend checks) is represented by positive numbers.</p>
+			<p><a href="../UsageInstructions/InsertFunction.htm#applyfunction" onclick="onhyperlinkclick(this)">How to apply</a> the <b>NPER</b> function.</p>
+			
+			<h3>Examples</h3>
+            <p>The figure below displays the result returned by the <b>NPER</b> function.</p>
+			<p><img alt="NPER Function" src="../images/nper.png" /></p>
+		</div>
+	</body>
+</html>

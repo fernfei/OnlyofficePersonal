@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>Ver configurações e ferramentas de navegação</title>
+	<meta charset="utf-8" />
+	<meta name="description" content="A descrição das configurações de visualização e ferramentas de navegação, como zoom, botões de página anterior/seguinte" />
+	<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+	<link type="text/css" rel="stylesheet" href="../../images/sprite.css" />
+	<script type="text/javascript" src="../callback.js"></script>
+	<script type="text/javascript" src="../search/js/page-search.js"></script>
+</head>
+<body>
+	<div class="mainpart">
+		<div class="search-field">
+			<input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+		</div>
+		<h1>Ver configurações e ferramentas de navegação</h1>
+		<p>O <!--<a href="https://www.onlyoffice.com/pt/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)">--><b>Editor de PDF</b><!--</a>--> oferece diversas ferramentas para ajudá-lo a visualizar e navegar em seu PDF: ampliar, navegar pelos títulos, definir o tema da interface, etc.</p>
+		<h3>Ajustar as configurações de visualização</h3>
+		<p>
+			Para ajustar as configurações de visualização padrão e definir o modo mais conveniente para trabalhar com o PDF, vá para a guia <b>Visualizar</b> e selecione quais elementos da interface você deseja ocultar ou mostrar.
+			Você pode selecionar as seguintes opções na guia <b>Visualizar</b>:
+		</p>
+		<ul>
+			<li><b>Títulos</b> – para mostrar os cabeçalhos do PDF no painel esquerdo.</li>
+			<li><b>Zoom</b> – para definir o valor de zoom necessário de 50% a 500% na lista suspensa. A mesma opção também pode ser encontrada na guia <b>Página inicial</b>.</li>
+			<li><b>Ajustar à página</b> - para ajustar toda a página do PDF à parte visível da área de trabalho.</li>
+			<li><b>Ajustar à largura</b> - para ajustar a largura da página PDF à parte visível da área de trabalho.</li>
+			<li><b>Tema da interface</b> – escolha um dos temas de interface disponíveis no menu suspenso: <em>Igual ao sistema</em>, <em>Luz</em>, <em>Cclássico Claro</em>, <em>Escuro</em>, <em>Contraste Escuro</em>. Quando o tema <em>Escuro</em> ou <em>Contraste Escuro</em> está ativado, o alternador <b>Documento Escuro</b> fica ativo; use-o para definir a área de trabalho para branco ou cinza escuro.</li>
+			<li>
+				<b>Sempre mostrar barra de ferramentas</b> – quando esta opção está desativada, a barra de ferramentas superior que contém comandos ficará oculta enquanto os nomes das guias permanecerão visíveis.
+				<p class="note">Alternativamente, você pode simplesmente clicar duas vezes em qualquer guia para ocultar a barra de ferramentas superior ou exibi-la novamente.</p>
+			</li>
+			<li><b>Barra de status</b> – quando esta opção está desativada, a barra inferior onde estão os botões <b>Zoom</b>, <b>Ajustar à página</b>, <b>Ajustar à largura</b> situado ficará oculto. Para mostrar a <b>Barra de Status</b> oculta, habilite esta opção.</li>
+			<li><b>Painel Esquerdo</b> - quando desativado, oculta o painel esquerdo onde estão localizados os botões <b>Pesquisar</b>, <b>Comentários</b>, etc. Para mostrar o painel esquerdo, marque esta caixa.</li>
+		</ul>
+		<!--<p>Se você precisar <b>girar</b> a página, vá para a guia <b>Início</b> e clique no botão <b>Girar</b> para girar a página 90 graus no sentido horário.</p>-->
+		<p>
+			Quando os <b>Comentários</b> <span class="onlineDocumentFeatures"> ou o painel <b>Bate-papo</b></span> for aberto, a largura da barra lateral esquerda será ajustada simplesmente arrastando e soltando:
+			mova o cursor do mouse sobre a borda esquerda da barra lateral para que ela se transforme em uma seta bidirecional e arraste a borda para a direita para estender a largura da barra lateral. Para restaurar a largura original, mova a borda para a esquerda.
+		</p>
+		<h3 id="navigationtools">Use as ferramentas de navegação</h3>
+		<h4>Navegando nas páginas</h4>
+		<p>Vá para a guia <b>Home</b>, onde estão localizados os botões de navegação da página.</p>
+		<ul>
+			<li><div class="icon icon-pagenumber"></div> - exibe o número da página e o número total de páginas no PDF. Clique no campo e insira o número da página necessária manualmente e pressione <code>Enter</code> para ir diretamente para ela. O mesmo indicador de número de página também pode ser encontrado no canto inferior esquerdo.</li>
+			<li><div class="icon icon-firstpage"></div> - pular para a primeira página do PDF.</li>
+			<li><div class="icon icon-nextpage"></div> - vá para a próxima página do PDF. O mesmo botão também pode ser encontrado no canto inferior esquerdo.</li>
+			<li><div class="icon icon-previouspage"></div> - vá para a página anterior do PDF. O mesmo botão também pode ser encontrado no canto inferior esquerdo.</li>
+			<li><div class="icon icon-lastpage"></div> - pular para a última página do PDF.</li>
+		</ul>
+		<h4>Títulos</h4>
+		<p>Clique no ícone <b>Configurações</b> à direita do <span class="icon icon-navigationicon"></span> <b>Painel de títulos</b> e use uma das opções disponíveis no menu:</p>
+		<p>
+			<img alt="NavigationPanel" src="../images/navigationpanel_viewer.png" />
+			<ul>
+				<li><b>Expandir tudo</b> - para expandir todos os níveis de títulos no painel <b>Títulos</b>.</li>
+				<li><b>Recolher tudo</b> - para recolher todos os níveis de títulos, exceto o <em>nível 1</em>, no painel <b>Títulos</b>.</li>
+				<li><b>Expandir para o nível</b> - para expandir a estrutura do título para o nível selecionado. Por exemplo, se você selecionar o <em>nível 3</em>, os níveis 1, 2 e 3 serão expandidos, enquanto o nível 4 e todos os níveis inferiores serão recolhidos.</li>
+				<li><b>Tamanho da fonte</b> – para personalizar o tamanho da fonte do texto do painel <b>Títulos</b> escolhendo uma das predefinições disponíveis: <em>Pequeno</em>, <um>Médio</em> e <em>Grande</em>.</li>
+				<li><b>Quebrar títulos longos</b> – para quebrar o texto do título longo.</li>
+			</ul>
+		<p>Para expandir ou recolher manualmente níveis de títulos separados, use as setas à esquerda dos títulos.</p>
+		<p>Para fechar o painel <b>Títulos</b>, clique no botão <span class="icon icon-navigationicon"></span> <b>Ícone de títulos</b> na barra lateral esquerda mais uma vez.</p>
+		<h4>Miniaturas de página</h4>
+		<p>Clique <span class="icon icon-search_options"></span> no <span class="icon icon-pagethumbnails"></span> <b>Painel Miniaturas de página</b> para acessar as <b>Configurações de miniaturas</b>:</p>
+		<p><img alt="Configurações de miniaturas de páginas" src="../images/pagethumbnails_settings.png" /></p>
+		<ul>
+			<li>Arraste o controle deslizante para definir o tamanho da miniatura.</li>
+			<li>A opção <b>Realçar parte visível da página</b> está ativa por padrão para indicar a área que está atualmente na tela. Clique para desativar.</li>
+		</ul>
+		<p>Para fechar o <b>painel Miniaturas de páginas</b>, clique novamente no ícone <span class="icon icon-pagethumbnails"></span> <b>Miniaturas de páginas</b> na barra lateral esquerda.</p>
+		<h4>Ampliação</h4>
+		<p>Os botões <b>Zoom</b> estão situados no canto inferior direito e são usados para aumentar e diminuir o zoom do PDF atual.</p>
+		<p>
+			Para alterar o valor de zoom atualmente selecionado que é exibido em porcentagem, clique nele e selecione uma das opções de zoom disponíveis na lista (50% / 75% / 100% / 125% / 150% / 175% / 200% / 300% / 400% / 500%)
+			ou use o <b>Ampliar</b> <span class="icon icon-zoomin"></span> ou <b>Diminuir zoom</b> <span class="icon icon-zoomout"></span> botões. A escala definida é mantida para todos os arquivos durante a sessão atual.
+		</p>
+		<p>Clique no botão <b>Ajustar à largura</b> <span class="icon icon-fitwidth"></span> ícone para ajustar a largura da página do documento à parte visível da área de trabalho.</p>
+		<p>Para ajustar toda a página do documento à parte visível da área de trabalho, clique no botão <b>Ajustar à página</b> <span class="icon icon-fitpage"></span> ícone.</p>
+		<p>As configurações de zoom também estão disponíveis na <a href="../ProgramInterface/ViewTab.htm" onclick="onhyperlinkclick(this)">Visualizar guia</a>.</p>
+	</div>
+</body>
+</html>

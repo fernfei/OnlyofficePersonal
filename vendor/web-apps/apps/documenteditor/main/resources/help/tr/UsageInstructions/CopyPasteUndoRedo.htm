@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Metin pasajlarını kopyalama/yapıştırma, eylemlerinizi geri alma/yineleme</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Perform the basic operations with the document text: copy, paste, undo, redo" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Metin pasajlarını kopyalama/yapıştırma, eylemlerinizi geri alma/yineleme</h1>
+            <h3>Temel pano işlemlerini kullanın</h3>
+            <p><a href="https://www.onlyoffice.com/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Belge D&uuml;zenleyicide</b></a> metin pasajlarını ve eklenen nesneleri (otomatik şekiller, resimler, &ccedil;izelgeler) kesmek, kopyalamak ve yapıştırmak i&ccedil;in sağ tıklama men&uuml;s&uuml;nden ilgili se&ccedil;enekleri se&ccedil;in veya &uuml;st ara&ccedil; &ccedil;ubuğunun herhangi bir sekmesinde bulunan simgelere tıklayın:</p>
+			<ul>
+                <li><b>Kes</b> &ndash; Bir metin par&ccedil;ası veya bir nesne se&ccedil;in ve se&ccedil;ili metni silmek ve bilgisayarın pano belleğine g&ouml;ndermek i&ccedil;in sağ tıklama men&uuml;s&uuml;nden <b>Kes</b> se&ccedil;eneğini veya &uuml;st ara&ccedil; &ccedil;ubuğundaki <b>Kes</b> <div class="icon icon-cut"></div> simgesine tıklayın. <span class="onlineDocumentFeatures">Kesilen metin daha sonra aynı belgedeki başka bir yere eklenebilir.</span></li>
+                <li><b>Kopyala</b> &ndash; bir metin par&ccedil;ası veya bir nesne se&ccedil;in ve se&ccedil;ili metni bilgisayarın pano belleğine g&ouml;ndermek i&ccedil;in sağ tıklama men&uuml;s&uuml;nden <b>Kopyala</b> se&ccedil;eneğine veya veya &uuml;st ara&ccedil; &ccedil;ubuğundaki <b>Kopyala</b> <div class = "icon icon-copy"></div> simgesine tıklayın. <span class="onlineDocumentFeatures">Kopyalanan metin daha sonra aynı belgedeki başka bir yere eklenebilir.</span></li>
+                <li><b>Yapıştır</b> &ndash; belgenizde daha &ouml;nce kopyalanan metin par&ccedil;asını/nesneyi yapıştırmanız gereken yeri bulun ve sağ tıklama men&uuml;s&uuml;nden <b>Yapıştır</b> se&ccedil;eneğine veya  &uuml;st ara&ccedil; &ccedil;ubuğundaki <b>Yapıştır</b> <div class = "icon icon-paste"></div> simgesine tıklayın.
+                    Kopyalanan metin/nesne mevcut imle&ccedil; konumuna eklenecektir. <span class="onlineDocumentFeatures">Veriler daha &ouml;nce aynı belgeden kopyalanabilir.</span>
+                </li>
+			</ul>
+            <p><span class="onlineDocumentFeatures"><em>&Ccedil;evrimi&ccedil;i s&uuml;r&uuml;mde</em>, aşağıdaki tuş kombinasyonları yalnızca başka bir belgeden veya programdan/programa veri kopyalamak veya yapıştırmak i&ccedil;in kullanılır.</span> <span class="desktopDocumentFeatures"><em>Masa&uuml;st&uuml; s&uuml;r&uuml;mde</em>, hem karşılık gelen d&uuml;ğmeler/men&uuml; se&ccedil;enekleri hem de tuş kombinasyonları herhangi bir kopyalama/yapıştırma işlemi i&ccedil;in kullanılabilir:</span></p>
+            <ul>
+                <li><b>Ctrl+X</b> kesme işlemi tuş kombinasyonu,</li>
+                <li><b>Ctrl+C</b> kopyalama işlemi tuş kombinasyonu,</li>
+                <li><b>Ctrl+V</b> yapıştırmak işlemi tuş kombinasyonu.</li>
+            </ul>
+            <p class="note"><b>Not</b>: Aynı belgedeki metin par&ccedil;alarını kesip yapıştırmak yerine, gerekli metin pasajını se&ccedil;ip s&uuml;r&uuml;kleyip gerekli konuma bırakabilirsiniz.</p>
+            <h3>&Ouml;zel Yapıştır &ouml;zelliğini kullanın</h3>
+            <p class="note"><b>Not</b>: İşbirliği d&uuml;zenlemesi i&ccedil;in <b>&Ouml;zel Yapıştır</b> &ouml;zelliği yalnızca <b>Sıkı</b> birlikte d&uuml;zenleme modunda kullanılabilir.</p>
+            <p>Kopyalanan metin yapıştırıldıktan sonra, <b>&Ouml;zel Yapıştır</b> <span class="icon icon-pastespecialbutton"></span> d&uuml;ğmesi eklenen metin pasajının yanında g&ouml;r&uuml;n&uuml;r. Gerekli yapıştırma se&ccedil;eneğini se&ccedil;mek i&ccedil;in bu d&uuml;ğmeye tıklayın veya gerekli se&ccedil;eneğin yanında parantez i&ccedil;inde verilen harf tuşuyla birlikte <em>Ctrl</em> tuşunu kullanın.</p>
+            <p>Bir metin paragrafını veya bazı metinleri otomatik şekiller i&ccedil;ine yapıştırırken aşağıdaki se&ccedil;enekler kullanılabilir:</p>
+            <ul>
+                <li><em>Kaynak bi&ccedil;imlendirmesini koru (Ctrl+K)</em> - kopyalanan metnin orijinal bi&ccedil;imini koruyarak yapıştırılmasına izin verir.</li>
+                <li><em>Yalnızca metni koru (Ctrl+T)</em> - Metnin orijinal bi&ccedil;imlendirmesi olmadan yapıştırılmasına izin verir.</li>
+            </ul>
+            <p>Bir tabloyu kopyalayıp mevcut bir tabloya yapıştırırsanız aşağıdaki se&ccedil;enekler kullanılabilir:</p>
+            <ul>
+                <li><em>H&uuml;crelerin &uuml;zerine yaz (Ctrl+O)</em> - Mevcut tablonun i&ccedil;eriğinin kopyalanan verilerle değiştirilmesine izin verir. Bu se&ccedil;enek varsayılan olarak se&ccedil;ilidir.</li>
+                <li><em>İ&ccedil; i&ccedil;e tablo (Ctrl+N)</em> - Kopyalanan tablonun mevcut tablonun se&ccedil;ili h&uuml;cresine i&ccedil; i&ccedil;e tablo olarak yapıştırılmasına izin verir.</li>
+                <li><em>Yalnızca metni koru (Ctrl+T)</em> - Tablo i&ccedil;eriklerinin sekme karakteriyle ayrılmış metin değerleri olarak yapıştırılmasına izin verir.</li>
+            </ul>
+            <p>Yapıştırdıktan sonra  <b>&Ouml;zel Yapıştır</b> d&uuml;ğmesinin otomatik g&ouml;r&uuml;nmesini etkinleştirmek/devre dışı bırakmak i&ccedil;in <b>Dosya</b> sekmesi &gt; <b>Gelişmiş Ayarlar</b> se&ccedil;eneğine gidin ve <b>İ&ccedil;erik yapıştırıldığında Yapıştırma Se&ccedil;enekleri d&uuml;ğmesini g&ouml;ster</b> onay kutusunu işaretleyin/işaretini kaldırın.</p>
+            <h3>Eylemlerinizi geri alın/yineleyin</h3>
+            <p>Geri alma/yineleme işlemlerini ger&ccedil;ekleştirmek i&ccedil;in d&uuml;zenleyici başlığındaki ilgili simgelere tıklayın veya aşağıdaki klavye kısayollarını kullanın:</p>
+            <ul>
+                <li><b>Geri alma</b> - Ger&ccedil;ekleştirdiğiniz son işlemi geri almak i&ccedil;in d&uuml;zenleyici başlığının sol tarafındaki <b>Geri al</b> simgesini veya <div class = "icon icon-undo"></div> <b>Ctrl+Z</b> tuş kombinasyonunu kullanın.</li>
+                <li><b>Yineleme</b> - Son geri alınan işlemi yeniden yapmak i&ccedil;in d&uuml;zenleyici başlığının sol tarafındaki <b>Yinele</b> simgesini veya <div class = "icon icon-redo"></div> <b>Ctrl+Y</b> tuş kombinasyonu kullanın.</li>
+            </ul>
+            <p class="note">
+                Bir belgeyi <b>Hızlı</b> modda birlikte d&uuml;zenlediğinizde, son geri alınan işlemi <b>Yineleme</b> se&ccedil;eneği mevcut değildir.
+            </p>
+		</div>
+	</body>
+</html>

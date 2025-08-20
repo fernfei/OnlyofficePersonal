@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+        <title>Présentation de l'interface utilisateur de l'éditeur de PDF</title>
+		<meta charset="utf-8" />
+        <meta name="description" content="Présentation de l'interface utilisateur de l'éditeur de PDF" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Rechercher" type="text" onkeypress="doSearch(event)">
+        </div>
+        <h1>Présentation de l'interface utilisateur de l'éditeur de PDF</h1>
+			<p><a href="https://www.onlyoffice.com//fr/pdf-editor.aspx?docs=download" target="_blank" onclick="onhyperlinkclick(this)"><b>L'éditeur de PDF</b></a> utilise une interface à onglets dans laquelle les commandes d'édition sont regroupées en onglets par fonctionnalité.</p>
+            <div class="onlineDocumentFeatures">
+                <p>Fenêtre principale de l'éditeur de PDF en ligne:</p>
+                <p><img alt="Fenêtre de l'éditeur PDF" src="../images/interface/editorwindow.png" /></p>
+            </div>
+            <div class="desktopDocumentFeatures">
+                <p>Fenêtre principale de l'éditeur de PDF de bureau:</p>
+                <p><img alt="Fenêtre de l'éditeur de PDF de bureau" src="../images/interface/desktop_editorwindow.png" /></p>
+            </div>
+            <p>L'interface de l'éditeur est composée des éléments principaux suivants:</p>
+            <ol>
+                <li>
+                    <b>L'en-tête de l'éditeur</b> affiche le logo ONLYOFFICE, <span class="desktopDocumentFeatures">les onglets des documents ouverts, le nom du document</span> et les onglets du menu.
+                    <p>Dans la partie gauche de <b>l'en-tête de l'éditeur</b> se trouvent les boutons <b>Enregistrer</b>, <b>Imprimer le fichier</b>, <b>Annuler</b> et <b>Rétablir</b>.</p>
+                    <p><img alt="Icônes dans l'en-tête de l'éditeur" src="../images/interface/leftpart.png" /></p>
+                    <p>Dans la partie droite de <b>l'en-tête de l'éditeur</b> à côté du nom d'utilisateur, les icônes suivantes sont affichées à droite:</p>
+                    <ul>
+                        <li><div class="icon icon-gotodocuments"></div> <b>Ouvrir l'emplacement de fichier</b> - <span class="desktopDocumentFeatures">dans la <em>version de bureau</em>, permet d'ouvrir le dossier où le fichier est stocké, dans la fenêtre <b>Explorateur de fichiers</b>.</span> <span class="onlineDocumentFeatures"> Dans la <em>version en ligne</em>, elle permet d'ouvrir le dossier du module <b>Documents</b> où le fichier est stocké dans un nouvel onglet du navigateur.</span></li>
+                        <li><div class="icon icon-search_icon_header"></div> <b>Rechercher</b> - permet de rechercher un certain mot ou symbole dans un document PDF.</li>
+                    </ul>
+                </li>
+                <li>
+                    La <b>barre d'outils supérieure</b> affiche un ensemble de commandes d'édition en fonction de l'onglet de menu sélectionné. Actuellement, les onglets suivants sont disponibles: <a href="../ProgramInterface/FileTab.htm" onclick="onhyperlinkclick(this)">Fichier</a>, <a href="../ProgramInterface/HomeTab.htm" onclick="onhyperlinkclick(this)">Accueil</a>, <a href="../ProgramInterface/CommentTab.htm" onclick="onhyperlinkclick(this)">Commentaires</a>, <a href="../ProgramInterface/InsertTab.htm" onclick="onhyperlinkclick(this)">Insertion</a>, <a href="../ProgramInterface/ViewTab.htm" onclick="onhyperlinkclick(this)">Affichage</a>, <a href="../ProgramInterface/PluginsTab.htm" onclick="onhyperlinkclick(this)">Modules complémentaires</a>.
+                    <p>Les options <span class="icon icon-copy"></span> <b>Copier</b>, <span class="icon icon-paste"></span> <b>Coller</b>, <span class="icon icon-cut"></span> <b>Couper</b> et <span class="icon icon-selectall"></span> <b>Sélectionner tout</b> et les outils <span class="icon icon-selectiontool"></span> <b>Sélectionner</b> et <span class="icon icon-handtool"></span> <b>Main</b> sont toujours disponibles dans la partie gauche de la <b>Barre d'outils supérieure</b> quel que soit l'onglet sélectionné.</p>
+                </li>
+                <li>
+                    La <b>barre latérale gauche</b> contient les icônes suivantes:
+                    <ul>
+                        <li><div class="icon icon-searchicon"></div> - permet d'utiliser l'outil <a href="../HelpfulHints/Search.htm" onclick="onhyperlinkclick(this)">Rechercher et remplacer</a>.</li>
+                        <li><div class="icon icon-commentsicon"></div> - permet d'ouvrir le panneau <a href="../HelpfulHints/Commenting.htm" onclick="onhyperlinkclick(this)">Commentaires</a>,</li>
+                        <li><div class="icon icon-chaticon"></div> - (disponible uniquement dans la <em>version en ligne</em> ) permet d'ouvrir le panneau <a href="../HelpfulHints/Communicating.htm" onclick="onhyperlinkclick(this)">Chat</a>,</li>
+                        <li><div class="icon icon-navigationicon"></div> - permet d'ouvrir le panneau <a href="../HelpfulHints/Navigation.htm" onclick="onhyperlinkclick(this)">Titres</a> pour afficher la liste des titres avec des éléments de navigation imbriqués.</li>
+                        <li><div class="icon icon-pagethumbnails"></div> - afficher les miniatures des pages pour <a href="../HelpfulHints/Navigation.htm" onclick="onhyperlinkclick(this)">parcourir </a> rapidement un document.</li>
+                        <li><div class="icon icon-feedbackicon"></div> - (disponible dans la<em> version en ligne</em> seulement) permet de contacter notre équipe d'assistance technique,</li>
+                        <li><div class="icon icon-about"></div> - (disponible dans la <em>version en ligne</em> seulement) permet d'afficher les informations sur le programme.</li>
+                    </ul>
+                </li>
+                <li>La <b>Barre d'état</b> se trouve en bas de la fenêtre de l'éditeur et affiche l'indicateur du numéro de page <!--and word count--> et certaines notifications (telles que Toutes les modifications sauvegardées, La connexion est perdue quand il n'y a pas de connexion et l'éditeur tente de se connecter etc.). Il est également possible de <!--<a href="../HelpfulHints/SpellChecking.htm" onclick="onhyperlinkclick(this)">setting the text language, enabling spell checking</a><!--turning on the <a href="../HelpfulHints/Review.htm" onclick="onhyperlinkclick(this)">track changes mode</a> and -->définir le <a href="../HelpfulHints/Navigation.htm" onclick="onhyperlinkclick(this)">niveau de zoom</a>.</li>
+                <li><b>Zone de travail</b> permet d'afficher le contenu du document PDF, de saisir et de modifier les données.</li>
+                <li><b>Barre de défilement</b> sur la droite permet de faire défiler vers le haut et vers le bas des documents PDF de plusieurs pages.</li>
+            </ol>
+            <p>Pour plus de commodité, vous pouvez masquer certains composants et les afficher à nouveau lorsque cela est nécessaire. Pour en savoir plus sur l'ajustement des paramètres d'affichage, reportez-vous à <a href="../HelpfulHints/Navigation.htm" onclick="onhyperlinkclick(this)">cette page</a>.</p>
+           
+		</div>
+	</body>
+</html>

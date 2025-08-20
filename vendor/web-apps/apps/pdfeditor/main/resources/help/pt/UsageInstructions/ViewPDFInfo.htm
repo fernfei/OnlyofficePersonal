@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ver informações em PDF</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Visualize o autor do PDF, local, data de criação, pessoas com direitos para visualizar ou editar o documento e estatísticas" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Ver informações em PDF</h1>
+			<p>Para acessar informações detalhadas sobre o PDF atualmente editado no <!--<a href="https://www.onlyoffice.com/pt/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)">--><b>Editor de PDF</b><!--</a>-->, clique na guia <b>Arquivo</b> da barra de ferramentas superior e selecione a opção <b>Informações do documento</b>.</p>
+			<h3>Informações gerais</h3>
+            <p>As informações do PDF incluem diversas propriedades do arquivo que descrevem o PDF. Algumas dessas propriedades são atualizadas automaticamente e algumas delas podem ser editadas.</p>
+            <ul>
+                <li class ="onlineDocumentFeatures"><b>Localização</b> - a pasta no módulo <b>Documentos</b> onde o arquivo está armazenado. <b>Proprietário</b> - o nome do usuário que criou o arquivo. <b>Enviado</b> - a data e hora em que o arquivo foi criado. Estas propriedades estão disponíveis apenas na <em>versão online</em>.</li>
+                <li><b>Estatísticas</b> - o número de páginas, parágrafos, palavras, caracteres, caracteres com espaços e tamanho da página.</li>
+                <li><b>Última modificação</b> - a data e hora em que o arquivo foi modificado pela última vez.</li>
+                <li><b>Aplicativo</b> e <b>PDF Producer</b> - o aplicativo com o qual o PDF foi criado.</li>
+                <li><b>Versão PDF</b> - versão do PDF.</li>
+                <li><b>PDF marcado</b> - mostra se o PDF possui recursos ocultos de marcação de acessibilidade.</li>
+                <li><b>Visualização rápida na Web</b> - mostra se o PDF está configurado para download de uma página por vez de servidores da web. Isso pode ajudar com arquivos grandes.</li>
+            </ul>
+            <p>Se você alterou as propriedades do arquivo, clique no botão <b>Aplicar</b> para aplicar as alterações.</p>
+            <div class="onlineDocumentFeatures">
+                <p class="note"><b>Nota</b>: Os editores online permitem alterar o nome do documento diretamente na interface do editor. Para fazer isso, clique na aba <b>Arquivo</b> da barra de ferramentas superior e selecione a opção <b>Renomear</b>, depois insira o <b>Nome do arquivo</b> necessário em uma nova janela que aparecerá e clique em <b>OK</b>.</p>
+            </div>  
+            <div class="onlineDocumentFeatures">
+                <h3>Informações de permissão</h3>
+                <p>Você pode visualizar informações sobre permissões para os arquivos armazenados na nuvem.</p>
+                <p class="note"><b>Observação</b>: esta opção não está disponível para usuários com permissões <b>Somente leitura</b>.</p>
+                <p>Para descobrir quem tem direitos para visualizar ou editar o PDF, selecione a opção <b>Direitos de acesso...</b> na barra lateral esquerda.</p>
+                <p>Você também pode alterar os direitos de acesso atualmente selecionados pressionando o botão <b>Alterar direitos de acesso</b> na seção <b>Pessoas que têm direitos</b>.</p>
+                <!--<h3>Histórico de versões</h3>
+    <p>Na <em>versão online</em>, você pode visualizar o histórico de versões dos arquivos armazenados na nuvem.</p>
+    <p class="note"><b>Observação</b>: esta opção não está disponível para usuários com permissões <b>Somente leitura</b>.</p>
+    <p>Para visualizar todas as alterações feitas neste documento, selecione a opção <b>Histórico de versões</b> na barra lateral esquerda. Também é possível abrir o histórico de versões usando o ícone <span class = "icon icon-versionhistoryicon"></span> <b>Histórico de versões</b> na guia <b>Colaboração</b> da parte superior barra de ferramentas. Você verá a lista das versões (grandes alterações) e revisões (pequenas alterações) deste documento com a indicação do autor de cada versão/revisão e a data e hora de criação. Para versões de documentos, o número da versão também é especificado (por exemplo, <em>ver. 2</em>). Para saber exatamente quais alterações foram feitas em cada versão/revisão separada, você pode visualizar aquela que precisa clicando na barra lateral esquerda. As alterações feitas pelo autor da versão/revisão são marcadas com a cor exibida ao lado do nome do autor na barra lateral esquerda. Você pode usar o link <b>Restaurar</b> abaixo da versão/revisão selecionada para restaurá-la.-->
+                <!--Para ocultar a lista de revisões dentro de uma determinada versão, use o ícone <div class = "icon icon-collapse"></div> próximo à versão. Para exibir as revisões novamente, use o <div class = "icon icon-expand"></div> icon.-->
+                <!--</p>
+    <p><img alt="Histórico de versões" src="../images/versionhistory.png" /></p>
+    <p>Para retornar à versão atual do documento, use a opção <b>Fechar histórico</b> no topo da lista de versões.</p>-->
+            </div>
+                <p>Para fechar o painel <b>Arquivo</b> e retornar à edição do PDF, selecione a opção <b>Fechar Menu</b>.</p>
+            </div>
+	</body>
+</html>

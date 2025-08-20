@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>F.TEST Function</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>F.TEST Function</h1>
+			<p>The <b>F.TEST</b> function is one of the <a href="../UsageInstructions/InsertFunction.htm#statistical" onclick="onhyperlinkclick(this)">statistical functions</a>. It is used to return the result of an F-test, the two-tailed probability that the variances in <b><em>array1</em></b> and <b><em>array2</em></b> are not significantly different. Use this function to determine whether two samples have different variances.</p>
+			<h3>Syntax</h3> 
+			<p><b><em>F.TEST(array1, array2)</em></b></p> 
+			<p>The <b>F.TEST</b> function has the following arguments:</p> 
+			<table style="width: 40%">
+                <tr>
+                    <th style="background-color: #f4f4f4" width="150ch"><b>Argument</b></th>
+                    <th style="background-color: #f4f4f4"><b>Description</b></th>
+                </tr>
+                <tr>
+                    <td><b><em>array1</em></b></td>
+                    <td>The first range of values.</td>
+                </tr>
+				<tr>
+                    <td><b><em>array2</em></b></td>
+                    <td>The second range of values.</td>
+                </tr>
+            </table>
+            <h3>Notes</h3>
+			<p>Text, logical values and empty cells are ignored, cells that contain zero values are included. If the number of values in a data range is less than 2 or a variance of an array is 0, the function returns the #DIV/0!  error value.</p>
+ 			<p><a href="../UsageInstructions/InsertFunction.htm#applyfunction" onclick="onhyperlinkclick(this)">How to apply</a> the <b>F.TEST</b> function.</p>
+			
+			<h3>Examples</h3>
+            <p>The figure below displays the result returned by the <b>F.TEST</b> function.</p>
+			<p><img alt="F.TEST Function" src="../images/f-test.png" /></p>
+		</div>
+	</body>
+</html>

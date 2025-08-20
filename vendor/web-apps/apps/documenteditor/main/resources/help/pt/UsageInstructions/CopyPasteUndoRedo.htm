@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Copie/cole trechos de texto, desfaça/refaça suas ações</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Realize as operações básicas com o texto do documento: copiar, colar, desfazer, refazer" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Copie/cole trechos de texto, desfaça/refaça suas ações</h1>
+            <h3>Usar operações básicas da área de transferência</h3>
+            <p>Para recortar, copiar e colar trechos de texto e objetos inseridos (autoformas, imagens, gráficos) no <a href="https://www.onlyoffice.com/pt/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Documentos</b></a>, selecione as opções correspondentes no menu do botão direito ou clique nos ícones localizados em qualquer guia da barra de ferramentas superior:</p>
+			<ul>
+                <li><b>Cortar</b> – selecione um fragmento de texto ou um objeto e use a opção <b>Cortar</b> no menu do botão direito ou ícone <b>Cortar</b> <div class="icon icon-cut"></div> na barra de ferramentas superior para excluir o texto selecionado e enviá-lo para a memória da área de transferência do computador. <span class="onlineDocumentFeatures">O texto recortado pode ser posteriormente inserido em outro local no mesmo documento.</span></li>
+                <li><b>Copiar</b> – selecione um fragmento de texto ou um objeto e use a opção <b>Copiar</b> no menu do botão direito ou ícone <b>Copiar</b> <div class = "icon icon-copy"></div> na barra de ferramentas superior para copiar o texto selecionado para a memória da área de transferência do computador. <span class="onlineDocumentFeatures">O texto copiado pode ser posteriormente inserido em outro local no mesmo documento.</span></li>
+                <li><b>Colar</b> – encontre o local em seu documento onde você precisa colar o fragmento/objeto de texto copiado anteriormente e use a opção <b>Colar</b> no menu do botão direito ou ícone <b>Colar</b> <div class = "icon icon-paste"></div> na barra de ferramentas superior.
+                     O texto/objeto copiado será inserido na posição atual do cursor. <span class="onlineDocumentFeatures">Os dados podem ser previamente copiados do mesmo documento.</span>
+                </li>			
+			</ul>
+            <p><span class="onlineDocumentFeatures">Na <em>versão online</em> as combinações de teclas abaixo são usadas apenas para copiar ou colar dados de/para outro documento ou programa.</span> <span class="desktopDocumentFeatures">Na <em>versão para desktop</em> ambos os botões/opções de menu e combinações de teclas correspondentes podem ser usados para qualquer operação de copiar/colar:</span></p>
+            <ul>
+                <li><b>Ctrl+X</b> combinação de teclas para cortar;</li>
+                <li><b>Ctrl+C</b> combinação de teclas para copiar;</li>
+                <li><b>Ctrl+V</b> combinação de teclas para colar.</li>
+            </ul>
+            <p class="note"><b>Observação</b>: em vez de recortar e colar fragmentos de texto no mesmo documento, basta selecionar a passagem de texto necessária e arrastá-la e soltá-la na posição desejada.</p>
+             <h3>Use o recurso Colar especial</h3>
+            <p class="note"><b>Observação</b>: para edição colaborativa, o recurso <b>Colar especial</b> está disponível apenas no modo de coedição <b>Estrito</b>.</p>
+            <p>Assim que o texto copiado for colado, o botão <b>Colar especial</b> <span class="icon icon-pastespecialbutton"></span> botão aparece ao lado da passagem de texto inserida. Clique neste botão para selecionar a opção de colagem necessária ou use a tecla <em>Ctrl</em> em combinação com a tecla de letra fornecida entre colchetes ao lado da opção desejada.</p>
+             <p>Ao colar um parágrafo de texto ou algum texto em autoformas, as seguintes opções estão disponíveis:</p>
+            <ul>
+                <li><em>Manter formatação original (Ctrl+K)</em> - permite colar o texto copiado mantendo sua formatação original.</li>
+                 <li><em>Manter apenas texto (Ctrl+T)</em> - permite colar o texto sem sua formatação original.</li>
+            </ul>
+            <p>Se você copiar uma tabela e colá-la em uma tabela já existente, as seguintes opções estarão disponíveis:</p>
+            <ul>
+                <li><em>Sobrescrever células (Ctrl+O)</em> - permite substituir o conteúdo da tabela existente pelos dados copiados. Esta opção é selecionada por padrão.</li>
+                 <li><em>Aninhar tabela (Ctrl+N)</em> - permite colar a tabela copiada como uma tabela aninhada na célula selecionada da tabela existente.</li>
+                 <li><em>Manter somente texto (Ctrl+T)</em> - permite colar o conteúdo da tabela como valores de texto separados pelo caractere de tabulação.</li>
+            </ul>
+            <p>Para ativar/desativar a exibição automática do botão <b>Colar especial</b> após colar, vá para a guia <b>Arquivo</b> > <b>Configurações avançadas</b> e marque/desmarque a opção <b>Mostrar o botão Opções de colagem quando o conteúdo for colado</b> caixa de seleção.</p>
+             <h3>Desfazer/refazer suas ações</h3>
+             <p>Para executar operações de desfazer/refazer, clique nos ícones correspondentes no cabeçalho do editor ou use os seguintes atalhos de teclado:</p>
+            <ul>
+                <li><b>Desfazer</b> – use o ícone <b>Desfazer</b> <div class = "icon icon-undo"></div> no lado esquerdo do cabeçalho do editor ou a combinação de teclas <b>Ctrl+Z</b> para desfazer a última operação executada.</li>
+                <li><b>Refazer</b> – use o ícone <b>Refazer</b> <div class = "icon icon-redo"></div> à esquerda do cabeçalho do editor ou a combinação de teclas <b>Ctrl+Y</b> para refazer a última operação desfeita.</li>
+            </ul>
+            <p class="note">
+                Quando você coedita um documento no modo <b>Rápido</b>, a possibilidade de <b>Refazer</b> a última operação desfeita não está disponível.
+            </p>
+		</div>
+	</body>
+</html>

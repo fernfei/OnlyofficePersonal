@@ -1,0 +1,90 @@
+﻿	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Adicionando animações</title>
+		<meta charset="utf-8" />
+		<meta name="descrição" content="Descrever como adicionar e gerenciar efeitos de animação em um slide." />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<script type="text/javascript" src="../callback.js"></script>
+		<script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+        <div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+            <h1>Adicionando animações</h1>
+            <p><b>Animação</b> é um efeito visual que permite animar texto, objetos e gráficos para tornar sua apresentação mais dinâmica e enfatizar informações importantes. Você pode controlar o movimento, cor e tamanho do texto, objetos e gráficos.</p>
+             <h3 id="applyanimation">Aplicando um efeito de animação</h3>
+            <ol>
+                <li>mude para a guia <b>Animação</b> na barra de ferramentas superior,</li>
+                 <li>selecione um texto, um objeto ou elemento gráfico ao qual deseja aplicar o efeito de animação,</li>
+                 <li>selecione um efeito de <b>Animação</b> na galeria de animações,</li>
+                 <li>selecione a direção do movimento do efeito de animação clicando em <b>Parâmetros</b> ao lado da galeria de animações. Os parâmetros na lista dependem do efeito que você aplica.</li>
+            </ol>
+            <p>Você pode visualizar efeitos de animação no slide atual. Por padrão, os efeitos de animação serão reproduzidos automaticamente quando você os adicionar a um slide, mas você pode desativá-los. Clique no menu suspenso <b>Visualizar</b> na guia <b>Animação</b> e selecione um modo de visualização:</p>
+            <ul>
+                <li><b>Visualização</b> para mostrar uma visualização quando você clicar no botão <b>Visualizar</b>,</li>
+                 <li><b>Visualização automática</b> para mostrar uma visualização automaticamente quando você adiciona uma animação a um slide ou substitui uma existente.</li>
+            </ul>
+
+            <h3>Tipos de animações</h3>
+             <p>Todos os <b>efeitos de animação</b> estão listados na <b>galeria de animações</b>. Clique na seta suspensa para abri-lo. Cada <b>efeito de animação</b> é representado por um ícone em forma de estrela. As animações são agrupadas de acordo com o ponto em que ocorrem:</p>
+            <p><img alt="Galeria de animação" src="../images/animationgallery.png" /></p>
+            <p><b>Os efeitos de entrada</b> determinam como os objetos aparecem em um slide e são coloridos em verde na galeria.</p>
+             Os efeitos <p><b>Ênfase</b> alteram o tamanho ou a cor do objeto para dar ênfase a um objeto e chamar a atenção do público, e são coloridos em amarelo ou em duas cores na galeria.</p>
+            <p><b>Os efeitos de saída</b> determinam como os objetos desaparecem de um slide e são coloridos em vermelho na galeria.</p>
+             <p><b>Caminhos de movimento</b> determina o movimento de um objeto e o caminho que ele segue. Os ícones na galeria representam o caminho sugerido. A opção <b>Caminho personalizado</b> também está disponível. Para saber mais, leia o <a href="../UsageInstructions/MotionPath.htm" onclick="onhyperlinkclick(this)">seguinte artigo</a>.</p>
+            <p>Role a galeria de animações para ver todos os efeitos incluídos na galeria. Se você não vir a animação necessária na galeria, clique na opção <b>Mostrar mais efeitos</b> na parte inferior da galeria.</p>
+            <p><img alt="Mais efeitos" src="../images/moreeffects.png" /></p>
+            <p>Aqui você encontrará a lista completa dos efeitos de animação. Os efeitos também são agrupados pelo impacto visual que causam no público.</p>
+            <ul>
+                <li>Efeitos de <b>Entrada</b>, <b>Ênfase</b> e <b>Saída</b> são agrupados por <b>Básico</b>, <b>Sutil</b>, <b>Moderado </b> e <b>Emocionante</b>.</li>
+                 Os efeitos <li><b>Caminho do movimento</b> são agrupados por <b>Básico</b>, <b>Sutil</b> e <b>Moderado</b>.</li>
+            </ul>
+            <p><!-- A opção <b>Efeito de visualização</b> está ativa por padrão, desmarque-a se não quiser uma visualização.--></p>
+
+            <h3 id="multipleanimations">Aplicando várias animações</h3>
+             <p>Você pode adicionar mais de um efeito de animação ao mesmo objeto. Para adicionar mais uma animação,</p>
+            <ol>
+                <li>clique no botão <b>Adicionar animação</b> na guia <b>Animação</b>.</li>
+                 <li>A lista de efeitos de animação será aberta. Repita as etapas 3 e 4 acima para aplicar uma animação.</li>
+            </ol>
+            <p>Se você usar a <b>Galeria de animações</b>, e não o botão <b>Adicionar animação</b>, o primeiro efeito de animação substituirá um novo. Um pequeno quadrado ao lado do objeto mostra os números de sequência dos efeitos aplicados.</p>
+             <p>Assim que você adiciona vários efeitos a um objeto, o ícone de animação <b>Vários</b> aparece na galeria de animações.</p>
+            <p><img alt="Múltiplos Efeitos" src="../images/multipleeffect_icon.png" /></p>
+            <h3 id="animationsorder">Alterar a ordem dos efeitos de animação em um slide</h3>
+            <ol>
+                <li>Clique na marca quadrada da animação.</li>
+                 <li>Clique <img alt="Mover antes" src="../images/moveearlier.png" /> ou <img alt="mover mais tarde" src="../images/movelater.png" /> setas na guia <b>Animação</b> para alterar a ordem de exibição no slide.</li>
+            </ol>
+            <p><img alt="Ordem das animações" src="../images/multipleanimations_order.png" /></p>
+            <h3 id="timing">Definindo o tempo da animação</h3>
+             <p>Use as opções de tempo na guia <b>Animação</b> para definir o <b>início</b>, a <b>duração</b>, o <b>atraso</b>, a <b>repetição</b> e o <b>retrocesso</b> das animações em um slide.</p>
+             <h4>Opções de início de animação</h4>
+            <ul>
+                <li><b>Ao clicar</b> – a animação começa quando você clica no slide. Esta é a opção padrão.</li>
+                 <li><b>Com anterior</b> – a animação começa quando o efeito de animação anterior começa e os efeitos aparecem simultaneamente.</li>
+                 <li><b>Depois do anterior</b> – a animação começa logo após o efeito de animação anterior.</li>
+            </ul>
+            <p class="note"><b>Observação:</b> os efeitos de animação são numerados automaticamente em um slide. Todas as animações definidas como <b>Com anterior</b> e <b>Depois de anterior</b> recebem o número da animação à qual estão conectadas, pois aparecerão automaticamente.</p>
+            <p><img alt="Numeração de animações" src="../images/animationnumbering.png" /></p>
+            <h4>Opções de gatilho de animação</h4>
+             <p>Clique no botão <b>Ativar</b> e selecione uma das opções apropriadas:</p>
+            <ul>
+                <li><b>Sequência de cliques</b></b> – para iniciar a próxima animação na sequência sempre que você clicar em qualquer lugar do slide. Esta é a opção padrão.</li>
+                <li><b>Ao clicar de</b> - para iniciar a animação ao clicar no objeto selecionado na lista suspensa.</li>
+            </ul>
+            <p><img alt="Opções de gatilho" src="../images/triggeroptions.png" /></p>
+            <h4>Outras opções de tempo</h4>
+            <p><img alt="Opções de tempo" src="../images/timingoptions.png" /></p>
+            <p><b>Duração</b> – use esta opção para determinar quanto tempo você deseja que uma animação seja exibida. Selecione uma das opções disponíveis no menu ou digite o valor de tempo necessário.</p>
+            <p><img alt="Duração da Animação" src="../images/animationduration.png" /></p>
+            <p><b>Atraso</b> – use esta opção se quiser que a animação selecionada seja exibida dentro de um período de tempo especificado ou se precisar de uma pausa entre os efeitos. Use as setas para selecionar o valor de tempo necessário ou insira o valor necessário medido em segundos.</p>
+             <p><b>Repetir</b> – use esta opção se quiser exibir uma animação mais de uma vez. Clique na caixa <b>Repetir</b> e selecione uma das opções disponíveis ou insira seu valor.</p>
+            <p><img alt="Repetir Animação" src="../images/animationrepeat.png" /></p>
+            <p><b>Rebobinar</b> – marque esta caixa se quiser retornar o objeto ao seu estado original quando a animação terminar.</p>
+        </div>
+		</body>
+	</html>

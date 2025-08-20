@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>ChatGPT</title>
+    <meta charset="utf-8" />
+    <meta name="descrição" content="A descrição do plug-in ChatGPT para editores do ONLYOFFICE, que permite usar o chatbot OpenAI para executar tarefas que envolvem a compreensão ou geração de linguagem ou código natural" />
+    <link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+    <link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+    <script type="text/javascript" src="../callback.js"></script>
+    <script type="text/javascript" src="../search/js/page-search.js"></script>
+</head>
+<body>
+    <div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+        <h1>ChatGPT</h1>
+        <p>O plug-in <b>ChatGPT</b> permite que você use o chatbot OpenAI para executar tarefas que envolvam a compreensão ou geração de código ou linguagem natural.</p>
+
+        <h3>Instalação</h3>
+        <p>Para instalar o plugin <b>ChatGPT</b>,</p>
+        <ol>
+            <li>Vá para a guia <b>Plugins</b>.</li>
+             <li>Abra o <b>Gerenciador de plug-ins</b>.</li>
+            <li>
+               Encontre <div class="icon icon-chatgpt_icon"></div> <b>ChatGPT</b> no mercado e clique no botão <b>Instalar</b> abaixo.
+                 <p><img alt="Instalação do ChatGPT" src="../images/chatgpt_installation.png" /></p>
+            </li>
+            <li>Clique com o botão direito do mouse em qualquer lugar do documento e localize <div class="icon icon-chatgpt_icon"></div> <b>ChatGPT</b> no menu de contexto.</li>
+            <li>
+                Clique em <b>Configurações</b> para prosseguir com a configuração do plug-in.
+                 <p><img alt="Menu de contexto do ChatGPT" src="../images/chatgpt_contextmenu.png" /></p>
+            </li>
+        </ol>
+
+        <h3>Configuração</h3>
+        <ol>
+            <li>Crie sua <b>chave de API</b> na página <a href="https://platform.openai.com/account/api-keys">chave de API OpenAI</a>.</li>
+             <li>Copie a <b>chave de API</b> gerada no campo correspondente da janela <b>Configurações</b>.</li>
+        </ol>
+        <p><img alt="Chave da API ChatGPT" src="../../../../../../common/main/resources/help/en/images/chatgpt_apikey.png" /></p>
+
+        <h3>Como usar</h3>
+        <p class="note"><b>O ONLYOFFICE não assume nenhuma responsabilidade</b> por quaisquer conclusões do ChatGPT que possam conter erros ou omissões, bem como por qualquer assédio e conteúdo impróprio. As informações contidas nas conclusões do plug-in são geradas pelo ChatGPT e são fornecidas "como estão" sem filtragem adicional do ONLYOFFICE.</p>
+         <p>Depois de instalado, o <b>ChatGPT</b> será adicionado ao menu de contexto e todos os recursos do <b>ChatGPT</b> serão acessados com um clique com o botão direito do mouse. Selecione um pedaço de texto ou uma palavra para acessar o menu de contexto e escolher um dos recursos do <b>ChatGPT</b>: <b>Análise de Texto</b>, <b>Análise de Palavras</b>, <b>Tradução</b>, <b>Geração de imagens</b>, <b>Thesaurus</b>, <b>Chat</b> e <b>Solicitação personalizada</b>.</p>
+         <h4>Bate-papo</h4>
+        <p>A integração do <b>ChatGPT</b> no menu de contexto permite que você chame o <b>Chat</b> de qualquer lugar no documento. Use o chatbot para interagir e conversar, fazer perguntas e receber respostas às suas solicitações.</p>
+         <p>Navegue até a opção <b>Chat</b> no menu de contexto <b>ChatGPT</b> e inicie uma conversa na caixa de texto na parte inferior da janela <b>ChatGPT</b>.</p>
+        <p><img alt="ChatGPT Chat" src="../../../../../../common/main/resources/help/en/images/chatgpt_chat.png" /></p>
+
+        <h4>Solicitação personalizada</h4>
+         <p>O recurso <b>Solicitação personalizada</b> permite que você tokenize linguagem natural ou código. A ferramenta converte o texto de entrada em uma lista de tokens, processa a solicitação, converte os tokens gerados de volta ao texto e retorna a string no documento.</p>
+         <ol>
+             <li>Para fazer uma solicitação personalizada, vá para o menu de contexto <b>ChatGPT</b> e clique em <b>Solicitação personalizada</b>.</li>
+            <li>
+                Na caixa de texto <b>Abrir AI</b>, insira o texto que deseja tokenizar. A ferramenta mostra o número total de tokens no texto.
+                 <p><img alt="ChatGPT personalizado" src="../../../../../../common/main/resources/help/en/images/chatgpt_custom.png" /></p>
+            </li>
+            <li>
+                Clique em <b>Mostrar configurações avançadas</b> para definir as configurações da solicitação:
+                 <p><img alt="ChatGPT Modelo Personalizado" src="../../../../../../common/main/resources/help/en/images/chatgpt_custom_advanced.png" /></p>
+                <ul>
+                    <li><b>Modelo</b> - o modelo que irá gerar a conclusão. Alguns modelos são adequados para tarefas de linguagem natural, outros são especializados em código. Para saber mais sobre esses modelos, consulte o <a href="https://platform.openai.com/docs/models/overview">site oficial do ChatGPT</a>.</li>
+                     <li><b>Comprimento máximo</b> - o número máximo de tokens a serem gerados na conclusão.</li>
+                     <li><b>Temperatura</b> - este parâmetro controla a aleatoriedade, por exemplo, baixá-lo resulta em conclusões menos aleatórias. À medida que a temperatura se aproxima de zero, o nó se torna determinístico e repetitivo.</li>
+                     <li><b>Top P</b> - uma alternativa para amostragem com temperatura, chamada de amostragem de núcleo, onde o modelo considera os resultados dos tokens com massa de probabilidade top_p.</li>
+                     <li><b>Sequências de parada</b> - até quatro sequências em que a API parará de gerar mais tokens. O texto retornado não conterá a sequência de parada.</li>
+                </ul>
+            </li>
+            <li>Clique no botão <b>Enviar</b> para processar o texto ou clique no botão <b>Limpar</b> para excluir a solicitação e inserir uma nova.</li>
+        </ol>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Função PROJ.LOG</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+    <link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+    <script type="text/javascript" src="../callback.js"></script>
+    <script type="text/javascript" src="../search/js/page-search.js"></script>
+</head>
+<body>
+    <div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+        <h1>Função PROJ.LOG</h1>
+        <p>A função <b>PROJ.LOG</b> é uma das funções estatísticas. É usado para calcular uma curva exponencial que se ajusta aos dados e retorna uma matriz de valores que descreve a curva.</p>
+        <p>A sintaxe da função <b>PROJ.LOG</b> é:</p>
+        <p style="text-indent: 150px;"><b><em>PROJ.LOG(conhecido_y's, [conhecido_x's], [const], [estatística])</em></b></p>
+        <p>onde</p>
+        <p><b><em>conhecido_y's</em></b> é o conjunto de valores de y que você já conhece na equação <em>y = b*m^x</em>.</p>
+        <p><b><em>conhecido_x's</em></b> é o conjunto opcional de valores de x que você pode conhecer no equação <em>y = b*m^x</em>.</p>
+        <p><b><em>const</em></b> é um argumento opcional. É um valor VERDADEIRO ou FALSO onde VERDADEIRO ou a falta do argumento força <em>b</em> para ser calculado normalmente e conjuntos FALSO <em>b</em> a 1 na equação <em>y = b*m^x</em> e os valores de m correspondem a equação <em>y = m^x</em>.</p>
+        <p><b><em>estatística</em></b> é um argumento opcional. É um valor VERDADEIRO ou FALSO que define se as estatísticas de regressão adicionais devem ser retornadas.</p>
+
+        <p>Para aplicar a função <b>PROJ.LOG</b>,</p>
+        <ol>
+            <li>selecione a célula onde deseja exibir o resultado,</li>
+            <li>
+                clique no ícone <b>Inserir função</b> <div class = "icon icon-insertfunction"></div> situado na barra de ferramentas superior,
+                <br />ou clique com o botão direito em uma célula selecionada e selecione a opção <b>Inserir Função</b> no menu,
+                <br />ou clique no ícone <div class = "icon icon-function"></div> situado na barra de fórmulas,
+            </li>
+            <li>selecione o grupo de funções <b>Estatística</b> na lista,</li>
+            <li>clique na função <b>PROJ.LOG</b>,</li>
+            <li>digite os argumentos necessários,</li>
+            <li>pressione o botão <b>Entrar</b>.</li>
+        </ol>
+        <p>O resultado será exibido na célula selecionada.</p>
+        <p style="text-indent: 150px;"><img alt="Função PROJ.LOG" src="../images/logest.png" /></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Visualizador de documentos do ONLYOFFICE</title>
+		<meta charset="utf-8" />
+        <meta name="description" content="A descrição de Ferramentas de navegação do visualizador de documentos do ONLYOFFICE" />
+        <link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+        <div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+            <h1>Visualizador de documentos do ONLYOFFICE</h1>
+            <p>Você pode usar o <b>Visualizador de documentos do ONLYOFFICE</b> para abrir e navegar por arquivos PDF, XPS, DjVu.</p>
+             <p><b>Visualizador de documentos do ONLYOFFICE</b> permite:</p>
+            <ul>
+                <li>visualizar arquivos PDF, XPS, DjVu,</li>
+                 <li>adicione anotações usando a ferramenta de bate-papo,</li>
+                 <li>navegue pelos arquivos usando o painel de navegação de conteúdo e miniaturas de página,</li>
+                 <li>use ferramentas de seleção e mão,</li>
+                 <li>imprimir e baixar arquivos,</li>
+                 <li>use links internos e externos,</li>
+                <li>
+                    acesse as configurações avançadas do editor e visualize as seguintes informações do documento usando as guias <b>Arquivo</b> e <b>Ver</b>:
+                    <ul>
+                        <li class="onlineDocumentFeatures"><b>Localização</b> (disponível apenas na <em>versão online</em>) - a pasta no módulo <b>Documentos</b> onde o arquivo está armazenado. </li>
+                        <li class="onlineDocumentFeatures"><b>Proprietário</b> (disponível apenas na <em>versão online</em>) - o nome do usuário que criou o arquivo.</li>
+                        <li class="onlineDocumentFeatures"><b>Carregado</b> (disponível apenas na <em>versão online</em>) - a data e hora em que o arquivo foi carregado no portal.</li>
+                        <li><b>Estatísticas</b> - o número de páginas, parágrafos, palavras, símbolos, símbolos com espaços.</li>
+                         <li><b>Tamanho da página</b> - as dimensões das páginas no arquivo.</li>
+                         <li><b>Última modificação</b> - a data e a hora em que o documento foi modificado pela última vez.</li>
+                         <li><b>Criado</b> - a data e hora em que o documento foi criado.</li>
+                         <li><b>Aplicativo</b> - o aplicativo com o qual o documento foi criado.</li>
+                         <li><b>Autor</b> - a pessoa que criou o documento.</li>
+                         <li><b>PDF Producer</b> - o aplicativo usado para converter o documento em PDF.</li>
+                         <li><b>Versão do PDF</b> - a versão do arquivo PDF.</li>
+                         <li><b>PDF marcado</b> - mostra se o arquivo PDF contém marcas.</li>
+                         <li><b>Visualização rápida da Web</b> - mostra se a Visualização rápida da Web foi ativada para o documento.</li>
+                    </ul>
+                </li>
+                <li>usar plug-ins
+                    <ul>
+                        <li>Plugins disponíveis na versão desktop: <b>Tradutor</b>, <b>Enviar</b>, <b>Thesaurus</b>.</li>
+                         <li>Plugins disponíveis na versão online: <b>Exemplo de controles</b>, <b>Obter e colar html</b>, <b>Telegram</b>, <b>Typograf</b>, <b>Contar palavra</b>, <b>Fala</b>, <b>Dicionário de sinônimos</b>, <b>Tradutor</b>.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p><b>Visualizador de documentos do ONLYOFFICE</b> interface:</p>
+            <p><img alt="Visualizador de documentos do ONLYOFFICE" src="../images/pdfviewer.png" /></p>
+            <ol>
+                <li>
+                    A barra de ferramentas superior fornece acesso a um <a href="../ProgramInterface/FileTab.htm" onclick="onhyperlinkclick(this)">Arquivo</a>, <a href="../ProgramInterface/ViewTab.htm" onclick="onhyperlinkclick(this)">Visão</a> e <a href="../ProgramInterface/PluginsTab.htm" onclick="onhyperlinkclick(this)">Guias de plug-ins</a> e os seguintes ícones:
+                    <p><span class = "icon icon-print"></span> <b>Imprimir</b> permite imprimir o arquivo;</p>
+                    <p><span class = "icon icon-downloadicon"></span> <b>Baixar</b> permite baixar um arquivo para o seu computador;</p>
+                    <p><span class = "icon icon-access_rights"></span><b>Compartilhar</b> (disponível apenas na <em>versão online</em>) permite que você gerencie os usuários que têm acesso ao arquivo diretamente do documento: convide novos usuários dando-lhes permissão para editar, ler, comentar, preencher formulários ou revisar o documento ou negar a alguns usuários direitos de acesso ao arquivo.</p>
+                    <p><span class = "icon icon-gotodocuments"></span> <b>Localização do arquivo aberto</b> na <em>versão para desktop</em> permite abrir a pasta, onde o arquivo está armazenado, na janela <b>Explorador de arquivos</b> . Na <em>versão online</em>, permite abrir a pasta do módulo <b>Documentos</b> , onde o arquivo está armazenado, em uma nova aba do navegador;</p>
+                    <p><span class = "icon icon-favorites_icon"></span> <b>Marcar como favorito / Remover dos Favoritos</b> (disponível apenas na <em>versão online</em>) clique na estrela vazia para adicionar um arquivo aos favoritos para facilitar a localização ou clique na estrela preenchida para remova o arquivo dos favoritos. O arquivo adicionado é apenas um atalho para que o próprio arquivo permaneça armazenado em seu local original. Excluir um arquivo dos favoritos não remove o arquivo de seu local original;</p>
+                    <p><span class = "icon icon-usericon"></span> <b>Usuário</b> exibe o nome do usuário quando você passa o mouse sobre ele.</p>
+                    <p><span class="icon icon-search_icon_header"></span> <b>Pesquisar</b> - permite pesquisar no documento uma palavra ou símbolo específico, etc.</p>
+                </li>
+                <li>A <b>barra de status</b> localizada na parte inferior da janela <b>Visualizador de documentos do ONLYOFFICE</b> indica o número da página e exibe as notificações de status em segundo plano. Ele também contém as seguintes ferramentas:
+                    <p><span class = "icon icon-selectiontool"></span> A ferramenta <b>Seleção</b> permite selecionar texto em um arquivo.</p>
+                    <p><span class = "icon icon-handtool"></span> A ferramenta <b>Mão</b> permite arrastar e rolar a página.</p>
+                    <p><span class = "icon icon-fitpage"></span> <b>Ajustar à página</b> permite redimensionar a página para que a tela exiba a página inteira.</p>
+                    <p><span class = "icon icon-fitwidth"></span> <b>Ajustar à largura</b> permite redimensionar a página para que ela seja dimensionada para caber na largura da tela.</p>
+                    <p><img alt="Zoom" src="../images/zoomadjusting.png" /> <a href="../HelpfulHints/Navigation.htm#navigationtools" onclick="onhyperlinkclick(this)">A ferramenta de <b>ajuste de zoom</b></a> permite aumentar e diminuir o zoom da página.</p>
+                </li>
+                <li>
+                    A <b>barra lateral esquerda</b> contém os seguintes ícones:
+                    <ul>
+                        <li><div class = "icon icon-searchicon"></div> - permite usar o <a href="../HelpfulHints/Search.htm" onclick="onhyperlinkclick(this)">Ferramenta Pesquisar e substituir</a>,</li>
+                        <li class="onlineDocumentFeatures"><div class = "icon icon-chaticon"></div> - (disponível apenas na <em>versão online</em>) permite abrir o <a href="../HelpfulHints/CollaborativeEditing.htm" onclick="onhyperlinkclick(this)">Painel de bate-papo</a>,</li>
+                        <li>
+                            <div class = "icon icon-navigationicon"></div> - permite abrir o painel <b>Títulos</b> que exibe a lista de todos os cabeçalhos com níveis de aninhamento correspondentes. Clique no cabeçalho para pular diretamente para uma página específica.
+                            <p><img alt="Painel de Navegação" src="../images/navigationpanel_viewer.png" />
+                            <p>Clique no ícone <b>Configurações</b> à direita do painel <b>Títulos</b> e use uma das opções disponíveis no menu:</p>
+                            <ul>
+                                <li><b>Expandir tudo</b> - para expandir todos os níveis de títulos no painel <b>Títulos</b>.</li>
+                                <li><b>Recolher tudo</b> - para recolher todos os níveis de títulos, exceto <em>nível 1</em>, no painel <b>Títulos</b>.</li>
+                                <li><b>Expandir para o nível</b> - para expandir a estrutura do título para o nível selecionado. Por exemplo, se você selecionar <em>nível 3</em>, os níveis 1, 2 e 3 serão expandidos, enquanto o nível 4 e todos os níveis inferiores serão recolhidos.</li>
+                                <li><b>Tamanho da fonte</b> – para personalizar o tamanho da fonte do texto do painel <b>Cabeçalhos</b> escolhendo uma das predefinições disponíveis: <em>Pequeno</em>, <em>Médio</em> e <em>Grande</em>.</li>
+                                <li><b>Envolver títulos longos</b> – para quebrar o texto do cabeçalho longo.</li>
+                            </ul>
+                            <p>Para expandir ou recolher manualmente níveis de título separados, use as setas à esquerda dos títulos.</p>
+                             <p>Para fechar o painel <b>Cabeçalhos</b> , clique no <span class = "icon icon-navigationicon"></span> <b>Cabeçalhos</b> ícone na barra lateral esquerda mais uma vez.</p>
+                        </li>
+                        <li>
+                            <div class = "icon icon-pagethumbnails"></div> - permite exibir miniaturas de páginas para navegação rápida. Clique <div class = "icon icon-search_options"></div> no painel <b>Miniaturas de página</b> para acessar as <b>Configurações de miniaturas</b>:
+                            <p><img alt="Configurações de miniaturas de página" src="../images/pagethumbnails_settings.png" /></p>
+                            <ul>
+                                <li>Arraste o controle deslizante para definir o tamanho da miniatura,</li>
+                                 <li>A <b>Realçar parte visível da página</b> está ativa por padrão para indicar a área que está atualmente na tela. Clique para desativar.</li>
+                            </ul>
+                            <p>Para fechar o <b>Painel Miniaturas de página</b>, clique no ícone <span class = "icon icon-pagethumbnails"></span> <b>Miniaturas de página</b> na barra lateral esquerda mais uma vez.</p>
+                        </li>
+                        <li><div class = "icon icon-feedbackicon"></div> - permite entrar em contato com nossa equipe de suporte,</li>
+                        <li class="onlineDocumentFeatures"><div class = "icon icon-abouticon"></div> - (disponível apenas na <em>versão online</em>) permite visualizar as informações sobre o programa.</li>
+                    </ul>
+                </li>
+            </ol>
+        </div>
+	</body>
+</html>

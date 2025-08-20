@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Inserir equações</title>
+		<meta charset="utf-8" />
+		<meta name="descrição" content="Inserir equações e símbolos matemáticos." />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Inserir equações</h1>
+            <p>O <a href="https://www.onlyoffice.com/pt/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Planilhas</b></a> permite que você crie equações usando os modelos integrados, edite-as, insira caracteres especiais (incluindo operadores matemáticos, letras gregas, acentos, etc.).</p>
+             <h3>Adicionar uma nova equação</h3>
+             <p>Para inserir uma equação da galeria,</p>
+			<ol>
+                <li>mude para a guia <b>Inserir</b> da barra de ferramentas superior,</li>
+                <li>clique na seta ao lado do ícone <div class = "icon icon-insertequationicon"></div> <b>Equação</b> na barra de ferramentas superior,</li>
+                <li>na lista suspensa aberta, selecione a categoria de equação que você precisa. As seguintes categorias estão disponíveis atualmente: <em>Símbolos</em>, <em>Frações</em>, <em>Scripts</em>, <em>Radicais</em>, <em>Integrais</em >, <em>Grandes operadores</em>, <em>colchetes</em>, <em>funções</em>, <em>acentos</em>, <em>limites e logaritmos</em>, <em>Operadores</em>, <em>Matrizes</em>,</li>
+                 <li>clique em determinado símbolo/equação no conjunto de modelos correspondente.</li>
+			</ol>
+            <p>O símbolo/equação selecionado será adicionado à planilha.</p>
+             <div class = "big big-insertedequation"></div>
+             <p>O canto superior esquerdo da caixa de equação coincidirá com o canto superior esquerdo da célula atualmente selecionada, mas a caixa de equação pode ser livremente <b>movida, redimensionada ou girada</b> na planilha. Para fazer isso, clique na borda da caixa de equação (ela será exibida como uma linha sólida) e use <a href="ManipulateObjects.htm" onclick="onhyperlinkclick(this)">alças correspondentes</a>.</p>
+             <p>Cada modelo de equação representa um conjunto de slots. Um slot é uma posição de cada elemento que compõe a equação. Um slot vazio (também chamado de espaço reservado) tem um contorno pontilhado <span class="icon icon-equationplaceholder"></span>. Você precisa preencher todos os espaços reservados especificando os valores necessários.</p>
+             <h3>Inserir valores</h3>
+            <p>O <b>ponto de inserção</b> especifica onde o próximo caractere aparecerá. Para posicionar o ponto de inserção com precisão, clique em um espaço reservado e use as setas do teclado para mover o ponto de inserção um caractere para a esquerda/direita.</p>
+             <div class = "big big-newslot"></div>
+             <p>Depois que o ponto de inserção estiver posicionado, você poderá preencher o espaço reservado:
+            <ul>
+                <li>insira o valor numérico/literal desejado usando o teclado,</li>
+                 <li>insira um caractere especial usando a paleta <b>Símbolos</b> do menu <div class = "icon icon-insertequationicon"></div> <b>Equação</b> no menu <b>Inserir </b> da barra de ferramentas superior ou digitando-os no teclado (consulte <a href="../UsageInstructions/MathAutoCorrect.htm" onclick="onhyperlinkclick(this)"><b>Correção Automática de Matemática</b> </a> descrição da opção),</li>
+                 <li>adicione outro modelo de equação da paleta para criar uma equação aninhada complexa. O tamanho da equação principal será ajustado automaticamente para caber em seu conteúdo. O tamanho dos elementos da equação aninhada depende do tamanho do espaço reservado da equação primária, mas não pode ser menor que o tamanho do subscrito.</li>
+            </ul>
+            </p>
+            <p><span class="big big-nestedfraction"></span></p>
+            <p>Para adicionar alguns novos elementos de equação, você também pode usar as <b>opções do menu do botão direito</b>:</p>
+             <ul>
+                 <li>Para adicionar um novo argumento antes ou depois do existente entre <em>colchetes</em>, você pode clicar com o botão direito do mouse no argumento existente e selecionar <b>Inserir argumento antes/depois</b> opção no menu.</li>
+                 <li>Para adicionar uma nova equação em <em>Casos</em> com várias condições do grupo <em>Brackets</em>, você pode clicar com o botão direito do mouse em um espaço reservado vazio ou inserir uma equação dentro dele e selecionar <b>Inserir equação antes/depois</b> opção no menu.</li>
+                 <li>Para adicionar uma nova linha ou coluna em uma <em>Matriz</em>, você pode clicar com o botão direito do mouse em um espaço reservado dentro dela, selecionar a opção <b>Inserir</b> no menu e selecionar <b>Linha acima/abaixo</b> ou <b>Coluna esquerda/direita</b>.</li>
+            </ul>
+            <p class="note"><b>Nota</b>: atualmente, as equações não podem ser inseridas usando o formato linear, ou seja, <b>\sqrt(4&x^3)</b>.</p>
+             <p>Ao inserir os valores das expressões matemáticas, não é necessário usar a <b>Barra de espaço</b> porque os espaços entre os caracteres e os sinais das operações são definidos automaticamente.</p>
+             <p>Se a equação for muito longa e não couber em uma única linha dentro da caixa de equação, ocorrerá quebra automática de linha enquanto você digita. Você também pode inserir uma quebra de linha em uma posição específica clicando com o botão direito do mouse em um operador matemático e selecionando a opção <b>Inserir quebra manual</b> no menu. O operador selecionado iniciará uma nova linha. Para excluir a quebra de linha manual adicionada, clique com o botão direito do mouse no operador matemático que inicia uma nova linha e selecione a opção <b>Excluir quebra de linha manual</b>.</p>
+             <h3>Formatar equações</h3>
+             <p>Por padrão, a equação dentro da caixa de equação é centralizada horizontalmente e alinhada verticalmente ao topo da caixa de equação. Para alterar seu alinhamento horizontal/vertical, coloque o cursor dentro da caixa de equação (as bordas da caixa de equação serão exibidas como linhas tracejadas) e use o <a href="../UsageInstructions/AlignText.htm" onclick="onhyperlinkclick(este )"> ícones correspondentes</a> na barra de ferramentas superior.</p>
+             <p>Para aumentar ou diminuir o <b>tamanho da fonte</b> da equação, clique em qualquer lugar dentro da caixa da equação e use Incrementar tamanho da fonte <div class = "icon icon-larger"></div> e Diminuir tamanho da fonte <div class = "icon icon-smaller"></div> na guia <b>Início</b> da barra de ferramentas superior ou selecione o tamanho de fonte necessário na lista. Todos os elementos da equação mudarão correspondentemente.</p>
+            <p>As letras dentro da equação estão em itálico por padrão. Se necessário, você pode alterar o <b>estilo da fonte</b> (<em>negrito, itálico, tachado</em>) ou a <b>cor</b> de uma equação inteira ou parte dela. O estilo <em>sublinhado</em> pode ser aplicado apenas à equação inteira, não a caracteres individuais. Selecione a parte necessária da equação clicando e arrastando. A parte selecionada será destacada em azul. Em seguida, use os botões necessários na guia <b>Página inicial</b> da barra de ferramentas superior para formatar a seleção. Por exemplo, você pode remover o formato itálico para palavras comuns que não sejam variáveis ou constantes.</p>
+             <div class = "big big-formatastext"></div>
+             <p>Para modificar alguns elementos da equação, você também pode usar as <b>opções do menu do botão direito</b>:</p>
+            <ul><li>Para alterar o formato <em>Frações</em>, você pode clicar com o botão direito em uma fração e selecionar a opção <b>Alterar para fração distorcida/linear/empilhada</b> no menu (as opções disponíveis diferem dependendo o tipo de fração selecionado). <!--A opção <b>Remover/Adicionar barra de fração</b> também está disponível para frações empilhadas.--></li>
+                 <li>Para alterar a posição <em>Scripts</em> em relação ao texto, você pode clicar com o botão direito do mouse na equação que inclui scripts e selecionar a opção <b>Scripts antes/depois do texto</b> no menu. </li>
+                 <li>Para alterar o tamanho do argumento para <em>Scripts, Radicais, Integrais, Grandes Operadores, Limites e Logaritmos, Operadores</em>, bem como para sobre-chaves/sinalizadores e modelos com caracteres de agrupamento dos <em>Acentos</em> grupo, você pode clicar com o botão direito do mouse no argumento que deseja alterar e selecionar a opção <b>Aumentar/diminuir tamanho do argumento</b> no menu.</li>
+                 <li>Para especificar se um marcador de grau vazio deve ser exibido ou não para um <em>Radical</em>, você pode clicar com o botão direito do mouse no radical e selecionar a opção <b>Ocultar/Mostrar grau</b> em o menu.</li>
+                 <li>Para especificar se um espaço reservado de limite vazio deve ser exibido ou não para um operador <em>Integral</em> ou <em>Grande</em>, você pode clicar com o botão direito do mouse na equação e selecionar <b> Opção Ocultar/Mostrar limite superior/inferior</b> no menu.</li>
+                 <li>Para alterar a posição dos limites relacionados ao sinal de operador ou integral para <em>Integrais</em> ou <em>Grandes operadores</em>, você pode clicar com o botão direito do mouse na equação e selecionar <b>Alterar limita a localização</b> opção no menu. Os limites podem ser exibidos à direita do sinal do operador (como subscritos e sobrescritos) ou diretamente acima e abaixo do sinal do operador.</li>
+                 <li>Para alterar a posição dos limites em relação ao texto para <em>Limites e logaritmos</em> e modelos com caracteres de agrupamento do grupo <em>Acentos</em>, você pode clicar com o botão direito do mouse na equação e selecionar o Opção <b>Limitar sobre/abaixo do texto</b> no menu.</li>
+                 <li>Para escolher qual dos <em>colchetes</em> deve ser exibido, você pode clicar com o botão direito do mouse na expressão dentro deles e selecionar a opção <b>Ocultar/mostrar colchetes de abertura/fechamento</b> no menu menu.</li>
+                 <li>Para controlar o tamanho dos <em>colchetes</em>, você pode clicar com o botão direito do mouse na expressão dentro deles. A opção <b>Esticar colchetes</b> é selecionada por padrão para que os colchetes possam crescer de acordo com a expressão dentro deles, mas você pode desmarcar esta opção para evitar que os colchetes se esticem. Quando esta opção está ativada, você também pode usar a opção <b>Coincidir colchetes com a altura do argumento</b>.</li>
+                 <li>Para alterar a posição do caractere em relação ao texto para colchetes/sinalizadores ou colchetes/barras inferiores do grupo <em>Acentos</em>, você pode clicar com o botão direito do mouse no modelo e selecionar <b>Char/Bar over/ na opção de texto</b> no menu.</li>
+                 <li>Para escolher quais bordas devem ser exibidas para uma <em>Fórmula em caixa</em> do grupo <em>Acentos</em>, você pode clicar com o botão direito do mouse na equação e selecionar as <b>Propriedades da borda</b> no menu e selecione <b>Ocultar/mostrar borda superior/inferior/esquerda/direita</b> ou <b>Adicionar/ocultar linha horizontal/vertical/diagonal</b>.</li>
+                 <li>Para especificar se espaços reservados vazios devem ser exibidos ou não para uma <em>Matriz</em>, você pode clicar com o botão direito do mouse e selecionar a opção <b>Ocultar/Mostrar espaço reservado</b> no menu.</li>
+            </ul>
+            <p>Para alinhar alguns elementos da equação, você pode usar as <b>opções do menu do botão direito</b>:</p>
+             <ul>
+                 <li>Para alinhar equações dentro de <em>Casos</em> com várias condições do grupo <em>Bráquetes</em>, você pode clicar com o botão direito em uma equação, selecionar a opção <b>Alinhamento</b> no menu e selecione o tipo de alinhamento: <b>Superior</b>, <b>Centro</b> ou <b>Inferior</b>.</li>
+                 <li>Para alinhar uma <em>Matriz</em> verticalmente, você pode clicar com o botão direito do mouse na matriz, selecionar a opção <b>Alinhamento da Matriz</b> no menu e selecionar o tipo de alinhamento: <b> Superior</b>, <b>Centro</b> ou <b>Inferior</b>.</li>
+                 <li>Para alinhar elementos em uma coluna <em>Matriz</em> horizontalmente, você pode clicar com o botão direito do mouse em um marcador de posição dentro da coluna, selecionar a opção <b>Alinhamento de coluna</b> no menu e, em seguida, selecionar a opção tipo de alinhamento: <b>Esquerda</b>, <b>Centro</b> ou <b>Direita</b>.</li>
+            </ul>
+            <h3>Excluir elementos da equação</h3>
+             <p>Para excluir uma parte da equação, selecione a parte que deseja excluir arrastando o mouse ou mantendo pressionada a tecla <b>Shift</b> e usando os botões de seta e, em seguida, pressione o botão <b>Excluir</b> tecla no teclado.</p>
+             <p>Um slot só pode ser excluído junto com o modelo ao qual pertence.</p>
+             <p>Para excluir a equação inteira, clique na borda da caixa de equação (ela será exibida como uma linha sólida) e pressione a tecla <b>Delete</b> no teclado.</p>
+             <div class = "big big-deleteequation"></div>
+             <p>Para excluir alguns elementos da equação, você também pode usar as <b>opções do menu do botão direito</b>:</p>
+            <ul>
+                <li>Para excluir um <em>Radical</em>, você pode clicar com o botão direito sobre ele e selecionar a opção <b>Excluir radical</b> no menu.</li>
+                 <li>Para excluir um <em>Subscrito</em> e/ou <em>Sobrescrito</em>, você pode clicar com o botão direito do mouse na expressão que os contém e selecionar <b>Remover subscrito/sobrescrito</b > opção do menu. Se a expressão contiver scripts antes do texto, a opção <b>Remover scripts</b> estará disponível.</li>
+                 <li>Para excluir <em>colchetes</em>, você pode clicar com o botão direito do mouse na expressão dentro deles e selecionar <b>Excluir caracteres delimitadores</b> ou <b>Excluir caracteres delimitadores e separadores</b> opção no menu.</li>
+                 <li>Se a expressão entre <em>colchetes</em> incluir mais de um argumento, você pode clicar com o botão direito do mouse no argumento que deseja excluir e selecionar a opção <b>Excluir argumento</b> no menu. </li>
+                 <li>Se <em>colchetes</em> incluir mais de uma equação (ou seja, <em>Casos</em> com várias condições), você pode clicar com o botão direito do mouse na equação que deseja excluir e selecionar <b> Opção Excluir equação</b> do menu.</li>
+                 <li>Para excluir um <em>Limite</em>, você pode clicar com o botão direito nele e selecionar a opção <b>Remover limite</b> no menu.</li>
+                 <li>Para excluir um <em>Acento</em>, você pode clicar com o botão direito nele e selecionar <b>Remover caractere de acento</b>, <b>Excluir caractere</b> ou <b>Remover barra</b> opção do menu (as opções disponíveis diferem dependendo do sotaque selecionado).</li>
+                 <li>Para excluir uma linha ou coluna de uma <em>Matriz</em>, clique com o botão direito do mouse no espaço reservado na linha/coluna que deseja excluir, selecione a opção <b>Excluir</b> no menu e selecione <b>Excluir linha/coluna</b>.</li>
+            </ul>
+            <h3 id="convertequation">Converter equações</h3>
+             <p>Se você abrir um documento existente contendo equações que foram criadas com uma versão antiga do editor de equações (por exemplo, com versões do MS Office anteriores a 2007), você precisa converter essas equações para o formato Office Math ML para poder editar eles.</p>
+             <p>Para converter uma equação, clique duas vezes nela. A janela de aviso aparecerá:</p>
+             <p><img alt="Converter equação" src="../images/convertequation.png" /></p>
+             <p>Para converter apenas a equação selecionada, clique no botão <b>Sim</b> na janela de aviso. Para converter todas as equações neste documento, marque a caixa <b>Aplicar a todas as equações</b> e clique em <b>Sim</b>.</p>
+             <p>Uma vez que a equação é convertida, você pode editá-la.</p>
+		</div>
+	</body>
+</html>

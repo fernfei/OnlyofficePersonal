@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Preencha objetos e selecione cores</title>
+		<meta charset="utf-8" />
+		<meta name="descrição" content="Preencha os objetos adicionados com cor, imagem ou textura, selecione cores para o plano de fundo do slide, preenchimento e traçado de forma automática, fonte." />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Preencha objetos e selecione cores</h1>
+			<p>No <a target="_blank" href="https://www.onlyoffice.com/pt/presentation-editor.aspx" onclick="onhyperlinkclick(this)"><b>Editor de Apresentações</b></a>, você pode aplicar preenchimentos diferentes para o slide, forma automática e plano de fundo da fonte Text Art.</p>
+			<ol>
+			<li>Selecione um objeto
+                <ul>
+                    <li>Para alterar o preenchimento do plano de fundo do slide, selecione os slides necessários na lista de slides. A guia <div class = "icon icon-slide_settings_icon"></div> <b>Configurações de slide</b> será ativada na barra lateral direita.</li>
+                     <li>Para alterar o preenchimento da autoforma, clique com o botão esquerdo na autoforma necessária. A guia <div class = "icon icon-shape_settings_icon"></div> <b>Configurações de forma</b> será ativada na barra lateral direita.</li>
+                     <li>Para alterar o preenchimento da fonte Text Art, clique com o botão esquerdo no objeto de texto necessário. A guia <div class = "icon icon-textart_settings_icon"></div> <b>Text Art</b> será ativada na barra lateral direita.</li>
+                </ul>
+			</li>
+			<li>Defina o tipo de preenchimento necessário</li>
+            /<li>Ajuste as propriedades de preenchimento selecionadas (veja a descrição detalhada abaixo para cada tipo de preenchimento)
+                <p class="note">Para as formas automáticas e a fonte Text Art, independentemente do tipo de preenchimento selecionado, você também pode definir um nível de <b>Opacidade</b> arrastando o controle deslizante ou inserindo o valor percentual manualmente. O valor padrão é <b>100%</b>. Corresponde à opacidade total. O valor <b>0%</b> corresponde à transparência total.</p>
+			</li>
+			</ol>			
+			<p><b>Os seguintes tipos de preenchimento estão disponíveis:</b></p>
+			<ul>
+				<li><b>Preenchimento de cor</b> - selecione esta opção para especificar a cor sólida para preencher o espaço interno da forma/slide selecionado.
+				<p><img alt="Preenchimento de cor" src="../images/fill_color.png" /></p>
+				<p>Clique na caixa colorida abaixo e selecione a cor necessária nos conjuntos de cores disponíveis ou especifique qualquer cor que desejar:</p>
+			        <p><img alt="Paletas" src="../images/palettes.png" /></p>
+			        <ul>
+			        <li><b>Cores do tema</b> - as cores que correspondem ao tema/esquema de cores selecionado da apresentação. Depois de aplicar um tema ou esquema de cores diferente, o conjunto de <b>Cores do tema</b> mudará.</li>
+                    <li><b>Cores padrão</b> - o conjunto de cores padrão.</li>
+                    <li><b>Cor personalizada</b> - clique nesta legenda se não houver cor necessária nas paletas disponíveis. Selecione o intervalo de cores necessário movendo o controle deslizante vertical de cores e defina a cor específica arrastando o seletor de cores no grande campo quadrado de cores. Depois de selecionar uma cor com o seletor de cores, os valores de cores RGB e sRGB apropriados serão exibidos nos campos à direita. Você também pode especificar uma cor com base no modelo de cores RGB inserindo os valores numéricos necessários em <b>R</b>, <b>G</b>, <b>B</b> (Vermelho, Verde, Azul) ou insira o código hexadecimal sRGB no campo marcado com o sinal <b>#</b>. A cor selecionada aparecerá na caixa de visualização <b>Novo</b>. Se o objeto foi preenchido anteriormente com qualquer cor personalizada, essa cor é exibida na caixa <b>Atual</b> para que você possa comparar as cores originais e modificadas. Quando a cor for especificada, clique no botão <b>Adicionar</b>:
+			        <p><img alt="Paleta - Cor Personalizada" src="../../../../../../common/main/resources/help/en/images/palette_custom.png" /></p>
+			        <p>A cor personalizada será aplicada ao seu objeto e adicionada à paleta <b>Cor personalizada</b> do menu.</p>
+			        </li>
+			        </ul>
+			    <p class="note">Você pode usar os mesmos tipos de cores ao selecionar a <b>cor do traçado da forma automática</b>, ajustar a <b>cor da fonte</b> ou alterar o <b>fundo da tabela ou a cor da borda</b>.</p>
+				</li>
+			</ul>
+				<hr />
+			<ul>
+				<li>
+					<b>Preenchimento Gradiente</b> - selecione esta opção para preencher o slide/forma com duas cores que mudam suavemente de uma para outra. Clique no ícone <div class = "icon icon-shape_settings_icon"></div> <b>Configurações de forma</b> para abrir o menu <b>Preencher</b>:
+					<p><img class="floatleft" alt="Gradient Fill" src="../images/fill_gradient.png" /></p>
+					<ul style="margin-left: 280px;">
+						<li><b>Estilo</b> - escolha uma das opções disponíveis: <b>Linear</b> (as cores mudam em linha reta, ou seja, ao longo de um eixo horizontal/vertical ou diagonalmente em um ângulo de 45 graus) ou <b>Radial</b> (as cores mudam em um caminho circular do centro para as bordas).</li>
+                        <li><b>Direção</b> - a janela de visualização da direção exibe a cor de gradiente selecionada, clique na seta para escolher um modelo no menu. Se o gradiente <b>Linear</b> for selecionado, as seguintes direções estarão disponíveis: superior esquerda para inferior direita, superior para inferior, superior direita para inferior esquerda, direita para esquerda, inferior direita para superior esquerda, de baixo para cima, de baixo para a esquerda para cima para a direita, da esquerda para a direita. Se o gradiente <b>Radial</b> for selecionado, apenas um modelo estará disponível.</li>
+                        <li><b>Ângulo</b> - defina o valor numérico para um ângulo preciso de transição de cores.</li>
+                        <li><b>Pontos de gradiente</b> são pontos específicos de transição de cor.
+						<ol>
+							<li>Use o botão <b>Adicionar ponto de gradiente</b> ou uma barra deslizante para adicionar um ponto de gradiente e o botão <b>Remover ponto de gradiente</b> para excluir um. Você pode adicionar até 10 pontos de gradiente. Cada um dos seguintes pontos de gradiente adicionados não afeta a aparência do gradiente atual.</li>
+                            <li>Use a barra deslizante para alterar a localização do ponto de gradiente ou especifique a <b>Posição</b> em porcentagem para uma localização precisa.</li>
+                            <li>Para aplicar uma cor ao ponto de gradiente, clique no ponto desejado na barra deslizante e clique em <b>Cor</b> para escolher a cor desejada.</li>
+							</ol>
+						</li>
+					</ul>
+				</li>
+			</ul>
+				<hr />
+			<ul>
+				<li><b>Imagem ou textura</b> - selecione esta opção para usar uma imagem ou uma textura predefinida como fundo da forma/slide.
+				<p><img class="floatleft"alt="Preenchimento com Imagem ou Textura" src="../images/fill_picture.png" /></p>
+				    <ul style="margin-left: 280px;">
+						<li>
+							Se desejar usar uma imagem como plano de fundo para a forma/slide, clique no botão <b>Selecionar imagem</b> e adicione uma imagem <b>Do arquivo</b> selecionando-a na unidade de disco rígido do computador, <b>Do URL</b> inserindo o endereço URL apropriado na janela aberta, ou <b>Do armazenamento</b> selecionando a imagem desejada armazenada em seu portal.
+                    </li>
+                    <li>Se você deseja usar uma textura como plano de fundo para a forma/slide, abra o menu <b>Da textura</b> e selecione a predefinição de textura necessária.
+                    <p>Atualmente, as seguintes texturas estão disponíveis: Lona, Papelão, Tecido Escuro, Grão, Granito, Papel Cinza, Malha, Couro, Papel Marrom, Papiro, Madeira.</p>
+				    </li>
+				    </ul>
+			        <ul style="margin-left: 280px;">
+			        <li>Caso a <b>Imagem</b> selecionada tenha menos ou mais dimensões do que a autoforma ou slide, você pode escolher a configuração <b>Alongar</b> ou <b>Lado a lado</b> no menu suspenso lista abaixo.
+                    <p>A opção <b>Esticar</b> permite que você ajuste o tamanho da imagem para caber no tamanho do slide ou forma automática para que ela preencha o espaço completamente.</p>
+                    <p>A opção <b>Lado a lado</b> permite que você exiba apenas uma parte da imagem maior mantendo suas dimensões originais, ou repita a imagem menor mantendo suas dimensões originais sobre o slide ou superfície de forma automática para que ela possa preencher o espaço completamente.</p>
+                    <p class="note">Qualquer predefinição de <b>Textura</b> selecionada preenche o espaço completamente, mas você pode aplicar o efeito <b>Esticar</b> se necessário.</p>
+			        </li>
+			        </ul>
+				</li>
+			</ul>
+				<hr />
+			<ul>
+				<li><b>Padrão</b> - selecione esta opção para preencher o slide/forma com um design de duas cores composto por elementos repetidos regularmente.
+				<p><img class="floatleft"alt="Preenchimento padrão" src="../images/fill_pattern.png" /></p>
+				    <ul style="margin-left: 280px;">
+				        <li><b>Padrão</b> - selecione um dos designs predefinidos no menu.</li>
+                        <li><b>Cor do primeiro plano</b> - clique nesta caixa de cor para alterar a cor dos elementos do padrão.</li>
+                        <li><b>Cor de fundo</b> - clique nesta caixa de cor para alterar a cor do plano de fundo do padrão.</li>
+				    </ul>
+				</li>
+			</ul>
+				<hr />
+			<ul>
+				<li><b>Sem preenchimento</b> - selecione esta opção se não quiser usar nenhum preenchimento.</li>
+			</ul>
+		</div>
+	</body>
+</html>

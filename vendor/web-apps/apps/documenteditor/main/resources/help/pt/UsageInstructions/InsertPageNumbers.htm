@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Insertar números de página</title>
+		<meta charset="utf-8" />
+		<meta name="descrição" content="Insira números de página para navegar através de seu documento com mais facilidade" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Insertar números de página</h1>
+			<p>Para inserir números de página no <a href="https://www.onlyoffice.com/pt/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Documentos</b></a>,</p>
+			<ol>
+                <li>mude para a guia <b>Inserir</b> da barra de ferramentas superior,</li>
+                 <li>clique no ícone <b>Cabeçalho/Rodapé</b> <div class = "icon icon-headerfooter"></div> na barra de ferramentas superior,</li>
+                    <li>escolha o submenu <b>Inserir número de página</b>,</li>
+                    <li>selecione uma das seguintes opções:
+					<ul>
+						<li>Para adicionar um número de página a cada página do seu documento, selecione a posição do número da página na página.</li>
+                        <li>Para inserir um número de página na posição atual do cursor, selecione a opção <b>Para a posição atual</b>.
+                             <p class="nota">
+                                 <b>Nota</b>: para inserir um número de página atual na posição atual do cursor, você também pode usar a combinação de teclas <em>Ctrl+Shift+P</em>.
+                            </p>
+                        </li>
+					</ul>
+				</li>
+			</ol>
+			<p>OU</p>
+			<ol>
+				<li>mude para a guia <b>Inserir</b> da barra de ferramentas superior,</li>
+                <li>clique no ícone <b>Cabeçalho/Rodapé</b> <div class="icon icon-headerfooter"></div> na barra de ferramentas superior,</li>
+                <li>clique na opção <b>Inserir número da página</b> no menu e escolha a posição do número da página.</li>
+			</ol>
+            <p>Para inserir o número total de páginas em seu documento (por exemplo, se você deseja criar a entrada <em>Página X de Y</em>):</p>
+            <ol>
+                <li>coloque o cursor onde deseja inserir o número total de páginas,</li>
+                 <li>clique no ícone <b>Cabeçalho/Rodapé</b> <div class = "icon icon-headerfooter"></div> na barra de ferramentas superior,</li>
+                 <li>selecione a opção <b>Inserir número de páginas</b>.</li>
+            </ol>
+			<hr />
+			<p>Para editar as configurações de número de página,</p>
+			<ol>
+				<li>clique duas vezes no número da página adicionada,</li>
+                <li>mude os parâmetros atuais na barra lateral direita:
+                    <p><img alt="Barra lateral direita - Configurações de cabeçalho e rodapé" src="../images/right_headerfooter.png" /></p>
+				<ul>
+				<li>Defina a <b>Posição</b> dos números de página na página de acordo com a parte superior e inferior da página.</li>
+                <li>Marque a caixa <b>Primeira página diferente</b> para aplicar um número de página diferente logo na primeira página ou caso você não queira adicionar nenhum número a ela. </li>
+                <li>Use a caixa <b>Páginas pares e ímpares diferentes</b> para inserir números de página diferentes para páginas pares e ímpares. </li>
+                <li>A opção <b>Link para anterior</b> está disponível caso você tenha adicionado anteriormente <a href="../UsageInstructions/SectionBreaks.htm" onclick="onhyperlinkclick(this)">seções</a> em seu documento.
+                   Caso contrário, ficará acinzentado. Além disso, esta opção também não está disponível para a primeira seção (ou seja, quando um cabeçalho ou rodapé que pertence à primeira seção é selecionado).
+                     Por padrão, esta caixa está marcada, para que a numeração unificada seja aplicada a todas as seções. Se você selecionar uma área de cabeçalho ou rodapé, verá que a área está marcada com o rótulo <b>Igual ao anterior</b>.
+                     Desmarque a caixa <b>Link para anterior</b> para usar uma numeração de página diferente para cada seção do documento. O rótulo <b>Igual ao anterior</b> não será mais exibido.
+                    <p><img alt="Igual ao rótulo anterior" src="../images/sameasprevious_label.png" /></p></li>
+				<li>A seção <b>Numeração de página</b> permite ajustar as opções de numeração de página em diferentes <a href="../UsageInstructions/SectionBreaks.htm" onclick="onhyperlinkclick(this)">seções</a> do documento.
+					A opção <b>Continuar da seção anterior</b> é selecionada por padrão e permite manter a numeração de página contínua após uma quebra de seção.
+                    Se você deseja iniciar a numeração de páginas com um número específico na seção atual do documento, selecione o botão de opção <b>Iniciar em</b> e insira o valor inicial necessário no campo à direita.
+				</li>
+				</ul>
+				</li>
+			</ol>
+			<p>Para retornar à edição do documento, clique duas vezes na área de trabalho.</p>
+		</div>
+	</body>
+</html>

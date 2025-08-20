@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Revisão de documentos</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Tips on document review option" />
+    <link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+    <link type="text/css" rel="stylesheet" href="../../images/sprite.css" />
+    <script type="text/javascript" src="../callback.js"></script>
+    <script type="text/javascript" src="../search/js/page-search.js"></script>
+</head>
+<body>
+    <div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+        <h1>Revisão de documentos</h1>
+        <p>O <a href="https://www.onlyoffice.com/pt/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Documentos</b></a> permite que você mantenha uma abordagem constante de toda a equipe para o fluxo de trabalho: <a href="https://helpcenter.onlyoffice.com/userguides/groups-guides-documents-share-documents.aspx" onclick="onhyperlinkclick(this)">share</a> arquivos e pastas, <a href="../HelpfulHints/CollaborativeEditing.htm" onclick="onhyperlinkclick(this)">colabore</a> em documentos em tempo real, <a href="../HelpfulHints/Communicating.htm" onclick="onhyperlinkclick(this)">comunicar</a> diretamente no editor, <a href="../HelpfulHints/Commenting.htm" onclick="onhyperlinkclick(this)">comente</a> certas partes de seus documentos que requerem entrada adicional de terceiros, salve <a href="../HelpfulHints/VersionHistory.htm" onclick="onhyperlinkclick(this)">versões do documento</a> para uso futuro, <a href="../HelpfulHints/Comparison.htm" onclick="onhyperlinkclick(this)">comparar e mesclar</a> documentos para facilitar o processamento e a edição.</p>
+        <p>Quando alguém compartilha um arquivo com você usando as permissões de revisão, você precisa aplicar o documento <b>Recurso de revisão</b>.</p>
+        <p>No <a href="https://www.onlyoffice.com/pt/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Documentos</b></a>, como revisor, você pode usar a opção Revisar para revisar o documento, alterar as sentenças, frases e outros elementos da página, corrigir ortografia etc. sem realmente editá-lo. Todas as suas alterações serão registradas e mostradas para a pessoa que lhe enviou o documento.</p>
+        <p>Se você enviar o arquivo para revisão, será necessário exibir todas as alterações feitas nele, visualizar e aceitá-las ou rejeitá-las.</p>
+        <h3>Ative o recurso Rastrear alterações</h3>
+        <p>Para ver as alterações sugeridas por um revisor, ative a opção <b>Rastrear alterações</b> de uma das seguintes maneiras:</p>
+        <ul>
+            <li>Clique no <div class="icon icon-trackchangesstatusbar"></div> botão no canto inferior direito da barra de status ou</li>
+            <li>
+                mude para a guia <b>Colaboração</b> na barra de ferramentas superior e pressione o botão <div class="icon icon-trackchangestoptoolbar"></div> <b>Rastrear alterações</b>.
+                <p class="note">Não é necessário que o revisor habilite a opção <b>Rastrear alterações</b>. Ele é ativado por padrão e não pode ser desativado quando o documento é compartilhado com direitos de acesso somente para revisão.</p>
+            </li>
+            <li>
+                as seguintes opções estão disponíveis no menu pop-up aberto:
+                <ul>
+                    <li><b>Ligado pra mim</b> - o rastreamento de alterações está ativado apenas para o usuário atual. A opção permanece ativada para a sessão de edição atual, ou seja, será desativada quando você recarregar ou abrir o documento novamente. Não será afetado por outros usuários ativando ou desativando a opção geral de alterações de rastreamento.</li>
+                    <li><b>Desligado pra mim</b> - o rastreamento de alterações está desativado apenas para o usuário atual. A opção permanece desativada para a sessão de edição atual. Não será afetado por outros usuários ativando ou desativando a opção geral de alterações de rastreamento.</li>
+                    <li>
+                        <b>Ligado para mim e para todos</b> - o rastreamento de alterações está ativado e permanecerá quando você recarregar ou abrir o documento novamente (quando o documento for recarregado, todos os usuários terão o rastreamento ativado). Quando outro usuário desabilitar a opção de rastreamento geral de alterações no arquivo, ele será alterado para <b>Desligado pra mim e para todos</b> para todos os usuários.
+                        <p><img alt="alerta de modo de alterações de rastreamento" src="../images/track_changes_alert.png" /></p>
+                    </li>
+                    <li>
+                        <b>Desligado pra mim e para todos</b> - o rastreamento de alterações está desativado e permanecerá quando você recarregar ou abrir o documento novamente (quando o documento for recarregado, todos os usuários terão o rastreamento desativado). Quando outro usuário ativar a opção de alterações de rastreamento geral no arquivo, ele será alterado para <b>Ligado para mim e para todos</b> para todos os usuários. A mensagem de alerta correspondente será mostrada a todos os coautores.
+                        <p><img alt="rastrear alterações habilitadas" src="../images/track_changes_enabled.png" /></p>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <h3>Ver alterações</h3>
+        <p>As alterações feitas por um usuário são destacadas com uma cor específica no texto do documento. Quando você clica no texto alterado, um balão é aberto, exibindo o nome do usuário, a data e a hora em que a alteração foi feita e a descrição da alteração. O balão também contém ícones usados para aceitar ou rejeitar a alteração atual.</p>
+        <p><img alt="balão" src="../images/review_popup.png" /></p>
+        <p>Se você arrastar e soltar um trecho de texto em algum outro local do documento, o texto em uma nova posição será sublinhado com a linha dupla. O texto na posição original será cruzado. Isso contará como uma única alteração.</p>
+        <p>Clique no texto cruzado na posição original e use o <span class="icon icon-follow_move"></span> seta no balão de alteração para ir para o novo local do texto.</p>
+        <p>Clique no texto sublinhado duplo na nova posição e use o <span class="icon icon-follow_move"></span> seta no balão de alteração para ir para o local original do texto.</p>
+        <h3 id="displaymode">Escolha o modo de exibição das alterações</h3>
+        <p>Clique no <span class="icon icon-review_displaymode"></span> <b>Modo de exibição</b> botão na barra de ferramentas superior e selecione um dos modos disponíveis na lista:</p>
+        <ul>
+            <li><b>Marcação e balões</b> - esta opção é selecionada por padrão. Permite tanto a visualização das alterações sugeridas quanto a edição do documento. As alterações são destacadas no texto do documento e exibidas em balões.</li>
+            <li><b>Apenas marcação</b> - este modo permite visualizar as alterações sugeridas e editar o documento. As alterações são exibidas apenas no texto do documento, os balões ficam ocultos.</li>
+            <li><b>Final</b> - este modo é usado para exibir todas as alterações como se fossem aceitas. Esta opção não aceita todas as alterações, apenas permite que você veja como o documento ficará depois de aceitar todas as alterações. Nesse modo, você não pode editar o documento.</li>
+            <li><b>Original</b> - este modo é usado para exibir todas as alterações como se fossem rejeitadas. Na verdade, esta opção não rejeita todas as alterações, apenas permite que você visualize o documento sem alterações. Neste modo, você não pode editar o documento.</li>
+        </ul>
+        <h3 id="managechanges">Aceitar ou rejeitar alterações</h3>
+        <p>Use o botões <span class="icon icon-review_previous"></span> <b>Anterior</b> e <span class="icon icon-review_next"></span> <b>Avançar</b> na barra de ferramentas superior para navegar pelas alterações.</p>
+        <p>Para aceitar a alteração atualmente selecionada, você pode:</p>
+        <ul>
+            <li>clique no botão <div class="icon icon-review_accepttoptoolbar"></div> <b>Aceitar</b> na barra de ferramentas superior ou</li>
+            <li>clique na seta para baixo abaixo do botão <b>Aceitar</b> e selecione a opção <b>Aceitar alteração atual</b> (neste caso, a alteração será aceita e você prosseguirá para a próxima alteração ) ou</li>
+            <li>clique no botão <b>Aceitar</b> <div class="icon icon-review_accept"></div> do balão de alteração.</li>
+        </ul>
+        <p>Para aceitar rapidamente todas as alterações, clique na seta para baixo abaixo do botão <span class="icon icon-review_accepttoptoolbar"></span> <b>Aceitar</b> e selecione <b>Aceitar todas as alterações</b> opção.</p>
+        <p>Para rejeitar a alteração atual, você pode:</p>
+        <ul>
+            <li>clique no botão <div class="icon icon-review_rejecttoptoolbar"></div> <b>Rejeitar</b> na barra de ferramentas superior ou</li>
+            <li>clique na seta para baixo abaixo do botão <b>Rejeitar</b> e selecione a opção <b>Rejeitar alteração atual</b> (neste caso, a alteração será rejeitada e você passará para a próxima alteração disponível) ou</li>
+            <li>clique no botão <b>Rejeitar</b> <div class="icon icon-review_reject"></div> do balão de alteração.</li>
+        </ul>
+        <p>Para rejeitar rapidamente todas as alterações, clique na seta para baixo abaixo do botão <span class="icon icon-review_rejecttoptoolbar"></span> <b>Rejeitar</b> e selecione <b>Rejeitar todas as alterações</b> opção.</p>
+        <p>Se você precisar aceitar ou rejeitar uma alteração, clique com o botão direito nela e escolha <b>Aceitar alteração</b> ou <b>Rejeitar alteração</b> no menu de contexto.</p>
+        <p><img alt="Menu suspenso Aceitar/Rejeitar" src="../images/acceptreject_dropdown.png" /></p>
+        <p class="note">Se você revisar o documento, as opções <b>Aceitar</b> e <b>Rejeitar</b> não estarão disponíveis para você. Você pode excluir suas alterações usando o ícone <span class="icon icon-review_delete"></span> no balão de alteração.</p>
+    </div>
+</body>
+</html>

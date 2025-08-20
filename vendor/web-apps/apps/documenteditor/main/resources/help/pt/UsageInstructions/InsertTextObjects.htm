@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Inserir objetos de texto</title>
+		<meta charset="utf-8" />
+        <meta name="descrição" content="Insira objetos de texto, como caixas de texto e arte de texto, para tornar seu texto mais impressionante" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Inserir objetos de texto</h1>
+            <p>No <a href="https://www.onlyoffice.com/pt/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Documentos</b></a>, você pode tornar seu texto mais enfático e chamar a atenção para uma parte específica do documento, pode inserir uma caixa de texto (uma moldura retangular que permite inserir texto dentro dela) ou um objeto Text Art (uma caixa de texto com um estilo de fonte predefinido e cor que permite aplicar alguns efeitos ao texto).</p>
+			<h3>Adicionar um objeto de texto</h3>
+            <p>Você pode adicionar um objeto de texto em qualquer lugar da página. Fazer isso:</p>
+            <ol>
+                <li>mude para a guia <b>Inserir</b> da barra de ferramentas superior,</li>
+                 <li>selecione o tipo de objeto de texto necessário:
+                <ul>
+                    <li>
+                        para adicionar uma caixa de texto, clique no ícone <div class = "icon icon-inserttexticon"></div> <b>Caixa de texto</b> na barra de ferramentas superior e clique onde a caixa de texto deve ser adicionada, segure a tecla botão do mouse e arraste a borda da caixa de texto para especificar seu tamanho. Quando você soltar o botão do mouse, o ponto de inserção aparecerá na caixa de texto adicionada, permitindo que você insira seu texto.
+                         <p class="note"><b>Observação</b>: também é possível inserir uma caixa de texto clicando em ícone <span class = "icon icon-insertautoshape"></span> <b>Forma</b > na barra de ferramentas superior e selecionando a forma <span class = "icon icon-text_autoshape"></span> no grupo <b>Formas básicas</b>.</p>
+                    </li>
+                    <li>para adicionar um objeto Text Art, clique no ícone <div class = "icon icon-inserttextarticon"></div> <b>Text Art</b> na barra de ferramentas superior e clique no modelo de estilo desejado – o Text Art objeto será adicionado na posição atual do cursor. Selecione o texto padrão na caixa de texto com o mouse e substitua-o pelo seu próprio texto.</li>
+                </ul>
+                </li>
+                <li>clique fora do objeto de texto para aplicar as alterações e retornar ao documento.</li>
+            </ol>
+            <p>O texto dentro do objeto de texto faz parte do último (quando você move ou gira o objeto de texto, o texto se move ou gira com ele).</p>
+             <p>Como o objeto de texto inserido representa um quadro retangular com texto nele (objetos de Arte de Texto têm bordas de caixa de texto invisíveis por padrão) e esse quadro é uma forma automática comum, você pode alterar as propriedades de forma e texto.</p>
+             <p>Para excluir o objeto de texto adicionado, clique na borda da caixa de texto e pressione a tecla <b>Delete</b> no teclado. O texto dentro da caixa de texto também será excluído.</p>
+             <h3>Formatar uma caixa de texto</h3>
+            <p>Selecione a caixa de texto clicando em sua borda para poder alterar suas propriedades. Quando a caixa de texto é selecionada, suas bordas são exibidas como linhas sólidas (não tracejadas).</p>
+            <p><img alt="Caixa de texto selecionada" src="../images/textbox_boxselected.png" /></p>
+            <ul>
+                <li>para <a href="../UsageInstructions/InsertAutoshapes.htm#shape_resize" onclick="onhyperlinkclick(this)"> redimensionar, mover, girar</a> a caixa de texto, use as alças especiais nas bordas da forma.</li>
+                <li>para editar a caixa de texto <a href="../UsageInstructions/InsertAutoshapes.htm#shape_fill" onclick="onhyperlinkclick(this)">encher</a>, <a href="../UsageInstructions/InsertAutoshapes.htm#shape_stroke" onclick="onhyperlinkclick(this)">linha</a>, <a href="../UsageInstructions/InsertAutoshapes.htm#shape_wrapping" onclick="onhyperlinkclick(this)">estilo de embrulho</a> ou <b>substitua</b> a caixa retangular por uma forma diferente, clique em ícone <b>Configurações de forma</b> <div class = "icon icon-shape_settings_icon"></div> na barra lateral direita e use as opções correspondentes.</li>
+                <li>para <b>alinhar</b> a caixa de texto na página, <b>organizar</b> caixas de texto relacionadas a outros objetos, <b>girar ou inverter</b> uma caixa de texto, alterar um <b >estilo de embrulho</b> ou acesse as <b>configurações avançadas</b> da forma, clique com o botão direito do mouse na borda da caixa de texto e use o botão <a href="../UsageInstructions/InsertAutoshapes.htm#shape_rightclickmenu" onclick="onhyperlinkclick(this)">opções do menu contextual</a>. Para saber mais sobre como organizar e alinhar objetos, consulte <a href="../UsageInstructions/AlignArrangeObjects.htm" onclick="onhyperlinkclick(this)">esta página</a>.</li>
+            </ul>
+            <h3>Formate o texto dentro da caixa de texto</h3>
+             <p>Clique no texto dentro da caixa de texto para alterar suas propriedades. Quando o texto é selecionado, as bordas da caixa de texto são exibidas como linhas tracejadas.</p>
+            <p><img alt="Texto selecionado" src="../images/textbox_textselected.png" /></p>
+            <p class="note"><b>Nota</b>: também é possível alterar a formatação do texto quando a caixa de texto (não o texto em si) é selecionada. Nesse caso, quaisquer alterações serão aplicadas a todo o texto dentro da caixa de texto. Algumas opções de formatação de fonte (tipo de fonte, tamanho, cor e estilos de decoração) podem ser aplicadas separadamente ao fragmento de texto selecionado anteriormente.</p>
+             <p>Para <b>girar</b> o texto dentro da caixa de texto, clique com o botão direito do mouse no texto, selecione a opção <b>Direção do texto</b> e escolha uma das opções disponíveis: <b>Horizontal</b> (é selecionado por padrão), <b>Girar texto para baixo</b> (define uma direção vertical, de cima para baixo) ou <b>Girar texto para cima</b> (define uma direção vertical, de de baixo para cima).</p>
+             <p>Para <b>alinhar o texto verticalmente</b> dentro da caixa de texto, clique com o botão direito do mouse no texto, selecione a opção <b>Alinhamento vertical</b> e escolha uma das opções disponíveis: <b>Alinhar superior</b>, <b>Alinhar centro</b> ou <b>Alinhar inferior</b>.</p>
+             <p>Outras opções de formatação que você pode aplicar são as mesmas do texto normal. Consulte as seções de ajuda correspondentes para saber mais sobre a operação necessária. Você pode:</p>
+            <ul>
+                <li><a href="../UsageInstructions/AlignText.htm" onclick="onhyperlinkclick(this)">alinhe o texto horizontalmente</a> dentro da caixa de texto</li>
+                <li>ajusta a <a href="../UsageInstructions/FontTypeSizeColor.htm" onclick="onhyperlinkclick(this)">tipo de fonte, tamanho, cor</a>, aplicar <a href="../UsageInstructions/DecorationStyles.htm" onclick="onhyperlinkclick(this)">estilos de decoração</a> e <a href="../UsageInstructions/FormattingPresets.htm" onclick="onhyperlinkclick(this)">predefinições de formatação</a></li>
+                 <li>definir <a href="../UsageInstructions/LineSpacing.htm" onclick="onhyperlinkclick(this)">espaçamento entre linhas</a>, altere <a href="../UsageInstructions/ParagraphIndents.htm" onclick="onhyperlinkclick(this)">recuos de parágrafo</a>, ajuste <a href="../UsageInstructions/SetTabStops.htm" onclick="onhyperlinkclick(this)">paradas de tabulação</a> para o texto de várias linhas dentro da caixa de texto</li>
+                 <li>inserir o <a href="../UsageInstructions/AddHyperlinks.htm" onclick="onhyperlinkclick(this)">hyperlink</a></li>
+            </ul>
+            <p>Você também pode clicar no ícone <b>Text Art</b> <span class = "icon icon-textart_settings_icon"></span> na barra lateral direita e alterar alguns parâmetros de estilo.</p>
+             <h3>Editar um estilo de arte de texto</h3>
+            <p>Selecione um objeto de texto e clique em <b>Configurações de arte de texto</b> <span class = "icon icon-textart_settings_icon"></span> ícone na barra lateral direita.</p>
+            <p><img alt="Guia de configuração de arte de texto" src="../images/right_textart.png" /></p>
+            <p>Altere o estilo de texto aplicado selecionando um novo <b>Modelo</b> na galeria. Você também pode alterar o estilo básico selecionando um tipo de fonte diferente, tamanho, etc.</p>
+             <p>Mude a fonte <b>Preenchimento</b>. Você pode escolher as seguintes opções:</p>
+            <ul>
+                <li>
+                    <b>Preenchimento de cor</b> - selecione esta opção para especificar a cor sólida para preencher o espaço interno das letras.
+                    <p><img alt="Preenchimento de cor" src="../images/fill_color.png" /></p>
+                    <p id="color">Clique na caixa colorida abaixo e selecione a cor necessária entre as disponíveis <a href="../UsageInstructions/ChangeColorScheme.htm" onclick="onhyperlinkclick(this)">conjuntos de cores</a> ou especifique qualquer cor que desejar:</p>
+                </li>
+                <li>
+                    <b>Preenchimento gradiente</b> - selecione esta opção para preencher as letras com duas cores que mudam suavemente de uma para outra.
+                    <p><img alt="Preenchimento Gradiente" src="../images/fill_gradient.png" /></p>
+                    <ul>
+                        <li><b>Estilo</b> - escolha uma das opções disponíveis: <b>Linear</b> (as cores mudam em linha reta, ou seja, ao longo de um eixo horizontal/vertical ou diagonalmente em um ângulo de 45 graus) ou <b>Radial</b> (as cores mudam em um caminho circular do centro para as bordas).</li>
+                         <li><b>Direção</b> - escolha um modelo no menu. Se o gradiente <b>Linear</b> for selecionado, as seguintes direções estarão disponíveis: superior esquerda para inferior direita, superior para inferior, superior direita para inferior esquerda, direita para esquerda, inferior direita para superior esquerda, de baixo para cima, de baixo para a esquerda para cima para a direita, da esquerda para a direita. Se o gradiente <b>Radial</b> for selecionado, apenas um modelo estará disponível.</li>
+                         <li><b>Gradiente</b> - clique no controle deslizante esquerdo <div class = "icon icon-gradientslider"></div> sob a barra de gradiente para ativar a caixa de cores que corresponde à primeira cor. Clique na caixa de cores à direita para escolher a primeira cor da paleta. Arraste o controle deslizante para definir a parada do gradiente, ou seja, o ponto em que uma cor muda para outra. Use o controle deslizante direito sob a barra de gradiente para especificar a segunda cor e definir a parada do gradiente.</li>
+                    </ul>
+                    <p class="note"><b>Nota</b>: se uma dessas duas opções for selecionada, você também pode definir um nível de <b>Opacidade</b> arrastando o controle deslizante ou inserindo o valor percentual manualmente. O valor padrão é <b>100%</b>. Corresponde à opacidade total. O valor <b>0%</b> corresponde à transparência total.</p>
+                </li>
+                <li><b>Sem preenchimento</b> - selecione esta opção se não quiser usar nenhum preenchimento.</li>
+            </ul>
+            <p>Ajuste a largura, a cor e o tipo da <b>linha</b> da fonte.</p>
+            <ul>
+                <li>Para alterar a largura da linha, selecione uma das opções disponíveis na lista suspensa <b>Tamanho</b>. As opções disponíveis são: 0,5 pt, 1 pt, 1,5 pt, 2,25 pt, 3 pt, 4,5 pt, 6 pt. Como alternativa, selecione a opção <b>Sem linha</b> se não quiser usar nenhuma linha.</li>
+                 <li>Para alterar a <b>cor</b> da linha, clique na caixa colorida abaixo e <a href="../UsageInstructions/ChangeColorScheme.htm" onclick="onhyperlinkclick(this)">selecione a cor necessária</a>.</li>
+                <li>Para alterar o <b>tipo</b> da linha, selecione a opção necessária na lista suspensa correspondente (uma linha sólida é aplicada por padrão, você pode alterá-la para uma das linhas tracejadas disponíveis).</li>
+            </ul>
+            <p>Aplique um efeito de texto selecionando o tipo de transformação de texto necessário na galeria <b>Transformar</b>. Você pode ajustar o grau de distorção do texto arrastando a alça rosa em forma de diamante.</p>
+            <p><img alt="Transformação de arte de texto" src="../images/textart_transformation.png" /></p>
+		</div>
+	</body>
+</html>

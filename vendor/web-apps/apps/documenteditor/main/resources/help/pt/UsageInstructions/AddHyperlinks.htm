@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Adicionar hiperlinks</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Adicione hiperlinks a uma palavra ou fragmento de texto que leve a um site externo" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Adicionar hiperlinks</h1>
+			<p>Para adicionar um hiperlink no <a href="https://www.onlyoffice.com/pt/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Documentos</b></a>,</p>
+			<ol>
+				<li>coloque o cursor no texto que deseja exibir como hiperlink,</li>
+                 <li>mude para a guia <b>Inserir</b> ou <b>Referências</b> da barra de ferramentas superior,</li>
+                <li>clique no ícone de <div class = "icon icon-addhyperlink"></div> <b>Hiperlink</b> na barra de ferramentas superior,</li>
+				<li>depois disso, a janela <b>Configurações do hiperlink</b> aparecerá e você poderá especificar os parâmetros do hiperlink:
+					<ul>
+						<li>
+							Selecione um tipo de link que deseja inserir:
+                            <p>Use a opção <b>Link externo</b> e insira um URL no formato <em>http://www.exemplo.com</em> no campo <b>Vincular a</b> abaixo se precisar adicionar um hiperlink que leve a um site <b>externo</b>. Se você precisar adicionar um hiperlink a um arquivo <b>local</b>, insira a URL no <em>arquivo://path/Document.docx</em> (para Windows) ou <em>arquivo: ///path/Document.docx</em> (para MacOS e Linux) formato no campo <b>Vincular a</b>.</p>
+							<p class="note">O <em>arquivo://Caminho/Documento.docx</em> ou <em>arquivo://Caminho/Documento.docx</em> hiperlink pode ser aberto apenas na versão desktop do editor. No editor da web, você só pode adicionar o link sem poder abri-lo.</p>
+							<p><img alt="Janela de configurações de hiperlink" src="../../../../../../common/main/resources/help/en/images/hyperlinkwindow.png" /></p>
+							<p>Use a opção <b>Colocar no documento</b> e selecione uma das opções existentes <a href="../UsageInstructions/FormattingPresets.htm" onclick="onhyperlinkclick(this)">cabeçalhos</a> no texto do documento ou um dos adicionados anteriormente <a href="../UsageInstructions/InsertBookmarks.htm" onclick="onhyperlinkclick(this)">favoritos</a> se você precisar adicionar um hiperlink que leve a um determinado local no mesmo documento.</p>
+							<p><img alt="Janela de configurações de hiperlink" src="../images/hyperlinkwindow1.png" /></p>
+						</li>
+						<li><b>Exibir</b> - insira um texto que será clicável e levará ao endereço especificado no campo superior.</li>
+                        <li><b>Texto da dica de tela</b> - digite um texto que ficará visível em uma pequena janela pop-up com uma breve nota ou rótulo pertencente ao hiperlink a ser apontado.</li>
+					</ul>
+				</li>
+				<li>Clique no botão <b>OK</b>.</li>
+			</ol>
+            <p>Para adicionar um hiperlink, você também pode usar a combinação de teclas <b>Ctrl+K</b> ou clicar com o botão direito do mouse em uma posição onde um hiperlink será adicionado e selecionar a opção <b>Hiperlink</b> no menu do botão direito.</p>
+			<p class="note"><b>Nota</b>: também é possível selecionar um caractere, palavra, combinação de palavras, passagem de texto com o mouse ou <a href="../HelpfulHints/KeyboardShortcuts.htm#textselection" onclick="onhyperlinkclick(this)">usando o teclado</a> e
+            em seguida, abra a janela <b>Configurações de hiperlink</b> conforme descrito acima. Neste caso, o campo <b>Exibir</b> será preenchido com o fragmento de texto que você selecionou.</p>
+			<p>Ao passar o cursor sobre o hiperlink adicionado, a dica de tela aparecerá contendo o texto que você especificou.
+            Você pode seguir o link pressionando a tecla <b>CTRL</b> e clicando no link em seu documento.</p>
+            <p>Para editar ou excluir o hiperlink adicionado, clique nele com o botão direito do mouse, selecione a opção <b>Hiperlink</b> e a ação que deseja executar - <b>Editar hiperlink</b> ou <b>Remover hiperlink</b>.</p>
+		</div>
+	</body>
+</html>

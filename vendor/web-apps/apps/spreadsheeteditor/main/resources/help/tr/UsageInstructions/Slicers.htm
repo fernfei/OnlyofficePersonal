@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tablolar i&ccedil;in dilimleyiciler oluşturma</title>
+		<meta charset="utf-8" />
+        <meta name="description" content="Create slicers for formatted tables and pivot tables to quickly filter the data." />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Tablolar i&ccedil;in dilimleyiciler oluşturma</h1>
+            <h3>Yeni bir dilimleyici oluşturma</h3>
+			<p><a href="https://www.onlyoffice.com/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Elektronik Tablo D&uuml;zenleyicisinde</b></a> yeni bir <a href="FormattedTables.htm" onclick="onhyperlinkclick(this)">bi&ccedil;imlendirilmiş tablo</a> veya bir <a href="PivotTables.htm" onclick="onhyperlinkclick(this)">&ouml;zet tablo</a> oluşturduğunuzda, verileri hızla filtrelemek i&ccedil;in dilimleyiciler oluşturabilirsiniz. Bunu yapmak i&ccedil;in</p>
+			<ol>
+				<li>fare ile tablodaki en az bir h&uuml;creyi se&ccedil;in ve sağdaki <b>Tablo ayarları</b> <div class = "icon icon-table_settings_icon"></div> simgesine tıklayın.</li>
+				<li>Sağ ara&ccedil; &ccedil;ubuğunun <div class = "icon icon-insertslicer"></div> <b>Tablo ayarları</b> sekmesinde bulunan <b>Dilimleyici ekle</b> se&ccedil;eneğine tıklayın. Alternatif olarak, &uuml;st ara&ccedil; &ccedil;ubuğunun <b>Ekle</b> sekmesine ge&ccedil;ebilir ve <div class = "icon icon-slicer_icon"></div> <b>Dilimleyici</b> d&uuml;ğmesine tıklayabilirsiniz. <b>Dilimleyici Ekle</b> penceresi a&ccedil;ılacaktır:
+                <p><img alt="Dilimleyici Ekleme" src="../images/insertslicer_window.png" /></p>
+                </li>
+				<li><b>Dilimleyici Ekle</b> penceresinde gerekli s&uuml;tunları işaretleyin.</li>
+				<li><b>Tamam</b> d&uuml;ğmesine tıklayın.</li>
+			</ol>
+            <p>Se&ccedil;ilen s&uuml;tunların her biri i&ccedil;in bir dilimleyici eklenecektir. Birden &ccedil;ok dilimleyici eklerseniz, bunlar birbiriyle &ouml;rt&uuml;ş&uuml;r. Dilimleyici eklendikten sonra <a href="ManipulateObjects.htm" onclick="onhyperlinkclick(this)">boyutunu ve konumunu</a> ve ayarlarını değiştirebilirsiniz.</p>
+            <p><img alt="Dilimleyici" src="../images/slicer.png" /></p>
+            <p>Bir dilimleyici, tabloyu filtrelemek i&ccedil;in tıklayabileceğiniz d&uuml;ğmeler i&ccedil;erir. Boş h&uuml;crelere karşılık gelen d&uuml;ğmeler <em>(boşluk)</em> etiketi ile işaretlenir. Bir dilimleyici d&uuml;ğmesini tıkladığınızda, diğer d&uuml;ğmelerin se&ccedil;imi kaldırılır ve kaynak tablodaki ilgili s&uuml;tun yalnızca se&ccedil;ili &ouml;ğeyi g&ouml;sterecek şekilde filtrelenir:</p>
+            <p><img alt="Dilimleyici" src="../images/slicer_filter.png" /></p>
+            <p>Birden &ccedil;ok dilimleyici eklediyseniz, bir dilimleyicide yapılan değişiklikler başka bir dilimleyicideki &ouml;ğeleri etkileyebilir. Bir dilimleyiciye bir veya daha fazla filtre uygulandığında veri i&ccedil;ermeyen &ouml;ğeler farklı bir dilimleyicide (daha a&ccedil;ık renkli) g&ouml;r&uuml;nebilir:</p>
+            <p><img alt="Dilimleyici - veri içermeyen öğeler" src="../images/slicer_nodata.png" /></p>
+            <p>Dilimleyici ayarlarında veri i&ccedil;ermeyen &ouml;ğelerin g&ouml;r&uuml;nt&uuml;lenme şeklini ayarlayabilirsiniz.</p>
+            <p>Birden &ccedil;ok dilimleyici d&uuml;ğmesini se&ccedil;mek i&ccedil;in dilimleyicinin sağ &uuml;st k&ouml;şesindeki <span class = "icon icon-multiselect"></span> <b>&Ccedil;oklu Se&ccedil;im</b> simgesini veya <em>Alt+S</em> kısayolunu kullanın. Tek tek tıklayarak gerekli dilimleyici d&uuml;ğmelerini se&ccedil;in.</p>
+            <p>Dilimleyici filtresini temizlemek i&ccedil;in dilimleyicinin sağ &uuml;st k&ouml;şesindeki <span class="icon icon-slicer_clearfilter"></span> <b>Filtreyi Temizle</b> simgesini veya <em>Alt+C</em> kısayolunu kullanın.</p>
+            
+            <h3>Dilimleyicileri d&uuml;zenleme</h3>
+            <p>Bazı dilimleyici ayarları, dilimleyiciyi fare ile se&ccedil;erseni a&ccedil;ılacak olan sağ kenar &ccedil;ubuğunun <b>Dilimleyici ayarları</b> sekmesi kullanılarak değiştirilebilir.</p>
+            <p>Bu sekmeyi sağdaki <span class="icon icon-slicer_settings"></span> simgesine tıklayarak gizleyebilir veya g&ouml;r&uuml;nt&uuml;leyebilirsiniz.</p>
+            <p><img alt="Dilimleyici ayarları sekmesi" src="../images/right_slicer.png" /></p>
+            <h4>Dilimleyici boyutunu ve konumunu değiştirme</h4>
+            <p><b>Genişlik</b> ve <b>Y&uuml;kseklik</b> se&ccedil;enekleri, dilimleyicinin genişliği ve/veya y&uuml;ksekliğini değiştirmenizi sağlar. <b>Sabit oranlar</b> <span class="icon icon-constantproportions"></span> d&uuml;ğmesine tıklanırsa (bu durumda ş&ouml;yle <span class="icon icon-constantproportionsactivated"></span> g&ouml;r&uuml;n&uuml;r), genişlik ve y&uuml;kseklik birlikte değiştirilecek ve orijinal dilimleyici en boy oranı korunacaktır.</p>
+            <p><b>Konum</b> b&ouml;l&uuml;m&uuml;, <b>Yatay</b> ve/veya <b>Dikey</b> dilimleyici konumunu değiştirmenizi sağlar.</p>
+            <p><b>Yeniden boyutlandırmayı veya taşımayı devre dışı bırak</b> se&ccedil;eneği, dilimleyicinin taşınmasını veya yeniden boyutlandırılmasını &ouml;nlemenizi sağlar. Bu se&ccedil;enek işaretlendiğinde, <b>Genişlik</b>, <b>Y&uuml;kseklik</b>, <b>Konum</b> ve <b>D&uuml;ğmeler</b> se&ccedil;enekleri devre dışı bırakılır.</p>
+            <h4>Dilimleyici d&uuml;zenini ve stilini değiştirme</h4>
+            <p><b>D&uuml;ğmeler</b> b&ouml;l&uuml;m&uuml;, gerekli <b>S&uuml;tun</b> sayısını belirlemenizi ve d&uuml;ğmelerin <b>Genişlik</b> ve <b>Y&uuml;ksekliğini</b> ayarlamanızı sağlar. Varsayılan olarak, bir dilimleyici bir s&uuml;tun i&ccedil;erir. &Ouml;ğeleriniz kısa metin i&ccedil;eriyorsa, s&uuml;tun numarasını 2 veya daha fazla olarak değiştirebilirsiniz:</p>
+            <p><img alt="Dilimleyici - iki sütun" src="../images/slicer_columns.png" /></p>
+            <p>D&uuml;ğme genişliğini artırırsanız, dilimleyici genişliği buna uygun olarak değişir. D&uuml;ğme y&uuml;ksekliğini artırırsanız, kaydırma &ccedil;ubuğu dilimleyiciye eklenir:</p>
+            <p><img alt="Dilimleyici - kaydırma çubuğu" src="../images/slicer_scroll.png" /></p>
+            <p><b>Stil</b> b&ouml;l&uuml;m&uuml;, &ouml;nceden tanımlanmış dilimleyici stillerinden birini se&ccedil;menizi sağlar.</p>
+                        
+            <h4>Sıralama ve filtreleme parametrelerini uygulama</h4>
+            <ul>
+                <li><b>Artan (A&apos;dan Z&apos;ye),</b> verileri artan d&uuml;zende, yani A&apos;dan Z&apos;ye alfabetik olarak veya sayısal veriler i&ccedil;in en k&uuml;&ccedil;&uuml;kten en b&uuml;y&uuml;ğe doğru sıralamak i&ccedil;in kullanılır.</li>
+                <li><b>Azalan (Z&apos;den A&apos;ya),</b> verileri azalan d&uuml;zende, yani Z&apos;den A&apos;ya alfabetik olarak veya sayısal veriler i&ccedil;in en b&uuml;y&uuml;kten en k&uuml;&ccedil;&uuml;ğe doğru sıralamak i&ccedil;in kullanılır.</li>
+            </ul>
+            <p><b>Veri i&ccedil;ermeyen &ouml;ğeleri gizle</b> se&ccedil;eneği, dilimleyiciden veri i&ccedil;ermeyen &ouml;ğeleri gizlemenizi sağlar. Bu se&ccedil;enek işaretlendiğinde, <b>Veri i&ccedil;ermeyen &ouml;ğeleri g&ouml;rsel olarak belirt</b> ve <b>Son verisi olmayan &ouml;ğeleri g&ouml;ster</b> se&ccedil;enekleri devre dışı bırakılır.</p>
+            <p><b>Veri i&ccedil;ermeyen &ouml;ğeleri gizle</b> se&ccedil;eneği işaretlenmemişse, aşağıdaki se&ccedil;enekleri kullanabilirsiniz:</p>
+            <ul>
+                <li><b>Veri i&ccedil;ermeyen &ouml;ğeleri g&ouml;rsel olarak belirt</b> se&ccedil;eneği, veri i&ccedil;ermeyen &ouml;ğeleri farklı bi&ccedil;imlendirmeyle (daha a&ccedil;ık renkle) g&ouml;r&uuml;nt&uuml;lemenizi sağlar. Bu se&ccedil;eneğin işaretini kaldırırsanız, t&uuml;m &ouml;ğeler aynı bi&ccedil;imlendirmeyle g&ouml;r&uuml;nt&uuml;lenecektir.</li>
+                <li><b>Veri i&ccedil;ermeyen &ouml;ğeleri g&ouml;ster</b> se&ccedil;eneği, veri i&ccedil;ermeyen &ouml;ğeleri listenin sonunda g&ouml;r&uuml;nt&uuml;lemenizi sağlar. Bu se&ccedil;eneğin işaretini kaldırırsanız, t&uuml;m &ouml;ğeler kaynak tablodakiyle aynı sırada g&ouml;r&uuml;nt&uuml;lenecektir.</li>
+            </ul>
+                        
+            <h3>Gelişmiş dilimleyici ayarlarını yapma</h3>
+            <p>Gelişmiş dilimleyici &ouml;zelliklerini değiştirmek i&ccedil;in sağ kenar &ccedil;ubuğundaki <b>Gelişmiş ayarları g&ouml;ster</b> bağlantısını kullanın. &apos;Dilimleyici - Gelişmiş Ayarlar&apos; penceresi a&ccedil;ılacaktır:</p>
+            <p><img alt="Dilimleyici - Gelişmiş Ayarlar" src="../images/slicer_properties.png" /></p>
+            <p><b>Stil ve Boyut</b> sekmesi aşağıdaki parametreleri i&ccedil;erir:</p>
+            <ul>
+                <li><b>Başlık</b> se&ccedil;eneği, dilimleyici başlığını değiştirmenizi sağlar. Dilimleyici başlığını g&ouml;r&uuml;nt&uuml;lemek istemiyorsanız <b>Başlığı g&ouml;r&uuml;nt&uuml;le</b> se&ccedil;eneğinin işaretini kaldırın.</li>
+                <li><b>Stil</b> b&ouml;l&uuml;m&uuml;, &ouml;nceden tanımlanmış dilimleyici stillerinden birini se&ccedil;menizi sağlar.</li>
+                <li><b>Genişlik</b> ve <b>Y&uuml;kseklik</b> se&ccedil;enekleri, dilimleyicinin genişliği ve/veya y&uuml;ksekliğini değiştirmenizi sağlar. <b>Sabit oranlar</b> d&uuml;ğmesine tıklanırsa <div class = "icon icon-constantproportions"></div> (bu durumda ş&ouml;yle g&ouml;r&uuml;n&uuml;r), <div class = "icon icon-constantproportionsactivated"></div> orijinal dilimleyici en boy oranı korunarak genişlik ve y&uuml;kseklik birlikte değiştirilir.</li>
+                <li><b>D&uuml;ğmeler</b> b&ouml;l&uuml;m&uuml;, gerekli <b>S&uuml;tun</b> sayısını belirlemenizi ve d&uuml;ğmelerin <b>Y&uuml;ksekliğini</b> ayarlamanızı sağlar.</li>
+            </ul>
+            <p><img alt="Dilimleyici - Gelişmiş Ayarlar" src="../images/slicer_properties2.png" /></p>
+            <p><b>Sıralama ve Filtreleme</b> sekmesi aşağıdaki parametreleri i&ccedil;erir:</p>
+            <ul>
+                <li><b>Artan (A&apos;dan Z&apos;ye),</b> verileri artan d&uuml;zende, yani A&apos;dan Z&apos;ye alfabetik olarak veya sayısal veriler i&ccedil;in en k&uuml;&ccedil;&uuml;kten en b&uuml;y&uuml;ğe doğru sıralamak i&ccedil;in kullanılır.</li>
+                <li><b>Azalan (Z&apos;den A&apos;ya),</b> verileri azalan d&uuml;zende, yani Z&apos;den A&apos;ya alfabetik olarak veya sayısal veriler i&ccedil;in en b&uuml;y&uuml;kten en k&uuml;&ccedil;&uuml;ğe doğru sıralamak i&ccedil;in kullanılır.</li>
+            </ul>
+            <p><b>Veri i&ccedil;ermeyen &ouml;ğeleri gizle</b> se&ccedil;eneği, dilimleyiciden veri i&ccedil;ermeyen &ouml;ğeleri gizlemenizi sağlar. Bu se&ccedil;enek işaretlendiğinde, <b>Veri i&ccedil;ermeyen &ouml;ğeleri g&ouml;rsel olarak belirt</b> ve <b>Son verisi olmayan &ouml;ğeleri g&ouml;ster</b> se&ccedil;enekleri devre dışı bırakılır.</p>
+            <p><b>Veri i&ccedil;ermeyen &ouml;ğeleri gizle</b> se&ccedil;eneği işaretlenmemişse, aşağıdaki se&ccedil;enekleri kullanabilirsiniz:</p>
+            <ul>
+                <li><b>Veri i&ccedil;ermeyen &ouml;ğeleri g&ouml;rsel olarak belirt</b> se&ccedil;eneği, veri i&ccedil;ermeyen &ouml;ğeleri farklı bi&ccedil;imlendirmeyle (daha a&ccedil;ık renkle) g&ouml;r&uuml;nt&uuml;lemenizi sağlar.</li>
+                <li><b>Veri i&ccedil;ermeyen &ouml;ğeleri g&ouml;ster</b> se&ccedil;eneği, veri i&ccedil;ermeyen &ouml;ğeleri listenin sonunda g&ouml;r&uuml;nt&uuml;lemenizi sağlar.</li>
+            </ul>
+            <p><img alt="Dilimleyici - Gelişmiş Ayarlar" src="../images/slicer_properties3.png" /></p>
+            <p><b>Başvurular</b> sekmesi aşağıdaki parametreleri i&ccedil;erir:</p>
+            <ul>
+                <li><b>Kaynak adı</b> se&ccedil;eneği, kaynak veri k&uuml;mesindeki s&uuml;tun başlığına karşılık gelen alan adını g&ouml;r&uuml;nt&uuml;lemenizi sağlar.</li>
+                <li><b>Form&uuml;llerde kullanılacak ad</b> se&ccedil;eneği, <a href="UseNamedRanges.htm" onclick="onhyperlinkclick(this)"><b>Ad y&ouml;neticisinde</b></a> g&ouml;r&uuml;nt&uuml;lenen dilimleyici adını g&ouml;r&uuml;nt&uuml;lemenizi sağlar.</li>
+                <li><b>AD</b> se&ccedil;eneği, dilimleyiciyi daha anlamlı ve anlaşılır kılmak i&ccedil;in &ouml;zel bir ad belirlemenizi sağlar.</li>
+            </ul>
+            <p><img alt="Dilimleyici - Gelişmiş Ayarlar" src="../images/slicer_properties4.png" /></p>
+            <p><b>H&uuml;creye Uydurma</b> sekmesi aşağıdaki parametreleri i&ccedil;erir:</p>
+            <ul>
+                <li><b>H&uuml;crelerle taşıma ve boyutlandırma</b> - Bu se&ccedil;enek, dilimleyiciyi arkasındaki h&uuml;creye uydurmanıza olanak tanır. H&uuml;cre hareket ederse (&ouml;rneğin bazı satırları/s&uuml;tunları ekler veya silerseniz), dilimleyici h&uuml;cre ile birlikte taşınır. H&uuml;crenin genişliğini veya y&uuml;ksekliğini artırır veya azaltırsanız, dilimleyicinin boyutu da değişir.</li>
+                <li><b>Taşı ama h&uuml;crelerle boyutlandırma</b> - Bu se&ccedil;enek, dilimleyicinin yeniden boyutlandırılmasını &ouml;nleyerek g&ouml;r&uuml;nt&uuml; arkasındaki h&uuml;creye uydurmayı sağlar. H&uuml;cre hareket ederse dilimleyici h&uuml;cre ile birlikte taşınır, ancak h&uuml;cre boyutunu değiştirirseniz dilimleyici boyutları değişmeden kalır.</li>
+                <li><b>H&uuml;crelerle taşıma veya boyutlandırma</b> - Bu se&ccedil;enek, h&uuml;cre konumu veya boyutu değiştirilmişse dilimleyicinin taşınmasını veya yeniden boyutlandırılmasını &ouml;nlemeyi sağlar.</li>
+            </ul>
+            <p><img alt="Dilimleyici - Gelişmiş Ayarlar" src="../images/slicer_properties5.png" /></p>
+            <p><b>Alternatif Metin</b> sekmesi, dilimleyicinin hangi bilgileri i&ccedil;erdiğini daha iyi anlamalarına yardımcı olmak i&ccedil;in g&ouml;rme veya bilişsel bozuklukları olan kişilere okunacak bir <b>Başlık</b> ve <b>A&ccedil;ıklama</b> belirtmenizi sağlar.</p>
+            
+            <h3>Dilimleyiciyi silme</h3>
+            <p>Bir dilimleyiciyi silmek i&ccedil;in,</p>
+            <ol>
+                <li>Dilimleyiciyi tıklayarak se&ccedil;in.</li>
+                <li><b>Delete</b> tuşuna basın.</li>
+            </ol>
+		</div>
+	</body>
+</html>

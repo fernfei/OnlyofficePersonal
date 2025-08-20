@@ -1,0 +1,315 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Criar e editar tabelas dinâmicas</title>
+		<meta charset="utf-8" />
+        <meta name="descrição" content="Criar e editar tabelas dinâmicas. Aplicar filtros, alterar a aparência de tabelas dinâmicas em uma planilha." />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+    <div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Criar e editar tabelas dinâmicas</h1>
+            <p>As tabelas dinâmicas permitem agrupar e organizar dados de grandes conjuntos de dados para obter informações resumidas. No <a href="https://www.onlyoffice.com/pt/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Planilhas</b></a> você pode reorganizar os dados de várias maneiras diferentes para exibir apenas as informações necessárias e focar em aspectos importantes.</p>
+             <h3>Criar uma nova tabela dinâmica</h3>
+             <p>Para criar uma tabela dinâmica,</p>
+            <ol>
+                <li>Prepare o conjunto de dados de origem que deseja usar para criar uma tabela dinâmica. Deve incluir cabeçalhos de coluna. O conjunto de dados não deve conter linhas ou colunas vazias.</li>
+                <li>Selecione qualquer célula dentro do intervalo de dados de origem.</li>
+                <li>
+                     Alterne para a guia <b>Tabela dinâmica</b> da barra de ferramentas superior e clique no ícone <b>Inserir tabela</b> <div class = "icon icon-insert_pivot"></div>.
+                     <p>Se você deseja criar uma tabela dinâmica com base em uma <a href="FormattedTables.htm" onclick="onhyperlinkclick(this)">tabela formatada</a>, também pode usar a <span class= "icon icon-insertpivot"></span> Opção <b>Inserir tabela dinâmica</b> na guia <b>Configurações da tabela</b> da barra lateral direita.</p>
+                </li>
+                <li>
+                    The <b>A janela Criar Tabela Dinâmica</b> aparecerá.
+                     <p><img alt="Criar janela de tabela dinâmica" src="../images/create_pivot.png" /></p>
+                    <ul>
+                        <li>
+                            O <b>Intervalo de dados de origem</b> já está especificado. Nesse caso, todos os dados do intervalo de dados de origem serão usados. Se quiser alterar o intervalo de dados (por exemplo, para incluir apenas uma parte dos dados de origem), clique no ícone <div class = "icon icon-changerange"></div>. Na janela <b>Selecionar intervalo de dados</b>, insira o intervalo de dados necessário no seguinte formato: <em>Planilha1!$A$1:$E$10</em>. Você também pode selecionar o intervalo de células necessário na planilha usando o mouse. Quando estiver pronto, clique <b>OK</b>.
+                        </li>
+                        <li>
+                            Especifique onde deseja colocar a tabela dinâmica.
+                             <ul>
+                                 <li>A opção <b>Nova planilha</b> é selecionada por padrão. Ele permite que você coloque a tabela dinâmica em uma nova planilha.</li>
+                                <li>
+                                    Você também pode selecionar a opção <b>Planilha existente</b> e escolher uma determinada célula. Neste caso, a célula selecionada será a célula superior direita da tabela dinâmica criada. Para selecionar uma célula, clique no ícone <div class = "icon icon-changerange"></div>.
+                                     <p><img alt="Janela Selecionar Intervalo de Dados" src="../images/pivot_selectdata2.png" /></p>
+                                    <p>Na janela <b>Selecionar intervalo de dados</b>, insira o endereço da célula no seguinte formato: <em>Planilha1!$G$2</em>. Você também pode clicar na célula necessária na planilha. Quando estiver pronto, clique <b>OK</b>.</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Ao selecionar o local da tabela dinâmica, clique em <b>OK</b> na janela <b>Criar tabela</b>.</li>
+                    </ul>
+                </li>
+            </ol>
+            <p>Uma tabela dinâmica vazia será inserida no local selecionado.</p>
+             <p>A guia <b>Configurações da tabela dinâmica</b> na barra lateral direita será aberta. Você pode ocultar ou exibir esta guia clicando no ícone <span class="icon icon-pivot_settings"></span>.</p>
+             <p><img alt="Guia de configurações da tabela dinâmica" src="../images/right_pivot.png" /></p>
+
+            <h4>Selecione os campos a serem exibidos</h4>
+             <p>A seção <b>Selecionar campos</b> contém os campos nomeados de acordo com os cabeçalhos das colunas em seu conjunto de dados de origem. Cada campo contém valores da coluna correspondente da tabela de origem. As quatro seções a seguir estão disponíveis abaixo: <b>Filtros</b>, <b>Colunas</b>, <b>Linhas</b> e <b>Valores</b>.</p>
+             <p>Verifique os campos que deseja exibir na tabela dinâmica. Ao marcar um campo, ele será adicionado a uma das seções disponíveis na barra lateral direita dependendo do tipo de dados e será exibido na tabela dinâmica. Campos contendo valores de texto serão adicionados à seção <b>Linhas</b>; campos contendo valores numéricos serão adicionados à seção <b>Valores</b>.</p>
+             <p>Você pode simplesmente arrastar os campos para a seção necessária, bem como arrastar os campos entre as seções para reorganizar rapidamente sua tabela dinâmica. Para remover um campo da seção atual, arraste-o para fora desta seção.</p>
+             <p>Para adicionar um campo à seção necessária, também é possível clicar na seta preta à direita de um campo na seção <b>Selecionar campos</b> e escolher a opção necessária no menu: < b>Adicionar a filtros</b>, <b>Adicionar a linhas</b>, <b>Adicionar a colunas</b>, <b>Adicionar a valores</b>.</p>
+            <p><img alt="Guia de configurações da tabela dinâmica" src="../images/pivot_selectfields.png" /></p>
+            <p>Abaixo, você pode ver alguns exemplos de uso das seções <b>Filtros</b>, <b>Colunas</b>, <b>Linhas</b> e <b>Valores</b>.</p >
+             <ul>
+                 <li>
+                     Se você adicionar um campo à seção <b>Filtros</b>, um filtro separado será adicionado acima da tabela dinâmica. Ele será aplicado a toda a tabela dinâmica. Se você clicar na seta suspensa <div class = "icon icon-dropdownarrow"></div> no filtro adicionado, verá os valores do campo selecionado. Quando você desmarca alguns valores na janela de opções de filtro e clica em <b>OK</b>, os valores desmarcados não serão exibidos na tabela dinâmica.
+                     <p><img alt="Filtros Dinâmicos" src="../images/pivot_filter_field.png" /></p>
+                </li>
+                <li>
+                   Se você adicionar um campo à seção <b>Colunas</b>, a tabela dinâmica conterá um número de colunas igual ao número de valores do campo selecionado. A coluna <b>Total geral</b> também será adicionada.
+                     <p><img alt="Colunas Dinâmicas" src="../images/pivot_columns.png" /></p>
+                </li>
+                <li>
+                    Se você adicionar um campo à seção <b>Linhas</b>, a tabela dinâmica conterá um número de linhas igual ao número de valores do campo selecionado. A linha <b>Total geral</b> também será adicionada.
+                     <p><img alt="Linhas Dinâmicas" src="../images/pivot_rows.png" /></p>
+                </li>
+                <li>
+                    Se você adicionar um campo à seção <b>Valores</b>, a tabela dinâmica exibirá o valor da soma de todos os valores numéricos do campo selecionado. Se o campo contiver valores de texto, a contagem de valores será exibida. A função usada para calcular o valor da soma pode ser alterada nas configurações de campo.
+                     <p><img alt="Valores dinâmicos" src="../images/pivot_values.png" /></p>
+                </li>
+            </ul>
+
+            <h4>Reorganize os campos e ajuste suas propriedades</h4>
+             <p>Depois que os campos forem adicionados às seções necessárias, você poderá gerenciá-los para alterar o layout e o formato da tabela dinâmica. Clique na seta preta à direita de um campo nas seções <b>Filtros</b>, <b>Colunas</b>, <b>Linhas</b> ou <b>Valores</b> para acesse o menu de contexto do campo.</p>
+             <p><img alt="Menu da tabela dinâmica" src="../images/pivot_menu.png" /></p>
+             <p>Ele permite que você:</p>
+            <ul>
+                <li><b>Mova</b> o campo selecionado <b>Para cima</b>, <b>Para baixo</b>, para o <b>Início</b> ou para o <b>Fim</b> do seção atual se você adicionou mais de um campo à seção atual.</li>
+                 <li><b>Mover</b> o campo selecionado para uma seção diferente - para <b>Filtros</b>, <b>Colunas</b>, <b>Linhas</b> ou <b >Valores</b>. A opção correspondente à seção atual será desativada.</li>
+                 <li><b>Remover</b> o campo selecionado da seção atual.</li>
+                 <li>Ajuste as <b>configurações do campo selecionado</b>.</li>
+            </ul>
+            <p>As configurações dos campos <b>Filtros, Colunas</b> e <b>Linhas</b> são semelhantes:</p>
+             <p><img alt="Pivot table Filters field settings" src="../images/pivot_filter_field_layout.png" /></p>
+             <p>A guia <b>Layout</b> contém as seguintes opções:</p>
+            <ul>
+                <li>A opção <b>Nome da fonte</b> permite visualizar o nome do campo correspondente ao cabeçalho da coluna do conjunto de dados de origem.</li>
+                 <li>A opção <b>Nome personalizado</b> permite alterar o nome do campo selecionado exibido na tabela dinâmica.</li>
+                 <li>
+                     A seção <b>Formulário de relatório</b> permite alterar a forma como o campo selecionado é exibido na tabela dinâmica:
+                     <ul>
+                         <li>
+                             Escolha o layout necessário para o campo selecionado na tabela dinâmica:
+                            <ul>
+                                <li>
+                                    O formulário <b>Tabular</b> exibe uma coluna para cada campo e fornece espaço para cabeçalhos de campo.
+                                     <!--<p><img alt="Tabela Dinâmica Forma tabular" src="../images/pivot_tabular.png" /></p>-->
+                                </li>
+                                <li>
+                                    O formulário <b>Esboço</b> exibe uma coluna para cada campo e fornece espaço para cabeçalhos de campo. Também permite exibir subtotais no topo dos grupos.
+                                     <!--<p><img alt="Formulário de resumo da tabela dinâmica" src="../images/pivot_outline.png" /></p>-->
+                                </li>
+                                <li>
+                                    O formulário <b>Compacto</b> exibe itens de diferentes campos de seção de linha em uma única coluna.
+                                     <!--<p><img alt="Tabela dinâmica Formato compacto" src="../images/pivot_compact.png" /></p>-->
+                                </li>
+                            </ul>
+                        </li>
+                        <li>A opção <b>Repetir rótulos de itens em cada linha</b> permite agrupar linhas ou colunas visualmente se você tiver vários campos no formulário tabular.</li>
+                         <li>A opção <b>Inserir linhas em branco após cada item</b> permite adicionar linhas em branco após os itens do campo selecionado.</li>
+                         <li>A opção <b>Mostrar subtotais</b> permite que você escolha se deseja exibir subtotais para o campo selecionado. Você pode selecionar uma das opções: <em>Mostrar na parte superior do grupo</em> ou <em>Mostrar na parte inferior do grupo</em>.</li>
+                         <li>A opção <b>Mostrar itens sem dados</b> permite mostrar ou ocultar itens em branco no campo selecionado.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p><img alt="Configurações do campo de filtros da tabela dinâmica" src="../images/pivot_filter_field_subtotals.png" /></p>
+             <p>A guia <b>Subtotais</b> permite que você escolha <b>Funções para subtotais</b>. Verifique as funções necessárias na lista: <em>Sum</em>, <em>Count</em>, <em>Average</em>, <em>Max</em>, <em>Min</em>, <em>Produto</em>, <em>Números de contagem</em>, <em>StdDev</em>, <em>StdDevp</em>, <em>Var</em>, <em>Varp</em>.</p>
+             <p><b>Configurações do campo de valores</b></p>
+             <p><img alt="Configurações do campo Valores da tabela dinâmica" src="../images/pivot_values_field_settings.png" /></p>
+            <ul>
+                <li>A opção <b>Nome da fonte</b> permite visualizar o nome do campo correspondente ao cabeçalho da coluna do conjunto de dados de origem.</li>
+                 <li>A opção <b>Nome personalizado</b> permite alterar o nome do campo selecionado exibido na tabela dinâmica.</li>
+                 <li>A lista <b>Resumir valor do campo por</b> permite que você escolha a função usada para calcular o valor da soma de todos os valores desse campo. Por padrão, <em>Soma</em> é usado para valores numéricos, <em>Contagem</em> é usado para valores de texto. As funções disponíveis são <em>Soma</em>, <em>Contagem</em>, <em>Média</em>, <em>Máx</em>, <em>Mín</em>, <em>Produto</em>, <em>Números de contagem</em>, <em>StdDev</em>, <em>StdDevp</em>, <em>Var</em>, <em>Varp</em>.</li>
+            </ul>
+
+            <h3>Agrupar e desagrupar dados</h3>
+             <p>Os dados em tabelas dinâmicas podem ser agrupados de acordo com requisitos personalizados. O agrupamento está disponível para datas e números básicos.</p>
+             <h4>Agrupar datas</h4>
+             <p>Para agrupar datas, crie uma tabela dinâmica incorporando um conjunto de datas necessárias. Clique com o botão direito do mouse em qualquer célula em uma tabela dinâmica com uma data, escolha a opção <b>Grupo</b> no menu pop-up e defina os parâmetros necessários na janela aberta.</p>
+             <p><img alt="datas do grupo" src="../images/group_dates.png" /></p>
+            <ul>
+                <li><b>Começando em</b> - a primeira data nos dados de origem é escolhida por padrão. Para alterá-lo, digite a data necessária neste campo. Desative esta caixa para ignorar o ponto de partida.</li>
+                 <li><b>Terminando em</b> - a última data nos dados de origem é escolhida por padrão. Para alterá-lo, digite a data necessária neste campo. Desative esta caixa para ignorar o ponto final.</li>
+                 <li><b>Por</b> - as opções <b>Segundos</b>, <b>Minutos</b> e <b>Horas</b> agrupam os dados de acordo com o tempo fornecido em os dados de origem. A opção <b>Meses</b> elimina os dias e deixa apenas os meses. A opção <b>Trimestres</b> opera com uma condição: quatro meses constituem um trimestre, fornecendo assim <em>T1</em>, <em>T2</em>, etc. Os <b>Anos</b> a opção agrupa as datas de acordo com os anos fornecidos nos dados de origem. Combine as opções para obter o resultado necessário.</li>
+                 <li><b>Número de dias</b> - defina o valor necessário para determinar um intervalo de datas.</li>
+                 <li>Clique em <b>OK</b> quando terminar.</li>
+            </ul>
+            <h4>Agrupando números</h4>
+             <p>Para agrupar números, crie uma tabela dinâmica incorporando um conjunto de números necessários. Clique com o botão direito do mouse em qualquer célula em uma tabela dinâmica com um número, escolha a opção <b>Grupo</b> no menu pop-up e defina os parâmetros necessários na janela aberta.</p>
+             <p><img alt="números do grupo" src="../images/group_numbers.png" /></p>
+            <ul>
+                <li><b>Começando em</b> - o menor número nos dados de origem é escolhido por padrão. Para alterá-lo, digite o número necessário neste campo. Desative esta caixa para ignorar o menor número.</li>
+                 <li><b>Terminando em</b> - o maior número nos dados de origem é escolhido por padrão. Para alterá-lo, digite o número necessário neste campo. Desative esta caixa para ignorar o maior número.</li>
+                 <li><b>Por</b> - defina o intervalo necessário para agrupar números. Por exemplo, <em>“2”</em> agrupará o conjunto de números de 1 a 10 como <em>“1-2”</em>, <em>“3-4”</em>, etc.</li>
+                 <li>Clique em <b>OK</b> quando terminar.</li>
+             </ul>
+             <h4>Desagrupar dados</h4>
+             <p>Para desagrupar dados agrupados anteriormente,</p>
+             <ol>
+                 <li>clique com o botão direito do mouse em qualquer célula que esteja no grupo,</li>
+                 <li>selecione a opção <b>Desagrupar</b> no menu de contexto.</li>
+            </ol>
+
+            <h3>Alterar a aparência das tabelas dinâmicas</h3>
+             <p>Você pode usar as opções disponíveis na barra de ferramentas superior para ajustar a forma como sua tabela dinâmica é exibida. Essas opções são aplicadas a toda a tabela dinâmica.</p>
+             <p>Selecione pelo menos uma célula dentro da tabela dinâmica com o mouse para ativar as ferramentas de edição na barra de ferramentas superior.</p>
+             <p><img alt="Barra de ferramentas da tabela dinâmica" src="../images/pivot_top.png" /></p>
+            <ul>
+                <li>
+                    A lista suspensa <b>Layout do relatório</b> permite que você escolha o layout necessário para sua tabela dinâmica:
+                     <ul>
+                         <li>
+                             <em>Mostrar em formato compacto</em> - permite exibir itens de diferentes campos de seção de linha em uma única coluna.
+                             <p><img alt="Formulário compacto da tabela dinâmica" src="../images/pivot_compact.png" /></p>
+                         </li>
+                         <li>
+                             <em>Mostrar em forma de estrutura de tópicos</em> - permite que você exiba a tabela dinâmica no estilo clássico de tabela dinâmica. Ele exibe uma coluna para cada campo e fornece espaço para cabeçalhos de campo. Também permite exibir subtotais no topo dos grupos.
+                             <p><img alt="Formulário de estrutura de tópicos da tabela dinâmica" src="../images/pivot_outline.png" /></p>
+                         </li>
+                         <li>
+                             <em>Mostrar em formato tabular</em> - permite exibir a tabela dinâmica em um formato de tabela tradicional. Ele exibe uma coluna para cada campo e fornece espaço para cabeçalhos de campo.
+                             <p><img alt="Tabela dinâmica Formulário tabular" src="../images/pivot_tabular.png" /></p>
+                         </li>
+                         <li><em>Repetir todos os rótulos de itens</em> - permite agrupar linhas ou colunas visualmente se você tiver vários campos no formulário tabular.</li>
+                         <li><em>Não repita todos os rótulos de itens</em> - permite ocultar rótulos de itens se você tiver vários campos no formulário tabular.</li>
+                    </ul>
+                </li>
+                <li>
+                    A lista suspensa <b>Linhas em branco</b> permite que você escolha se deseja exibir linhas em branco após os itens:
+                     <ul>
+                         <li><em>Inserir linha em branco após cada item</em> - permite adicionar linhas em branco após os itens.</li>
+                         <li><em>Remover linha em branco após cada item</em> - permite remover as linhas em branco adicionadas.</li>
+                     </ul>
+                 </li>
+                 <li>
+                     A lista suspensa <b>Subtotais</b> permite que você escolha se deseja exibir subtotais na tabela dinâmica:
+                     <ul>
+                         <li><em>Não mostrar subtotais</em> - permite ocultar os subtotais de todos os itens.</li>
+                         <li><em>Mostrar todos os subtotais na parte inferior do grupo</em> - permite exibir os subtotais abaixo das linhas com subtotal.</li>
+                         <li><em>Mostrar todos os subtotais no topo do grupo</em> - permite exibir os subtotais acima das linhas com subtotal.</li>
+                    </ul>
+                </li>
+                <li>
+                    A lista suspensa <b>Totais gerais</b> permite que você escolha se deseja exibir os totais gerais na tabela dinâmica:
+                     <ul>
+                         <li><em>Desativado para linhas e colunas</em> - permite ocultar totais gerais para linhas e colunas.</li>
+                         <li><em>Ativado para linhas e colunas</em> - permite exibir totais gerais para linhas e colunas.</li>
+                         <li><em>Ativado apenas para linhas</em> - permite que você exiba totais gerais apenas para linhas.</li>
+                         <li><em>On for Columns Only</em> - permite que você exiba totais gerais apenas para colunas.</li>
+                     </ul>
+                     <p class="note"><b>Observação</b>: as configurações semelhantes também estão disponíveis na janela de configurações avançadas da tabela dinâmica na seção <b>Totais gerais</b> de <b>Nome e layout </b> aba.</p>
+                 </li>
+             </ul>
+             <p>O botão <span class = "icon icon-pivotselecticon"></span> <b>Selecionar</b> permite que você selecione toda a tabela dinâmica.</p>
+             <p>Se você alterar os dados em seu conjunto de dados de origem, selecione a tabela dinâmica e clique no botão <span class="icon icon-pivot_refresh"></span> <b>Atualizar</b> para atualizar a tabela dinâmica.</p>
+
+            <h3>Alterar o estilo das tabelas dinâmicas</h3>
+             <p>Você pode alterar a aparência das tabelas dinâmicas em uma planilha usando as ferramentas de edição de estilo disponíveis na barra de ferramentas superior.</p>
+             <p>Selecione pelo menos uma célula dentro da tabela dinâmica com o mouse para ativar as ferramentas de edição na barra de ferramentas superior.</p>
+             <p><img alt="guia Tabela Dinâmica" src="../images/pivottoptoolbar.png" /></p>
+             <p>As opções de linhas e colunas permitem enfatizar certas linhas/colunas aplicando formatação específica a elas, ou destacar diferentes linhas/colunas com diferentes cores de fundo para distingui-las claramente. As seguintes opções estão disponíveis:</p>
+            <ul>
+                <li><b>Cabeçalhos de linha</b> - permite destacar os cabeçalhos de linha com formatação especial.</li>
+                 <li><b>Cabeçalhos de coluna</b> - permite destacar os cabeçalhos de coluna com formatação especial.</li>
+                 <li><b>Linhas em faixas</b> - permite a alternância da cor de fundo para linhas ímpares e pares.</li>
+                 <li><b>Colunas em faixas</b> - permite a alternância de cores de fundo para colunas pares e ímpares.</li>
+            </ul>
+            <p>
+                A lista de modelos permite escolher um dos estilos de tabela dinâmica predefinidos. Cada modelo combina determinados parâmetros de formatação, como cor de fundo, estilo de borda, faixa de linha/coluna, etc.
+                 Dependendo das opções marcadas para linhas e colunas, os modelos definidos serão exibidos de forma diferente. Por exemplo, se você marcou as opções <b>Cabeçalhos de linha</b> e <b>Colunas em faixas</b>, a lista de modelos exibida incluirá apenas modelos com os cabeçalhos de linha destacados e as colunas em faixas ativadas.
+            </p>
+
+            <h3>Filtre, classifique e adicione segmentações em tabelas dinâmicas</h3>
+             <p>Você pode filtrar tabelas dinâmicas por rótulos ou valores e usar os parâmetros de classificação adicionais.</p>
+             <h4>Filtragem</h4>
+             <p>Clique na seta suspensa <span class="icon icon-dropdownarrow"></span> em <b>Rótulos de linha</b> ou <b>Rótulos de coluna</b> da tabela dinâmica. A lista de opções <b>Filtro</b> será aberta:</p>
+             <p><img alt="Janela de filtro" src="../images/pivot_filterwindow.png" /></p>
+             <p>Ajuste os parâmetros do filtro. Você pode proceder de uma das seguintes maneiras: selecione os dados para exibir ou filtre os dados por determinados critérios.</p>
+            <ul>
+                <li>
+                    <b>Selecione os dados a serem exibidos</b>
+                     <p>Desmarque as caixas próximas aos dados que você precisa ocultar. Para sua conveniência, todos os dados na lista de opções <b>Filtro</b> são classificados em ordem crescente.</p>
+                     <p class="note"><b>Nota</b>: a caixa de seleção <b>(em branco)</b> corresponde às células vazias. Está disponível se o intervalo de células selecionado contiver pelo menos uma célula vazia.</p>
+                     <p>Para facilitar o processo, utilize o campo de busca na parte superior. Digite sua consulta, total ou parcialmente, no campo - os valores que incluem esses caracteres serão exibidos na lista abaixo. As duas opções a seguir também estarão disponíveis:</p>
+                     <ul>
+                         <li><b>Selecionar todos os resultados da pesquisa</b> - está marcado por padrão. Permite selecionar todos os valores que correspondem à sua consulta na lista.</li>
+                         <li><b>Adicionar seleção atual ao filtro</b> - se você marcar esta caixa, os valores selecionados não serão ocultados quando você aplicar o filtro.</li>
+                     </ul>
+                     <p>Depois de selecionar todos os dados necessários, clique no botão <b>OK</b> na lista de opções <b>Filtro</b> para aplicar o filtro.</p>
+                </li>
+                <li>
+                    <b>Filtrar dados por determinados critérios</b>
+                     <p>Você pode escolher a opção <b>Filtro de rótulo</b> ou <b>Filtro de valor</b> no lado direito da lista de opções de <b>Filtro</b> e, em seguida, selecionar uma das opções do submenu:</p>
+                     <ul>
+                         <li>
+                             Para o <b>Filtro de rótulo</b> estão disponíveis as seguintes opções:
+                             <ul>
+                                 <li>Para textos: <em>Igual a...</em>, <em>Não é igual a...</em>, <em>Começa com...</em>, <em>Não é começa com...</em>, <em>Termina com...</em>, <em>Não termina com...</em>, <em>Contém...</em>, <em>Não contém...</em></li>
+                                 <li>Para números: <em>Maior que...</em>, <em>Maior ou igual a...</em>, <em>Menor que...</em>, <em >Menor ou igual a...</em>, <em>Entre</em>, <em>Não entre</em>.</li>
+                            </ul>
+                        </li>
+                        <li>Para o <b>Filtro de valor</b> estão disponíveis as seguintes opções: <em>Igual a...</em>, <em>Não é igual a...</em>, <em>Maior que.. .</em>, <em>Maior ou igual a...</em>, <em>Menor que...</em>, <em>Menor que ou igual a...</em>, <em>Entre</em>, <em>Não entre</em>, <em>Top 10</em>.</li>
+                     </ul>
+                     <p>Depois de selecionar uma das opções acima (além de <em>Top 10</em>), a janela <b>Label/Value Filter</b> será aberta. O campo e o critério correspondentes serão selecionados na primeira e na segunda lista suspensa. Digite o valor necessário no campo à direita.</p>
+                     <p>Clique em <b>OK</b> para aplicar o filtro.</p>
+                    <p><img alt="Janela Filtro de valor" src="../images/pivot_filter.png" /></p>
+                     <p>Se você escolher a opção <em>Top 10</em> na lista de opções <b>Filtro de valor</b>, uma nova janela será aberta:</p>
+                     <p><img alt="As 10 principais janelas do AutoFilter" src="../images/pivot_topten.png" /></p>
+                     <p>A primeira lista suspensa permite escolher se você deseja exibir os valores mais altos (<b>Top</b>) ou mais baixos (<b>Bottom</b>). O segundo campo permite especificar quantas entradas da lista ou qual porcentagem do número geral de entradas você deseja exibir (você pode inserir um número de 1 a 500). A terceira lista suspensa permite definir as unidades de medida: <b>Item</b>, <b>Porcentagem</b> ou <b>Soma</b>. A quarta lista suspensa exibe o nome do campo selecionado. Depois de definir os parâmetros necessários, clique em <b>OK</b> para aplicar o filtro.</p>
+                </li>
+            </ul>
+            <p>O botão <b>Filtro</b> <span class="icon icon-filterbutton"></span> aparecerá nos <b>rótulos de linha</b> ou <b>rótulos de coluna</b> do mesa pivotante. Isso significa que o filtro é aplicado. <!--O número de registros filtrados será exibido na barra de status (por exemplo, <em>25 de 80 registros filtrados</em>).--></p>
+
+             <h4>Classificando</h4>
+             <p>Você pode classificar os dados da tabela dinâmica usando as opções <b>classificar</b>. Clique na seta suspensa <span class="icon icon-dropdownarrow"></span> em <b>Rótulos de linha</b> ou <b>Rótulos de coluna</b> da tabela dinâmica e selecione < b>Ordenar do menor para o maior</b> ou <b>Ordenar do maior para o menor</b> do submenu.</p>
+             <p>A opção <b>Mais opções de classificação</b> permite abrir a janela <b>Classificar</b> onde você pode selecionar a ordem de classificação necessária - <em>Ascendente</em> ou <em> Decrescente</em> - e selecione um determinado campo que deseja classificar.</p>
+             <p><img alt="Opções de classificação da tabela dinâmica" src="../images/pivot_sort.png" /></p>
+
+             <h4>Adicionando segmentações</h4>
+             <p>Você pode adicionar segmentações para filtrar os dados com mais facilidade, exibindo apenas o que é necessário. Para saber mais sobre segmentações, leia o <a href="Slicers.htm" onclick="onhyperlinkclick(this)">guia sobre como criar segmentações</a>.</p>
+
+             <h3>Ajuste as configurações avançadas da tabela dinâmica</h3>
+             <p id="pivot_advanced">Para alterar as <b>configurações avançadas</b> da tabela dinâmica, use o link <b>Mostrar configurações avançadas</b> na barra lateral direita. A janela 'Tabela dinâmica - Configurações avançadas' será aberta:</p>
+             <p><img alt="Configurações avançadas da tabela dinâmica" src="../images/pivot_advanced.png" /></p>
+             <p>A guia <b>Nome e layout</b> permite alterar as propriedades comuns da tabela dinâmica.</p>
+             <ul>
+                 <li>A opção <b>Nome</b> permite alterar o nome da tabela dinâmica.</li>
+                <li>
+                    A seção <b>Totais gerais</b> permite que você escolha se deseja exibir os totais gerais na tabela dinâmica. As opções <em>Mostrar para linhas</em> e <em>Mostrar para colunas</em> são marcadas por padrão. Você pode desmarcar qualquer uma delas ou ambas as opções para ocultar os totais gerais correspondentes de sua tabela dinâmica.
+                     <p class="note"><b>Observação</b>: as configurações semelhantes estão disponíveis na barra de ferramentas superior no menu <b>Totais gerais</b>.</p>
+                 </li>
+                 <li>
+                     A seção <b>Exibir campos na área de filtro do relatório</b> permite que você ajuste os filtros do relatório que aparecem quando você adiciona campos à seção <b>Filtros</b>:
+                     <ul>
+                         <li>A opção <em>Para baixo e depois para cima</em> é usada para a disposição das colunas. Ele permite que você mostre os filtros do relatório na coluna.</li>
+                         <li>A opção <em>Sobre, depois para baixo</em> é usada para organização de linhas. Ele permite que você mostre os filtros do relatório na linha.</li>
+                         <li>A opção <em>Relatar campos de filtro por coluna</em> permite que você selecione o número de filtros para ir em cada coluna. O valor padrão é definido como <em>0</em>. Você pode definir o valor numérico necessário.</li>
+                    </ul>
+                </li>
+                <li>A opção <b>Mostrar cabeçalhos de campo para linhas e colunas</b> permite que você escolha se deseja exibir cabeçalhos de campo em sua tabela dinâmica. A opção é habilitada por padrão. Desmarque-o para ocultar os cabeçalhos de campo de sua tabela dinâmica.</li>
+                 <li>A opção <b>Ajustar automaticamente as larguras das colunas na atualização</b> permite ativar/desativar o ajuste automático das larguras das colunas. A opção é habilitada por padrão.</li>
+            </ul>
+            <p><img alt="Configurações avançadas da tabela dinâmica" src="../images/pivot_advanced2.png" /></p>
+             <p>A guia <b>Fonte de dados</b> permite que você altere os dados que deseja usar para criar a tabela dinâmica.</p>
+             <p>Verifique o <b>Intervalo de Dados</b> selecionado e modifique-o, se necessário. Para fazer isso, clique no ícone <span class="icon icon-changerange"></span>.</p>
+             <p><img alt="Janela Selecionar intervalo de dados" src="../images/pivot_selectdata.png" /></p>
+             <p>Na janela <b>Selecionar intervalo de dados</b>, insira o intervalo de dados necessário no seguinte formato: <em>Planilha1!$A$1:$E$10</em>. Você também pode selecionar o intervalo de células necessário na planilha usando o mouse. Quando estiver pronto, clique em <b>OK</b>.</p>
+             <p><img alt="Configurações avançadas da tabela dinâmica" src="../images/pivot_advanced3.png" /></p>
+             <p>A guia <b>Texto alternativo</b> permite especificar o <b>Título</b> e a <b>Descrição</b> que serão lidos para pessoas com deficiência visual ou cognitiva para ajudá-los melhor entender quais informações a tabela dinâmica contém.</p>
+             <h3>Excluir uma tabela dinâmica</h3>
+             <p>Para excluir uma tabela dinâmica,</p>
+             <ol>
+                 <li>Selecione toda a tabela dinâmica usando o botão <div class = "icon icon-pivotselecticon"></div> <b>Selecionar</b> na barra de ferramentas superior.</li>
+                 <li>Pressione a tecla <b>Excluir</b>.</li>
+            </ol>
+        </div>
+	</body>
+</html>

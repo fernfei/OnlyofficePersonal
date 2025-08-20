@@ -1,0 +1,458 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Crie formulários preenchíveis</title>
+    <meta charset="utf-8" />
+    <meta name="descrição" content="Crie formulários preenchíveis para uma experiência avançada de interação com formulários" />
+    <link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+    <link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+    <script type="text/javascript" src="../callback.js"></script>
+    <script type="text/javascript" src="../search/js/page-search.js"></script>
+</head>
+<body>
+    <div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+
+        <h1>Crie formulários preenchíveis</h1>
+        <p>Editor de Documentos do ONLYOFFICE permite que você crie facilmente <b>formulários preenchíveis</b> em seus documentos, por ex. rascunhos ou pesquisas de contrato.</p>
+         <p><b>Modelo de formulário</b> é um formato DOCXF que oferece uma variedade de ferramentas para criar um formulário preenchível. Salve o formulário resultante como um arquivo <b>DOCXF</b> e você terá um modelo de formulário que ainda pode editar, revisar ou colaborar. Para tornar um modelo de formulário preenchível e restringir a edição de arquivos por outros usuários, salve-o como um arquivo <b>OFORM</b>. Por favor, consulte <a href="../UsageInstructions/FillingOutForm.htm">instruções de preenchimento do formulário</a> para mais detalhes.</p>
+        <p class="note"><b>DOCXF</b> e <b>OFORM</b> são novos formatos <b>ONLYOFFICE</b> que permitem criar modelos de formulário e preencher formulários. Use o <b>Editor de Documentos do ONLYOFFICE</b> online ou na área de trabalho para fazer uso total dos elementos e opções associados ao formulário.</p>
+         <p>Você também pode salvar qualquer arquivo <b>DOCX</b> existente como um <b>DOCXF</b> para usá-lo como modelo de formulário. Vá para a guia <b>Arquivo</b>, clique na opção <b>Baixar como...</b> ou <b>Salvar como...</b> no menu à esquerda e escolha a opção <b>DOCXF</b>. Agora você pode usar todas as funções de edição de formulário disponíveis para criar um formulário.</p>
+        <p>Não são apenas os campos de formulário que você pode editar em um arquivo <b>DOCXF</b>, você ainda pode adicionar, editar e formatar texto ou usar outros <b>Editor de Documentos</b> funções.</p>
+        <p>A criação de formulários preenchíveis é ativada por meio de objetos editáveis pelo usuário que garantem a consistência geral dos documentos resultantes e permitem uma experiência avançada de interação com formulários.</p>
+         <p>Atualmente, você pode inserir campos editáveis de <em>texto simples</em>, <em>caixas de combinação</em>, <em>listas suspensas</em>, <em>caixas de seleção</em>, <em>botões de rádio</em>, atribua áreas designadas para <em>imagens</em>, bem como crie <em>endereço de e-mail</em>, <em>número de telefone</em> e <em>complexo</em> campos. Acesse esses recursos na guia <b>Formulários</b>, disponível apenas para arquivos <b>DOCXF</b>.</p>
+
+        <h2 id="textfield">Criando um novo campo de texto simples</h2>
+        <p><em>Campos de texto</em> são campos de formulário de texto simples editáveis pelo usuário; nenhum outro objeto pode ser adicionado.</p>
+        <div class="forms">
+            <details class="details-example">
+                <summary>Para inserir um campo de texto,</summary>
+                <ol>
+                    <li>posicione o ponto de inserção dentro de uma linha do texto onde deseja que o campo seja adicionado,</li>
+                     <li>mude para a guia <b>Formulários</b> da barra de ferramentas superior,</li>
+                    <li>
+                        clique no <div class="icon icon-text_field_icon"></div> <b>Campo de texto</b> ícone.
+                    </li>
+                </ol>
+                <p><img alt="campo de texto inserido" src="../images/text_field_inserted.png" /></p>
+                <p>O campo de formulário aparecerá no ponto de inserção dentro da linha de texto existente. O menu <b>Configurações do formulário</b> será aberto à direita.</p>
+                <div id="text_field_settings">
+                    <img alt="configurações de campo de texto" src="../images/text_field_settings.png" />
+                    <ul>
+                        <li><b>Chave</b>: uma chave para agrupar os campos a serem preenchidos simultaneamente. Para criar uma nova chave, digite seu nome no campo e pressione <b>Enter</b>, em seguida, atribua a chave necessária a cada campo de texto usando a lista suspensa. Uma mensagem <em>Campos conectados: 2/3/...</em> será exibida. Para desconectar os campos, clique no botão <b>Desconectar</b>.</li>
+                         <li><b>Marcador de posição</b>: digite o texto a ser exibido no campo de texto inserido; <em>“Seu texto aqui”</em> é definido por padrão.</li>
+                        <li><b>Etiqueta</b>: digite o texto a ser usado como tag para uso interno, ou seja, exibido apenas para coeditores.</li>
+                        <li>
+                            <b>Dica</b>: digite o texto a ser exibido como dica quando um usuário passar o ponteiro do mouse sobre o campo de texto.
+                            <br /> <img alt="ponta inserida" src="../images/text_field_tip.png" />
+                        </li>
+                        <li>
+                            <b>Formato</b>: escolha o formato do conteúdo do campo de texto, ou seja, só será permitido o formato de caractere escolhido: <em>Nenhum</em>, <em>Dígitos</em>, <em>Letras</em>, <em>Máscara arbitrária</em> (o texto deve corresponder à máscara personalizada, por exemplo, (999) 999 99 99), <em>Expressão regular</em> (o texto deve corresponder à expressão personalizada).
+                             <p>Quando você escolhe um formato <em>Máscara arbitrária</em> ou <em>Expressão regular</em>, um campo adicional abaixo do campo <b>Formato</b> aparece.</p>
+                        </li>
+                        <li><b>Símbolos permitidos</b>: digite os símbolos permitidos no campo de texto.</li>
+                        <li>
+                            <b>Campo de tamanho fixo</b>: marque esta caixa para criar um campo com tamanho fixo. Quando esta opção está ativada, você também pode usar as configurações de <b>Ajuste automático</b> e/ou <b>Campo multilinha</b>.<br />
+                             Um campo de tamanho fixo se parece com uma forma automática. Você pode definir um estilo de embrulho para ele, bem como ajustar sua posição.
+                        </li>
+                        <li><b>Ajuste automático</b>: esta opção pode ser ativada quando a configuração <b>Campo de tamanho fixo</b> é selecionada, marque-a para ajustar automaticamente o tamanho da fonte ao tamanho do campo.</li>
+                        <li><b>Campo multilinha</b>: esta opção pode ser habilitada quando a configuração <b>Campo de tamanho fixo</b> estiver selecionada, marque-a para criar um campo de formulário com várias linhas, caso contrário, o texto ocupará uma única linha.</li>
+                         <li><b>Limite de caracteres</b>: sem limites por padrão; marque esta caixa para definir o número máximo de caracteres no campo à direita.</li>
+                        <li>
+                            <b>Conjunto de caracteres</b>: espalhe o texto uniformemente dentro do campo de texto inserido e configure sua aparência geral. Deixe a caixa desmarcada para preservar as configurações padrão ou marque-a para definir os seguintes parâmetros:
+                            <ul>
+                                <li><b>Largura da célula</b>: escolha se o valor da largura deve ser <em>Auto</em> (a largura é calculada automaticamente), <em>Pelo menos</em> (a largura não é menor que o valor fornecido manualmente), ou <em>Exatamente</em> (a largura corresponde ao valor fornecido manualmente). O texto dentro será justificado de acordo.</li>
+                            </ul>
+                        </li>
+                        <li><b>Cor da borda</b>: clique no ícone <div class="icon icon-nofill"></div> para definir a cor das bordas do campo de texto inserido. Escolha a cor de borda preferida na paleta. Você pode <b>adicionar uma nova cor personalizada</b> se necessário.</li>
+                         <li><b>Cor de fundo</b>: clique no ícone <div class="icon icon-nofill"></div> para aplicar uma cor de fundo ao campo de texto inserido. Escolha a cor preferida entre <b>Cores do tema</b>, <b>Cores padrão</b> ou <b>adicione uma nova cor personalizada</b>, se necessário.</li>
+                        <li><b>Obrigatório</b>: marque esta caixa para tornar o campo de texto obrigatório para preencher.</li>
+                    </ul>
+                </div>
+                <p><img alt="pente de caracteres" src="../images/comb_of_characters.png" /></p>
+                <p>Clique no campo de texto inserido e <a href="../UsageInstructions/FontTypeSizeColor.htm">ajustar o tipo de fonte, tamanho, cor</a>, aplicar <a href="../UsageInstructions/DecorationStyles.htm">estilos de decoração</a> e <a href="../UsageInstructions/FormattingPresets.htm">predefinições de formatação</a>. A formatação será aplicada a todo o texto dentro do campo.</p>
+            </details>
+        </div>
+
+
+        <h2 id="combobox">Criando uma nova caixa de combinação</h2>
+        <p><em>As caixas de combinação</em> contêm uma lista suspensa com um conjunto de opções que podem ser editadas pelos usuários.</p>
+        <div class="forms">
+            <details class="details-example">
+                <summary>Para inserir uma caixa de combinação,</summary>
+                <ol>
+                    <li>posicione o ponto de inserção dentro de uma linha do texto onde deseja que o campo seja adicionado,</li>
+                     <li>mude para a guia <b>Formulários</b> da barra de ferramentas superior,</li>
+                    <li>
+                        clique no ícone da <div class="icon icon-combo_box_icon"></div> <b>caixa de combinação</b>.
+                    </li>
+                </ol>
+                <p><img alt="caixa de combinação inserida" src="../images/combo_box_inserted.png" /></p>
+                <p>O campo de formulário aparecerá no ponto de inserção dentro da linha de texto existente. O menu <b>Configurações do formulário</b> será aberto à direita.</p>
+                <div id="combo_box_settings">
+                    <img alt="configurações da caixa de combinação" src="../images/combo_box_settings.png" />
+                    <ul>
+                        <li><b>Chave</b>: uma tecla para agrupar caixas de combinação a serem preenchidas simultaneamente. Para criar uma nova chave, insira seu nome no campo e pressione <b>Enter</b>, em seguida, atribua a chave necessária a cada caixa de combinação usando a lista suspensa. Uma mensagem <em>Campos conectados: 2/3/...</em> será exibida. Para desconectar os campos, clique no botão <b>Desconectar</b>.</li>
+                         <li><b>Marcador de posição</b>: digite o texto a ser exibido na caixa de combinação inserida; <em>“Escolha um item”</em> é definido por padrão.</li>
+                        <li><b>Etiqueta</b>: digite o texto a ser usado como tag para uso interno, ou seja, exibido apenas para coeditores.</li>
+                        <li>
+                            <b>Dica</b>: digite o texto a ser exibido como dica quando um usuário passar o ponteiro do mouse sobre o campo do formulário.
+                            <br /> <img alt="ponta inserida" src="../images/combo_box_tip.png" />
+                        </li>
+                        <li><b>Opções de valor</b>: adicionar <div class="icon icon-combo_add_values"></div> novos valores, excluir <div class="icon icon-combo_delete_values"></div> eles, ou movê-los para cima <div class="icon icon-combo_values_up"></div> e <div class="icon icon-combo_values_down"></div> para baixo na lista.</li>
+                        <li>
+                            <b>Campo de tamanho fixo</b>: marque esta caixa para criar um campo com tamanho fixo.<br />
+                             Um campo de tamanho fixo se parece com uma forma automática. Você pode definir um estilo de embrulho para ele, bem como ajustar sua posição.
+                        </li>
+                        <li><b>Cor da borda</b>: clique no ícone <div class="icon icon-nofill"></div>  para definir a cor das bordas da caixa de combinação inserida. Escolha a cor de borda preferida na paleta. Você pode <b>adicionar uma nova cor personalizada</b> se necessário.</li>
+                         <li><b>Cor de fundo</b>: clique no ícone <div class="icon icon-nofill"></div> para aplicar uma cor de fundo à caixa de combinação inserida. Escolha a cor preferida entre <b>Cores do tema</b>, <b>Cores padrão</b> ou <b>adicione uma nova cor personalizada</b>, se necessário.</li>
+                        <li><b>Obrigatório</b>: marque esta caixa para tornar o campo da caixa de combinação obrigatório para preencher.</li>
+                    </ul>
+                </div>
+                <p>Você pode clicar no botão de seta à direita da <b>caixa de combinação</b> adicionada para abrir a lista de itens e escolher o necessário. Uma vez selecionado o item necessário, você pode editar o texto exibido total ou parcialmente, substituindo-o pelo seu.</p>
+                <p><img alt="caixa de combinação aberta" src="../images/combo_box_opened.png" /></p>
+                <p>Você pode alterar a decoração, a cor e o tamanho da fonte. Clique dentro do combo box inserido e proceda de acordo com o <a href="../UsageInstructions/FontTypeSizeColor.htm">instruções</a>. A formatação será aplicada a todo o texto dentro do campo.</p>
+            </details>
+        </div>
+
+
+        <h2 id="dropdownlist">Criando um novo campo de formulário de lista suspensa</h2>
+        <p><em>As listas suspensas</em> contêm uma lista com um conjunto de opções que não podem ser editadas pelos usuários.</p>
+        <div class="forms">
+            <details class="details-example">
+                <summary>Para inserir uma lista suspensa,</summary>
+                <ol>
+                    <li>posicione o ponto de inserção dentro de uma linha do texto onde deseja que o campo seja adicionado,</li>
+                     <li>mude para a guia <b>Formulários</b> da barra de ferramentas superior,</li>
+                    <li>
+                        clique no ícone <div class="icon icon-dropdown_list_icon"></div> <b>Suspenso</b>.
+                    </li>
+                </ol>
+                <p><img alt="lista suspensa inserida" src="../images/combo_box_inserted.png" /></p>
+                <p>O campo de formulário aparecerá no ponto de inserção dentro da linha de texto existente. O menu <b>Configurações do formulário</b> será aberto à direita.</p>
+                <div id="dropdown_list_settings">
+                    <img alt="configurações da lista suspensa" src="../images/dropdown_list_settings.png" />
+                    <ul>
+                        <li><b>Chave</b>: uma tecla para agrupar listas suspensas a serem preenchidas simultaneamente. Para criar uma nova chave, insira seu nome no campo e pressione <b>Enter</b>, em seguida, atribua a chave necessária a cada campo do formulário usando a lista suspensa. Uma mensagem <em>Campos conectados: 2/3/...</em> será exibida. Para desconectar os campos, clique no botão <b>Desconectar</b>.</li>
+                         <li><b>Marcador de posição</b>: digite o texto a ser exibido na lista suspensa inserida; <em>“Escolher um item”</em> é definido por padrão.</li>
+                         <li><b>Etiqueta</b>: digite o texto a ser usado como tag para uso interno, ou seja, exibido apenas para coeditores.</li>
+                         <li>
+                             <b>Dica</b>: digite o texto a ser exibido como dica quando um usuário passar o ponteiro do mouse sobre o campo do formulário.
+                            <br /> <img alt="ponta inserida" src="../images/combo_box_tip.png" />
+                        </li>
+                        <li><b>Opções de valor</b>: adicionar <div class="icon icon-combo_add_values"></div> novos valores, excluir <div class="icon icon-combo_delete_values"></div> eles, ou movê-los para cima <div class="icon icon-combo_values_up"></div> e <div class="icon icon-combo_values_down"></div> para baixo na lista.</li>
+                        <li>
+                            <b>Campo de tamanho fixo</b>: marque esta caixa para criar um campo com tamanho fixo.<br />
+                             Um campo de tamanho fixo se parece com uma forma automática. Você pode definir um estilo de embrulho para ele, bem como ajustar sua posição.
+                         </li>
+                         <li><b>Cor da borda</b>: clique no ícone <div class="icon icon-nofill"></div> para definir a cor das bordas do campo suspenso inserido. Escolha a cor de borda preferida na paleta. Você pode <b>adicionar uma nova cor personalizada</b> se necessário.</li>
+                         <li><b>Cor de fundo</b>: clique no ícone <div class="icon icon-nofill"></div> para aplicar uma cor de fundo ao campo suspenso inserido. Escolha a cor preferida entre <b>Cores do tema</b>, <b>Cores padrão</b> ou <b>adicione uma nova cor personalizada</b>, se necessário.</li>
+                         <li><b>Obrigatório</b>: marque esta caixa para tornar o campo da lista suspensa obrigatório para preencher.</li>
+                    </ul>
+                </div>
+                <p>Você pode clicar no botão de seta na parte direita do campo de formulário <b>Lista suspensa</b> adicionado para abrir a lista de itens e escolher o necessário.</p>
+                <p><img alt="lista suspensa aberta" src="../images/dropdown_list_opened.png" /></p>
+            </details>
+        </div>
+
+
+        <h2 id="checkbox">Criando uma nova caixa de seleção</h2>
+        <p><em>Caixas de seleção</em> são usadas para fornecer aos usuários uma variedade de opções, qualquer número das quais pode ser selecionado. As caixas de seleção operam individualmente, portanto, podem ser marcadas ou desmarcadas independentemente.</p>
+        <div class="forms">
+            <details class="details-example">
+                <summary>Para inserir uma caixa de seleção,</summary>
+                <ol>
+                    <li>posicione o ponto de inserção dentro de uma linha do texto onde deseja que o campo seja adicionado,</li>
+                     <li>mude para a guia <b>Formulários</b> da barra de ferramentas superior,</li>
+                    <li>
+                        clique no <div class="icon icon-checkbox_icon"></div> <b>Caixa de seleção</b>.
+                    </li>
+                </ol>
+                <p><span class="big big-checkbox_inserted"></span></p>
+                <p>O campo de formulário aparecerá no ponto de inserção dentro da linha de texto existente. O menu <b>Configurações do formulário</b> será aberto à direita.</p>
+                <div id="checkbox_settings">
+                    <img alt="configurações da caixa de seleção" src="../images/checkbox_settings.png" />
+                    <ul>
+                        <li><b>Chave</b>: uma chave para agrupar caixas de seleção a serem preenchidas simultaneamente. Para criar uma nova chave, insira seu nome no campo e pressione <b>Enter</b>, em seguida, atribua a chave necessária a cada campo do formulário usando a lista suspensa. Uma mensagem <em>Campos conectados: 2/3/...</em> será exibida. Para desconectar os campos, clique no botão <b>Desconectar</b>.</li>
+                         <li><b>Etiqueta</b>: digite o texto a ser usado como tag para uso interno, ou seja, exibido apenas para coeditores.</li>
+                        <li>
+                            <b>Dica</b>: digite o texto a ser exibido como dica quando um usuário passar o ponteiro do mouse sobre a caixa de seleção.
+                            <br /> <img alt="ponta inserida" src="../images/checkbox_tip.png" />
+                        </li>
+                        <li>
+                            <b>Campo de tamanho fixo</b>: marque esta caixa para criar um campo com tamanho fixo.<br />
+                             Um campo de tamanho fixo se parece com uma forma automática. Você pode definir um estilo de embrulho para ele, bem como ajustar sua posição.
+                        </li>
+                        <li><b>Cor da borda</b>: clique no ícone <div class="icon icon-nofill"></div>  para definir a cor das bordas da caixa de seleção inserida. Escolha a cor de borda preferida na paleta. Você pode <b>adicione uma nova cor personalizada</b> se necessário.</li>
+                        <li><b>Cor de fundo</b>: clique no ícone <div class="icon icon-nofill"></div> adicione uma nova cor personalizada</b> se necessário.</li>
+                        <li><b>Obrigatório</b>: marque esta caixa para tornar o campo da caixa de seleção necessário para preencher.</li>
+                    </ul>
+                </div>
+                <p>Para marcar a caixa, clique nela uma vez.</p>
+                <p><span class="big big-checkbox_checked"></span></p>
+            </details>
+        </div>
+
+
+        <h2 id="radiobutton">Criando um novo botão de opção</h2>
+        <p><em>Os botões de opção</em> são usados para fornecer aos usuários uma variedade de opções, das quais apenas uma pode ser selecionada. Os botões de opção podem ser agrupados para que não haja seleção de vários botões dentro de um grupo.</p>
+        <div class="forms">
+            <details class="details-example">
+                <summary>Para inserir um Botao de radio,</summary>
+                <ol>
+                    <li>posicione o ponto de inserção dentro de uma linha do texto onde deseja que o campo seja adicionado,</li>
+                     <li>mude para a guia <b>Formulários</b> da barra de ferramentas superior,</li>
+                    <li>
+                       clique no <div class="icon icon-radio_button_icon"></div> <b>Botao de radio</b> ícone.
+                    </li>
+                </ol>
+                <p><span class="big big-radio_button_inserted"></span></p>
+                <p>O campo de formulário aparecerá no ponto de inserção dentro da linha de texto existente. O menu <b>Configurações do formulário</b> será aberto à direita.</p>
+                <div id="radio_button_settings">
+                    <img alt="configurações do botão de opção" src="../images/radio_button_settings.png" />
+                    <ul>
+                        <li><b>Chave de grupo</b>: para criar um novo grupo de botões de opção, insira o nome do grupo no campo e pressione <b>Enter</b>, em seguida, atribua o grupo necessário a cada botão de opção.</li>
+                         <li><b>Etiqueta</b>: digite o texto a ser usado como tag para uso interno, ou seja, exibido apenas para coeditores.</li>
+                        <li>
+                            <b>Dica</b>: digite o texto a ser exibido como dica quando um usuário passar o ponteiro do mouse sobre o botão de opção.
+                            <br /> <img alt="ponta inserida" src="../images/radio_button_tip.png" />
+                        </li>
+                        <li>
+                            <b>Campo de tamanho fixo</b>: marque esta caixa para criar um campo com tamanho fixo.<br />
+                             Um campo de tamanho fixo se parece com uma forma automática. Você pode definir um estilo de embrulho para ele, bem como ajustar sua posição.
+                        </li>
+                        <li><b>Cor da borda</b>: clique no ícone <div class="icon icon-nofill"></div> para definir a cor das bordas do botão radial inserido. Escolha a cor de borda preferida na paleta. Você pode <b>adicionar uma nova cor personalizada</b> se necessário.</li>
+                         <li><b>Cor de fundo</b>: clique no ícone <div class="icon icon-nofill"></div> para aplicar uma cor de fundo ao botão de opção inserido. Escolha a cor preferida entre <b>Cores do tema</b>, <b>Cores padrão</b> ou <b>adicione uma nova cor personalizada</b>, se necessário.</li>
+                         <li><b>Obrigatório</b>: marque esta caixa para tornar o campo do botão de opção obrigatório para preencher.</li>
+                    </ul>
+                </div>
+                <p>Para verificar o botão de opção, clique nele uma vez.</p>
+                <p><span class="big big-radio_button_checked"></span></p>
+            </details>
+        </div>
+
+
+        <h2 id="image">Criando um novo campo de imagem</h2>
+        <p><em>Imagens</em> são campos de formulário que são usados para permitir a inserção de uma imagem com as limitações que você definir, ou seja, a localização da imagem ou seu tamanho.</p>
+        <div class="forms">
+            <details class="details-example">
+                <summary>Para inserir um campo de formulário de imagem,</summary>
+                <ol>
+                    <li>posicione o ponto de inserção dentro de uma linha do texto onde deseja que o campo seja adicionado,</li>
+                     <li>mude para a guia <b>Formulários</b> da barra de ferramentas superior,</li>
+                    <li>
+                        clique no ícone de <div class="icon icon-image"></div> <b>Imagem</b>.
+                    </li>
+                </ol>
+                <p><span class="big big-image_form_inserted"></span></p>
+                <p>O campo de formulário aparecerá no ponto de inserção dentro da linha de texto existente. O menu <b>Configurações do formulário</b> será aberto à direita.</p>
+                <div id="image_form_settings">
+                    <img alt="configurações do formulário de imagem" src="../images/image_form_settings.png" />
+                    <ul>
+                        <li><b>Chave</b>: uma chave para agrupar imagens a serem preenchidas simultaneamente. Para criar uma nova chave, insira seu nome no campo e pressione <b>Enter</b>, em seguida, atribua a chave necessária a cada campo do formulário usando a lista suspensa. Uma mensagem <em>Campos conectados: 2/3/...</em> será exibida. Para desconectar os campos, clique no botão <b>Desconectar</b>.</li>
+                         <li><b>Marcador de posição</b>: digite o texto a ser exibido no campo do formulário da imagem inserida; <em>“Clique para carregar a imagem”</em> é definido por padrão.</li>
+                        <li><b>Etiqueta</b>: digite o texto a ser usado como tag para uso interno, ou seja, exibido apenas para coeditores.</li>
+                         <li>
+                             <b>Dica</b>: digite o texto a ser exibido como dica quando um usuário passar o ponteiro do mouse sobre a borda inferior da imagem.
+                        </li>
+                        <li><b>Quando escalar</b>: clique no menu suspenso e selecione uma opção de tamanho de imagem apropriada: <b>Sempre</b>, <b>Nunca</b>, quando a <b>Imagem for muito grande</b>, ou quando a <b>Imagem é muito pequena</b>. A imagem selecionada será dimensionada dentro do campo correspondente.</li>
+                         <li><b>Bloquear proporção</b>: marque esta caixa para manter a proporção da imagem sem distorção. Quando a caixa estiver marcada, use o controle deslizante vertical e horizontal para posicionar a imagem dentro do campo inserido. Os controles deslizantes de posicionamento ficam inativos quando a caixa está desmarcada.</li>
+                         <li><b>Selecionar imagem</b>: clique neste botão para carregar uma imagem <b>Do arquivo</b>, <b>Do URL</b> ou <b>Do armazenamento</b>.</li>
+                        <li><b>Cor da borda</b>: clique no ícone <div class="icon icon-nofill"></div> para definir a cor das bordas do campo da imagem inserida. Escolha a cor de borda preferida na paleta. Você pode <b>adicionar uma nova cor personalizada</b> se necessário.</li>
+                         <li><b>Cor de fundo</b>: clique no ícone <div class="icon icon-nofill"></div> para aplicar uma cor de fundo ao campo de imagem inserido. Escolha a cor preferida entre <b>Cores do tema</b>, <b>Cores padrão</b> ou <b>adicione uma nova cor personalizada</b>, se necessário.</li>
+                        <li><b>Obrigatório</b>: marque esta caixa para tornar o campo da imagem obrigatório para preencher.</li>
+                    </ul>
+                </div>
+                <p>Para substituir a imagem, clique no <span class="icon icon-image"></span> ícone de imagem acima da borda do campo do formulário e selecione outro.</p>
+                 <p>Para <b>ajustar</b> as configurações de imagem, abra a guia <b>Configurações de imagem</b> na barra de ferramentas à direita. Para saber mais, leia o guia sobre <a href="../UsageInstructions/InsertImages.htm">configurações de imagem</a>.</p>
+            </details>
+        </div>
+
+        <h2 id="emailaddress">Criando um novo campo de endereço de e-mail</h2>
+        <p><em>O campo Endereço de e-mail</em> é usado para digitar um endereço de e-mail correspondente a uma expressão regular \S+@\S+\.\S+.</p>
+        <div class="forms">
+            <details class="details-example">
+                <summary>Para inserir um campo de endereço de e-mail,</summary>
+                <ol>
+                    <li>posicione o ponto de inserção dentro de uma linha do texto onde deseja que o campo seja adicionado,</li>
+                     <li>mude para a guia <b>Formulários</b> da barra de ferramentas superior,</li>
+                    <li>
+                        clique no <div class="icon icon-email_address_icon"></div> <b>Endereço de e-mail</b> ícone.
+                    </li>
+                </ol>
+                <p><span class="big big-email_address_inserted"></span></p>
+                <p>O campo de formulário aparecerá no ponto de inserção dentro da linha de texto existente. O menu <b>Configurações do formulário</b> será aberto à direita.</p>
+                <div id="email_address_settings">
+                    <img alt="configurações de endereço de e-mail" src="../images/email_address_settings.png" />
+                    <ul>
+                        <li><b>Chave</b>: para criar um novo grupo de endereços de e-mail, insira o nome do grupo no campo e pressione <b>Enter</b>, em seguida, atribua o grupo necessário a cada campo de endereço de e-mail.</li>
+                         <li><b>Espaço reservado</b>: digite o texto a ser exibido no campo do formulário de endereço de e-mail inserido; <em>“user_name@email.com”</em> é definido por padrão.</li>
+                         <li><b>Etiqueta</b>: digite o texto a ser usado como tag para uso interno, ou seja, exibido apenas para coeditores.</li>
+                        <li>
+                            <b>Dica</b>: digite o texto a ser exibido como dica quando um usuário passar o ponteiro do mouse sobre o campo de endereço de e-mail.
+                            <br /> <img alt="ponta inserida" src="../images/email_address_tip.png" />
+                        </li>
+                        <li><b>Formato</b>: escolha o formato do conteúdo do campo, ou seja, <em>Nenhum</em>, <em>Dígitos</em>, <em>Letras</em>, <em>Máscara arbitrária</em> ou <em>Expressão Regular</em>. O campo é definido como <em>Expressão Regular</em> por padrão para preservar o formato de endereço de e-mail <code>\S+@\S+\.\S+</code>.</li>
+                         <li><b>Símbolos permitidos</b>: digite os símbolos permitidos no campo de endereço de e-mail.</li>
+                        <li>
+                            <b>Campo de tamanho fixo</b>: marque esta caixa para criar um campo com tamanho fixo. Quando esta opção está ativada, você também pode usar as configurações de <b>Ajuste automático</b> e/ou <b>Campo multilinha</b>.<br />
+                             Um campo de tamanho fixo se parece com uma forma automática. Você pode definir um estilo de embrulho para ele, bem como ajustar sua posição.
+                        </li>
+                        <li><b>Ajuste automático</b>: esta opção pode ser ativada quando a configuração <b>Campo de tamanho fixo</b> é selecionada, marque-a para ajustar automaticamente o tamanho da fonte ao tamanho do campo.</li>
+                         <li><b>Campo multilinha</b>: esta opção pode ser habilitada quando a configuração <b>Campo de tamanho fixo</b> estiver selecionada, marque-a para criar um campo de formulário com várias linhas, caso contrário, o texto ocupam uma única linha.</li>
+                         <li><b>Limite de caracteres</b>: sem limites por padrão; marque esta caixa para definir o número máximo de caracteres no campo à direita.</li>
+                        <li>
+                            <b>Conjunto de caracteres</b>: espalhe o texto uniformemente dentro do campo de endereço de e-mail inserido e configure sua aparência geral. Deixe a caixa desmarcada para preservar as configurações padrão ou marque-a para definir os seguintes parâmetros:
+                            <ul>
+                                <li><b>Largura da célula</b>: escolha se o valor da largura deve ser <em>Auto</em> (a largura é calculada automaticamente), <em>Pelo menos</em> (a largura não é menor que o valor fornecido manualmente), ou <em>Exatamente</em> (a largura corresponde ao valor fornecido manualmente). O texto dentro será justificado de acordo.</li>
+                            </ul>
+                        </li>
+                        <li><b>Cor da borda</b>: clique no ícone <div class="icon icon-nofill"></div> para definir a cor das bordas do campo de endereço de e-mail inserido. Escolha a cor de borda preferida na paleta. Você pode <b>adicionar uma nova cor personalizada</b> se necessário.</li>
+                         <li><b>Cor de fundo</b>: clique no ícone <div class="icon icon-nofill"></div> para aplicar uma cor de fundo ao campo de endereço de e-mail inserido. Escolha a cor preferida entre <b>Cores do tema</b>, <b>Cores padrão</b> ou <b>adicione uma nova cor personalizada</b>, se necessário.</li>
+                         <li><b>Obrigatório</b>: marque esta caixa para tornar o campo de endereço de e-mail obrigatório para preencher.</li>
+                    </ul>
+                </div>
+            </details>
+        </div>
+
+        <h2 id="phonenumber">Criando um novo campo de número de telefone</h2>
+        <p><em>O campo Phone Number</em> é usado para digitar um número de telefone correspondente a uma máscara arbitrária fornecida pelo criador do formulário. É definido como <code>(999)999-9999</code> por padrão.</p>
+        <div class="forms">
+            <details class="details-example">
+                <summary>Para inserir um campo de número de telefone,</summary>
+                 <ol>
+                     <li>posicione o ponto de inserção dentro de uma linha do texto onde deseja que o campo seja adicionado,</li>
+                     <li>mude para a guia <b>Formulários</b> da barra de ferramentas superior,</li>
+                    <li>
+                        clique no <div class="icon icon-phone_number_icon"></div> <b>Número de telefone</b> ícone.
+                    </li>
+                </ol>
+                <p><span class="big big-phone_number_inserted"></span></p>
+                <p>O campo de formulário aparecerá no ponto de inserção dentro da linha de texto existente. O menu <b>Configurações do formulário</b> será aberto à direita.</p>
+                <div id="phone_number_settings">
+                    <img alt="configurações de número de telefone" src="../images/phone_number_settings.png" />
+                    <ul>
+                        <li><b>Chave</b>: para criar um novo grupo de números de telefone, insira o nome do grupo no campo e pressione <b>Enter</b>, em seguida, atribua o grupo necessário a cada número de telefone.</li>
+                         <li><b>Espaço reservado</b>: digite o texto a ser exibido no campo do formulário de número de telefone inserido; <em>“(999)999-9999”</em> é definido por padrão.</li>
+                         <li><b>Etiqueta</b>: digite o texto a ser usado como tag para uso interno, ou seja, exibido apenas para coeditores.</li>
+                         <li>
+                             <b>Dica</b>: digite o texto a ser exibido como dica quando um usuário passar o ponteiro do mouse sobre o campo do número de telefone.
+                            <br /> <img alt="ponta inserida" src="../images/phone_number_tip.png" />
+                        </li>
+                        <li><b>Formato</b>: escolha o formato do conteúdo do campo, ou seja, <em>Nenhum</em>, <em>Dígitos</em>, <em>Letras</em>, <em>Máscara arbitrária</em> ou <em>Expressão Regular</em>. O campo é definido como <em>Máscara arbitrária</em> por padrão. Para alterar seu formato, digite a máscara necessária no campo abaixo.</li>
+                         <li><b>Símbolos permitidos</b>: digite os símbolos permitidos no campo do número de telefone.</li>
+                         <li>
+                             <b>Campo de tamanho fixo</b>: marque esta caixa para criar um campo com tamanho fixo. Quando esta opção está ativada, você também pode usar as configurações de <b>Ajuste automático</b> e/ou <b>Campo multilinha</b>.<br />
+                             Um campo de tamanho fixo se parece com uma forma automática. Você pode definir um estilo de embrulho para ele, bem como ajustar sua posição.
+                        </li>
+                        <li><b>Ajuste automático</b>: esta opção pode ser ativada quando a configuração <b>Campo de tamanho fixo</b> é selecionada, marque-a para ajustar automaticamente o tamanho da fonte ao tamanho do campo.</li>
+                         <li><b>Campo multilinha</b>: esta opção pode ser habilitada quando a configuração <b>Campo de tamanho fixo</b> estiver selecionada, marque-a para criar um campo de formulário com várias linhas, caso contrário, o texto ocupam uma única linha.</li>
+                         <li><b>Limite de caracteres</b>: sem limites por padrão; marque esta caixa para definir o número máximo de caracteres no campo à direita.</li>
+                        <li>
+                            <b>Conjunto de caracteres</b>: espalhe o texto uniformemente dentro do campo de número de telefone inserido e configure sua aparência geral. Deixe a caixa desmarcada para preservar as configurações padrão ou marque-a para definir os seguintes parâmetros:
+                             <ul>
+                                 <li><b>Largura da célula</b>: escolha se o valor da largura deve ser <em>Auto</em> (a largura é calculada automaticamente), <em>Pelo menos</em> (a largura não é menor que o valor fornecido manualmente) ou <em>Exatamente</em> (a largura corresponde ao valor fornecido manualmente). O texto dentro será justificado de acordo.</li>
+                            </ul>
+                        </li>
+                        <li><b>Cor da borda</b>: clique no ícone <div class="icon icon-nofill"></div> para definir a cor das bordas do campo de número de telefone inserido. Escolha a cor de borda preferida na paleta. Você pode <b>adicionar uma nova cor personalizada</b> se necessário.</li>
+                         <li><b>Cor de fundo</b>: clique no ícone <div class="icon icon-nofill"></div> para aplicar uma cor de fundo ao campo de número de telefone inserido. Escolha a cor preferida entre <b>Cores do tema</b>, <b>Cores padrão</b> ou <b>adicione uma nova cor personalizada</b>, se necessário.</li>
+                         <li><b>Obrigatório</b>: marque esta caixa para tornar o campo do número de telefone obrigatório para preencher.</li>
+                    </ul>
+                </div>
+            </details>
+        </div>
+
+        <h2 id="complexfield">Criando um novo campo complexo</h2>
+         <p><em>Campo complexo</em> combina vários tipos de campo, por exemplo, campo de texto e uma lista suspensa. Você pode combinar os campos como quiser.</p>
+        <div class="forms">
+            <details class="details-example">
+                <summary>Para inserir um campo complexo,</summary>
+                <ol>
+                    <li>posicione o ponto de inserção dentro de uma linha do texto onde deseja que o campo seja adicionado,</li>
+                     <li>mude para a guia <b>Formulários</b> da barra de ferramentas superior,</li>
+                    <li>
+                        clique no ícone <div class="icon icon-complex_field_icon"></div> <b>Campo complexo</b>.
+                    </li>
+                </ol>
+                <p><img alt="campo complexo inserido" src="../images/complex_field_inserted.png"></p>
+                <p>O campo de formulário aparecerá no ponto de inserção dentro da linha de texto existente. O menu <b>Configurações do formulário</b> será aberto à direita.</p>
+                <div id="complex_field_settings">
+                    <img alt="configurações de campo complexas" src="../images/complex_field_settings.png" />
+                    <ul>
+                        <li><b>Chave</b>: para criar um novo grupo de campos complexos, insira o nome do grupo no campo e pressione <b>Enter</b>, depois atribua o grupo necessário a cada campo complexo.</li>
+                         <li><b>Espaço reservado</b>: digite o texto a ser exibido no campo complexo inserido; <em>“Seu texto aqui”</em> é definido por padrão.</li>
+                         <li><b>Etiqueta</b>: digite o texto a ser usado como tag para uso interno, ou seja, exibido apenas para coeditores.</li>
+                         <li>
+                             <b>Dica</b>: digite o texto a ser exibido como uma dica quando um usuário passar o ponteiro do mouse sobre o campo complexo.
+                            <br /> <img alt="ponta inserida" src="../images/complex_field_tip.png" />
+                        </li>
+                        <li>
+                            <b>Campo de tamanho fixo</b>: marque esta caixa para criar um campo com tamanho fixo.<br />
+                             Um campo de tamanho fixo se parece com uma forma automática. Você pode definir um estilo de embrulho para ele, bem como ajustar sua posição.
+                         </li>
+                         <li><b>Cor da borda</b>: clique no ícone <div class="icon icon-nofill"></div> para definir a cor das bordas do campo complexo inserido. Escolha a cor de borda preferida na paleta. Você pode <b>adicionar uma nova cor personalizada</b> se necessário.</li>
+                         <li><b>Cor de fundo</b>: clique no ícone <div class="icon icon-nofill"></div> para aplicar uma cor de fundo ao campo complexo inserido. Escolha a cor preferida entre <b>Cores do tema</b>, <b>Cores padrão</b> ou <b>adicione uma nova cor personalizada</b>, se necessário.</li>
+                        <li><b>Obrigatório</b>: marque esta caixa para tornar o campo complexo um obrigatório para preencher.</li>
+                     </ul>
+                     <p>Para inserir vários campos de formulário em um campo complexo, clique nele e escolha o campo desejado na barra de ferramentas superior da guia <b>Formulários</b> e configure-o como desejar. Para saber mais sobre cada tipo de campo, leia as seções correspondentes acima.</p>
+                    <p class="note">Observe que você não pode usar o campo de formulário <em>Imagem</em> em campos complexos.</p>
+                </div>
+            </details>
+        </div>
+
+
+        <h2>Destacar formulários</h2>
+         <p>Você pode destacar campos de formulário inseridos com uma determinada cor.</p>
+        <div class="forms">
+            <details class="details-example">
+                <summary>Para destacar campos,</summary>
+                <div id="highlight_settings">
+                    <img alt="configurações de destaque" src="../images/highlight_settings.png" />
+                    <ul>
+                        <li>abra as <b>Configurações de realce</b> na guia <b>Formulários</b> da barra de ferramentas superior,</li>
+                         <li>escolha uma cor em <b>Cores padrão</b>. Você também pode <b>adicionar uma nova cor personalizada</b>,</li>
+                         <li>para remover o realce de cor aplicado anteriormente, use a opção <b>Sem realce</b>.</li>
+                    </ul>
+                </div>
+                <p>As opções de realce selecionadas serão aplicadas a todos os campos de formulário do documento.</p>
+                 <p class="note">A borda do campo de formulário só fica visível quando o campo é selecionado. As bordas não aparecem na versão impressa.</p>
+            </details>
+        </div>
+
+        <h2>Ativando o formulário de visualização</h2>
+        <p class="note">
+            <b>Note</b>: Depois de entrar no modo <b>Visualizar formulário</b>, todas as opções de edição ficarão indisponíveis.
+        </p>
+        <p>Clique no botão <span class="icon icon-view_form_icon"></span> <b>Exibir formulário</b> na guia <b>Formulários</b> da barra de ferramentas superior para ver como todos os formulários inseridos serão exibidos em seu documento.</p>
+        <p><img alt="ver formulário ativo" src="../images/view_form_active2.png" /></p>
+        <p>Para <b>sair</b> do modo de visualização, clique no mesmo ícone novamente.</p>
+
+        <h2>Movendo campos de formulário</h2>
+         <p>Os campos do formulário podem ser movidos para outro local no documento: clique no botão à esquerda da borda do controle para selecionar o campo e arraste-o sem soltar o botão do mouse para outra posição no texto.</p>
+        <p><img alt="mover campos de formulário" src="../images/moving_form_fields.png" /></p>
+        <p>Você também pode <b>copiar e colar</b> campos de formulário: selecione o campo necessário e use as combinações de teclas <b>Ctrl+C/Ctrl+V</b> .</p>
+
+        <h2>Criando campos obrigatórios</h2>
+         <p>Para <b>tornar um campo obrigatório</b>, marque a opção <b>Obrigatório</b>. Os campos obrigatórios serão marcados com traço vermelho.<!--O formulário não pode ser enviado até que todos os campos obrigatórios sejam preenchidos.--></p>
+
+        <h2>Bloqueando campos de formulário</h2>
+         <p>Para <b>evitar futuras edições</b> do campo de formulário inserido, clique no ícone <span class="icon icon-lock_form_icon"></span> <b>Bloquear</b>. O preenchimento dos campos continua disponível.</p>
+
+        <h2>Limpando os campos do formulário</h2>
+         <p>Para limpar todos os campos inseridos e excluir todos os valores, clique no botão <span class="icon icon-clear_fields_icon"></span> <b>Limpar todos os campos</b> em guia <b>Formulários</b> na barra de ferramentas superior.</p>
+
+        <h2>Navegar, visualizar e salvar um formulário</h2>
+        <p><img alt="preencher painel de formulário" src="../images/fill_form.png" /></p>
+        <p>Vá para a guia <b>Formulários</b> na barra de ferramentas superior.</p>
+         <p>Navegue pelos campos do formulário usando botões <span class="icon icon-previous_field_icon"></span> <b>Campo anterior</b> e <span class="icon icon-next_field_icon"></span> <b>Próximo campo</b> na barra de ferramentas superior.</p>
+         <p>Ao terminar, clique no botão <span class="icon icon-save_form_icon"></span> <b>Salvar como oform</b> na barra de ferramentas superior para salvar o formulário como um arquivo <b>OFORM </b> pronto para ser preenchido. Você pode salvar quantos arquivos <b>OFORM</b> precisar.</p>
+        <!--<p>Para limpar todos os campos e redefinir o formulário, clique no botão <div class = "icon icon-clear_fields_icon"></div> <b>Limpar campos</b> na barra de ferramentas superior.</p>
+         <p>Ao terminar, clique no botão <div class = "icon icon-submit_form_icon"></div> <b>Enviar</b> na barra de ferramentas superior para enviar o formulário para processamento posterior. Observe que esta ação não pode ser desfeita.</p>
+     <p class="note">Se você estiver usando a versão de servidor do ONLYOFFICE Docs, a presença do botão <b>Enviar</b> dependerá da configuração. Ler <a href="https://api.onlyoffice.com/editors/config/editor/customization">this article</a> aprender mais.</p>-->
+        <h2>Removendo campos de formulário</h2>
+        <p>Para remover um campo de formulário e deixar todo o seu conteúdo, selecione-o e clique no botão <span class="icon icon-combo_delete_values"></span> <b>Excluir</b> (verifique se o campo não está bloqueado) ou pressione a tecla <b>Excluir</b> no teclado.</p>
+    </div>
+</body>
+</html>

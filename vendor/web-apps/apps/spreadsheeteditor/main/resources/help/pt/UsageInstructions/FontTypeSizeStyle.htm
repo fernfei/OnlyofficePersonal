@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Definir tipo, tamanho, estilo e cores da fonte</title>
+		<meta charset="utf-8" />
+		<meta name="descrição" content="Altere os seguintes parâmetros de formatação: tipo de fonte, tamanho, estilo e cores" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Definir tipo, tamanho, estilo e cores da fonte</h1>
+			<p>No <a href="https://www.onlyoffice.com/pt/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Planilhas</b></a>, você pode selecionar o tipo de fonte e seu tamanho, aplicar um dos estilos de decoração e alterar a fonte e as cores de fundo clicando nos ícones correspondentes na guia <b>Página inicial</b> da barra de ferramentas superior.</p>
+            <p class="note"><b>Observação</b>: se você deseja aplicar formatação aos dados da planilha, selecione-os com o mouse ou <a href="../HelpfulHints/KeyboardShortcuts.htm# textselection" onclick="onhyperlinkclick(this)">use o teclado</a> e aplique a formatação necessária. Se você precisar aplicar a formatação a várias células não adjacentes ou intervalos de células, mantenha pressionada a tecla <b>Ctrl</b> enquanto seleciona células/intervalos com o mouse.</p>
+			<table>
+				<tr>
+                    <td width="10%">Fonte</td>
+                    <td width="15%"><div class = "big big-fontfamily"></div></td>
+					<td>Usado para selecionar uma das fontes da lista de fontes disponíveis. <span class="desktopDocumentFeatures">Se a fonte necessária não estiver disponível na lista, você pode baixá-la e instalá-la em seu sistema operacional, e a fonte estará disponível para uso na <em>versão para desktop</em>.</span></td>
+				</tr>
+				<tr>
+					<td>Tamanho da fonte</td>
+                    <td><div class = "icon icon-fontsize"></div></td>
+                    <td>Usado para selecionar os valores de tamanho de fonte predefinidos na lista suspensa (os valores padrão são: 8, 9, 10, 11, 12, 14, 16, 18, 20, 22, 24, 26, 28, 36, 48 , 72 e 96). Também é possível inserir manualmente um valor personalizado de até 409 pt no campo de tamanho da fonte. Pressione <em>Enter</em> para confirmar.</td>
+				</tr>
+				<tr>
+					<td>Aumentar tamanho da fonte</td>
+					<td><div class = "icon icon-larger"></div></td>
+					<td>Usado para alterar o tamanho da fonte tornando-a um ponto maior cada vez que o ícone é clicado.</td>
+				</tr>
+				<tr>
+					<td>Diminuir o tamanho da fonte</td>
+					<td><div class = "icon icon-smaller"></div></td>
+					<td>Usado para alterar o tamanho da fonte diminuindo um ponto cada vez que o ícone é clicado.</td>
+				</tr>
+				<tr>
+					<td>Negrito</td>
+					<td><div class = "icon icon-bold"></div></td>
+					<td>Usado para tornar a fonte em negrito, tornando-a mais pesada.</td>
+				</tr>
+				<tr>
+					<td>Itálico</td>
+					<td><div class = "icon icon-italic"></div></td>
+					<td>Usado para deixar a fonte ligeiramente inclinada para a direita.</td>
+				</tr>
+				<tr>
+					<td>Sublinhado</td>
+					<td><div class = "icon icon-underline"></div></td>
+					<td>Usado para fazer o texto sublinhado com uma linha abaixo das letras.</td>
+				</tr>
+                <tr>
+                    <td>Tachado</td>
+                    <td><div class = "icon icon-strike"></div></td>
+                    <td>Usado para riscar o texto com uma linha passando pelas letras.</td>
+                </tr>
+                <tr>
+                    <td>Subscrito/Sobrescrito</td>
+                    <td><div class = "icon icon-subscripticon"></div></td>
+                    <td>Permite escolher a opção <b>Sobrescrito</b> ou <b>Subscrito</b>. A opção <b>Sobrescrito</b> é usada para tornar o texto menor e colocá-lo na parte superior da linha de texto, por exemplo, como em frações. A opção <b>Subscript</b> é usada para tornar o texto menor e colocá-lo na parte inferior da linha de texto, por exemplo, como nas fórmulas químicas.</td>
+                </tr>
+                <tr>
+					<td>Cor da fonte</td>
+					<td><div class = "icon icon-fontcolor"></div></td>
+					<td>Usado para alterar a cor das letras/caracteres nas células.</td>
+				</tr>
+				<tr>
+					<td>Cor de preenchimento</td>
+					<td><div class = "icon icon-backgroundcolor"></div></td>
+					<td>Usado para alterar a cor do preenchimento da célula. Usando este ícone, você pode aplicar um preenchimento de <em>cor sólida</em>. A cor do preenchimento da célula também pode ser alterada usando a seção <b>Preenchimento</b> nas <a href="../UsageInstructions/AddBorders.htm" onclick="onhyperlinkclick(this)">Configurações da célula</a> guia da barra lateral direita.</td>
+				</tr>
+				<tr>
+					<td id="colorscheme">Alterar esquema de cores</td>
+                    <td><div class = "icon icon-changecolorscheme"></div></td>
+                    <td>Este botão está localizado na guia <b>Layout</b>. Usado para alterar a paleta de cores padrão dos elementos da planilha (fonte, plano de fundo, chats e elementos do gráfico) selecionando entre as opções disponíveis: <b>Novo escritório</b>, <b>Escritório</b>, <b>Escala de cinza</b>, <b>Apex</b>, <b>Aspecto</b>, <b>Cívico</b>, <b>Concurso</b>, <b>Equidade</b>, <b>Fluxo</b>, <b>Fundição</b>, <b>Mediano</b>, <b>Metro</b>, <b>Módulo</b>, <b>Odulente</b>, <b>Oriel</b>, <b>Origem</b>, <b>Papel</b>, <b>Solstício</b>, <b>Técnica</b>, <b >Trek</b>, <b>Urbano</b> ou <b>Verve</b>.</td>
+				</tr>
+			</table>
+			<p><p class="note"><b>Nota</b>: também é possível aplicar uma das predefinições de formatação selecionando a célula que deseja formatar e escolhendo a predefinição desejada na lista da guia <b>Página inicial</b> da barra de ferramentas superior:<br /><br />
+				<img alt="Predefinições de formatação" src="../images/presets.png" />
+			   </p>
+			<p>Para alterar a cor da fonte ou usar um preenchimento de <em>cor sólida</em> como plano de fundo da célula,</p>
+			<ol>
+			<li>selecione caracteres/células com o mouse ou toda a planilha usando a combinação de teclas <b>Ctrl+A</b>,</li>
+            <li>clique no ícone correspondente na barra de ferramentas superior,</li>
+            <li>selecione qualquer cor nas paletas disponíveis
+					<p><img alt="Paleta" src="../images/palette.png" /></p>
+					<ul>
+						<li><b>Cores do tema</b> - as cores que correspondem ao esquema de cores selecionado da planilha.</li>
+                        <li><b>Cores padrão</b> - o conjunto de cores padrão.</li>
+                        <li><b>Cor personalizada</b> - clique nesta legenda se não houver cor necessária nas paletas disponíveis. Selecione o intervalo de cores necessário movendo o controle deslizante vertical de cores e defina a cor específica arrastando o seletor de cores no grande campo quadrado de cores. Depois de selecionar uma cor com o seletor de cores, os valores de cores RGB e sRGB apropriados serão exibidos nos campos à direita. Você também pode especificar uma cor com base no modelo de cores RGB inserindo os valores numéricos necessários em <b>R</b>, <b>G</b>, <b>B</b> (vermelho , verde, azul) ou insira o código hexadecimal sRGB no campo marcado com o sinal <b>#</b>. A cor selecionada aparecerá na caixa de visualização <b>Novo</b>. Se o objeto foi preenchido anteriormente com qualquer cor personalizada, essa cor é exibida na caixa <b>Atual</b> para que você possa comparar as cores originais e modificadas. Quando a cor for especificada, clique no botão <b>Adicionar</b>:
+						<p><img alt="Paleta - Cor Personalizada" src="../../../../../../common/main/resources/help/en/images/palette_custom.png" /></p>
+						<p>A cor personalizada será aplicada ao texto/célula selecionado e adicionada à paleta <b>Cor personalizada</b>.</p>
+						</li>
+						</ul>
+					</li>
+			</ol>
+			<p>Para remover a cor de fundo de uma determinada célula,</p>
+			<ol>
+				<li>selecione uma célula ou um intervalo de células com o mouse ou toda a planilha usando a combinação de teclas <b>Ctrl+A</b>,</li>
+				<li>clique no ícone <b>Cor de preenchimento</b> <div class = "icon icon-backgroundcolor"></div> na guia <b>Página inicial</b> da barra de ferramentas superior,</li>
+                <li>selecione o ícone <div class = "icon icon-nofill"></div>.</li>
+			</ol>
+		</div>
+	</body>
+</html>

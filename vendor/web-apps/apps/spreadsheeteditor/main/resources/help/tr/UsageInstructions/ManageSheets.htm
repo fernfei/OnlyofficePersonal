@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sayfaları y&ouml;netme</title>
+		<meta charset="utf-8" />
+        <meta name="description" content="Manage sheets in Spreadsheet Editor: insert, delete, rename, copy and move." />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Sayfaları y&ouml;netme</h1>
+			<p>Varsayılan olarak, yeni oluşturulan bir elektronik tablonun tek bir sayfası vardır. <a href="https://www.onlyoffice.com/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Elektronik Tablo D&uuml;zenleyicisine</b></a> yeni bir sayfa eklemenin en basit yolu sol alt k&ouml;şedeki <b>Sayfada Gezinme</b> d&uuml;ğmelerinin sağ tarafında bulunan Artı <span class="icon icon-plus"></span> d&uuml;ğmesine tıklamaktır.</p>
+			<p><b>Yeni bir sayfa eklemenin</b> bir diğer yolu:</p>
+			<ol>
+			<li>Yenisini eklemek istediğiniz sayfa sekmesine sağ tıklayın,</li>
+			<li>Sağ tıklama men&uuml;s&uuml;nden <b>Ekle</b> se&ccedil;eneğini se&ccedil;in.</li>
+			</ol>
+			<p>Se&ccedil;ili sayfadan sonra yeni bir sayfa eklenecektir.</p>
+			<p><b>Gerekli sayfayı etkinleştirmek i&ccedil;in</b> her elektronik tablonun sol alt k&ouml;şesindeki sayfa sekmelerini kullanın.</p>
+			<p class="note"><b>Not</b>: &Ccedil;ok fazla sayfanız varsa, sol alt k&ouml;şede bulunan <b>Sayfada Gezinme</b> d&uuml;ğmelerini kullanarak gerekli olanı bulabilirsiniz.</p>
+			<p><b>Gereksiz bir sayfayı silmek i&ccedil;in:</b></p>
+			<ol>
+				<li>Silmek istediğiniz sayfa sekmesine sağ tıklayın,</li>
+				<li>Sağ tıklama men&uuml;s&uuml;nden <b>Sil</b> se&ccedil;eneğini se&ccedil;in.</li>
+			</ol>
+			<p>Se&ccedil;ilen sayfa, ge&ccedil;erli elektronik tablodan silinecektir.</p>
+			<p><b>Mevcut bir sayfayı yeniden adlandırmak i&ccedil;in:</b></p>
+			<ol>
+				<li>Yeniden adlandırmak istediğiniz sayfa sekmesine sağ tıklayın,</li>
+				<li>Sağ tıklama men&uuml;s&uuml;nden <b>Yeniden Adlandır</b> se&ccedil;eneğini se&ccedil;in,</li>
+				<li>İletişim kutusunda <b>Sayfa Adını</b> girin ve <b>Tamam</b> se&ccedil;eneğine tıklayın.</li>
+			</ol>
+			<p>Se&ccedil;ilen sayfa adı değiştirilecektir.</p>
+			<p><b>Mevcut bir sayfayı kopyalamak i&ccedil;in:</b></p>
+			<ol>
+				<li>Kopyalamak istediğiniz sayfa sekmesine sağ tıklayın,</li>
+				<li>Sağ tıklama men&uuml;s&uuml;nden <b>Kopyala</b> se&ccedil;eneğini se&ccedil;in,</li>
+				<li>Kopyalanan sayfayı &ouml;n&uuml;ne eklemek istediğiniz sayfayı se&ccedil;in veya kopyalanan sayfayı mevcut t&uuml;m sayfalardan sonra eklemek i&ccedil;in <b>Sona kopyala</b> se&ccedil;eneğini kullanın,</li>
+				<li>
+                    Se&ccedil;iminizi onaylamak i&ccedil;in <b>Tamam</b> d&uuml;ğmesine tıklayın
+                    <p>veya</p>
+					<p><b>CTRL</b> tuşuna basın ve basılı tutun ve &ccedil;oğaltmak ve kopyayı ihtiyacınız olan konuma taşımak i&ccedil;in sayfa sekmesini sağa s&uuml;r&uuml;kleyin.</p>
+				</li>
+			</ol>
+			<p>Se&ccedil;ilen sayfa kopyalanacak ve se&ccedil;ilen yere eklenecektir.</p>
+			<p><b>Mevcut bir sayfayı taşımak i&ccedil;in:</b></p>
+			<ol>
+				<li>Taşımak istediğiniz sayfa sekmesine sağ tıklayın,</li>
+				<li>Sağ tıklama men&uuml;s&uuml;nden <b>Taşı</b> se&ccedil;eneğini se&ccedil;in,</li>
+				<li>Se&ccedil;ili olanı &ouml;n&uuml;ne eklemek istediğiniz sayfayı se&ccedil;in veya se&ccedil;ili sayfayı mevcut t&uuml;m sayfaların sonuna taşımak i&ccedil;in <b>Sona taşı</b> se&ccedil;eneğini kullanın,</li>
+				<li>Se&ccedil;iminizi onaylamak i&ccedil;in <b>Tamam</b> d&uuml;ğmesine tıklayın</li>
+			</ol>
+			<p>Ya da sadece gerekli sayfa sekmesini <b>s&uuml;r&uuml;kleyin</b> ve yeni bir konuma <b>bırakın</b>. Se&ccedil;ilen sayfa taşınacaktır.</p>
+			<p>Bir sayfayı bir kitaptan diğerine manuel olarak da <b>s&uuml;r&uuml;kleyip bırakabilirsiniz</b>. Bunu yapmak i&ccedil;in taşımak istediğiniz sayfayı se&ccedil;in ve başka bir kitabın sayfa &ccedil;ubuğuna s&uuml;r&uuml;kleyin. &Ouml;rneğin, bir sayfayı &ccedil;evrimi&ccedil;i d&uuml;zenleyici kitabından masa&uuml;st&uuml; d&uuml;zenleyici kitabına s&uuml;r&uuml;kleyebilirsiniz:</p>
+			<p><img alt="Sayfayı taşı gif" src="../images/move_sheet.gif" /></p>
+			<p>Bu durumda, orijinal elektronik tablodaki sayfa <b>silinir</b>.</p>
+			<p>&Ccedil;ok fazla sayfanız varsa, işinizi kolaylaştırmak i&ccedil;in ihtiyacınız olmayanları gizleyebilirsiniz. Bunu yapmak i&ccedil;in</p>
+			<ol>
+				<li>Gizlemek istediğiniz sayfa sekmesine sağ tıklayın,</li>
+				<li>Sağ tıklama men&uuml;s&uuml;nden <b>Gizle</b> se&ccedil;eneğini se&ccedil;in,</li>
+			</ol>
+			<p><b>Gizlenen sayfa sekmesini g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in</b> herhangi bir sayfa sekmesine sağ tıklayın, <b>Gizlenenler</b> listesini a&ccedil;ın ve g&ouml;r&uuml;nt&uuml;lemek istediğiniz sayfa sekmesini se&ccedil;in.</p>
+			<p>Sayfaları farklılaştırmak i&ccedil;in <b>sayfa sekmelerine farklı renkler atayabilirsiniz</b>. Bunu yapmak i&ccedil;in</p>
+			<ol>
+				<li>Renklendirmek istediğiniz sayfa sekmesine sağ tıklayın,</li>
+                <li>Sağ tıklama men&uuml;s&uuml;nden <b>Sekme Rengi</b> se&ccedil;eneğini se&ccedil;in,</li>
+				<li>Mevcut paletlerde herhangi bir renk se&ccedil;in
+                <p><img alt="Palet" src="../images/palette.png" /></p>
+					<ul>
+						<li><b>Tema Renkleri</b> - Elektronik tablonun se&ccedil;ilen renk d&uuml;zenine karşılık gelen renkler.</li>
+						<li><b>Standart Renkler</b> - Varsayılan renkler k&uuml;mesi.</li>
+						<li><b>&Ouml;zel Renk</b> - Mevcut paletlerde ihtiyacınız olan renk yoksa bu başlığa tıklayın. Dikey renk kaydırıcısını hareket ettirerek gerekli renk aralığını se&ccedil;in ve renk se&ccedil;iciyi b&uuml;y&uuml;k kare renk alanı i&ccedil;inde s&uuml;r&uuml;kleyerek belirli rengi ayarlayın. Renk se&ccedil;ici ile bir renk se&ccedil;tiğinizde, uygun RGB ve sRGB renk değerleri sağdaki alanlarda g&ouml;r&uuml;nt&uuml;lenecektir. Bir rengi RGB renk modeli temelinde, gerekli sayısal değerleri <b>R</b>, <b>G</b>, <b>B</b> (Kırmızı, Yeşil, Mavi) alanlarına girerek de belirleyebilir veya sRGB onaltılık kodunu <b>#</b> işareti ile işaretlenmiş alana girebilirsiniz. Se&ccedil;ilen renk <b>Yeni</b> &ouml;nizleme kutusunda g&ouml;r&uuml;n&uuml;r. Nesne &ouml;nceden herhangi bir &ouml;zel renkle doldurulmuşsa, bu renk <b>Ge&ccedil;erli</b> kutusunda g&ouml;r&uuml;nt&uuml;lenir, b&ouml;ylece başlangı&ccedil;taki ve değiştirilmiş renkleri karşılaştırabilirsiniz. Renk belirtildiğinde, <b>Ekle</b> d&uuml;ğmesine tıklayın:
+                        <p><img alt="Palet - Özel Renk" src="../../../../../../common/main/resources/help/tr/images/palette_custom.png" /></p>
+						<p>&Ouml;zel renk, se&ccedil;ilen sekmeye uygulanacak ve <b>&Ouml;zel renk</b> paletine eklenecektir.</p>
+						</li>
+						</ul>
+					</li>
+			</ol>
+			<p><b>Birden &ccedil;ok sayfa ile eş zamanlı olarak</b> &ccedil;alışabilirsiniz:</p>
+			<ol>
+				<li>Gruba eklemek istediğiniz ilk sayfayı se&ccedil;in,</li>
+				<li>Gruplandırmak istediğiniz birka&ccedil; bitişik sayfayı se&ccedil;mek i&ccedil;in <em>Shift</em> tuşuna basılı tutun ya da gruplandırmak istediğiniz birka&ccedil; bitişik olmayan sayfayı se&ccedil;mek i&ccedil;in <em>Ctrl</em> tuşunu kullanın,</li>
+				<li>Bağlamsal men&uuml;y&uuml; a&ccedil;mak i&ccedil;in se&ccedil;ili sayfa sekmelerinden birine sağ tıklayın,</li>
+				<li>Men&uuml;den gerekli se&ccedil;eneği se&ccedil;in:
+                <p><img alt="Birden çok sayfayı yönetme" src="../images/severalsheets.png" /></p>
+				<ul>
+					<li><b>Ekle</b> - Se&ccedil;ili grupta olduğu gibi aynı sayıda yeni boş sayfa eklemek i&ccedil;in kullanılır,</li>
+					<li><b>Sil</b> - Se&ccedil;ilen t&uuml;m sayfaları bir kerede silmek i&ccedil;in kullanılır (&ccedil;alışma kitabının en az bir g&ouml;r&uuml;n&uuml;r sayfa i&ccedil;ermesi gerektiğinden &ccedil;alışma kitabındaki t&uuml;m sayfaları silemezsiniz),</li>
+					<li><b>Yeniden Adlandır</b> - Bu se&ccedil;enek yalnızca her bir ayrı sayfaya uygulanabilir,</li>
+					<li><b>Kopyala</b> - Se&ccedil;ilen t&uuml;m sayfaların kopyalarını bir kerede oluşturmak ve bunları se&ccedil;ilen yere yapıştırmak i&ccedil;in kullanılır,</li>
+					<li><b>Taşı</b> - Se&ccedil;ilen t&uuml;m sayfaları bir kerede taşımak ve se&ccedil;ilen yere yapıştırmak i&ccedil;in kullanılır,</li>
+					<li><b>Gizle</b> - Se&ccedil;ilen t&uuml;m sayfaları bir kerede gizlemek i&ccedil;in kullanılır (&ccedil;alışma kitabının en az bir g&ouml;r&uuml;n&uuml;r sayfa i&ccedil;ermesi gerektiğinden &ccedil;alışma kitabındaki t&uuml;m sayfaları gizleyemezsiniz),</li>
+					<li><b>Sekme rengi</b> - Se&ccedil;ilen t&uuml;m sayfa sekmelerine aynı rengi bir kerede atamak i&ccedil;in kullanılır,</li>
+					<li><b>T&uuml;m Sayfaları Se&ccedil;</b> - Mevcut &ccedil;alışma kitabındaki t&uuml;m sayfaları se&ccedil;mek i&ccedil;in kullanılır,</li>
+					<li><b>Sayfaların Grubunu &Ccedil;&ouml;z</b> - Se&ccedil;ilen sayfaların grubunu &ccedil;&ouml;zmek i&ccedil;in kullanılır.
+                        <p class="note">Gruba eklenen bir sayfaya &ccedil;ift tıklayarak veya gruba ekli olmayan herhangi bir sayfaya tıklayarak sayfaların grubunu &ccedil;&ouml;zmek de m&uuml;mk&uuml;nd&uuml;r.</p>
+                    </li>
+				</ul>
+				</li>
+			</ol>
+		</div>
+	</body>
+</html>

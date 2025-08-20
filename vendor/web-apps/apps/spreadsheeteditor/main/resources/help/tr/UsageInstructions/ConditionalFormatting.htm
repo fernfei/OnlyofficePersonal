@@ -1,0 +1,412 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Koşullu Bi&ccedil;imlendirme</title>
+		<meta charset="utf-8" />
+        <meta name="description" content="Conditional formatting allows you to apply various formatting styles (color, font, decoration, gradient) to cells to work with data on the spreadsheet: highlight or sort through and display the data that meets the needed criteria." />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Koşullu Bi&ccedil;imlendirme</h1>
+			<p><b>Koşullu bi&ccedil;imlendirme,</b> elektronik tablodaki verilerle &ccedil;alışmak i&ccedil;in h&uuml;crelere &ccedil;eşitli bi&ccedil;imlendirme stilleri (renk, yazı tipi, s&uuml;sleme, gradyan) uygulamanızı, gerekli kriterlere uyan verileri vurgulamanızı veya sıralamanızı ve g&ouml;r&uuml;nt&uuml;lemenizi sağlar. Amaca uygunluk kriterlerini belirleyin ve yeni bi&ccedil;imlendirme kuralları oluşturun, mevcut kuralları d&uuml;zenleyin, y&ouml;netin veya silin.
+            ONLYOFFICE <a href="https://www.onlyoffice.com/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Elektronik Tablo D&uuml;zenleyicisi</b></a> tarafından desteklenen koşullu bi&ccedil;imlendirme kuralları şunlardır:</p>
+			<p><b>Değerlerine G&ouml;re</b>, <b>İlk/Son</b>, <b>Ortalama</b>, <b>Metin</b>, <b>Tarih</b>, <b>Boşluk/Hata</b>, <b>Yinelenen/Benzersiz</b>, <b>Veri &Ccedil;ubukları</b>, <b>Renk &Ouml;l&ccedil;ekleri</b>, <b>Simge K&uuml;meleri</b>, <b>Form&uuml;l</b>.</p>
+            <p>Hızlı erişim i&ccedil;in veya mevcut &ouml;nceden ayarlanmış koşullardan birini se&ccedil;mek istiyorsanız veya mevcut t&uuml;m koşullu bi&ccedil;imlendirme se&ccedil;eneklerine erişmek i&ccedil;in <b>Giriş</b> sekmesine gidin ve <b>Koşullu bi&ccedil;imlendirme</b> d&uuml;ğmesine <span class="icon icon-conditionalformatting_button"></span> tıklayın.</p>
+                    <p><img alt="Koşullu Biçimlendirme Giriş Sekmesi" src="../images/interface/hometab.png" /></p>
+            <p>T&uuml;m <b>Koşullu bi&ccedil;imlendirme</b> se&ccedil;enekleri, <b>H&uuml;cre Ayarları</b> sekmesinde sağ kenar &ccedil;ubuğunda da mevcuttur. Mevcut t&uuml;m se&ccedil;enekleri i&ccedil;eren a&ccedil;ılır men&uuml;y&uuml; a&ccedil;mak i&ccedil;in <b>Koşullu bi&ccedil;imlendirme</b> kontrol aşağı okuna tıklayın.</p>
+                    <p><img alt="Koşullu Biçimlendirme Sağ Kenar Çubuğu" src="../images/conditionalformatting_rightsidebar.png" /></p>
+            <p><b>Yeni Bi&ccedil;imlendirme Kuralı</b> penceresini a&ccedil;mak i&ccedil;in herhangi bir h&uuml;creye sağ tıklayıp bağlamsal men&uuml;den <b>Koşullu bi&ccedil;imlendirmeyi</b> se&ccedil;ebilirsiniz.</p>
+                    <p><img alt="Koşullu Biçimlendirme Sağ Tıklama" src="../images/conditionalformatting_rightclick.png" /></p>
+            <p>Bir bi&ccedil;imlendirme kuralı koşulu uygulamak i&ccedil;in h&uuml;cre aralığını se&ccedil;in ve ardından &uuml;st ara&ccedil; &ccedil;ubuğunda <b>Koşullu bi&ccedil;imlendirme</b> d&uuml;ğmesine <span class="icon icon-conditionalformatting_button"></span> veya sağ kenar &ccedil;ubuğunda <b>H&uuml;cre Ayarları</b> sekmesinin <b>Koşullu bi&ccedil;imlendirme</b> kontrol&uuml;ne tıklayın ve a&ccedil;ılır men&uuml;den uygun kuralı se&ccedil;in.</p> 
+            <p><img alt="Koşullu Biçimlendirme Açılır Menüsü" src="../images/conditionalformatting_dropdown.png" />.
+            <p>Vurgulama kriterlerini bi&ccedil;imlendirmeniz i&ccedil;in <b>Yeni Bi&ccedil;imlendirme Kuralı</b> penceresi a&ccedil;ılacaktır.</p>
+            <details class="details-example">
+                <summary><b>Değerlerine G&ouml;re Bi&ccedil;imlendirme Kuralı</b></summary>
+                <p><b>Değerine G&ouml;re</b> bi&ccedil;imlendirme kuralı, belirli bir karşılaştırma koşulunu karşılayan h&uuml;creleri bulmak ve vurgulamak i&ccedil;in kullanılır:</p> 
+                <ul type="circle">
+                     <li>B&uuml;y&uuml;k</li>
+                     <li>B&uuml;y&uuml;k veya eşit</li>
+                     <li>K&uuml;&ccedil;&uuml;k</li>
+                     <li>K&uuml;&ccedil;&uuml;k veya eşit</li>
+                     <li>Eşit</li>
+                     <li>Eşit değil</li>
+                     <li>Arasında</li>
+                     <li>Arasında değil</li>
+                </ul>
+                    <p><img alt="Yeni Kural Değeri" src="../images/newrule_valueis.png" /></p>
+                <ul type="disc">
+                     <li><b>Kural</b> b&ouml;l&uuml;m&uuml;, se&ccedil;ilen kuralı ve se&ccedil;ilen karşılaştırma koşulunu g&ouml;sterir, aşağı oka tıklayarak mevcut kural ve koşulların listesine erişebilirsiniz. Karşılaştırılacak h&uuml;cre değerini tanımlamak i&ccedil;in <b>Veri Se&ccedil;</b> kutusunu kullanın. Tek bir h&uuml;creye yapılan başvuruyu veya =TOPLA(A1:B5) gibi &ccedil;alışma sayfası işlevindeki başvuruyu kullanın.</li>
+                     <li><b>Bi&ccedil;im</b> b&ouml;l&uuml;m&uuml;, bir dizi h&uuml;cre bi&ccedil;imlendirme se&ccedil;eneği sunar. Mevcut bi&ccedil;im <b>&Ouml;n Ayarlarından</b> birini se&ccedil;ebilirsiniz.</li>
+                </ul>
+                     <p><img alt="Biçim Ön Ayarları" src="../images/format_presets.png" /></p>
+                <p>veya</p> 
+                <p>Yazı tipi bi&ccedil;imi se&ccedil;eneklerini (Kalın, İtalik, Altı &Ccedil;izili, &Uuml;st&uuml; &Ccedil;izili), Metin rengi, Dolgu rengini ve Kenarlıkları kullanarak bi&ccedil;imlendirmeyi &ouml;zelleştirin. Uygun sayı bi&ccedil;imini (Genel, Sayı, Bilimsel, Muhasebe, Para Birimi, Tarih, Saat, Y&uuml;zde) se&ccedil;mek i&ccedil;in <b>Genel</b> a&ccedil;ılır listesini kullanın. <b>&Ouml;nizleme</b> kutusu, bi&ccedil;imlendirmeden sonra h&uuml;crenin nasıl g&ouml;r&uuml;neceğini g&ouml;sterir. T&uuml;m bi&ccedil;imlendirmeyi silmek i&ccedil;in <b>Temizle</b>
+                d&uuml;ğmesine tıklayın.</p>
+                <p>Onaylamak i&ccedil;in <b>Tamam</b> d&uuml;ğmesine tıklayın.</p>
+                <p>Aşağıdaki &ouml;rnekte, <b>B&uuml;y&uuml;k</b> ve <b>Arasında</b> gibi &ouml;nceden ayarlanmış bi&ccedil;imlendirme kriterleri g&ouml;sterilmektedir. Bu, 6.960 &uuml;zerinde y&uuml;ksekliğe sahip dağları yeşil bir arka planla ve 5.000 ile 6.500 arasındaki y&uuml;zdelik dilimi pembe olarak bi&ccedil;imlendirir.</p>
+                <p><img alt="Değer" src="../images/conditionalformatting/valueis_example.png" /></p>
+            </details>
+            <details class="details-example">
+                <summary><b>İlk/Son Bi&ccedil;imlendirme Kuralı</b></summary>
+                <p><b>İlk/Son</b> kuralı, elektronik tablodaki en &uuml;st ve en alt değerleri bulmak ve g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in kullanılır:</p> 
+                <ul type="circle">
+                     <li>İlk 10 &ouml;ğe</li>
+                     <li>İlk 10%</li>
+                     <li>Son 10 &ouml;ğe</li>
+                     <li>Son %10</li>
+               </ul>
+                    <p><img alt="Yeni Kural İlk/Son" src="../images/newrule_topbottom.png" /></p>
+                <ul type="disc">
+                     <li><b>Kural</b> b&ouml;l&uuml;m&uuml;, se&ccedil;ili kuralı ve se&ccedil;ili koşulu g&ouml;sterir, aşağı oka tıklayarak mevcut kural ve koşulların listesine, g&ouml;r&uuml;nt&uuml;lenecek &ouml;ğe sayısına (y&uuml;zde) erişebilir ve &ouml;ğeleri mi yoksa y&uuml;zdeyi mi vurgulamak istediğinizi se&ccedil;ebilirsiniz.</li>
+                     <li><b>Bi&ccedil;im</b> b&ouml;l&uuml;m&uuml;, bir dizi h&uuml;cre bi&ccedil;imlendirme se&ccedil;eneği sunar. Mevcut bi&ccedil;im <b>&Ouml;n Ayarlarından</b> birini se&ccedil;ebilirsiniz.</li>
+                </ul>
+                     <p><img alt="Biçim Ön Ayarları" src="../images/format_presets.png" /></p>
+                <p>veya</p> 
+                <p>Yazı tipi bi&ccedil;imi se&ccedil;eneklerini (Kalın, İtalik, Altı &Ccedil;izili, &Uuml;st&uuml; &Ccedil;izili), Metin rengi, Dolgu rengini ve Kenarlıkları kullanarak bi&ccedil;imlendirmeyi &ouml;zelleştirin. Uygun sayı bi&ccedil;imini (Genel, Sayı, Bilimsel, Muhasebe, Para Birimi, Tarih, Saat, Y&uuml;zde) se&ccedil;mek i&ccedil;in <b>Genel</b> a&ccedil;ılır listesini kullanın. <b>&Ouml;nizleme</b> kutusu, bi&ccedil;imlendirmeden sonra h&uuml;crenin nasıl g&ouml;r&uuml;neceğini g&ouml;sterir. T&uuml;m bi&ccedil;imlendirmeyi silmek i&ccedil;in <b>Temizle</b> d&uuml;ğmesine tıklayın.</p>
+                <p>Onaylamak i&ccedil;in <b>Tamam</b> d&uuml;ğmesine tıklayın.</p>
+                <p>Aşağıdaki &ouml;rnekte, ilk %20 değeri g&ouml;sterecek şekilde ayarlanmış <b>İlk 10%</b> ve <b>Son 10 &uuml;r&uuml;n</b> gibi &ouml;nceden ayarlanmış bi&ccedil;imlendirme kriterleri g&ouml;sterilmektedir. Bu, ziyaret ettiğiniz şehirlerdeki &uuml;cretlerin ilk %20&apos;sini turuncu bir arka planla ve az sayıda kitap sattığınız şehirler i&ccedil;in son değerleri mavi bir arka planla bi&ccedil;imlendirir.</p>
+                <p><img alt="İlk/Son" src="../images/conditionalformatting/topbottom_example.png" /></p>
+                </details>
+            <details class="details-example">
+                <summary><b>Ortalama Bi&ccedil;imlendirme Kuralı</b></summary>
+                <p><b>Ortalama,</b> bir derecelendirmede ortalama veya standart sapmanın &uuml;st&uuml;ndeki veya altındaki değerleri bulmak ve g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in kullanılır:</p> 
+                <ul type="circle">
+                     <li>Ortalamanın &uuml;st&uuml;nde</li>
+                     <li>Ortalamanın Altında</li>
+                     <li>Eşit veya ortalamanın &uuml;st&uuml;nde</li>
+                     <li>Eşit veya ortalamanın altında</li>
+                     <li>1 std sap &uuml;st&uuml;nde</li>
+                     <li>1 std sap altında</li>
+                     <li>2 std sap &uuml;st&uuml;nde</li>
+                     <li>2 std sap altında</li>
+                     <li>3 std sap &uuml;st&uuml;nde</li>
+                     <li>3 std sap altında</li>
+               </ul>
+                    <p><img alt="Yeni Kural Ortalama" src="../images/newrule_average.png" /></p>
+                <ul type="disc">
+                     <li><b>Kural</b> b&ouml;l&uuml;m&uuml;, se&ccedil;ilen kuralı ve se&ccedil;ilen koşulu g&ouml;sterir, aşağı oka tıklayarak mevcut kural ve koşulların listesine erişebilirsiniz.</li>
+                     <li><b>Bi&ccedil;im</b> b&ouml;l&uuml;m&uuml;, bir dizi h&uuml;cre bi&ccedil;imlendirme se&ccedil;eneği sunar. Mevcut bi&ccedil;im <b>&Ouml;n Ayarlarından</b> birini se&ccedil;ebilirsiniz.</li>
+                </ul>
+                     <p><img alt="Biçim Ön Ayarları" src="../images/format_presets.png" /></p>
+                <p>veya</p> 
+                <p>Yazı tipi bi&ccedil;imi se&ccedil;eneklerini (Kalın, İtalik, Altı &Ccedil;izili, &Uuml;st&uuml; &Ccedil;izili), Metin rengi, Dolgu rengini ve Kenarlıkları kullanarak bi&ccedil;imlendirmeyi &ouml;zelleştirin. Uygun sayı bi&ccedil;imini (Genel, Sayı, Bilimsel, Muhasebe, Para Birimi, Tarih, Saat, Y&uuml;zde) se&ccedil;mek i&ccedil;in <b>Genel</b> a&ccedil;ılır listesini kullanın. <b>&Ouml;nizleme</b> kutusu, bi&ccedil;imlendirmeden sonra h&uuml;crenin nasıl g&ouml;r&uuml;neceğini g&ouml;sterir. T&uuml;m bi&ccedil;imlendirmeyi silmek i&ccedil;in <b>Temizle</b> d&uuml;ğmesine tıklayın.</p>
+                <p>Onaylamak i&ccedil;in <b>Tamam</b> d&uuml;ğmesine tıklayın.</p>
+                <p>Aşağıdaki &ouml;rnekte, ortalamanın <b>&Uuml;st&uuml;nde</b> gibi &ouml;nceden ayarlanmış bi&ccedil;imlendirme kriterleri g&ouml;sterilmektedir. Bu, katılımın ortalamanın &uuml;zerinde olduğu şehirleri yeşil bir arka planla bi&ccedil;imlendirir.</p>
+                <p><img alt="Ortalama" src="../images/conditionalformatting/average_example.png" /></p>
+                </details>
+            <details class="details-example">
+                <summary><b>Metin Bi&ccedil;imlendirme Kuralı</b></summary>
+                <p><b>Metin</b> bi&ccedil;imlendirme kuralı, belirli bir metni i&ccedil;eren ve mevcut bi&ccedil;imlendirme koşullarından birine uyan h&uuml;creleri bulmak ve vurgulamak i&ccedil;in kullanılır:</p> 
+                <ul type="circle">
+                     <li>İ&ccedil;erir</li>
+                     <li>İ&ccedil;ermez</li>
+                     <li>ile başlar</li>
+                     <li>ile biter</li>
+               </ul>
+                    <p><img alt="Yeni Kural Metin" src="../images/newrule_text.png" /></p>
+                <ul type="disc">
+                     <li><b>Kural</b> b&ouml;l&uuml;m&uuml;, se&ccedil;ilen kuralı ve se&ccedil;ilen bi&ccedil;imlendirme koşulunu g&ouml;sterir, aşağı oka tıklayarak mevcut kural ve koşulların listesine erişebilirsiniz. Karşılaştırılacak h&uuml;cre değerini tanımlamak i&ccedil;in <b>Veri Se&ccedil;</b> kutusunu kullanın. Tek bir h&uuml;creye yapılan başvuruyu veya =TOPLA(A1:B5) gibi &ccedil;alışma sayfası işlevindeki başvuruyu kullanın.</li>
+                     <li><b>Bi&ccedil;im</b> b&ouml;l&uuml;m&uuml;, bir dizi h&uuml;cre bi&ccedil;imlendirme se&ccedil;eneği sunar. Mevcut bi&ccedil;im <b>&Ouml;n Ayarlarından</b> birini se&ccedil;ebilirsiniz.</li>
+                </ul>
+                     <p><img alt="Biçim Ön Ayarları" src="../images/format_presets.png" /></p>
+                <p>veya</p> 
+                <p>Yazı tipi bi&ccedil;imi se&ccedil;eneklerini (Kalın, İtalik, Altı &Ccedil;izili, &Uuml;st&uuml; &Ccedil;izili), Metin rengi, Dolgu rengini ve Kenarlıkları kullanarak bi&ccedil;imlendirmeyi &ouml;zelleştirin. Uygun sayı bi&ccedil;imini (Genel, Sayı, Bilimsel, Muhasebe, Para Birimi, Tarih, Saat, Y&uuml;zde) se&ccedil;mek i&ccedil;in <b>Genel</b> a&ccedil;ılır listesini kullanın. <b>&Ouml;nizleme</b> kutusu, bi&ccedil;imlendirmeden sonra h&uuml;crenin nasıl g&ouml;r&uuml;neceğini g&ouml;sterir. T&uuml;m bi&ccedil;imlendirmeyi silmek i&ccedil;in <b>Temizle</b> d&uuml;ğmesine tıklayın.</p>
+                <p>Onaylamak i&ccedil;in <b>Tamam</b> d&uuml;ğmesine tıklayın.</p>
+                <p>Aşağıdaki &ouml;rnekte, <b>İ&ccedil;erir</b> gibi &ouml;nceden ayarlanmış bi&ccedil;imlendirme kriterleri g&ouml;sterilmektedir. Bu, belirli bir b&ouml;lgenin satışlarını vurgulamak i&ccedil;in Danimarka&apos;yı i&ccedil;eren h&uuml;creleri pembe bir arka planla bi&ccedil;imlendirir.</p>
+                <p><img alt="Metin" src="../images/conditionalformatting/text_example.png" /></p>
+                </details>
+            <details class="details-example">
+                <summary><b>Tarih Bi&ccedil;imlendirme Kuralı</b></summary>
+                <p><b>Tarih</b> bi&ccedil;imlendirme kuralı, belirli bir tarihi i&ccedil;eren ve mevcut bi&ccedil;imlendirme koşullarından birine uyan h&uuml;creleri bulmak ve vurgulamak i&ccedil;in kullanılır:</p> 
+                <ul type="circle">
+                     <li>D&uuml;n</li>
+                     <li>Bug&uuml;n</li>
+                     <li>Yarın</li>
+                     <li>Son 7 g&uuml;n i&ccedil;inde</li>
+                     <li>Ge&ccedil;en hafta</li>
+                     <li>Bu hafta</li>
+                     <li>Gelecek hafta</li>
+                     <li>Ge&ccedil;en ay</li>
+                     <li>Bu ay</li>
+                     <li>Gelecek ay</li>
+               </ul>
+                    <p><img alt="Yeni Kural Tarih" src="../images/newrule_date.png" /></p>
+                <ul type="disc">
+                     <li><b>Kural</b> b&ouml;l&uuml;m&uuml;, se&ccedil;ilen kuralı ve se&ccedil;ilen bi&ccedil;imlendirme koşulunu g&ouml;sterir, aşağı oka tıklayarak mevcut kural ve koşulların listesine erişebilirsiniz.</li>
+                     <li><b>Bi&ccedil;im</b> b&ouml;l&uuml;m&uuml;, bir dizi h&uuml;cre bi&ccedil;imlendirme se&ccedil;eneği sunar. Mevcut bi&ccedil;im <b>&Ouml;n Ayarlarından</b> birini se&ccedil;ebilirsiniz.</li>
+                </ul>
+                     <p><img alt="Biçim Ön Ayarları" src="../images/format_presets.png" /></p>
+                <p>veya</p> 
+                <p>Yazı tipi bi&ccedil;imi se&ccedil;eneklerini (Kalın, İtalik, Altı &Ccedil;izili, &Uuml;st&uuml; &Ccedil;izili), Metin rengi, Dolgu rengini ve Kenarlıkları kullanarak bi&ccedil;imlendirmeyi &ouml;zelleştirin. Uygun sayı bi&ccedil;imini (Genel, Sayı, Bilimsel, Muhasebe, Para Birimi, Tarih, Saat, Y&uuml;zde) se&ccedil;mek i&ccedil;in <b>Genel</b> a&ccedil;ılır listesini kullanın. <b>&Ouml;nizleme</b> kutusu, bi&ccedil;imlendirmeden sonra h&uuml;crenin nasıl g&ouml;r&uuml;neceğini g&ouml;sterir. T&uuml;m bi&ccedil;imlendirmeyi silmek i&ccedil;in <b>Temizle</b> d&uuml;ğmesine tıklayın.</p>
+                <p>Onaylamak i&ccedil;in <b>Tamam</b> d&uuml;ğmesine tıklayın.</p>
+                <p>Aşağıdaki &ouml;rnekte, <b>Ge&ccedil;en ay</b> gibi &ouml;nceden ayarlanmış bi&ccedil;imlendirme kriterleri g&ouml;sterilmektedir. Bu, belirli bir s&uuml;reye ilişkin satışları vurgulamak i&ccedil;in &ouml;nceki aya ait tarihleri i&ccedil;eren h&uuml;creleri sarı bir arka planla bi&ccedil;imlendirir.</p>
+                <p><img alt="Tarih" src="../images/conditionalformatting/date_example.png" /></p>
+                </details>
+            <details class="details-example">
+                <summary><b>Boşluk/Hata Bi&ccedil;imlendirme Kuralı</b></summary>
+                <p><b>Boşluk/Hata</b> bi&ccedil;imlendirme kuralı, boşluklar ve hatalar i&ccedil;eren veya i&ccedil;ermeyen h&uuml;creleri bulmak ve vurgulamak i&ccedil;in kullanılır:</p> 
+                <ul type="circle">
+                     <li>Boşluk i&ccedil;erir</li>
+                     <li>Boşluk i&ccedil;ermez</li>
+                     <li>Hata i&ccedil;erir</li>
+                     <li>Hata i&ccedil;ermez</li>
+               </ul>
+                    <p><img alt="Yeni Kural Boşluk/Hata" src="../images/newrule_blankerror.png" /></p>
+                <ul type="disc">
+                     <li><b>Kural</b> b&ouml;l&uuml;m&uuml;, se&ccedil;ilen kuralı ve se&ccedil;ilen bi&ccedil;imlendirme koşulunu g&ouml;sterir, aşağı oka tıklayarak mevcut kural ve koşulların listesine erişebilirsiniz.</li>
+                     <li><b>Bi&ccedil;im</b> b&ouml;l&uuml;m&uuml;, bir dizi h&uuml;cre bi&ccedil;imlendirme se&ccedil;eneği sunar. Mevcut bi&ccedil;im <b>&Ouml;n Ayarlarından</b> birini se&ccedil;ebilirsiniz.</li>
+                </ul>
+                     <p><img alt="Biçim Ön Ayarları" src="../images/format_presets.png" /></p>
+                <p>veya</p> 
+                <p>Yazı tipi bi&ccedil;imi se&ccedil;eneklerini (Kalın, İtalik, Altı &Ccedil;izili, &Uuml;st&uuml; &Ccedil;izili), Metin rengi, Dolgu rengini ve Kenarlıkları kullanarak bi&ccedil;imlendirmeyi &ouml;zelleştirin. Uygun sayı bi&ccedil;imini (Genel, Sayı, Bilimsel, Muhasebe, Para Birimi, Tarih, Saat, Y&uuml;zde) se&ccedil;mek i&ccedil;in <b>Genel</b> a&ccedil;ılır listesini kullanın. <b>&Ouml;nizleme</b> kutusu, bi&ccedil;imlendirmeden sonra h&uuml;crenin nasıl g&ouml;r&uuml;neceğini g&ouml;sterir. T&uuml;m bi&ccedil;imlendirmeyi silmek i&ccedil;in <b>Temizle</b> d&uuml;ğmesine tıklayın.</p>
+                <p>Onaylamak i&ccedil;in <b>Tamam</b> d&uuml;ğmesine tıklayın.</p>
+                <p>Aşağıdaki &ouml;rnekte, <b>Boşluk i&ccedil;erir</b> gibi &ouml;nceden ayarlanmış bi&ccedil;imlendirme kriterleri g&ouml;sterilmektedir. Bu, satış sayısını g&ouml;steren s&uuml;tundaki boş h&uuml;creleri a&ccedil;ık mavi arka planla bi&ccedil;imlendirir.</p>
+                <p><img alt="Boşluk/Hata" src="../images/conditionalformatting/blankerror_example.png" /></p>
+                </details>
+            <details class="details-example">
+                <summary><b>Yinelenen/Benzersiz Bi&ccedil;imlendirme Kuralı</b></summary>
+                <p><b>Yinelenen/Benzersiz</b> bi&ccedil;imlendirme kuralı, elektronik tablo i&ccedil;inde yinelenen değerleri ve koşullu bi&ccedil;imlendirme tarafından tanımlanan h&uuml;cre aralığını g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in kullanılır, kullanılabilir se&ccedil;enekler şunlardır:</p> 
+                <ul type="circle">
+                     <li>Yinelenen</li>
+                     <li>Benzersiz</li>
+               </ul>
+                    <p><img alt="Yeni Kural Yinelenen/Benzersiz" src="../images/newrule_duplicateunique.png" /></p>
+                <ul type="disc">
+                     <li><b>Kural</b> b&ouml;l&uuml;m&uuml;, se&ccedil;ilen kuralı ve se&ccedil;ilen bi&ccedil;imlendirme koşulunu g&ouml;sterir, aşağı oka tıklayarak mevcut kural ve koşulların listesine erişebilirsiniz.</li>
+                     <li><b>Bi&ccedil;im</b> b&ouml;l&uuml;m&uuml;, bir dizi h&uuml;cre bi&ccedil;imlendirme se&ccedil;eneği sunar. Mevcut bi&ccedil;im <b>&Ouml;n Ayarlarından</b> birini se&ccedil;ebilirsiniz.</li>
+                </ul>
+                     <p><img alt="Biçim Ön Ayarları" src="../images/format_presets.png" /></p>
+                <p>veya</p> 
+                <p>Yazı tipi bi&ccedil;imi se&ccedil;eneklerini (Kalın, İtalik, Altı &Ccedil;izili, &Uuml;st&uuml; &Ccedil;izili), Metin rengi, Dolgu rengini ve Kenarlıkları kullanarak bi&ccedil;imlendirmeyi &ouml;zelleştirin. Uygun sayı bi&ccedil;imini (Genel, Sayı, Bilimsel, Muhasebe, Para Birimi, Tarih, Saat, Y&uuml;zde) se&ccedil;mek i&ccedil;in <b>Genel</b> a&ccedil;ılır listesini kullanın. <b>&Ouml;nizleme</b> kutusu, bi&ccedil;imlendirmeden sonra h&uuml;crenin nasıl g&ouml;r&uuml;neceğini g&ouml;sterir. T&uuml;m bi&ccedil;imlendirmeyi silmek i&ccedil;in <b>Temizle</b> d&uuml;ğmesine tıklayın.</p>
+                <p>Onaylamak i&ccedil;in <b>Tamam</b> d&uuml;ğmesine tıklayın.</p>
+                <p>Aşağıdaki &ouml;rnekte, <b>Yinelenen</b> gibi &ouml;nceden ayarlanmış bi&ccedil;imlendirme kriterleri g&ouml;sterilmektedir. Bu, yinelenen kişileri sarı bir arka planla bi&ccedil;imlendirir.</p>
+                    <p><img alt="Benzersiz ve yinelenenler" src="../images/conditionalformatting/uniqueduplicates.gif" /></p>
+                </details>
+            <details class="details-example">
+                <summary><b>Veri &Ccedil;ubukları Bi&ccedil;imlendirme</b></summary>
+                <p><b>Veri &Ccedil;ubukları,</b> diyagram &ccedil;ubuğu bi&ccedil;imindeki değerleri karşılaştırmak i&ccedil;in kullanılır.</p> 
+                    <p><span class="big big-databars_diagrams"></span></p>
+                <p>&Ouml;rneğin, varsayılan değerlerini metre cinsinden (yeşil &ccedil;ubuk) ve aynı değeri y&uuml;zde 0 ila 100 aralığında (sarı &ccedil;ubuk); aşırı değerler verileri eğdiğinde y&uuml;zdelik dilim (a&ccedil;ık mavi &ccedil;ubuk); sayılar yerine yalnızca &ccedil;ubuklar (mavi &ccedil;ubuk); hem sayıları hem de &ccedil;ubukları (kırmızı &ccedil;ubuk) g&ouml;rmek i&ccedil;in iki s&uuml;tunlu veri analizi olarak g&ouml;r&uuml;nt&uuml;leyerek karşılaştırın.</p>
+                    <p><img alt="Veri çubukları" src="../images/conditionalformatting/databars.png" /></p>
+                </details>
+            <details class="details-example">
+                <summary><b>Renk &Ouml;l&ccedil;ekleri Bi&ccedil;imlendirme</b></summary>
+                <p><b>Renk &Ouml;l&ccedil;ekleri,</b> elektronik tablodaki değerleri bir gradyan &ouml;l&ccedil;eği aracılığıyla vurgulamak i&ccedil;in kullanılır.</p> 
+                <p><span class="big big-colorscales"></span></p>
+                <p>Aşağıdaki &ouml;rnekte, verileri sarıdan kırmızıya değişen iki renkli bir &ouml;l&ccedil;ek aracılığıyla g&ouml;r&uuml;nt&uuml;leyen &quot;S&uuml;t &Uuml;r&uuml;nleri&quot; ile &quot;İ&ccedil;ecek&quot; arasındaki s&uuml;tunlar g&ouml;sterilmektedir; &quot;Toplam Satışlar&quot; s&uuml;tununda veriler, en k&uuml;&ccedil;&uuml;k miktar kırmızı, en b&uuml;y&uuml;k miktar mavi olmak &uuml;zere &uuml;&ccedil; renkli bir &ouml;l&ccedil;ekle g&ouml;sterilmektedir.</p>
+                    <p><img alt="Gradyan" src="../images/conditionalformatting/gradient.png" /></p>
+                </details>
+            <details class="details-example">
+                <summary><b>Simge K&uuml;meleri Bi&ccedil;imlendirme</b></summary>
+                <p><b>Simge K&uuml;meleri,</b> verileri, kriterlere uyan h&uuml;crede karşılık gelen bir simge g&ouml;r&uuml;nt&uuml;leyerek g&ouml;stermek i&ccedil;in kullanılır. Elektronik Tablo D&uuml;zenleyicisi &ccedil;eşitli simge k&uuml;melerini destekler:</p> 
+               <ul type="circle">
+                     <li>Y&ouml;n</li>
+                     <li>Şekiller</li>
+                     <li>G&ouml;stergeler</li>
+                     <li>Derecelendirmeler</li>
+               </ul>
+               <p><img alt="Icon sets" src="../images/conditionalformatting/iconsets.png" /></p>
+               <p>Aşağıda, en yaygın simge k&uuml;mesi koşullu bi&ccedil;imlendirme durumlarına ait &ouml;rnekleri g&ouml;rebilirsiniz.</p>
+               <ul>
+                        <li>Sayılar ve y&uuml;zde değerleri yerine, &quot;Durum&quot; s&uuml;tununda gelir başarınızı ve &quot;Eğilim&quot; s&uuml;tununda gelecekteki eğilimlerin dinamiklerini g&ouml;steren ilgili oklarla birlikte bi&ccedil;imlendirilmiş h&uuml;creler g&ouml;rmektesiniz.
+                           <p><img alt="Simge kümesi" src="../images/conditionalformatting/iconsetrevenue.png" /></p>
+                        </li>
+                        <li>1&apos;den 5&apos;e kadar derecelendirme numaralarına sahip h&uuml;creler yerine koşullu bi&ccedil;imlendirme aracı, derecelendirme listesindeki her bisiklet i&ccedil;in a&ccedil;ıklama haritasından ilgili simgeleri en &uuml;stte g&ouml;r&uuml;nt&uuml;ler.
+                           <p><img alt="Simge kümesi" src="../images/conditionalformatting/iconsetbikerating.png" /></p>
+                        </li>
+                        <li>Aylık kar dinamikleri verilerini manuel olarak karşılaştırmak yerine, bi&ccedil;imlendirilmiş h&uuml;crelerde karşılık gelen kırmızı veya yeşil bir ok bulunur.
+                           <p><img alt="Simge kümesi" src="../images/conditionalformatting/iconsettrends.png" /></p>
+                        </li>
+                        <li>Satış dinamiklerini g&ouml;rselleştirmek i&ccedil;in trafik ışıkları sistemini (kırmızı, sarı ve yeşil daireler) kullanın.
+                           <p><img alt="Simge kümesi" src="../images/conditionalformatting/iconsettrafficlights.png" /></p>
+                        </li>
+               </ul>
+               </details>
+            <details class="details-example">
+                <summary><b>Form&uuml;lleri Kullanarak Bi&ccedil;imlendirme</b></summary>
+                <p><b>Form&uuml;l tabanlı</b> bi&ccedil;imlendirme, verileri belirli ihtiya&ccedil;lara g&ouml;re filtrelemek i&ccedil;in &ccedil;eşitli form&uuml;ller kullanır.</p>
+                <p><img alt="Yeni Kural Formül" src="../images/newrule_formula.png" /></p>
+                <ul>
+                <li><b>Kural</b> b&ouml;l&uuml;m&uuml;, se&ccedil;ilen kuralı ve se&ccedil;ilen bi&ccedil;imlendirme koşulunu g&ouml;sterir, aşağı oka tıklayarak mevcut kural ve koşulların listesine erişebilirsiniz. Karşılaştırılacak h&uuml;cre değerini tanımlamak i&ccedil;in <b>Veri Se&ccedil;</b> kutusunu kullanın. Tek bir h&uuml;creye yapılan başvuruyu veya =TOPLA(A1:B5) gibi &ccedil;alışma sayfası işlevindeki başvuruyu kullanın.</li>
+                     <li><b>Bi&ccedil;im</b> b&ouml;l&uuml;m&uuml;, bir dizi h&uuml;cre bi&ccedil;imlendirme se&ccedil;eneği sunar. Mevcut bi&ccedil;im <b>&Ouml;n Ayarlarından</b> birini se&ccedil;ebilirsiniz.</li>
+                </ul>
+                     <p><img alt="Biçim Ön Ayarları" src="../images/format_presets.png" /></p>
+                <p>veya</p> 
+                <p>Yazı tipi bi&ccedil;imi se&ccedil;eneklerini (Kalın, İtalik, Altı &Ccedil;izili, &Uuml;st&uuml; &Ccedil;izili), Metin rengi, Dolgu rengini ve Kenarlıkları kullanarak bi&ccedil;imlendirmeyi &ouml;zelleştirin. Uygun sayı bi&ccedil;imini (Genel, Sayı, Bilimsel, Muhasebe, Para Birimi, Tarih, Saat, Y&uuml;zde) se&ccedil;mek i&ccedil;in <b>Genel</b> a&ccedil;ılır listesini kullanın. <b>&Ouml;nizleme</b> kutusu, bi&ccedil;imlendirmeden sonra h&uuml;crenin nasıl g&ouml;r&uuml;neceğini g&ouml;sterir. T&uuml;m bi&ccedil;imlendirmeyi silmek i&ccedil;in <b>Temizle</b> d&uuml;ğmesine tıklayın.</p>
+                <p>Onaylamak i&ccedil;in <b>Tamam</b> d&uuml;ğmesine tıklayın.</p>
+                <p>Aşağıdaki &ouml;rneklerde, form&uuml;l bi&ccedil;imlendirme olasılıkları g&ouml;sterilmektedir.</p>
+                    <p>Alternatif satırları g&ouml;lgelendir,</p>
+                    <p><img alt="Formül tabanlı" src="../images/conditionalformatting/shading.png" /></p>
+                    <p>Bir referans değerle karşılaştırın (burada 55$) ve daha y&uuml;ksek mi (yeşil) yoksa daha d&uuml;ş&uuml;k m&uuml; (kırmızı) olduğunu g&ouml;sterin,</p>
+                    <p><img alt="Formül tabanlı" src="../images/conditionalformatting/comparison.png" /></p>
+                    <p>Gerekli kriterleri karşılayan satırları vurgulayın (bu ay hangi hedeflere ulaşacağınızı g&ouml;r&uuml;n, bu durumda Ekim ayıdır),</p>
+                    <p><img alt="Formül tabanlı" src="../images/conditionalformatting/shaderows.png" /></p>
+                    <p>Ya da yalnızca benzersiz satırları vurgulayın</p>
+                    <p><img alt="Formül tabanlı" src="../images/conditionalformatting/shadeunique.png" /></p>
+                </details>
+        <h2>Yeni Kural Oluşturma</h2>
+            <p>Koşullu bi&ccedil;imlendirme i&ccedil;in yeni bir kural oluşturmanız gerektiğinde, kuralı aşağıdaki y&ouml;ntemlerden biriyle yapabilirsiniz:</p>
+                 <ul>
+                 <li><b>Giriş</b> sekmesine gidin, <b>Koşullu Bi&ccedil;imlendirme</b> simgesine tıklayın ve <div class = "icon icon-conditionalformatting_button"></div> a&ccedil;ılır men&uuml;den <b>Yeni Kural</b> se&ccedil;eneğini se&ccedil;in.</li>
+                 <li>Sağ kenar &ccedil;ubuğundaki <b>H&uuml;cre Ayarları</b> sekmesine ve <b>Koşullu bi&ccedil;imlendirme</b> aşağı okuna tıklayın ve a&ccedil;ılır men&uuml;den <b>Yeni Kural</b> se&ccedil;eneğini se&ccedil;in.</li>
+                 <li>Herhangi bir h&uuml;creye sağ tıklayın ve bağlamsal men&uuml;den <b>Koşullu bi&ccedil;imlendirmeyi</b> se&ccedil;in.</li>
+                 </ul>
+            <p><b>Yeni Bi&ccedil;imlendirme Kuralı</b> penceresi hemen a&ccedil;ılacaktır. Kuralı yukarıda a&ccedil;ıklandığı şekilde yapılandırmak i&ccedil;in gerekli se&ccedil;enekleri ayarlayın ve onaylamak i&ccedil;in <b>Tamam</b> d&uuml;ğmesine tıklayın.</p>
+        <h2>Koşullu Bi&ccedil;imlendirme Kurallarını Y&ouml;netme</h2>
+            <p>Koşullu bi&ccedil;imlendirme i&ccedil;in kuralları ayarladıktan sonra, bunları <b>Giriş</b> sekmesinde bulunan <b>Koşullu Bi&ccedil;imlendirme</b> d&uuml;ğmesine <span class="icon icon-conditionalformatting_button"></span> veya <b>H&uuml;cre Ayarları</b> sekmesinin sağ kenar &ccedil;ubuğundaki <b>Koşullu bi&ccedil;imlendirme</b> d&uuml;ğmesine tıklayarak ulaşabileceğiniz <b>Kuralı Y&ouml;net</b> se&ccedil;eneğini kullanarak kolayca d&uuml;zenleyebilir, silebilir ve g&ouml;r&uuml;nt&uuml;leyebilirsiniz. <b>Koşullu Bi&ccedil;imlendirme</b> penceresi g&ouml;r&uuml;n&uuml;r:</p>
+            <p><img alt="Kuralları Yönet" src="../images/managerules.png" /><p>
+            <p><b>Şunun i&ccedil;in bi&ccedil;imlendirme kurallarını g&ouml;ster:</b> G&ouml;r&uuml;nt&uuml;lemek istediğiniz kuralları se&ccedil;menizi sağlar:<p>
+        <ul type="circle">
+                     <li>Mevcut se&ccedil;im</li>
+                     <li>Bu &ccedil;alışma sayfası</li>
+                     <li>Bu tablo</li>
+                     <li>Bu pivot</li>
+        </ul>
+        <p>Se&ccedil;ilen aralıkta bulunan t&uuml;m kurallar <b>Kurallar</b> altında &ouml;ncelik sırasına g&ouml;re (yukarıdan aşağıya) g&ouml;sterilecektir. <b>Uygula,</b> kuralın uygulandığı aralığı g&ouml;sterir, bu aralığı <b>Veri se&ccedil;</b> simgesine tıklayarak değiştirebilirsiniz <span class="icon icon-selectdata_icon"></span>. <b>Bi&ccedil;im,</b> uygulanan bi&ccedil;imlendirme kuralını g&ouml;sterir.</p>
+        <ul>
+        <li>Yeni bir kural eklemek i&ccedil;in <b>Yeni</b> d&uuml;ğmesini kullanın.</li>
+        <li>Mevcut kuralı d&uuml;zenlemek isterseniz <b>D&uuml;zenle</b> d&uuml;ğmesini kullanın, <b>Bi&ccedil;imlendirme Kuralını D&uuml;zenle</b> penceresi a&ccedil;ılacaktır. Kuralı uygun g&ouml;rd&uuml;ğ&uuml;n&uuml;z şekilde d&uuml;zenleyin ve <b>Tamam</b> d&uuml;ğmesine tıklayın.</li>
+        <li>Yeri &ouml;ncelik sırasında değiştirmek i&ccedil;in yukarı ve aşağı okları kullanın.</li>
+        <li>Kuralı kaldırmak i&ccedil;in <b>Sil</b> d&uuml;ğmesine tıklayın.</li>
+         <li>Onaylamak i&ccedil;in <b>Tamam</b> d&uuml;ğmesine tıklayın.</li>
+        </ul>
+        <h2>Koşullu Bi&ccedil;imlendirmeyi D&uuml;zenleme</h2>
+            <details class="details-example">
+            <summary><b>Değerine G&ouml;re, İlk/Son, Ortalama, Metin, Tarih, Boşluk/Hata, Yinelenen/Benzersiz, Form&uuml;l d&uuml;zenleme</b></summary>
+            <p><b>Değerine G&ouml;re</b>, <b>İlk/Son</b>, <b>Ortalama</b>, <b>Metin</b>, <b>Tarih</b>, <b>Boşluk/Hata</b>, <b>Yinelenen/Benzersiz</b>, <b>Form&uuml;l</b> kurallarına ilişkin <b>Bi&ccedil;imlendirme Kuralını D&uuml;zenle</b> penceresi bir dizi d&uuml;zenli ayar sunar:</p>
+            <p><img alt="Değer Kuralı Düzenleme" src="../images/editrule_valueis.png" /></p>
+        <ul type="disc">
+                     <li>Kuralı ve daha &ouml;nce uygulanan bi&ccedil;imlendirme koşulunu değiştirmek i&ccedil;in <b>Kural</b> simgesine tıklayın;</li>
+                     <li>Başvurulacak h&uuml;cre aralığını değiştirmek i&ccedil;in <b>Veri se&ccedil;</b> kutusunu <i>Değerine G&ouml;re</i>, <i>Metin ve Form&uuml;l</i>) kullanın.</li>
+                     <li><b>Yazı tipi</b> ve h&uuml;cre bi&ccedil;imi se&ccedil;eneklerini (<i>Kalın</i>, <i>İtalik</i>, <i>Altı &Ccedil;izili, &Uuml;st&uuml; &Ccedil;izili</i>), <i>Metin rengi</i>, <i>Dolgu rengi</i> ve <i>Kenarlıklar</i>) kullanın.</li>
+                     <li>Uygun sayı bi&ccedil;imini (<i>Genel</i>, <i>Sayı</i>, <i>Bilimsel</i>, <i>Muhasebe</i>, <i>Para Birimi</i>, <i>Tarih</i>, Saat, <i>Y&uuml;zde</i>) se&ccedil;mek i&ccedil;in <b>Genel</b> a&ccedil;ılır listesini kullanın.</li>
+                     <li><b>&Ouml;nizleme</b> kutusu, bi&ccedil;imlendirmeden sonra h&uuml;crenin nasıl g&ouml;r&uuml;neceğini g&ouml;sterir.</li>
+                     <li>Onaylamak i&ccedil;in Tamam d&uuml;ğmesine tıklayın.</li>
+        </ul>
+        </details>
+        <details class="details-example">
+            <summary><b>Veri &Ccedil;ubuklarını D&uuml;zenleme</b></summary>
+            <p><b>Veri &Ccedil;ubuğu</b> <b>Bi&ccedil;imlendirme Kuralını D&uuml;zenle</b> penceresi aşağıdaki se&ccedil;enekleri sunar:</p>
+            <p><img alt="Veri Çubuğu Biçimlendirmesi Düzenleme" src="../images/editrule_databar.png" /></p>
+        <ul type="disc">
+             <li>Kuralı ve daha &ouml;nce uygulanan bi&ccedil;imlendirme koşulunu değiştirmek i&ccedil;in <b>Kural</b>;</li>
+            <li>
+                Farklılıklara odaklanmak istiyorsanız, veri &ccedil;ubuklarının minimum ve maksimum değerlerin t&uuml;r&uuml;n&uuml; tanımlamak i&ccedil;in <b>Minimum/Maksimum</b>. Maksimum/minimum değer t&uuml;rleri:
+                <ul>
+                    <li>Minimum/Maksimum</li>
+                    <li>Sayı</li>
+                    <li>Y&uuml;zde</li>
+                    <li>Form&uuml;l</li>
+                    <li>Y&uuml;zdelik Dilim</li>
+                    <li>Otomatik</li>
+                </ul>
+                <p>Minimum değeri sıfıra ve maksimum değeri aralıktaki en b&uuml;y&uuml;k sayıya ayarlamak i&ccedil;in <b>Otomatik</b> se&ccedil;eneğini se&ccedil;in. <b>Otomatik</b> varsayılan se&ccedil;enektir.</p>
+                <p>Minimum/maksimum değerler i&ccedil;in h&uuml;cre aralığını değiştirmek i&ccedil;in <b>Veri se&ccedil;</b> kutusuna tıklayın.</p>
+                </li>
+              <li><b>&Ccedil;ubuk G&ouml;r&uuml;n&uuml;m&uuml;</b>
+                    <p>Dolgunun ve kenarlığın t&uuml;r&uuml;n&uuml; ve rengini ve &ccedil;ubuk y&ouml;n&uuml;n&uuml; se&ccedil;erek <b>Veri &Ccedil;ubuğu</b> g&ouml;r&uuml;n&uuml;m&uuml;n&uuml; &ouml;zelleştirin.</p>
+                  <ul>
+                      <li><b>D&uuml;z</b> ve <b>Gradyan</b> olmak &uuml;zere iki <b>Dolgu</b> t&uuml;r&uuml; se&ccedil;eneği vardır. Pozitif ve Negatif değerleri temsil eden &ccedil;ubukların dolgu rengini se&ccedil;mek i&ccedil;in aşağıdaki aşağı oku kullanın.</li>
+                      <li><b>D&uuml;z</b> ve <b>Yok</b> olmak &uuml;zere iki <b>Kenarlık</b> t&uuml;r&uuml; se&ccedil;eneği vardır. Pozitif ve Negatif değerleri temsil eden &ccedil;ubukların kenarlık rengini se&ccedil;mek i&ccedil;in aşağıdaki aşağı oku kullanın.</li>
+                      <li>Aynı rengi kullanan pozitif ve negatif değerleri g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in <b>Pozitif ile aynı</b> onay kutusunu etkinleştirin. Bu kutu işaretlendiğinde, <b>Negatif</b> değerler i&ccedil;in renk ayarları devre dışı bırakılır.</li>
+                      <li>Veri &ccedil;ubuklarının y&ouml;n&uuml;n&uuml; değiştirmek i&ccedil;in <b>&Ccedil;ubuk Y&ouml;n&uuml;</b> se&ccedil;eneğini kullanın. <b>Bağlam</b> varsayılan se&ccedil;enektir, ancak veri g&ouml;sterimi tercihlerinize bağlı olarak <b>Soldan sağa</b> veya <b>Sağdan sola</b> se&ccedil;eneklerini se&ccedil;ebilirsiniz.</li>
+                      <li>H&uuml;crelerde yalnızca veri &ccedil;ubuklarını g&ouml;r&uuml;nt&uuml;lemek ve değerleri gizlemek i&ccedil;in <b>Yalnızca &ccedil;ubuğu g&ouml;ster</b> onay kutusunu etkinleştirin.</li>
+                  </ul>
+              </li>
+              <li><b>Eksen</b>
+              <p>Veri &ccedil;ubuğu ekseni <b>Konumunu,</b> pozitif ve negatif değerleri ayırmak i&ccedil;in h&uuml;cre orta noktasına g&ouml;re se&ccedil;in. <b>Otomatik</b>, <b>H&uuml;cre orta noktası</b> ve <b>Hi&ccedil;biri</b> olmak &uuml;zere &uuml;&ccedil; eksen konumu se&ccedil;eneği bulunmaktadır. Eksen rengini ayarlamak i&ccedil;in renk kutusu aşağı okuna tıklayın.</p>
+              </li>
+              <li><b>&Ouml;nizleme</b> kutusu, bi&ccedil;imlendirmeden sonra h&uuml;crenin nasıl g&ouml;r&uuml;neceğini g&ouml;sterir.</li>
+              <li>Onaylamak i&ccedil;in Tamam d&uuml;ğmesine tıklayın.</li>
+        </ul>
+        </details>
+        <details class="details-example">
+            <summary><b>Renk &Ouml;l&ccedil;eklerini D&uuml;zenleme</b></summary>
+        <details class="details-example">
+            <summary><b>2 Renk &Ouml;l&ccedil;eği Bi&ccedil;imlendirmesini D&uuml;zenleme</b></summary>
+            <p><b>2 Renk &Ouml;l&ccedil;eği</b> <b>Bi&ccedil;imlendirme Kuralını D&uuml;zenle</b> penceresi aşağıdaki se&ccedil;enekleri sunar:</p>
+            <p><img alt="2 Renk Ölçeği Biçimlendirmesini Düzenleme" src="../images/editrule_2color.png" /></p>
+        <ul type="disc">
+             <li>Kuralı ve daha &ouml;nce uygulanan bi&ccedil;imlendirme koşulunu değiştirmek i&ccedil;in <b>Kural</b> simgesine tıklayın;</li>
+            <li>
+                Farklılıklara odaklanmak istiyorsanız, renk &ouml;l&ccedil;eği minimum ve maksimum noktaları değer t&uuml;r&uuml;n&uuml; tanımlamak i&ccedil;in <b>Minimum Noktası/Maksimum Noktasına</b> tıklayın. Minimum noktası/maksimum noktası değeri t&uuml;rleri:
+                <ul>
+                    <li>Minimum/Maksimum</li>
+                    <li>Sayı</li>
+                    <li>Y&uuml;zde</li>
+                    <li>Form&uuml;l</li>
+                    <li>Y&uuml;zdelik Dilim</li>
+                </ul>
+                <p><b>Minimum/Maksimum</b> varsayılan se&ccedil;enektir.</p>
+            </li>
+        <li>Minimum ve maksimum noktaları h&uuml;cre aralığını değiştirmek i&ccedil;in <b>Veri se&ccedil;</b> kutusuna tıklayın.</li>
+        <li>Her &ouml;l&ccedil;eğin rengini se&ccedil;mek i&ccedil;in aşağıdaki aşağı oku kullanın.</li>
+        <li><b>&Ouml;nizleme</b> kutusu, bi&ccedil;imlendirmeden sonra h&uuml;crenin nasıl g&ouml;r&uuml;neceğini g&ouml;sterir.</li>
+        <li>Onaylamak i&ccedil;in <b>Tamam</b> d&uuml;ğmesine tıklayın.</li>
+        </ul>
+        </details>
+        <details class="details-example">
+            <summary><b>3 Renk &Ouml;l&ccedil;eği Bi&ccedil;imlendirmesini D&uuml;zenleme</b></summary>
+            <p><b>3 Renk &Ouml;l&ccedil;eği</b> <b>Bi&ccedil;imlendirme Kuralını D&uuml;zenle</b> penceresi aşağıdaki se&ccedil;enekleri sunar:</p>
+            <p><img alt="3 Renk Ölçeği Biçimlendirmesini Düzenleme" src="../images/editrule_3color.png" /></p>
+        <ul type="disc">
+             <li>Kuralı ve daha &ouml;nce uygulanan bi&ccedil;imlendirme koşulunu değiştirmek i&ccedil;in <b>Kural</b> simgesine tıklayın;</li>
+            <li>
+                Farklılıklara odaklanmak istiyorsanız, renk &ouml;l&ccedil;eği minimum, orta ve maksimum noktaları değer t&uuml;r&uuml;n&uuml; tanımlamak i&ccedil;in <b>Minimum Noktası//Orta Noktası/Maksimum Noktasına</b> tıklayın.
+                <p>Minimum noktası/maksimum noktası değeri t&uuml;rleri:</p>
+                <ul>
+                    <li>Minimum/Maksimum</li>
+                    <li>Sayı</li>
+                    <li>Y&uuml;zde</li>
+                    <li>Form&uuml;l</li>
+                    <li>Y&uuml;zdelik Dilim</li>
+                </ul>
+                <p>Orta nokta değeri t&uuml;rleri:</p>
+                <ul>
+                    <li>Sayı</li>
+                    <li>Y&uuml;zde</li>
+                    <li>Form&uuml;l</li>
+                    <li>Y&uuml;zdelik Dilim</li>
+                </ul>
+                <p><b>Minimum/Y&uuml;zdelik Dilim/Maksimum,</b> <b>3 Renk &Ouml;l&ccedil;eği</b> bi&ccedil;imlendirmesi i&ccedil;in varsayılan se&ccedil;enektir.</p>
+            </li>
+            <li>Minimum, orta ve maksimum noktaları h&uuml;cre aralığını değiştirmek i&ccedil;in <b>Veri se&ccedil;</b> kutusuna tıklayın.</li>
+            <li>Her &ouml;l&ccedil;eğin rengini se&ccedil;mek i&ccedil;in aşağıdaki aşağı oku kullanın.</li>
+            <li><b>&Ouml;nizleme</b> kutusu, bi&ccedil;imlendirmeden sonra h&uuml;crenin nasıl g&ouml;r&uuml;neceğini g&ouml;sterir.</li>
+            <li>Onaylamak i&ccedil;in <b>Tamam</b> d&uuml;ğmesine tıklayın.</li>
+            </ul>
+            </details>
+            </details>
+        <details class="details-example">
+            <summary><b>Simge k&uuml;melerini d&uuml;zenleme</b></summary>
+            <p><b>Simge K&uuml;meleri</b> <b>Bi&ccedil;imlendirme Kuralını D&uuml;zenle</b> penceresi aşağıdaki se&ccedil;enekleri sunar:</p>
+            <p><img alt="Simge Kümeleri Biçimlendirmesini Düzenleme" src="../images/editrule_iconsets.png" /></p>
+        <ul type="disc">
+                     <li>Kuralı ve daha &ouml;nce uygulanan bi&ccedil;imlendirme koşulunu değiştirmek i&ccedil;in <b>Kural</b> simgesine tıklayın;</li>
+                     <li>Oluşturulan kural i&ccedil;in simgelerin stilini &ouml;zelleştirmek i&ccedil;in <b>Simge Stiline</b> tıklayın.</li>
+                     <li>H&uuml;crelerde yalnızca simgeleri g&ouml;r&uuml;nt&uuml;lemek ve değerleri gizlemek i&ccedil;in <b>Yalnızca &ccedil;ubuğu g&ouml;ster</b> onay kutusunu etkinleştirin.</li>
+                     <li>Simgelerin sırasını değiştirmek ve en d&uuml;ş&uuml;k değerden en y&uuml;ksek değere doğru d&uuml;zenlemek i&ccedil;in <b>Simgelerin Sırasını Ters &Ccedil;evir</b> se&ccedil;eneğini etkinleştirin. Varsayılan olarak simgeler en y&uuml;ksek değerden en d&uuml;ş&uuml;k değere doğru sıralanmıştır.</li>
+                     <li>Her simge i&ccedil;in kuralı belirleyin ve değerleri yukarıdan aşağıya sıralamak i&ccedil;in karşılaştırma işle&ccedil;lerini (<i>b&uuml;y&uuml;k veya eşittir</i>, <i>b&uuml;y&uuml;k</i>), eşik değerlerini ve değer t&uuml;r&uuml;n&uuml; (<i>Sayı</i>, <i>Y&uuml;zde</i>, <i>Form&uuml;l</i>, <i>Y&uuml;zdelik Dilim</i>) ayarlayın. Varsayılan olarak, değerler eşit şekilde b&ouml;l&uuml;nm&uuml;şt&uuml;r.</li>
+                     <li>Onaylamak i&ccedil;in <b>Tamam</b> d&uuml;ğmesine tıklayın.</li>
+        </ul>
+        </details>
+        <h2>Koşullu Bi&ccedil;imlendirmeyi Temizleme</h2>
+            <p>T&uuml;m koşullu bi&ccedil;imlendirmeyi temizlemek i&ccedil;in <b>Giriş</b> sekmesine gidin, <b>Koşullu bi&ccedil;imlendirme</b> d&uuml;ğmesine <span class="icon icon-conditionalformatting_button"></span> veya sağ kenar &ccedil;ubuğundaki <b>H&uuml;cre Ayarları</b> sekmesinin <b>Koşullu Bi&ccedil;imlendirme</b> kontrol&uuml;ne tıklayın, ardından a&ccedil;ılır men&uuml;de <b>Kuralları Temizle</b> se&ccedil;eneğini se&ccedil;in ve uygun işlemlerden birini se&ccedil;in:</p>
+        <ul type="circle">
+                     <li>Mevcut se&ccedil;im</li>
+                     <li>Bu &ccedil;alışma sayfası</li>
+                     <li>Bu tablo</li>
+                     <li>Bu pivot</li>
+        </ul>
+			<p class="note">Bu kılavuzun Microsoft Office <a href="https://download.microsoft.com/download/e/4/0/e4089f75-cdb0-4658-9d34-bfa3f7b48815/Conditional%20Formatting%20examples.xlsx" onclick="onhyperlinkclick(this)">Koşullu Bi&ccedil;imlendirme &Ouml;rnekleri ve y&ouml;nergeleri</a> &ccedil;alışma kitabından  alınan grafik bilgileri i&ccedil;erdiğini <b>l&uuml;tfen unutmayın</b>. &Ccedil;alışma kitabını indirip Elektronik Tablo D&uuml;zenleyicisinde a&ccedil;arak yukarıda belirtilen kuralları g&ouml;r&uuml;nt&uuml;lemeyi deneyin.</p>
+			
+		</div>
+	</body>
+</html>

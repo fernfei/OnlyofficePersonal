@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Comentando PDFs</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Dicas sobre edição colaborativa" />
+    <link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+    <link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+    <script type="text/javascript" src="../callback.js"></script>
+    <script type="text/javascript" src="../search/js/page-search.js"></script>
+</head>
+<body>
+    <div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+        <h1>Comentando PDFs</h1>
+        <p>O <!--<a href="https://www.onlyoffice.com/pt/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)">--><b>Editor de PDF </b><!--</a>--> permite que você mantenha uma abordagem constante de toda a equipe ao fluxo de trabalho: <a href="https://helpcenter.onlyoffice.com/userguides/groups-guides-documents-share-documents.aspx" onclick="onhyperlinkclick(this)">compartilhar</a> arquivos e pastas, <a href="../HelpfulHints/Communicating.htm" onclick="onhyperlinkclick(this)">comunicar</a> diretamente no editor.</p>
+        <p>No <b>Editor de PDF</b> você pode deixar comentários sobre o conteúdo dos PDFs sem realmente editá-los. Diferente <a href="../HelpfulHints/Communicating.htm" onclick="onhyperlinkclick(this)">mensagens de bate-papo</a>, os comentários permanecem até serem excluídos.</p>
+        <h3>Deixando comentários e respondendo a eles</h3>
+        <p>Para deixar um comentário,</p>
+        <ol>
+            <li>selecione uma passagem de texto onde você acha que há um erro ou problema,</li>
+            <li>
+                mude para a guia <b>Comentário</b> da barra de ferramentas superior e clique no botão <div class = "icon icon-comment_toptoolbar"></div> <b>Botão de comentário</b> ou<br<br />
+                use o <div class="icon icon-commentsicon"></div> ícone na barra lateral esquerda para abrir o painel <b>Comentários</b> e clique no botão <b>Adicionar comentário</b> na barra de ferramentas superior do painel, ou<br />
+                clique com o botão direito na passagem de texto selecionada e selecione a opção <b>Adicionar comentário</b> no menu contextual,
+            </li>
+            <li>digite o texto necessário,</li>
+            <li>clique no botão <b>Adicionar</b>.</li>
+        </ol>
+        <p>O comentário será visto no painel <b>Comentários</b> à esquerda. Qualquer outro usuário pode responder ao comentário adicionado fazendo perguntas ou relatando o trabalho realizado. Para isso, clique no link <b>Adicionar resposta</b> situado abaixo do comentário, digite sua resposta no campo de entrada e pressione o botão <b>Responder</b>.</p>
+        <h3>Desativando exibição de comentários</h3>
+        <p>A passagem de texto que você comentou será destacada no PDF. Para visualizar o comentário, basta clicar dentro da passagem. Para desativar este recurso,</p>
+        <ol>
+            <li>clique na guia <b>Arquivo</b> na barra de ferramentas superior,</li>
+            <li>selecione a opção <b>Configurações avançadas</b>,</li>
+            <li>
+                selecione a opção <b>Configurações avançadas</b>.
+                <p class="note">A mesma opção também pode ser encontrada na guia <b>Comentário</b>.</p>
+            </li>
+            <li>clique no botão <b>Aplicar</b>.</li>
+        </ol>
+        <p>Agora os trechos comentados serão destacados somente se você clicar no botão <span class = "icon icon-commentsicon"></span> ícone.</p>
+        <h3>Gerenciando comentários</h3>
+        <p>Você pode gerenciar os comentários adicionados usando os ícones no balão de comentários ou no painel <b>Comentários</b> à esquerda:</p>
+        <ul>
+            <li>
+                classifique os comentários adicionados clicando no <div class = "icon icon-sortcommentsicon"></div> ícone:
+                <ul>
+                    <li>por data: <b>Mais recente</b> ou <b>Mais antigo</b>. Esta é a ordem de classificação padrão.</li>
+                    <li>
+                        por autor: <b>Autor de A a Z</b> ou <b>Autor de Z a A</b>.
+                        <p><img alt="Classificar comentários" src="../images/sortcomments.png" /></p>
+                    </li>
+                </ul>
+            </li>
+            <li>edite o comentário atualmente selecionado clicando no botão <div class = "icon icon-editcommenticon"></div> ícone,</li>
+            <li>exclua o comentário atualmente selecionado clicando no botão <div class = "icon icon-deletecommenticon"></div> ícone,</li>
+            <li>feche a discussão atualmente selecionada clicando no botão <div class = "icon icon-resolveicon"></div> ícone se a tarefa ou problema que você indicou em seu comentário foi resolvido, depois disso, a discussão que você abriu com seu comentário ganha o status de resolvida. Para abri-lo novamente, clique no botão <div class = "icon icon-resolvedicon"></div> ícone. <!--Se você deseja ocultar comentários resolvidos, clique na guia <b>Arquivo</b> na barra de ferramentas superior, selecione a opção <b>Configurações avançadas</b>, desmarque a caixa <b>Mostrar comentários resolvidos</b> e clique em <b>Aplicar</b>. Neste caso, os comentários resolvidos serão destacados somente se você clicar no botão <div class = "icon icon-commentsicon"></div> ícone.--></li>
+        </ul>
+        <h3>Adicionando menções</h3>
+        <p class="note">Você só pode adicionar menções aos comentários feitos nas partes do texto e não no próprio PDF.</p>
+        <p>Ao inserir comentários, você pode usar o recurso <b>menções</b>, que permite atrair a atenção de alguém para o comentário e enviar uma notificação ao usuário mencionado por e-mail e <b>Talk</b>.</p>
+        <p>Para adicionar uma menção,</p>
+        <ol>
+            <li>Insira o sinal “+” ou “@” em qualquer lugar do texto do comentário e uma lista dos usuários do portal será aberta. Para simplificar o processo de pesquisa, você pode começar a digitar um nome no campo de comentários - a lista de usuários mudará conforme você digita.</li>
+            <li>Selecione a pessoa necessária na lista e clique no botão <b>Adicionar</b>. Se o arquivo ainda não tiver sido compartilhado com o usuário mencionado, a janela <b>Configurações de Compartilhamento</b> será aberta. O tipo de acesso <b>Somente leitura</b> é selecionado por padrão. <a href="https://helpcenter.onlyoffice.com/userguides/groups-guides-documents-share-documents.aspx" onclick="onhyperlinkclick(this)">Altere se necessário</a>.</li>
+            <li>Salve as alterações, se houver, clicando no botão <b>Salvar</b>. Se não houver alterações, feche a janela <b>Configurações de compartilhamento</b>.</li>
+        </ol>
+        <p>O usuário mencionado receberá uma notificação por e-mail informando que foi mencionado em um comentário. Se o arquivo foi compartilhado, o usuário também receberá uma notificação correspondente.</p>
+        <h3>Removendo comentários</h3>
+        <p>Para remover comentários,</p>
+        <ol>
+            <li>abra o painel esquerdo <b>Comentários</b>,</li>
+            <li>encontre o comentário necessário e clique no <div class="icon icon-deletecommenticon"></div> botão.</li>
+        </ol>
+        <p>Para fechar o painel com comentários, clique no botão <span class = "icon icon-commentsicon"></span> ícone na barra lateral esquerda mais uma vez.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Configurações avançadas do editor de PDF</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="As configurações avançadas do Editor de PDF" />
+    <link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+    <link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+    <script type="text/javascript" src="../callback.js"></script>
+    <script type="text/javascript" src="../search/js/page-search.js"></script>
+</head>
+<body>
+    <div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+        <h1>Configurações avançadas do editor de PDF</h1>
+        <p>O <!--<a href="https://www.onlyoffice.com/pt/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)">--><b>PDF Editor</b><!--</a>--> permite que você altere suas configurações avançadas. Para acessá-los, abra a aba <b>Arquivo</b> na barra de ferramentas superior e selecione a opção <b>Configurações avançadas</b>.</p>
+        <p>As configurações avançadas são agrupadas da seguinte forma:</p>
+
+        <h3>Colaboração</h3>
+        <ol>
+            <li><b>Mostrar comentários em texto</b>. Se você desabilitar esse recurso, os trechos comentados serão destacados somente se você clicar no botão <b>Comentários</b> <div class="icon icon-commentsicon"></div> ícone na barra lateral esquerda. A opção está disponível apenas ao abrir um arquivo PDF comum, não um formulário.</li>
+            <!--<li><b>Mostrar comentários resolvidos</b>. Este recurso está desabilitado por padrão para que os comentários resolvidos fiquem ocultos no texto do PDF. Você só poderá visualizar esses comentários se clicar no ícone <b>Comentários</b> <div class="icon icon-commentsicon"></div> na barra lateral esquerda. Habilite esta opção se desejar exibir comentários resolvidos no texto do PDF.</li>-->
+        </ol>
+
+        <h3>Workspace</h3>
+        <ol>
+            <li>A opção <b>Ativar suporte ao leitor de tela</b> é usada para ativar o suporte ao software leitor de tela.</li>
+            <li>A opção <b>Usar a tecla Alt para navegar na interface do usuário usando o teclado</b> é usada para ativar o uso da tecla <em>Alt</em> / <em>Option</em> nos atalhos do teclado.</li>
+            <li><span class="desktopDocumentFeatures"><b>Mostrar o botão Impressão rápida no cabeçalho do editor</b> é usado na <em>versão desktop</em> para permitir a impressão rápida através do botão correspondente na barra de ferramentas superior. O arquivo será impresso na última impressora selecionada ou padrão.</span></li>
+            <li>A opção <b>Interface RTL (Beta)</b> é usada para alterar a direção na qual os elementos da interface são exibidos.</li>
+            <li>
+                A opção <b>Tema da interface</b> é usada para alterar o esquema de cores da interface do editor.
+                <ul>
+                    <li>A opção <b>Igual ao sistema</b> faz com que o editor siga o tema da interface do seu sistema.</li>
+                    <li>O esquema de cores <b>Claro</b> incorpora cores padrão de tijolo vermelho, branco e cinza claro com menos contraste nos elementos da interface do usuário adequados para trabalhar durante o dia.</li>
+                    <li>O esquema de cores <b>Classic Light</b> incorpora as cores padrão tijolo vermelho, branco e cinza claro.</li>
+                    <li>O esquema de cores <b>Escuro</b> incorpora as cores preto, cinza escuro e cinza claro, adequadas para trabalhar à noite.</li>
+                    <li>O esquema de cores <b>Contraste Escuro</b> incorpora as cores preto, cinza escuro e branco com mais contraste nos elementos da interface do usuário, destacando a área de trabalho do arquivo.</li>
+                    <li>
+                        A opção <b>Ativar modo escuro do documento</b> é usada para tornar a área de trabalho mais escura quando o editor está definido para o tema da interface <b>Escuro</b> ou <b>Contraste Escuro</b>. Marque a caixa <b>Ativar o modo escuro do documento</b> para ativá-lo.
+                        <p class="note"><b>Nota</b>: Além dos temas de interface disponíveis <b>Claro</b>, <b>Clássico Claro</b>, <b>Escuro</b> e <b>Contraste Escuro</b>, os editores do ONLYOFFICE agora podem ser personalizados com seu próprio tema de cores. Por favor segue <a target="_blank" href="https://helpcenter.onlyoffice.com/installation/docs-developer-change-theme.aspx" onclick="onhyperlinkclick(this)">estas instruções</a> para saber como você pode fazer isso.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                A opção <b>Valor padrão de zoom</b> é utilizada para definir o valor padrão de zoom, selecionando-o na lista de opções disponíveis de 50% a 500%. Você também pode escolher a opção <em>Ajustar à página</em>, <em>Ajustar à largura</em> ou <em>Último uso</em>.
+                <p class="note">A opção <em>Último uso</em> refere-se ao último dimensionamento definido durante a sessão atual.</p>
+            </li>
+            <li>
+               A opção <b>Font Hinting</b> é usada para selecionar como as fontes são exibidas no Editor de PDF.
+                <ul>
+                    <li>Escolha <b>Como Windows</b> se você gosta da maneira como as fontes geralmente são exibidas no Windows, ou seja, usando dicas de fonte do Windows.</li>
+                    <li>Escolha <b>Como OS X</b> se você gosta da maneira como as fontes geralmente são exibidas em um Mac, ou seja, sem nenhuma sugestão de fonte.</li>
+                    <li>Escolha <b>Nativo</b> se quiser que seu texto seja exibido com dicas incorporadas nos arquivos de fonte.</li>
+                    <li>
+                        <b>Modo de cache padrão</b> - usado para selecionar o modo de cache para os caracteres da fonte. Não é recomendado trocá-lo sem qualquer motivo. Pode ser útil apenas em alguns casos, por exemplo, quando ocorre um problema no navegador Google Chrome com aceleração de hardware ativada.
+                        <p>O Editor de Documentos possui dois modos de cache:</p>
+                        <ol>
+                            <li>No <b>primeiro modo de cache</b>, cada letra é armazenada em cache como uma imagem separada.</li>
+                            <li>No <b>segundo modo de cache</b>, uma imagem de um determinado tamanho é selecionada onde as letras são colocadas dinamicamente, e um mecanismo para alocação/remoção de memória nesta imagem também é implementado. Se não houver memória suficiente, uma segunda imagem será criada, etc.</li>
+                        </ol>
+                        <p>A configuração <b>Modo de cache padrão</b> aplica os dois modos de cache mencionados acima separadamente para navegadores diferentes:</p>
+                        <ul>
+                            <li>Quando a configuração <b>Modo de cache padrão</b> está ativada, o Internet Explorer (v. 9, 10, 11) usa o <b>segundo modo de cache</b>, outros navegadores usam o <b>primeiro modo de cache</b>.</li>
+                            <li>Quando a configuração <b>Modo de cache padrão</b> está desativada, o Internet Explorer (v. 9, 10, 11) usa o <b>primeiro modo de cache</b>, outros navegadores usam o <b>segundo modo de cache</b>.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <p>Para salvar as alterações feitas, clique no botão <b>Aplicar</b>.</p>
+    </div>
+</body>
+</html>

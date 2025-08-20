@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Inserir objetos de texto</title>
+		<meta charset="utf-8" />
+        <meta name="descrição" content="Insira objetos de texto, como caixas de texto e arte de texto, para chamar a atenção para uma parte específica da planilha" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Inserir objetos de texto</h1>
+            <p>No <a href="https://www.onlyoffice.com/pt/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Planilhas</b></a> você pode chamar a atenção para uma parte específica da planilha, para isso, insira uma caixa de texto (uma moldura retangular que permite inserir texto dentro dela) ou um objeto Text Art (um caixa com um estilo de fonte e cor predefinidos que permitem aplicar alguns efeitos de texto).</p>
+			<h3>Adicionar um objeto de texto</h3>
+            <p>Você pode adicionar um objeto de texto em qualquer lugar da planilha. Fazer isso:</p>
+            <ol>
+                <li>mude para a guia <b>Inserir</b> da barra de ferramentas superior,</li>
+                 <li>selecione o tipo de objeto de texto necessário:
+                <ul>
+                    <li>para adicionar uma caixa de texto, clique no ícone <div class = "icon icon-inserttexticon"></div> <b>Caixa de texto</b> na barra de ferramentas superior e clique onde a caixa de texto deve ser inserida, segure a tecla botão do mouse e arraste a borda da caixa de texto para especificar seu tamanho. Quando você soltar o botão do mouse, o ponto de inserção aparecerá na caixa de texto adicionada e você poderá inserir seu texto.
+                         <p class="note">Também é possível inserir uma caixa de texto clicando no ícone <span class="icon icon-insertautoshape"></span> <b>Forma</b> na barra de ferramentas superior e selecionando o Insira a forma automática <span class="icon icon-text_autoshape"></span> de texto do grupo <b>Formas básicas</b>.</p>
+                    </li>
+                    <li>para adicionar um objeto Text Art, clique no ícone <div class = "icon icon-inserttextarticon"></div> <b>Text Art</b> na barra de ferramentas superior e clique no modelo de estilo desejado – o Text Art objeto será adicionado no centro da planilha. Selecione o texto padrão na caixa de texto com o mouse e substitua-o pelo seu próprio texto.</li>
+                </ul>
+                </li>
+                <li>clique fora do objeto de texto para aplicar as alterações e retornar à planilha.</li>
+            </ol>
+            <p>O texto dentro do objeto de texto faz parte do último (quando você move ou gira o objeto de texto, o texto se move ou gira com ele).</p>
+             <p>Como um objeto de texto inserido representa um quadro retangular com texto nele (objetos de arte de texto têm bordas de caixa de texto invisíveis por padrão) e esse quadro é uma forma automática comum, você pode alterar as propriedades de forma e texto.</p>
+             <p>Para excluir o objeto de texto adicionado, clique na borda da caixa de texto e pressione a tecla <b>Delete</b> no teclado. O texto dentro da caixa de texto também será excluído.</p>
+             <h3>Formatar uma caixa de texto</h3>
+             <p>Selecione a caixa de texto clicando em sua borda para alterar suas propriedades. Quando a caixa de texto é selecionada, suas bordas são exibidas como linhas sólidas (não tracejadas).</p>
+            <p><img alt="Caixa de texto selecionada" src="../images/textbox_boxselected.png" /></p>
+            <ul>
+                <li>para manualmente <a href="ManipulateObjects.htm" onclick="onhyperlinkclick(this)">redimensionar, mover, girar</a> a caixa de texto, use as alças especiais nas bordas da forma.</li>
+                 <li>para editar a caixa de texto <a href="InsertAutoshapes.htm#shape_fill" onclick="onhyperlinkclick(this)">preencher</a>, <a href="InsertAutoshapes.htm#shape_stroke" onclick="onhyperlinkclick( esta)">linha</a>, <b>substitua</b> a caixa retangular por uma forma diferente ou acesse a <a href="InsertAutoshapes.htm#shape_advanced" onclick="onhyperlinkclick(this)">forma configurações avançadas</a>, clique no ícone <b>Configurações de forma</b> <div class = "icon icon-shape_settings_icon"></div> na barra lateral direita e use as opções correspondentes.</li>
+                <li>para <b>organizar</b> caixas de texto relacionadas a outros objetos, <b>alinhar várias caixas de texto</b> relacionadas umas às outras, <b>girar ou virar</b> uma caixa de texto, clique na borda da caixa de texto e use as opções do menu contextual. Para saber mais sobre como organizar e alinhar objetos, consulte <a href="../UsageInstructions/ManipulateObjects.htm" onclick="onhyperlinkclick(this)">esta página</a>.</li>
+                 <li>para criar <b>colunas de texto</b> dentro da caixa de texto, clique com o botão direito na borda da caixa de texto, clique na opção <b>Configurações avançadas de forma</b> e mude para <a href= "../UsageInstructions/InsertAutoshapes.htm#columns" onclick="onhyperlinkclick(this)"><b>Colunas</b></a> na janela <b>Forma - Configurações avançadas</b>.</li>
+            </ul>
+            <h3 id="textbox_textformatting">Formate o texto dentro da caixa de texto</h3>
+             <p>Clique no texto dentro da caixa de texto para alterar suas propriedades. Quando o texto é selecionado, as bordas da caixa de texto são exibidas como linhas tracejadas.</p>
+            <p><img alt="Texto selecionado" src="../images/textbox_textselected.png" /></p>
+            <p class="note">Também é possível alterar a formatação do texto quando a caixa de texto (não o próprio texto) é selecionada. Nesse caso, quaisquer alterações serão aplicadas a todo o texto dentro da caixa de texto. Algumas opções de formatação de fonte (tipo de fonte, tamanho, cor e estilos de decoração) podem ser aplicadas separadamente a uma parte previamente selecionada do texto.</p>
+            <ul>
+                <li>Ajuste as <b>configurações de formatação de fonte</b> (altere o tipo de fonte, seu tamanho, cor e aplique estilos de decoração) usando o <a href="../UsageInstructions/FontTypeSizeStyle.htm" onclick="onhyperlinkclick(this) ">ícones correspondentes</a> situados na guia <b>Início</b> da barra de ferramentas superior. Algumas configurações de fonte adicionais também podem ser alteradas na guia <b>Fonte</b> da janela de propriedades do parágrafo. Para acessá-lo, clique com o botão direito do mouse no texto da caixa de texto e selecione a opção <b>Configurações avançadas de parágrafo</b>.</li>
+                 <li><b>Alinhe o texto horizontalmente</b> dentro da caixa de texto usando os <a href="../UsageInstructions/AlignText.htm" onclick="onhyperlinkclick(this)">ícones correspondentes</a> situado na guia <b>Página inicial</b> da barra de ferramentas superior ou em <a href="../UsageInstructions/InsertTextObjects.htm#textadvancedsettings" onclick="onhyperlinkclick(this)"><b>Parágrafo - Avançado Janela de configurações</b></a>.</li>
+                <li><b>Alinhe o texto verticalmente</b> dentro da caixa de texto usando os <a href="../UsageInstructions/AlignText.htm" onclick="onhyperlinkclick(this)">ícones correspondentes</a> situados no <b> Página inicial</b> da barra de ferramentas superior. Você também pode clicar com o botão direito do mouse no texto, selecionar a opção <b>Alinhamento vertical</b> e escolher uma das opções disponíveis: <b>Alinhar topo</b>, <b>Alinhar centro</b> ou <b>Alinhar inferior</b>.</li>
+                 <li><b>Girar</b> o texto dentro da caixa de texto. Para fazer isso, clique com o botão direito do mouse no texto, selecione a opção <b>Direção do texto</b> e escolha uma das opções disponíveis: <b>Horizontal</b> (é selecionado por padrão), <b>Girar Texto para baixo</b> (define uma direção vertical, de cima para baixo) ou <b>Girar texto para cima</b> (define uma direção vertical, de baixo para cima).</li>
+                <li>
+                    Crie uma <b>lista numerada ou com marcadores</b>. Para fazer isso, clique com o botão direito do mouse no texto, selecione a opção <b>Marcadores e numeração</b> no menu contextual e escolha um dos marcadores ou estilos de numeração disponíveis.
+                     <p><img alt="Marcas e numeração" src="../images/bulletsandnumbering.png" /></p>
+                     <p>A opção <b>Configurações da lista</b> permite que você abra a janela <b>Configurações da lista</b> onde você pode ajustar as configurações para um tipo de lista correspondente:</p>
+                    <p><img alt="Configurações da lista com marcadores" src="../images/bulletedlistsettings.png" /></p>
+                    <p><b>Tipo (marcado)</b> - permite selecionar o caractere necessário para a lista com marcadores. Ao clicar na opção <b>Novo marcador</b>, a janela <b>Símbolo</b> será aberta e você poderá escolher um dos caracteres disponíveis. Para saber mais sobre como trabalhar com símbolos, consulte <a href="../UsageInstructions/InsertSymbols.htm" onclick="onhyperlinkclick(this)">este artigo</a>.</p>
+                     <p>Ao clicar na opção <b>Nova imagem</b>, um novo campo <b>Importar</b> aparece onde você pode escolher novas imagens para marcadores <em>Do arquivo</em>, <em >Do URL</em> ou <em>Do armazenamento</em>.</p>
+                     <p><img alt="Configurações da lista numerada" src="../images/numberedlistsettings.png" /></p>
+                     <p><b>Tipo (numerado)</b> - permite selecionar o formato necessário para a lista numerada.</p>
+                    <ul>
+                        <li><b>Tamanho</b> - permite selecionar o tamanho do marcador/número necessário, dependendo do tamanho atual do texto. O valor pode variar de 25% até 400%.</li>
+                         <li><b>Cor</b> - permite selecionar a cor do marcador/número necessária. Você pode selecionar uma das <em>cores do tema</em> ou <em>cores padrão</em> na paleta ou especificar uma cor <em>personalizada</em>.</li>
+                         <li><b>Iniciar em</b> - permite definir o valor numérico necessário com o qual deseja iniciar a numeração.</li>
+                    </ul>
+                </li>
+                <li>Insira um <a href="../Instruções de uso/Adicionar hiperlinks.html" onclick="onhyperlinkclick(this)">hiperlink</a>.</li>
+                <li>
+                    <b>Defina o espaçamento entre linhas e parágrafos</b> para o texto de várias linhas na caixa de texto usando a guia <b>Configurações de parágrafo</b> da barra lateral direita que será aberta se você clicar em <b>Configurações de parágrafo</b> <div class = "icon icon-textsettings"></div> icon. Defina a altura da linha para as linhas de texto dentro do parágrafo, bem como as margens entre o parágrafo atual e o anterior ou seguinte.
+                    <p><img alt="Guia de configurações de parágrafo" src="../images/textsettingstab.png" /></p>
+                    <ul>
+                        <li><b>Espaçamento de linha</b> - defina a altura da linha para as linhas de texto dentro do parágrafo. Você pode selecionar entre duas opções: <b>múltiplos</b> (define o espaçamento de linha que pode ser expresso em números maiores que 1), <b>exatamente</b> (define o espaçamento de linha fixo). Você pode especificar o valor necessário no campo à direita.</li>
+                        <li>
+                            <b>Espaçamento entre parágrafos</b> - defina a quantidade de espaço entre os parágrafos.
+                            <ul>
+                                <li><b>Antes</b> - defina a quantidade de espaço antes do parágrafo.</li>
+                                 <li><b>Depois</b> - defina a quantidade de espaço após o parágrafo.</li>
+                            </ul>
+                            <p class="note">Esses parâmetros também podem ser encontrados no <a href="../UsageInstructions/InsertTextObjects.htm#textadvancedsettings" onclick="onhyperlinkclick(this)"><b>Parágrafo - Janela Configurações avançadas</b></a>.</p>
+                        </li>
+                    </ul>
+                </li>
+                </ul>
+                <h3 id="textadvancedsettings">Ajustar configurações avançadas de parágrafo</h3>
+                 <p>Altere as <b>configurações avançadas</b> do parágrafo (você pode ajustar <b>recuos de parágrafo</b> e <b>paradas de tabulação</b> para o texto de várias linhas dentro da caixa de texto e aplique algumas <b>configurações de formatação de fonte</b>). Coloque o cursor no parágrafo desejado - a guia <b>Configurações do parágrafo</b> será ativada na barra lateral direita. Clique no link <b>Mostrar configurações avançadas</b>. Também é possível clicar com o botão direito do mouse em uma caixa de texto e usar o item <b>Configurações avançadas de parágrafo</b> no menu contextual. A janela de propriedades do parágrafo será aberta:<p/>
+                    <p><img alt="Propriedades do parágrafo - guia Recuos e espaçamento" src="../images/textadvancedsettings1.png" /></p>
+                    <p>A guia <b>Recuos e espaçamento</b> permite que você:</p>
+                    <ul>
+                        <li>altere o tipo de <b>alinhamento</b> para o texto do parágrafo,</li>
+                         <li>
+                             altere os <b>recuos</b> do parágrafo conforme relacionado às <a href="../UsageInstructions/InsertAutoshapes.htm#internalmargins" onclick="onhyperlinkclick(this)">margens internas</a> da caixa de texto,
+                            <ul>
+                                <li><b>Esquerda</b> - defina o deslocamento do parágrafo da margem interna <b>esquerda</b> da caixa de texto especificando o valor numérico necessário,</li>
+                                 <li><b>Direita</b> - defina o deslocamento do parágrafo da margem interna <b>direita</b> da caixa de texto especificando o valor numérico necessário,</li>
+                                 <li><b>Especial</b> - defina um recuo para a <b>primeira linha</b> do parágrafo: selecione o item de menu correspondente (<b>(nenhum)</b>, <b> Primeira linha</b>, <b>Deslocamento</b>) e altere o valor numérico padrão especificado para <b>Primeira linha</b> ou <b>Deslocamento</b>,</li>
+                            </ul>
+                        </li>
+                        <li>mude o parágrafo <b>espaçamento entre linhas</b>.</li>
+                    </ul>
+                    <p><img alt="Propriedades do parágrafo - guia Fonte" src="../images/textadvancedsettings2.png" /></p>
+                    <p>A guia <b>Fonte</b> contém os seguintes parâmetros:</p>
+                    <ul>
+                        <li><b>Tachado</b> é usado para riscar o texto com uma linha passando pelas letras.</li>
+                         <li><b>Tachado duplo</b> é usado para riscar o texto com uma linha dupla passando pelas letras.</li>
+                         <li><b>Sobrescrito</b> é usado para tornar o texto menor e colocá-lo na parte superior da linha de texto, por exemplo, como em frações.</li>
+                         <li><b>Subscrito</b> é usado para tornar o texto menor e colocá-lo na parte inferior da linha de texto, por exemplo, como nas fórmulas químicas.</li>
+                         <li><b>Versículos minúsculos</b> é usado para tornar todas as letras minúsculas.</li>
+                         <li><b>All caps</b> é usado para colocar todas as letras em maiúsculas.</li>
+                         <li><b>Espaçamento entre caracteres</b> é usado para definir o espaço entre os caracteres. Aumente o valor padrão para aplicar o espaçamento <b>Expandido</b> ou diminua o valor padrão para aplicar o espaçamento <b>Condensado</b>. Use os botões de seta ou insira o valor necessário na caixa.
+                         <p>Todas as alterações serão exibidas no campo de visualização abaixo.</p>
+                        </li>
+                    </ul>
+                    <p><img alt="Propriedades do parágrafo - guia Guia" src="../images/textadvancedsettings3.png" /></p>
+                    <p>A guia <b>Tab</b> permite que você altere as paradas de tabulação, ou seja, a posição para a qual o cursor avança quando você pressiona a tecla <b>Tab</b> no teclado.</p>
+                    <ul>
+                        <li><b>A guia padrão</b> é definida em 2,54 cm. Você pode diminuir ou aumentar esse valor usando os botões de seta ou inserir o valor necessário na caixa.</li>
+                         <li><b>Posição da tabulação</b> - é usada para definir paradas de tabulação personalizadas. Insira o valor necessário nesta caixa, ajuste-o com mais precisão usando os botões de seta e clique no botão <b>Especificar</b>. Sua posição de guia personalizada será adicionada à lista no campo abaixo.</li>
+                        <li>
+                            <b>Alinhamento</b> - é usado para definir o tipo de alinhamento necessário para cada uma das posições de tabulação na lista acima. Selecione a posição de tabulação necessária na lista, escolha a opção <b>Esquerda</b>, <b>Centro</b> ou <b>Direita</b> no menu suspenso <b>Alinhamento</b> lista abaixo e clique no botão <b>Especificar</b>.
+                             <ul>
+                                 <li><b>Esquerda</b> - alinha seu texto à esquerda na posição de tabulação; o texto se move para a direita da tabulação enquanto você digita. </li>
+                                 <li><b>Centro</b> - centraliza o texto na posição de tabulação. </li>
+                                 <li><b>Direita</b> - alinha seu texto à direita na posição de tabulação; o texto se move para a esquerda da parada de tabulação enquanto você digita. </li>
+                            </ul>
+                            <p>Para excluir paradas de tabulação da lista, selecione uma parada de tabulação e clique no botão <b>Remover</b> ou <b>Remover tudo</b>.</p>
+                         </li>
+                     </ul>
+              <h3>Atribuir uma macro a uma caixa de texto</h3>
+             <p>Você pode fornecer um acesso rápido e fácil a uma macro em uma planilha atribuindo uma macro a qualquer caixa de texto. Depois de atribuir uma macro, a caixa de texto aparece como um controle de botão e você pode executar a macro sempre que clicar nela.</p>
+             <p>Para atribuir uma macro:</p>
+            <ul type="circle">
+                <li>
+                    Clique com o botão direito do mouse na caixa de texto para atribuir uma macro e escolha a opção <b>Atribuir macro</b> no menu suspenso.
+                     <p><img alt="Atribuir macro no menu" src="../images/assignmacro_rightclickshape.png" /></p>
+                </li>
+                <li>A caixa de diálogo <b>Atribuir macro</b> será aberta</li>
+                <li>
+                    Escolha uma macro na lista ou digite o nome da macro e clique em <b>OK</b> para confirmar.
+                     <p><img alt="Atribuir Macro" src="../images/assignmacro.png" /></p>
+                </li>
+            </ul>
+            <h3>Editar um estilo de arte de texto</h3>
+             <p>Selecione um objeto de texto e clique no ícone <b>Text Art settings</b> <span class="icon icon-textart_settings_icon"></span> na barra lateral direita.</p>
+             <p><img alt="Guia de configuração de arte de texto" src="../images/right_textart.png" /></p>
+            <ul>
+                <li>Altere o estilo de texto aplicado selecionando um novo <b>Modelo</b> na galeria. Você também pode alterar o estilo básico selecionando um tipo de fonte diferente, tamanho, etc.</li>
+                 <li>Alterar a fonte <a href="InsertAutoshapes.htm#shape_fill" onclick="onhyperlinkclick(this)">preencher</a> e <a href="InsertAutoshapes.htm#shape_stroke" onclick="onhyperlinkclick(this)">linha</a>. As opções disponíveis são as mesmas das formas automáticas.</li>
+                 <li>Aplique um efeito de texto selecionando o tipo de transformação de texto necessário na galeria <b>Transformar</b>. Você pode ajustar o grau de distorção do texto arrastando a alça rosa em forma de diamante.</li>
+            </ul>
+            <p><img alt="Transformação de arte de texto" src="../images/textart_transformation.png" /></p>
+		</div>
+	</body>
+</html>

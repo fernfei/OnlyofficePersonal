@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ver informações do documento</title>
+		<meta charset="utf-8" />
+		<meta name="descrição" content="Visualize o título do documento, autor, local, data de criação, pessoas com direitos para visualizar ou editar o documento e estatísticas" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Ver informações do documento</h1>
+			<p>Para acessar as informações detalhadas sobre o documento atualmente editado no <a href="https://www.onlyoffice.com/pt/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Documentos</b></a>, clique na guia <b>Arquivo</b> da barra de ferramentas superior e selecione a opção <b>Informações do documento</b>.</p>
+			<h3>Informações gerais</h3>
+            <p>As informações do documento incluem várias propriedades de arquivo que descrevem o documento. Algumas dessas propriedades são atualizadas automaticamente e algumas delas podem ser editadas.</p>
+            <ul>
+                <li class ="onlineDocumentFeatures"><b>Localização</b> - a pasta no módulo <b>Documentos</b> onde o arquivo está armazenado. <b>Proprietário</b> - o nome do usuário que criou o arquivo. <b>Enviado</b> - a data e hora em que o arquivo foi criado. Essas propriedades estão disponíveis apenas na <em>versão online</em>.</li>
+                 <li><b>Estatísticas</b> - o número de páginas, parágrafos, palavras, símbolos, símbolos com espaços.</li>
+                 <li><b>Título</b>, <b>Assunto</b>, <b>Comentário</b> - essas propriedades permitem que você simplifique a classificação de seus documentos. Você pode especificar o texto necessário nos campos de propriedades.</li>
+                 <li><b>Última modificação</b> - a data e a hora em que o arquivo foi modificado pela última vez.</li>
+                 <li><b>Última modificação por</b> - o nome do usuário que fez a última alteração no documento. Esta opção está disponível se o documento foi compartilhado e pode ser editado por vários usuários.</li>
+                 <li><b>Aplicativo</b> - o aplicativo com o qual o documento foi criado.</li>
+                 <li><b>Autor</b> - a pessoa que criou o arquivo. Você pode inserir o nome necessário neste campo. Pressione <em>Enter</em> para adicionar um novo campo que permite especificar mais um autor.</li>
+            </ul>
+            <p>Se você alterou as propriedades do arquivo, clique no botão <b>Aplicar</b> para aplicar as alterações.</p>
+             <div class="onlineDocumentFeatures">
+                 <p class="note"><b>Nota</b>: Os editores online permitem que você altere o nome do documento diretamente na interface do editor. Para fazer isso, clique na guia <b>Arquivo</b> da barra de ferramentas superior e selecione a opção <b>Renomear</b> e digite o <b>Nome do arquivo</b> necessário em uma nova janela que aparecerá e clique em <b>OK</b>.</p>
+            </div>  
+                <div class="onlineDocumentFeatures">
+                    <h3>Informações de permissão</h3>
+                     <p>Na <em>versão online</em>, você pode visualizar as informações sobre as permissões dos arquivos armazenados na nuvem.</p>
+                     <p class="note"><b>Observação</b>: esta opção não está disponível para usuários com permissões <b>Somente leitura</b>.</p>
+                     <p>Para descobrir quem tem direitos para visualizar ou editar o documento, selecione a opção <b>Direitos de acesso...</b> na barra lateral esquerda.</p>
+                     <p>Você também pode alterar os direitos de acesso atualmente selecionados pressionando o botão <b>Alterar direitos de acesso</b> na seção <b>Pessoas com direitos</b>.</p>
+                     <h3>Histórico da versão</h3>
+                    <p>Na <em>versão online</em>, você pode visualizar o histórico de versões dos arquivos armazenados na nuvem.</p>
+                     <p class="note"><b>Observação</b>: esta opção não está disponível para usuários com permissões <b>Somente leitura</b>.</p>
+                     <p>Para visualizar todas as alterações feitas neste documento, selecione a opção <b>Histórico da versão</b> na barra lateral esquerda. Também é possível abrir o histórico de versões usando o ícone <span class = "icon icon-versionhistoryicon"></span> <b>Histórico de versões</b> na guia <b>Colaboração</b> da parte superior barra de ferramentas. Você verá a lista das versões deste documento (grandes alterações) e revisões (pequenas alterações) com a indicação do autor de cada versão/revisão e data e hora de criação. Para versões de documentos, o número da versão também é especificado (por exemplo, <em>ver. 2</em>). Para saber exatamente quais alterações foram feitas em cada versão/revisão separada, você pode visualizar a que precisa clicando na barra lateral esquerda. As alterações feitas pelo autor da versão/revisão são marcadas com a cor que aparece ao lado do nome do autor na barra lateral esquerda. Você pode usar o link <b>Restaurar</b> abaixo da versão/revisão selecionada para restaurá-la. <!--Para ocultar a lista de revisões em uma determinada versão, use o ícone <div class = "icon icon-collapse"></div> ao lado da versão. Para exibir as revisões novamente, use o ícone <div class = "icon icon-expand"></div>.--> </p>
+                    <p><img alt="Histórico da versão" src="../images/versionhistory.png" /></p>
+                    <p>Para retornar à versão atual do documento, use a opção <b>Fechar histórico</b> no topo da lista de versões.</p>
+                 </div>
+                 <p>Para fechar o painel <b>Arquivo</b> e retornar à edição do documento, selecione a opção <b>Fechar menu</b>.</p>
+            </div>
+	</body>
+</html>

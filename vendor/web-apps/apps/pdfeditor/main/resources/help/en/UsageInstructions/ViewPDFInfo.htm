@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>View PDF information</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="View PDF author, location, creation date, persons with the rights to view or edit the document, and statistics" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>View PDF information</h1>
+			<p>To access detailed information about the currently edited PDF in the <!--<a href="https://www.onlyoffice.com/en/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)">--><b>PDF Editor</b><!--</a>-->, click the <b>File</b> tab of the top toolbar and select the <b>Document Info</b> option.</p>
+			<h3>General Information</h3>
+            <p>The PDF information includes a number of the file properties that describe the PDF. Some of these properties are updated automatically, and some of them can be edited.</p>
+            <ul>
+                <li class ="onlineDocumentFeatures"><b>Location</b> - the folder in the <b>Documents</b> module where the file is stored. <b>Owner</b> - the name of the user who created the file. <b>Uploaded</b> - the date and time when the file was created. These properties are available in the <em>online version</em> only.</li>
+                <li><b>Statistics</b> - the number of pages, paragraphs, words, characters, characters with spaces, and page size.</li>
+                <li><b>Last Modified</b> - the date and time when the file was last modified.</li>
+                <li><b>Application</b> and <b>PDF Producer</b> - the application the PDF has been created with.</li>
+                <li><b>PDF Version</b> - version of the PDF.</li>
+                <li><b>Tagged PDF</b> - shows whether the PDF has hidden accessibility markup features.</li>
+                <li><b>Fast Web View</b> - shows whether the PDF is set to a page-at-a-time downloading from web servers. This can help with large files.</li>
+            </ul>
+            <p>If you changed the file properties, click the <b>Apply</b> button to apply the changes.</p>
+            <div class="onlineDocumentFeatures">
+                <p class="note"><b>Note</b>: The online editors allow you to change the name of the document directly in the editor interface. To do that, click the <b>File</b> tab of the top toolbar and select the <b>Rename</b> option, then enter the necessary <b>File name</b> in a new window that will appear and click <b>OK</b>.</p>
+            </div>  
+            <div class="onlineDocumentFeatures">
+                <h3>Permission Information</h3>
+                <p>You can view information about permissions for the files stored in the cloud.</p>
+                <p class="note"><b>Note</b>: this option is not available for users with the <b>Read Only</b> permissions.</p>
+                <p>To find out who has rights to view or edit the PDF, select the <b>Access Rights...</b> option on the left sidebar.</p>
+                <p>You can also change the currently selected access rights by pressing the <b>Change access rights</b> button in the <b>Persons who have rights</b> section.</p>
+                <!--<h3>Version History</h3>
+    <p>In the <em>online version</em>, you can view the version history for the files stored in the cloud.</p>
+    <p class="note"><b>Note</b>: this option is not available for users with the <b>Read Only</b> permissions.</p>
+    <p>To view all the changes made to this document, select the <b>Version History</b> option at the left sidebar. It's also possible to open the history of versions using the <span class = "icon icon-versionhistoryicon"></span> <b>Version History</b> icon on the <b>Collaboration</b> tab of the top toolbar. You'll see the list of this document versions (major changes) and revisions (minor changes) with the indication of each version/revision author and creation date and time. For document versions, the version number is also specified (e.g. <em>ver. 2</em>). To know exactly which changes have been made in each separate version/revision, you can view the one you need by clicking it on the left sidebar. The changes made by the version/revision author are marked with the color which is displayed next to the author's name on the left sidebar. You can use the <b>Restore</b> link below the selected version/revision to restore it.-->
+                <!--To hide the list of the revisions within a certain version, use the <div class = "icon icon-collapse"></div> icon next to the version. To display revisions again, use the <div class = "icon icon-expand"></div> icon.-->
+                <!--</p>
+    <p><img alt="Version History" src="../images/versionhistory.png" /></p>
+    <p>To return to the current version of the document, use the <b>Close History</b> option on the top of the version list.</p>-->
+            </div>
+                <p>To close the <b>File</b> panel and return to PDF editing, select the <b>Close Menu</b> option.</p>
+            </div>
+	</body>
+</html>

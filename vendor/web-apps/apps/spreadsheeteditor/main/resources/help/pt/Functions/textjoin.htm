@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Função UNIRTEXTO</title>
+		<meta charset="utf-8" />
+		<meta name="descricao" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>Função UNIRTEXTO</h1>
+			<p>A função <b>UNIRTEXTO</b> é uma das funções de texto e dados. É usado para combinar o texto de vários intervalos e/ou strings e inclui um delimitador que você especifica entre cada valor de texto que será combinado; se o delimitador for uma string de texto vazia, essa função concatenará efetivamente os intervalos. Esta função é semelhante à função <b>CONCAT</b>, mas a diferença é que a função <b>CONCAT</b> não pode aceitar um delimitador.</p>
+			<p>A sintaxe da função <b>UNIRTEXTO</b> é:</p>
+			<p style="text-indent: 150px;"><b><em>UNIRTEXTO(delimitador, ignora_vazio, texto1 [, texto2], …)</em></b></p>
+			<p>onde</p>
+            <p style="text-indent: 50px;"><b><em>delimitador</em></b> é o delimitador a ser inserido entre os valores de texto. Pode ser especificado como uma string de texto entre aspas duplas (por exemplo, <b>","</b> (vírgula), <b>" "</b> (espaço), <b>"\"</b> (barra invertida) etc.) ou como referência a uma célula ou intervalo de células.</p>
+            <p style="text-indent: 50px;"><b><em>ignora_vazio</em></b> é um valor lógico que especifica se as células vazias devem ser ignoradas. Quando o valor é definido como VERDADEIRO, as células vazias são ignoradas.</p>
+            <p style="text-indent: 50px;"><b><em>texto1(2)</em></b> é de até 252 valores de dados. Cada valor pode ser uma string de texto ou uma referência a um intervalo de células.</p>
+            <p>Para aplicar a função <b>UNIRTEXTO</b>,</p>
+			<ol>
+			<li>selecione a célula onde deseja exibir o resultado,</li>
+			<li>clique no ícone <b>Inserir função</b> <div class = "icon icon-insertfunction"></div> situado na barra de ferramentas superior,
+				<br />ou clique com o botão direito em uma célula selecionada e selecione a opção <b>Inserir Função</b> no menu,
+				<br />ou clique no ícone <div class = "icon icon-function"></div> situado na barra de fórmulas,
+			</li>
+			<li>selecione o grupo de funções <b>Texto e dados</b> na lista,</li>
+			<li>clique na função <b>UNIRTEXTO</b>,</li>
+			<li>digite os argumentos necessários separando-os por vírgula,</li>
+			<li>pressione o botão <b>Entrar</b>.</li>
+			</ol>
+			<p>O resultado será exibido na célula selecionada.</p>
+			<p style="text-indent: 150px;"><img alt="Função UNIRTEXTO" src="../images/textjoin.png" /></p>
+		</div>
+	</body>
+</html>

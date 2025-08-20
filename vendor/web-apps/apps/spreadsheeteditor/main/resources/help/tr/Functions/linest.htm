@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>DOT İşlevi</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>DOT İşlevi</h1>
+			<p><b>DOT</b> işlevi, istatiksel işlevlerden biridir. Verilerinize en uygun doğruyu hesaplamak i&ccedil;in en k&uuml;&ccedil;&uuml;k kareler y&ouml;ntemini kullanarak doğrunun istatistiklerini hesaplamak i&ccedil;in kullanılır ve bu işlev bir değerler dizisi d&ouml;nd&uuml;rd&uuml;ğ&uuml;nden, ardından doğruyu a&ccedil;ıklayan bir dizi d&ouml;nd&uuml;r&uuml;r, bir dizi form&uuml;l&uuml; olarak girilmelidir.</p>
+			<p><b>DOT</b> işlevi s&ouml;z dizimi ş&ouml;yledir:</p> 
+			<p style="text-indent: 150px;"><b><em>DOT(bilinen_y&apos;ler, [bilinen_x&apos;ler], [sabit], [istatikler])</em></b></p> 
+			<p>Burada:</p>
+            <p style="text-indent: 50px;"><b><em>bilinen_y&apos;ler,</em></b> <em>y = mx + b</em> denkleminde bilinen bir <em>y</em> değerleri aralığıdır ve gerekli bir bağımsız değişkendir.</p>
+            <p style="text-indent: 50px;"><b><em>bilinen_x&apos;ler,</em></b> <em>y = mx + b</em> denkleminde bilinen bir <em>x</em> değerleri aralığıdır ve isteğe bağlı bir bağımsız değişkendir. Atlanırsa, <em>bilinen_x&apos;lerin</em>  <em>bilinen_y&apos;ler</em> ile aynı sayıda değere sahip dizi <em>{1,2,3,...}</em> olduğu varsayılır.</p>
+            <p style="text-indent: 50px;"><b><em>sabit,</em></b> <em>b&apos;yi</em> <em>0&apos;a</em> eşitlemek isteyip istemediğinizi belirten mantıksal bir değerdir. Bu isteğe bağlı bir bağımsız değişkendir. <em>DOĞRU</em> olarak ayarlanır veya atlanırsa, <em>b</em> normal olarak hesaplanır. <em>YANLIŞ</em> olarak ayarlanırsa, <em>b</em> <em>0&apos;a</em> eşit olarak ayarlanır.</p>
+            <p style="text-indent: 50px;"><b><em>İstatikler,</em></b> ek regresyon istatistikleri d&ouml;nd&uuml;rmek isteyip istemediğinizi belirten mantıksal bir değerdir. Bu isteğe bağlı bir bağımsız değişkendir. <em>DOĞRU</em> olarak ayarlanırsa işlev, ek regresyon istatistikleri d&ouml;nd&uuml;r&uuml;r. <em>YANLIŞ</em> olarak ayarlanırsa veya atlanırsa işlev, ek regresyon istatistikleri d&ouml;nd&uuml;rmez.</p>
+            <p><b>DOT</b> işlevini uygulamak i&ccedil;in</p>
+			<ol>
+			<li>Sonucu g&ouml;r&uuml;nt&uuml;lemek istediğiniz h&uuml;creyi se&ccedil;in,</li>
+			<li>&Uuml;st ara&ccedil; &ccedil;ubuğunda bulunan <b>İşlev ekle</b> <div class = "icon icon-insertfunction"></div> simgesine tıklayın
+                <br />veya se&ccedil;ilen bir h&uuml;crenin i&ccedil;ine sağ tıklayın ve men&uuml;den <b>İşlev Ekle</b> se&ccedil;eneğini se&ccedil;in
+                <br />veya<div class = "icon icon-function"></div>form&uuml;l &ccedil;ubuğunda bulunan simgeye tıklayın,
+            </li>
+			<li>Listeden <b>İstatiksel</b> işlev grubunu se&ccedil;in,</li>
+			<li><b>DOT</b> işlevine tıklayın,</li>
+			<li>Virg&uuml;lle ayırarak gerekli bağımsız değişkenleri girin veya fareyle bir h&uuml;cre aralığı se&ccedil;in,
+            <!--<p><img alt="LINEST Function" src="../images/linest-arg.png" /></p>-->
+            </li>
+			<li><b>Enter</b> d&uuml;ğmesine basın.</li>
+			</ol>
+			<p>Ortaya &ccedil;ıkan dizinin ilk değeri se&ccedil;ili h&uuml;crede g&ouml;r&uuml;nt&uuml;lenecektir.</p>
+			<p style="text-indent: 150px;"><img alt="DOT İşlevi" src="../images/linest.png" /></p>
+		</div>
+	</body>
+</html>

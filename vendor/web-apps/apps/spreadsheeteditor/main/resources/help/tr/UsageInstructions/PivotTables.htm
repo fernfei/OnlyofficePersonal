@@ -1,0 +1,315 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pivot tablolar oluşturma ve d&uuml;zenleme</title>
+		<meta charset="utf-8" />
+        <meta name="description" content="Create and edit pivot tables. Apply filters, change the appearance of pivot tables in a spreadsheet." />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+    <div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Pivot tablolar oluşturma ve d&uuml;zenleme</h1>
+            <p>Pivot tablolar, &ouml;zet bilgiler elde etmek i&ccedil;in b&uuml;y&uuml;k veri k&uuml;melerinin verilerini gruplandırmanızı ve d&uuml;zenlemenizi sağlar. <a href="https://www.onlyoffice.com/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Elektronik Tablo D&uuml;zenleyicisinde</b></a> yalnızca gerekli bilgileri g&ouml;r&uuml;nt&uuml;lemek ve &ouml;nemli y&ouml;nlere odaklanmak i&ccedil;in verileri bir&ccedil;ok farklı şekilde yeniden d&uuml;zenleyebilirsiniz.</p>
+            <h3>Yeni bir pivot tablo oluşturma</h3>
+            <p>Pivot tablo oluşturmak i&ccedil;in</p>
+            <ol>
+                <li>Pivot tablo oluşturmak i&ccedil;in kullanmak istediğiniz kaynak veri k&uuml;mesini hazırlayın. S&uuml;tun başlıkları i&ccedil;ermelidir. Veri k&uuml;mesi boş satır veya s&uuml;tun i&ccedil;ermemelidir.</li>
+                <li>Kaynak veri aralığındaki herhangi bir h&uuml;creyi se&ccedil;in.</li>
+                <li>
+                    &Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Pivot Tablo</b> sekmesine gidin ve <b>Tablo Ekle</b> <div class = "icon icon-insert_pivot"></div> simgesine tıklayın.
+                    <p><a href="FormattedTables.htm" onclick="onhyperlinkclick(this)">Bi&ccedil;imlendirilmiş tablo</a> tabanlı bir pivot tablo oluşturmak istiyorsanız, sağ kenar &ccedil;ubuğunun <b>Tablo ayarları</b> sekmesinde bulunan <span class="icon icon-insertpivot"></span> <b>Pivot tablo ekle</b> se&ccedil;eneğini de kullanabilirsiniz.</p>
+                </li>
+                <li>
+                    <b>Pivot Tablo Oluştur</b> penceresi g&ouml;r&uuml;necektir.
+                    <p><img alt="Pivot Tablo Oluştur penceresi" src="../images/create_pivot.png" /></p>
+                    <ul>
+                        <li>
+                            <b>Kaynak veri aralığı</b> zaten belirtilmiştir. Bu durumda, kaynak veri aralığındaki t&uuml;m veriler kullanılacaktır. Veri aralığını (&ouml;rneğin, kaynak verilerin yalnızca bir kısmını dahil edecek şekilde) değiştirmek isterseniz, <div class = "icon icon-changerange"></div> simgeye tıklayın. <b>Veri Aralığı Se&ccedil;</b> penceresinde gerekli veri aralığını aşağıdaki bi&ccedil;imde girin: <em>Sayfa1!$A$1:$E$10</em>. Sayfada gerekli h&uuml;cre aralığını fareyi kullanarak da se&ccedil;ebilirsiniz. Hazır olduğunda <b>Tamam</b> d&uuml;ğmesine tıklayın.
+                        </li>
+                        <li>
+                            Pivot tabloyu nereye yerleştirmek istediğinizi belirtin.
+                            <ul>
+                                <li><b>Yeni &ccedil;alışma sayfası</b> se&ccedil;eneği varsayılan olarak se&ccedil;ilidir. Pivot tabloyu yeni bir &ccedil;alışma sayfasına yerleştirmenizi sağlar.</li>
+                                <li>
+                                    Ayrıca <b>Mevcut &ccedil;alışma sayfası</b> se&ccedil;eneğini ve belirli bir h&uuml;creyi se&ccedil;ebilirsiniz. Bu durumda se&ccedil;ilen h&uuml;cre, oluşturulan pivot tablonun sağ &uuml;st h&uuml;cresi olacaktır. Bir h&uuml;cre se&ccedil;mek i&ccedil;in <div class = "icon icon-changerange"></div> simgeye tıklayın.
+                                    <p><img alt="Veri Aralığı Seç penceresi" src="../images/pivot_selectdata2.png" /></p>
+                                    <p><b>Veri Aralığı Se&ccedil;</b> penceresinde veri adresini aşağıdaki bi&ccedil;imde girin: <em>Sayfa1!$G$2</em>. Sayfadaki gerekli h&uuml;creye de tıklayabilirsiniz. Hazır olduğunda <b>Tamam</b> d&uuml;ğmesine tıklayın.</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Pivot tablo konumunu se&ccedil;tiğinizde, <b>Tablo Oluştur</b> penceresinde <b>Tamam</b> d&uuml;ğmesine tıklayın.</li>
+                    </ul>
+                </li>
+            </ol>
+            <p>Se&ccedil;ilen konuma boş bir pivot tablo eklenecektir.</p>
+            <p>Sağ kenar &ccedil;ubuğundaki <b>Pivot tablo ayarları</b> sekmesi a&ccedil;ılacaktır. Bu sekmeyi <span class="icon icon-pivot_settings"></span> simgesine tıklayarak gizleyebilir veya g&ouml;r&uuml;nt&uuml;leyebilirsiniz.</p>
+            <p><img alt="Pivot Tablo ayarları sekmesi" src="../images/right_pivot.png" /></p>
+
+            <h4>G&ouml;r&uuml;nt&uuml;lenecek alanları se&ccedil;me</h4>
+            <p><b>Alanları Se&ccedil;</b> b&ouml;l&uuml;m&uuml;, kaynak veri k&uuml;menizdeki s&uuml;tun başlıklarına g&ouml;re adlandırılmış alanları i&ccedil;erir. Her alan, kaynak tablonun ilgili s&uuml;tunundan değerler i&ccedil;erir. Aşağıdaki d&ouml;rt b&ouml;l&uuml;m mevcuttur: <b>Filtreler</b>, <b>S&uuml;tunlar</b>, <b>Satırlar</b> ve <b>Değerler</b>.</p>
+            <p>Pivot tabloda g&ouml;r&uuml;nt&uuml;lemek istediğiniz alanları işaretleyin. Bir alanı işaretlediğinizde, veri t&uuml;r&uuml;ne bağlı olarak sağ kenar &ccedil;ubuğundaki mevcut b&ouml;l&uuml;mlerden birine eklenecek ve pivot tabloda g&ouml;r&uuml;nt&uuml;lenecektir. Metin değerleri i&ccedil;eren alanlar, <b>Satırlar</b> b&ouml;l&uuml;m&uuml;ne, sayısal değerler i&ccedil;eren alanlar <b>Değerler</b> b&ouml;l&uuml;m&uuml;ne eklenecektir.</p>
+            <p>Pivot tablonuzu hızlı bir şekilde yeniden d&uuml;zenlemek i&ccedil;in alanları gerekli b&ouml;l&uuml;me s&uuml;r&uuml;kleyebileceğiniz gibi alanları b&ouml;l&uuml;mler arasında da s&uuml;r&uuml;kleyebilirsiniz. Ge&ccedil;erli b&ouml;l&uuml;mden bir alanı kaldırmak i&ccedil;in bu b&ouml;l&uuml;m&uuml;n dışına s&uuml;r&uuml;kleyin.</p>
+            <p>Gerekli kısma alan eklemek i&ccedil;in <b>Alanları Se&ccedil;</b> b&ouml;l&uuml;m&uuml;nde bir alanın sağında bulunan siyah oka tıklamak ve men&uuml;den <b>Filtrelere Ekle</b>, <b>Satırlara Ekle</b>, <b>S&uuml;tunlara Ekle</b>, <b>Değerlere Ekle</b> se&ccedil;enekleri arasından gerekli se&ccedil;eneği se&ccedil;mek de m&uuml;mk&uuml;nd&uuml;r.</p>
+            <p><img alt="Pivot tablo ayarları sekmesi" src="../images/pivot_selectfields.png" /></p>
+            <p>Aşağıda <b>Filtreler</b>, <b>S&uuml;tunlar</b>, <b>Satırlar</b> ve <b>Değerler</b> b&ouml;l&uuml;mlerine ait bazı kullanım &ouml;rneklerini g&ouml;rebilirsiniz.</p>
+            <ul>
+                <li>
+                    <b>Filtreler</b> b&ouml;l&uuml;m&uuml;ne bir alan eklerseniz, pivot tablonun &uuml;zerine ayrı bir filtre eklenecektir. T&uuml;m pivot tabloya uygulanacaktır. Eklenen filtrede a&ccedil;ılır oka tıklarsanız, <div class = "icon icon-dropdownarrow"></div> se&ccedil;ilen alandaki değerleri g&ouml;receksiniz. Filtre se&ccedil;eneği penceresinde bazı değerlerin işaretini kaldırıp <b>Tamam</b> d&uuml;ğmesine tıkladığınızda, işareti kaldırılmayan değerler pivot tabloda g&ouml;r&uuml;nt&uuml;lenmez.
+                    <p><img alt="Pivot Filtreler" src="../images/pivot_filter_field.png" /></p>
+                </li>
+                <li>
+                    <b>S&uuml;tunlar</b> b&ouml;l&uuml;m&uuml;ne bir alan eklerseniz, pivot tablo se&ccedil;ilen alandaki değerlerin sayısına eşit sayıda s&uuml;tun i&ccedil;erecektir. <b>Genel Toplam</b> s&uuml;tunu da eklenecektir.
+                    <p><img alt="Pivot Sütunlar" src="../images/pivot_columns.png" /></p>
+                </li>
+                <li>
+                    <b>Satırlar</b> b&ouml;l&uuml;m&uuml;ne bir alan eklerseniz, pivot tablo se&ccedil;ilen alandaki değerlerin sayısına eşit sayıda satır i&ccedil;erecektir. <b>Genel Toplam</b> satırı da eklenecektir.
+                    <p><img alt="Pivot Satırlar" src="../images/pivot_rows.png" /></p>
+                </li>
+                <li>
+                    <b>Değerler</b> b&ouml;l&uuml;m&uuml;ne bir alan eklerseniz, pivot tablo se&ccedil;ilen alandaki t&uuml;m değerler i&ccedil;in toplama değerini g&ouml;r&uuml;nt&uuml;leyecektir. Alan metin değerleri i&ccedil;eriyorsa, değerlerin sayısı g&ouml;r&uuml;nt&uuml;lenecektir. Toplama değerini hesaplamak i&ccedil;in kullanılan işlev, alan ayarlarından değiştirilebilir.
+                    <p><img alt="Pivot Değerler" src="../images/pivot_values.png" /></p>
+                </li>
+            </ul>
+
+            <h4>Alanları yeniden d&uuml;zenleme ve &ouml;zelliklerini ayarlama</h4>
+            <p>Alanlar gerekli b&ouml;l&uuml;mlere eklendikten sonra, pivot tablonun d&uuml;zenini ve bi&ccedil;imini değiştirmek i&ccedil;in bunları y&ouml;netebilirsiniz. Alan i&ccedil;erik men&uuml;s&uuml;ne erişmek i&ccedil;in <b>Filtreler</b>, <b>S&uuml;tunlar</b>, <b>Satırlar</b> veya <b>Değerler</b> b&ouml;l&uuml;mlerinde bir alanın sağındaki siyah oka tıklayın.</p>
+            <p><img alt="Pivot tablo menüsü" src="../images/pivot_menu.png" /></p>
+            <p>Aşağıda sıralananları yapmanızı sağlar:</p>
+            <ul>
+                <li>Se&ccedil;ili alanı <b>Yukarı</b>, <b>Aşağı</b>, <b>Başlangıca</b> veya ge&ccedil;erli b&ouml;l&uuml;me birden fazla alan eklediyseniz, ge&ccedil;erli b&ouml;l&uuml;m&uuml;n <b>Sonuna</b> <b>taşımak,</b> </li>
+                <li>Se&ccedil;ilen alanı <b>Filtreler</b>, <b>S&uuml;tunlar</b>, <b>Satırlar</b> veya <b>Değerler</b>gibi farklı bir b&ouml;l&uuml;me <b>taşımak</b>. Ge&ccedil;erli b&ouml;l&uuml;me karşılık gelen se&ccedil;enek devre dışı bırakılır.</li>
+                <li>Se&ccedil;ilen alanı ge&ccedil;erli b&ouml;l&uuml;mden <b>kaldırmak</b>.</li>
+                <li>Se&ccedil;ilen alan <b>ayarlarını</b> yapmak.</li>
+            </ul>
+            <p><b>Filtreler, S&uuml;tunlar</b> ve <b>Satır alanı ayarları</b> benzer g&ouml;r&uuml;n&uuml;r:</p>
+            <p><img alt="Pivot tablo Filtreler alanı ayarları" src="../images/pivot_filter_field_layout.png" /></p>
+            <p><b>D&uuml;zen</b> sekmesi aşağıdaki se&ccedil;enekleri i&ccedil;erir:</p>
+            <ul>
+                <li><b>Kaynak adı</b> se&ccedil;eneği, kaynak veri k&uuml;mesindeki s&uuml;tun başlığına karşılık gelen alan adını g&ouml;r&uuml;nt&uuml;lemenizi sağlar.</li>
+                <li><b>&Ouml;zel ad</b> se&ccedil;eneği, pivot tabloda g&ouml;r&uuml;nt&uuml;lenen se&ccedil;ili alanın adını değiştirmenizi sağlar.</li>
+                <li>
+                    <b>Rapor Formu</b> b&ouml;l&uuml;m&uuml;, se&ccedil;ilen alanın pivot tabloda g&ouml;r&uuml;nt&uuml;lenme şeklini değiştirmenizi sağlar:
+                    <ul>
+                        <li>
+                            Pivot tabloda se&ccedil;ilen alan i&ccedil;in gerekli d&uuml;zeni se&ccedil;in:
+                            <ul>
+                                <li>
+                                    <b>Tablo</b> bi&ccedil;imi, her alan i&ccedil;in bir s&uuml;tun g&ouml;r&uuml;nt&uuml;ler ve alan başlıkları i&ccedil;in alan sağlar.
+                                    <!--<p><img alt="Pivot table Tabular form" src="../images/pivot_tabular.png" /></p>-->
+                                </li>
+                                <li>
+                                    <b>Anahat</b> bi&ccedil;imi, her alan i&ccedil;in bir s&uuml;tun g&ouml;r&uuml;nt&uuml;ler ve alan başlıkları i&ccedil;in alan sağlar. Ayrıca, alt toplamları grupların başında g&ouml;r&uuml;nt&uuml;lemenizi sağlar.
+                                    <!--<p><img alt="Pivot table Outline form" src="../images/pivot_outline.png" /></p>-->
+                                </li>
+                                <li>
+                                    <b>Kompakt</b> bi&ccedil;imi, farklı satır b&ouml;l&uuml;m&uuml; alanlarındaki &ouml;ğeleri tek bir s&uuml;tunda g&ouml;r&uuml;nt&uuml;ler.
+                                    <!--<p><img alt="Pivot table Compact form" src="../images/pivot_compact.png" /></p>-->
+                                </li>
+                            </ul>
+                        </li>
+                        <li><b>&Ouml;ğe etiketlerini her satırda tekrarla</b> se&ccedil;eneği, tablo bi&ccedil;iminde birden &ccedil;ok alanınız varsa, satırları veya s&uuml;tunları g&ouml;rsel olarak gruplandırmanızı sağlar.</li>
+                        <li><b>Her &ouml;ğeden sonra boş satırlar ekle</b> se&ccedil;eneği, se&ccedil;ilen alandaki &ouml;ğelerin arkasına boş satırlar eklemenizi sağlar.</li>
+                        <li><b>Alt toplamları g&ouml;ster</b> se&ccedil;eneği, se&ccedil;ilen alan i&ccedil;in ara toplamları g&ouml;r&uuml;nt&uuml;lemek isteyip istemediğinizi se&ccedil;menizi sağlar. Aşağıdaki se&ccedil;eneklerden birini se&ccedil;ebilirsiniz: <em>Grubun en &uuml;st&uuml;nde g&ouml;ster</em> veya <em>Grubun en altında g&ouml;ster</em>.</li>
+                        <li><b>Veri i&ccedil;ermeyen &ouml;ğeleri g&ouml;ster</b> se&ccedil;eneği, se&ccedil;ilen alandaki boş &ouml;ğeleri g&ouml;stermenizi veya gizlemenizi sağlar.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p><img alt="Pivot tablo Filtreler alan ayarları" src="../images/pivot_filter_field_subtotals.png" /></p>
+            <p><b>Ara toplamlar</b> sekmesi, <b>Alt toplamlar i&ccedil;in İşlevleri</b> se&ccedil;menizi sağlar. Listeden gerekli se&ccedil;eneği işaretleyin: <em>Toplam</em>, <em>Say</em>, <em>Ortalama</em>, <em>Maksimum</em>, <em>Minimum</em>, <em>&Ccedil;arpım</em>, <em>Sayıları Say</em>, <em>StdSapma</em>, <em>StdSapmap</em>, <em>Var</em>, <em>Varp</em>.</p>
+            <p><b>Değerler alanı ayarları</b></p>
+            <p><img alt="Pivot tablo Değerler alanı ayarları" src="../images/pivot_values_field_settings.png" /></p>
+            <ul>
+                <li><b>Kaynak adı</b> se&ccedil;eneği, kaynak veri k&uuml;mesindeki s&uuml;tun başlığına karşılık gelen alan adını g&ouml;r&uuml;nt&uuml;lemenizi sağlar.</li>
+                <li><b>&Ouml;zel ad</b> se&ccedil;eneği, pivot tabloda g&ouml;r&uuml;nt&uuml;lenen se&ccedil;ili alanın adını değiştirmenizi sağlar.</li>
+                <li><b>Değer alanını &ouml;zetle</b> listesi, bu alandan t&uuml;m değerler i&ccedil;in &ouml;zet değerini hesaplamak i&ccedil;in kullanılan işlevi se&ccedil;menizi sağlar. Varsayılan olarak, <em>Toplam</em> sayısal değerler i&ccedil;in ve <em>Say</em> metin değerleri i&ccedil;in kullanılır. Mevcut işlevler şunlardır: <em>Toplam</em>, <em>Say</em>, <em>Ortalama</em>, <em>Maksimum</em>, <em>Minimum</em>, <em>&Ccedil;arpım</em>, <em>Sayıları Say</em>, <em>StdSapma</em>, <em>StdSapmap</em>, <em>Var</em>, <em>Varp</em>.</li>
+            </ul>
+
+            <h3>Verileri gruplandırma ve gruplarını &ccedil;&ouml;zme</h3>
+            <p>Pivot tablolardaki veriler, &ouml;zel gereksinimlere g&ouml;re gruplandırılabilir. Gruplandırma, tarihler ve temel sayılar i&ccedil;in kullanılabilir.</p>
+            <h4>Gruplandırma tarihleri</h4>
+            <p>Tarihleri gruplandırmak i&ccedil;in gerekli tarihleri i&ccedil;eren bir pivot tablo oluşturun. Tarih i&ccedil;eren bir pivot tablodaki herhangi bir h&uuml;creye sağ tıklayın, a&ccedil;ılır men&uuml;de <b>Grup</b> se&ccedil;eneğini se&ccedil;in ve a&ccedil;ılan pencerede gerekli parametreleri ayarlayın.</p>
+            <p><img alt="tarihleri gruplandırma " src="../images/group_dates.png" /></p>
+            <ul>
+                <li><b>Başlangı&ccedil; tarihi</b> - Kaynak verilerdeki ilk tarih varsayılan olarak se&ccedil;ilir. Değiştirmek i&ccedil;in bu alana gerekli tarihi girin. Başlangı&ccedil; noktasını yoksaymak i&ccedil;in bu kutuyu devre dışı bırakın.</li>
+                <li><b>Bitiş tarihi</b> - Kaynak verilerdeki son tarih varsayılan olarak se&ccedil;ilir. Değiştirmek i&ccedil;in bu alana gerekli tarihi girin. Bitiş noktasını yoksaymak i&ccedil;in bu kutuyu devre dışı bırakın.</li>
+                <li><b>Gruplandırma &Ouml;l&ccedil;&uuml;t&uuml;</b> - <b>Saniye</b>, <b>Dakika</b> ve <b>Saat</b> se&ccedil;enekleri, verileri kaynak verilerde verilen zamana g&ouml;re gruplandırır. <b>Ay</b> se&ccedil;eneği g&uuml;nleri kaldırır ve yalnızca ayları bırakır. <b>&Ccedil;eyrek</b> se&ccedil;eneği, bir koşulda &ccedil;alışır: d&ouml;rt ay bir &ccedil;eyrek d&ouml;nem oluşturur, b&ouml;ylece <em>&Ccedil;ey1</em>, <em>&Ccedil;ey2</em> ve benzerini sağlar. <b>Yıl</b> se&ccedil;eneği, kaynak verilerde verilen yıllara g&ouml;re tarihleri gruplandırır. Gerekli sonucu elde etmek i&ccedil;in se&ccedil;enekleri birleştirin.</li>
+                <li><b>G&uuml;n sayısı</b> - Bir tarih aralığı belirlemek i&ccedil;in gereken değeri ayarlar.</li>
+                <li>Bittiğinde <b>Tamam</b> d&uuml;ğmesine tıklayın.</li>
+            </ul>
+            <h4>Sayıları gruplandırma</h4>
+            <p>Sayıları gruplandırmak i&ccedil;in gerekli sayıları i&ccedil;eren bir pivot tablo oluşturun. Sayı i&ccedil;eren bir pivot tablodaki herhangi bir h&uuml;creye sağ tıklayın, a&ccedil;ılır men&uuml;de <b>Grup</b> se&ccedil;eneğini se&ccedil;in ve a&ccedil;ılan pencerede gerekli parametreleri ayarlayın.</p>
+            <p><img alt="sayıları gruplandırma" src="../images/group_numbers.png" /></p>
+            <ul>
+                <li><b>Başlangı&ccedil; sayısı</b> - Kaynak verilerdeki en k&uuml;&ccedil;&uuml;k sayı varsayılan olarak se&ccedil;ilir. Değiştirmek i&ccedil;in bu alana gerekli sayıyı girin. En k&uuml;&ccedil;&uuml;k sayıyı yoksaymak i&ccedil;in bu kutuyu devre dışı bırakın.</li>
+                <li><b>Bitiş sayısı</b> - Kaynak verilerdeki en b&uuml;y&uuml;k sayı varsayılan olarak se&ccedil;ilir. Değiştirmek i&ccedil;in bu alana gerekli sayıyı girin. En b&uuml;y&uuml;k sayıyı yoksaymak i&ccedil;in bu kutuyu devre dışı bırakın.</li>
+                <li><b>Gruplandırma &Ouml;l&ccedil;&uuml;t&uuml;</b> - Sayıları gruplandırmak i&ccedil;in gerekli aralığı ayarlayın. &Ouml;rneğin, <em>&ldquo;2&rdquo;,</em> 1&apos;den 10&apos;a kadar olan sayı k&uuml;mesini <em>&ldquo;1-2&rdquo;</em>, <em>&ldquo;3-4&rdquo;</em>, vb. şeklinde gruplandırır.</li>
+                <li>Bittiğinde <b>Tamam</b> d&uuml;ğmesine tıklayın.</li>
+            </ul>
+            <h4>Verilerin grubunu &ccedil;&ouml;zme</h4>
+            <p>&Ouml;nceden gruplanmış verilerin grubunu &ccedil;&ouml;zmek i&ccedil;in</p>
+            <ol>
+                <li>Gruptaki herhangi bir h&uuml;creye sağ tıklayın,</li>
+                <li>Bağlam men&uuml;s&uuml;nden <b>Grubu &Ccedil;&ouml;z</b> se&ccedil;eneğini se&ccedil;in.</li>
+            </ol>
+
+            <h3>Pivot tabloların g&ouml;r&uuml;n&uuml;m&uuml;n&uuml; değiştirme</h3>
+            <p>Pivot tablonuzun g&ouml;r&uuml;nt&uuml;lenme şeklini ayarlamak i&ccedil;in &uuml;st ara&ccedil; &ccedil;ubuğunda bulunan se&ccedil;enekleri kullanabilirsiniz. Bu se&ccedil;enekler, t&uuml;m pivot tabloya uygulanır.</p>
+            <p>&Uuml;st ara&ccedil; &ccedil;ubuğundaki d&uuml;zenleme ara&ccedil;larını etkinleştirmek i&ccedil;in fareyle pivot tablo i&ccedil;inde en az bir h&uuml;cre se&ccedil;in.</p>
+            <p><img alt="Pivot tablo üstü araç çubuğu" src="../images/pivot_top.png" /></p>
+            <ul>
+                <li>
+                    <b>Rapor D&uuml;zeni</b> a&ccedil;ılır listesi, pivot tablonuz i&ccedil;in gerekli d&uuml;zeni se&ccedil;menizi sağlar:
+                    <ul>
+                        <li>
+                            <em>Kompakt Bi&ccedil;imde G&ouml;ster</em> - Farklı satır b&ouml;l&uuml;m&uuml; alanlarındaki &ouml;ğeleri tek bir s&uuml;tunda g&ouml;r&uuml;nt&uuml;menizi sağlar.
+                            <p><img alt="Pivot tablo Kompakt biçim" src="../images/pivot_compact.png" /></p>
+                        </li>
+                        <li>
+                            <em>Anahat Bi&ccedil;iminde G&ouml;ster</em> - Pivot tabloyu klasik pivot tablo stilinde g&ouml;r&uuml;nt&uuml;lemenizi sağlar. Her alan i&ccedil;in bir s&uuml;tun g&ouml;r&uuml;nt&uuml;ler ve alan başlıkları i&ccedil;in alan sağlar. Ayrıca, alt toplamları grupların başında g&ouml;r&uuml;nt&uuml;lemenizi sağlar.
+                            <p><img alt="Pivot tablo Anahat biçimi" src="../images/pivot_outline.png" /></p>
+                        </li>
+                        <li>
+                            <em>Tablo Bi&ccedil;iminde G&ouml;ster</em> - Pivot tabloyu geleneksel pivot tablo bi&ccedil;iminde g&ouml;r&uuml;nt&uuml;lemenizi sağlar. Her alan i&ccedil;in bir s&uuml;tun g&ouml;r&uuml;nt&uuml;ler ve alan başlıkları i&ccedil;in alan sağlar.
+                            <p><img alt="Pivot tablo Tablo biçimi" src="../images/pivot_tabular.png" /></p>
+                        </li>
+                        <li><em>T&uuml;m &Ouml;ğe Etiketlerini Tekrarla</em> - Tablo bi&ccedil;iminde birden &ccedil;ok alanınız varsa, satırları veya s&uuml;tunları birlikte g&ouml;rsel olarak gruplandırmanızı sağlar.</li>
+                        <li><em>T&uuml;m &Ouml;ğe Etiketlerini Tekrarlama</em> - Tablo bi&ccedil;iminde birden &ccedil;ok alanınız varsa, &ouml;ğe etiketlerini gizlemenizi sağlar.</li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Boş Satırlar</b> a&ccedil;ılır listesi, &ouml;ğelerden sonra boş satırların g&ouml;r&uuml;nt&uuml;lenmesini isteyip istemediğinizi se&ccedil;menizi sağlar:
+                    <ul>
+                        <li><em>Her &Ouml;ğeden Sonra Boş Satır Ekle</em> - &Ouml;ğelerin arkasına boş satırlar eklemenizi sağlar.</li>
+                        <li><em>Her &Ouml;ğeden Sonra Boş Satırı Kaldır</em> - Eklenen boş satırları kaldırmanızı sağlar.</li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Alt Toplamlar</b> a&ccedil;ılır listesi, pivot tabloda alt toplamların g&ouml;r&uuml;nt&uuml;lenmesini isteyip istemediğinizi se&ccedil;menizi sağlar:
+                    <ul>
+                        <li><em>Alt Toplamları G&ouml;sterme</em> - T&uuml;m &ouml;ğeler i&ccedil;in ara toplamları gizlemenizi sağlar.</li>
+                        <li><em>T&uuml;m Ara Toplamları Grubun Altında G&ouml;ster</em> - Ara toplamları, ara toplam satırlarının altında g&ouml;r&uuml;nt&uuml;lemenizi sağlar.</li>
+                        <li><em>T&uuml;m Ara Toplamları Grubun &Uuml;st&uuml;nde G&ouml;ster</em> - Ara toplamları, ara toplamların &uuml;zerinde g&ouml;r&uuml;nt&uuml;lemenizi sağlar.</li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Genel Toplamlar</b> a&ccedil;ılır listesi, pivot tabloda genel toplamların g&ouml;r&uuml;nt&uuml;lenmesini isteyip istemediğinizi se&ccedil;menizi sağlar:
+                    <ul>
+                        <li><em>Satırlar ve S&uuml;tunlar İ&ccedil;in Kapalı</em> - Genel toplamları hem satırlar hem de s&uuml;tunlar i&ccedil;in gizlemenizi sağlar.</li>
+                        <li><em>Satırlar ve S&uuml;tunlar İ&ccedil;in A&ccedil;ık</em> - Genel toplamları hem satırlar hem de s&uuml;tunlar i&ccedil;in g&ouml;r&uuml;nt&uuml;lemenizi sağlar.</li>
+                        <li><em>Yalnızca Satırlar İ&ccedil;in A&ccedil;ık</em> - Genel toplamları yalnızca satırlar i&ccedil;in g&ouml;r&uuml;nt&uuml;lemenizi sağlar.</li>
+                        <li><em>Yalnızca S&uuml;tunlar İ&ccedil;in A&ccedil;ık</em> - Genel toplamları yalnızca s&uuml;tunlar i&ccedil;in g&ouml;r&uuml;nt&uuml;lemenizi sağlar.</li>
+                    </ul>
+                    <p class="note"><b>Not</b>: Benzer ayarlar, <b>Ad ve D&uuml;zen</b> sekmesinin <b>Genel Toplamlar</b> b&ouml;l&uuml;m&uuml;ndeki ana men&uuml;deki pivot tablo gelişmiş ayarlar penceresinde de mevcuttur.</p>
+                </li>
+            </ul>
+            <p><span class = "icon icon-pivotselecticon"></span> <b>Se&ccedil;</b> d&uuml;ğmesi, t&uuml;m pivot tabloyu se&ccedil;menizi sağlar.</p>
+            <p>Kaynak veri k&uuml;menizdeki verileri değiştirirseniz, pivot tabloyu se&ccedil;in ve pivot tabloyu g&uuml;ncellemek i&ccedil;in <span class="icon icon-pivot_refresh"></span> <b>Yenile</b> d&uuml;ğmesine basın.</p>
+
+            <h3>Pivot tabloların stilini değiştirme</h3>
+            <p>&Uuml;st ara&ccedil; &ccedil;ubuğunda bulunan stil d&uuml;zenleme ara&ccedil;larını kullanarak bir elektronik tablodaki pivot tabloların g&ouml;r&uuml;n&uuml;m&uuml;n&uuml; değiştirebilirsiniz.</p>
+            <p>&Uuml;st ara&ccedil; &ccedil;ubuğundaki d&uuml;zenleme ara&ccedil;larını etkinleştirmek i&ccedil;in fareyle pivot tablo i&ccedil;inde en az bir h&uuml;cre se&ccedil;in.</p>
+            <p><img alt="Pivot Tablo sekmesi" src="../images/pivottoptoolbar.png" /></p>
+            <p>Satırlar ve s&uuml;tunlar se&ccedil;enekleri, belirli satırları/s&uuml;tunları belirli bir bi&ccedil;imlendirme uygulayarak vurgulamanızı veya a&ccedil;ık&ccedil;a diğerlerinden ayırmak i&ccedil;in farklı satırları/s&uuml;tunları farklı arka plan renkleriyle vurgulamanızı sağlar. Aşağıdaki se&ccedil;enekler mevcuttur:</p>
+            <ul>
+                <li><b>Satır Başlıkları</b> - Satır başlıklarını &ouml;zel bi&ccedil;imlendirme ile vurgulamanızı sağlar.</li>
+                <li><b>S&uuml;tun Başlıkları</b> - S&uuml;tun başlıklarını &ouml;zel bi&ccedil;imlendirme ile vurgulamanızı sağlar.</li>
+                <li><b>Şeritli Satırlar</b> - Tek ve &ccedil;ift satırlar i&ccedil;in arka plan rengi değişimini etkinleştirir.</li>
+                <li><b>Şeritli S&uuml;tunlar</b> - Tek ve &ccedil;ift s&uuml;tunlar i&ccedil;in arka plan rengi değişimini etkinleştirir.</li>
+            </ul>
+            <p>
+                Şablon listesi, &ouml;nceden tanımlanmış pivot tablo stillerinden birini se&ccedil;menizi sağlar. Her şablon, arka plan rengi, kenarlık stili, satır/s&uuml;tun şeritleri vb. gibi belirli bi&ccedil;imlendirme parametrelerini birleştirir.
+                Satırlar ve s&uuml;tunlar se&ccedil;enekleri i&ccedil;in işaretlenen se&ccedil;eneklere bağlı olarak, ayarlanan şablonlar farklı şekilde g&ouml;r&uuml;nt&uuml;lenir. &Ouml;rneğin, <b>Satır Başlıkları</b> ve <b>Şeritli S&uuml;tunlar</b> se&ccedil;eneklerini işaretlediyseniz, g&ouml;r&uuml;nt&uuml;lenen şablonlar listesi yalnızca başlık satırı ve şeritli s&uuml;tunların etkinleştirildiği şablonları i&ccedil;erir.
+            </p>
+
+            <h3>Pivot tablolarda dilimleyici filtreleme, sıralame ve ekleme</h3>
+            <p>Pivot tabloları etiketlere veya değerlere g&ouml;re filtreleyebilir ve ek sıralama parametrelerini kullanabilirsiniz.</p>
+            <h4>Filtreleme</h4>
+            <p>Pivot tablonun <b>Satır Etiketleri</b> veya <b>S&uuml;tun Etiketlerinde</b> a&ccedil;ılır oka <span class="icon icon-dropdownarrow"></span> tıklayın. <b>Filtre</b> se&ccedil;enek listesi a&ccedil;ılacaktır:</p>
+            <p><img alt="Filtre penceresi" src="../images/pivot_filterwindow.png" /></p>
+            <p>Filtre parametrelerini ayarlama. Aşağıdaki yollardan biriyle ilerleyebilirsiniz: g&ouml;r&uuml;nt&uuml;lenecek verileri se&ccedil;in verileri belirli kriterlere g&ouml;re filtreleyin.</p>
+            <ul>
+                <li>
+                    <b>G&ouml;r&uuml;nt&uuml;lenecek verileri se&ccedil;me</b>
+                    <p>Gizlemeniz gereken verilerin yanındaki kutuların işaretini kaldırın. Size kolaylık sağlaması adına, <b>Filtre</b> se&ccedil;eneği listesindeki t&uuml;m veriler artan d&uuml;zende sıralanır.</p>
+                    <p class="note"><b>Not</b>: <b>(Boş)</b> onay kutusu boş h&uuml;crelere karşılık gelir. Se&ccedil;ilen h&uuml;cre aralığı en az bir boş h&uuml;cre i&ccedil;eriyorsa kullanılabilir.</p>
+                    <p>İşlemi kolaylaştırmak i&ccedil;in &uuml;stteki arama alanını kullanın. Sorgunuzu tamamen veya kısmen alana girin - Bu karakterleri i&ccedil;eren değerler aşağıdaki listede g&ouml;r&uuml;nt&uuml;lenecektir. Aşağıdaki iki se&ccedil;enek de kullanılabilir olacaktır:</p>
+                    <ul>
+                        <li><b>T&uuml;m Arama Sonu&ccedil;larını Se&ccedil;</b> - Varsayılan olarak işaretlidir. Listede sorgunuza karşılık gelen t&uuml;m değerleri se&ccedil;meyi sağlar.</li>
+                        <li><b>Ge&ccedil;erli se&ccedil;imi filtreye ekle</b> - Bu kutuyu işaretlerseniz, filtreyi uyguladığınızda se&ccedil;ilen değerler gizlenmez.</li>
+                    </ul>
+                    <p>Gerekli t&uuml;m verileri se&ccedil;tikten sonra, filtreyi uygulamak i&ccedil;in <b>Filtre</b> se&ccedil;enek listesinde <b>Tamam</b> d&uuml;ğmesine tıklayın.</p>
+                </li>
+                <li>
+                    <b>Verileri belirli kriterlere g&ouml;re filtreme</b>
+                    <p><b>Filtre</b> se&ccedil;enekleri listesinin sağ tarafında bulunan <b>Etiket filtresi</b> ya da <b>Değer filtresi</b> se&ccedil;eneğini ve ardından alt men&uuml;den se&ccedil;eneklerden birini se&ccedil;ebilirsiniz:</p>
+                    <ul>
+                        <li>
+                            <b>Etiket filtresi</b> i&ccedil;in aşağıdaki se&ccedil;enekler mevcuttur:
+                            <ul>
+                                <li>Metinler i&ccedil;in: <em>Eşit...</em>, <em>Eşit değil...</em>, <em>ile başlar...</em>, <em>ile başlamaz...</em>, <em>ile biter...</em>, <em>ile bitmez...</em>, <em>i&ccedil;erir...</em>, <em>i&ccedil;ermez...</em></li>
+                                <li>Sayılar i&ccedil;in: <em>B&uuml;y&uuml;k...</em>, <em>B&uuml;y&uuml;k veya eşit...</em>, <em>K&uuml;&ccedil;&uuml;k...</em>, <em>K&uuml;&ccedil;&uuml;k veya eşit...</em>, <em>Arasında</em>, <em>Arasında değil</em>.</li>
+                            </ul>
+                        </li>
+                        <li><b>Değer filtresi</b> i&ccedil;in aşağıdaki se&ccedil;enekler mevcuttur: <em>Eşit...</em>, <em>Eşit değil...</em>, <em>B&uuml;y&uuml;k...</em>, <em>B&uuml;y&uuml;k veya eşit...</em>, <em>K&uuml;&ccedil;&uuml;k...</em>, <em>K&uuml;&ccedil;&uuml;k veya eşit...</em>, <em>Arasında</em>, <em>Arasında değil</em>, <em>İlk 10</em>.</li>
+                    </ul>
+                    <p>Yukarıdaki se&ccedil;eneklerden (<em>İlk 10</em> dışında) birini se&ccedil;tikten sonra, <b>Etiket/Değer Filtresi</b> penceresi a&ccedil;ılacaktır. Karşılık gelen alan ve kriter, birinci ve ikinci a&ccedil;ılır listede se&ccedil;ilecektir. Sağdaki alanda gerekli değeri girin.</p>
+                    <p>Filtreyi uygulamak i&ccedil;in <b>Tamam</b> d&uuml;ğmesine tıklayın.</p>
+                    <p><img alt="Değer Filtresi penceresi" src="../images/pivot_filter.png" /></p>
+                    <p><b>Değer filtresi</b> se&ccedil;enek listesinden <em>İlk 10</em> se&ccedil;eneğini se&ccedil;erseniz, yeni bir pencere a&ccedil;ılır:</p>
+                    <p><img alt="İlk 10 Otomatik Filtre penceresi" src="../images/pivot_topten.png" /></p>
+                    <p>İlk a&ccedil;ılır liste, en y&uuml;ksek (<b>&Uuml;st</b>) veya en d&uuml;ş&uuml;k (<b>Alt</b>) değerleri se&ccedil;menizi sağlar. İkinci alan, listeden ka&ccedil; girişin veya toplam giriş sayısının y&uuml;zde ka&ccedil;ının g&ouml;r&uuml;nt&uuml;lenmesini istediğinizi belirlemenizi sağlar (1&apos;den 500&apos;e kadar bir sayı girebilirsiniz). &Uuml;&ccedil;&uuml;nc&uuml; a&ccedil;ılır liste, &ouml;l&ccedil;&uuml; birimlerini ayarlamayı sağlar: <b>&Ouml;ğe</b>, <b>Y&uuml;zde</b> veya <b>Toplam</b>. D&ouml;rd&uuml;nc&uuml; a&ccedil;ılır liste, se&ccedil;ilen alan adını g&ouml;r&uuml;nt&uuml;ler. Gerekli parametreler ayarlandıktan sonra, filtreyi uygulamak i&ccedil;in <b>Tamam</b> d&uuml;ğmesine tıklayın.</p>
+                </li>
+            </ul>
+            <p><b>Filtre</b> <span class="icon icon-filterbutton"></span> d&uuml;ğmesi, pivot tablonun <b>Satır Etiketleri</b> veya <b>S&uuml;tun Etiketlerinde</b> g&ouml;r&uuml;n&uuml;r. Bu, filtrenin uygulandığı anlamına gelir. <!--The number of filtered records will be displayed at the status bar (e.g. <em>25 of 80 records filtered</em>).--></p>
+
+            <h4>Sıralama</h4>
+            <p>Pivot tablo verilerinizi <b>sırala</b> se&ccedil;eneklerini kullanarak sıralayabilirsiniz. Pivot tablonun <b>Satır Etiketleri</b> veya <b>S&uuml;tun Etiketlerinde</b> a&ccedil;ılır oka <span class="icon icon-dropdownarrow"></span> tıklayın ve ardından <b>En D&uuml;ş&uuml;kten En Y&uuml;kseğe Sırala</b> veya <b>En Y&uuml;ksekten En D&uuml;ş&uuml;ğe Sırala</b> alt men&uuml; se&ccedil;eneğini se&ccedil;in.</p>
+            <p><b>Daha Fazla Sıralama Se&ccedil;eneği</b> se&ccedil;eneği, gerekli sıralama d&uuml;zenini - <em>Artan</em> veya <em>Azalan</em> - se&ccedil;ebileceğiniz <b>Sırala</b> penceresini a&ccedil;manızı ve ardından sıralamak istediğiniz belirli bir alanı se&ccedil;menizi sağlar.</p>
+            <p><img alt="Pivot tablo sıralama seçenekleri" src="../images/pivot_sort.png" /></p>
+
+            <h4>Dilimleyici ekleme</h4>
+            <p>Verileri yalnızca gerekli olanı g&ouml;r&uuml;nt&uuml;leyerek daha kolay filtrelemek i&ccedil;in dilimleyiciler ekleyebilirsiniz. Dilimleyiciler hakkında daha fazla bilgi edinmek i&ccedil;in l&uuml;tfen <a href="Slicers.htm" onclick="onhyperlinkclick(this)">dilimleyici oluşturma kılavuzunu</a> okuyun.</p>
+
+            <h3>Pivot tablo gelişmiş ayarlarını yapma</h3>
+            <p id="pivot_advanced">Pivot tablonun <b>gelişmiş ayarlarını</b> değiştirmek i&ccedil;in sağ kenar &ccedil;ubuğundaki <b>Gelişmiş ayarları g&ouml;ster</b> bağlantısını kullanın. &apos;Pivot Tablo - Gelişmiş Ayarlar&apos; penceresi a&ccedil;ılacaktır:</p>
+            <p><img alt="Pivot tablo gelişmiş ayarları" src="../images/pivot_advanced.png" /></p>
+            <p><b>Ad ve D&uuml;zen</b> sekmesi, pivot tablo ortak &ouml;zelliklerini değiştirmenizi sağlar.</p>
+            <ul>
+                <li><b>Ad</b> se&ccedil;eneği, pivot tablonun adını değiştirmenizi sağlar.</li>
+                <li>
+                    <b>Genel Toplamlar</b> b&ouml;l&uuml;m&uuml;, pivot tabloda genel toplamların g&ouml;r&uuml;nt&uuml;lenmesini isteyip istemediğinizi se&ccedil;menizi sağlar. <em>Satırlar i&ccedil;in g&ouml;ster</em> ve <em>S&uuml;tunlar i&ccedil;in g&ouml;ster</em> se&ccedil;enekleri varsayılan olarak işaretlidir. Karşılık gelen genel toplamları pivot tablonuzdan gizlemek i&ccedil;in bu se&ccedil;eneklerden birinin veya her ikisinin işaretini kaldırabilirsiniz.
+                    <p class="note"><b>Not</b>: Benzer ayarlar,  <b>Genel Toplamlar</b> men&uuml;s&uuml;ndeki &uuml;st ara&ccedil; &ccedil;ubuğunda mevcuttur.</p>
+                </li>
+                <li>
+                    <b>Rapor filtre alanındaki alanları g&ouml;r&uuml;nt&uuml;le</b> b&ouml;l&uuml;m&uuml;, <b>Filtreler</b> b&ouml;l&uuml;m&uuml;ne alanlar eklediğinizde g&ouml;r&uuml;nen rapor filtrelerini ayarlamanızı sağlar:
+                    <ul>
+                        <li><em>&Ouml;nce aşağı, sonra yana</em> se&ccedil;eneği s&uuml;tun d&uuml;zenlemesi i&ccedil;in kullanılır. Rapor filtrelerini s&uuml;tun boyunca g&ouml;stermenizi sağlar.</li>
+                        <li><em>&Ouml;nce yana, sonra aşağı</em> se&ccedil;eneği satır d&uuml;zeni i&ccedil;in kullanılır. Rapor filtrelerini satır boyunca g&ouml;stermenizi sağlar.</li>
+                        <li><em>S&uuml;tun başına d&uuml;şen rapor filtresi alanı</em> se&ccedil;eneği, her bir s&uuml;tuna gidecek filtre sayısını se&ccedil;menizi sağlar. Varsayılan değer <em>0</em> olarak ayarlanmıştır. Gerekli sayısal değeri ayarlayabilirsiniz.</li>
+                    </ul>
+                </li>
+                <li><b>Satır ve s&uuml;tunlar i&ccedil;in alan başlıklarını g&ouml;ster</b> se&ccedil;eneği, pivot tablonuzda alan başlıklarını g&ouml;r&uuml;nt&uuml;lemek isteyip istemediğinizi se&ccedil;menizi sağlar. Bu se&ccedil;enek varsayılan olarak etkindir. Alan başlıklarını pivot tablonuzdan gizlemek i&ccedil;in işaretini kaldırın.</li>
+                <li><b>G&uuml;ncellemede s&uuml;tun genişliklerini otomatik sığdır</b> se&ccedil;eneği, s&uuml;tun genişliklerinin otomatik olarak ayarlanmasını etkinleştirmenizi/devre dışı bırakmanızı sağlar. Bu se&ccedil;enek varsayılan olarak etkindir.</li>
+            </ul>
+            <p><img alt="Pivot tablo gelişmiş ayarları" src="../images/pivot_advanced2.png" /></p>
+            <p><b>Veri Kaynağı</b> sekmesi, pivot tabloyu oluşturmak i&ccedil;in kullanmak istediğiniz verileri değiştirmenizi sağlar.</p>
+            <p>Se&ccedil;ilen <b>Veri Aralığını</b> kontrol edin ve gerekirse değiştirin. Bunu yapmak i&ccedil;in <span class="icon icon-changerange"></span> simgesine tıklayın.</p>
+            <p><img alt="Veri Aralığı Seç penceresi" src="../images/pivot_selectdata.png" /></p>
+            <p><b>Veri Aralığı Se&ccedil;</b> penceresinde gerekli veri aralığını aşağıdaki bi&ccedil;imde girin: <em>Sayfa1!$A$1:$E$10</em>. Sayfada gerekli h&uuml;cre aralığını fareyi kullanarak da se&ccedil;ebilirsiniz. Hazır olduğunda <b>Tamam</b> d&uuml;ğmesine tıklayın.</p>
+            <p><img alt="Pivot tablo gelişmiş ayarları" src="../images/pivot_advanced3.png" /></p>
+            <p><b>Alternatif Metin</b> sekmesi, pivot tablonun hangi bilgileri i&ccedil;erdiğini daha iyi anlamalarına yardımcı olmak i&ccedil;in g&ouml;rme veya bilişsel bozuklukları olan kişilere okunacak bir <b>Başlık</b> ve <b>A&ccedil;ıklama</b> belirtmenizi sağlar.</p>
+            <h3>Pivot tabloyu silme</h3>
+            <p>Pivot tabloyu silmek i&ccedil;in</p>
+            <ol>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunda bulunan <div class = "icon icon-pivotselecticon"></div> <b>Se&ccedil;</b> d&uuml;ğmesini kullanarak t&uuml;m pivot tabloyu se&ccedil;in.</li>
+                <li><b>Delete</b> tuşuna basın.</li>
+            </ol>
+        </div>
+	</body>
+</html>

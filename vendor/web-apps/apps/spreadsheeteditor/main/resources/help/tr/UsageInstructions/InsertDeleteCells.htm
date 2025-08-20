@@ -1,0 +1,111 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>H&uuml;creleri, satırları ve s&uuml;tunları y&ouml;netme</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Insert or delete cells, rows, and columns, hide or show rows or columns, change row height and column width" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>H&uuml;creleri, satırları ve s&uuml;tunları y&ouml;netme</h1>
+			<p><a href="https://www.onlyoffice.com/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Elektronik Tablo D&uuml;zenleyicisinde,</b></a> bir &ccedil;alışma sayfasında se&ccedil;ili h&uuml;crenin &uuml;st&uuml;ne veya soluna boş h&uuml;creler ekleyebilirsiniz. Ayrıca se&ccedil;ili olanın &uuml;zerine bir satırın tamamını veya se&ccedil;ilen s&uuml;tunun soluna bir s&uuml;tun da ekleyebilirsiniz. B&uuml;y&uuml;k miktarda bilgiyi g&ouml;r&uuml;nt&uuml;lemeyi kolaylaştırmak i&ccedil;in bazı satırları veya s&uuml;tunları gizleyebilir ve yeniden g&ouml;r&uuml;nt&uuml;leyebilirsiniz. Belirli bir satırın y&uuml;ksekliğini ve bir s&uuml;tunun genişliğini belirtmek de m&uuml;mk&uuml;nd&uuml;r.</p>
+			<h3>H&uuml;cre, satır ve s&uuml;tun ekleme</h3>
+            <p><b>Se&ccedil;ilen h&uuml;crenin soluna boş bir h&uuml;cre eklemek i&ccedil;in:</b></p>
+			<ol>
+				<li>Soluna yenisini eklemek istediğiniz h&uuml;creye sağ tıklayın,</li>
+				<li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Giriş</b> sekmesinde bulunan <div class = "icon icon-insertcells"></div> <b>H&uuml;cre ekle</b> simgesine tıklayın veya sağ tıklama men&uuml;s&uuml;nden <b>Ekle</b> &ouml;ğesini se&ccedil;in ve <b>H&uuml;creleri sağa kaydır</b> se&ccedil;eneğini kullanın.</li>
+			</ol>
+			<p>Program, se&ccedil;ilen h&uuml;creyi boş bir h&uuml;cre eklemek i&ccedil;in sağa kaydırır.</p>
+			<p><b>Se&ccedil;ilen h&uuml;crenin &uuml;st&uuml;ne boş bir h&uuml;cre eklemek i&ccedil;in:</b></p>
+			<ol>
+				<li>&Uuml;st&uuml;ne yenisini eklemek istediğiniz h&uuml;creye sağ tıklayın,</li>
+				<li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Giriş</b> sekmesinde bulunan <div class = "icon icon-insertcells"></div> <b>H&uuml;cre ekle</b> simgesine tıklayın veya sağ tıklama men&uuml;s&uuml;nden <b>Ekle</b> &ouml;ğesini se&ccedil;in ve <b>H&uuml;creleri Aşağı Kaydır</b> se&ccedil;eneğini kullanın.</li>
+			</ol>
+			<p>Program, se&ccedil;ilen h&uuml;creyi boş bir h&uuml;cre eklemek i&ccedil;in aşağı kaydırır.</p>
+			<p><b>T&uuml;m bir satır eklemek i&ccedil;in:</b></p>
+			<ol>
+				<li>Başlığına tıklayarak t&uuml;m satırı veya &uuml;zerine yenisini eklemek istediğiniz satırdaki bir h&uuml;creyi se&ccedil;in,
+                <p class="note"><b>Not</b>: Birden &ccedil;ok satır eklemek i&ccedil;in gereken satır sayısını se&ccedil;in.</p>
+				</li>
+				<li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Giriş</b> sekmesinde bulunan <div class = "icon icon-insertcells"></div> <b>H&uuml;cre ekle</b> simgesine tıklayın ve <b>T&uuml;m satır</b> se&ccedil;eneğini kullanın
+                    <br />veya se&ccedil;ilen h&uuml;creye sağ tıklayın, sağ tıklama men&uuml;s&uuml;nden <b>Ekle</b> &ouml;ğesini se&ccedil;in, ardından <b>T&uuml;m satır</b> se&ccedil;eneğini se&ccedil;in
+                    <br />veya se&ccedil;ilen satırları sağ tıklayın ve sağ tıklama men&uuml;s&uuml;nden <b>&Uuml;ste Ekle</b> se&ccedil;eneğini kullanın.
+                </li>
+			</ol>
+			<p>Program, se&ccedil;ilen satırı boş bir satır eklemek i&ccedil;in aşağı kaydırır.</p>
+			<p><b>T&uuml;m bir s&uuml;tun eklemek i&ccedil;in:</b></p>
+			<ol>
+				<li>Başlığına tıklayarak t&uuml;m s&uuml;tunu veya &uuml;zerine yenisini eklemek istediğiniz s&uuml;tundaki bir h&uuml;creyi se&ccedil;in,
+                <p class="note"><b>Not</b>: Birden &ccedil;ok s&uuml;tun eklemek i&ccedil;in gereken s&uuml;tun sayısını se&ccedil;in.</p>
+				</li>
+				<li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Giriş</b> sekmesinde bulunan <div class = "icon icon-insertcells"></div> <b>H&uuml;cre ekle</b> simgesine tıklayın ve <b>T&uuml;m s&uuml;tun</b> se&ccedil;eneğini kullanın
+                    <br />veya se&ccedil;ilen h&uuml;creye sağ tıklayın, sağ tıklama men&uuml;s&uuml;nden <b>Ekle</b> &ouml;ğesini se&ccedil;in, ardından <b>T&uuml;m s&uuml;tun</b> se&ccedil;eneğini se&ccedil;in
+                    <br />veya se&ccedil;ilen s&uuml;tunlara sağ tıklayın ve sağ tıklama men&uuml;s&uuml;nden <b>&Uuml;ste Ekle</b> se&ccedil;eneğini kullanın.
+                </li>
+			</ol>
+			<p>Program, se&ccedil;ilen s&uuml;tunu boş bir s&uuml;tun eklemek i&ccedil;in sağa kaydırır.</p>
+            <p>Ayrıca yeni h&uuml;creler eklemek &uuml;zere iletişim kutusunu a&ccedil;mak i&ccedil;in <em>Ctrl+Shift+=</em> klavye kısayolunu kullanabilir, <b>H&uuml;creleri Sağa Kaydır</b>, <b>H&uuml;creleri Aşağı Kaydır</b>, <b>T&uuml;m satır</b> veya <b>T&uuml;m S&uuml;tun</b> se&ccedil;eneğini se&ccedil;ebilir ve <b>Tamam</b> d&uuml;ğmesine tıklayabilirsiniz.</p>
+            <p><img alt="Hücre ekle penceresi" src="../images/insertcellwindow.png" /></p>
+            <h3>Satırları ve s&uuml;tunları gizleme ve g&ouml;sterme</h3>
+            <p><b>Bir satırı veya s&uuml;tunu gizlemek i&ccedil;in:</b></p>
+            <ol>
+                <li>Gizlemek istediğiniz satırları veya s&uuml;tunları se&ccedil;in,</li>
+                <li>Se&ccedil;ili satırlara veya s&uuml;tunlara sağ tıklayın ve sağ tıklama men&uuml;s&uuml;nden <b>Gizle</b> se&ccedil;eneğini kullanın.</li>
+            </ol>
+            <p><b>Gizli satırları veya s&uuml;tunları g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in</b> gizli satırların &uuml;st&uuml;ndeki ve altındaki g&ouml;r&uuml;n&uuml;r satırları veya gizli s&uuml;tunların solundaki ve sağındaki g&ouml;r&uuml;n&uuml;r s&uuml;tunları se&ccedil;in, bunlara sağ tıklayın ve sağ tıklama men&uuml;s&uuml;nden <b>G&ouml;ster</b> se&ccedil;eneğini kullanın.</p>
+            <h3>S&uuml;tun genişliğini ve satır y&uuml;ksekliğini değiştirme</h3>
+            <p><b>S&uuml;tun genişliği,</b> s&uuml;tun h&uuml;cresinde varsayılan bi&ccedil;imlendirmeye sahip ka&ccedil; karakterin g&ouml;r&uuml;nt&uuml;lenebileceğini belirler. Varsayılan değer 8,43 sembol olarak ayarlanmıştır. Değiştirmek i&ccedil;in:</p>
+            <ol>
+                <li>Değiştirmek istediğiniz s&uuml;tunları se&ccedil;in,</li>
+                <li>Se&ccedil;ili s&uuml;tunlara sağ tıklayın ve sağ tıklama men&uuml;s&uuml;nden <b>S&uuml;tun Genişliğini Ayarla</b> se&ccedil;eneğini kullanın,</li>
+                <li>Mevcut se&ccedil;eneklerden birini se&ccedil;in:
+                    <ul>
+                        <li>Her s&uuml;tunun genişliğini i&ccedil;eriğine g&ouml;re otomatik olarak ayarlamak i&ccedil;in <b>S&uuml;tun Genişliğini Otomatik Sığdır</b> se&ccedil;eneğini se&ccedil;in veya</li>
+                        <li>
+                            <b>&Ouml;zel S&uuml;tun Genişliği</b> se&ccedil;eneğini se&ccedil;in ve <b>&Ouml;zel S&uuml;tun Genişliği</b> penceresinde 0 ile 255 arasında yeni bir değer belirleyin, ardından <b>Tamam</b> d&uuml;ğmesine tıklayın.
+                            <p><img alt="Özel Sütun Genişliği penceresi" src="../images/columnwidth.png" /></p>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+            <p>Tek bir s&uuml;tunun y&uuml;ksekliğini manuel olarak değiştirmek i&ccedil;in fare imlecini s&uuml;tunun sağ kenarlığının &uuml;zerine getirin, b&ouml;ylece imle&ccedil; &ccedil;ift y&ouml;nl&uuml; oka <span class = "icon icon-changecolumnwidthcursor"></span> d&ouml;n&uuml;ş&uuml;r. &Ouml;zel bir genişlik ayarlamak i&ccedil;in kenarlığı sola veya sağa s&uuml;r&uuml;kleyin veya i&ccedil;eriğine g&ouml;re s&uuml;tun genişliğini otomatik olarak değiştirmek i&ccedil;in fareye &ccedil;ift tıklayın.</p>
+            <p><img alt="Sütun genişliğini değiştirme" src="../images/changecolumnwidth.png" /></p>
+            <p>Varsayılan <b>satır y&uuml;ksekliği</b> değeri 14,25&apos;tir. Değiştirmek i&ccedil;in:</p>
+            <ol>
+                <li>Değiştirmek istediğiniz satırları se&ccedil;in,</li>
+                <li>Se&ccedil;ili satırlara sağ tıklayın ve sağ tıklama men&uuml;s&uuml;nden <b>Satır Y&uuml;ksekliğini Ayarla</b> se&ccedil;eneğini kullanın,</li>
+                <li>Mevcut se&ccedil;eneklerden birini se&ccedil;in:
+                    <ul>
+                        <li>Her satırın genişliğini i&ccedil;eriğine g&ouml;re otomatik olarak ayarlamak i&ccedil;in <b>Satır Y&uuml;ksekliğini Otomatik Sığdır</b> se&ccedil;eneğini se&ccedil;in veya</li>
+                        <li>
+                            <b>&Ouml;zel Satır Y&uuml;ksekliği</b> se&ccedil;eneğini se&ccedil;in ve <b>&Ouml;zel Satır Y&uuml;ksekliği</b> penceresinde 0 ile 408,75 arasında yeni bir değer belirleyin, ardından <b>Tamam</b> d&uuml;ğmesine tıklayın.
+                            <p><img alt="Özel Satır Yüksekliği penceresi" src="../images/rowheight.png" /></p>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+            <p>Tek bir satırın y&uuml;ksekliğini manuel olarak değiştirmek i&ccedil;in satır başlığının alt kenarlığını s&uuml;r&uuml;kleyin.</p>
+            <h3>H&uuml;cre, satır ve s&uuml;tun silme</h3>
+            <p><b>Gereksiz bir h&uuml;creyi, satırı veya s&uuml;tunu silmek i&ccedil;in:</b></p>
+			<ol>
+			<li>Silmek istediğiniz satırları veya s&uuml;tunları se&ccedil;in,</li>
+			<li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Giriş</b> sekmesinde bulunan <div class = "icon icon-deletecells"></div> <b>H&uuml;creleri sil</b> simgesine tıklayın veya sağ tıklama men&uuml;s&uuml;nden <b>Sil</b> &ouml;ğesini se&ccedil;in ve uygun se&ccedil;eneği se&ccedil;in:
+            <br />eğer <b>H&uuml;creleri Sola Kaydır</b> se&ccedil;eneğini kullanırsanız, silinen h&uuml;crenin sağındaki h&uuml;cre sola taşınır;
+            <br />eğer <b>H&uuml;creleri Yukarı Kaydır</b> se&ccedil;eneğini kullanırsanız, silinen h&uuml;crenin altındaki bir h&uuml;cre yukarı taşınır;
+            <br />eğer <b>T&uuml;m Satır</b> se&ccedil;eneğini kullanırsanız, se&ccedil;ilenin altındaki bir satır yukarı taşınır;
+            <br />eğer <b>T&uuml;m S&uuml;tun</b> se&ccedil;eneğini kullanırsanız, silinen s&uuml;tunun sağındaki s&uuml;tun sola taşınır;
+            </li>
+			</ol>
+            <p>Ayrıca h&uuml;cre silmek &uuml;zere iletişim kutusunu a&ccedil;mak i&ccedil;ine <em>Ctrl+Shift+-</em> kısayolunu kullanabilir, <b>H&uuml;creleri Sola Kaydır</b>, <b>H&uuml;creleri Yukarı Kaydır</b>, <b>T&uuml;m Satır</b> veya <b>T&uuml;m S&uuml;tun</b> se&ccedil;eneğini se&ccedil;ebilir ve <b>Tamam</b> d&uuml;ğmesine tıklayabilirsiniz.</p>
+            <p><img alt="Hücreleri sil penceresi" src="../images/deletecellwindow.png" /></p>
+			<p>&Uuml;st ara&ccedil; &ccedil;ubuğundaki <b>Geri Al</b> <span class = "icon icon-undo"></span> simgesini kullanarak silinen verileri her zaman geri y&uuml;kleyebilirsiniz.</p>
+		</div>
+	</body>
+</html>

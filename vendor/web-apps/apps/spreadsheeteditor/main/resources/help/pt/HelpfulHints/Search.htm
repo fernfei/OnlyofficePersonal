@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Funções de pesquisa e substituição</title>
+		<meta charset="utf-8" />
+		<meta name="descrição" content="A descrição das funções de pesquisa e substituição no Editor de Planilhas" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+		<h1>Funções de pesquisa e substituição</h1>
+		<p>Para pesquisar os caracteres, palavras ou frases necessárias no <a href="https://www.onlyoffice.com/pt/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Planilhas</b></a>, clique no ícone Pesquisar <span class="icon icon-searchicon"></span> situado na barra lateral esquerda, o <span class="icon icon-search_icon_header"></span> localizado no canto superior direito ou use a combinação de teclas <em>Ctrl+F</em> (<em>Command+F</em> para MacOS) para abrir o pequeno painel Localizar ou o <em> Combinação de teclas Ctrl+H</em> para abrir o painel Localizar completo.</p>
+			<p>Um pequeno painel <b>Localizar</b> será aberto no canto superior direito da área de trabalho.</p>
+			<p><img alt="Encontrar painel pequeno" src="../../../../../../common/main/resources/help/en/images/find_small.png" /></p>
+			<p>Para acessar as configurações avançadas, clique no ícone <span class="icon icon-search_advanced"></span>.</p>
+			<p>O painel <b>Localizar e substituir</b> será aberto:</p>
+			<img alt="Localizar e substituir janela" src="../images/search_window.png" />
+			<ol>
+				<li>Digite sua pergunta no campo de entrada de dados <b>Encontrar</b> correspondente.</li>
+				<li>Para navegar entre as ocorrências encontradas, clique em um dos botões de seta. O botão <div class="icon icon-searchdownbutton"></div> mostra a próxima ocorrência enquanto o botão <div class="icon icon-searchupbutton"></div> mostra a anterior.</li>
+                <li>Se você precisar substituir uma ou mais ocorrências dos caracteres encontrados, digite o texto de substituição no campo de entrada de dados <b>Substituir por</b> correspondente. Você pode optar por substituir uma única ocorrência atualmente selecionada ou substituir todas as ocorrências clicando nos botões <b>Substituir</b> e <b>Substituir tudo</b> correspondentes.</li>
+				<li>
+					Especifique as opções de pesquisa marcando as opções necessárias:
+                    <ul>
+                         <li><b>Dentro de</b> - é usado para pesquisar apenas dentro da <em>Planilha</em> ativa, toda a <em>Pasta de trabalho</em> ou <em>Intervalo específico</em >. No último caso, o campo <b>Selecionar intervalo de dados</b> ficará ativo, onde você poderá especificar o intervalo necessário.</li>
+                         <li><b>Pesquisar</b> - é usado para especificar a direção que você deseja pesquisar: à direita <b>por linhas</b> ou para baixo <b>por colunas</b>.</ li>
+                         <li><b>Examinar</b> - é usado para especificar se você deseja pesquisar o <b>Valor</b> das células ou suas <b>Fórmulas subjacentes</b>.</li>
+                    </ul>
+				</li>
+				<li>
+					Especifique os parâmetros de pesquisa marcando as opções necessárias abaixo dos campos de entrada:
+                    <ul>
+                        <li><b>Diferenciar maiúsculas de minúsculas</b> - é usado para localizar apenas as ocorrências digitadas no mesmo caso da sua consulta (por exemplo, se a sua consulta for 'Editor' e esta opção estiver selecionada, palavras como 'editor' ou 'EDITOR' etc. não será encontrado).</li>
+                        <li><b>Conteúdo completo da célula</b> - é usado para localizar apenas as células que não contêm nenhum outro caractere além dos especificados em sua consulta (por exemplo, se sua consulta for '56' e esta opção estiver selecionada, as células contendo dados como '0,56' ou '156' etc. não serão encontradas).</li>
+					</ul>
+				</li>
+			</ol>
+			<p>Todas as ocorrências serão realçadas no arquivo e mostradas como uma lista no painel <b>Localizar</b> à esquerda. Use a lista para pular para a ocorrência necessária ou use os botões de navegação <span class="icon icon-searchupbutton"></span><span class="icon icon-searchdownbutton"></span>.</p>
+		</div>
+	</body>
+</html>

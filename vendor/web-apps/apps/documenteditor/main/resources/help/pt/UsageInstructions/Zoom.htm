@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Zoom</title>
+    <meta charset="utf-8" />
+    <meta name="descrição" content="A descrição do plug-in Zoom para editores do ONLYOFFICE, que permite hospedar e participar de reuniões diretamente nos editores" />
+    <link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+    <link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+    <script type="text/javascript" src="../callback.js"></script>
+    <script type="text/javascript" src="../search/js/page-search.js"></script>
+</head>
+<body>
+    <div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+        <h1>Zoom</h1>
+        <p>O plug-in <b>Zoom</b> permite hospedar ou agendar reuniões do Zoom diretamente no editor com apenas alguns cliques.</p>
+         <p class="note">O plug-in é compatível com a versão <a href="https://github.com/ONLYOFFICE/DocumentServer">auto-hospedada</a> dos editores do ONLYOFFICE e pode ser adicionado às instâncias do ONLYOFFICE manualmente.</p>
+
+        <h3>Instalação</h3>
+        <p>Para instalar o plug-in <b>Zoom</b>,</p>
+        <ol>
+            <li>Vá para a guia <b>Plugins</b>.</li>
+             <li>Abra o <b>Gerenciador de plug-ins</b>.</li>
+             <li>Encontre <div class="icon icon-zoom_icon"></div> <b>Zoom</b> no mercado e clique no botão <b>Instalar</b> abaixo.</li>
+             <li>Clique no ícone <div class="icon icon-zoom_icon"></div> <b>Zoom</b> na guia <b>Plugins</b>.</li>
+             <li>Continue com a configuração do plug-in.</li>
+        </ol>
+        <p class="note">Para mais detalhes, consulte o <a href="https://api.onlyoffice.com/plugin/installation">Documentação da API do ONLYOFFICE</a>.</p>
+
+        <h3>Configuração</h3>
+        <ol>
+            <li>
+                Registre o editor como o aplicativo <b>JWT</b> na página <a href="https://marketplace.zoom.us/develop/create">Zoom Develop</a> para usar o cronograma da reunião. Preencha todos os campos necessários e ative o aplicativo. Um <b>token JWT</b> será atribuído ao aplicativo.
+                 <p>Se precisar de ajuda para preencher os campos, consulte a <a href="https://marketplace.zoom.us/docs/guides/build/jwt-app/">documentação oficial do Zoom</a>.</p>
+            </li>
+            <li>
+                Crie um aplicativo <b>Meeting SDK</b> na página <a href="https://marketplace.zoom.us/develop/create">Zoom Develop</a> para começar a participar de reuniões. Preencha todos os campos necessários e ative o aplicativo. <b>As credenciais do SDK</b> serão atribuídas ao aplicativo.
+                 <p>Se precisar de ajuda para preencher os campos, consulte a <a href="https://marketplace.zoom.us/docs/guides/build/sdk-app/">documentação oficial do Zoom</a>.</p>
+            </li>
+            <li>Insira a <b>SDK Key</b>, <b>SDK Secret</b> e <b>JWT Token</b> gerados nos campos correspondentes no painel esquerdo do editor do ONLYOFFICE e clique em <b> Salvar</b>.</li>
+        </ol>
+        <p><img alt="Configurações de zoom" src="../../../../../../common/main/resources/help/en/images/zoom_left.png" /></p>
+
+        <h3>Como usar</h3>
+         <ol>
+             <li>Vá para a guia <b>Plugins</b>.</li>
+             <li>Clique no ícone <div class="icon icon-zoom_icon"></div> <b>Zoom</b>.</li>
+             <li>
+                 Adicione o tópico da reunião e escolha se deseja <b>Iniciar reunião</b> ou <b>Agendar reunião</b>.
+                <ul>
+                    <li><b>Iniciar reunião</b> - uma nova reunião será criada. Todos os detalhes são exibidos no chat do editor. Pressione a combinação de teclas <code>Alt + Q</code> para acessar o chat rapidamente.</li>
+                     <li><b>Agendar reunião</b> - defina todos os parâmetros necessários para a próxima reunião, como hora, data e duração. Acesse as <b>Configurações avançadas</b> para mais parâmetros. Clique em <b>Salvar</b> quando estiver pronto.</li>
+                 </ul>
+                 <p class="note">As notificações de reuniões são enviadas para o <b>Chat</b> para editores online e para <b>Comentários</b> para editores de área de trabalho.</p>
+            </li>
+            <li>Clique no botão <b>Reconfigurar</b> para definir os parâmetros novamente.</li>
+             <li>Clique no botão <b>Modo de reunião</b> para entrar no menu de reunião onde você pode definir parâmetros como <b>Nome</b>, <b>ID da reunião</b>, <b>E-mail </b> e <b>Senha</b>. Selecione sua <b>função</b>, <b>região da reunião</b> e <b>idioma da reunião</b>.</li>
+             <li>Clique no botão <b>Participar</b> para entrar na reunião ou clique no botão <b>Copiar link de ingresso direto</b> para copiar o link da reunião para a área de transferência.</li>
+            <li>Depois de entrar na reunião, uma janela Zoom será aberta no painel do plug-in. Como em sua chamada de zoom normal, aqui você pode ativar ou desativar o microfone e a câmera, realizar várias ações e entrar no modo de tela cheia.</li>
+         </ol>
+         <p class="note">Uma janela preta pode aparecer no navegador <b>Safari</b> ao ingressar em uma reunião. Para que o problema desapareça, você precisa redimensionar a janela do plugin ou ampliar a página do navegador.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>INDIRECT Function</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>INDIRECT Function</h1>
+			<p>The <b>INDIRECT</b> function is one of the <a href="../UsageInstructions/InsertFunction.htm#lookupreference" onclick="onhyperlinkclick(this)">lookup and reference functions</a>. It is used to return the reference to a cell based on its string representation.</p>
+			<h3>Syntax</h3> 
+			<p><b><em>INDIRECT(ref_text, [a1])</em></b></p> 
+			<p>The <b>INDIRECT</b> function has the following arguments:</p> 
+			<table style="width: 40%">
+                <tr>
+                    <th style="background-color: #f4f4f4" width="150ch"><b>Argument</b></th>
+                    <th style="background-color: #f4f4f4"><b>Description</b></th>
+                </tr>
+                <tr>
+                    <td><b><em>ref_text</em></b></td>
+                    <td>A reference to a cell specified as a text strin.</td>
+                </tr>
+				<tr>
+                    <td><b><em>a1</em></b></td>
+                    <td>A representation style. It is an optional logical value: TRUE or FALSE. If it is set to TRUE or omitted, the function will analyse <b><em>ref_text</em></b> as an A1-style reference. If FALSE, the function will interpret <b><em>ref_text</em></b> as an R1C1-style reference.</td>
+                </tr>
+            </table>
+			
+			<h3>Notes</h3>	
+			<p>Please note that this is an array formula. To learn more, please read the <a href="../UsageInstructions/InsertArrayFormulas.htm" onclick="onhyperlinkclick(this)">Insert array formulas</a> article.</p>
+			<p><a href="../UsageInstructions/InsertFunction.htm#applyfunction" onclick="onhyperlinkclick(this)">How to apply</a> the <b>INDIRECT</b> function.</p>
+			
+			<h3>Examples</h3>
+            <p>The figure below displays the result returned by the <b>INDIRECT</b> function.</p>
+			<p><img alt="INDIRECT Function" src="../images/indirect.png" /></p>
+		</div>
+	</body>
+</html>

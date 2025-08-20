@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Recortar/copiar/colar dados</title>
+		<meta charset="utf-8" />
+		<meta name="descrição" content="Cortar/copiar/colar dados usando os atalhos de teclado" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+        <div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+            <h1>Recortar/copiar/colar dados</h1>
+            <h3>Use as operações básicas da área de transferência</h3>
+            <p>Para recortar, copiar e colar dados na planilha atual, use o menu do botão direito ou use os ícones correspondentes do <a href="https://www.onlyoffice.com/pt/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Planilhas</b></a> disponível em qualquer guia da barra de ferramentas superior,</p>
+            <ul>
+                <li><b>Cortar</b> - selecione os dados e use a opção <b>Cortar</b> no menu do botão direito ou <b>Cortar</b> <span class="icon icon-cut"></span> na barra de ferramentas superior para excluir os dados selecionados e enviá-los para a memória da área de transferência do computador. <span class="onlineDocumentFeatures">Os dados cortados podem ser posteriormente inseridos em outro local na mesma planilha.</span></li>
+                <li><b>Copiar</b> - selecione os dados e use o ícone <b>Copiar</b> <span class = "icon icon-copy"></span> na barra de ferramentas superior ou clique com o botão direito e selecione a opção <b>Copiar</b> no menu para enviar os dados selecionados para a memória da área de transferência do computador. <span class="onlineDocumentFeatures">Os dados copiados podem ser posteriormente inseridos em outro local na mesma planilha.</span></li>
+                <li><b>Colar</b> - selecione um local e use o ícone <b>Colar</b> <span class = "icon icon-paste"></span> na barra de ferramentas superior ou à direita clique e selecione a opção <b>Colar</b> para inserir os dados copiados/cortados anteriormente da memória da área de transferência do computador na posição atual do cursor. <span class="onlineDocumentFeatures">Os dados podem ser previamente copiados da mesma planilha.</span></li>
+            </ul>
+            <p><span class="onlineDocumentFeatures">Na <em>versão online</em>, as seguintes combinações de teclas são usadas apenas para copiar ou colar dados de/para outra planilha ou algum outro programa,</span> <span class="desktopDocumentFeatures">no <em >versão para desktop</em>, tanto os botões/opções de menu correspondentes quanto as combinações de teclas podem ser usados para qualquer operação de copiar/colar:</span></p>
+            <ul>
+                <li><b>Ctrl+X</b> combinação de teclas para cortar;</li>
+                 <li><b>Ctrl+C</b> combinação de teclas para copiar;</li>
+                 <li><b>Ctrl + V</b> combinação de teclas para colar.</li>
+            </ul>
+            <p class="note"><b>Observação</b>: em vez de recortar e colar dados na mesma planilha, você pode selecionar a célula/intervalo de células necessário, passe o cursor do mouse sobre a borda de seleção para que ela se transforme na Seta <span class = "icon icon-arrow "></span> e arraste e solte a seleção na posição necessária.</p>
+            <p>Para ativar/desativar a exibição automática do botão <b>Colar especial</b> após colar, vá para a guia <b>Arquivo</b> > <b>Configurações avançadas</b> e marque / desmarque a caixa de seleção <b>Mostrar o botão Opções de colagem quando o conteúdo for colado</b>.</p>
+            <h3>Use o recurso Colar especial</h3>
+            <p class="note"><b>Observação</b>: para edição colaborativa, o recurso <b>Colar especial</b> está disponível apenas no modo de coedição <b>Estrita</b>.</p>
+            <p>Depois que os dados copiados são colados, o botão <b>Colar especial</b> <span class = "icon icon-pastespecialbutton"></span> aparece próximo ao canto inferior direito da célula/intervalo de células inserido. Clique neste botão para selecionar a opção de colagem necessária.</p>
+            <p>Ao colar uma célula/intervalo de células com dados formatados, as seguintes opções estão disponíveis:</p>
+            <ul>
+                <li><em>Colar (Ctrl+P)</em> - permite colar todo o conteúdo da célula, incluindo a formatação dos dados. Esta opção é selecionada por padrão.</li>
+                <li>
+                   As seguintes opções podem ser usadas se os dados copiados contiverem fórmulas:
+                    <ul>
+                        <li><em>Colar apenas fórmula (Ctrl+F)</em> - permite colar fórmulas sem colar a formatação dos dados.</li>
+                        <li><em>Fórmula + formato de número (Ctrl+O)</em> - permite colar fórmulas com a formatação aplicada aos números.</li>
+                        <li><em>Fórmula + toda a formatação (Ctrl+K)</em> - permite colar fórmulas com toda a formatação dos dados.</li>
+                        <li><em>Fórmula sem bordas (Ctrl+B)</em> - permite colar fórmulas com toda a formatação de dados, exceto as bordas da célula.</li>
+                        <li><em>Fórmula + largura da coluna (Ctrl+W)</em> - permite colar fórmulas com toda a formatação de dados e definir a largura da coluna de origem para o intervalo de células.</li>
+                        <li><em>Transpor (Ctrl+T)</em> - permite que você cole dados trocando-os de colunas para linhas, ou vice-versa. Esta opção está disponível para intervalos de dados regulares, mas não para tabelas formatadas.</li>
+                    </ul>
+                </li>
+                <li>
+                    As opções a seguir permitem colar o resultado que a fórmula copiada retorna sem colar a própria fórmula:
+                     <ul>
+                         <li><em>Colar apenas o valor (Ctrl+V)</em> - permite colar os resultados da fórmula sem colar a formatação dos dados.</li>
+                         <li><em>Valor + formato de número (Ctrl+A)</em> - permite colar os resultados da fórmula com a formatação aplicada aos números.</li>
+                         <li><em>Valor + toda a formatação (Ctrl+E)</em> - permite colar os resultados da fórmula com toda a formatação dos dados.</li>
+                    </ul>
+                </li>
+                <li><em>Colar apenas a formatação (Ctrl+R)</em> - permite colar apenas a formatação da célula sem colar o conteúdo da célula.
+                    <p><img alt="Opções de colagem" src="../images/pastespecial.png" /></p>
+                <ol>
+                    <li>
+                        <b>Colar</b>
+                        <ul>
+                            <li><em>Fórmulas</em> - permite colar fórmulas sem colar a formatação dos dados.</li>
+                            <li><em>Valores</em> - permite colar os resultados da fórmula sem colar a formatação dos dados.</li>
+                            <li><em>Formatos</em> - permite aplicar a formatação da área copiada.</li>
+                            <li><em>Comentários</em> - permite adicionar comentários da área copiada.</li>
+                            <li><em>Largura das colunas</em> - permite que você defina certas larguras de coluna da área copiada.</li>
+                            <li><em>Tudo exceto bordas</em> - permite colar fórmulas, resultados de fórmulas com toda a sua formatação, exceto bordas.</li>
+                            <li><em>Fórmulas &#38; formatação</em> - permite colar fórmulas e aplicar formatação nelas a partir da área copiada.</li>
+                            <li><em>Fórmulas &#38; larguras de colunas</em> - permite colar fórmulas e definir certas larguras de colunas da área copiada.</li>
+                            <li><em>Fórmulas &#38; fórmulas numéricas</em> - permite colar fórmulas e fórmulas numéricas.</li>
+                            <li><em>Valores &#38; formatos numéricos</em> - permite colar os resultados da fórmula e aplicar a formatação numérica da área copiada.</li>
+                            <li><em>Valores &#38; formatação</em> - permite colar os resultados da fórmula e aplicar a formatação da área copiada.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Operação</b>
+                        <ul>
+                            <li><em>Adicionar</em> - permite adicionar automaticamente valores numéricos em cada célula inserida.</li>
+                            <li><em>Subtrair</em> - permite subtrair valores numéricos automaticamente em cada célula inserida.</li>
+                            <li><em>Multiplicar</em> - permite multiplicar automaticamente valores numéricos em cada célula inserida.</li>
+                            <li><em>Dividir</em> - permite dividir automaticamente valores numéricos em cada célula inserida.</li>
+                        </ul>
+                    </li>
+                    <li><b>Transpor</b> - permite colar dados trocando-os de colunas para linhas ou vice-versa.</li>
+                    <li><b>Ignorar espaços em branco</b> - permite ignorar a colagem de células vazias e sua formatação.</li>
+                </ol>
+                <p><img alt="Janela colar especial" src="../images/pastespecial_window.png" /></p>
+                </li>
+            </ul>
+            
+            <p>Ao colar o conteúdo de uma única célula ou algum texto em autoformas, as seguintes opções estão disponíveis:</p>
+            <ul>
+                <li><em>Formatação de origem (Ctrl+K)</em> - permite manter a formatação de origem dos dados copiados.</li>
+                <li><em>Formatação de destino (Ctrl+M)</em> - permite aplicar a formatação que já é usada para a célula/forma automática onde os dados serão inseridos para.</li>
+            </ul>
+            <h5 id="delimiteddata">Colar texto delimitado</h5>
+            <p>Ao colar o texto delimitado copiado de um arquivo <b>.txt</b>, as seguintes opções estão disponíveis:</p>
+            <p class="note">O texto delimitado pode conter vários registros, e cada registro corresponde a uma única linha da tabela. Cada registro pode conter vários valores de texto separados por um delimitador (como vírgula, ponto e vírgula, dois pontos, tabulação, espaço ou outros caracteres). O arquivo deve ser salvo como um arquivo de texto simples <b>.txt</b>.</p>
+            <ul>
+                <li><em>Manter apenas texto (Ctrl+T)</em> - permite colar valores de texto em uma única coluna onde o conteúdo de cada célula corresponde a uma linha no arquivo de texto de origem.</li>
+                <li><em>Usar assistente de importação de texto</em> - permite abrir o <b>Assistente de importação de texto</b>, que ajuda a dividir facilmente os valores de texto em várias colunas, onde cada valor de texto separado por um delimitador será ser colocado em uma célula separada.
+                <p>Quando a janela <b>Assistente de importação de texto</b> abrir, selecione o delimitador de texto usado nos dados delimitados na lista suspensa <b>Delimitador</b>. Os dados divididos em colunas serão exibidos no campo <b>Visualizar</b> abaixo. Se estiver satisfeito com o resultado, clique no botão <b>OK</b>.</p>
+                </li>
+            </ul>
+            <p><img alt="Assistente de importação de texto" src="../images/textimportwizard.png" /></p>
+            <p>Se você colou dados delimitados de uma fonte que não é um arquivo de texto simples (por exemplo, texto copiado de uma página da Web, etc.) ou se aplicou o recurso <em>Manter apenas texto</em> e agora deseja dividir os dados de uma única coluna em várias colunas, você pode usar a opção <b>Texto para colunas</b>.</p>
+            <p>Para dividir dados em várias colunas:</p>
+            <ol>
+                <li>Selecione a célula ou coluna necessária que contém dados com delimitadores.</li>
+                <li>Alterne para a guia <b>Dados</b>.</li>
+                <li>Clique no botão <b>Texto para colunas</b> na barra de ferramentas superior. O <b>Assistente de Texto para Colunas</b> é aberto.</li>
+                <li>Na lista suspensa <b>Delimitador</b>, selecione o delimitador usado nos dados delimitados.</li>
+                <li>Clique no botão <b>Avançado</b> para abrir a janela <b>Configurações avançadas</b> na qual você pode especificar <b>Decimal</b> e <b>Milhares</b> separadores.
+                <p><img alt="Janela de configurações do separador" src="../images/separator.png" /></p></li>
+                <li>Visualize o resultado no campo abaixo e clique <b>OK</b>.</li>
+            </ol>
+            <p>Depois disso, cada valor de texto separado pelo delimitador ficará localizado em uma célula separada.</p>
+            <p class="note">Se houver alguns dados nas células à direita da coluna que você deseja dividir, os dados serão substituídos.</p>
+            <h3>Use a opção Preenchimento Automático</h3>
+            <p>Para preencher rapidamente várias células com os mesmos dados, use a opção <b>Preenchimento Automático</b>:</p>
+            <ol>
+                <li>selecione uma célula/intervalo de células contendo os dados necessários,</li>
+                <li>mova o cursor do mouse sobre a alça de preenchimento no canto inferior direito da célula. O cursor se transformará na cruz preta:
+                <p><div class = "big big-autofill"></div></p>
+                </li>
+                <li>arraste a alça sobre as células adjacentes para preenchê-las com os dados selecionados.</li>
+            </ol>
+            <p class="note"><b>Nota</b>: se você precisar criar uma série de números (como 1, 2, 3, 4...; 2, 4, 6, 8... etc.) ou datas, você pode inserir pelo menos dois valores iniciais e estenda rapidamente a série selecionando essas células e arrastando a alça de preenchimento.</p>
+            <h3>Preencher as células na coluna com valores de texto</h3>
+            <p>Se uma coluna em sua planilha contiver alguns valores de texto, você poderá facilmente substituir qualquer valor nessa coluna ou preencher a próxima célula em branco selecionando um dos valores de texto já existentes.</p>
+            <p>Clique com o botão direito do mouse na célula necessária e escolha a opção <b>Selecionar na lista suspensa</b> no menu contextual.</p>
+            <p><img alt="Selecione na lista suspensa" src="../images/selectfromlist.png" /></p>
+            <p>Selecione um dos valores de texto disponíveis para substituir o atual ou preencha uma célula vazia.</p>
+            
+        </div>
+	</body>
+</html>

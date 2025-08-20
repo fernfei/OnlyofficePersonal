@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Inserir objetos SmartArt</title>
+    <meta charset="utf-8" />
+    <meta name="descrição" content="Insert SmartArt objects" />
+    <link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+    <link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+    <script type="text/javascript" src="../callback.js"></script>
+    <script type="text/javascript" src="../search/js/page-search.js"></script>
+</head>
+	<body>
+        <div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+            <h1>Inserir objetos SmartArt</h1>
+            <p><b>Gráficos SmartArt</b> são usados para criar uma representação visual de uma estrutura hierárquica, escolhendo um layout que se encaixe melhor. Insira objetos SmartArt ou edite os adicionados em editores de terceiros.</p>
+            <p>Para <b>inserir</b> um objeto SmartArt,</p>
+            <ol>
+                <li>vá para a guia <b>Inserir</b>,</li>
+                <li>clique no botão <b>SmartArt</b>,</li>
+                <li>passe o mouse sobre um dos estilos de layout disponíveis, por exemplo, <em>Lista</em> ou <em>Processo</em>,</li>
+                <li>escolha um dos tipos de layout disponíveis na lista exibida à direita do item de menu destacado,</li>
+                <li>você pode salvar o objeto SmartArt como imagem em seu disco rígido usando a opção <b>Salvar como imagem</b> no menu do botão direito.</li>
+            </ol>
+            <p>Você pode <b>personalizar</b> as configurações de SmartArt no painel direito:</p>
+             <p class="note">Observe que as configurações de cor, estilo e tipo de formulário podem ser personalizadas individualmente.</p>
+            <img alt="" src="../images/smartart_settings.png" />
+            <ul>
+                <li>
+                    <b>Preenchimento</b> - use esta seção para selecionar o preenchimento do objeto SmartArt. Você pode escolher as seguintes opções:
+                     <ul>
+                         <li>
+                             <b>Preenchimento de cor</b> - selecione esta opção para especificar a cor sólida para preencher o espaço interno do objeto SmartArt selecionado.
+                             <p><img alt="Preenchimento de cor" src="../images/fill_color.png" /></p>
+                        </li>
+                        <li>
+                            <b>Preenchimento Gradiente</b> - use esta opção para preencher a forma com duas ou mais cores esmaecidas. Personalize seu preenchimento de gradiente sem restrições. Clique no ícone <b>Configurações de forma</b> <div class="icon icon-shape_settings_icon"></div> para abrir o menu <b>Preencher</b> na barra lateral direita:
+                             <p><img alt="Preenchimento Gradiente" src="../images/fill_gradient.png" /></p>
+                            <p>Opções de menu disponíveis:</p>
+                            <ul>
+                                <li>
+                                    <b>Estilo</b> - escolha entre <b>Linear</b> ou <b>Radial</b>:
+                                    <ul>
+                                        <li><b>Linear</b> é usado  quando você precisa que suas cores fluam da esquerda para a direita, de cima para baixo ou em qualquer ângulo que você escolher em uma única direção. A janela de visualização <b>Direção</b> exibe a cor do gradiente selecionada, clique na seta para escolher uma direção de gradiente predefinida. Use as configurações de <b>Ângulo</b> para obter um ângulo de gradiente preciso.</li>
+                                         <li><b>Radial</b> é usado para mover do centro, pois começa em um único ponto e emana para fora.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>Gradient Point</b> é um ponto específico para a transição de uma cor para outra.
+                                     <ul>
+                                         <li>Use o botão <div class="icon icon-addgradientpoint"></div> <b>Adicionar ponto de gradiente</b> ou a barra deslizante para adicionar um ponto de gradiente. Você pode adicionar até 10 pontos de gradiente. Cada próximo ponto de gradiente adicionado não afetará de forma alguma a aparência do preenchimento de gradiente atual. Use o botão <div class="icon icon-removegradientpoint"></div> <b>Remover ponto de gradiente</b> para excluir um determinado ponto de gradiente.</li>
+                                         <li>Use a barra deslizante para alterar a localização do ponto de gradiente ou especifique <b>Posição</b> em porcentagem para uma localização precisa.</li>
+                                         <li>Para aplicar uma cor a um ponto de gradiente, clique em um ponto na barra deslizante e clique em <b>Cor</b> para escolher a cor desejada.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Imagem ou Textura</b> - selecione esta opção para usar uma imagem ou uma textura predefinida como plano de fundo do objeto SmartArt.
+                             <p><img alt="Preenchimento com imagem ou textura" src="../images/fill_picture.png" /></p>
+                            <ul>
+                                <li>Se desejar usar uma imagem como plano de fundo para o objeto SmartArt, você pode adicionar uma imagem <b>Do arquivo</b> selecionando-a na unidade de disco rígido do computador, <b>Da URL</b> inserindo o endereço URL apropriado na janela aberta ou <b>Do armazenamento</b> selecionando a imagem necessária armazenada em seu portal.</li>
+                                <li>
+                                    Se desejar usar uma textura como plano de fundo para o objeto SmartArt, abra o menu <b>Da textura</b> e selecione a predefinição de textura necessária.
+                                    <p>Atualmente, as seguintes texturas estão disponíveis: lona, papelão, tecido escuro, grão, granito, papel cinza, malha, couro, papel pardo, papiro, madeira.</p>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    Caso a <b>Imagem</b> selecionada tenha menos ou mais dimensões do que o objeto SmartArt, você pode escolher a configuração <b>Alongar</b> ou <b>Ladrilho</b> na lista suspensa.
+                                    <p>A opção <b>Esticar</b> permite ajustar o tamanho da imagem para caber no tamanho do objeto SmartArt para que ele preencha o espaço completamente.</p>
+                                    <p>A opção <b>Tile</b> permite exibir apenas uma parte da imagem maior mantendo suas dimensões originais ou repetir a imagem menor mantendo suas dimensões originais sobre a superfície do objeto SmartArt para que ela preencha o espaço completamente .</p>
+                                    <p class="note"><b>Observação</b>: qualquer predefinição de <b>Textura</b> selecionada preenche o espaço completamente, mas você pode aplicar o efeito <b>Esticar</b> se necessário.</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Padrão</b> - selecione esta opção para preencher o objeto SmartArt com um design de duas cores composto por elementos repetidos regularmente.
+                             <p><img alt="Preenchimento de padrão" src="../images/fill_pattern.png" /></p>
+                             <ul>
+                                 <li><b>Padrão</b> - selecione um dos designs predefinidos no menu.</li>
+                                 <li><b>Cor do primeiro plano</b> - clique nesta caixa de cor para alterar a cor dos elementos do padrão.</li>
+                                 <li><b>Cor de fundo</b> - clique nesta caixa de cor para alterar a cor do plano de fundo do padrão.</li>
+                            </ul>
+                        </li>
+                        <li><b>Sem preenchimento</b> - selecione esta opção se não quiser usar nenhum preenchimento.</li>
+                         <li>
+                             <b>Linha</b> - use esta seção para alterar a largura, cor ou tipo da linha do objeto SmartArt.
+                             <ul>
+                                 <li>Para alterar a <b>largura</b> da linha, selecione uma das opções disponíveis na lista suspensa <b>Tamanho</b>. As opções disponíveis são: 0,5 pt, 1 pt, 1,5 pt, 2,25 pt, 3 pt, 4,5 pt, 6 pt. Como alternativa, selecione a opção <b>Sem linha</b> se não quiser usar nenhuma linha.</li>
+                                 <li>Para alterar a <b>cor</b> da linha, clique na caixa colorida abaixo e selecione a cor necessária.</li>
+                                 <li>Para alterar o <b>tipo</b> da linha, selecione a opção necessária na lista suspensa correspondente (uma linha sólida é aplicada por padrão, você pode alterá-la para uma das linhas tracejadas disponíveis).</li>
+                                 <li>Para alterar a <b>opacidade</b> da linha, insira o valor necessário manualmente ou use a barra deslizante correspondente.</li>
+                            </ul>
+                        </li>
+                        <li><b>Mostrar sombra</b> - marque esta caixa para fazer o objeto SmartArt projetar uma sombra.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p>Clique no link <b>Mostrar configurações avançadas</b> para abrir as <a href="../UsageInstructions/InsertAutoshapes.htm#autoshape_advanced" onclick="onhyperlinkclick(this)">configurações avançadas</a>.</p>
+        </div>
+	</body>
+</html>

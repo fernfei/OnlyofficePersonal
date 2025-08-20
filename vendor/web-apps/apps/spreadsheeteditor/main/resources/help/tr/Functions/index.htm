@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>İNDİS İşlevi</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>İNDİS İşlevi</h1>
+			<p><b>İNDİS</b> işlevi, arama ve başvuru işlevlerinden biridir. Bir h&uuml;cre aralığında belirli bir satır ve s&uuml;tun numarasını esas alarak bir değer d&ouml;nd&uuml;rmek i&ccedil;in kullanılır. <b>İNDİS</b> işlevinin iki bi&ccedil;imi vardır. <!--The array form is used to return a value within a single range of cells. The reference form is used to return a value within an array that contains several ranges of cells.--></p>
+			<p>Dizi bi&ccedil;imindeki <b>İNDİS</b> işlevinin s&ouml;zdizimi ş&ouml;yledir:</p> 
+			<p style="text-indent: 150px;"><b><em>İNDİS(dizi, [satır-sayısı][, [s&uuml;tun-sayısı]])</em></b></p> 
+            <p>Başvuru bi&ccedil;imindeki <b>İNDİS</b> işlevinin s&ouml;zdizimi ş&ouml;yledir:</p>
+            <p style="text-indent: 150px;"><b><em>İNDİS(başvuru, [satır-sayısı][, [s&uuml;tun-sayısı][, [alan-sayısı]]])</em></b></p>
+            <p><em>Burada</em></p> 
+            <p style="text-indent: 50px;"><em><b>dizi,</b></em> bir h&uuml;cre aralığıdır.</p>
+            <p style="text-indent: 50px;"><em><b>başvuru,</b></em> bir h&uuml;cre aralığına bir başvurudur<!--or several ranges enclosed in parentheses and separated by commas-->.</p>
+            <p style="text-indent: 50px;"><em><b>satır-sayısı,</b></em> bir değer d&ouml;nd&uuml;rmek istediğiniz satır sayısıdır. Atlanırsa, <em><b>s&uuml;tun-sayısı</b></em> gerekir.</p>
+			<p style="text-indent: 50px;"><em><b>s&uuml;tun-sayısı,</b></em> bir değer d&ouml;nd&uuml;rmek istediğiniz s&uuml;tun sayısıdır. Atlanırsa, <em><b>satır-sayısı</b></em> gerekir.</p>
+            <p style="text-indent: 50px;"><em><b>alan-sayısı,</b></em> dizinin birka&ccedil; aralık i&ccedil;ermesi durumunda kullanılacak bir alandır. İsteğe bağlı bir bağımsız değişkendir. Atlanırsa, işlev <em><b>alan-sayısının</b></em> 1 olduğunu varsayar.</p>
+			<p>Bu bağımsız değişkenler, başvurduğunuz h&uuml;creye manuel olarak girilebilir veya eklenebilir.</p>
+			<p><b>İNDİS</b> işlevini uygulamak i&ccedil;in</p>
+			<ol>
+			<li>Sonucu g&ouml;r&uuml;nt&uuml;lemek istediğiniz h&uuml;creyi se&ccedil;in,</li>
+			<li>&Uuml;st ara&ccedil; &ccedil;ubuğunda bulunan <b>İşlev ekle</b> <div class = "icon icon-insertfunction"></div> simgesine tıklayın
+                <br />veya se&ccedil;ilen bir h&uuml;crenin i&ccedil;ine sağ tıklayın ve men&uuml;den <b>İşlev Ekle</b> se&ccedil;eneğini se&ccedil;in
+                <br />veya<div class = "icon icon-function"></div>form&uuml;l &ccedil;ubuğunda bulunan simgeye tıklayın,
+            </li>
+			<li>Listeden <b>Arama ve Başvuru</b> işlev grubunu se&ccedil;in,</li>
+			<li><b>İNDİS</b> işlevine tıklayın,</li>
+			<li>Virg&uuml;lle ayırarak gerekli bağımsız değişkenleri girin,</li>
+			<li><b>Enter</b> d&uuml;ğmesine basın.</li>
+			</ol>
+			<p>Sonu&ccedil; se&ccedil;ili h&uuml;crede g&ouml;r&uuml;nt&uuml;lenecektir.</p>
+			<p style="text-indent: 150px;"><img alt="İNDİS İşlevi" src="../images/index_1.png" /></p>
+		</div>
+	</body>
+</html>

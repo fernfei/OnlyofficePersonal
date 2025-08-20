@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Copie/cole dados, desfaça/refaça suas ações</title>
+		<meta charset="utf-8" />
+		<meta name="descrição" content="Realize as operações básicas com a apresentação: copiar, colar, desfazer, refazer" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+        <div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+            <h1>Copie/cole dados, desfaça/refaça suas ações</h1>
+            <h3>Usar operações básicas da área de transferência</h3>
+            <p>Para recortar, copiar e colar os objetos selecionados (slides, passagens de texto, autoformas) no <a target="_blank" href="https://www.onlyoffice.com/pt/presentation-editor.aspx" onclick="onhyperlinkclick(this)"><b>Editor de Apresentações</b></a> ou desfazer/refazer suas ações, use as opções correspondentes no menu do botão direito, atalhos de teclado ou ícones disponíveis em qualquer guia da barra de ferramentas superior:</p>
+            <ul>
+                <li><b>Cortar</b> – selecione um objeto e use a opção <b>Cortar</b> no menu do botão direito ou ícone <b>Cortar</b> <div class="icon icon-cut"></div> na barra de ferramentas superior para excluir a seleção e enviá-la para a memória da área de transferência do computador. <span class="onlineDocumentFeatures">Os dados cortados podem ser posteriormente inseridos em outro local na mesma apresentação.</span></li>
+                 <li><b>Copiar</b> – selecione um objeto e use a opção <b>Copiar</b> no menu do botão direito ou ícone <b>Copiar</b> <div class = "icon icon -copy"></div> na barra de ferramentas superior para copiar a seleção para a memória da área de transferência do computador. <span class="onlineDocumentFeatures">O objeto copiado pode ser posteriormente inserido em outro local na mesma apresentação.</span></li>
+                 <li><b>Colar</b> – encontre o local em sua apresentação onde você precisa colar o objeto copiado anteriormente e use a opção <b>Colar</b> no menu do botão direito ou ícone <b>Colar</b> <div class = "icon icon-paste"></div> na barra de ferramentas superior. O objeto será inserido na posição atual do cursor. <span class="onlineDocumentFeatures">O objeto pode ser previamente copiado da mesma apresentação.</span></li>
+            </ul>
+            <p><span class="onlineDocumentFeatures">Na <em>versão online</em>, as seguintes combinações de teclas são usadas apenas para copiar ou colar dados de/para outra apresentação ou algum outro programa,</span> <span class="desktopDocumentFeatures">no <em >versão para desktop</em>, tanto os botões/opções de menu correspondentes quanto as combinações de teclas podem ser usados para qualquer operação de copiar/colar:</span></p>
+            <ul>
+                <li><b>Ctrl+C</b> combinação de teclas para copiar;</li>
+                <li><b>Ctrl+V</b> combinação de teclas para colar;</li>
+                <li><b>Ctrl+X</b> combinação de teclas para cortar.</li>
+            </ul>
+            <h3>Use o recurso Colar especial</h3>
+             <p class="note"><b>Observação</b>: para edição colaborativa, o recurso <b>Colar especial</b> está disponível apenas no modo de coedição <b>Estrito</b>.</p>
+             <p>Depois que os dados copiados são colados, o botão <b>Colar especial</b> <span class="icon icon-pastespecialbutton"></span> aparece ao lado da passagem/objeto de texto inserido. Clique neste botão para selecionar a opção de colagem necessária ou use a tecla <em>Ctrl</em> em combinação com a tecla de letra fornecida entre colchetes ao lado da opção.</p>
+             <p>Ao colar passagens de texto, as seguintes opções estão disponíveis:</p>
+            <ul>
+                <li><em>Usar tema de destino (Ctrl+H)</em> - permite aplicar a formatação especificada pelo tema da apresentação atual. Esta opção é usada por padrão.</li>
+                 <li><em>Manter a formatação original (Ctrl+K)</em> - permite manter a formatação original do texto copiado.</li>
+                 <li><em>Imagem (Ctrl+U)</em> - permite colar o texto como uma imagem para que não possa ser editado.</li>
+                 <li><em>Manter apenas texto (Ctrl+T)</em> - permite colar o texto sem sua formatação original.</li>
+            </ul>
+            <p><img alt="Opções de colagem" src="../images/pastespecial.png" /></p>
+            <p>Ao colar objetos (autoformas, gráficos, tabelas), as seguintes opções estão disponíveis:</p>
+            <ul>
+                <li><em>Usar tema de destino (Ctrl+H)</em> - permite aplicar a formatação especificada pelo tema da apresentação atual. Esta opção é usada por padrão.</li>
+                 <li><em>Imagem (Ctrl+U)</em> - permite colar o objeto como uma imagem para que não possa ser editado.</li>
+            </ul>
+            <p>Para ativar/desativar a exibição automática do botão <b>Colar especial</b> após colar, vá para a guia <b>Arquivo</b> > <b>Configurações avançadas</b> e marque/desmarque a opção <b>Mostrar o botão Opções de colagem quando o conteúdo for colado</b> caixa de seleção.</p>
+             <h3>Use as operações Desfazer/Refazer</h3>
+             <p>Para desfazer/refazer suas ações, use os ícones correspondentes no lado esquerdo do cabeçalho do editor ou atalhos de teclado:</p>
+            <ul>
+                <li><b>Desfazer</b> – use o ícone <b>Desfazer</b> <div class = "icon icon-undo"></div> para desfazer a última operação executada.</li>
+                 <li>
+                     <b>Refazer</b> – use o ícone <b>Refazer</b> <div class = "icon icon-redo"></div> para refazer a última operação desfeita.
+                     <p>Você também pode usar a combinação de teclas <b>Ctrl+Z</b> para desfazer ou <b>Ctrl+Y</b> para refazer.</p>
+                </li>
+            </ul>
+            <p class="note">
+                <b>Nota</b>: quando você coedita uma apresentação no modo <b>Rápido</b>, a possibilidade de <b>Refazer</b> a última operação desfeita não está disponível.
+            </p>
+
+        </div>
+	</body>
+</html>

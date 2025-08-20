@@ -1,0 +1,55 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Satır numaraları ekleme</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Insert line numbers in the Document Editor" />
+    <link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+    <link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+    <script type="text/javascript" src="../callback.js"></script>
+    <script type="text/javascript" src="../search/js/page-search.js"></script>
+</head>
+<body>
+    <div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+        </div>
+        <h1>Satır numaraları ekleme</h1>
+        <p>ONLYOFFICE <a href="https://www.onlyoffice.com/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Belge D&uuml;zenleyici</b></a> belgenizdeki satırları otomatik olarak sayabilir. Bu &ouml;zellik, yasal bir anlaşmada veya bir kod komut dosyasında olduğu gibi belgenin belirli bir satırına başvurmanız gerektiğinde yararlı olabilir. Belgeye satır numaralandırma uygulamak i&ccedil;in <span class = "icon icon-linenumbers_icon"></span> <b>Satır Numaraları</b> aracını kullanın. Satır numaralandırma sırasının tablolar, metin kutuları, grafikler, &uuml;st bilgiler/alt bilgiler vb. gibi nesnelerdeki metinlere uygulanmadığını unutmayın. Bu nesneler tek satır olarak değerlendirilir.</p>
+        <h2>Satır numaralandırmayı uygulama</h2>
+        <ol>
+            <li>&Uuml;st ara&ccedil; &ccedil;ubuğunda bulunan <b>D&uuml;zen</b> sekmesine tıklayın ve <div class = "icon icon-linenumbers_icon"></div> <b>Satır Numaraları</b> simgesine tıklayın.</li>
+            <li>
+                Hızlı bir şekilde ayarlamak i&ccedil;in a&ccedil;ılan a&ccedil;ılır men&uuml;den gerekli parametreleri se&ccedil;in:
+                <ul>
+                    <li><b>S&uuml;rekli</b>, belgenin her satırına bir sıra numarası atanır.</li>
+                    <li><b>Her Sayfada Yeniden Başlat</b>, satır numaralandırma sırası, belgenin her sayfasında yeniden başlar.</li>
+                    <li><b>Her B&ouml;l&uuml;mde Yeniden Başlatın</b>, satır numaralandırma sırası, belgenin her b&ouml;l&uuml;m&uuml;nde yeniden başlar. B&ouml;l&uuml;m sonları hakkında daha fazla bilgi edinmek i&ccedil;in <a href="../UsageInstructions/SectionBreaks.htm" onclick="onhyperlinkclick(this)">bu kılavuza</a> bakın.</li>
+                    <li><b>Ge&ccedil;erli Paragraf i&ccedil;in Kaldır</b> - Mevcut paragraf, satır numaralandırma sırasında atlanır. Birka&ccedil; paragrafı sıradan &ccedil;ıkarmak i&ccedil;in, ilgili paragrafları, bu parametreyi uygulamadan &ouml;nce farenin soluna tıklayarak se&ccedil;in.</li>
+                </ul>
+            </li>
+            <li>
+                Gerekirse gelişmiş parametreleri belirtin. <b>Satır Numaraları</b> a&ccedil;ılır men&uuml;s&uuml;nde <b>Satır Numaralandırma Se&ccedil;enekleri</b> &ouml;ğesine tıklayın. Satır numaralandırmasını belgeye uygulamak ve se&ccedil;eneğin gelişmiş parametrelerine erişmek i&ccedil;in <b>Satır numaralandırma ekle</b> kutusunu işaretleyin:
+                <p><img alt="Satır Numaralandırma penceresi." src="../images/linenumbers_window.png" /></p>
+                <ul>
+                    <li><b>Numaralandırma başlangıcı</b>, satır numaralandırma dizisinin başlangı&ccedil; sayısal değerini ayarlar. Varsayılan olarak parametre <b>1</b> olarak ayarlanmıştır.</li>
+                    <li><b>Metinden İtibaren</b>, satır numaraları ile metin arasındaki mesafeyi belirtir. Gerekli değeri cm cinsinden girin. Varsayılan olarak parametre <b>Otomatik</b> olarak ayarlanmıştır.</li>
+                    <li><b>Sayı Aralığı</b>, 1&apos;er şeklinde sayılmıyorsa, yani sayılar bir grup i&ccedil;inde 2&apos;şer, 3&apos;er, 4&apos;erli vb. şeklinde sayılıyorsa, g&ouml;r&uuml;nt&uuml;lenen sıra numaralarını belirtir. Gerekli sayısal değeri girin. Varsayılan olarak parametre <b>1</b> olarak ayarlanmıştır.</li>
+                    <li><b>Her Sayfada Yeniden Başlat</b>, satır numaralandırma sırası, belgenin her sayfasında yeniden başlar.</li>
+                    <li><b>Her B&ouml;l&uuml;mde Yeniden Başlat</b>, satır numaralandırma sırası, belgenin her b&ouml;l&uuml;m&uuml;nde yeniden başlar.</li>
+                    <li><b>S&uuml;rekli</b>, belgenin her satırına bir sıra numarası atanır.</li>
+                    <li>Parametreye <b>Değişiklikleri uygula</b> se&ccedil;eneği, belgenin sıra numaralarını atamak istediğiniz b&ouml;l&uuml;m&uuml;n&uuml; belirtir. Mevcut &ouml;n ayarlardan birini se&ccedil;in: Satır numaralandırmasını belgenin se&ccedil;ilen b&ouml;l&uuml;m&uuml;ne uygulamak i&ccedil;in <b>Ge&ccedil;erli b&ouml;l&uuml;m</b>; Satır numaralandırmasını ge&ccedil;erli imle&ccedil; konumunu izleyen metne uygulamak i&ccedil;in <b>Buradan ileriye</b>; Satır numaralandırmasını t&uuml;m belgeye uygulamak i&ccedil;in <b>T&uuml;m belge</b>. Varsayılan olarak parametre <b>T&uuml;m belge</b> olarak ayarlanmıştır.</li>
+                    <li>Değişiklikleri uygulamak i&ccedil;in <b>Tamam</b> d&uuml;ğmesine tıklayın.</li>
+                </ul>
+            </li>
+        </ol>
+        <h2>Satır numaralandırmayı kaldırma</h2>
+        <p>Satır numaralandırma dizisini kaldırmak i&ccedil;in,</p>
+        <ol>
+            <li>&Uuml;st ara&ccedil; &ccedil;ubuğunda bulunan <b>D&uuml;zen</b> sekmesine tıklayın ve <div class = "icon icon-linenumbers_icon"></div> <b>Satır Numaraları</b> simgesine tıklayın,</li>
+            <li>A&ccedil;ılan a&ccedil;ılır men&uuml;deki <b>Hi&ccedil;biri</b> se&ccedil;eneğini se&ccedil;in veya men&uuml;deki <b>Satır Numaralandırma Se&ccedil;enekleri</b> &ouml;ğesini se&ccedil;in ve a&ccedil;ılan <b>Satır Numaraları</b> penceresinde <b>Satır numaralandırma kutusu ekle</b> se&ccedil;eneğini devre dışı bırakın.</li>
+        </ol>
+    </div>
+</body>
+</html>

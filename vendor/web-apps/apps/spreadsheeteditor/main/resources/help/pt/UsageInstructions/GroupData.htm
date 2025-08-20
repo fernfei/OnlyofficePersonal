@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Dados do grupo</title>
+		<meta charset="utf-8" />
+        <meta name="descrição" content="Agrupar linhas e colunas para estruturar dados em uma planilha." />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Dados do grupo</h1>
+            <p>A capacidade de agrupar linhas e colunas, bem como criar um esboço, facilita o trabalho com uma planilha que contém uma grande quantidade de dados. No <a href="https://www.onlyoffice.com/pt/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Planilhas</b></a>, você pode recolher ou expandir linhas e colunas agrupadas para exibir apenas os dados necessários. Também é possível criar a estrutura multinível de linhas/colunas agrupadas. Quando necessário, você pode desagrupar as linhas ou colunas agrupadas anteriormente.</p>
+            <h3>Agrupar linhas e colunas</h3>
+             <p>Para agrupar linhas ou colunas:</p>
+            <ol>
+                <li>Selecione o intervalo de células que você precisa agrupar.</li>
+                 <li>Mude para a guia <b>Dados</b> e use uma das opções necessárias na barra de ferramentas superior:
+                <ul>
+                    <li>clique no botão <div class = "icon icon-groupicon"></div> <b>Grupo</b> e escolha a opção <b>Linhas</b> ou <b>Colunas</b> no janela <b>Grupo</b> que aparece e clique <b>OK</b>,
+                        <p><img alt="Janela de grupo" src="../images/groupewindow.png" /></p>
+                    </li>
+                    <li>clique na seta para baixo abaixo do botão <div class = "icon icon-groupicon"></div> <b>Grupo</b> e escolha a opção <b>Agrupar linhas</b> no menu,</li >
+                     <li>clique na seta para baixo abaixo do botão <div class = "icon icon-groupicon"></div> <b>Grupo</b> e escolha a opção <b>Agrupar colunas</b> no menu.</li>
+                </ul>
+                </li>
+            </ol>            
+            <p>As linhas ou colunas selecionadas serão agrupadas e o contorno criado será exibido à esquerda das linhas ou/e acima das colunas.</p>
+             <p><img alt="Linhas e colunas agrupadas" src="../images/groupedrows.png" /></p>
+             <p>Para ocultar linhas/colunas agrupadas, clique no ícone <span class = "icon icon-collapserowsicon"></span> <b>Recolher</b>. Para mostrar linhas/colunas recolhidas, clique no ícone <span class="icon icon-expandrowsicon"></span> <b>Expandir</b>.</p>
+             <h5>Mude o contorno</h5>
+            <p>Para alterar o contorno de linhas ou colunas agrupadas, você pode usar as opções do menu suspenso <b>Grupo</b>. As opções <b>Linhas de resumo abaixo do detalhe</b> e <b>Colunas de resumo à direita do detalhe</b> são marcadas por padrão. Eles permitem alterar a localização de <b>Recolher</b> <span class="icon icon-collapserowsicon"></span> e <b>Expandir</b> <span class="icon icon-expandrowsicon" ></span> botões:</p>
+            <ul>
+                <li>Desmarque a opção <b>Linhas de resumo abaixo dos detalhes</b> se desejar exibir as linhas de resumo acima dos detalhes.</li>
+                 <li>Desmarque a opção <b>Colunas de resumo à direita dos detalhes</b> se desejar exibir as colunas de resumo à esquerda dos detalhes.</li>
+            </ul>
+            <h5>Crie grupos de vários níveis</h5>
+             <p>Para criar uma estrutura de vários níveis, selecione um intervalo de células dentro do grupo de linhas/colunas criado anteriormente e agrupe o intervalo recém-selecionado conforme descrito acima. Depois disso, você pode ocultar e mostrar grupos por nível usando os ícones com o número do nível: <span class="icon icon-levelnumbericons"></span>.</p>
+             <p>Por exemplo, se você criar um grupo aninhado dentro do grupo pai, três níveis estarão disponíveis. É possível criar até 8 níveis.</p>
+            <p><img alt="Estrutura de vários níveis" src="../images/multilevelstructure.png" /></p>
+            <ul>
+                <li>Clique no ícone <div class = "icon icon-firstlevelicon"></div> do primeiro nível para alternar para o nível que oculta todos os dados agrupados:
+                    <p><img alt="Primeiro nível" src="../images/firstlevel.png" /></p>
+                </li>
+                <li>Clique no ícone <div class = "icon icon-secondlevelicon"></div> do segundo nível para alternar para o nível que exibe detalhes do grupo pai, mas oculta os dados do grupo aninhado:
+                    <p><img alt="Segundo nível" src="../images/secondlevel.png" /></p>
+                </li>
+                <li>Clique no ícone <div class = "icon icon-thirdlevelicon"></div> do terceiro nível para alternar para o nível que exibe todos os detalhes:
+                    <p><img alt="Terceiro nivel" src="../images/thirdlevel.png" /></p>
+                </li>
+            </ul>
+            <p>Também é possível usar <span class="icon icon-collapserowsicon"></span> <b>Recolher</b> e <span class="icon icon-expandrowsicon"></span> <b>Expandir</b> ícones dentro do contorno para exibir ou ocultar os dados correspondentes a um determinado nível.</p>
+             <h3>Desagrupar linhas e colunas agrupadas anteriormente</h3>
+             <p>Para desagrupar linhas ou colunas agrupadas anteriormente:</p>
+            <ol>
+                <li>Selecione o intervalo de células agrupadas que você precisa desagrupar.</li>
+                <li>
+                    Alterne para a guia <b>Dados</b> e use uma das opções necessárias na barra de ferramentas superior:
+                    <ul>
+                        <li>clique no botão <div class = "icon icon-ungroupicon"></div> <b>Desagrupar</b> e escolha a opção <b>Linhas</b> ou <b>Colunas</b> no janela <b>Grupo</b> que aparece e clique em <b>OK</b>,
+                        <p><img alt="Janela de grupo" src="../images/groupewindow.png" /></p>
+                        </li>
+                        <li>clique na seta para baixo abaixo do botão <div class = "icon icon-ungroupicon"></div> <b>Desagrupar</b> e escolha a opção <b>Desagrupar linhas</b> no menu para desagrupar linhas e limpe o contorno das linhas,</li>
+                        <li>clique na seta para baixo abaixo do botão <div class = "icon icon-ungroupicon"></div> <b>Desagrupar</b> e escolha a opção <b>Desagrupar colunas</b> no menu para desagrupar colunas e limpar o contorno das colunas,</li>
+                        <li>clique na seta para baixo abaixo do botão <div class = "icon icon-ungroupicon"></div> <b>Desagrupar</b> e escolha a opção <b>Limpar contorno</b> no menu para limpe o contorno de linhas e colunas sem remover grupos existentes.</li>
+                    </ul>
+                </li>
+            </ol>
+		</div>
+	</body>
+</html>

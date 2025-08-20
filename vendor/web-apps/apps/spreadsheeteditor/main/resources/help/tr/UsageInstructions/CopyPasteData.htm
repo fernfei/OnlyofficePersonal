@@ -1,0 +1,139 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Verileri kesme/kopyalama/yapıştırma</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Cut/copy/paste data using the keyboard shortcuts" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+        <div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+        </div>
+            <h1>Verileri kesme/kopyalama/yapıştırma</h1>
+            <h3>Temel pano işlemlerini kullanın</h3>
+            <p>Mevcut elektronik tablo d&uuml;zenleyicisinde veri kesme, kopyalama ve yapıştırma işlemleri yapmak i&ccedil;in sağ tıklama men&uuml;s&uuml;n&uuml; kullanın veya <a href="https://www.onlyoffice.com/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Elektronik Tablo D&uuml;zenleyicisinin</b></a> &uuml;st ara&ccedil; &ccedil;ubuğunun herhangi bir sekmesinde bulunan ilgili simgeleri kullanın.</p>
+            <ul>
+                <li><b>Kes</b> - Verileri se&ccedil;in ve se&ccedil;ilen verileri silmek ve bilgisayarın pano belleğine g&ouml;ndermek i&ccedil;in sağ tıklama men&uuml;s&uuml;ndeki <b>Kes</b> se&ccedil;eneğini veya &uuml;st ara&ccedil; &ccedil;ubuğundaki <b>Kes</b> <span class="icon icon-cut"></span> simgesini kullanın. <span class="onlineDocumentFeatures">Kesilen veri daha sonra aynı elektronik tabloda başka bir yere eklenebilir.</span></li>
+                <li><b>Kopyala</b> - verileri se&ccedil;in ve se&ccedil;ilen verileri bilgisayarın pano belleğine g&ouml;ndermek i&ccedil;in &uuml;st ara&ccedil; &ccedil;ubuğundaki <b>Kopyala</b> <span class = "icon icon-copy"></span> simgesini veya sağ tıklayıp men&uuml;den <b>Kopyala</b> se&ccedil;eneğini se&ccedil;in. <span class="onlineDocumentFeatures">Kopyalanan veri daha sonra aynı elektronik tabloda başka bir yere eklenebilir.</span></li>
+                <li><b>Yapıştır</b> - Bir yer se&ccedil;in ve bilgisayar pano belleğinden kopyalanan/kesilen verileri ge&ccedil;erli imle&ccedil; konumuna eklemek i&ccedil;in &uuml;st ara&ccedil; &ccedil;ubuğundaki <b>Yapıştır</b> <span class = "icon icon-paste"></span> simgesini veya sağ tıklayııp <b>Yapıştır</b> se&ccedil;eneğini se&ccedil;in. <span class="onlineDocumentFeatures">Veriler daha &ouml;nce aynı elektronik tablodan kopyalanabilir.</span></li>
+            </ul>
+            <p><span class="onlineDocumentFeatures">&Ccedil;evrimi&ccedil;i <em>s&uuml;r&uuml;mde</em>, aşağıdaki tuş kombinasyonları yalnızca başka bir elektronik tablodan/elektronik tabloya veya başka bir programdan/programa veri kopyalamak veya yapıştırmak i&ccedil;in kullanılır,</span> <span class="desktopDocumentFeatures">masa&uuml;st&uuml; <em> s&uuml;r&uuml;mde</em>, herhangi bir kopyalama/yapıştırma işlemi i&ccedil;in ilgili d&uuml;ğmeler/men&uuml; se&ccedil;enekleri ve tuş kombinasyonları kullanılabilir:</span></p>
+            <ul>
+                <li><b>Ctrl+X</b> kesme işlemi tuş kombinasyonu,</li>
+                <li><b>Ctrl+C</b> kopyalama işlemi tuş kombinasyonu,</li>
+                <li><b>Ctrl+V</b> yapıştırmak işlemi tuş kombinasyonu.</li>
+            </ul>
+            <p class="note"><b>Not</b>: Aynı &ccedil;alışma sayfasındaki verileri kesip yapıştırmak yerine, gerekli h&uuml;cre/h&uuml;cre aralığını se&ccedil;ebilir, fare imlecini Ok <span class = "icon icon-arrow"></span> simgesine d&ouml;n&uuml;şmesi i&ccedil;in se&ccedil;im sınırının &uuml;zerine getirebilir ve se&ccedil;imi gerekli konuma s&uuml;r&uuml;kleyip bırakabilirsiniz.</p>
+            <p>Yapıştırdıktan sonra  <b>&Ouml;zel Yapıştır</b> d&uuml;ğmesinin otomatik g&ouml;r&uuml;nmesini etkinleştirmek/devre dışı bırakmak i&ccedil;in <b>Dosya</b> sekmesi &gt; <b>Gelişmiş Ayarlar</b> se&ccedil;eneğine gidin ve <b>İ&ccedil;erik yapıştırıldığında Yapıştırma Se&ccedil;enekleri d&uuml;ğmesini g&ouml;ster</b> onay kutusunu işaretleyin/işaretini kaldırın.</p>
+            <h3>&Ouml;zel Yapıştır &ouml;zelliğini kullanın</h3>
+            <p class="note"><b>Not</b>: İşbirliği d&uuml;zenlemesi i&ccedil;in <b>&Ouml;zel Yapıştır</b> &ouml;zelliği yalnızca <b>Sıkı</b> birlikte d&uuml;zenleme modunda kullanılabilir.</p>
+            <p>Kopyalanan veri yapıştırıldıktan sonra, <b>&Ouml;zel Yapıştır</b> <span class = "icon icon-pastespecialbutton"></span> d&uuml;ğmesi eklenen h&uuml;crenin/h&uuml;cre aralığının yanında g&ouml;r&uuml;n&uuml;r. Gerekli yapıştırma se&ccedil;eneğini se&ccedil;mek i&ccedil;in bu d&uuml;ğmeye tıklayın.</p>
+            <p>Bi&ccedil;imlendirilmiş veri i&ccedil;eren bir h&uuml;cre/h&uuml;cre aralığı yapıştırırken aşağıdaki se&ccedil;enekler kullanılabilir:</p>
+            <ul>
+                <li><em>Yapıştır (Ctrl+P)</em> - Veri bi&ccedil;imlendirme dahil t&uuml;m h&uuml;cre i&ccedil;eriğini yapıştırmanızı sağlar. Bu se&ccedil;enek varsayılan olarak se&ccedil;ilidir.</li>
+                <li>
+                    Kopyalanan veriler form&uuml;ller i&ccedil;eriyorsa aşağıdaki se&ccedil;enekler kullanılabilir:
+                    <ul>
+                        <li><em>Yalnızca form&uuml;l&uuml; yapıştır (Ctrl+F)</em> - Form&uuml;lleri, veri bi&ccedil;imlendirmesini yapıştırmadan yapıştırmanızı sağlar.</li>
+                        <li><em>Form&uuml;l + sayı bi&ccedil;imi (Ctrl+O)</em> - Form&uuml;lleri, sayılara uygulanan bi&ccedil;imlendirme ile yapıştırmanızı sağlar.</li>
+                        <li><em>Form&uuml;l + t&uuml;m bi&ccedil;imlendirme (Ctrl+K)</em> - Form&uuml;lleri, t&uuml;m veri bi&ccedil;imlendirmesiyle yapıştırmanızı sağlar.</li>
+                        <li><em>Kenarlıksız form&uuml;l (Ctrl+B)</em> - Form&uuml;lleri, h&uuml;cre sınırları dışında t&uuml;m veri bi&ccedil;imlendirmesiyle yapıştırmanızı sağlar.</li>
+                        <li><em>Form&uuml;l + s&uuml;tun genişliği (Ctrl+W)</em> - Form&uuml;lleri, t&uuml;m veri bi&ccedil;imlendirmesiyle yapıştırmanızı ve h&uuml;cre aralığı i&ccedil;in kaynak s&uuml;tunun genişliğini ayarlamanızı sağlar.</li>
+                        <li><em>Devrik (Ctrl+T)</em> - verileri s&uuml;tunlardan satırlara veya tersine &ccedil;evirerek yapıştırmanızı sağlar. Bu se&ccedil;enek normal veri aralıkları i&ccedil;in kullanılabilir, ancak bi&ccedil;imlendirilmiş tablolar i&ccedil;in kullanılamaz.</li>
+                    </ul>
+                </li>
+                <li>
+                    Aşağıdaki se&ccedil;enekler, kopyalanan form&uuml;l&uuml;n d&ouml;nd&uuml;rd&uuml;ğ&uuml; sonucu, form&uuml;l&uuml; yapıştırmadan yapıştırmanızı sağlar:
+                    <ul>
+                        <li><em>Yalnızca değeri yapıştır (Ctrl+V)</em> - Form&uuml;l sonu&ccedil;larını, veri bi&ccedil;imlendirmesini yapıştırmadan yapıştırmanızı sağlar.</li>
+                        <li><em>Değer + sayı bi&ccedil;imi (Ctrl+A)</em> - Form&uuml;l sonu&ccedil;larını, sayılara uygulanan bi&ccedil;imlendirme ile yapıştırmanızı sağlar.</li>
+                        <li><em>Değer + t&uuml;m bi&ccedil;imlendirme (Ctrl+E)</em> - Form&uuml;l sonu&ccedil;larını, t&uuml;m veri bi&ccedil;imlendirmesiyle yapıştırmanızı sağlar.</li>
+                    </ul>
+                </li>
+                <li><em>Yalnızca bi&ccedil;imlendirmeyi yapıştır (Ctrl+R)</em> - H&uuml;cre bi&ccedil;imlendirmesini, h&uuml;cre i&ccedil;eriklerini yapıştırmadan yapıştırmanızı sağlar.
+                    <p><img alt="Yapıştırma seçenekleri" src="../images/pastespecial.png" /></p>
+                <ol>
+                    <li>
+                        <b>Yapıştır</b>
+                        <ul>
+                            <li><em>Form&uuml;ller</em> - Form&uuml;lleri, veri bi&ccedil;imlendirmesini yapıştırmadan yapıştırmanızı sağlar.</li>
+                            <li><em>Değerler</em> - Form&uuml;l sonu&ccedil;larını, veri bi&ccedil;imlendirmesini yapıştırmadan yapıştırmanızı sağlar.</li>
+                            <li><em>Bi&ccedil;imlendirmeler</em> - Kopyalanan alanın bi&ccedil;imlendirmesini uygulamanızı sağlar.</li>
+                            <li><em>Yorumlar</em> - Kopyalanan alanın yorumlarını eklemenizi sağlar.</li>
+                            <li><em>S&uuml;tun genişlikleri</em> - Kopyalanan alanın belirli s&uuml;tun genişliklerini ayarlamanızı sağlar.</li>
+                            <li><em>Kenarlıklar hari&ccedil; t&uuml;m&uuml;</em> - Form&uuml;lleri, form&uuml;l sonu&ccedil;larını kenarlıklar hari&ccedil; t&uuml;m bi&ccedil;imlendirmesiyle yapıştırmanızı sağlar.</li>
+                            <li><em>Form&uuml;ller ve bi&ccedil;imlendirme</em> - Kopyalanan alandan form&uuml;lleri yapıştırmanızı ve &uuml;zerlerine bi&ccedil;imlendirme uygulamanızı sağlar.</li>
+                            <li><em>Form&uuml;ller ve s&uuml;tun genişlikleri</em> - Form&uuml;lleri yapıştırmanızı ve kopyalanan alanın belirli s&uuml;tun genişliklerini ayarlamanızı sağlar.</li>
+                            <li><em>Form&uuml;ller ve sayı form&uuml;lleri</em> - Form&uuml;lleri ve sayı form&uuml;llerini yapıştırmanızı sağlar.</li>
+                            <li><em>Değerler ve sayı bi&ccedil;imleri</em> - Form&uuml;lleri yapıştırmanızı ve kopyalanan alanın sayı bi&ccedil;imlendirmesini uygulamanızı sağlar.</li>
+                            <li><em>Değerler ve bi&ccedil;imlendirme</em> - Form&uuml;lleri yapıştırmanızı ve kopyalanan alanın bi&ccedil;imlendirmesini uygulamanızı sağlar.</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>İşlem</b>
+                        <ul>
+                            <li><em>Ekle</em> - Eklenen her h&uuml;creye otomatik olarak sayısal değerler eklemenizi sağlar.</li>
+                            <li><em>&Ccedil;ıkar</em> - Eklenen her h&uuml;credeki sayısal değerleri otomatik olarak &ccedil;ıkarmanızı sağlar.</li>
+                            <li><em>&Ccedil;arp</em> - Eklenen her h&uuml;credeki sayısal değerleri otomatik olarak &ccedil;arpmanızı sağlar.</li>
+                            <li><em>B&ouml;l</em> - Eklenen her h&uuml;credeki sayısal değerleri otomatik olarak b&ouml;lmenizi sağlar.</li>
+                        </ul>
+                    </li>
+                    <li><b>Devrik </b> - Verileri s&uuml;tunlardan satırlara veya satırlardan s&uuml;tunlara &ccedil;evirerek yapıştırmanızı sağlar.</li>
+                    <li><b>Boşlukları atla</b> - Boş h&uuml;creleri yapıştırmayı ve bi&ccedil;imlendirmelerini atlamanızı sağlar.</li>
+                </ol>
+                <p><img alt="Окно Специальная вставка" src="../images/pastespecial_window.png" /></p>
+                </li>
+            </ul>
+            
+            <p>Tek bir h&uuml;creyi veya bazı metinleri otomatik şekiller i&ccedil;ine yapıştırırken aşağıdaki se&ccedil;enekler kullanılabilir:</p>
+            <ul>
+                <li><em>Kaynak bi&ccedil;imlendirmesi (Ctrl+K)</em> - Kopyalanan verilerin kaynak bi&ccedil;imlendirmesini korumayı sağlar.</li>
+                <li><em>Hedef bi&ccedil;imlendirme (Ctrl+M)</em> - Verilerin ekleneceği h&uuml;cre/otomatik şekil i&ccedil;in halihazırda kullanılan bi&ccedil;imlendirmeyi uygulamanızı sağlar.</li>
+            </ul>
+            <h5 id="delimiteddata">Sınırlandırılmış metni yapıştırma</h5>
+            <p>Bir <b>.txt</b> dosyasından kopyalanan sınırlandırılmış metni yapıştırırken aşağıdaki se&ccedil;enekler kullanılabilir:</p>
+            <p class="note">Sınırlandırılmış metin birden &ccedil;ok kayıt i&ccedil;erebilir ve her kayıt tek bir tablo satırına karşılık gelir. Her kayıt, bir sınırlayıcıyla (virg&uuml;l, noktalı virg&uuml;l, iki nokta &uuml;st &uuml;ste, sekme, boşluk veya diğer karakterler gibi) ayrılmış birden &ccedil;ok metin değeri i&ccedil;erebilir. Dosya d&uuml;z metin <b>.txt</b> dosyası olarak kaydedilmelidir.</p>
+            <ul>
+                <li><em>Yalnızca metni koru (Ctrl+T)</em> - Metin değerlerini, her h&uuml;cre i&ccedil;eriğinin kaynak metin dosyasındaki bir satıra karşılık geldiği tek bir s&uuml;tuna yapıştırmanızı sağlar.</li>
+                <li><em>Metin i&ccedil;e aktarma sihirbazını kullan</em> - <b>Metin İ&ccedil;e Aktarma Sihirbazını</b> a&ccedil;manızı sağlar, bu sihirbaz, metin değerlerinin her bir metin değerinin bir sınırlayıcıyla ayrıldığı ayrı bir h&uuml;creye yerleştirileceği birden &ccedil;ok s&uuml;tuna kolayca b&ouml;l&uuml;nmesine yardımcı olur.
+                <p><b>Metin İ&ccedil;e Aktarma Sihirbazı</b> penceresi a&ccedil;ıldığında, ayrılmış verilerde kullanılan metin sınırlayıcıyı <b>Sınırlayıcı</b> a&ccedil;ılır listesinden se&ccedil;in. S&uuml;tunlara b&ouml;l&uuml;nen veriler, aşağıdaki <b>&Ouml;nizleme</b> alanında g&ouml;r&uuml;nt&uuml;lenecektir. Sonu&ccedil;tan memnunsanız, <b>Tamam</b> d&uuml;ğmesine tıklayın.</p>
+                </li>
+            </ul>
+            <p><img alt="Metin İçe Aktarma sihirbazı" src="../images/textimportwizard.png" /></p>
+            <p>D&uuml;z metin dosyası olmayan bir kaynaktan (&ouml;rneğin, bir web sayfasından kopyalanan metin vb.) sınırlandırılmış verileri yapıştırdıysanız veya <em>Yalnızca metni koru</em> &ouml;zelliğini uyguladıysanız ve şimdi verileri tek bir s&uuml;tundan birka&ccedil; s&uuml;tuna b&ouml;lmek istiyorsanız, <b>Metni S&uuml;tunlara D&ouml;n&uuml;şt&uuml;r</b> se&ccedil;eneğini kullanabilirsiniz.</p>
+            <p>Verileri birden &ccedil;ok s&uuml;tuna b&ouml;lmek i&ccedil;in:</p>
+            <ol>
+                <li>Sınırlayıcıların bulunduğu verileri i&ccedil;eren gerekli h&uuml;creyi veya s&uuml;tunu se&ccedil;in.</li>
+                <li><b>Veri</b> sekmesine ge&ccedil;iş yapın.</li>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunda <b>Metni S&uuml;tunlara D&ouml;n&uuml;şt&uuml;r</b> d&uuml;ğmesine tıklayın. <b>Metni S&uuml;tunlara D&ouml;n&uuml;şt&uuml;r Sihirbazı</b> a&ccedil;ılır.</li>
+                <li><b>Sınırlayıcı</b> a&ccedil;ılır listesinde, sınırlandırılmış verilerde kullanılan sınırlayıcıyı se&ccedil;in.</li>
+                <li><b>Ondalık</b> ve <b>Binlik</b> ayırıcılarını belirtebileceğiniz <b>Gelişmiş Ayarlar</b> penceresini a&ccedil;mak i&ccedil;in <b>Gelişmiş</b> d&uuml;ğmesine tıklayın.
+                <p><img alt="Ayırıcı ayarları penceresi" src="../images/separator.png" /></p></li>
+                <li>Sonucu aşağıdaki alanda &ouml;nizleyin ve <b>Tamam</b> d&uuml;ğmesine tıklayın.</li>
+            </ol>
+            <p>Bundan sonra, sınırlayıcıyla ayrılan her metin değeri ayrı bir h&uuml;crede yer alacaktır.</p>
+            <p class="note">B&ouml;lmek istediğiniz s&uuml;tunun sağındaki h&uuml;crelerde bazı veriler varsa, verilerin &uuml;zerine yazılacaktır.</p>
+            <h3>Otomatik Doldurma se&ccedil;eneğini kullanma</h3>
+            <p>Birden &ccedil;ok h&uuml;creyi aynı verilerle hızla doldurmak i&ccedil;in <b>Otomatik Doldur</b> se&ccedil;eneğini kullanın:</p>
+            <ol>
+                <li>Gerekli verileri i&ccedil;eren bir h&uuml;cre/h&uuml;cre aralığı se&ccedil;in,</li>
+                <li>Fare imlecini h&uuml;crenin sağ alt k&ouml;şesindeki doldurma tutamacının &uuml;zerine getirin. İmle&ccedil; siyah &ccedil;arpı işaretine d&ouml;n&uuml;şecektir:
+                <p><div class = "big big-autofill"></div></p>
+                </li>
+                <li>Se&ccedil;ili verilerle doldurmak i&ccedil;in tutamacı bitişik h&uuml;crelerin &uuml;zerine s&uuml;r&uuml;kleyin.</li>
+            </ol>
+            <p class="note"><b>Not</b>: Bir dizi sayı (1, 2, 3, 4...; 2, 4, 6, 8... gibi) veya tarihler oluşturmanız gerekiyorsa, en az iki başlangı&ccedil; değeri girebilir ve hızlı bir şekilde bu h&uuml;creleri se&ccedil;erek ve doldurma tutamacını s&uuml;r&uuml;kleyerek seriyi genişletebilirsiniz.</p>
+            <h3>S&uuml;tundaki h&uuml;creleri metin değerleriyle doldurma</h3>
+            <p>&Ccedil;alışma sayfanızdaki bir s&uuml;tun bazı metin değerleri i&ccedil;eriyorsa, bu s&uuml;tundaki herhangi bir değeri kolayca değiştirebilir veya mevcut metin değerlerinden birini se&ccedil;erek bir sonraki boş h&uuml;creyi doldurabilirsiniz.</p>
+            <p>Gerekli h&uuml;creye sağ tıklayın ve bağlamsal men&uuml; se&ccedil;eneğinde <b>A&ccedil;ılır listeden se&ccedil;</b> se&ccedil;eneğini se&ccedil;in.</p>
+            <p><img alt="Açılır listeden seçme" src="../images/selectfromlist.png" /></p>
+            <p>Mevcut olanı değiştirmek veya boş bir h&uuml;creyi doldurmak i&ccedil;in mevcut metin değerlerinden birini se&ccedil;in.</p>
+            
+        </div>
+	</body>
+</html>

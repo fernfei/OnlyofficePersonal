@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Salvar/imprimir/baixar sua planilha</title>
+		<meta charset="utf-8" />
+		<meta name="descrição" content="Salve, imprima e baixe sua planilha em diversos formatos" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+        <div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+            <h1>Salvar/imprimir/baixar sua planilha</h1>
+            <h3>Salvando</h3>
+            <p class="onlineDocumentFeatures">Por padrão, o on-line <a href="https://www.onlyoffice.com/pt/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>O Editor de Planilhas</b></a> salva automaticamente seu arquivo a cada 2 segundos quando você está trabalhando nele, evitando que seus dados sejam perdidos se o programa fechar inesperadamente. Se você coeditar o arquivo no modo <b>Rápido</b>, o cronômetro solicita atualizações 25 vezes por segundo e salva as alterações, caso tenham sido feitas. Quando o arquivo está sendo coeditado no modo <b>Estrito</b>, as alterações são salvas automaticamente em intervalos de 10 minutos. Se necessário, você pode selecionar facilmente o modo de coedição preferido ou desativar o recurso <b>Salvamento automático</b> em <a href="../HelpfulHints/AdvancedSettings.htm" onclick="onhyperlinkclick(this)" Página >Configurações avançadas</a>.</p>
+             <p>Para salvar sua planilha atual manualmente no formato e local atuais,</p>
+            <ul>
+                <li>clique no ícone <b>Salvar</b> <div class = "icon icon-save"></div> no lado esquerdo do cabeçalho do editor ou</li>
+                 <li>use a combinação de teclas <b>Ctrl+S</b> ou</li>
+                 <li>clique na guia <b>Arquivo</b> da barra de ferramentas superior e selecione a opção <b>Salvar</b>.</li>
+            </ul>
+            <p class="note desktopDocumentFeatures">Na <em>versão para desktop</em>, para evitar a perda de dados se o programa fechar inesperadamente, você pode ativar a opção <b>Recuperação automática</b> no <a href="../HelpfulHints/AdvancedSettings. htm" onclick="onhyperlinkclick(this)">Configurações avançadas</a> página. </p>
+             <div class="desktopDocumentFeatures">
+                 <p>Na <em>versão desktop</em>, você pode salvar a planilha com outro nome, em um novo local ou formato,</p>
+                <ol>
+                    <li>clique na guia <b>Arquivo</b> da barra de ferramentas superior,</li>
+                     <li>selecione a opção <b>Salvar como</b>,</li>
+                     <li>escolha um dos formatos disponíveis dependendo de suas necessidades: XLSX, ODS, CSV, PDF, PDF/A. Você também pode escolher a opção <b>Modelo de planilha</b> (XLTX ou OTS).</li>
+                </ol>
+            </div>
+            <div class="onlineDocumentFeatures">
+                <h3>Baixando</h3>
+                 <p>Na <em>versão online</em>, você pode baixar a planilha resultante para o disco rígido do seu computador,</p>
+                 <ol>
+                     <li>clique na guia <b>Arquivo</b> da barra de ferramentas superior,</li>
+                     <li>selecione a opção <b>Baixar como</b>,</li>
+                    <li>
+                       escolha um dos formatos disponíveis dependendo de suas necessidades: XLSX, PDF, ODS, CSV, XLTX, PDF/A, OTS.
+                         <p class="note"><b>Observação</b>: se você selecionar o formato CSV, todos os recursos (formatação de fonte, fórmulas etc.), exceto o texto simples, não serão preservados no arquivo CSV. Se você continuar salvando, a janela <b>Escolher opções de CSV</b> será aberta. Por padrão, <em>Unicode (UTF-8)</em> é usado como o tipo de <b>Codificação</b>. O <b>Delimitador</b> padrão é <em>vírgula</em> (,), mas as seguintes opções também estão disponíveis: <em>ponto-e-vírgula</em> (;), <em>dois pontos</em > (:), <em>Tab</em>, <em>Espaço</em> e <em>Outro</em> (esta opção permite definir um caractere delimitador personalizado).</p>
+                    </li>
+                </ol>
+                <h3>Salvando uma cópia</h3>
+                 <p>Na <em>versão online</em>, você pode salvar uma cópia do arquivo em seu portal,</p>
+                 <ol>
+                     <li>clique na guia <b>Arquivo</b> da barra de ferramentas superior,</li>
+                     <li>selecione a opção <b>Salvar cópia como</b>,</li>
+                     <li>escolha um dos formatos disponíveis dependendo de suas necessidades: XLSX, PDF, ODS, CSV, XLTX, PDF/A, OTS,</li>
+                     <li>selecione um local do arquivo no portal e pressione <b>Salvar</b>.</li>
+                </ol>
+            </div>
+            <h3 id="print">Imprimindo</h3>
+             <p>Para imprimir a planilha atual,</p>
+             <ul>
+                 <li>clique no ícone <b>Imprimir</b> <div class = "icon icon-print"></div> no lado esquerdo do cabeçalho do editor ou</li>
+                 <li>use a combinação de teclas <b>Ctrl+P</b> ou</li>
+                 <li>clique na guia <b>Arquivo</b> da barra de ferramentas superior e selecione a opção <b>Imprimir</b>.</li>
+            </ul>
+            <div class="note">
+                O navegador Firefox permite imprimir sem primeiro baixar o documento como um arquivo .pdf.
+             </div>
+             <p>A planilha <b>Visualizar</b> e as opções de impressão disponíveis serão abertas.</p>
+             <p class="note">Algumas dessas configurações (página <b>Margens</b>, <b>Orientação</b>, <b>Tamanho</b>, <b>Área de impressão</b> bem como <a href="ScaleToFit.htm" onclick="onhyperlinkclick(this)"><b>Ajustar</b></a>) também estão disponíveis na guia <b>Layout</b> da barra de ferramentas superior.</p>
+             <p><img alt="Janela de configurações de impressão" src="../images/printsettingswindow.png" /></p>
+             <p>Aqui você pode ajustar os seguintes parâmetros:</p>
+            <ul id="printtitles">
+                <li>
+                    <b>Intervalo de impressão</b> - especifique o que imprimir: <b>Folha atual</b>, <b>Todas as folhas</b> ou <b>Seleção</b>,
+                     <p>Se você definiu anteriormente uma área de impressão constante, mas deseja imprimir a folha inteira, marque a caixa <b>Ignorar área de impressão</b>.</p>
+                 </li>
+                 <li><b>Configurações da folha</b> - especifique as configurações de impressão individuais para cada folha separada, se você tiver selecionado a opção <b>Todas as folhas</b> no menu suspenso <b>Intervalo de impressão</b> -lista abaixo,</li>
+                 <li><b>Tamanho da página</b> - selecione um dos tamanhos disponíveis na lista suspensa:
+                     <ul>
+                         <li>US Letter (21,59cm x 27,94cm)</li>
+                         <li>US Legal (21,59cm x 35,56cm)</li>
+                         <li>A4 (21cm x 29,7cm)</li>
+                         <li>A5 (14,81cm x 20,99cm)</li>
+                         <li>B5 (17,6cm x 25,01cm)</li>
+                         <li>Envelope #10 (10,48cm x 24,13cm)</li>
+                         <li>Envelope DL (11,01cm x 22,01cm)</li>
+                         <li>Tabloid (27,94cm x 43,17cm)</li>
+                         <li>AЗ (29,7cm x 42,01cm)</li>
+                         <li>Tabloid Oversize (29,69cm x 45,72cm)</li>
+                         <li>ROC 16K (19,68cm x 27,3cm)</li>
+                         <li>Envelope Choukei 3 (12cm x 23,5cm)</li>
+                         <li>Super B/A3 (30,5cm x 48,7cm)</li>
+                     </ul>
+                </li>
+                 <li><b>Orientação da página</b> - escolha a opção <b>Retrato</b> se desejar imprimir verticalmente na página ou use a opção <b>Paisagem</b> para imprimir horizontalmente,</li>
+                 <li>
+                     <b>Escala</b> - se você não quiser que algumas colunas ou linhas sejam impressas na segunda página, você pode reduzir o conteúdo da folha para caber em uma página selecionando a opção correspondente: <b>Tamanho real</b>, <b>Ajustar planilha em uma página</b>, <b>Ajustar todas as colunas em uma página</b> ou <b>Ajustar todas as linhas em uma página</b>. Deixe a opção <b>Tamanho real</b> para imprimir a planilha sem ajustar.
+                     <p>Se você escolher o item <b>Opções personalizadas</b> no menu, a janela <b>Configurações de escala</b> será aberta:</p>
+                     <p><img alt="Janela de configurações de escala" src="../images/scalesettings.png" /></p>
+                    <ol>
+                        <li><b>Ajustar a</b>: permite que você selecione o número necessário de páginas às quais deseja ajustar a planilha impressa. Selecione o número necessário de páginas nas listas <b>Largura</b> e <b>Altura</b>.</li>
+                         <li><b>Escala para</b>: permite ampliar ou reduzir a escala da planilha para caber nas páginas impressas, especificando manualmente a porcentagem do tamanho normal.</li>
+                     </ol>
+                 </li>
+                 <li><b>Imprimir títulos</b> - se quiser imprimir títulos de linha ou coluna em todas as páginas, use <b>Repetir linhas no topo</b> e/ou <b>Repetir colunas à esquerda</b> para indicar a linha e a coluna com o título a repetir, ou selecione uma das opções disponíveis na lista suspensa: Linhas/colunas congeladas, Primeira linha/coluna ou Não repetir.</li>
+                 <li><b>Margens</b> - especifique a distância entre os dados da planilha e as bordas da página impressa alterando os tamanhos padrão em <b>Top</b>, <b>Bottom</b>, Campos <b>Esquerda</b> e <b>Direita</b>,</li>
+                 <li><b>Linhas de grade e cabeçalhos</b> - especifique os elementos da planilha a serem impressos marcando as caixas correspondentes: <b>Imprimir linhas de grade</b> e <b>Imprimir cabeçalhos de linha e coluna</b>.</li>
+                <li>
+                    <a href="../UsageInstructions/InsertHeadersFooters.htm" onclick="onhyperlinkclick(this)"><b>Configurações de cabeçalho/rodapé</b></a> - permite adicionar algumas informações adicionais a uma planilha impressa, como data e hora, número da página, nome da planilha etc..
+                </li>
+            </ul>
+            <p>Depois de definir as configurações de impressão, clique no botão <b>Imprimir</b> para salvar as alterações e imprimir a planilha ou no botão <b>Salvar</b> para salvar as alterações feitas nas configurações de impressão.</p>
+             <p class="note">Todas as alterações feitas serão perdidas se você não imprimir a planilha ou salvar as alterações.</p>
+             <p>A <b>Visualização</b> da planilha permite que você navegue em uma planilha usando as setas na parte inferior para ver como seus dados serão exibidos em uma planilha quando impressa e corrigir eventuais falhas usando a configuração de impressão acima.</ p>
+             <p><span class="desktopDocumentFeatures">Na <em>versão desktop</em>, o arquivo será impresso diretamente.</span> <span class="onlineDocumentFeatures">Na <em>versão online</em>, um arquivo PDF será gerado com base no documento. Você pode abri-lo e imprimi-lo ou salvá-lo no disco rígido do computador ou em uma mídia removível para imprimi-lo mais tarde. Alguns navegadores (por exemplo, Chrome e Opera) suportam impressão direta.</span></p>
+             <h4 id="printarea">Configurando a área de impressão</h4>
+             <p>Se você deseja imprimir apenas o intervalo de células selecionado em vez de toda a planilha, pode usar a opção <b>Seleção</b> na lista suspensa <b>Imprimir intervalo</b>. Quando a pasta de trabalho é salva, essa configuração não é salva, ela é destinada para uso único.</p>
+             <p>Se um intervalo de células deve ser impresso com frequência, você pode definir uma área de impressão constante na planilha. Quando a pasta de trabalho é salva, a área de impressão também é salva, ela pode ser usada quando você abrir a planilha na próxima vez. Também é possível definir várias áreas de impressão constantes em uma folha, neste caso cada área será impressa em uma página separada.</p>
+             <p>Para definir a área de impressão:</p>
+            <ol>
+                <li>selecione o intervalo de células necessário na planilha. Para selecionar vários intervalos de células, mantenha pressionada a tecla <em>Ctrl</em>,</li>
+                 <li>mude para a guia <b>Layout</b> da barra de ferramentas superior,</li>
+                 <li>clique na seta ao lado do botão <div class = "icon icon-printareabutton"></div> <b>Área de impressão</b> e selecione a opção <b>Definir área de impressão</b>.</li>
+             </ol>
+             <p>A área de impressão criada é salva quando a pasta de trabalho é salva. Quando você abrir o arquivo na próxima vez, a área de impressão especificada será impressa.</p>
+             <p class="note">Ao criar uma área de impressão, um <em>Print_Area</em> <a href="UseNamedRanges.htm" onclick="onhyperlinkclick(this)">intervalo nomeado</a> também é criado automaticamente, que é exibido no <b>Gerenciador de nomes</b>. Para destacar as bordas de todas as áreas de impressão na planilha atual, você pode clicar na seta na caixa de nome localizada à esquerda da barra de fórmulas e selecionar o nome <em>Print_Area</em> na lista de nomes.</p>
+             <p>Para adicionar células à área de impressão:</p>
+            <ol>
+                <li>abra a planilha necessária onde a área de impressão é adicionada,</li>
+                 <li>selecione o intervalo de células necessário na planilha,</li>
+                 <li>mude para a guia <b>Layout</b> da barra de ferramentas superior,</li>
+                 <li>clique na seta ao lado do botão <div class = "icon icon-printareabutton"></div> <b>Área de impressão</b> e selecione a opção <b>Adicionar à área de impressão</b>.</li>
+            </ol>
+            <p><!--Se o intervalo de células selecionado estiver adjacente à área de impressão existente, ele será adicionado a esta área de impressão. Se o intervalo de células selecionado não for adjacente à área de impressão existente,--> Uma nova área de impressão será adicionada. Cada área de impressão será impressa em uma página separada.</p>
+             <p>Para remover a área de impressão:</p>
+            <ol>
+                <li>abra a planilha necessária onde a área de impressão é adicionada,</li>
+                 <li>mude para a guia <b>Layout</b> da barra de ferramentas superior,</li>
+                 <li>clique na seta ao lado do botão <div class = "icon icon-printareabutton"></div> <b>Área de impressão</b> e selecione a opção <b>Limpar área de impressão</b>.</li>
+             </ol>
+             <p>Todas as áreas de impressão existentes nesta folha serão removidas. Em seguida, a folha inteira será impressa.</p>
+        </div>
+	</body>
+</html>

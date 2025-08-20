@@ -1,0 +1,198 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formats des classeurs pris en charge</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="La liste des formats de classeurs pris en charge par l'éditeur de classeurs" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Rechercher" type="text" onkeypress="doSearch(event)">
+        </div>
+		<h1>Formats des classeurs pris en charge</h1>
+			<p>Un <b>classeur</b> c'est une table de données organisées en lignes et en colonnes. Grâce à la capacité de recalculer automatiquement la feuille toute entière après un changement dans une seule cellule, elle est la plus souvent utilisée pour stocker l'information financière. <a href="https://www.onlyoffice.com/fr/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>L'éditeur de classeurs</b></a> vous permet d'ouvrir et de modifier les formats les plus populaires.</p>
+            <p class="note">Lors du téléchargement ou de l'ouverture d'un fichier, celui-ci sera converti au format Office Open XML (XLSX). Cette conversion permet d'accélérer le traitement des fichiers et d'améliorer l'interopérabilité des données.</p>
+            <p>Le tableau ci-dessous présente les formats de fichiers pour l'affichage et/ou pour l'édition.</p>
+            <table>
+                <tr>
+                    <td><b>Formats</b></td>
+                    <td><b>Description</b></td>
+                    <td>Affichage au format natif</td>
+                    <td>Affichage lors de la conversion en OOXML</td>
+                    <td>Édition au format natif</td>
+                    <td>Édition lors de la conversion en OOXML</td>
+                </tr>
+                <tr>
+                    <td>CSV</td>
+                    <td>Valeurs séparées par une virgule<br />Le format de fichier utilisé pour stocker des données tabulaires (des chiffres et du texte) sous forme de texte clair</td>
+                    <td></td>
+                    <td>+</td>
+                    <td></td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>ET</td>
+                    <td>WPS Spreadsheets Workbook <br />Un format de feuille de calcul inclus dans la suite WPS Office qui prend en charge des graphiques et des formules et organise des données par lignes et par colonnes.</td>
+                    <td></td>
+                    <td>+</td>
+                    <td></td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>ETT</td>
+                    <td>WPS Spreadsheets Template <br />Un format de feuille de calcul inclus dans la suite WPS Office. Les fichiers ETT sont similaires aux fichiers ET qu'on utilise pour organiser des données par lignes et par colonnes, créer des graphiques mais premièrement pour doubler les classeurs ayant la même disposition et les informations.</td>
+                    <td></td>
+                    <td>+</td>
+                    <td></td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>FODS</td>
+                    <td>OpenDocument Flat XML Spreadsheet <br />Format de fichier basé sur XML pour sauvegarder et échanger des feuilles de calcul.</td>
+                    <td></td>
+                    <td>+</td>
+                    <td></td>
+                    <td>+</td>
+                </tr>
+
+                <tr>
+                    <td>ODS</td>
+                    <td>L'extension de fichier pour un classeur utilisé par les suites OpenOffice et StarOffice, un standard ouvert pour les feuilles de calcul.</td>
+                    <td></td>
+                    <td>+</td>
+                    <td></td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>OTS</td>
+                    <td>Modèle de feuille de calcul OpenDocument<br />Format de fichier OpenDocument pour les modèles de feuilles de calcul. Un modèle OTS contient des paramètres de mise en forme, des styles, etc. et peut être utilisé pour créer plusieurs feuilles de calcul avec la même mise en forme</td>
+                    <td></td>
+                    <td>+</td>
+                    <td></td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>SXC</td>
+                    <td>Sun XML Calc<br />Un format de classeur basé sur XML qui fait partie de la suite bureautique OpenOffice et prend en charge des formules, des fonctions, des macros.</td>
+                    <td></td>
+                    <td>+</td>
+                    <td></td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>XLS</td>
+                    <td>L'extension de fichier pour un classeur créé par Microsoft Excel</td>
+                    <td></td>
+                    <td>+</td>
+                    <td></td>
+                    <td>+</td>
+                </tr>
+                <!--<tr>
+        <td>XLSB</td>
+        <td>Excel Binary Spreadsheet<br />File extension for spreadsheet files which store information in binary format instead of XML.</td>
+        <td></td>
+        <td>+</td>
+        <td></td>
+        <td>+</td>
+    </tr>-->
+                <tr>
+                    <td>XLSX</td>
+                    <td>L'extension de fichier par défaut pour un classeur créé par Microsoft Office Excel 2007 (ou la version ultérieure).</td>
+                    <td>+</td>
+                    <td></td>
+                    <td>+</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>XLTM</td>
+                    <td>Un fichier XLTM est une modèle de classeur prenant en charge les macros par Microsoft Excel.</td>
+                    <td>+</td>
+                    <td></td>
+                    <td>+</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>XLTX</td>
+                    <td>Modèle de feuille de calcul Excel Open XML<br />Format de fichier zippé, basé sur XML, développé par Microsoft pour les modèles de feuilles de calcul. U Un modèle XLTX contient des paramètres de mise en forme, des styles, etc. et peut être utilisé pour créer plusieurs classeurs avec la même mise en forme.</td>
+                    <td></td>
+                    <td>+</td>
+                    <td></td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>XML</td>
+                    <td> Extensible Markup Language (XML)<br />Un format de fichier pour structurer, sauvegarder et transmettre des données.</td>
+                    <td></td>
+                    <td>+</td>
+                    <td></td>
+                    <td>+</td>
+                </tr>
+            </table>
+            <p>Le tableau ci-dessous présente les formats pris en charge pour le téléchargement d'un classeur dans le menu <b>Fichier</b> -> <b>Télécharger comme</b>.</p>
+            <table>
+                <tr>
+                    <td><b>Format en entrée</b></td>
+                    <td><b>Téléchargeable comme</b></td>
+                </tr>
+                <tr>
+                    <td>CSV</td>
+                    <td>JPG, ODS, OTS, PDF, PDF/A, PNG, XLSM, XLSX, XLTM, XLTX</td>
+                </tr>
+                <tr>
+                    <td>ET</td>
+                    <td>CSV, JPG, ODS, OTS, PDF, PDF/A, PNG, XLSM, XLSX, XLTM, XLTX</td>
+                </tr>
+                <tr>
+                    <td>ETT</td>
+                    <td>CSV, JPG, ODS, OTS, PDF, PDF/A, PNG, XLSM, XLSX, XLTM, XLTX</td>
+                </tr>
+                <tr>
+                    <td>FODS</td>
+                    <td>CSV, JPG, ODS, OTS, PDF, PDF/A, PNG, XLSM, XLSX, XLTM, XLTX</td>
+                </tr>
+                <tr>
+                    <td>ODS</td>
+                    <td>CSV, JPG, ODS, OTS, PDF, PDF/A, PNG, XLSM, XLSX, XLTM, XLTX</td>
+                </tr>
+                <tr>
+                    <td>SXC</td>
+                    <td>CSV, JPG, ODS, OTS, PDF, PDF/A, PNG, XLSM, XLSX, XLTM, XLTX</td>
+                </tr>
+                <tr>
+                    <td>OTS</td>
+                    <td>CSV, JPG, ODS, PDF, PDF/A, PNG, XLSM, XLSX, XLTM, XLTX</td>
+                </tr>
+                <tr>
+                    <td>XLS</td>
+                    <td>CSV, JPG, ODS, OTS, PDF, PDF/A, PNG, XLSM, XLSX, XLTM, XLTX</td>
+                </tr>
+                <!--<tr>
+        <td>XLSB</td>
+        <td>CSV, JPG, ODS, OTS, PDF, PDF/A, PNG, XLSX, XLTX</td>
+    </tr>-->
+                <tr>
+                    <td>XLSM</td>
+                    <td>CSV, JPG, ODS, OTS, PDF, PDF/A, PNG, XLSX, XLTM, XLTX</td>
+                </tr>
+                <tr>
+                    <td>XLSX</td>
+                    <td>CSV, JPG, ODS, OTS, PDF, PDF/A, PNG, XLSM, XLTM, XLTX</td>
+                </tr>
+                <tr>
+                    <td>XLTM</td>
+                    <td>CSV, JPG, ODS, OTS, PDF, PDF/A, PNG, XLSM, XLSX, XLTX</td>
+                </tr>
+                <tr>
+                    <td>XML</td>
+                    <td>CSV, JPG, ODS, OTS, PDF, PDF/A, PNG, XLSM, XLSX, XLTM, XLTX</td>
+                </tr>
+            </table>
+            <p>Veuillez consulter la matrice de conversion sur <a href="https://api.onlyoffice.com/docs/docs-api/additional-api/conversion-api/conversion-tables/#spreadsheet-file-formats" target="_blank" onclick="onhyperlinkclick(this)"><b>api.onlyoffice.com</b></a> pour vérifier s'il est possible de convertir vos classeurs dans des formats les plus populaires.</p>
+		</div>
+	</body>
+</html>

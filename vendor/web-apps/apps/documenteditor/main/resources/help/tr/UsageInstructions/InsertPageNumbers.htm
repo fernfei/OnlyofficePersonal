@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sayfa numarası ekle</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Insert page numbers to navigate through your document easier" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Sayfa numarası ekle</h1>
+			<p><a href="https://www.onlyoffice.com/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Belge D&uuml;zenleyicide</b></a> sayfa numaraları eklemek i&ccedil;in,</p>
+			<ol>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Ekle</b> sekmesine ge&ccedil;iş yapın,</li>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunda <b>&Uuml;st Bilgi/Alt Bilgi</b> <div class = "icon icon-headerfooter"></div> simgesine tıklayın,</li>
+				<li><b>Sayfa Numarası Girin</b> alt men&uuml;s&uuml;n&uuml; se&ccedil;in,</li>
+				<li>Aşağıdaki se&ccedil;eneklerden birini se&ccedil;in:
+                    <ul>
+						<li>Belgenizin her sayfasına bir sayfa numarası eklemek i&ccedil;in sayfadaki sayfa numarası konumunu se&ccedil;in.</li>
+						<li>Ge&ccedil;erli imle&ccedil; konumuna bir sayfa numarası eklemek i&ccedil;in, <b>Ge&ccedil;erli Konuma</b> se&ccedil;eneğini se&ccedil;in.
+                            <p class="note">
+                                <b>Not</b>: Ge&ccedil;erli imle&ccedil; konumuna ge&ccedil;erli bir sayfa numarası eklemek i&ccedil;in ayrıca <em>Ctrl+Shift+P</em> tuş kombinasyonunu da kullanabilirsiniz.
+                            </p>
+                        </li>
+					</ul>
+				</li>
+			</ol>
+			<p>veya</p>
+			<ol>
+				<li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Ekle</b> sekmesine ge&ccedil;iş yapın,</li>
+				<li>&Uuml;st ara&ccedil; &ccedil;ubuğunda <b>&Uuml;st Bilgi/Alt Bilgi</b> <div class="icon icon-headerfooter"></div> simgesine tıklayın,</li>
+				<li>Men&uuml;deki <b>Sayfa numarası ekle</b> se&ccedil;eneğine tıklayın ve sayfa numarasının konumunu se&ccedil;in.</li>
+			</ol>
+            <p>Belgenize toplam sayfa sayısını eklemek i&ccedil;in (&ouml;rneğin <em>Sayfa X/Y</em> girişi oluşturmak istiyorsanız):</p>
+            <ol>
+                <li>İmleci toplam sayfa sayısını eklemek istediğiniz yere getirin,</li>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunda <b>&Uuml;st Bilgi/Alt Bilgi</b> <div class = "icon icon-headerfooter"></div> simgesine tıklayın,</li>
+                <li><b>Sayfa sayısını girin</b> se&ccedil;eneğini se&ccedil;in.</li>
+            </ol>
+			<hr />
+			<p>Sayfa numarası ayarlarını d&uuml;zenlemek i&ccedil;in,</p>
+			<ol>
+				<li>Eklenen sayfa numarasına &ccedil;ift tıklayın,</li>
+				<li>Sağ kenar &ccedil;ubuğunda ge&ccedil;erli parametreleri değiştirin:
+                <p><img alt="Sağ Kenar Çubuğu - Üst Bilgi ve Alt Bilgi Ayarları" src="../images/right_headerfooter.png" /></p>
+				<ul>
+				<li>Sayfadaki sayfa numaralarının <b>Konumunu</b> sayfanın &uuml;st&uuml;ne ve altına g&ouml;re ayarlayın.</li>
+				<li>İlk sayfaya farklı bir sayfa numarası uygulamak i&ccedil;in veya herhangi bir sayfa numarası eklemek istemiyorsanız <b>Farklı ilk sayfa</b> kutusunu se&ccedil;in.</li>
+				<li>Tek ve &ccedil;ift sayfalar i&ccedil;in farklı sayfa numaraları eklemek i&ccedil;in <b>Farklı tek ve &ccedil;ift sayfalar</b> kutusunu kullanın.</li>
+				<li><b>&Ouml;ncekine Bağla</b> se&ccedil;eneği, belgenize daha &ouml;nce <a href="../UsageInstructions/SectionBreaks.htm" onclick="onhyperlinkclick(this)">b&ouml;l&uuml;mler</a> eklemiş olmanız durumunda kullanılabilir.
+                    Yoksa gri olacaktır. Ayrıca, bu se&ccedil;enek ilk b&ouml;l&uuml;m i&ccedil;in (yani, ilk b&ouml;l&uuml;me ait bir &uuml;st bilgi veya alt bilgi se&ccedil;ildiğinde) de kullanılamaz.
+                    T&uuml;m b&ouml;l&uuml;mlere birleştirilmiş numaralandırma uygulanması i&ccedil;in bu kutu varsayılan olarak işaretlidir. Bir &uuml;st bilgi veya alt bilgi alanı se&ccedil;erseniz, alanın <b>&Ouml;nceki ile Aynı</b> etiketiyle işaretlendiğini g&ouml;receksiniz.
+                    Belgenin her b&ouml;l&uuml;m&uuml; i&ccedil;in farklı sayfa numaralandırması kullanmak i&ccedil;in <b>&Ouml;ncekine Bağla</b> kutusunun işaretini kaldırın. <b>&Ouml;nceki ile Aynı</b> etiketi artık g&ouml;r&uuml;nt&uuml;lenmeyecektir.
+                    <p><img alt="Önceki ile aynı etiketi" src="../images/sameasprevious_label.png" /></p></li>
+				<li><b>Sayfa Numaralandırma</b> b&ouml;l&uuml;m&uuml;, belgenin farklı <a href="../UsageInstructions/SectionBreaks.htm" onclick="onhyperlinkclick(this)">b&ouml;l&uuml;mlerinde</a> sayfa numaralandırma se&ccedil;eneklerinin ayarlanmasını sağlar.
+                    <b>&Ouml;nceki b&ouml;l&uuml;mden devam et</b> se&ccedil;eneği varsayılan olarak se&ccedil;ilidir ve bir b&ouml;l&uuml;m sonundan sonra s&uuml;rekli sayfa numaralandırmayı s&uuml;rd&uuml;rmeyi m&uuml;mk&uuml;n kılar.
+                    Sayfa numaralandırmaya belgenin ge&ccedil;erli b&ouml;l&uuml;m&uuml;nde belirli bir numarayla başlamak istiyorsanız, <b>Numaralandırma başlangıcı</b> se&ccedil;enek d&uuml;ğmesini se&ccedil;in ve sağdaki alana gerekli başlangı&ccedil; değerini girin.
+                    </li>
+				</ul>
+				</li>
+			</ol>
+			<p>Belge d&uuml;zenlemeye d&ouml;nmek i&ccedil;in &ccedil;alışma alanı i&ccedil;ine &ccedil;ift tıklayın.</p>
+		</div>
+	</body>
+</html>

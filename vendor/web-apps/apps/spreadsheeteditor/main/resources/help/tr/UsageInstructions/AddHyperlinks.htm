@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>K&ouml;pr&uuml; ekleme</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Add hyperlinks to a word or text fragment leading to an external website or another worksheet" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>K&ouml;pr&uuml; ekleme</h1>
+			<p><a href="https://www.onlyoffice.com/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Elektronik Tablo D&uuml;zenleyicisinde</b></a> bir k&ouml;pr&uuml; eklemek i&ccedil;in</p>
+			<ol>
+				<li>K&ouml;pr&uuml;n&uuml;n eklenmesi gereken yerde bir h&uuml;cre se&ccedil;in,</li>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Ekle</b> sekmesine ge&ccedil;iş yapın,</li>
+				<li>&Uuml;st ara&ccedil; &ccedil;ubuğunda <div class = "icon icon-addhyperlink"></div> <b>K&ouml;pr&uuml;</b> simgesine tıklayın,</li>
+				<li><b>K&ouml;pr&uuml; Ayarları</b> penceresi g&ouml;r&uuml;necek olup buradan k&ouml;pr&uuml; parametrelerini belirtebilirsiniz:
+                <ul>
+					<li>Gerekli bağlantı t&uuml;r&uuml;n&uuml; se&ccedil;in:
+                        <p><b>Dış Bağlantı</b> se&ccedil;eneğini kullanın ve <b>harici</b> bir web sitesine y&ouml;nlendiren bir k&ouml;pr&uuml; eklemeniz gerekiyorsa aşağıdaki <b>Bağla</b> alanına <em>http://www.example.com</em> bi&ccedil;iminde bir URL girin. <b>Yerel</b> bir dosyaya k&ouml;pr&uuml; eklemeniz gerekirse, URL&apos;yi <b>Bağla</b> alanına  <em>file://path/Spreadsheet.xlsx</em> (Windows i&ccedil;in) veya <em>file:///path/Spreadsheet.xlsx</em> (MacOS ve Linux i&ccedil;in) bi&ccedil;iminde girin.</p>
+						<p class="note"><em>file://path/Spreadsheet.xlsx</em> veya <em>file:///path/Spreadsheet.xlsx</em> k&ouml;pr&uuml; t&uuml;r&uuml; yalnızca d&uuml;zenleyicinin masa&uuml;st&uuml; s&uuml;r&uuml;m&uuml;nde a&ccedil;ılabilir. Web d&uuml;zenleyicide, bağlantıyı yalnızca ekleyebilirsiniz, ancak a&ccedil;amazsınız.</p>
+                        <p><img alt="Köprü Ayarları penceresi" src="../../../../../../common/main/resources/help/tr/images/hyperlinkwindow.png" /></p>
+						<p><b>Dahili Veri Aralığı</b> se&ccedil;eneğini kullanın, aşağıdaki alanlarda bir &ccedil;alışma sayfası ve bir h&uuml;cre aralığı veya aynı elektronik tabloda belirli bir h&uuml;cre aralığına g&ouml;t&uuml;ren bir k&ouml;pr&uuml; eklemeniz gerekiyorsa, &ouml;nceden eklenmiş bir <a href="UseNamedRanges.htm" onclick="onhyperlinkclick(this)">Adlandırılmış aralık</a> se&ccedil;in.</p>
+						<p>Ayrıca, <b>Bağlantıyı Al</b> d&uuml;ğmesine tıklayarak veya gerekli h&uuml;cre aralığının bağlamsal sağ tıklama men&uuml;s&uuml;ndeki <b>Bu aralığın bağlantısını al</b> se&ccedil;eneğini kullanarak belirli bir h&uuml;creye veya bir h&uuml;cre aralığına y&ouml;nlendirecek harici bir bağlantı da oluşturabilirsiniz.</p>
+                        <p><img alt="Köprü Ayarları penceresi" src="../images/internallink.png" /></p>
+					</li>
+					<li><b>G&ouml;r&uuml;nt&uuml;le</b> - Tıklanabilir olacak ve &uuml;st alanda belirtilen adrese y&ouml;nlendirecek bir metin girin.
+                    <p class="note"><b>Not</b>: Se&ccedil;ili h&uuml;cre zaten veri i&ccedil;eriyorsa, bu alanda otomatik olarak g&ouml;r&uuml;nt&uuml;lenir.</p>
+					</li>
+					<li><b>Ekran İpucu Metni</b> - K&uuml;&ccedil;&uuml;k bir a&ccedil;ılır pencerede g&ouml;r&uuml;necek ve k&ouml;pr&uuml;ye bağlı kısa bir not veya etiket i&ccedil;eren bir metin girin.</li>
+				</ul>
+				</li>
+				<li><b>Tamam</b> d&uuml;ğmesine tıklayın.</li>
+			</ol>
+            <p>K&ouml;pr&uuml; eklemek i&ccedil;in ayrıca <b>Ctrl+K</b> tuş kombinasyonunu da kullanabilir veya k&ouml;pr&uuml;n&uuml;n eklenmesi gereken yere sağ tıklayıp sağ tıklama men&uuml;s&uuml;ndeki <b>K&ouml;pr&uuml;</b> se&ccedil;eneğini se&ccedil;ebilirsiniz.</p>
+			<p>İmleci eklenen k&ouml;pr&uuml;n&uuml;n &uuml;zerine getirdiğinizde, Ekran İpucu g&ouml;r&uuml;necektir. Bağlantıyı takip etmek i&ccedil;in elektronik tablodaki bağlantıya tıklayın. Bağlantıyı a&ccedil;madan bağlantı i&ccedil;eren bir h&uuml;creyi se&ccedil;mek i&ccedil;in fare d&uuml;ğmesine tıklayın ve basılı tutun.</p>
+			<p>Eklenen k&ouml;pr&uuml;y&uuml; silmek i&ccedil;in eklenen k&ouml;pr&uuml;y&uuml; i&ccedil;eren h&uuml;creyi etkinleştirin ve <b>Delete</b> tuşuna basın veya h&uuml;creye sağ tıklayın ve a&ccedil;ılır listeden <b>T&uuml;m&uuml;n&uuml; Sil</b> se&ccedil;eneğini se&ccedil;in.</p>
+		</div>
+	</body>
+</html>

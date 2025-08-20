@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>IFERROR Function</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="The IFERROR function is used to check for an error in the formula in the first argument. Learn how to use the IFERROR function in Excel sheets with ONLYOFFICE." />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>IFERROR Function</h1>
+			<p>The <b>IFERROR</b> function is one of the <a href="../UsageInstructions/InsertFunction.htm#logical" onclick="onhyperlinkclick(this)">logical functions</a>. It is used to check if there is an error in the formula in the first argument. The function returns the result of the formula if there is no error, or the value_if_error if there is one.</p>
+			<h3>Syntax</h3> 
+			<p><b><em>IFERROR(value, value_if_error)</em></b></p> 
+			<p>The <b>IFERROR</b> function has the following arguments:</p>
+			<table style="width: 40%">
+                <tr>
+                    <th style="background-color: #f4f4f4" width="150ch"><b>Argument</b></th>
+                    <th style="background-color: #f4f4f4"><b>Description</b></th>
+                </tr>
+                <tr>
+                    <td><b><em>value</em></b></td>
+                    <td>The value that is checked for an error.</td>
+                </tr>
+				<tr>
+                    <td><b><em>value_if_error</em></b></td>
+                    <td>The value to be returned if the formula evaluates to an error. The following errors are evaluated: #N/A, #VALUE!, #REF!, #DIV/0!, #NUM!, #NAME?, #NULL!.</td>
+                </tr>
+            </table>
+			
+			<h3>Notes</h3>
+			<p><a href="../UsageInstructions/InsertFunction.htm#applyfunction" onclick="onhyperlinkclick(this)">How to apply</a> the <b>IFERROR</b> function.</p>
+			
+			<h3>Examples</h3>
+            <p>You have a list of available item stock and its overall value. To learn unit price, we will use the <b>IFERROR</b> function to see if there are any errors. The arguments are as follows: <em>value</em> = <b>B2/A2</b>, <em>value_if_error</em> = <b>"Out of stock"</b>. The formula in the first argument does not contain any errors for cells C2:C9 and C11:C14 so the function returns the result of the calculation. However, it is the opposite for C10 and C11 since the formula tries to divide by zero, hence, we get <em>"Out of stock"</em> as a result.</p>
+			<p><img class="gif" alt="IFERROR Function: if error" src="../images/iferror_function.gif" /></p>
+		</div>
+	</body>
+</html>

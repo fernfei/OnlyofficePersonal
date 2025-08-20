@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Classificar e filtrar dados</title>
+		<meta charset="utf-8" />
+		<meta name="descrição" content="Classifique seus dados em ordem crescente ou decrescente em uma planilha e use filtros" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Classificar e filtrar dados</h1>
+            <h3>Classificar dados</h3>
+            <p>Você pode classificar rapidamente os dados no <a href="https://www.onlyoffice.com/pt/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Planilhas</b></a> usando uma das seguintes opções:</p>
+			<ul>
+			<li><b>Crescente</b> é usado para classificar os dados em ordem crescente - de A a Z em ordem alfabética ou do menor ao maior número para dados numéricos.</li>
+            <li><b>Decrescente</b> é usado para classificar os dados em ordem decrescente - de Z a A em ordem alfabética ou do maior para o menor para dados numéricos.</li>
+            </ul>
+                        <p class="note"><b>Observação</b>: as opções <b>Classificar</b> podem ser acessadas nas guias <b>Página inicial</b> e <b>Dados</b>.</p>
+            <p>Para classificar os dados,</p>
+			<ol>
+				<li>selecione um intervalo de células que deseja classificar (você pode selecionar uma única célula em um intervalo para classificar todo o intervalo),
+                 </li>
+                <li>clique no ícone <b>Ordenar em ordem crescente</b> <div class = "icon icon-sortatoz"></div> situado em <b>Início</b> ou <b>Dados</b> guia da barra de ferramentas superior para classificar os dados em ordem crescente,
+                <br />OU<br />
+                clique no ícone <b>Classificar decrescente</b> <div class = "icon icon-sortztoa"></div> situado na guia <b>Início</b> ou <b>Dados</b> do barra de ferramentas superior para classificar os dados em ordem decrescente.
+				</li>
+			</ol>
+            <p class="note"><b>Observação</b>: se você selecionar uma única coluna/linha dentro de um intervalo de células ou parte da coluna/linha, será perguntado se deseja expandir a seleção para incluir células adjacentes ou classificar apenas os dados selecionados.</p>
+            <p>Você também pode classificar seus dados usando as opções do <b>menu contextual</b>. Clique com o botão direito do mouse no intervalo de células selecionado, selecione a opção <b>Classificar</b> no menu e selecione a opção <b>Ascendente</b> ou <b>Decrescente</b> no submenu.</p>
+             <p>Também é possível classificar os dados por cor usando o menu contextual:</p>
+            <ol>
+                <li>clique com o botão direito do mouse em uma célula que contém a cor pela qual deseja classificar os dados,</li>
+                 <li>selecione a opção <b>Classificar</b> no menu,</li>
+                 <li>
+                     selecione a opção necessária no submenu:
+                     <ul>
+                         <li><b>Cor da célula selecionada na parte superior</b> - para exibir as entradas com a mesma cor de fundo da célula na parte superior da coluna,</li>
+                         <li><b>Cor de fonte selecionada no topo</b> - para exibir as entradas com a mesma cor de fonte no topo da coluna.</li>
+                    </ul>
+                </li>
+            </ol>            
+                        
+			<h3 id="filter">Filtrar Dados</h3>
+            <p>Para exibir apenas as linhas que atendem a determinados critérios e ocultar outras, use a opção <b>Filtro</b>.</p>
+             <p class="note"><b>Observação</b>: as opções <b>Filtro</b> podem ser acessadas nas guias <b>Página inicial</b> e <b>Dados</b>.</p>
+             <b>Para ativar um filtro,</b>
+             <ol>
+                 <li>Selecione um intervalo de células contendo dados para filtrar (você pode selecionar uma única célula em um intervalo para filtrar todo o intervalo),</li>
+                 <li>
+                     Clique no ícone <b>Filtro</b> <div class = "icon icon-sortandfilter"></div> situado na guia <b>Página inicial</b> ou <b>Dados</b> da parte superior barra de ferramentas.
+                     <p>A seta suspensa <span class = "icon icon-dropdownarrow"></span> aparecerá na primeira célula de cada coluna do intervalo de células selecionado. Significa que o filtro está ativado.</p>
+                </li>
+            </ol>
+            <p><b>Para aplicar um filtro,</b></p>
+             <ol>
+                 <li>Clique na seta suspensa <div class = "icon icon-dropdownarrow"></div>. A lista de opções <b>Filtro</b> será aberta:
+                 <p><img alt="Filter window" src="../images/filterwindow.png" /></p>
+                 <p class="note"><b>Observação</b>: você pode ajustar o tamanho da janela do filtro arrastando sua borda direita para a direita ou para a esquerda para exibir os dados da maneira mais conveniente possível.</p>
+                 </li>
+                 <li>
+                 <p>Ajuste os parâmetros do filtro. Você pode proceder de uma das seguintes maneiras: selecionar os dados a serem exibidos, filtrar os dados por determinados critérios ou filtrar os dados por cor.</p>
+                    <ul>
+                        <li>
+                            <b>Selecione os dados a serem exibidos</b>
+                             <p>Desmarque as caixas próximas aos dados que você precisa ocultar. Para sua conveniência, todos os dados na lista de opções <b>Filtro</b> são classificados em ordem crescente.</p>
+                             <p>O número de valores exclusivos no intervalo filtrado é exibido à direita de cada valor na janela de filtro.</p>
+                             <p class="note"><b>Observação</b>: a caixa de seleção <b>{Em branco}</b> corresponde às células vazias. Está disponível se o intervalo de células selecionado contiver pelo menos uma célula vazia.</p>
+                             <p>Para facilitar o processo, utilize o campo de busca na parte superior. Digite sua consulta, total ou parcialmente, no campo <!--e pressione a tecla Enter--> - os valores que incluem esses caracteres serão exibidos na lista abaixo. As duas opções a seguir também estarão disponíveis:</p>
+                             <ul>
+                                 <li><b>Selecionar todos os resultados da pesquisa</b> - está marcado por padrão. Permite selecionar todos os valores que correspondem à sua consulta na lista.</li>
+                                 <li><b>Adicionar seleção atual ao filtro</b> - se você marcar esta caixa, os valores selecionados não serão ocultados quando você aplicar o filtro.</li>
+                             </ul>
+                             <p>Depois de selecionar todos os dados necessários, clique no botão <b>OK</b> na lista de opções <b>Filtro</b> para aplicar o filtro.</p>
+                        </li>
+                        <li>
+                            <b>Filtrar dados por determinados critérios</b>
+                             <p>Dependendo dos dados na coluna selecionada, você pode escolher a opção <b>Filtro de número</b> ou a opção <b>Filtro de texto</b> no lado direito do <b>Filtro</b> lista de opções e, em seguida, selecione uma das opções do submenu:</p>
+                            <ul>
+                                <li>Para o <b>Filtro de número</b> estão disponíveis as seguintes opções: <em>Igual a...</em>, <em>Não é igual a...</em>, <em>Maior que.. .</em>, <em>Maior ou igual a...</em>, <em>Menor que...</em>, <em>Menor que ou igual a...</em> , <em>Entre</em>, <em>Top 10</em>, <em>Acima da média</em>, <em>Abaixo da média</em>, <em>Filtro personalizado...</em>.</li>
+                                 <li>Para o <b>Filtro de texto</b> estão disponíveis as seguintes opções: <em>Igual a...</em>, <em>Não é igual a...</em>, <em>Inicia com...</em>, <em>Não começa com...</em>, <em>Termina com...</em>, <em>Não termina com...</em >, <em>Contém...</em>, <em>Não contém...</em>, <em>Filtro personalizado...</em>.</li>
+                            </ul>
+                            <p>Depois de selecionar uma das opções acima (além de <em>Top 10</em> e <em>Acima/Abaixo da média</em>), a janela <b>Filtro personalizado</b> será aberta. O critério correspondente será selecionado na lista suspensa superior. Digite o valor necessário no campo à direita.</p>
+                             <p>Para adicionar mais um critério, use o botão de opção <b>E</b> se precisar que os dados satisfaçam ambos os critérios ou clique no botão de opção <b>Ou</b> se um ou ambos os critérios puderem ser satisfeitos. Em seguida, selecione o segundo critério na lista suspensa inferior e insira o valor necessário à direita.</p>
+                             <p>Clique em <b>OK</b> para aplicar o filtro.</p>
+                            <p><img alt="Janela de filtro personalizado" src="../images/customfilterwindow.png" /></p>
+                            <p>Se você escolher a opção <em>Filtro Personalizado...</em> na lista de opções <b>Filtro de Número/Texto</b>, o primeiro critério não é selecionado automaticamente, você mesmo pode defini-lo.</p >
+                             <p>Se você escolher a opção <em>Top 10</em> na lista de opções <b>Filtro de número</b>, uma nova janela será aberta:</p>
+                             <p><img alt="As 10 principais janelas do AutoFiltro" src="../images/topten.png" /></p>
+                            <p>A primeira lista suspensa permite escolher se você deseja exibir os valores mais altos (<b>Top</b>) ou mais baixos (<b>Bottom</b>). O segundo campo permite especificar quantas entradas da lista ou qual porcentagem do número geral de entradas você deseja exibir (você pode inserir um número de 1 a 500). A terceira lista suspensa permite definir as unidades de medida: <b>Item</b> ou <b>Porcentagem</b>. Depois de definir os parâmetros necessários, clique em <b>OK</b> para aplicar o filtro.</p>
+                             <p>Se você escolher a opção <em>Acima/Abaixo da média</em> na lista de opções <b>Filtro de número</b>, o filtro será aplicado imediatamente.</p>
+                        </li>
+                        <li>
+                            <b>Filtrar dados por cor</b>
+                             <p>Se o intervalo de células que você deseja filtrar contiver algumas células que você formatou alterando o plano de fundo ou a cor da fonte (manualmente ou usando estilos predefinidos), você pode usar uma das seguintes opções:</p>
+                             <ul>
+                                 <li><b>Filtrar pela cor das células</b> - para exibir apenas as entradas com uma determinada cor de fundo da célula e ocultar outras,</li>
+                                 <li><b>Filtrar por cor de fonte</b> - para exibir apenas as entradas com uma determinada cor de fonte de célula e ocultar outras.</li>
+                             </ul>
+                             <p>Ao selecionar a opção necessária, uma paleta que contém as cores usadas no intervalo de células selecionado será aberta. Escolha uma das cores para aplicar o filtro.</p>
+                             <p><img alt="Filtrar dados por cor" src="../images/filterbycolor.png" /></p>
+                        </li>
+                    </ul>
+                    <p>O botão <b>Filtro</b> <span class = "icon icon-filterbutton"></span> aparecerá na primeira célula da coluna. Isso significa que o filtro é aplicado. O número de registros filtrados será exibido na barra de status (por exemplo, <em>25 de 80 registros filtrados</em>).</p>
+                     <p class="note"><b>Nota</b>: quando o filtro é aplicado, as linhas que são filtradas não podem ser modificadas ao preencher automaticamente, formatar, excluir o conteúdo visível. Tais ações afetam apenas as linhas visíveis, as linhas ocultas pelo filtro permanecem inalteradas. Ao copiar e colar os dados filtrados, apenas as linhas visíveis podem ser copiadas e coladas. Isso não é equivalente a linhas ocultas manualmente que são afetadas por todas as ações semelhantes.</p>
+                </li>
+			</ol>
+            <h3>Classificar dados filtrados</h3>
+             <p>Você pode definir a <b>ordem de classificação</b> dos dados para os quais ativou ou aplicou filtro. Clique na seta suspensa <span class="icon icon-dropdownarrow"></span> ou no botão <b>Filtro</b> <span class="icon icon-filterbutton"></span> e selecione um das opções na lista de opções <b>Filtro</b>:</p>
+                <ul>
+                    <li><b>Classificar do menor para o maior</b> - permite classificar os dados em ordem crescente, exibindo o menor valor no topo da coluna,</li>
+                     <li><b>Ordenar do maior ao menor</b> - permite ordenar os dados em ordem decrescente, exibindo o maior valor no topo da coluna,</li>
+                     <li><b>Classificar por cor de células</b> - permite selecionar uma das cores e exibir as entradas com a mesma cor de fundo da célula no topo da coluna,</li>
+                     <li><b>Classificar por cor de fonte</b> - permite selecionar uma das cores e exibir as entradas com a mesma cor de fonte no topo da coluna.</li>
+                </ul>
+                <p>As duas últimas opções podem ser usadas se o intervalo de células que você deseja classificar contiver algumas células que você formatou alterando o plano de fundo ou a cor da fonte (manualmente ou usando estilos predefinidos).</p>
+             <p>A direção da classificação será indicada por uma seta nos botões de filtro.</p>
+            <ul>
+                <li>se os dados forem classificados em ordem crescente, a seta suspensa na primeira célula da coluna ficará assim: <div class = "icon icon-lowesttohighest"></div> e o <b>Filtro</b> botão tem a seguinte aparência: <div class = "icon icon-lowesttohighest1"></div>.</li>
+                 <li>se os dados forem classificados em ordem decrescente, a seta suspensa na primeira célula da coluna ficará assim: <div class = "icon icon-highesttolowest"></div> e o <b>Filter</b> botão tem a seguinte aparência: <div class = "icon icon-highesttolowest1"></div>.</li>
+            </ul>
+            <p>Você também pode classificar rapidamente os dados por cor usando as opções do menu contextual:</p>
+             <ol>
+                 <li>clique com o botão direito do mouse em uma célula que contém a cor pela qual deseja classificar os dados,</li>
+                 <li>selecione a opção <b>Classificar</b> no menu,</li>
+                 <li>
+                     selecione a opção necessária no submenu:
+                     <ul>
+                         <li><b>Cor da célula selecionada na parte superior</b> - para exibir as entradas com a mesma cor de fundo da célula na parte superior da coluna,</li>
+                         <li><b>Cor de fonte selecionada no topo</b> - para exibir as entradas com a mesma cor de fonte no topo da coluna.</li>
+                    </ul>
+                </li>
+            </ol>
+            <h3>Filtre pelo conteúdo da célula selecionada</h3>
+             <p>Você também pode filtrar rapidamente seus dados pelo conteúdo da célula selecionada usando as opções do menu <b>contextual</b>. Clique com o botão direito do mouse em uma célula, selecione a opção <b>Filtro</b> no menu e selecione uma das opções disponíveis:</p>
+<ul>
+                 <li><b>Filtrar pelo valor da célula selecionada</b> - para exibir apenas as entradas com o mesmo valor que a célula selecionada contém.</li>
+                 <li><b>Filtrar pela cor da célula</b> - para exibir apenas as entradas com a mesma cor de fundo da célula selecionada.</li>
+                 <li><b>Filtrar por cor de fonte</b> - para exibir apenas as entradas com a mesma cor de fonte da célula selecionada.</li>
+            </ul>
+            <h3 id="tabletemplate">Formatar como modelo de tabela</h3>
+                <p>Para facilitar o seu trabalho com dados, o <b>Editor de Planilhas</b> permite aplicar um modelo de tabela a um intervalo de células selecionado habilitando automaticamente o filtro. Para fazer isso,</p>
+                <ol>
+                <li>selecione um intervalo de células que você precisa formatar,</li>
+                <li>clique no ícone <b>Formatar como modelo de tabela</b> <div class = "icon icon-tabletemplate"></div> situado na guia <b>Página inicial</b> da barra de ferramentas superior.</li>
+                <li>selecione o modelo desejado na galeria,</li>
+                <li>na janela pop-up aberta, verifique o intervalo de células a ser formatado como uma tabela,</li>
+                <li>verifique o <b>Título</b> se desejar que os cabeçalhos da tabela sejam incluídos no intervalo de células selecionado, caso contrário, a linha do cabeçalho será adicionada na parte superior enquanto o intervalo de células selecionado será movido uma linha para baixo,</li>
+                <li>clique no botão <b>OK</b> para aplicar o modelo selecionado.</li>
+			</ol>
+			<p>O modelo será aplicado ao intervalo de células selecionado e você poderá editar os cabeçalhos da tabela e aplicar o filtro para trabalhar com seus dados. Para saber mais sobre como trabalhar com tabelas formatadas, consulte <a href="../UsageInstructions/FormattedTables.htm" onclick="onhyperlinkclick(this)">esta página</a>.</p>
+            <h3>Reaplicar filtro</h3>
+            <p>Se os dados filtrados foram alterados, você pode atualizar o filtro para exibir um resultado atualizado:</p>
+            <ol>
+                <li>clique no botão <b>Filter</b> <div class = "icon icon-filterbutton"></div> na primeira célula da coluna que contém os dados filtrados,</li>
+                <li>selecione a opção <b>Reaplicar</b> na lista de opções <b>Filtro</b> aberta.</li>
+            </ol>
+            <p>Você também pode clicar com o botão direito em uma célula dentro da coluna que contém os dados filtrados e selecionar a opção <b>Reaplicar</b> no menu contextual.</p>
+             <h3>Limpar filtro</h3>
+            <p>Para limpar o filtro,</p>
+             <ol>
+                 <li>clique no botão <b>Filter</b> <div class = "icon icon-filterbutton"></div> na primeira célula da coluna que contém os dados filtrados,</li>
+                 <li>selecione a opção <b>Limpar</b> na lista de opções <b>Filtro</b> aberta.</li>
+             </ol>
+             <p>Você também pode proceder da seguinte maneira:</p>
+				<ol>
+					<li>selecione o intervalo de células que contém os dados filtrados,</li>
+                <li>clique no ícone <b>Limpar filtro</b> <div class = "icon icon-clearfilter"></div> situado em <b>Início</b> ou <b>Dados</b> guia da barra de ferramentas superior.</li>
+                </ol>
+             <p>O filtro permanecerá ativado, mas todos os parâmetros de filtro aplicados serão removidos e os botões <b>Filtro</b> <span class="icon icon-filterbutton"></span> nas primeiras células do as colunas mudarão para as setas suspensas <span class="icon icon-dropdownarrow"></span>.</p>
+             <h3>Remover filtro</h3>
+             <p>Para remover o filtro,</p>
+            <ol>
+                <li>selecione o intervalo de células que contém os dados filtrados,</li>
+                 <li>clique no ícone <b>Filtro</b> <div class = "icon icon-sortandfilter"></div> situado na guia <b>Página inicial</b> ou <b>Dados</b> da barra de ferramentas superior.</li>
+             </ol>
+             <p>O filtro será desativado e as setas suspensas <span class="icon icon-dropdownarrow"></span> desaparecerão das primeiras células das colunas.</p>
+             <h3>Ordenar dados por várias colunas/linhas</h3>
+             <p>Para classificar dados por várias colunas/linhas, você pode criar vários níveis de classificação usando a função <b>Classificação personalizada</b>.</p>
+            <ol>
+                <li>selecione um intervalo de células que deseja classificar (você pode selecionar uma única célula para classificar todo o intervalo),</li>
+                 <li>clique no ícone <b>Classificação personalizada</b> <div class = "icon icon-customsort"></div> situado na guia <b>Dados</b> da barra de ferramentas superior,</li >
+                 <li>
+                     a janela <b>Classificar</b> aparecerá. A classificação por colunas é selecionada por padrão.
+                     <p><img alt="Janela de classificação personalizada" src="../images/customsortwindow.png" /></p>
+                    <p>Para alterar a orientação de classificação (ou seja, classificação de dados por linhas em vez de colunas), clique no botão <b>Opções</b> na parte superior. A janela <b>Opções de classificação</b> será aberta:</p>
+                     <p><img alt="Janela de opções de classificação" src="../images/sortoptionswindow.png" /></p>
+                    <ol>
+                        <li>marque a caixa <b>Meus dados têm cabeçalhos</b>, se necessário,</li>
+                         <li>escolha a <b>Orientação</b> necessária: <b>Classificar de cima para baixo</b> para classificar os dados por colunas ou <b>Classificar da esquerda para a direita</b> para classificar os dados por linhas,</li>
+                         <li>clique em <b>OK</b> para aplicar as alterações e fechar a janela.</li>
+                    </ol>
+                </li>
+                <li>
+                    defina o primeiro nível de classificação no campo <b>Classificar por</b>:
+                     <p><img alt="Janela de classificação personalizada" src="../images/customsortwindow2.png" /></p>
+                     <ul>
+                         <li>na seção <b>Coluna</b> / <b>Linha</b>, selecione a primeira coluna / linha que deseja classificar,</li>
+                         <li>na lista <b>Classificar em</b>, escolha uma das seguintes opções: <b>Valores</b>, <b>Cor da célula</b> ou <b>Cor da fonte</b >,</li>
+                         <li>
+                             na lista <b>Ordem</b>, especifique a ordem de classificação necessária. As opções disponíveis diferem dependendo da opção escolhida na lista <b>Classificar em</b>:
+                             <ul>
+                                 <li>se a opção <b>Valores</b> estiver selecionada, escolha a opção <b>Ascendente</b> / <b>Descendente</b> se o intervalo de células contiver números ou <b>A a Z </b> / <b>Z a A</b> opção se o intervalo de células contiver valores de texto,</li>
+                                 <li>se a opção <b>Cor da célula</b> estiver selecionada, escolha a cor da célula necessária e selecione a opção <b>Topo</b> / <b>Abaixo</b> para colunas ou <b> Esquerda</b> / <b>Direita</b> opção para linhas,</li>
+                                 <li>se a opção <b>Cor da fonte</b> estiver selecionada, escolha a cor da fonte necessária e selecione a opção <b>Topo</b> / <b>Abaixo</b> para colunas ou <b> Opção Esquerda</b> / <b>Direita</b> para linhas.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li>adicione o próximo nível de classificação clicando no botão <b>Adicionar nível</b>, selecione a segunda coluna/linha que deseja classificar e especifique outros parâmetros de classificação no campo <b>Então por</b> conforme descrito acima. Se necessário, adicione mais níveis da mesma forma.</li>
+                 <li>gerencie os níveis adicionados usando os botões na parte superior da janela: <b>Excluir nível</b>, <b>Copiar nível</b> ou altere a ordem dos níveis usando os botões de seta <b>Mover o nível para cima</b> / <b>Mover o nível para baixo</b>,</li>
+                 <li>clique em <b>OK</b> para aplicar as alterações e fechar a janela.</li>
+             </ol>
+             <p>Os dados serão classificados de acordo com os níveis de classificação especificados.</p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Alterar quebra automática de texto</title>
+		<meta charset="utf-8" />
+        <meta name="descrição" content="Altere o estilo de disposição do texto para especificar a forma como o objeto é posicionado em relação ao texto." />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Alterar a quebra de texto</h1>
+            <p>A opção <b>Estilo da quebra automática</b> determina a forma como o objeto é posicionado em relação ao texto. No <a href="https://www.onlyoffice.com/pt/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Documentos</b></a>, você pode alterar o estilo de quebra automática de texto para objetos inseridos, como <a href="../UsageInstructions/InsertAutoshapes.htm" onclick="onhyperlinkclick(this)">formas</a>, <a href="../UsageInstructions/InsertImages.htm" onclick="onhyperlinkclick(this)">imagens</a>, <a href="../UsageInstructions/InsertCharts.htm#" onclick="onhyperlinkclick(this)">gráficos</a>, <a href="../UsageInstructions/InsertTextObjects.htm" onclick="onhyperlinkclick(this)">caixas de texto</a> ou <a href="../UsageInstructions/InsertTables.htm" onclick="onhyperlinkclick(this)">tabelas</a>.</p>
+            <h3>Alterar quebra automática de texto para formas, imagens, gráficos, caixas de texto</h3>
+            <p>Para alterar o estilo de embrulho atualmente selecionado:</p>
+            <ol>
+                <li>clique com o botão esquerdo em um objeto separado para selecioná-lo. Para selecionar uma caixa de texto, clique em sua borda, não no texto dentro dela.</li>
+                 <li>abra as configurações de quebra automática de texto:
+                    <ul>
+                        <li>mude para a guia <b>Layout</b> da barra de ferramentas superior e clique na seta ao lado do ícone <div class = "icon icon-wrapping_toptoolbar"></div> <b> de embrulho</b> ou</li>
+                        <li>clique com o botão direito do mouse no objeto e selecione a opção <b>Estilo da quebra automática</b> no menu contextual ou</li>
+                         <li>clique com o botão direito do mouse no objeto, selecione a opção <b>Configurações avançadas</b> e mude para a guia <b>Disposição do texto</b> da janela <b>Configurações avançadas</b> do objeto.</li>
+                    </ul>
+                </li>
+                <li>selecione o estilo de embalagem necessário:
+                    <ul>
+                        <li>
+                            <p><span class="icon icon-wrappingstyle_inline_toptoolbar"></span> <b>Alinhado</b> - o objeto é considerado uma parte do texto, como um caractere, portanto, quando o texto se move, o objeto também se move. Nesse caso, as opções de posicionamento ficam inacessíveis.</p>
+                             <p>Se um dos estilos a seguir for selecionado, o objeto poderá ser movido independentemente do texto e posicionado com precisão na página:</p>
+                        </li>
+                        <li><p><span class="icon icon-wrappingstyle_square_toptoolbar"></span> <b>Quadrado</b> - o texto envolve a caixa retangular que delimita o objeto.</p></li>
+                        <li><p><span class="icon icon-wrappingstyle_tight_toptoolbar"></span> <b>Justo</b> - o texto envolve as bordas reais do objeto.</p></li>
+                        <li><p><span class="icon icon-wrappingstyle_through_toptoolbar"></span> <b>Através</b> - o texto envolve as bordas do objeto e preenche o espaço em branco aberto dentro do objeto. Para aplicar este efeito, use a opção <b>Editar limite de disposição</b> no menu do botão direito.</p></li>
+                        <li><p><span class="icon icon-wrappingstyle_topandbottom_toptoolbar"></span> <b>Parte superior e inferior</b> - o texto está apenas acima e abaixo do objeto.</p></li>
+                        <li><p><span class="icon icon-wrappingstyle_infront_toptoolbar"></span> <b>Em frente</b> - o objeto se sobrepõe ao texto.</p></li>
+                        <li><p><span class="icon icon-wrappingstyle_behind_toptoolbar"></span> <b>Atras do texto</b> - sobrepõe o objeto.</p></li>
+                    </ul>
+                </li>
+            </ol>
+            <p>Se você selecionar o estilo <b>Quadrado</b>, <b>Justo</b>, <b>Através</b> ou <b>Parte superior e inferior</b>, poderá definir para cima alguns parâmetros adicionais - <b>Distância do texto</b> em todos os lados (superior, inferior, esquerda, direita). Para acessar esses parâmetros, clique com o botão direito do mouse no objeto, selecione a opção <b>Configurações avançadas</b> e mude para a guia <b>Quebra de texto</b> da janela <b>Configurações avançadas</b> do objeto . Defina os valores necessários e clique em <b>OK</b>.</p>
+            <p>Se você selecionar um estilo de quebra automática diferente de <b>Alinhado</b>, a guia <b>Posição</b> também estará disponível na janela <b>Configurações avançadas</b> do objeto. Para saber mais sobre esses parâmetros, consulte as páginas correspondentes com as instruções de como trabalhar com <a href="../UsageInstructions/InsertAutoshapes.htm#position" onclick="onhyperlinkclick(this)">formas</a>, <a href="../UsageInstructions/InsertImages.htm#position" onclick="onhyperlinkclick(this)">imagens</a> ou <a href="../UsageInstructions/InsertCharts.htm#position" onclick="onhyperlinkclick(this)">gráficos</a>.</p>
+            <p>Se você selecionar um estilo de contorno diferente de <b>Alinhado</b>, também poderá editar o limite de contorno para <b>imagens</b> ou <b>formas</b>. Clique com o botão direito do mouse no objeto, selecione a opção <b>Estilo da quebra automática</b> no menu contextual e clique na opção <b>Editar limite de disposição</b>. Você também pode usar o menu <b>Embrulho</b> -> <b>Editar limite de contorno</b> na guia <b>Layout</b> da barra de ferramentas superior. Arraste os pontos de contorno para personalizar o limite. Para criar um novo ponto de quebra, clique em qualquer lugar na linha vermelha e arraste-o para a posição desejada. <span class = "big big-wrap_boundary"></span></p>
+            <h3>Alterar quebra automática de texto para tabelas</h3>
+            <p>Por <a href="../UsageInstructions/InsertTables.htm" onclick="onhyperlinkclick(this)">tabelas</a>, os dois estilos de agrupamento a seguir estão disponíveis: <b>Tabela embutida</b> e <b>Tabela de fluxo</b>.</p>
+            <p>Para alterar o estilo de embrulho atualmente selecionado:</p>
+            <ol>
+                <li>clique com o botão direito do mouse na tabela e selecione a opção <b>Configurações avançadas da tabela</b>,</li>
+                 <li>mude para a guia <b>Disposição do texto</b> da janela <b>Tabela - Configurações avançadas</b>,
+                </li>
+                <li>
+                    Selecione uma das seguintes opções:
+                    <ul>
+                        <li><b>Tabela embutida</b> é usada para selecionar o estilo de quebra automática quando o texto é quebrado pela tabela, bem como para definir o alinhamento: esquerda, centro, direita.</li>
+                         A <li><b>Tabela de fluxo</b> é usada para selecionar o estilo de quebra quando o texto é quebrado ao redor da tabela.</li>
+                    </ul>
+                </li>
+            </ol>
+            <p>Usando a guia <b>Disposição do texto</b> da janela <b>Tabela - Configurações avançadas</b>, você também pode configurar os seguintes parâmetros adicionais:</p>
+            <ul>
+                <li>Para tabelas inline, você pode definir o tipo de <b>Alinhamento</b> da tabela (esquerda, central ou direita) e <b>Recuo à esquerda</b>.</li>
+                 <li>Para tabelas flutuantes, você pode definir a <b>Distância do texto</b> e a <b>posição</b> da tabela no <a href="../UsageInstructions/InsertTables.htm#position" onclick="onhyperlinkclick(this)">Posição da tabela</a>.</li>
+            </ul>
+		</div>
+	</body>
+</html>

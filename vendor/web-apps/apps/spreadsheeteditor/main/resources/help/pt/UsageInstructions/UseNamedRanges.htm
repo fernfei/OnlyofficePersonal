@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Usar intervalos nomeados</title>
+		<meta charset="utf-8" />
+        <meta name="descrição" content="Use intervalos nomeados para simplificar o trabalho com fórmulas" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Usar intervalos nomeados</h1>
+            <p>Os nomes são notações significativas que podem ser atribuídas a uma célula ou intervalo de células e usadas para simplificar o trabalho com fórmulas no <a href="https://www.onlyoffice.com/pt/spreadsheet-editor.aspx" target="_blank" onclick ="onhyperlinkclick(this)"><b>Editor de Planilhas</b></a>. Ao criar uma fórmula, você pode inserir um nome como argumento em vez de usar uma referência a um intervalo de células. Por exemplo, se você atribuir o nome <em>Renda_Anual</em> a um intervalo de células, será possível inserir <em>=SOMA(Renda_Anual)</em> em vez de <em>=SOMA(B1:B12 )</em>. Assim, as fórmulas ficam mais claras. Esse recurso também pode ser útil no caso de muitas fórmulas serem referidas a um e o mesmo intervalo de células. Se o endereço do intervalo for alterado, você pode fazer a correção uma vez usando o Gerenciador de nomes em vez de editar todas as fórmulas uma a uma.</p>
+            <p>Existem dois tipos de nomes que podem ser usados:</p>
+            <ul>
+                <li><b>Nome definido</b> – um nome arbitrário que você pode especificar para um determinado intervalo de células. Os nomes definidos também incluem os nomes criados automaticamente ao configurar as <a href="SavePrintDownload.htm#printarea" onclick="onhyperlinkclick(this)">áreas de impressão</a>.</li>
+                 <li><b>Nome da tabela</b> – um nome padrão que é atribuído automaticamente a uma <a href="FormattedTables.htm" onclick="onhyperlinkclick(this)">nova tabela formatada</a> (<em >Tabela1</em>, <em>Tabela2</em> etc.). Você pode editar este nome mais tarde.</li>
+            </ul>
+            <p>Se você criou um <a href="Slicers.htm" onclick="onhyperlinkclick(this)">slicer para uma tabela formatada</a>, um nome de slicer atribuído automaticamente também será exibido no <b>Gerenciador de nomes</b> (<em>Slicer_Column1</em>, <em>Slicer_Column2</em> etc. Este nome consiste na parte <em>Slicer_</em> e no nome do campo correspondente ao cabeçalho da coluna dos dados de origem definir). Você pode editar este nome mais tarde.</p>
+             <p>Nomes também são classificados por <b>Escopo</b>, ou seja, o local onde um nome é reconhecido. Um nome pode ser definido para toda a pasta de trabalho (será reconhecido para qualquer planilha dentro desta pasta de trabalho) ou para uma planilha separada (será reconhecido apenas para a planilha especificada). Cada nome deve ser único dentro de um único escopo, os mesmos nomes podem ser usados em diferentes escopos.</p>
+            <h3>Criar novos nomes</h3>
+                <p>Para criar um novo nome definido para uma seleção:</p>
+                <ol>
+                <li>Selecione uma célula ou intervalo de células ao qual deseja atribuir um nome.</li>
+                <li>Abra uma nova janela de nome de maneira adequada:
+                 <ul>
+                     <li>Clique com o botão direito do mouse na seleção e escolha a opção <b>Definir nome</b> no menu contextual,</li>
+                     <li>ou clique no ícone <b>Intervalos nomeados</b> <div class = "icon icon-namedranges"></div> na guia <b>Página inicial</b> da barra de ferramentas superior e selecione opção <b>Definir nome</b> no menu.</li>
+                    <li>ou clique no botão <div class = "icon icon-namedrangesicon"></div> <b>Intervalos nomeados</b> na guia <b>Fórmula</b> da barra de ferramentas superior e selecione <b>Nome gerenciador</b> no menu. Escolha a opção <b>Novo</b> na janela aberta.</li>
+                </ul>
+                <p>A janela <b>Novo nome</b> será aberta:</p>
+                <p><img alt="Nova janela de nome" src="../images/newnamewindow.png" /></p>
+            </li>
+            <li>Insira o <b>Nome</b> necessário no campo de entrada de texto.
+             <p class="note"><b>Nota</b>: um nome não pode começar com um número, conter espaços ou sinais de pontuação. Sublinhados (_) são permitidos. O caso não importa.</p>
+             </li>
+             <li>Especifique o nome <b>Escopo</b>. O escopo <em>Pasta de trabalho</em> é selecionado por padrão, mas você pode especificar uma planilha individual selecionando-a na lista.</li>
+             <li>Verifique o endereço <b>Intervalo de dados</b> selecionado. Se necessário, você pode alterá-lo. Clique no ícone <div class = "icon icon-changerange"></div> - a janela <b>Selecionar intervalo de dados</b> será aberta.
+            <p><img alt="Janela Selecionar Intervalo de Dados" src="../images/selectdatarange.png" /></p>   
+            <p>Altere o link para o intervalo de células no campo de entrada ou selecione um novo intervalo na planilha com o mouse e clique em <b>OK</b>.</p>
+             </li>
+             <li>Clique em <b>OK</b> para salvar o novo nome.</li>
+</ol>
+             <p>Para criar rapidamente um novo nome para o intervalo de células selecionado, você também pode inserir o nome desejado na caixa de nome localizada à esquerda da barra de fórmulas e pressionar <b>Enter</b>. O nome criado desta forma tem como escopo o <em>Pasta de trabalho</em>.</p>
+            <p><img alt="Nome da caixa" src="../images/namefield.png" /></p>
+			<h3>Gerenciar nomes</h3>
+             <p>Todos os nomes existentes podem ser acessados através do <b>Gerenciador de Nomes</b>. Para abri-lo:</p>
+             <ul>
+                 <li>clique no ícone <b>Intervalos nomeados</b> <div class = "icon icon-namedranges"></div> na guia <b>Página inicial</b> da barra de ferramentas superior e selecione <b>opção >Gerenciador de nomes</b> no menu,</li>
+                 <li>ou clique na seta no campo do nome e selecione a opção <b>Gerenciador de nomes</b>.</li>
+            </ul>
+            <p>A janela <b>Gerenciador de nomes</b> será aberta:</p>
+             <p><img alt="Janela do gerenciador de nomes" src="../images/namemanagerwindow.png" /></p>
+             <p>Para sua conveniência, você pode filtrar os nomes selecionando a categoria de nome que deseja exibir: <b>Todos</b>, <b>Nomes definidos</b>, <b>Nomes de tabela</b> , <b>Nomes com escopo para planilha</b> ou <b>Nomes com escopo para pasta de trabalho</b>. Os nomes que pertencem à categoria selecionada serão exibidos na lista, os demais nomes serão ocultados.</p>
+             <p>Para alterar a ordem de classificação da lista exibida, você pode clicar nos títulos <b>Intervalos nomeados</b> ou <b>Escopo</b> nesta janela.</p>
+             <p><b>Para editar um nome</b>, selecione-o na lista e clique no botão <b>Editar</b>. A janela <b>Editar nome</b> será aberta:</p>
+            <p><img alt="Janela Editar nome" src="../images/editnamewindow.png" /></p>
+             <p>Para um nome definido, você pode alterar o nome e o intervalo de dados ao qual ele se refere. Para um nome de tabela, você pode alterar apenas o nome. Quando todas as alterações necessárias forem feitas, clique em <b>OK</b> para aplicá-las. Para descartar as alterações, clique em <b>Cancelar</b>. Se o nome editado for usado em uma fórmula, a fórmula será alterada automaticamente de acordo.</p>
+             <p><b>Para excluir um nome</b>, selecione-o na lista e clique no botão <b>Excluir</b>.</p>
+             <p class="note"><b>Observação</b>: se você excluir o nome que é usado em uma fórmula, a fórmula não funcionará mais (ela retornará o <em>#NAME?</em> erro).</p>
+             <p>Você também pode criar um novo nome na janela <b>Gerenciador de nomes</b> clicando no botão <b>Novo</b>.</p>
+            <h3 id="usingnames">Use nomes ao trabalhar com a planilha</h3>
+            <p><b>Para navegar rapidamente pelos intervalos de células</b>, você pode clicar na seta na caixa de nome e selecionar o nome necessário na lista de nomes - o intervalo de dados que corresponde a esse nome será selecionado na planilha.</p>
+             <p><img alt="Lista de nomes" src="../images/namelist.png" /></p>
+             <p class="note"><b>Observação</b>: a lista de nomes exibe os nomes definidos e os nomes das tabelas com escopo para a planilha atual e para toda a pasta de trabalho.</p>
+             <p><b>Para adicionar um nome como argumento de uma fórmula</b>:</p>
+            <ol>
+                <li>Coloque o ponto de inserção onde você precisa adicionar um nome.</li>
+                 <li>Efetue uma das seguintes etapas:
+                     <ul>
+                         <li>insira manualmente o nome do intervalo nomeado necessário usando o teclado. Depois de digitar as letras iniciais, a lista <b>Preenchimento Automático de Fórmula</b> será exibida. À medida que você digita, os itens (fórmulas e nomes) que correspondem aos caracteres inseridos são exibidos nele. Você pode selecionar o <b>nome definido</b> ou <b>nome da tabela</b> necessário da lista e inseri-lo na fórmula clicando duas vezes nele ou pressionando a tecla <b>Tab</b>.</li>
+                         <li>
+                             ou clique no ícone <b>Intervalos nomeados</b> <div class = "icon icon-namedranges"></div> na guia <b>Página inicial</b> da barra de ferramentas superior, selecione o botão <b>Colar opção de nome</b> no menu, escolha o nome necessário na janela <b>Colar nome</b> e clique em <b>OK</b>:
+                            <p><img alt="Paste Name window" src="../images/pastenamewindow.png" /></p>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+            <p class="note"><b>Observação</b>: a janela <b>Colar nome</b> exibe os nomes definidos e os nomes das tabelas com escopo para a planilha atual e para toda a pasta de trabalho.</p>
+             <p id="internallink"><b>Para usar um nome como hiperlink interno</b>:</p>
+            <ol>
+                <li>Coloque o ponto de inserção onde você precisa adicionar um hiperlink.</li>
+                 <li>Vá para a guia <b>Inserir</b> e clique no botão <div class = "icon icon-addhyperlink"></div> <b>Hiperlink</b>.</li>
+                 <li>Na janela aberta <b>Configurações de hiperlink</b>, selecione a guia <b>Intervalo de dados interno</b> e escolha um intervalo nomeado.
+                    <p><img alt="Configurações de hiperlink" src="../images/name_hyperlink.png" /></p>
+                </li>
+                <li>Clique <b>OK</b>.</li>
+            </ol>
+		</div>
+	</body>
+</html>

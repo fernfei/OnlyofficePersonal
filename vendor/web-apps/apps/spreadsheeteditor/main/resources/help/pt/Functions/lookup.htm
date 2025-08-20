@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Função PROC</title>
+		<meta charset="utf-8" />
+		<meta name="descricao" content="A função PROC é uma das funções de pesquisa e referência. Aprenda a usar a função PROC em planilhas de Excel e arquivos compatíveis com ONLYOFFICE." />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>Função PROC</h1>
+			<p>A função <b>PROC</b> é uma das funções de pesquisa e referência. É usado para retornar um valor de um intervalo selecionado (linha ou coluna contendo os dados em ordem crescente).</p>
+			<p>A sintaxe da função <b>PROC</b> é:</p> 
+			<p style="text-indent: 150px;"><b><em>PROC(valor-de-pesquisa, vetor-de-pesquisa, resultado-da-pesquisa)</em></b></p> 
+			<p><em>onde</em></p> 
+				<p style="text-indent: 50px;"><b><em>valor-de-pesquisa</em></b> é um valor a ser pesquisado.</p>
+				<p style="text-indent: 50px;"><b><em>vetor-de-pesquisa</em></b> é uma única linha ou coluna contendo dados classificados em ordem crescente.</p>
+				<p style="text-indent: 50px;"><b><em>resultado-da-pesquisa</em></b> é uma única linha ou coluna de dados com o mesmo tamanho do <b><em>vetor-de-pesquisa</em></b>.</p>
+			<p>A função procura o <b><em>valor-de-pesquisa</em></b> no <b><em>vetor-de-pesquisa</em></b> e retorna o valor da mesma posição em o <b><em>resultado-de-pesquisa</em></b>.</p>
+			<p class="note">Se o <b>valor-de-pesquisa</b> for menor que todos os valores no <b>vetor-de-pesquisa</b>, a função retornará o erro <b>#N/A</b>. Se não houver um valor que corresponda estritamente ao <b>valor-de-pesquisa</b>, a função escolhe o maior valor no <b>vetor-de-pesquisa</b> que seja menor ou igual ao valor.</p>
+			<h2>Como usar PROC</h2>
+			<p>Para aplicar a função <b>PROC</b>,</p>
+			<ol>
+			<li>selecione a célula onde deseja exibir o resultado,</li>
+			<li>clique no ícone <b>Inserir função</b> <div class = "icon icon-insertfunction"></div> situado na barra de ferramentas superior,
+				<br />ou clique com o botão direito em uma célula selecionada e selecione a opção <b>Inserir Função</b> no menu,
+				<br />ou clique no ícone <div class = "icon icon-function"></div> situado na barra de fórmulas,
+			</li>
+			<li>selecione o grupo de funções <b>Pesquisa e Referência</b> na lista,</li>
+			<li>clique na função <b>PROC</b>,</li>
+			<li>digite os argumentos necessários separando-os por vírgula,</li>
+			<li>pressione o botão <b>Entrar</b>.</li>
+			</ol>
+			<p>O resultado será exibido na célula selecionada.</p>
+			<p><img class="gif" alt="Função PROC" src="../images/lookup_function.gif" /></p>
+		</div>
+	</body>
+</html>

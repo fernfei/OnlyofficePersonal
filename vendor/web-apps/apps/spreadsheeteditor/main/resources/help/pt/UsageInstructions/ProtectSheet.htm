@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Protegendo uma planilha</title>
+		<meta charset="utf-8" />
+		<meta name="descrição" content="Proteger planilhas para evitar alterações indesejadas e restringir as habilidades de edição de outros usuários" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+			<div class="search-field">
+				<input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+			</div>
+
+			<h1>Protegendo uma planilha</h1>
+            <p>A opção <b>Proteger planilha</b> permite que você proteja as planilhas e controle as alterações feitas por outros usuários em uma planilha para evitar alterações indesejadas nos dados e restringir as habilidades de edição de outros usuários. Você pode proteger uma planilha com ou sem senha. Se você não usar uma senha, qualquer pessoa poderá desproteger a planilha protegida.</p>
+            <h3>Proteger uma planilha</h3>
+			<ol>
+				<li>
+					Vá para a guia <b>Proteção</b> e clique no botão <b>Proteger planilha</b> na barra de ferramentas superior.<br />
+                    ou<br />
+                    clique com o botão direito na guia da planilha que deseja proteger e selecione <b>Proteger</b> na lista de opções
+                     <p><img alt="Guia Proteger planilha" src="../images/protect_sheettab.png" /></p>
+				</li>
+				<li>
+					Na janela <b>Proteger planilha</b> que se abre, digite e confirme a senha, caso deseje definir uma senha para desproteger esta planilha.
+                    <p><img alt="Proteger planilha" src="../images/protect_sheet.png" /></p>
+                    <p class="note">A senha não pode ser restaurada se você a perder ou esquecer. Por favor, mantenha-o em um local seguro.</p>
+                </li>
+                <li>
+                    Marque as caixas na lista <b>Permitir que todos os usuários desta planilha</b> selecionem as operações que os usuários poderão executar. As operações <b>Selecionar células bloqueadas</b> e <b>Selecionar células desbloqueadas</b> são permitidas por padrão.
+                    <details class="detalhes-exemplo">
+                        <summary>Operações que um usuário pode realizar.</summary>
+						<ul>
+							<li>Selecione células bloqueadas</li>
+							<li>Selecionar células desbloqueadas</li>
+							<li>Formatar células</li>
+							<li>Formatar colunas</li>
+							<li>Formatar linhas</li>
+							<li>Inserir colunas</li>
+							<li>Inserir linhas</li>
+							<li>Inserir hiperlink</li>
+							<li>Excluir colunas</li>
+							<li>Excluir linhas</li>
+							<li>Classificar</li>
+							<li>Usar filtro automático</li>
+							<li>Use tabela dinâmica e gráfico dinâmico</li>
+							<li>Editar objetos</li>
+							<li>Editar cenários</li>
+						</ul>
+					</details>
+				</li>
+				<li>
+					clique no botão <b>Proteger</b> para ativar a proteção. O botão <b>Proteger Planilha</b> na barra de ferramentas superior permanece destacado quando a planilha é protegida.
+                    <p><img alt="Proteger planilha destacada" src="../images/protectsheet_highlighted.png" /></p>
+				</li>
+			</ol>
+
+			<h3>Permitir intervalos de edição</h3>
+            <ol>
+                <li>Clique no botão <b>Proteger planilha</b> na barra de ferramentas superior da guia <b>Proteção</b>. A janela <b>Proteger planilha</b> será aberta.</li>
+                <li>Clique no botão <b>Permitir intervalos de edição</b> para especificar os intervalos desbloqueados pela senha quando a planilha está protegida. Esta opção funciona apenas para células bloqueadas.</li>
+				<li>
+					Clique no botão <b>Novo</b> para adicionar um novo intervalo. A janela <b>Novo intervalo</b> será aberta. Especifique o <b>Título</b> do intervalo, o próprio intervalo e insira e repita uma senha. Clique em <b>OK</b> quando estiver pronto.
+                    <p class="note">A senha não pode ser restaurada se você a perder ou esquecer. Por favor mantenha em local seguro.</p>
+				</li>
+				<li>
+					Quando uma planilha não está protegida, você ainda pode fazer alterações nos intervalos permitidos:
+                    <ul>
+                        <li>Se você precisar editar um intervalo criado, selecione-o na janela <b>Permitir que os usuários editem intervalos</b> e clique no botão <b>Editar</b>.</li>
+                        <li>Para excluir um intervalo criado, selecione-o na janela <b>Permitir que os usuários editem intervalos</b> e clique no botão <b>Excluir</b>.</li>
+					</ul>
+				</li>
+				<li>Clique no botão <b>Proteger</b> quando estiver pronto.</li>
+            </ol>
+            <p>Para intervalos protegidos por senha, quando alguém está tentando editar o intervalo de células selecionado, a janela <b>Desbloquear intervalo</b> é exibida, onde o usuário é solicitado a inserir a senha.</p>
+            <p><img alt="Desbloquear intervalo" src="../images/unlockrange.png" /></p>
+			<p>Para saber mais sobre como proteger intervalos, consulte o <a href="../UsageInstructions/ProtectRanges.htm" onclick="onhyperlinkclick(this)">seguinte artigo</a>.</p>
+
+			<h3>Desproteger uma planilha</h3>
+            <ol>
+                <li>
+					Para desproteger a planilha:
+					<ul>
+						<li>
+							clique no botão <b>Proteger planilha</b>, <br />
+                            ou<br />
+                            clique com o botão direito do mouse na guia da planilha protegida e selecione <b>Desproteger</b> na lista de opções
+                            <p><img alt="Guia Desproteger planilha" src="../images/unprotect_sheettab.png" /></p>
+						</li>
+						<li>
+							digite uma senha e clique em <b>OK</b> na janela <b>Desproteger planilha</b>, se solicitado.
+                            <p><img alt="Planilha não protegida" src="../images/unprotect_sheet.png" /></p>
+						</li>
+					</ul>
+					</ol>
+		</div>
+	</body>
+</html>

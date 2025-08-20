@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Gerenciar planilhas</title>
+		<meta charset="utf-8" />
+        <meta name="descrição" content="Gerencie planilhas no Editor de Planilhas: insira, exclua, renomeie, copie e mova." />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Gerenciar planilhas</h1>
+			<p>Por padrão, uma planilha recém-criada possui uma única folha. A maneira mais simples de adicionar uma nova planilha ao <a href="https://www.onlyoffice.com/pt/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Planilhas</b></a> é clicar no botão Mais <span class="icon icon-plus"></span> localizado à direita dos botões <b>Navegação de planilhas</b> à esquerda canto inferior.</p>
+            <p>Outra forma de <b>adicionar uma nova planilha</b> é:</p>
+			<ol>
+			<li>clique com o botão direito do mouse na guia da planilha após a qual deseja inserir uma nova,</li>
+            <li>selecione a opção <b>Inserir</b> no menu do botão direito.</li>
+            </ol>
+            <p>Uma nova planilha será inserida após a selecionada.</p>
+            <p><b>Para ativar a planilha necessária</b>, use as guias da planilha no canto inferior esquerdo de cada planilha.</p>
+            <p class="note"><b>Observação</b>: se você tiver muitas planilhas, poderá encontrar a necessária usando os botões <b>Navegação de planilhas</b> situados no canto inferior esquerdo.</p>
+            <p><b>Para excluir uma planilha desnecessária:</b></p>
+			<ol>
+				<li>clique com o botão direito do mouse na guia da planilha que deseja excluir,</li>
+                <li>selecione a opção <b>Excluir</b> no menu do botão direito.</li>
+                </ol>
+                <p>A planilha selecionada será excluída da planilha atual.</p>
+                <p><b>Para renomear uma planilha existente:</b></p>
+			<ol>
+				<li>clique com o botão direito do mouse na guia da planilha que deseja renomear,</li>
+                <li>selecione a opção <b>Renomear</b> no menu do botão direito,</li>
+                <li>digite o <b>Nome da planilha</b> na caixa de diálogo e clique em <b>OK</b>.</li>
+			</ol>
+			<p>O nome da planilha selecionada será alterado.</p>
+            <p><b>Para copiar uma planilha existente:</b></p>
+			<ol>
+				<li>clique com o botão direito do mouse na guia da planilha que deseja copiar,</li>
+                <li>selecione a opção <b>Copiar</b> no menu do botão direito,</li>
+                <li>selecione a planilha antes da qual deseja inserir a copiada ou use a opção <b>Copiar para o final</b> para inserir a planilha copiada depois de todas as existentes,</li>
+				<li>
+					clique no botão <b>OK</b> para confirmar sua escolha.
+                <p>ou</p>
+                <p>pressione e segure a tecla <b>CTRL</b> e arraste a guia da planilha para a direita para duplicá-la e mover a cópia para o local desejado.</p>
+				</li>
+			</ol>
+			<p>A planilha selecionada será copiada e inserida no local selecionado.</p>
+            <p><b>Para mover uma planilha existente:</b></p>
+			<ol>
+				<li>clique com o botão direito do mouse na guia da planilha que deseja mover,</li>
+                <li>selecione a opção <b>Mover</b> no menu do botão direito,</li>
+                <li>selecione a planilha antes da qual deseja inserir a selecionada ou use a opção <b>Mover para o final</b> para mover a planilha selecionada após todas as existentes,</li>
+                <li>clique no botão <b>OK</b> para confirmar sua escolha.</li>
+			</ol>
+			<p>Ou simplesmente <b>arraste</b> a guia da planilha necessária e <b>solte-a</b> em um novo local. A planilha selecionada será movida.</p>
+            <p>Você também pode <b>arrastar e soltar</b> manualmente uma folha de um livro para outro. Para fazer isso, selecione a planilha que deseja mover e arraste-a para a barra de planilhas de outro livro. Por exemplo, você pode arrastar uma planilha do livro do editor on-line para a área de trabalho:</p>
+            <p><img alt="Move sheet gif" src="../images/move_sheet.gif" /></p>
+            <p>Nesse caso, a planilha da planilha original será <b>excluída</b>.</p>
+                        <p class="note">Atualmente, não é possível arrastar e soltar planilhas para uma nova pasta de trabalho no Editores de área de trabalho no Linux.</p>
+            <p>Se você tem muitas planilhas, pode ocultar algumas que não precisa para facilitar o seu trabalho. Fazer isso,</p>
+			<ol>
+				<li>clique com o botão direito do mouse na guia da planilha que deseja ocultar,</li>
+                <li>selecione a opção <b>Ocultar</b> no menu do botão direito,</li>
+                </ol>
+                <p><b>Para exibir a guia de planilha oculta</b>, clique com o botão direito do mouse em qualquer guia de planilha, abra a lista <b>Oculto</b> e selecione a guia de planilha que deseja exibir.</p>
+                <p>Para diferenciar as planilhas, você pode <b>atribuir cores diferentes às guias das planilhas</b>. Fazer isso,</p>
+			<ol>
+				<li>clique com o botão direito do mouse na guia da planilha que deseja colorir,</li>
+                 <li>selecione a opção <b>Tab Color</b> no menu do botão direito,</li>
+                <li>selecione qualquer cor nas paletas disponíveis
+					<p><img alt="Paletas" src="../images/palette.png" /></p>
+					<ul>
+						<li><b>Cores do tema</b> - as cores que correspondem ao esquema de cores selecionado da planilha.</li>
+                        <li><b>Cores padrão</b> - o conjunto de cores padrão.</li>
+                        <li><b>Cor personalizada</b> - clique nesta legenda se não houver cor necessária nas paletas disponíveis. Selecione o intervalo de cores necessário movendo o controle deslizante vertical de cores e defina a cor específica arrastando o seletor de cores no grande campo quadrado de cores. Depois de selecionar uma cor com o seletor de cores, os valores de cores RGB e sRGB apropriados serão exibidos nos campos à direita. Você também pode especificar uma cor com base no modelo de cores RGB inserindo os valores numéricos necessários em <b>R</b>, <b>G</b>, <b>B</b> (vermelho , verde, azul) ou insira o código hexadecimal sRGB no campo marcado com o sinal <b>#</b>. A cor selecionada aparecerá na caixa de visualização <b>Novo</b>. Se o objeto foi previamente preenchido com qualquer cor personalizada, esta cor é exibida na caixa <b>Atual</b>, para que você possa comparar as cores originais e modificadas. Quando a cor for especificada, clique no botão <b>Adicionar</b>:
+                        <p><img alt="Paleta - Cor personalizada" src="../../../../../../common/main/resources/help/en/images/palette_custom.png" /></p>
+                        <p>A cor personalizada será aplicada à guia selecionada e adicionada à paleta <b>Cor personalizada</b>.</p>
+						</li>
+						</ul>
+					</li>
+			</ol>
+			<p>Você pode <b>trabalhar com várias planilhas simultaneamente</b>:</p>
+                    <ol>
+                    <li>selecione a primeira planilha que deseja incluir no grupo,</li>
+                    <li>pressione e segure a tecla <em>Shift</em> para selecionar várias planilhas adjacentes que deseja agrupar ou use a tecla <em>Ctrl</em> para selecionar várias planilhas não adjacentes que deseja agrupar, </li>
+                    <li>clique com o botão direito do mouse em uma das guias de planilhas selecionadas para abrir o menu contextual,</li>
+                    <li>escolha a opção necessária no menu:
+                    <p><img alt="Gerenciar várias planilhas" src="../images/severalsheets.png" /></p>
+				<ul>					
+					<li><b>Inserir</b> - para inserir o mesmo número de novas folhas em branco, como no grupo selecionado,</li>
+                    <li><b>Excluir</b> - para excluir todas as planilhas selecionadas de uma vez (você não pode excluir todas as planilhas da pasta de trabalho, pois a pasta de trabalho deve conter pelo menos uma planilha visível),</li>
+                    <li><b>Renomear</b> - esta opção pode ser aplicada apenas a cada folha separada,</li>
+                    <li><b>Copiar</b> - para criar cópias de todas as planilhas selecionadas de uma vez e colá-las no local selecionado,</li>
+                    <li><b>Mover</b> - para mover todas as planilhas selecionadas de uma vez e colá-las no local selecionado,</li>
+                    <li><b>Ocultar</b> - para ocultar todas as planilhas selecionadas de uma vez (você não pode ocultar todas as planilhas na pasta de trabalho, pois a pasta de trabalho deve conter pelo menos uma planilha visível),</li>
+                    <li><b>Cor da guia</b> - para atribuir a mesma cor a todas as guias da planilha selecionada de uma vez,</li>
+                    <li><b>Selecionar todas as planilhas</b> - para selecionar todas as planilhas na pasta de trabalho atual,</li>
+                    <li><b>Desagrupar planilhas</b> - para desagrupar as planilhas selecionadas.
+                <p class="note">também é possível desagrupar planilhas clicando duas vezes em uma planilha incluída no grupo ou clicando em qualquer planilha que não esteja incluída no grupo.</p>
+                    </li>
+				</ul>
+				</li>
+			</ol>
+		</div>
+	</body>
+</html>
