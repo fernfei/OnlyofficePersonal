@@ -220,7 +220,7 @@
                         resolve(binaryData);
                     };
                     reader.onerror = function (e) {
-                        reject(new Error('file read fail: ' + e.target.error));
+                        reject(new Error('File read failed: ' + e.target.error));
                     };
                     reader.readAsArrayBuffer(data);
                     break;
@@ -232,7 +232,7 @@
                         resolve(binaryData);
                     };
                     blobReader.onerror = function (e) {
-                        reject(new Error('Blob read fail: ' + e.target.error));
+                        reject(new Error('Blob read failed: ' + e.target.error));
                     };
                     blobReader.readAsArrayBuffer(data);
                     break;
@@ -245,7 +245,7 @@
                     fetch(data)
                         .then(function (response) {
                             if (!response.ok) {
-                                throw new Error('fetch fail: ' + response.status + ' ' + response.statusText);
+                                throw new Error('Fetch failed: ' + response.status + ' ' + response.statusText);
                             }
                             return response.arrayBuffer();
                         })
@@ -253,7 +253,7 @@
                             resolve(new Uint8Array(arrayBuffer));
                         })
                         .catch(function (error) {
-                            reject(new Error('URL download fail: ' + error.message));
+                            reject(new Error('URL download failed: ' + error.message));
                         });
                     break;
 
@@ -261,7 +261,7 @@
                     try {
                         var base64String = data.split(',')[1];
                         if (!base64String) {
-                            throw new Error('invalid Data URL ');
+                            throw new Error('Invalid Data URL');
                         }
                         var binaryString = atob(base64String);
                         var binaryData = new Uint8Array(binaryString.length);
@@ -272,7 +272,7 @@
 
                         resolve(binaryData);
                     } catch (error) {
-                        reject(new Error('Data URL reslove fail: ' + error.message));
+                        reject(new Error('Data URL resolve failed: ' + error.message));
                     }
                     break;
 
@@ -280,7 +280,7 @@
                     fetch(data)
                         .then(function (response) {
                             if (!response.ok) {
-                                throw new Error('Blob URL connection fail: ' + response.status);
+                                throw new Error('Blob URL connection failed: ' + response.status);
                             }
                             return response.arrayBuffer();
                         })
@@ -288,7 +288,7 @@
                             resolve(new Uint8Array(arrayBuffer));
                         })
                         .catch(function (error) {
-                            reject(new Error('Blob URL handle fail: ' + error.message));
+                            reject(new Error('Blob URL handle failed: ' + error.message));
                         });
                     break;
 
@@ -296,7 +296,7 @@
                     fetch(data)
                         .then(function (response) {
                             if (!response.ok) {
-                                throw new Error('File URL connection fail: ' + response.status);
+                                throw new Error('File URL connection failed: ' + response.status);
                             }
                             return response.arrayBuffer();
                         })
@@ -304,7 +304,7 @@
                             resolve(new Uint8Array(arrayBuffer));
                         })
                         .catch(function (error) {
-                            reject(new Error('File URL fail: ' + error.message));
+                            reject(new Error('File URL failed: ' + error.message));
                         });
                     break;
 
@@ -326,12 +326,12 @@
                         var encoder = new TextEncoder();
                         resolve(encoder.encode(data));
                     } catch (error) {
-                        reject(new Error('string fail: ' + error.message));
+                        reject(new Error('String encoding failed: ' + error.message));
                     }
                     break;
 
                 default:
-                    var errorMsg = 'Unsupport data: ' + type;
+                    var errorMsg = 'Unsupported data type: ' + type;
                     console.error(errorMsg, data);
                     reject(new Error(errorMsg));
             }
@@ -368,7 +368,7 @@
             '/working/themes'
         ];
 
-        this.INIT_TIMEOUT = 20000;
+        this.INIT_TIMEOUT = 60000;
     }
 
     X2TConverter.prototype.initialize = function () {
@@ -463,7 +463,7 @@
                     try {
                         self.x2tModule.FS.unlink('/working/' + file);
                     } catch (e) {
-                        // 忽略删除错误
+                        // Ignore deletion errors
                     }
                 }
             });
