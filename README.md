@@ -2,13 +2,13 @@
 
 <div align="center">
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-AGPL--3.0-blue.svg)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/username/OnlyofficePersonal.svg)](https://github.com/username/OnlyofficePersonal/stargazers)
 [![Forks](https://img.shields.io/github/forks/username/OnlyofficePersonal.svg)](https://github.com/username/OnlyofficePersonal/network)
 
 **基于WebAssembly的本地化ONLYOFFICE办公套件**
 
-🌐 **[Live Demo](https://fernfei.github.io/office.html)** - 无需安装，立即体验！
+🌐 **[Live Demo](https://fernfei.github.io/OnlyofficePersonal/office.html)** - 无需安装，立即体验！
 
 [English](README_EN.md) | 中文
 
@@ -99,7 +99,7 @@ OnlyofficePersonal/
 ├── assets/               # 静态资源文件
 ├── docs/                 # 文档和截图
 ├── office.html           # 主入口文件
-├── onlyoffice.html       # 备用入口文件
+├── onlyoffice.html       # onlyoffice入口文件
 └── README.md            # 项目说明
 ```
 
@@ -115,7 +115,7 @@ OnlyofficePersonal/
 
 ## 📄 许可证
 
-本项目基于 MIT 许可证开源 - 查看 [LICENSE](LICENSE) 文件了解详情。
+本项目基于 AGPL-3.0 许可证开源 - 查看 [LICENSE](LICENSE) 文件了解详情。
 
 ## 🙏 致谢
 

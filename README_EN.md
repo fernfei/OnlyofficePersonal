@@ -2,13 +2,13 @@
 
 <div align="center">
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![License](https://img.shields.io/badge/license-AGPL--3.0-blue.svg)](LICENSE)
 [![Stars](https://img.shields.io/github/stars/username/OnlyofficePersonal.svg)](https://github.com/username/OnlyofficePersonal/stargazers)
 [![Forks](https://img.shields.io/github/forks/username/OnlyofficePersonal.svg)](https://github.com/username/OnlyofficePersonal/network)
 
 **Local ONLYOFFICE Office Suite Based on WebAssembly**
 
-🌐 **[Live Demo](https://fernfei.github.io/office.html)** - Try it now without installation!
+🌐 **[Live Demo](https://fernfei.github.io/OnlyofficePersonal/office.html)** - Try it now without installation!
 
 English | [中文](README.md)
 
@@ -98,7 +98,7 @@ OnlyofficePersonal/
 ├── assets/               # Static resource files
 ├── docs/                 # Documentation and screenshots
 ├── office.html           # Main entry file
-├── onlyoffice.html       # Alternative entry file
+├── onlyoffice.html       # ONLYOFFICE entry file
 └── README.md            # Project documentation
 ```
 
@@ -114,7 +114,7 @@ We welcome Issues and Pull Requests to improve the project:
 
 ## 📄 License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the AGPL-3.0 License - see the [LICENSE](LICENSE) file for details.
 
 ## 🙏 Acknowledgments
 
