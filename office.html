@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Office文档管理器</title>
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="text/javascript" src="./vendor/web-apps/apps/api/documents/api.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+
+        #onlyoffice {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 300;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .main-content {
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .section-title i {
+            color: #667eea;
+        }
+
+        /* 新文档区域 */
+        .create-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+
+        .doc-card {
+            background: #f8f9ff;
+            border: 2px solid #e1e8ff;
+            border-radius: 15px;
+            padding: 30px 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .doc-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-color: #667eea;
+        }
+
+        .doc-card.word {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            border-color: #2196f3;
+        }
+
+        .doc-card.excel {
+            background: linear-gradient(135deg, #e8f5e8 0%, #c8e6c9 100%);
+            border-color: #4caf50;
+        }
+
+        .doc-card.ppt {
+            background: linear-gradient(135deg, #fff3e0 0%, #ffcc02 100%);
+            border-color: #ff9800;
+        }
+
+        .doc-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .word .doc-icon {
+            color: #2196f3;
+        }
+
+        .excel .doc-icon {
+            color: #4caf50;
+        }
+
+        .ppt .doc-icon {
+            color: #ff9800;
+        }
+
+        .doc-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .doc-subtitle {
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        /* 文件操作区域 */
+        .file-operations {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        .operation-panel {
+            background: #f8f9fa;
+            border-radius: 15px;
+            padding: 25px;
+            border: 1px solid #e9ecef;
+        }
+
+        .operation-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .upload-area {
+            border: 2px dashed #dee2e6;
+            border-radius: 10px;
+            padding: 30px;
+            text-align: center;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .upload-area:hover {
+            border-color: #667eea;
+            background-color: #f8f9ff;
+        }
+
+        .upload-area.dragover {
+            border-color: #667eea;
+            background-color: #e3f2fd;
+        }
+
+        .upload-icon {
+            font-size: 2rem;
+            color: #6c757d;
+            margin-bottom: 10px;
+        }
+
+        .upload-text {
+            color: #6c757d;
+            margin-bottom: 15px;
+        }
+
+        .file-input {
+            display: none;
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #6c757d 0%, #495057 100%);
+        }
+
+        .btn-secondary:hover {
+            box-shadow: 0 5px 15px rgba(108, 117, 125, 0.4);
+        }
+
+        .url-input {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #dee2e6;
+            border-radius: 10px;
+            font-size: 1rem;
+            margin-bottom: 15px;
+            transition: border-color 0.3s ease;
+        }
+
+        .url-input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        /* 文件列表 */
+        .file-list {
+            margin-top: 30px;
+        }
+
+        .file-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px;
+            background: white;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+        }
+
+        .file-item:hover {
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .file-info {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .file-icon {
+            font-size: 1.5rem;
+        }
+
+        .file-details h4 {
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .file-details p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .file-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .action-btn {
+            padding: 8px 12px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+
+        .action-btn.open {
+            background: #e3f2fd;
+            color: #1976d2;
+        }
+
+        .action-btn.delete {
+            background: #ffebee;
+            color: #d32f2f;
+        }
+
+        .action-btn:hover {
+            transform: scale(1.05);
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .file-operations {
+                grid-template-columns: 1fr;
+            }
+
+            .create-section {
+                grid-template-columns: 1fr;
+            }
+
+            .main-content {
+                padding: 20px;
+            }
+
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1><i class="fas fa-file-alt"></i> Office文档管理器</h1>
+        <p>创建、打开和管理您的办公文档</p>
+    </div>
+
+    <div class="main-content">
+        <!-- 新建文档区域 -->
+        <div class="section">
+            <h2 class="section-title">
+                <i class="fas fa-plus-circle"></i>
+                新建文档
+            </h2>
+            <div class="create-section">
+                <div class="doc-card word" onclick="createNewDoc('word')">
+                    <div class="doc-icon">
+                        <i class="fas fa-file-word"></i>
+                    </div>
+                    <div class="doc-title">Word文档</div>
+                    <div class="doc-subtitle">创建新的Word文档</div>
+                </div>
+
+                <div class="doc-card excel" onclick="createNewDoc('excel')">
+                    <div class="doc-icon">
+                        <i class="fas fa-file-excel"></i>
+                    </div>
+                    <div class="doc-title">Excel表格</div>
+                    <div class="doc-subtitle">创建新的Excel表格</div>
+                </div>
+
+                <div class="doc-card ppt" onclick="createNewDoc('ppt')">
+                    <div class="doc-icon">
+                        <i class="fas fa-file-powerpoint"></i>
+                    </div>
+                    <div class="doc-title">PowerPoint演示</div>
+                    <div class="doc-subtitle">创建新的PPT演示文稿</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 文件操作区域 -->
+        <div class="section">
+            <h2 class="section-title">
+                <i class="fas fa-folder-open"></i>
+                打开文档
+            </h2>
+            <div class="file-operations">
+                <!-- 本地文件上传 -->
+                <div class="operation-panel">
+                    <h3 class="operation-title">
+                        <i class="fas fa-upload"></i>
+                        本地文件
+                    </h3>
+                    <div class="upload-area" onclick="document.getElementById('fileInput').click()">
+                        <div class="upload-icon">
+                            <i class="fas fa-cloud-upload-alt"></i>
+                        </div>
+                        <div class="upload-text">
+                            点击选择文件或拖拽文件到此处
+                        </div>
+                        <button class="btn">
+                            <i class="fas fa-folder"></i>
+                            选择文件
+                        </button>
+                    </div>
+                    <input type="file" id="fileInput" class="file-input"
+                           accept=".doc,.docx,.xls,.xlsx,.ppt,.pptx"
+                           onchange="handleFileSelect(event)">
+                </div>
+
+                <!-- 网络链接 -->
+                <div class="operation-panel">
+                    <h3 class="operation-title">
+                        <i class="fas fa-link"></i>
+                        网络链接
+                    </h3>
+                    <input type="url" class="url-input" id="urlInput"
+                           placeholder="输入文档的网络链接地址...">
+                    <button class="btn" onclick="openFromUrl()">
+                        <i class="fas fa-external-link-alt"></i>
+                        打开链接
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 最近文件列表 -->
+        <div class="section">
+            <h2 class="section-title">
+                <i class="fas fa-history"></i>
+                最近文件
+            </h2>
+            <div class="file-list" id="fileList">
+                <!-- 文件列表将通过JavaScript动态生成 -->
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // 存储文件列表
+    let fileList = JSON.parse(localStorage.getItem('officeFiles') || '[]')
+
+    // 页面加载时显示文件列表
+    document.addEventListener('DOMContentLoaded', function() {
+        if (typeof DocsAPI === 'undefined') {
+            alert('OnlyOffice API 未加载，请检查文档服务器地址')
+            return
+        }
+        displayFileList()
+        setupDragAndDrop()
+    })
+
+    // 文档配置
+    let docConfig = {
+        'document': {
+            'fileType': 'docx',
+            'title': '测试文档.docx',
+        },
+        'documentType': 'word',
+        'height': '100%',
+        'width': '100%'
+    }
+
+    function openNewWindow(docConfig) {
+        window.open('./onlyoffice.html?docConfig=' + encodeURI(JSON.stringify(docConfig)), '_blank');
+    };
+
+    // 生成唯一文件名，处理重复
+    function generateUniqueFileName(originalName) {
+        let fileName = originalName
+        let counter = 1
+        
+        // 检查文件名是否已存在
+        while (fileList.some(file => file.name === fileName)) {
+            // 分离文件名和扩展名
+            const lastDotIndex = originalName.lastIndexOf('.')
+            if (lastDotIndex === -1) {
+                // 没有扩展名
+                fileName = `${originalName}(${counter})`
+            } else {
+                // 有扩展名
+                const name = originalName.substring(0, lastDotIndex)
+                const extension = originalName.substring(lastDotIndex)
+                fileName = `${name}(${counter})${extension}`
+            }
+            counter++
+        }
+        
+        return fileName
+    }
+
+    // 创建新文档
+    function createNewDoc(type) {
+        const fileNames = {
+            word: '新建Word文档.docx',
+            excel: '新建Excel表格.xlsx',
+            ppt: '新建PowerPoint演示.pptx'
+        }
+        
+        const documentTypes = {
+            word: 'word',
+            excel: 'cell', 
+            ppt: 'slide'
+        }
+        
+        const fileTypes = {
+            word: 'docx',
+            excel: 'xlsx',
+            ppt: 'pptx'
+        }
+
+        // 生成唯一文件名
+        const uniqueFileName = generateUniqueFileName(fileNames[type])
+        docConfig.document.title = uniqueFileName
+        docConfig.document.fileType = fileTypes[type]
+        docConfig.documentType = documentTypes[type]
+
+        openNewWindow(docConfig)
+
+
+        // 添加到文件列表
+        const newFile = {
+            id: Date.now(),
+            name: uniqueFileName,
+            type: type,
+            size: '0 KB',
+            lastModified: new Date().toLocaleString(),
+            source: 'new',
+        }
+
+        fileList.unshift(newFile)
+        saveFileList()
+        displayFileList()
+    }
+    // 处理文件选择
+    async function handleFileSelect(event) {
+        const file = event.target.files[0]
+        if (!file) return
+        
+        try {
+            // 生成唯一文件名
+            const uniqueFileName = generateUniqueFileName(file.name)
+            let fileExt = file.name.split('.')[1];
+            const arrayBuffer = await file.arrayBuffer()
+            const blob = new Blob([arrayBuffer])
+            const blobUrl = URL.createObjectURL(blob)
+            // 获取文件类型
+            const fileType = getFileType(file.name)
+            
+            // 获取文档类型映射
+            const documentTypes = {
+                word: 'word',
+                excel: 'cell',
+                ppt: 'slide'
+            }
+            
+            const fileTypes = {
+                word: 'docx',
+                excel: 'xlsx',
+                ppt: 'pptx'
+            }
+            
+            // 配置OnlyOffice
+            docConfig.document.url = blobUrl
+            docConfig.document.title = uniqueFileName
+            docConfig.document.fileType = fileExt
+            docConfig.documentType = documentTypes[fileType] || 'word'
+            docConfig.document.key = 'local-doc-' + Date.now()
+
+            openNewWindow(docConfig)
+            
+            // 添加到文件列表
+            addFileToList(file, blobUrl, uniqueFileName)
+            
+        } catch (error) {
+            console.error('处理文件失败:', error)
+            alert('文件处理失败，请重试')
+        }
+    }
+
+    // 添加文件到列表
+    function addFileToList(file, blobUrl, customFileName) {
+        const fileType = getFileType(file.name)
+        const fileName = customFileName || file.name
+        
+        const newFile = {
+            id: Date.now() + Math.random(),
+            name: fileName,
+            type: fileType,
+            size: formatFileSize(file.size),
+            lastModified: new Date(file.lastModified).toLocaleString(),
+            source: 'local',
+            blobUrl: blobUrl
+        }
+
+        fileList.unshift(newFile)
+        saveFileList()
+        displayFileList()
+    }
+
+    // 从网络链接打开
+    async function openFromUrl() {
+        const url = document.getElementById('urlInput').value.trim()
+        if (!url) {
+            alert('请输入有效的网络链接')
+            return
+        }
+
+        try {
+            // 获取文件名和类型
+            const fileName = url.split('/').pop() || '网络文档'
+            const fileType = getFileType(fileName)
+            
+            // 生成唯一文件名
+            const uniqueFileName = generateUniqueFileName(fileName)
+            
+            // 通过fetch下载文件并转换为Blob URL
+            const response = await fetch(url)
+            if (!response.ok) {
+                throw new Error('无法下载文件')
+            }
+            
+            const arrayBuffer = await response.arrayBuffer()
+            const blob = new Blob([arrayBuffer])
+            const blobUrl = URL.createObjectURL(blob)
+            
+            // 获取文档类型映射
+            const documentTypes = {
+                word: 'word',
+                excel: 'cell',
+                ppt: 'slide'
+            }
+            
+            const fileTypes = {
+                word: 'docx',
+                excel: 'xlsx', 
+                ppt: 'pptx'
+            }
+            
+            // 配置OnlyOffice
+            docConfig.document.url = blobUrl
+            docConfig.document.title = uniqueFileName
+            docConfig.document.fileType = fileTypes[fileType] || 'docx'
+            docConfig.documentType = documentTypes[fileType] || 'word'
+            docConfig.document.key = 'url-doc-' + Date.now()
+
+            openNewWindow(docConfig)
+
+            // 添加到文件列表
+            const newFile = {
+                id: Date.now(),
+                name: uniqueFileName,
+                type: fileType,
+                size: formatFileSize(arrayBuffer.byteLength),
+                lastModified: new Date().toLocaleString(),
+                source: 'url',
+                url: url,
+                blobUrl: blobUrl
+            }
+
+            fileList.unshift(newFile)
+            saveFileList()
+            displayFileList()
+
+            document.getElementById('urlInput').value = ''
+            
+        } catch (error) {
+            console.error('下载文件失败:', error)
+            alert('无法下载文件，请检查链接是否有效或网络连接')
+        }
+    }
+
+    // 获取文件类型
+    function getFileType(fileName) {
+        const ext = fileName.split('.').pop().toLowerCase()
+        if (['doc', 'docx'].includes(ext)) return 'word'
+        if (['xls', 'xlsx'].includes(ext)) return 'excel'
+        if (['ppt', 'pptx'].includes(ext)) return 'ppt'
+        return 'unknown'
+    }
+
+    // 格式化文件大小
+    function formatFileSize(bytes) {
+        if (bytes === 0) return '0 Bytes'
+        const k = 1024
+        const sizes = ['Bytes', 'KB', 'MB', 'GB']
+        const i = Math.floor(Math.log(bytes) / Math.log(k))
+        return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i]
+    }
+
+    // 显示文件列表
+    function displayFileList() {
+        const container = document.getElementById('fileList')
+        if (fileList.length === 0) {
+            container.innerHTML = '<p style="text-align: center; color: #666; padding: 40px;">暂无文件</p>'
+            return
+        }
+
+        container.innerHTML = fileList.map(file => `
+                <div class="file-item">
+                    <div class="file-info">
+                        <div class="file-icon ${file.type}">
+                            <i class="fas fa-file-${file.type === 'word' ? 'word' : file.type === 'excel' ? 'excel' : file.type === 'ppt' ? 'powerpoint' : 'alt'}"></i>
+                        </div>
+                        <div class="file-details">
+                            <h4>${file.name}</h4>
+                            <p>大小: ${file.size} | 修改时间: ${file.lastModified}</p>
+                        </div>
+                    </div>
+                    <div class="file-actions">
+                        <button class="action-btn open" onclick="openFile(${file.id})">
+                            <i class="fas fa-external-link-alt"></i> 打开
+                        </button>
+                        <button class="action-btn delete" onclick="deleteFile(${file.id})">
+                            <i class="fas fa-trash"></i> 删除
+                        </button>
+                    </div>
+                </div>
+            `).join('')
+    }
+
+    // 打开文件
+    function openFile(fileId) {
+        const file = fileList.find(f => f.id === fileId)
+        if (!file) return
+
+        if (file.blobUrl) {
+            // 获取文档类型映射
+            const documentTypes = {
+                word: 'word',
+                excel: 'cell',
+                ppt: 'slide'
+            }
+            
+            const fileTypes = {
+                word: 'docx',
+                excel: 'xlsx',
+                ppt: 'pptx'
+            }
+            
+            // 配置OnlyOffice
+            docConfig.document.url = file.blobUrl
+            docConfig.document.title = file.name
+            docConfig.document.fileType = fileTypes[file.type] || 'docx'
+            docConfig.documentType = documentTypes[file.type] || 'word'
+            docConfig.document.key = 'open-doc-' + Date.now()
+
+            openNewWindow(docConfig)
+        } else if (file.source === 'url' && file.url) {
+            // 如果没有blobUrl但有原始URL，重新下载
+            openFromUrlById(file.id)
+        } else {
+            alert('无法打开文件')
+        }
+    }
+    
+    // 根据ID重新从URL打开文件
+    async function openFromUrlById(fileId) {
+        const file = fileList.find(f => f.id === fileId)
+        if (!file || !file.url) return
+        
+        try {
+            const response = await fetch(file.url)
+            if (!response.ok) throw new Error('无法下载文件')
+            
+            const arrayBuffer = await response.arrayBuffer()
+            const blob = new Blob([arrayBuffer])
+            const blobUrl = URL.createObjectURL(blob)
+            
+            // 更新文件记录
+            file.blobUrl = blobUrl
+            saveFileList()
+            
+            // 打开文件
+            openFile(fileId)
+            
+        } catch (error) {
+            console.error('重新下载文件失败:', error)
+            alert('无法重新加载文件')
+        }
+    }
+
+    // 删除文件
+    function deleteFile(fileId) {
+        if (confirm('确定要删除这个文件吗？')) {
+            fileList = fileList.filter(f => f.id !== fileId)
+            saveFileList()
+            displayFileList()
+        }
+    }
+
+    // 保存文件列表到本地存储
+    function saveFileList() {
+        // 只保存文件信息，不保存File对象和blobUrl（因为blobUrl在页面刷新后会失效）
+        const saveData = fileList.map(file => ({
+            id: file.id,
+            name: file.name,
+            type: file.type,
+            size: file.size,
+            lastModified: file.lastModified,
+            source: file.source,
+            url: file.url
+        }))
+        localStorage.setItem('officeFiles', JSON.stringify(saveData))
+    }
+
+    // 设置拖拽上传
+    function setupDragAndDrop() {
+        const uploadArea = document.querySelector('.upload-area')
+
+        uploadArea.addEventListener('dragover', function(e) {
+            e.preventDefault()
+            uploadArea.classList.add('dragover')
+        })
+
+        uploadArea.addEventListener('dragleave', function(e) {
+            e.preventDefault()
+            uploadArea.classList.remove('dragover')
+        })
+
+        uploadArea.addEventListener('drop', async function(e) {
+            e.preventDefault()
+            uploadArea.classList.remove('dragover')
+
+            const files = e.dataTransfer.files
+            for (let file of files) {
+                if (isOfficeFile(file.name)) {
+                    try {
+                        // 生成唯一文件名
+                        const uniqueFileName = generateUniqueFileName(file.name)
+                        
+                        const arrayBuffer = await file.arrayBuffer()
+                        const blob = new Blob([arrayBuffer])
+                        const blobUrl = URL.createObjectURL(blob)
+                        addFileToList(file, blobUrl, uniqueFileName)
+                    } catch (error) {
+                        console.error('处理拖拽文件失败:', error)
+                        alert('文件处理失败: ' + file.name)
+                    }
+                }
+            }
+        })
+    }
+
+    // 检查是否为Office文件
+    function isOfficeFile(fileName) {
+        const ext = fileName.split('.').pop().toLowerCase()
+        return ['doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx'].includes(ext)
+    }
+</script>
+</body>
+</html>

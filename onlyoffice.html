@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>OnlyOffice</title>
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon"/>
+    <script type="text/javascript" src="./vendor/web-apps/apps/api/documents/api.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #editor {
+            width: 100%;
+            height:100%;
+        }
+        .container {
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div id="editor"></div>
+</div>
+
+<script>
+
+    function loadOnlyoffice(docConfig) {
+        // 初始化编辑器
+        new DocsAPI.DocEditor('editor', docConfig)
+    }
+
+    function getUrlParams() {
+        const safeDecode = (str) => {
+            try {
+                return decodeURIComponent(str.replace(/\+/g, ' '));
+            } catch (e) {
+                // 解码失败时回退方案
+                return str.replace(/\+/g, ' ').replace(/%[^0-9A-Fa-f]/g, match => {
+                    try {
+                        return decodeURIComponent(match);
+                    } catch {
+                        return match; // 保留原始字符
+                    }
+                });
+            }
+        };
+
+        const query = window.location.search.substring(1);
+        const params = {};
+
+        query.split('&').forEach(pair => {
+            const [key, value] = pair.split('=').map(safeDecode);
+            if (key) params[key] = value  || '';
+        });
+
+        return params;
+    }
+    // 页面加载后初始化
+    window.onload = function () {
+        if (typeof DocsAPI === "undefined") {
+            alert("OnlyOffice API 未加载，请检查文档服务器地址");
+            return;
+        }
+
+        // 首先检查URL参数
+        if (window.location.search) {
+            let queryParams = getUrlParams();
+            if (queryParams['docConfig']) {
+                loadOnlyoffice(JSON.parse(queryParams['docConfig']));
+                return;
+            }
+        }
+    };
+     
+</script>
+</body>
+</html>
