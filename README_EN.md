@@ -25,8 +25,9 @@ ONLYOFFICE Personal is a completely local office suite solution that runs full O
 - **🔒 Fully Local** - No server required, all data processed locally, privacy protection guaranteed
 - **⚡ Fast Response** - Based on WebAssembly technology with near-native performance
 - **📝 Complete Functionality** - Supports all ONLYOFFICE office features including document editing, formula calculation, animation creation, etc.
+- **📋 PDF Editing** - Powerful PDF editing capabilities with support for annotations, form filling, text modification and other professional operations
 - **🌐 Cross-Platform** - Runs on any modern browser, supports Windows, macOS, Linux
-- **📂 Format Compatible** - Perfect support for Microsoft Office formats (.docx, .xlsx, .pptx, etc.)
+- **📂 Format Compatible** - Perfect support for Microsoft Office formats (.docx, .xlsx, .pptx, etc.) and PDF format
 - **🎨 User-Friendly Interface** - Familiar office software interface with low learning curve
 - **💾 Ready to Use** - No installation required, runs directly in browser
 
