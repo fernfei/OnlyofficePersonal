@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Inserir controles de conteúdo</title>
+		<meta charset="utf-8" />
+        <meta name="descrição" content="Inserir controles de conteúdo para criar um formulário com campos de entrada que podem ser preenchidos por outros usuários ou proteger algumas partes do documento de serem editadas ou excluídas" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Inserir controles de conteúdo</h1>
+            <p><a href="https://www.onlyoffice.com/pt/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Documentos do ONLYOFFICE</b></a> permite inserir controles de conteúdo <b>clássicos</b>, ou seja, eles são totalmente <b>compatíveis com versões anteriores</b> com processadores de texto de terceiros, como o Microsoft Word.</p>
+            <p>Editor de Documentos do ONLYOFFICE suporta os seguintes controles de conteúdo clássico: <em>Texto sem formatação</em>, <em>Texto rico</em>, <em>Imagem</em>, <em>Caixa de combinação</em>, <em>Drop-lista inferior</em>, <em>Data</em>, <em>Caixa de seleção</em>.</p>
+            <ul>
+                <li><em>Texto simples</em> é um objeto que contém texto que não pode ser formatado. Os controles de conteúdo de texto simples não podem conter mais de um parágrafo.</li>
+                 <li><em>Texto rico</em> é um objeto que contém texto que pode ser formatado. Os controles de conteúdo texto rico podem conter vários parágrafos, listas e objetos (imagens, formas, tabelas etc.).</li>
+                 <li><em>Imagem</em> é um objeto que contém uma única imagem.</li>
+                 <li><em>Caixa de combinação</em> é um objeto que contém uma lista suspensa com um conjunto de opções. Permite escolher um dos valores predefinidos da lista e editar o valor selecionado, se necessário.</li>
+                 <li><em>Lista suspensa</em> é um objeto que contém uma lista suspensa com um conjunto de opções. Permite escolher um dos valores predefinidos da lista. O valor selecionado não pode ser editado.</li>
+                 <li><em>Data</em> é um objeto que contém um calendário que permite escolher uma data.</li>
+                 <li><em>Caixa de seleção</em> é um objeto que permite exibir dois estados: a caixa de seleção está marcada e a caixa de seleção está desmarcada.</li>
+            </ul>
+            <h3>Adicionando controles de conteúdo</h3>
+             <h5>Crie um novo controle de conteúdo de texto sem formatação</h5>
+            <ol>
+                <li>posicione o ponto de inserção dentro da linha de texto onde o controle de conteúdo deve ser adicionado,<br />ou selecione uma passagem de texto para transformá-la em um controle de conteúdo.</li>
+                 <li>mude para a guia <b>Inserir</b> da barra de ferramentas superior.</li>
+                 <li>clique na seta ao lado do ícone <div class = "icon icon-insertccicon"></div> <b>Controles de conteúdo</b>.</li>
+                 <li>escolha a opção <b>Texto simples</b> no menu.</li>
+            </ol>
+            <p>O controle de conteúdo será inserido no ponto de inserção dentro da linha de texto existente. Substitua o texto padrão no controle de conteúdo ("Seu texto aqui") pelo seu próprio texto: selecione o texto padrão e digite um novo texto ou copie uma passagem de texto de qualquer lugar e cole-o no controle de conteúdo. Os controles de conteúdo de texto simples não permitem adicionar quebras de linha e não podem conter outros objetos como imagens, tabelas, etc.</p>
+            <p><img alt="Novo controle de conteúdo de texto simples" src="../images/addedcontentcontrol.png" /></p>
+            <h5>Crie um novo controle de conteúdo Texto rico</h5>
+            <ol>
+                <li>posicione o ponto de inserção dentro da linha de texto onde o controle de conteúdo deve ser adicionado,<br />ou selecione um ou mais dos parágrafos existentes que você deseja que se tornem o conteúdo do controle.</li>
+                <li>mude para a guia <b>Inserir</b> da barra de ferramentas superior.</li>
+                <li>clique na seta ao lado do <div class = "icon icon-insertccicon"></div> <b>Controles de conteúdo</b> ícone.</li>
+                 <li>escolha a opção <b>Texto rico</b> no menu.</li>
+            </ol>
+            <p>O controle será inserido em um novo parágrafo. Substitua o texto padrão dentro do controle ("Seu texto aqui") pelo seu próprio: selecione o texto padrão e digite um novo texto ou copie uma passagem de texto de qualquer lugar e cole-o no controle de conteúdo. Os controles de conteúdo texto rico permitem adicionar quebras de linha, ou seja, podem conter vários parágrafos, bem como alguns objetos, como imagens, tabelas, outros controles de conteúdo, etc.</p>
+            <p><img alt="Controle de conteúdo de rich text" src="../images/richtextcontentcontrol.png" /></p>
+            <h5>Crie um novo controle de conteúdo de imagem</h5>
+            <ol>
+                <li>posicione o ponto de inserção dentro de uma linha do texto onde deseja adicionar o controle.</li>
+                 <li>mude para a guia <b>Inserir</b> da barra de ferramentas superior.</li>
+                 <li>clique na seta ao lado do ícone <div class = "icon icon-insertccicon"></div> <b>Controles de conteúdo</b>.</li>
+                 <li>escolha a opção <b>Imagem</b> no menu - o controle de conteúdo será inserido no ponto de inserção.</li>
+                 <li>clique no ícone <div class = "icon icon-image_settings_icon"></div> de imagem no botão acima da borda do controle de conteúdo - uma janela de seleção de arquivo padrão será aberta. Escolha uma imagem armazenada em seu computador e clique em <b>Abrir</b>.</li>
+            </ol>
+            <p>A imagem selecionada será exibida dentro do controle de conteúdo. Para substituir a imagem, clique no ícone <span class = "icon icon-image_settings_icon"></span> de imagem no botão acima da borda do controle de conteúdo e selecione outra imagem.</p>
+            <p><span class = "big big-picturecontentcontrol"></span></p>
+            <h5>Crie uma nova caixa de combinação ou controle de conteúdo da lista suspensa</h5>
+             <p>Os controles de conteúdo <em>Caixa de combinação</em> e <em>Lista suspensa</em> contêm uma lista suspensa com um conjunto de opções. Eles podem ser criados quase da mesma maneira. A principal diferença entre eles é que o valor selecionado na lista suspensa não pode ser editado, enquanto o valor selecionado na caixa de combinação pode ser substituído.</p>
+            <ol>
+                <li>posicione o ponto de inserção dentro de uma linha do texto onde deseja adicionar o controle.</li>
+                 <li>mude para a guia <b>Inserir</b> da barra de ferramentas superior.</li>
+                 <li>clique na seta ao lado do ícone <div class = "icon icon-insertccicon"></div> <b>Controles de conteúdo</b>.</li>
+                 <li>escolha a opção <b>Caixa de combinação</b> ou <b>Lista suspensa</b> no menu - o controle será inserido no ponto de inserção.</li>
+                <li>clique com o botão direito do mouse no controle adicionado e escolha a opção <b>Propriedades do controle de conteúdo</b> no menu contextual.</li>
+                 <li>na janela aberta <b>Configurações de controle de conteúdo</b>, alterne para a guia <b>Caixa de combinação</b> ou <b>Lista suspensa</b>, dependendo do conteúdo selecionado tipo de controle.
+                <p><img alt="Janela de configurações da caixa de combinação" src="../images/comboboxsettings.png" /></p>
+                </li>
+                <li>
+                    para adicionar um novo item da lista, clique no botão <b>Adicionar</b> e preencha os campos disponíveis na janela aberta:
+                    <p><img alt="Caixa de combinação - agregando valor" src="../images/comboboxaddvalue.png" /></p>
+                    <ol>
+                        <li>especifique o texto necessário no campo <b>Nome de exibição</b>, por exemplo <em>Sim</em>, <em>Não</em>, <em>Outro</em>. Este texto será exibido no controle de conteúdo do documento.</li>
+                         <li>por padrão, o texto no campo <b>Valor</b> corresponde ao inserido no campo <b>Nome de exibição</b>. Se você quiser editar o texto no campo <b>Valor</b>, observe que o valor inserido deve ser exclusivo para cada item. </li>
+                         <li>clique no botão <b>OK</b>.</li>
+                    </ol>
+                </li>
+                <li>você pode editar ou excluir os itens da lista usando os botões <b>Editar</b> ou <b>Excluir</b> à direita ou alterar a ordem dos itens usando botão <b>Para cima</b> e <b>Para baixo</b>.</li>
+                 <li>quando todas as opções necessárias estiverem definidas, clique no botão <b>OK</b> para salvar as configurações e fechar a janela.</li>
+            </ol>
+            <p><img alt="Novo controle de conteúdo da caixa de combinação" src="../images/comboboxcontentcontrol.png" /></p>
+            <p>Você pode clicar no botão de seta na parte direita do controle de conteúdo <b>Caixa de combinação</b> ou <b>Lista suspensa</b> adicionada para abrir a lista de itens e escolher o necessário. Assim que o item necessário for selecionado na <b>caixa de combinação</b>, você pode editar o texto exibido substituindo-o total ou parcialmente pelo seu texto. A <b>Lista suspensa</b> não permite editar o item selecionado.</p>
+            <p><img alt="Controle de conteúdo da caixa de combinação" src="../images/comboboxcontentcontrol2.png" /></p>
+            <h5>Crie um novo controle de conteúdo de data</h5>
+            <ol>
+                <li>posicione o ponto de inserção dentro do texto onde o controle de conteúdo deve ser adicionado.</li>
+                 <li>mude para a guia <b>Inserir</b> da barra de ferramentas superior.</li>
+                 <li>clique na seta ao lado do <div class = "icon icon-insertccicon"></div> <b>Controles de conteúdo</b> ícone.</li>
+                 <li>escolha a opção <b>Data</b> no menu - o controle de conteúdo com a data atual será inserido no ponto de inserção.</li>
+                <li>clique com o botão direito do mouse no controle de conteúdo adicionado e escolha a opção <b>Propriedades do controle de conteúdo</b> no menu contextual.</li>
+                <li>
+                    na janela aberta <b>Configurações de controle de conteúdo</b>, alterne para a guia <b>Formato de data</b>.
+                    <p><img alt="Janela de configurações de data" src="../images/datesettings.png" /></p>
+                </li>
+                <li>escolha o <b>Idioma</b> necessário e selecione o formato de data necessário na lista <b>Exibir a data como esta</b>.</li>
+                 <li>clique no botão <b>OK</b> para salvar as configurações e fechar a janela.</li>
+            </ol>
+            <p><span class = "big big-datecontentcontrol"></span></p>
+            <p>Você pode clicar no botão de seta à direita do controle de conteúdo <b>Data</b> adicionado para abrir o calendário e escolher a data necessária.</p>
+            <p><img alt="Controle de conteúdo de data" src="../images/datecontentcontrol2.png" /></p>
+            <h5>Crie um novo controle de conteúdo da Caixa de seleção</h5>
+             <ol>
+                 <li>posicione o ponto de inserção dentro da linha de texto onde o controle de conteúdo deve ser adicionado.</li>
+                 <li>mude para a guia <b>Inserir</b> da barra de ferramentas superior.</li>
+                 <li>clique na seta ao lado do ícone <div class = "icon icon-insertccicon"></div> <b>Controles de conteúdo</b>.</li>
+                 <li>escolha a opção <b>Caixa de seleção</b> no menu - o controle de conteúdo será inserido no ponto de inserção.</li>
+                 <li>clique com o botão direito do mouse no controle de conteúdo adicionado e escolha a opção <b>Propriedades do controle de conteúdo</b> no menu contextual.</li>
+                <li>
+                    na janela aberta <b>Configurações de controle de conteúdo</b>, alterne para a guia <b>Caixa de seleção</b>.
+                    <p><img alt="Janela de configurações da caixa de seleção" src="../images/checkboxsettings.png" /></p>
+                </li>
+                <li>clique no botão <b>Símbolo marcado</b> para especificar o símbolo necessário para a caixa de seleção selecionada ou no <b>Símbolo desmarcado</b> para selecionar como deve ser a aparência da caixa de seleção desmarcada. A janela <b>Símbolo</b> será aberta. Para saber mais sobre como trabalhar com símbolos, consulte <a href="../UsageInstructions/InsertSymbols.htm" onclick="onhyperlinkclick(this)">este artigo</a>.</li>
+                 <li>quando os símbolos forem especificados, clique no botão <b>OK</b> para salvar as configurações e fechar a janela.</li>
+            </ol>
+            <p>A caixa de seleção adicionada é exibida no modo desmarcado.</p>
+            <p><span class = "icon icon-checkboxcontentcontrol"></span></p>
+            <p>Se você clicar na caixa de seleção adicionada, ela será marcada com o símbolo selecionado na lista <b>Símbolo marcado</b>.</p>
+            <p><span class = "icon icon-checkboxcontentcontrol2"></span></p>
+            
+            <p class="note"><b>Nota</b>: A borda do controle de conteúdo só fica visível quando o controle é selecionado. As bordas não aparecem na versão impressa.</p>
+
+            <h3>Controles de conteúdo em movimento</h3>
+             <p>Os controles de conteúdo podem ser movidos para outro local no documento: clique no botão à esquerda da borda do controle para selecionar o controle e arraste-o sem soltar o botão do mouse para outra posição no texto.</p>
+            <p><img alt="Controle de conteúdo em movimento" src="../images/movecontentcontrol.png" /></p>
+            <p>Você também pode <b>copiar e colar</b> controles de conteúdo: selecione o controle necessário e use as combinações de teclas <b>Ctrl+C/Ctrl+V</b>.</p>
+            
+            <h3>Edição de controles de conteúdo de texto simples e texto rico</h3>
+             <p>O texto dentro dos controles de conteúdo de texto simples e texto rico pode ser formatado usando os ícones na barra de ferramentas superior: você pode ajustar o <a href="../UsageInstructions/FontTypeSizeColor.htm" onclick="onhyperlinkclick(this)">tipo de fonte, tamanho, cor</a>, aplicar <a href="../UsageInstructions/DecorationStyles.htm" onclick="onhyperlinkclick(this)">estilos de decoração</a> e <a href="../UsageInstructions/FormattingPresets.htm" onclick="onhyperlinkclick(this)">predefinições de formatação</a>. Também é possível usar a janela <b>Parágrafo - Configurações avançadas</b> acessível no menu contextual ou na barra lateral direita para alterar as propriedades do texto. O texto dentro dos controles de conteúdo de texto rico pode ser formatado como um texto normal, ou seja, você pode definir <a href="../UsageInstructions/LineSpacing.htm" onclick="onhyperlinkclick(this)">espaçamento entre linhas</a>, altere <a href="../UsageInstructions/ParagraphIndents.htm" onclick="onhyperlinkclick(this)">recuos de parágrafo</a>, ajuste <a href="../UsageInstructions/SetTabStops.htm" onclick="onhyperlinkclick(this)">paradas de tabulação</a>, etc.</p>
+            
+            <h3>Alteração das configurações de controle de conteúdo</h3>
+             <p>Independentemente do tipo de controle de conteúdo selecionado, você pode alterar as configurações de controle de conteúdo nas seções <b>Geral</b> e <b>Bloqueio</b> das <b>Configurações de controle de conteúdo</b> janela.</p>
+             <p>Para abrir as configurações de controle de conteúdo, você pode proceder das seguintes maneiras:</p>
+            <ul>
+                <li>Selecione o controle de conteúdo necessário, clique na seta ao lado do ícone <div class = "icon icon-insertccicon"></div> <b>Controles de conteúdo</b> na barra de ferramentas superior e selecione <b>Configurações de controle</b> opção no menu.</li>
+                 <li>Clique com o botão direito do mouse em qualquer lugar dentro do controle de conteúdo e use a opção <b>Propriedades do controle de conteúdo</b> no menu contextual.</li>
+            </ul>
+            <p>Uma nova janela se abrirá. Na guia <b>Geral</b>, você pode ajustar as seguintes configurações:</p>
+            <p><img alt="Janela de configurações do Controle de conteúdo - Geral" src="../images/ccsettingswindow.png" /></p>
+            <ul>
+                <li>Especifique o controle de conteúdo <b>Título</b>, <b>Espaço reservado</b> ou <b>Etiqueta</b> nos campos correspondentes. O título será exibido quando o controle for selecionado. O espaço reservado é o texto principal exibido no elemento de controle de conteúdo. Marcas são usadas para identificar controles de conteúdo para que você possa fazer referência a eles em seu código. </li>
+                 <li>Escolha se deseja exibir o controle de conteúdo com uma <b>Caixa delimitadora</b> ou não. Use a opção <b>Nenhum</b> para exibir o controle sem a caixa delimitadora. Se você selecionar a opção <b>Caixa delimitadora</b>, poderá escolher a <b>Cor</b> desta caixa usando o campo abaixo. Clique no botão <b>Aplicar a todos</b> para aplicar as configurações de <b>Aparência</b> especificadas a todos os controles de conteúdo no documento.</li>
+            </ul>
+            <p>Na guia <b>Bloqueio</b>, você pode proteger o controle de conteúdo de ser excluído ou editado usando as seguintes configurações:</p>
+            <p><img alt="Janela de configurações do Controle de conteúdo - Bloqueio" src="../images/ccsettingswindow2.png" /></p>
+                <ul>
+                    <li><b>Controle de conteúdo não pode ser excluído</b> - marque esta caixa para impedir que o controle de conteúdo seja excluído.</li>
+                     <li><b>Conteúdo não pode ser editado</b> - marque esta caixa para impedir que o conteúdo do controle de conteúdo seja editado.</li>
+                </ul>
+                <p>Para determinados tipos de controles de conteúdo, também está disponível a terceira guia que contém as configurações específicas para o tipo de controle de conteúdo selecionado: <em>Caixa de combinação</em>, <em>Lista suspensa</em>, <em> Data</em>, <em>Caixa de seleção</em>. Essas configurações são descritas acima nas seções sobre como adicionar os controles de conteúdo correspondentes.</p>
+             <p>Clique no botão <b>OK</b> na janela de configurações para aplicar as alterações.</p>
+             <p>Também é possível destacar os controles de conteúdo com uma determinada cor. Para destacar os controles com uma cor:</p>
+            <ol>
+                <li>Clique no botão à esquerda da borda do controle para selecionar o controle,</li>
+                 <li>Clique na seta ao lado do ícone <div class = "icon icon-insertccicon"></div> <b>Controles de conteúdo</b> na barra de ferramentas superior,</li>
+                 <li>Selecione a opção <b>Configurações de destaque</b> no menu,</li>
+                 <li>Escolha a cor desejada nas paletas disponíveis: <b>Cores do tema</b>, <b>Cores padrão</b> ou especifique uma nova <b>Cor personalizada</b>. Para remover o realce de cor aplicado anteriormente, use a opção <b>Sem destaque</b>.</li>
+            </ol>
+            <p>As opções de realce selecionadas serão aplicadas a todos os controles de conteúdo no documento.</p>
+             <h3>Remover controles de conteúdo</h3>
+             <p>Para remover um controle de conteúdo e deixar todo o seu conteúdo, selecione um controle de conteúdo e proceda de uma das seguintes maneiras:</p>
+             <ul>
+                 <li>Clique na seta ao lado do ícone <div class = "icon icon-insertccicon"></div> <b>Controles de conteúdo</b> na barra de ferramentas superior e selecione opção do menu <b>Remover controle de conteúdo</b>.</li>
+                 <li>Clique com o botão direito do mouse no controle de conteúdo e use a opção <b>Remover controle de conteúdo</b> no menu contextual.</li>
+             </ul>
+             <p>Para remover um controle e todo o seu conteúdo, selecione o controle necessário e pressione a tecla <b>Excluir</b> no teclado.</p>
+
+		</div>
+	</body>
+</html>

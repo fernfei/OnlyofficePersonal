@@ -1,0 +1,458 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Doldurulabilir formlar oluşturma</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Create fillable forms for advanced form interaction experience" />
+    <link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+    <link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+    <script type="text/javascript" src="../callback.js"></script>
+    <script type="text/javascript" src="../search/js/page-search.js"></script>
+</head>
+<body>
+    <div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+        </div>
+
+        <h1>Doldurulabilir formlar oluşturma</h1>
+        <p>ONLYOFFICE Belge D&uuml;zenleyicisi, belgelerinizde s&ouml;zleşme taslakları veya anketler gibi zahmetsizce <b>doldurulabilir formlar</b> oluşturmanızı sağlar.</p>
+        <p><b>Form Şablonu</b>, doldurulabilir bir form oluşturmak i&ccedil;in &ccedil;eşitli ara&ccedil;lar sunan DOCXF bi&ccedil;imidir. Bi&ccedil;iminizi bir <b>DOCXF</b> dosyası olarak kaydederseniz, yine de d&uuml;zenleyebileceğiniz, g&ouml;zden ge&ccedil;irebileceğiniz veya &uuml;zerinde işbirliği yapabileceğiniz bir form şablonunuz olacaktır. Bir Form şablonunu doldurulabilir hale getirmek ve diğer kullanıcılar tarafından dosya d&uuml;zenlemeyi kısıtlamak i&ccedil;in <b>OFORM</b> dosyası olarak kaydedin. Daha fazla bilgi i&ccedil;in <a href="../UsageInstructions/FillingOutForm.htm">form doldurma talimatları</a> adlı b&ouml;l&uuml;me bakın.</p>
+        <p class="note"><b>DOCXF</b> ve <b>OFORM</b>, form şablonları oluşturmaya ve formları doldurmaya izin veren yeni <b>ONLYOFFICE</b> bi&ccedil;imleridir. Formla ilişkili &ouml;ğelerden ve se&ccedil;eneklerden tam olarak yararlanmak i&ccedil;in gerek &ccedil;evrimi&ccedil;i gerekse masa&uuml;st&uuml; <b>ONLYOFFICE Belge D&uuml;zenleyiciyi</b> kullanın.</p>
+        <p>Ayrıca Form şablonu olarak kullanmak i&ccedil;in mevcut herhangi bir <b>DOCX</b> dosyasını <b>DOCXF</b> olarak da kaydedebilirsiniz. <b>Dosya</b> sekmesine gidin, sol yan men&uuml;deki <b>Farklı indir...</b> veya <b>Farklı kaydet...</b> se&ccedil;eneğine tıklayın ve <b>DOCXF</b> simgesini se&ccedil;in. Artık bir form oluşturmak i&ccedil;in mevcut t&uuml;m form d&uuml;zenleme işlevlerini kullanabilirsiniz.</p>
+        <p>Bir <b>DOCXF</b> dosyasında d&uuml;zenleyebileceğiniz yalnızca form alanları değildir, yine metin ekleyebilir, d&uuml;zenleyebilir ve bi&ccedil;imlendirebilir veya diğer <b>Belge D&uuml;zenleyici</b> işlevlerini kullanabilirsiniz.</p>
+        <p>Doldurulabilir formlar oluşturmak, ortaya &ccedil;ıkan belgelerin genel tutarlılığını sağlayan ve gelişmiş form etkileşimi deneyimine izin veren, kullanıcı tarafından d&uuml;zenlenebilir nesneler aracılığıyla sağlanır.</p>
+        <p>Şu anda, d&uuml;zenlenebilir <em>d&uuml;z metin</em> alanları, <em>a&ccedil;ılan kutular</em>, <em>a&ccedil;ılır listeler</em>, <em>onay kutuları</em>, <em>se&ccedil;enek d&uuml;ğmeleri</em> ekleyebilir,  <em>g&ouml;r&uuml;nt&uuml;ler</em> i&ccedil;in belirlenmiş alanlar atayabilir ve ayrıca <em>e-posta adresi</em>, <em>telefon numarası</em> ve <em>karmaşık</em> alanlar oluşturabilirsiniz. Bu &ouml;zelliklere yalnızca <b>DOCXF</b> dosyalar i&ccedil;in kullanılabilen <b>Formlar</b> sekmesinden ulaşın.</p>
+
+        <h2 id="textfield">Yeni bir D&uuml;z Metin Alanı oluşturma</h2>
+        <p><em>Metin alanları</em>, kullanıcı tarafından d&uuml;zenlenebilir d&uuml;z metin form alanlarıdır ve bunlara başka nesneler eklenemez.</p>
+        <div class="forms">
+            <details class="details-example">
+                <summary>Bir metin alanı eklemek i&ccedil;in</summary>
+                <ol>
+                    <li>Ekleme noktasını, alanın eklenmesini istediğiniz metnin bir satırına konumlandırın,</li>
+                    <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Formlar</b> sekmesine ge&ccedil;iş yapın,</li>
+                    <li>
+                        burada <div class="icon icon-text_field_icon"></div><b>Metin alanı</b> simgesine tıklayın.
+                    </li>
+                </ol>
+                <p><img alt="metin alanı eklenmiş" src="../images/text_field_inserted.png" /></p>
+                <p>Form alanı, mevcut metin satırındaki ekleme noktasına eklenecektir. <b>Form Ayarları</b> men&uuml;s&uuml; sağda a&ccedil;ılacaktır.</p>
+                <div id="text_field_settings">
+                    <img alt="form alanı ayarları" src="../images/text_field_settings.png" />
+                    <ul>
+                        <li><b>Anahtar</b>: Aynı anda doldurulacak alanları gruplandırmak i&ccedil;in bir anahtardır. Yeni bir anahtar oluşturmak i&ccedil;in alana adını girin ve <b>Enter</b> tuşuna basın, ardından a&ccedil;ılır listeyi kullanarak her bir metin alanına gerekli anahtarı atayın. <em>Bağlı alanlar: 2/3/... şeklinde bir mesaj g&ouml;r&uuml;nt&uuml;lenecektir. Alanların bağlantısını kesmek i&ccedil;in <b>Bağlantıyı Kes</b> d&uuml;ğmesine tıklayın.</li>
+                        <li><b>Yer tutucu</b>: Eklenen metin alanında g&ouml;r&uuml;nt&uuml;lenecek metni yazın; <em>&quot;Buraya yazın&quot;</em> varsayılan olarak ayarlanmıştır.</li>
+                        <li><b>Etiket</b>: Dahili kullanım i&ccedil;in bir etiket olarak kullanılacak, yani yalnızca ortak d&uuml;zenleyiciler i&ccedil;in g&ouml;r&uuml;nt&uuml;lenecek metni yazın.</li>
+                        <li>
+                            <b>İpucu</b>: Kullanıcı fare imlecini metin alanının &uuml;zerine getirdiğinde ipucu olarak g&ouml;r&uuml;nt&uuml;lenecek metni yazın.
+                            <br /> <img alt="ipucu eklenmiş" src="../images/text_field_tip.png" />
+                        </li>
+                        <li>
+                            <b>Bi&ccedil;im</b>: Metin alanının i&ccedil;erik bi&ccedil;imini se&ccedil;in, yani yalnızca se&ccedil;ilen karakter bi&ccedil;imine izin verilecektir: <em>Hi&ccedil;biri</em>, <em>Rakamlar</em>, <em>Harfler</em>, <em>Rastgele Maske</em> (metin, &ouml;zel maskeye karşılık gelmelidir, &ouml;rneğin, (999) 999 99 99), <em>D&uuml;zenli İfade</em> (metin, &ouml;zel ifadeye uygun olmalıdır).
+                            <p><em>Rastgele Maske</em> veya <em>D&uuml;zenli İfade</em> bi&ccedil;imini se&ccedil;tiğinizde, <b>Bi&ccedil;im</b> alanı altında ek bir alan belirir.</p>
+                        </li>
+                        <li><b>İzin Verilen Semboller</b>: Metin alanına izin verilen sembolleri yazın.</li>
+                        <li>
+                            <b>Sabit boyutlu alan</b>: Sabit boyutlu bir alan oluşturmak i&ccedil;in bu kutuyu işaretleyin. Bu se&ccedil;enek etkinleştirildiğinde, <b>Otomatik Sığdır</b> ve/veya <b>&Ccedil;ok satırlı alan</b> ayarlarını da kullanabilirsiniz.<br /> Sabit boyutlu bir alan otomatik bir şekle benzer.
+                            Bunun i&ccedil;in bir kaydırma stili belirleyebilir ve konumunu ayarlayabilirsiniz.
+                        </li>
+                        <li><b>Otomatik Sığdır</b>: Bu se&ccedil;enek <b>Sabit boyutlu alan</b> ayarı se&ccedil;iliyse etkinleştirilebilir, yazı tipi boyutunu otomatik olarak alan boyutuna sığdırmak i&ccedil;in işaretleyin.</li>
+                        <li><b>&Ccedil;ok satırlı alan</b>: Bu se&ccedil;enek <b>Sabit boyutlu alan</b> ayarı se&ccedil;iliyse etkinleştirilebilir, &ccedil;ok satırlı bir form alanı oluşturmak i&ccedil;in bu ayarı işaretleyin, aksi halde metin tek bir satırı kaplar.</li>
+                        <li><b>Karakter sınırı</b>: Varsayılan olarak sınır yoktur; sağdaki alandaki maksimum karakter sayısını ayarlamak i&ccedil;in bu kutuyu işaretleyin.</li>
+                        <li>
+                            <b>Karakter tarağı</b>: Metni, eklenen metin alanı i&ccedil;inde eşit şekilde yayın ve genel g&ouml;r&uuml;n&uuml;m&uuml;n&uuml; yapılandırın. Varsayılan ayarları korumak i&ccedil;in kutuyu işaretlemeden bırakın veya aşağıdaki parametreleri ayarlamak i&ccedil;in işaretleyin:
+                            <ul>
+                                <li><b>H&uuml;cre genişliği</b>: Genişlik değerinin <em>Otomatik</em> (genişlik otomatik olarak hesaplanır), <em>En az</em> (genişlik, manuel olarak verilen değerden az değildir) veya <em>Tamamen</em> (genişlik manuel olarak verilen değere karşılık gelir) olup olmayacağını se&ccedil;in. İ&ccedil;indeki metin buna g&ouml;re iki yana yaslandırılacaktır.</li>
+                            </ul>
+                        </li>
+                        <li><b>Kenarlık rengi</b>: Eklenen metin alanının kenarlıklarının <div class="icon icon-nofill"></div> rengini ayarlamak i&ccedil;in simgeye tıklayın. Paletten tercih edilen kenarlık rengini se&ccedil;in. Gerekirse <b>yeni bir &ouml;zel renk ekleyebilirsiniz</b>.</li>
+                        <li><b>Arkaplan rengi</b>: Eklenen metin alanına <div class="icon icon-nofill"></div> bir arka plan rengi uygulamak i&ccedil;in simgeye tıklayın. <b>Tema Renklerinden</b>,&nbsp;<b>Standart Renklerden</b> tercih ettiğiniz rengi se&ccedil;in veya gerekirse <b>yeni bir &ouml;zel renk ekleyin</b>.</li>
+                        <li><b>Gerekli</b>: Doldurulması gereken bir metin alanı yapmak i&ccedil;in bu kutuyu işaretleyin.</li>
+                    </ul>
+                </div>
+                <p><img alt="karakter tarağı" src="../images/comb_of_characters.png" /></p>
+                <p>Girilen metin alanına tıklayın ve <a href="../UsageInstructions/FontTypeSizeColor.htm">yazı tipini, boyutunu, rengini ayarlayın</a>, <a href="../UsageInstructions/DecorationStyles.htm">s&uuml;sleme stillerini</a>&nbsp;ve&nbsp;<a href="../UsageInstructions/FormattingPresets.htm">bi&ccedil;imlendirme &ouml;n ayarlarını</a> uygulayın. Bi&ccedil;imlendirme, alanın i&ccedil;indeki t&uuml;m metne uygulanacaktır.</p>
+            </details>
+        </div>
+
+
+        <h2 id="combobox">Yeni bir A&ccedil;ılan kutu oluşturma</h2>
+        <p><em>A&ccedil;ılan kutular</em>, kullanıcılar tarafından d&uuml;zenlenebilecek bir dizi se&ccedil;enek i&ccedil;eren bir a&ccedil;ılır liste i&ccedil;erir.</p>
+        <div class="forms">
+            <details class="details-example">
+                <summary>A&ccedil;ılan bir kutu eklemek i&ccedil;in</summary>
+                <ol>
+                    <li>Ekleme noktasını, alanın eklenmesini istediğiniz metnin bir satırına konumlandırın,</li>
+                    <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Formlar</b> sekmesine ge&ccedil;iş yapın,</li>
+                    <li>
+                        burada <div class="icon icon-combo_box_icon"></div> <b>A&ccedil;ılan kutu</b> simgesine tıklayın.
+                    </li>
+                </ol>
+                <p><img alt="Açılan kutu eklendi" src="../images/combo_box_inserted.png" /></p>
+                <p>Form alanı, mevcut metin satırındaki ekleme noktasına eklenecektir. <b>Form Ayarları</b> men&uuml;s&uuml; sağda a&ccedil;ılacaktır.</p>
+                <div id="combo_box_settings">
+                    <img alt="açılan kutu ayarları" src="../images/combo_box_settings.png" />
+                    <ul>
+                        <li><b>Anahtar</b>: Aynı anda doldurulacak a&ccedil;ılan kutuları gruplandırmak i&ccedil;in bir anahtardır. Yeni bir anahtar oluşturmak i&ccedil;in alana adını girin ve <b>Enter</b> tuşuna basın, ardından a&ccedil;ılır listeyi kullanarak her bir a&ccedil;ılan kutuya gerekli anahtarı atayın. <em>Bağlı alanlar: 2/3/... şeklinde bir mesaj g&ouml;r&uuml;nt&uuml;lenecektir. Alanların bağlantısını kesmek i&ccedil;in <b>Bağlantıyı Kes</b> d&uuml;ğmesine tıklayın.</li>
+                        <li><b>Yer tutucu</b>: Eklenen a&ccedil;ılan kutuda g&ouml;r&uuml;nt&uuml;lenecek metni yazın; <em>&quot;Bir &ouml;ğe se&ccedil;in&quot;</em> varsayılan olarak ayarlanmıştır.</li>
+                        <li><b>Etiket</b>: Dahili kullanım i&ccedil;in bir etiket olarak kullanılacak, yani yalnızca ortak d&uuml;zenleyeciler i&ccedil;in g&ouml;r&uuml;nt&uuml;lenecek metni yazın.</li>
+                        <li>
+                            <b>İpucu</b>: Kullanıcı fare imlecini form alanının &uuml;zerine getirdiğinde ipucu olarak g&ouml;r&uuml;nt&uuml;lenecek metni yazın.
+                            <br /> <img alt="ipucu eklenmiş" src="../images/combo_box_tip.png" />
+                        </li>
+                        <li><b>Değer Se&ccedil;enekleri</b>: Yeni <div class="icon icon-combo_add_values"></div> yeni değerler ekleyin, <div class="icon icon-combo_delete_values"></div> silin veya listede yukarı <div class="icon icon-combo_values_up"></div> ve <div class="icon icon-combo_values_down"></div> aşağı taşıyın.</li>
+                        <li>
+                            <b>Sabit boyutlu alan</b>: Sabit boyutlu bir alan oluşturmak i&ccedil;in bu kutuyu işaretleyin.<br />
+                            Sabit boyutlu bir alan otomatik bir şekle benzer. Bunun i&ccedil;in bir kaydırma stili belirleyebilir ve konumunu ayarlayabilirsiniz.
+                        </li>
+                        <li><b>Kenarlık rengi</b>: Eklenen a&ccedil;ılan kutunun kenarlıklarının <div class="icon icon-nofill"></div> rengini ayarlamak i&ccedil;in simgeye tıklayın. Paletten tercih edilen kenarlık rengini se&ccedil;in. Gerekirse <b>yeni bir &ouml;zel renk ekleyebilirsiniz</b>.</li>
+                        <li><b>Arkaplan rengi</b>: Eklenen a&ccedil;ılan kutuya <div class="icon icon-nofill"></div> bir arka plan rengi uygulamak i&ccedil;in simgeye tıklayın. <b>Tema Renklerinden</b>,&nbsp;<b>Standart Renklerden</b> tercih ettiğiniz rengi se&ccedil;in veya gerekirse <b>yeni bir &ouml;zel renk ekleyin</b>.</li>
+                        <li><b>Gerekli</b>: Doldurulması gereken bir a&ccedil;ılan kutu yapmak i&ccedil;in bu kutuyu işaretleyin.</li>
+                    </ul>
+                </div>
+                <p>&Ouml;ğe listesini a&ccedil;mak ve gerekli olanı se&ccedil;mek i&ccedil;in eklenen <b>A&ccedil;ılan kutunun</b> sağ tarafında yer alan ok d&uuml;ğmesine tıklayabilirsiniz. Gerekli &ouml;ğe se&ccedil;ildikten sonra, g&ouml;r&uuml;nt&uuml;lenen metni kendi metninizle değiştirerek tamamen veya kısmen d&uuml;zenleyebilirsiniz.</p>
+                <p><img alt="açılan kutu açık" src="../images/combo_box_opened.png" /></p>
+                <p>Yazı tipi s&uuml;slemesini, rengini ve boyutunu değiştirebilirsiniz. Eklenen a&ccedil;ılan kutuya tıklayın ve <a href="../UsageInstructions/FontTypeSizeColor.htm">talimatlara</a> g&ouml;re ilerleyin. Bi&ccedil;imlendirme, alanın i&ccedil;indeki t&uuml;m metne uygulanacaktır.</p>
+            </details>
+        </div>
+
+
+        <h2 id="dropdownlist">Yeni bir A&ccedil;ılır liste form alanı oluşturma</h2>
+        <p><em>A&ccedil;ılır listeler</em>, kullanıcılar tarafından d&uuml;zenlenemez bir dizi se&ccedil;enek i&ccedil;eren bir liste i&ccedil;erir.</p>
+        <div class="forms">
+            <details class="details-example">
+                <summary>Bir a&ccedil;ılır liste eklemek i&ccedil;in</summary>
+                <ol>
+                    <li>Ekleme noktasını, alanın eklenmesini istediğiniz metnin bir satırına konumlandırın,</li>
+                    <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Formlar</b> sekmesine ge&ccedil;iş yapın,</li>
+                    <li>
+                        burada <div class="icon icon-dropdown_list_icon"></div> <b>A&ccedil;ılır</b> simgesine tıklayın.
+                    </li>
+                </ol>
+                <p><img alt="açılır liste eklendi" src="../images/combo_box_inserted.png" /></p>
+                <p>Form alanı, mevcut metin satırındaki ekleme noktasına eklenecektir. <b>Form Ayarları</b> men&uuml;s&uuml; sağda a&ccedil;ılacaktır.</p>
+                <div id="dropdown_list_settings">
+                    <img alt="açılır liste ayarları" src="../images/dropdown_list_settings.png" />
+                    <ul>
+                        <li><b>Anahtar</b>: Aynı anda doldurulacak a&ccedil;ılır listeleri gruplandırmak i&ccedil;in bir anahtardır. Yeni bir anahtar oluşturmak i&ccedil;in alana adını girin ve <b>Enter</b> tuşuna basın, ardından a&ccedil;ılır listeyi kullanarak her bir form alanına gerekli anahtarı atayın. <em>Bağlı alanlar: 2/3/... şeklinde bir mesaj g&ouml;r&uuml;nt&uuml;lenecektir. Alanların bağlantısını kesmek i&ccedil;in <b>Bağlantıyı Kes</b> d&uuml;ğmesine tıklayın.</li>
+                        <li><b>Yer tutucu</b>: Eklenen a&ccedil;ılır listede g&ouml;r&uuml;nt&uuml;lenecek metni yazın; <em>&quot;Bir &ouml;ğe se&ccedil;in&quot;</em> varsayılan olarak ayarlanmıştır.</li>
+                        <li><b>Etiket</b>: Dahili kullanım i&ccedil;in bir etiket olarak kullanılacak, yani yalnızca ortak d&uuml;zenleyeciler i&ccedil;in g&ouml;r&uuml;nt&uuml;lenecek metni yazın.</li>
+                        <li>
+                            <b>İpucu</b>: Kullanıcı fare imlecini form alanının &uuml;zerine getirdiğinde ipucu olarak g&ouml;r&uuml;nt&uuml;lenecek metni yazın.
+                            <br /> <img alt="ipucu eklenmiş" src="../images/combo_box_tip.png" />
+                        </li>
+                        <li><b>Değer Se&ccedil;enekleri</b>: Yeni <div class="icon icon-combo_add_values"></div> yeni değerler ekleyin, <div class="icon icon-combo_delete_values"></div> silin veya listede yukarı <div class="icon icon-combo_values_up"></div> ve <div class="icon icon-combo_values_down"></div> aşağı taşıyın.</li>
+                        <li>
+                            <b>Sabit boyutlu alan</b>: Sabit boyutlu bir alan oluşturmak i&ccedil;in bu kutuyu işaretleyin.<br />
+                            Sabit boyutlu bir alan otomatik bir şekle benzer. Bunun i&ccedil;in bir kaydırma stili belirleyebilir ve konumunu ayarlayabilirsiniz.
+                        </li>
+                        <li><b>Kenarlık rengi</b>: Eklenen a&ccedil;ılır alanın kenarlıklarının <div class="icon icon-nofill"></div> rengini ayarlamak i&ccedil;in simgeye tıklayın. Paletten tercih edilen kenarlık rengini se&ccedil;in. Gerekirse <b>yeni bir &ouml;zel renk ekleyebilirsiniz</b>.</li>
+                        <li><b>Arkaplan rengi</b>: Eklenen a&ccedil;ılır alana <div class="icon icon-nofill"></div> bir arka plan rengi uygulamak i&ccedil;in simgeye tıklayın. <b>Tema Renklerinden</b>,&nbsp;<b>Standart Renklerden</b> tercih ettiğiniz rengi se&ccedil;in veya gerekirse <b>yeni bir &ouml;zel renk ekleyin</b>.</li>
+                        <li><b>Gerekli</b>: Doldurulması gereken bir a&ccedil;ılır liste yapmak i&ccedil;in bu kutuyu işaretleyin.</li>
+                    </ul>
+                </div>
+                <p>&Ouml;ğe listesini a&ccedil;mak ve gerekli olanı se&ccedil;mek i&ccedil;in eklenen <b>A&ccedil;ılır listenin</b> sağ tarafında yer alan ok d&uuml;ğmesine tıklayabilirsiniz.</p>
+                <p><img alt="açılır liste açık" src="../images/dropdown_list_opened.png" /></p>
+            </details>
+        </div>
+
+
+        <h2 id="checkbox">Yeni bir Onay Kutusu oluşturma</h2>
+        <p><em>Onay kutuları</em> kullanıcılara, herhangi bir sayıda se&ccedil;ilebilen &ccedil;eşitli se&ccedil;enekler sağlamak i&ccedil;in kullanılır. Onay kutuları ayrı ayrı &ccedil;alışır, b&ouml;ylece bağımsız olarak işaretlenebilir veya işaretleri kaldırılabilir.</p>
+        <div class="forms">
+            <details class="details-example">
+                <summary>Bir onay kutusu eklemek i&ccedil;in</summary>
+                <ol>
+                    <li>Ekleme noktasını, alanın eklenmesini istediğiniz metnin bir satırına konumlandırın,</li>
+                    <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Formlar</b> sekmesine ge&ccedil;iş yapın,</li>
+                    <li>
+                        burada <div class="icon icon-checkbox_icon"></div> <b>Onay kutusu</b> simgesine tıklayın.
+                    </li>
+                </ol>
+                <p><span class="big big-checkbox_inserted"></span></p>
+                <p>Form alanı, mevcut metin satırındaki ekleme noktasına eklenecektir. <b>Form Ayarları</b> men&uuml;s&uuml; sağda a&ccedil;ılacaktır.</p>
+                <div id="checkbox_settings">
+                    <img alt="onay kutusu ayarları" src="../images/checkbox_settings.png" />
+                    <ul>
+                        <li><b>Anahtar</b>: Aynı anda doldurulacak onay kutularını gruplandırmak i&ccedil;in bir anahtardır. Yeni bir anahtar oluşturmak i&ccedil;in alana adını girin ve <b>Enter</b> tuşuna basın, ardından a&ccedil;ılır listeyi kullanarak her bir form alanına gerekli anahtarı atayın. <em>Bağlı alanlar: 2/3/... şeklinde bir mesaj g&ouml;r&uuml;nt&uuml;lenecektir. Alanların bağlantısını kesmek i&ccedil;in <b>Bağlantıyı Kes</b> d&uuml;ğmesine tıklayın.</li>
+                        <li><b>Etiket</b>: Dahili kullanım i&ccedil;in bir etiket olarak kullanılacak, yani yalnızca ortak d&uuml;zenleyiciler i&ccedil;in g&ouml;r&uuml;nt&uuml;lenecek metni yazın.</li>
+                        <li>
+                            <b>İpucu</b>: Kullanıcı fare imlecini onay kutusunun &uuml;zerine getirdiğinde ipucu olarak g&ouml;r&uuml;nt&uuml;lenecek metni yazın.
+                            <br /> <img alt="ipucu eklenmiş" src="../images/checkbox_tip.png" />
+                        </li>
+                        <li>
+                            <b>Sabit boyutlu alan</b>: Sabit boyutlu bir alan oluşturmak i&ccedil;in bu kutuyu işaretleyin.<br />
+                            Sabit boyutlu bir alan otomatik bir şekle benzer. Bunun i&ccedil;in bir kaydırma stili belirleyebilir ve konumunu ayarlayabilirsiniz.
+                        </li>
+                        <li><b>Kenarlık rengi</b>: Eklenen onay kutusu kenarlıklarının <div class="icon icon-nofill"></div> rengini ayarlamak i&ccedil;in simgeye tıklayın. Paletten tercih edilen kenarlık rengini se&ccedil;in. Gerekirse <b>yeni bir &ouml;zel renk ekleyebilirsiniz</b>.</li>
+                        <li><b>Arkaplan rengi</b>: Eklenen onay kutusuna <div class="icon icon-nofill"></div> bir arka plan rengi uygulamak i&ccedil;in simgeye tıklayın. <b>Tema Renklerinden</b>,&nbsp;<b>Standart Renklerden</b> tercih ettiğiniz rengi se&ccedil;in veya gerekirse <b>yeni bir &ouml;zel renk ekleyin</b>.</li>
+                        <li><b>Gerekli</b>: Doldurulması gereken bir onay kutusu alanı yapmak i&ccedil;in bu kutuyu işaretleyin.</li>
+                    </ul>
+                </div>
+                <p>Kutuyu işaretlemek i&ccedil;in bir kez tıklayın.</p>
+                <p><span class="big big-checkbox_checked"></span></p>
+            </details>
+        </div>
+
+
+        <h2 id="radiobutton">Yeni bir Se&ccedil;enek D&uuml;ğmesi oluşturma</h2>
+        <p><em>Se&ccedil;enek d&uuml;ğmeleri</em> kullanıcılara, sadece biri se&ccedil;ilebilen &ccedil;eşitli se&ccedil;enekler sağlamak i&ccedil;in kullanılır. Se&ccedil;enek d&uuml;ğmeleri, bir grup i&ccedil;inde birka&ccedil; d&uuml;ğmenin se&ccedil;ilmesine gerek kalmayacak şekilde gruplandırılabilir.</p>
+        <div class="forms">
+            <details class="details-example">
+                <summary>Bir se&ccedil;enek d&uuml;ğmesi eklemek i&ccedil;in</summary>
+                <ol>
+                    <li>Ekleme noktasını, alanın eklenmesini istediğiniz metnin bir satırına konumlandırın,</li>
+                    <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Formlar</b> sekmesine ge&ccedil;iş yapın,</li>
+                    <li>
+                        burada <div class="icon icon-radio_button_icon"></div> <b>Se&ccedil;enek d&uuml;ğmesi</b> simgesine tıklayın.
+                    </li>
+                </ol>
+                <p><span class="big big-radio_button_inserted"></span></p>
+                <p>Form alanı, mevcut metin satırındaki ekleme noktasına eklenecektir. <b>Form Ayarları</b> men&uuml;s&uuml; sağda a&ccedil;ılacaktır.</p>
+                <div id="radio_button_settings">
+                    <img alt="se&ccedil;enek d&uuml;ğmesi ayarları" src="../images/radio_button_settings.png" />
+                    <ul>
+                        <li><b>Grup anahtarı</b>: Yeni bir se&ccedil;enek d&uuml;ğmesi grubu oluşturmak i&ccedil;in grubun adını alana girin ve <b>Enter</b> tuşuna basın, ardından gerekli grubu her bir se&ccedil;enek d&uuml;ğmesine atayın.</li>
+                        <li><b>Etiket</b>: Dahili kullanım i&ccedil;in bir etiket olarak kullanılacak, yani yalnızca ortak d&uuml;zenleyiciler i&ccedil;in g&ouml;r&uuml;nt&uuml;lenecek metni yazın.</li>
+                        <li>
+                            <b>İpucu</b>: Kullanıcı fare imlecini se&ccedil;enek d&uuml;ğmesi &uuml;zerine getirdiğinde ipucu olarak g&ouml;r&uuml;nt&uuml;lenecek metni yazın.
+                            <br /> <img alt="ipucu eklenmiş" src="../images/radio_button_tip.png" />
+                        </li>
+                        <li>
+                            <b>Sabit boyutlu alan</b>: Sabit boyutlu bir alan oluşturmak i&ccedil;in bu kutuyu işaretleyin.<br />
+                            Sabit boyutlu bir alan otomatik bir şekle benzer. Bunun i&ccedil;in bir kaydırma stili belirleyebilir ve konumunu ayarlayabilirsiniz.
+                        </li>
+                        <li><b>Kenarlık rengi</b>: Eklenen se&ccedil;enek d&uuml;ğmesi kenarlıklarının <div class="icon icon-nofill"></div> rengini ayarlamak i&ccedil;in simgeye tıklayın. Paletten tercih edilen kenarlık rengini se&ccedil;in. Gerekirse <b>yeni bir &ouml;zel renk ekleyebilirsiniz</b>.</li>
+                        <li><b>Arkaplan rengi</b>: Eklenen se&ccedil;enek d&uuml;ğmesine <div class="icon icon-nofill"></div> bir arka plan rengi uygulamak i&ccedil;in simgeye tıklayın. <b>Tema Renklerinden</b>,&nbsp;<b>Standart Renklerden</b> tercih ettiğiniz rengi se&ccedil;in veya gerekirse <b>yeni bir &ouml;zel renk ekleyin</b>.</li>
+                        <li><b>Gerekli</b>: Doldurulması gereken bir se&ccedil;enek d&uuml;ğmesi yapmak i&ccedil;in bu kutuyu işaretleyin.</li>
+                    </ul>
+                </div>
+                <p>Se&ccedil;enek d&uuml;ğmesini işaretlemek i&ccedil;in bir kez tıklayın.</p>
+                <p><span class="big big-radio_button_checked"></span></p>
+            </details>
+        </div>
+
+
+        <h2 id="image">Yeni bir G&ouml;r&uuml;nt&uuml; alanı oluşturma</h2>
+        <p><em>G&ouml;r&uuml;nt&uuml;ler,</em> belirlediğiniz sınırlamalarla, yani g&ouml;r&uuml;nt&uuml;n&uuml;n konumu veya boyutu ile bir g&ouml;r&uuml;nt&uuml; eklenmesini sağlamak i&ccedil;in kullanılan form alanlarıdır.</p>
+        <div class="forms">
+            <details class="details-example">
+                <summary>Bir g&ouml;r&uuml;nt&uuml; form alanı eklemek i&ccedil;in</summary>
+                <ol>
+                    <li>Ekleme noktasını, alanın eklenmesini istediğiniz metnin bir satırına konumlandırın,</li>
+                    <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Formlar</b> sekmesine ge&ccedil;iş yapın,</li>
+                    <li>
+                        burada <div class="icon icon-image"></div> <b>G&ouml;r&uuml;nt&uuml;</b> simgesine tıklayın.
+                    </li>
+                </ol>
+                <p><span class="big big-image_form_inserted"></span></p>
+                <p>Form alanı, mevcut metin satırındaki ekleme noktasına eklenecektir. <b>Form Ayarları</b> men&uuml;s&uuml; sağda a&ccedil;ılacaktır.</p>
+                <div id="image_form_settings">
+                    <img alt="görüntü form ayarları" src="../images/image_form_settings.png" />
+                    <ul>
+                        <li><b>Anahtar</b>: Aynı anda doldurulacak g&ouml;r&uuml;nt&uuml;ler gruplandırmak i&ccedil;in bir anahtardır. Yeni bir anahtar oluşturmak i&ccedil;in alana adını girin ve <b>Enter</b> tuşuna basın, ardından a&ccedil;ılır listeyi kullanarak her bir form alanına gerekli anahtarı atayın. <em>Bağlı alanlar: 2/3/... şeklinde bir mesaj g&ouml;r&uuml;nt&uuml;lenecektir. Alanların bağlantısını kesmek i&ccedil;in <b>Bağlantıyı Kes</b> d&uuml;ğmesine tıklayın.</li>
+                        <li><b>Yer tutucu</b>: Eklenen g&ouml;r&uuml;nt&uuml; form alanında g&ouml;r&uuml;nt&uuml;lenecek metni yazın; <em>&quot;G&ouml;r&uuml;nt&uuml; y&uuml;klemek i&ccedil;in tıklayın&quot;</em> varsayılan olarak ayarlanmıştır.</li>
+                        <li><b>Etiket</b>: Dahili kullanım i&ccedil;in bir etiket olarak kullanılacak, yani yalnızca ortak d&uuml;zenleyeciler i&ccedil;in g&ouml;r&uuml;nt&uuml;lenecek metni yazın.</li>
+                        <li>
+                            <b>İpucu</b>: Kullanıcı fare imlecini g&ouml;r&uuml;nt&uuml;n&uuml;n alt kenarı &uuml;zerine getirdiğinde ipucu olarak g&ouml;r&uuml;nt&uuml;lenecek metni yazın.
+                        </li>
+                        <li><b>&Ouml;l&ccedil;eklendirme zamanı</b>: A&ccedil;ılır men&uuml;y&uuml; tıklayın ve uygun bir g&ouml;r&uuml;nt&uuml; boyutlandırma se&ccedil;eneği belirleyin: <b>Her Zaman</b>, <b>Hi&ccedil;bir Zaman</b>, <b>G&ouml;r&uuml;nt&uuml; &Ccedil;ok B&uuml;y&uuml;k</b> veya <b>G&ouml;r&uuml;nt&uuml; &Ccedil;ok K&uuml;&ccedil;&uuml;k</b> olduğunda. Se&ccedil;ilen g&ouml;r&uuml;nt&uuml;, alanın i&ccedil;inde uygun şekilde &ouml;l&ccedil;eklenir.</li>
+                        <li><b>En boy oranını kilitle</b>: G&ouml;r&uuml;nt&uuml; en boy oranını bozulma olmadan korumak i&ccedil;in bu kutuyu işaretleyin. Kutu işaretlendiğinde, g&ouml;r&uuml;nt&uuml;y&uuml; eklenen alanın i&ccedil;ine yerleştirmek i&ccedil;in dikey ve yatay kaydırıcıyı kullanın. Kutu işaretlenmediğinde konumlandırma kaydırıcıları etkin değildir.</li>
+                        <li><b>G&ouml;r&uuml;nt&uuml; Se&ccedil;</b>: <b>Dosyadan</b>, <b>URL&apos;den</b> veya <b>Bellekten</b> bir g&ouml;r&uuml;nt&uuml; y&uuml;klemek i&ccedil;in bu d&uuml;ğmeye tıklayın.</li>
+                        <li><b>Kenarlık rengi</b>: Eklenen g&ouml;r&uuml;nt&uuml; alanı kenarlıklarının <div class="icon icon-nofill"></div> rengini ayarlamak i&ccedil;in simgeye tıklayın. Paletten tercih edilen kenarlık rengini se&ccedil;in. Gerekirse <b>yeni bir &ouml;zel renk ekleyebilirsiniz</b>.</li>
+                        <li><b>Arkaplan rengi</b>: Eklenen g&ouml;r&uuml;nt&uuml; alanına <div class="icon icon-nofill"></div> bir arka plan rengi uygulamak i&ccedil;in simgeye tıklayın. <b>Tema Renklerinden</b>,&nbsp;<b>Standart Renklerden</b> tercih ettiğiniz rengi se&ccedil;in veya gerekirse <b>yeni bir &ouml;zel renk ekleyin</b>.</li>
+                        <li><b>Gerekli</b>: Doldurulması gereken bir g&ouml;r&uuml;nt&uuml; alanı yapmak i&ccedil;in bu kutuyu işaretleyin.</li>
+                    </ul>
+                </div>
+                <p>G&ouml;r&uuml;nt&uuml;y&uuml; değiştirmek i&ccedil;in form alanı kenarının &uuml;zerindeki <span class="icon icon-image"></span> g&ouml;r&uuml;nt&uuml; simgesine tıklayın ve başka bir g&ouml;r&uuml;nt&uuml; se&ccedil;in.</p>
+                <p>G&ouml;r&uuml;nt&uuml; ayarlarını <b>ayarlamak</b> i&ccedil;in sağ ara&ccedil; &ccedil;ubuğundaki <b>G&ouml;r&uuml;nt&uuml; Ayarları</b> sekmesini a&ccedil;ın. Daha fazla bilgi edinmek i&ccedil;in l&uuml;tfen <a href="../UsageInstructions/InsertImages.htm">g&ouml;r&uuml;nt&uuml; ayarları</a> kılavuzunu okuyun.</p>
+            </details>
+        </div>
+
+        <h2 id="emailaddress">Yeni bir E-posta Adresi oluşturma</h2>
+        <p><em>E-posta Adresi</em> alanı, normal bir ifadeye (\S+@\S+\.\S+) karşılık gelen bir e-posta adresini yazmak i&ccedil;in kullanılır.</p>
+        <div class="forms">
+            <details class="details-example">
+                <summary>Bir e-posta adresi alanı eklemek i&ccedil;in</summary>
+                <ol>
+                    <li>Ekleme noktasını, alanın eklenmesini istediğiniz metnin bir satırına konumlandırın,</li>
+                    <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Formlar</b> sekmesine ge&ccedil;iş yapın,</li>
+                    <li>
+                        burada <div class="icon icon-email_address_icon"></div> <b>E-posta Adresi</b> simgesine tıklayın.
+                    </li>
+                </ol>
+                <p><span class="big big-email_address_inserted"></span></p>
+                <p>Form alanı, mevcut metin satırındaki ekleme noktasına eklenecektir. <b>Form Ayarları</b> men&uuml;s&uuml; sağda a&ccedil;ılacaktır.</p>
+                <div id="email_address_settings">
+                    <img alt="e-posta adresi ayarları" src="../images/email_address_settings.png" />
+                    <ul>
+                        <li><b>Anahtar</b>: Yeni bir e-posta adresleri grubu oluşturmak i&ccedil;in grubun adını alana girin ve <b>Enter</b> tuşuna basın, ardından gerekli grubu her bir e-posta adresine atayın.</li>
+                        <li><b>Yer tutucu</b>: Eklenen e-posta adresi form alanında g&ouml;r&uuml;nt&uuml;lenecek metni yazın; <em>&quot;user_name@email.com&quot;</em> varsayılan olarak ayarlanmıştır.</li>
+                        <li><b>Etiket</b>: Dahili kullanım i&ccedil;in bir etiket olarak kullanılacak, yani yalnızca ortak d&uuml;zenleyiciler i&ccedil;in g&ouml;r&uuml;nt&uuml;lenecek metni yazın.</li>
+                        <li>
+                            <b>İpucu</b>: Kullanıcı fare imlecini e-posta adresi alanının &uuml;zerine getirdiğinde ipucu olarak g&ouml;r&uuml;nt&uuml;lenecek metni yazın.
+                            <br /> <img alt="ipucu eklenmiş" src="../images/email_address_tip.png" />
+                        </li>
+                        <li><b>Bi&ccedil;im</b>: Alanın i&ccedil;erik bi&ccedil;imini se&ccedil;in, yani, <em>Hi&ccedil;biri</em>, <em>Rakamlar</em>, <em>Harfler</em>, <em>Rastgele Maske</em> veya <em>D&uuml;zenli İfade</em>. Alan, <code>\S+@\S+\.\S+</code> e-posta adresi bi&ccedil;imini korumak i&ccedil;in varsayılan olarak <em>D&uuml;zenli İfade</em> olarak ayarlanmıştır.</li>
+                        <li><b>İzin Verilen Semboller</b>: E-posta adresi alanına izin verilen sembolleri yazın.</li>
+                        <li>
+                            <b>Sabit boyutlu alan</b>: Sabit boyutlu bir alan oluşturmak i&ccedil;in bu kutuyu işaretleyin. Bu se&ccedil;enek etkinleştirildiğinde, <b>Otomatik Sığdır</b> ve/veya <b>&Ccedil;ok satırlı alan</b> ayarlarını da kullanabilirsiniz.<br />
+                            Sabit boyutlu bir alan otomatik bir şekle benzer. Bunun i&ccedil;in bir kaydırma stili belirleyebilir ve konumunu ayarlayabilirsiniz.
+                        </li>
+                        <li><b>Otomatik Sığdır</b>: Bu se&ccedil;enek <b>Sabit boyutlu alan</b> ayarı se&ccedil;iliyse etkinleştirilebilir, yazı tipi boyutunu otomatik olarak alan boyutuna sığdırmak i&ccedil;in işaretleyin.</li>
+                        <li><b>&Ccedil;ok satırlı alan</b>: Bu se&ccedil;enek <b>Sabit boyutlu alan</b> ayarı se&ccedil;iliyse etkinleştirilebilir, &ccedil;ok satırlı bir form alanı oluşturmak i&ccedil;in bu ayarı işaretleyin, aksi halde metin tek bir satırı kaplar.</li>
+                        <li><b>Karakter sınırı</b>: Varsayılan olarak sınır yoktur; sağdaki alandaki maksimum karakter sayısını ayarlamak i&ccedil;in bu kutuyu işaretleyin.</li>
+                        <li>
+                            <b>Karakter tarağı</b>: Metni, eklenen e-posta adresi alanı i&ccedil;inde eşit şekilde yayın ve genel g&ouml;r&uuml;n&uuml;m&uuml;n&uuml; yapılandırın. Varsayılan ayarları korumak i&ccedil;in kutuyu işaretlemeden bırakın veya aşağıdaki parametreleri ayarlamak i&ccedil;in işaretleyin:
+                            <ul>
+                                <li><b>H&uuml;cre genişliği</b>: Genişlik değerinin <em>Otomatik</em> (genişlik otomatik olarak hesaplanır), <em>En az</em> (genişlik, manuel olarak verilen değerden az değildir) veya <em>Tamamen</em> (genişlik manuel olarak verilen değere karşılık gelir) olup olmayacağını se&ccedil;in. İ&ccedil;indeki metin buna g&ouml;re iki yana yaslandırılacaktır.</li>
+                            </ul>
+                        </li>
+                        <li><b>Kenarlık rengi</b>: Eklenen e-posta adresi alanı kenarlıklarının <div class="icon icon-nofill"></div> rengini ayarlamak i&ccedil;in simgeye tıklayın. Paletten tercih edilen kenarlık rengini se&ccedil;in. Gerekirse <b>yeni bir &ouml;zel renk ekleyebilirsiniz</b>.</li>
+                        <li><b>Arkaplan rengi</b>: Eklenen e-posta adresi alanına <div class="icon icon-nofill"></div> bir arka plan rengi uygulamak i&ccedil;in simgeye tıklayın. <b>Tema Renklerinden</b>,&nbsp;<b>Standart Renklerden</b> tercih ettiğiniz rengi se&ccedil;in veya gerekirse <b>yeni bir &ouml;zel renk ekleyin</b>.</li>
+                        <li><b>Gerekli</b>: Doldurulması gereken bir e-posta adresi alanı yapmak i&ccedil;in bu kutuyu işaretleyin.</li>
+                    </ul>
+                </div>
+            </details>
+        </div>
+
+        <h2 id="phonenumber">Yeni bir Telefon Numarası alanı oluşturma</h2>
+        <p><em>Telefon Numarası</em> alanı, form oluşturucusu tarafından verilen rastgele bir maskeye karşılık gelen bir telefon numarasını yazmak i&ccedil;in kullanılır. Varsayılan olarak <code>(999)999-9999</code> olarak ayarlanmıştır.</p>
+        <div class="forms">
+            <details class="details-example">
+                <summary>Bir telefon numarası alanı eklemek i&ccedil;in</summary>
+                <ol>
+                    <li>Ekleme noktasını, alanın eklenmesini istediğiniz metnin bir satırına konumlandırın,</li>
+                    <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Formlar</b> sekmesine ge&ccedil;iş yapın,</li>
+                    <li>
+                        burada <div class="icon icon-phone_number_icon"></div> <b>Telefon Numarası</b> simgesine tıklayın.
+                    </li>
+                </ol>
+                <p><span class="big big-phone_number_inserted"></span></p>
+                <p>Form alanı, mevcut metin satırındaki ekleme noktasına eklenecektir. <b>Form Ayarları</b> men&uuml;s&uuml; sağda a&ccedil;ılacaktır.</p>
+                <div id="phone_number_settings">
+                    <img alt="telefon numarası ayarları" src="../images/phone_number_settings.png" />
+                    <ul>
+                        <li><b>Anahtar</b>: Yeni bir telefon numaraları grubu oluşturmak i&ccedil;in grubun adını alana girin ve <b>Enter</b> tuşuna basın, ardından gerekli grubu her bir telefon numarasına atayın.</li>
+                        <li><b>Yer tutucu</b>: Eklenen telefon numarası form alanında g&ouml;r&uuml;nt&uuml;lenecek metni yazın; <em>&quot;(999)999-9999&quot;</em> varsayılan olarak ayarlanmıştır.</li>
+                        <li><b>Etiket</b>: Dahili kullanım i&ccedil;in bir etiket olarak kullanılacak, yani yalnızca ortak d&uuml;zenleyiciler i&ccedil;in g&ouml;r&uuml;nt&uuml;lenecek metni yazın.</li>
+                        <li>
+                            <b>İpucu</b>: Kullanıcı fare imlecini telefon numarası alanının &uuml;zerine getirdiğinde ipucu olarak g&ouml;r&uuml;nt&uuml;lenecek metni yazın.
+                            <br /> <img alt="ipucu eklenmiş" src="../images/phone_number_tip.png" />
+                        </li>
+                        <li><b>Bi&ccedil;im</b>: Alanın i&ccedil;erik bi&ccedil;imini se&ccedil;in, yani, <em>Hi&ccedil;biri</em>, <em>Rakamlar</em>, <em>Harfler</em>, <em>Rastgele Maske</em> veya <em>D&uuml;zenli İfade</em>. Alan varsayılan olarak <em>Rastgele Maske</em> olarak ayarlanmıştır. Bi&ccedil;imini değiştirmek i&ccedil;in aşağıdaki alana gerekli maskeyi yazın.</li>
+                        <li><b>İzin Verilen Semboller</b>: Telefon numarası alanına izin verilen sembolleri yazın.</li>
+                        <li>
+                            <b>Sabit boyutlu alan</b>: Sabit boyutlu bir alan oluşturmak i&ccedil;in bu kutuyu işaretleyin. Bu se&ccedil;enek etkinleştirildiğinde, <b>Otomatik Sığdır</b> ve/veya <b>&Ccedil;ok satırlı alan</b> ayarlarını da kullanabilirsiniz.<br />
+                            Sabit boyutlu bir alan otomatik bir şekle benzer. Bunun i&ccedil;in bir kaydırma stili belirleyebilir ve konumunu ayarlayabilirsiniz.
+                        </li>
+                        <li><b>Otomatik Sığdır</b>: Bu se&ccedil;enek <b>Sabit boyutlu alan</b> ayarı se&ccedil;iliyse etkinleştirilebilir, yazı tipi boyutunu otomatik olarak alan boyutuna sığdırmak i&ccedil;in işaretleyin.</li>
+                        <li><b>&Ccedil;ok satırlı alan</b>: Bu se&ccedil;enek <b>Sabit boyutlu alan</b> ayarı se&ccedil;iliyse etkinleştirilebilir, &ccedil;ok satırlı bir form alanı oluşturmak i&ccedil;in bu ayarı işaretleyin, aksi halde metin tek bir satırı kaplar.</li>
+                        <li><b>Karakter sınırı</b>: Varsayılan olarak sınır yoktur; sağdaki alandaki maksimum karakter sayısını ayarlamak i&ccedil;in bu kutuyu işaretleyin.</li>
+                        <li>
+                            <b>Karakter tarağı</b>: Metni, eklenen telefon numarası alanı i&ccedil;inde eşit şekilde yayın ve genel g&ouml;r&uuml;n&uuml;m&uuml;n&uuml; yapılandırın. Varsayılan ayarları korumak i&ccedil;in kutuyu işaretlemeden bırakın veya aşağıdaki parametreleri ayarlamak i&ccedil;in işaretleyin:
+                            <ul>
+                                <li><b>H&uuml;cre genişliği</b>: Genişlik değerinin <em>Otomatik</em> (genişlik otomatik olarak hesaplanır), <em>En az</em> (genişlik, manuel olarak verilen değerden az değildir) veya <em>Tamamen</em> (genişlik manuel olarak verilen değere karşılık gelir) olup olmayacağını se&ccedil;in. İ&ccedil;indeki metin buna g&ouml;re iki yana yaslandırılacaktır.</li>
+                            </ul>
+                        </li>
+                        <li><b>Kenarlık rengi</b>: Eklenen telefon numarası alanı kenarlıklarının <div class="icon icon-nofill"></div> rengini ayarlamak i&ccedil;in simgeye tıklayın. Paletten tercih edilen kenarlık rengini se&ccedil;in. Gerekirse <b>yeni bir &ouml;zel renk ekleyebilirsiniz</b>.</li>
+                        <li><b>Arkaplan rengi</b>: Eklenen telefon numarası alanına <div class="icon icon-nofill"></div> bir arka plan rengi uygulamak i&ccedil;in simgeye tıklayın. <b>Tema Renklerinden</b>,&nbsp;<b>Standart Renklerden</b> tercih ettiğiniz rengi se&ccedil;in veya gerekirse <b>yeni bir &ouml;zel renk ekleyin</b>.</li>
+                        <li><b>Gerekli</b>: Doldurulması gereken bir telefon numarası alanı yapmak i&ccedil;in bu kutuyu işaretleyin.</li>
+                    </ul>
+                </div>
+            </details>
+        </div>
+
+        <h2 id="complexfield">Yeni bir Karmaşık Alan oluşturma</h2>
+        <p><em>Karmaşık Alan,</em> metin alanı ve a&ccedil;ılır liste gibi &ccedil;eşitli alan t&uuml;rlerini birleştirir. Alanları istediğiniz gibi birleştirebilirsiniz.</p>
+        <div class="forms">
+            <details class="details-example">
+                <summary>Bir karmaşık alan eklemek i&ccedil;in</summary>
+                <ol>
+                    <li>Ekleme noktasını, alanın eklenmesini istediğiniz metnin bir satırına konumlandırın,</li>
+                    <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Formlar</b> sekmesine ge&ccedil;iş yapın,</li>
+                    <li>
+                        burada <div class="icon icon-complex_field_icon"></div> <b>Karmaşık Alan</b> simgesine tıklayın.
+                    </li>
+                </ol>
+                <p><img alt="karmaşık alan eklenmiş" src="../images/complex_field_inserted.png"></p>
+                <p>Form alanı, mevcut metin satırındaki ekleme noktasına eklenecektir. <b>Form Ayarları</b> men&uuml;s&uuml; sağda a&ccedil;ılacaktır.</p>
+                <div id="complex_field_settings">
+                    <img alt="karmaşık alan ayarları" src="../images/complex_field_settings.png" />
+                    <ul>
+                        <li><b>Anahtar</b>: Yeni bir karmaşık alanlar grubu oluşturmak i&ccedil;in grubun adını alana girin ve <b>Enter</b> tuşuna basın, ardından gerekli grubu her bir karmaşık alana atayın.</li>
+                        <li><b>Yer tutucu</b>: Eklenen karmaşık alanda g&ouml;r&uuml;nt&uuml;lenecek metni yazın; <em>&quot;Metninizi buraya yazın&quot;</em> varsayılan olarak ayarlanmıştır.</li>
+                        <li><b>Etiket</b>: Dahili kullanım i&ccedil;in bir etiket olarak kullanılacak, yani yalnızca ortak d&uuml;zenleyiciler i&ccedil;in g&ouml;r&uuml;nt&uuml;lenecek metni yazın.</li>
+                        <li>
+                            <b>İpucu</b>: Kullanıcı fare imlecini karmaşık alanın &uuml;zerine getirdiğinde ipucu olarak g&ouml;r&uuml;nt&uuml;lenecek metni yazın.
+                            <br /> <img alt="ipucu eklenmiş" src="../images/complex_field_tip.png" />
+                        </li>
+                        <li>
+                            <b>Sabit boyutlu alan</b>: Sabit boyutlu bir alan oluşturmak i&ccedil;in bu kutuyu işaretleyin.<br />
+                            Sabit boyutlu bir alan otomatik bir şekle benzer. Bunun i&ccedil;in bir kaydırma stili belirleyebilir ve konumunu ayarlayabilirsiniz.
+                        </li>
+                        <li><b>Kenarlık rengi</b>: Eklenen karmaşık alan kenarlıklarının <div class="icon icon-nofill"></div> rengini ayarlamak i&ccedil;in simgeye tıklayın. Paletten tercih edilen kenarlık rengini se&ccedil;in. Gerekirse <b>yeni bir &ouml;zel renk ekleyebilirsiniz</b>.</li>
+                        <li><b>Arkaplan rengi</b>: Eklenen karmaşık alana <div class="icon icon-nofill"></div> bir arka plan rengi uygulamak i&ccedil;in simgeye tıklayın. <b>Tema Renklerinden</b>,&nbsp;<b>Standart Renklerden</b> tercih ettiğiniz rengi se&ccedil;in veya gerekirse <b>yeni bir &ouml;zel renk ekleyin</b>.</li>
+                        <li><b>Gerekli</b>: Doldurulması gereken karmaşık alanı yapmak i&ccedil;in bu kutuyu işaretleyin.</li>
+                    </ul>
+                    <p>Karmaşık bir alana &ccedil;eşitli form alanları eklemek i&ccedil;in i&ccedil;ine tıklayın ve <b>Formlar</b> sekmesindeki &uuml;st ara&ccedil; &ccedil;ubuğundan gerekli alanı se&ccedil;in, ardından isteğinize g&ouml;re yapılandırın. Her alan t&uuml;r&uuml; hakkında daha fazla bilgi edinmek i&ccedil;in yukarıdaki ilgili b&ouml;l&uuml;mleri okuyun.</p>
+                    <p class="note"><em>G&ouml;r&uuml;nt&uuml;</em> form alanını karmaşık alanlar i&ccedil;inde kullanamayacağınızı l&uuml;tfen unutmayın.</p>
+                </div>
+            </details>
+        </div>
+
+
+        <h2>Formları vurgulama</h2>
+        <p>Eklenen form alanlarını belirli bir renkle vurgulayabilirsiniz.</p>
+        <div class="forms">
+            <details class="details-example">
+                <summary>Alanları vurgulamak i&ccedil;in</summary>
+                <div id="highlight_settings">
+                    <img alt="vurgulama ayarları" src="../images/highlight_settings.png" />
+                    <ul>
+                        <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Formlar</b> sekmesinden <b>Vurgu Ayarlarını</b> a&ccedil;ın,</li>
+                        <li><b>Standart Renklerden</b> bir renk se&ccedil;in. Ayrıca <b>yeni bir &ouml;zel renk ekleyebilirsiniz</b>,</li>
+                        <li>&Ouml;nceden uygulanmış renk vurgulamasını kaldırmak i&ccedil;in <b>Vurgulama yok</b> se&ccedil;eneğini se&ccedil;in.</li>
+                    </ul>
+                </div>
+                <p>Se&ccedil;ilen vurgulama se&ccedil;enekleri, belgedeki t&uuml;m form alanlarına uygulanacaktır.</p>
+                <p class="note">Form alanı kenarlığı yalnızca alan se&ccedil;ildiğinde g&ouml;r&uuml;n&uuml;r. Basılı s&uuml;r&uuml;mde kenarlıklar g&ouml;r&uuml;nmez.</p>
+            </details>
+        </div>
+
+        <h2>Formu g&ouml;r&uuml;nt&uuml;leyi etkinleştirme</h2>
+        <p class="note">
+            <b>Not</b>: <b>Formu g&ouml;r&uuml;nt&uuml;le</b> moduna bir kez girdikten sonra, t&uuml;m d&uuml;zenleme se&ccedil;enekleri kullanılamaz hale gelir.
+        </p>
+        <p>Eklenen t&uuml;m formların belgenizde nasıl g&ouml;r&uuml;nt&uuml;leneceğini g&ouml;rmek i&ccedil;in &uuml;st ara&ccedil; &ccedil;ubuğunun <b>Formlar</b> sekmesinden <span class="icon icon-view_form_icon"></span> <b>Formu g&ouml;r&uuml;nt&uuml;le</b> d&uuml;ğmesine tıklayın.</p>
+        <p><img alt="formu görüntüle etkin" src="../images/view_form_active2.png" /></p>
+        <p>G&ouml;r&uuml;nt&uuml;leme modundan <b>&ccedil;ıkmak</b> i&ccedil;in aynı simgeye tekrar tıklayın.</p>
+
+        <h2>Form alanlarını taşıma</h2>
+        <p>Form alanları belgede başka bir yere taşınabilir: alanı se&ccedil;mek i&ccedil;in denetim kenarlığının solundaki d&uuml;ğmeye tıklayın ve fare d&uuml;ğmesini metinde başka bir konuma bırakmadan s&uuml;r&uuml;kleyin.</p>
+        <p><img alt="form alanlarını taşıma" src="../images/moving_form_fields.png" /></p>
+        <p>Ayrıca form alanlarını <b>kopyalıp yapıştırabilirsiniz</b>: gerekli alanı se&ccedil;in ve <b>Ctrl+C/Ctrl+V</b> tuş kombinasyonlarını kullanın.</p>
+
+        <h2>Gerekli alanları oluşturma</h2>
+        <p><b>Bir alanı zorunlu yapmak</b> i&ccedil;in <b>Gerekli</b> se&ccedil;eneği işaretleyin. Zorunlu alanlar kırmızı &ccedil;izgi ile işaretlenecektir.<!--The form cannot be submitted until all required fields are filled in.--></p>
+
+        <h2>Form alanlarını kilitleme</h2>
+        <p>Eklenen form alanının <b>daha fazla d&uuml;zenlenmesini engellemek</b> i&ccedil;in <span class="icon icon-lock_form_icon"></span> <b>Kilit</b> simgesine tıklayın. Alanların doldurma kullanılmaya devam eder.</p>
+
+        <h2>Form alanlarını temizleme</h2>
+        <p>Eklenen t&uuml;m alanları temizlemek ve t&uuml;m değerleri silmek i&ccedil;in &uuml;st ara&ccedil; &ccedil;ubuğunda <b>Formlar</b> sekmesinden <span class="icon icon-clear_fields_icon"></span> <b>T&uuml;m Alanları Temizle</b> d&uuml;ğmesine tıklayın.</p>
+
+        <h2>Formda Gezinme, Formu G&ouml;r&uuml;nt&uuml;leme ve Kaydetme</h2>
+        <p><img alt="form panelini doldurma" src="../images/fill_form.png" /></p>
+        <p>&Uuml;st ara&ccedil; &ccedil;ubuğundaki <b>Formlar</b> sekmesine gidin.</p>
+        <p>&Uuml;st ara&ccedil; &ccedil;ubuğundaki <span class="icon icon-previous_field_icon"></span> <b>&Ouml;nceki alan</b> ve <span class="icon icon-next_field_icon"></span> <b>Sonraki alan</b> d&uuml;ğmelerini kullanarak form alanları arasında gezinin.</p>
+        <p>Bitirdiğinizde, formu doldurulmaya hazır bir <b>OFORM</b> dosyası olarak kaydetmek i&ccedil;in &uuml;st ara&ccedil; &ccedil;ubuğundaki <span class="icon icon-save_form_icon"></span> <b>Oform olarak kaydet</b> d&uuml;ğmesine tıklayın. İhtiyacınız kadar <b>OFORM</b> dosyası kaydedebilirsiniz.</p>
+        <!--<p>To clear all fields and reset the form, click the <div class = "icon icon-clear_fields_icon"></div> <b>Clear fields</b> button at the top toolbar.</p>
+        <p>When you are finished, click the <div class = "icon icon-submit_form_icon"></div> <b>Submit</b> button at the top toolbar to send the form for further processing. Please note that this action cannot be undone.</p>
+    <p class="note">If you are using the server version of ONLYOFFICE Docs, the presence of the <b>Submit</b> button depends on the configuration. Read <a href="https://api.onlyoffice.com/editors/config/editor/customization">this article</a> to learn more.</p>-->
+        <h2>Form alanlarını kaldırma</h2>
+        <p>Bir form alanını kaldırmak ve t&uuml;m i&ccedil;eriğini bırakmak i&ccedil;in alanı se&ccedil;in ve <span class="icon icon-combo_delete_values"></span> <b>Sil</b> simgesine tıklayın (alanın kilitli olmadığından emin olun) veya klavyedeki&nbsp;<b>Delete</b>&nbsp;tuşuna basın.</p>
+    </div>
+</body>
+</html>

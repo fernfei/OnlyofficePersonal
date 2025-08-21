@@ -1,0 +1,430 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Inserir gráficos</title>
+		<meta charset="utf-8" />
+		<meta name="descrição" content="Adicione um gráfico ao seu documento e ajuste sua posição, tamanho e propriedades" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Inserir gráficos</h1>
+            <h3>Inserir um gráfico</h3>
+			<p>Para inserir um gráfico no <a href="https://www.onlyoffice.com/pt/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Documentos</b></a>,</p>
+            <ol>
+                <li>Coloque o cursor onde o gráfico deve ser adicionado.</li>
+                <li>Alterne para a guia <b>Inserir</b> da barra de ferramentas superior.</li>
+                <li>Clique no <div class = "icon icon-insertchart"></div> <b>Gráfico</b> ícone na barra de ferramentas superior.</li>
+                <li>
+                    Selecione o tipo de gráfico necessário entre os disponíveis:
+                    <details class="details-example">
+                        <summary>Gráficos de colunas</summary>
+                        <ul>
+                            <li>Coluna agrupada</li>
+                             <li>Coluna empilhada</li>
+                             <li>coluna empilhada 100%</li>
+                             <li>Coluna agrupada em 3D</li>
+                             <li>Coluna empilhada em 3D</li>
+                             <li>Coluna 3-D 100% empilhada</li>
+                             <li>Coluna 3-D</li>
+                        </ul>
+                    </details>
+                    <details class="details-example">
+                        <summary>Gráficos de linhas</summary>
+                        <ul>
+                            <li>Linha</li>
+                             <li>Linha empilhada</li>
+                             <li>100% linha empilhada</li>
+                             <li>Linha com marcadores</li>
+                             <li>Linha empilhada com marcadores</li>
+                             <li>100% linha empilhada com marcadores</li>
+                             <li>Linha 3-D</li>
+                        </ul>
+                    </details>
+                    <details class="details-example">
+                        <summary>Gráfico de setores</summary>
+                        <ul>
+                            <li>Torta</li>
+                             <li>Rosquinha</li>
+                             <li>Torta 3-D</li>
+                        </ul>
+                    </details>
+                    <details class="details-example">
+                        <summary>Gráficos de barras</summary>
+                         <ul>
+                             <li>Barra agrupada</li>
+                             <li>Barra empilhada</li>
+                             <li>Barra empilhada 100%</li>
+                             <li>Barra agrupada 3-D</li>
+                             <li>Barra empilhada em 3D</li>
+                             <li>Barra 3-D 100% empilhada</li>
+                        </ul>
+                    </details>
+                    <details class="details-example">
+                        <summary>Gráficos de área</summary>
+                         <ul>
+                             <li>Área</li>
+                             <li>Área empilhada</li>
+                             <li>100% área empilhada</li>
+                        </ul>
+                    </details>
+                    <details class="details-example">
+                        <summary>Gráficos de ações</summary>
+                    </details>
+                    <details class="details-example">
+                        <summary>Gráficos XY (dispersão)</summary>
+                        <ul>
+                            <li>Dispersão</li>
+                             <li>Barra empilhada</li>
+                             <li>Distribuir com linhas suaves e marcadores</li>
+                             <li>Dispersão com linhas suaves</li>
+                             <li>Dispersar com linhas retas e marcadores</li>
+                             <li>Dispersar com linhas retas</li>
+                        </ul>
+                    </details>
+                    <details class="details-example">
+                        <summary>Gráficos de combinação</summary>
+                         <ul>
+                             <li>Coluna agrupada - linha</li>
+                             <li>Coluna agrupada - linha no eixo secundário</li>
+                             <li>Área empilhada - coluna agrupada</li>
+                             <li>Combinação personalizada</li>
+                        </ul>
+                    </details>
+                    <p class="note"><b>Nota</b>: <b>Editor de Documentos do ONLYOFFICE</b> suporta os seguintes tipos de gráficos que foram criados com editores de terceiros: <b>Pyramid</b>, <b>Bar (Pyramid)</b>, <b>Cilindros horizontais/verticais</b>, <b>Cones horizontais/verticais</b>. Você pode abrir o arquivo que contém tal gráfico e modificá-lo usando as ferramentas de edição de gráficos disponíveis.</p>
+                </li>
+                <li>
+                    Depois disso, a janela <b>Editor de gráfico</b> aparecerá onde você pode inserir os dados necessários nas células usando os seguintes controles:
+                    <ul>
+                        <li><div class = "icon icon-copy"></div> e <div class = "icon icon-paste"></div> para copiar e colar os dados copiados</li>
+                        <li><div class = "icon icon-undo1"></div> e <div class = "icon icon-redo1"></div> para desfazer e refazer ações</li>
+                        <li><div class = "icon icon-insertfunction"></div> para inserir uma função</li>
+                        <li><div class = "icon icon-decreasedec"></div> e <div class = "icon icon-increasedec"></div> para casas decimais decrescentes e crescentes</li>
+                        <li><img alt="Formato numérico" src="../../../../../../common/main/resources/help/en/images/numberformat.png" /> para alterar o formato do número, ou seja, a maneira como os números inseridos aparecem nas células</li>
+                        <li><img alt="Tipo de Gráfico" src="../../../../../../common/main/resources/help/en/images/charttypebutton.png" /> para escolher um tipo diferente de gráfico.</li>
+                    </ul>
+                    <p><img alt="Janela do editor de gráfico" src="../../../../../../common/main/resources/help/en/images/charteditor.png" /></p>
+                </li>
+                <li>
+                    Clique no botão <b>Selecionar dados</b> situado na janela <b>Editor de gráfico</b>. A janela <b>Dados do gráfico</b> será aberta.
+                    <ol>
+                        <li>
+                            Use a caixa de diálogo <b>Dados do gráfico</b> para gerenciar <b>Intervalo de dados do gráfico</b>, <b>Entradas de legenda (série)</b>, <b>Rótulo do eixo horizontal (categoria)</b > e <b>Alternar linha/coluna</b>.
+                            <p><img alt="Janela de dados do gráfico" src="../../../../../../common/main/resources/help/en/images/chartdata.png" /></p>
+                            <ul>
+                                <li>
+                                    <b>Intervalo de dados do gráfico</b> - selecione os dados para o seu gráfico.
+                                    <ul>
+                                        <li>
+                                           Clique no <div class = "icon icon-changerange"></div> ícone à direita da caixa <b>Intervalo de dados do gráfico</b> para selecionar o intervalo de dados.
+                                            <p><img alt="Janela Selecionar Intervalo de Dados" src="../../../../../../common/main/resources/help/en/images/selectdata.png" /></p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>Entradas de legenda (série)</b> - adicione, edite ou remova entradas de legenda. Digite ou selecione o nome da série para entradas de legenda.
+                                    <ul>
+                                        <li>Em <b>Entradas de legenda (série)</b>, clique no botão <b>Adicionar</b>.</li>
+                                        <li>
+                                            Em <b>Editar série</b>, digite uma nova entrada de legenda ou clique no ícone <div class = "icon icon-changerange"></div> à direita da caixa <b>Selecionar nome</b>.
+                                            <p><img alt="Janela Editar série" src="../../../../../../common/main/resources/help/en/images/editseries.png" /></p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>Rótulos de eixo horizontal (Categoria)</b> - altere o texto dos rótulos de categoria.
+                                     <ul>
+                                         <li><b>Em Rótulos de eixo horizontal (Categoria)</b>, clique em <b>Editar</b>.</li>
+                                        <li>
+                                           Em <b>Intervalo de rótulos do eixo</b>, digite os rótulos que deseja adicionar ou clique no <div class = "icon icon-changerange"></div> ícone à direita da caixa <b>Intervalo de etiquetas do eixo</b> para selecionar o intervalo de dados.
+                                            <p><img alt="Janela de Rótulos de Eixo" src="../images/axislabels.png" /></p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><b>Alternar linha/coluna</b> - reorganize os dados da planilha que estão configurados no gráfico da maneira que você deseja. Troque linhas por colunas para exibir dados em um eixo diferente. </li>
+                            </ul>
+                        </li>
+                        <li>Clique no botão <b>OK</b> para aplicar as alterações e fechar a janela.</li>
+                    </ol>
+                </li>
+                <li>
+                   Clique no botão <b>Alterar tipo de gráfico</b> na janela <b>Editor de gráfico</b> para escolher o tipo e o estilo do gráfico. Selecione um gráfico nas seções disponíveis: Coluna, Linha, Pizza, Barra, Área, Estoque, XY (Dispersão) ou Combinação.
+                    <p><img alt="Janela de tipo de gráfico" src="../../../../../../common/main/resources/help/en/images/charttype.png" /></p>
+                    <p>Quando você escolhe <b>Gráficos combinados</b>, a janela <b>Tipo de gráfico</b> lista as séries de gráficos e permite escolher os tipos de gráficos para combinar e selecionar séries de dados para colocar em um eixo secundário.</p>
+                    <p><img alt="Combinação de tipo de gráfico" src="../../../../../../common/main/resources/help/en/images/charttype_combo.png" /></p>
+                </li>
+                <li>
+                    Altere as configurações do gráfico clicando no botão <b>Editar gráfico</b> situado na janela <b>Editor de gráfico</b>. A janela <b>Gráfico - Configurações avançadas</b> será aberta.
+                    <p><img alt="Gráfico - Janela de configurações avançadas" src="../../../../../../common/main/resources/help/en/images/chartsettings_layout.png" /></p>
+                    <p>A guia <b>Layout</b> permite alterar o layout dos elementos do gráfico.</p>
+                    <ul>
+                        <li>
+                            Especifique a posição do <b>Título do gráfico</b> em relação ao seu gráfico, selecionando a opção necessária na lista suspensa:
+                             <ul>
+                                 <li><b>Nenhum</b> para não exibir um título de gráfico,</li>
+                                 <li><b>Sobreposição</b> para sobrepor e centralizar um título na área de plotagem,</li>
+                                 <li><b>Sem sobreposição</b> para exibir o título acima da área de plotagem.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            Especifique a posição da <b>Legenda</b> em relação ao seu gráfico selecionando a opção necessária na lista suspensa:
+                            <ul>
+                                <li><b>None</b> para não exibir uma legenda,</li>
+                                 <li><b>Inferior</b> para exibir a legenda e alinhá-la na parte inferior da área de plotagem,</li>
+                                 <li><b>Superior</b> para exibir a legenda e alinhá-la ao topo da área de plotagem,</li>
+                                 <li><b>Direita</b> para exibir a legenda e alinhá-la à direita da área de plotagem,</li>
+                                 <li><b>Esquerda</b> para exibir a legenda e alinhá-la à esquerda da área de plotagem,</li>
+                                 <li><b>Sobreposição à esquerda</b> para sobrepor e centralizar a legenda à esquerda na área de plotagem,</li>
+                                 <li><b>Sobreposição à direita</b> para sobrepor e centralizar a legenda à direita na área de plotagem.</li>
+                            </ul>
+                        </li>
+                        <li>
+                           Especifique os parâmetros <b>Rótulos de dados</b> (ou seja, rótulos de texto que representam valores exatos de pontos de dados):<br />
+                            <ul>
+                                <li>
+                                   Especifique a posição dos <b>Rótulos de dados</b> em relação aos pontos de dados selecionando a opção necessária na lista suspensa. As opções disponíveis variam dependendo do tipo de gráfico selecionado.
+                                    <ul>
+                                         <li>Para gráficos <b>Colunas/barras</b>, você pode escolher as seguintes opções: <b>Nenhum</b>, <b>Centro</b>, <b>Inferior interno</b>, <b >Top interno</b>, <b>Top externo</b>.</li>
+                                         <li>Para gráficos <b>Linha/XY (Dispersão)/Estoque</b>, você pode escolher as seguintes opções: <b>Nenhuma</b>, <b>Centro</b>, <b>Esquerda </b>, <b>Direita</b>, <b>Superior</b>, <b>Inferior</b>.</li>
+                                         <li>Para gráficos <b>Pie</b>, você pode escolher as seguintes opções: <b>Nenhum</b>, <b>Centro</b>, <b>Ajustar à largura</b>, <b>Top interno</b>, <b>Top externo</b>.</li>
+                                         <li>Para gráficos de <b>Área</b>, bem como para <b>3D</b> <b>Coluna</b>, <b>Linha</b>, <b>Barra</b > e gráficos <b>Combo</b>, você pode escolher as seguintes opções: <b>Nenhum</b>, <b>Centro</b>.</li>
+                                    </ul>
+                                </li>
+                                <li>Selecione os dados que deseja incluir em suas etiquetas marcando as caixas correspondentes: <b>Nome da série</b>, <b>Nome da categoria</b>, <b>Valor</b>,</li>
+                                 <li>Digite um caractere (vírgula, ponto e vírgula, etc.) que deseja usar para separar vários rótulos no campo de entrada <b>Separador de rótulos de dados</b>.</li>
+                            </ul>
+                        </li>
+                        <li><b>Linhas</b> - é usado para escolher um estilo de linha para gráficos <b>Linha/XY (Dispersão)</b>. Você pode escolher uma das seguintes opções: <b>Reta</b> para usar linhas retas entre os pontos de dados, <b>Suave</b> para usar curvas suaves entre os pontos de dados ou <b>Nenhuma</b> para não exibir linhas.</li>
+                         <li>
+                             <b>Marcadores</b> - é usado para especificar se os marcadores devem ser exibidos (se a caixa estiver marcada) ou não (se a caixa estiver desmarcada) para gráficos <b>Linha/XY (Dispersão)</b> .
+                             <p class="note"><b>Observação</b>: as opções <b>Linhas</b> e <b>Marcadores</b> estão disponíveis para <b>Gráficos de linha</b> e <b>Gráficos XY (dispersão)</b> apenas.</p>
+                        </li>
+                    </ul>
+                    <p><img alt="Gráfico - Janela de configurações avançadas" src="../../../../../../common/main/resources/help/en/images/chartsettings_verticalaxis.png" /></p>
+                    <p>A guia <b>Eixo vertical</b> permite que você altere os parâmetros do eixo vertical, também conhecido como eixo de valores ou eixo y, que exibe valores numéricos. Observe que o eixo vertical será o eixo da categoria que exibe os rótulos de texto para os <b>Gráficos de barras</b>, portanto, neste caso, as opções da guia <b>Eixo vertical</b> corresponderão às descritas no próxima seção. Para os gráficos <b>XY (dispersão)</b>, ambos os eixos são eixos de valor.</p>
+                     <p class="note"><b>Observação</b>: as seções <b>Configurações do eixo</b> e <b>Linhas de grade</b> serão desativadas para <b>Gráficos de pizza</b> já que gráficos deste tipo não possuem eixos e linhas de grade.</p>
+                    <ul>
+                        <li>Selecione <b>Ocultar</b> para ocultar o eixo vertical no gráfico, deixe-o desmarcado para exibir o eixo vertical.</li>
+                         <li>
+                             Especifique a orientação <b>Título</b> selecionando a opção necessária na lista suspensa:
+                             <ul>
+                                 <li><b>Nenhum</b> para não exibir um título de eixo vertical</li>
+                                 <li><b>Girado</b> para exibir o título de baixo para cima à esquerda do eixo vertical,</li>
+                                 <li><b>Horizontal</b> para exibir o título horizontalmente à esquerda do eixo vertical.</li>
+                            </ul>
+                        </li>
+                        <li><b>Valor mínimo</b> - é usado para especificar o valor mais baixo exibido no início do eixo vertical. A opção <b>Auto</b> é selecionada por padrão, neste caso o valor mínimo é calculado automaticamente dependendo do intervalo de dados selecionado. Você pode selecionar a opção <b>Fixo</b> na lista suspensa e especificar um valor diferente no campo de entrada à direita.</li>
+                         <li><b>Valor máximo</b> - é usado para especificar o valor mais alto exibido no final do eixo vertical. A opção <b>Auto</b> é selecionada por padrão, neste caso o valor máximo é calculado automaticamente dependendo do intervalo de dados selecionado. Você pode selecionar a opção <b>Fixo</b> na lista suspensa e especificar um valor diferente no campo de entrada à direita.</li>
+                         <li><b>Cruzamento de eixo</b> - é usado para especificar um ponto no eixo vertical onde o eixo horizontal deve cruzá-lo. A opção <b>Auto</b> é selecionada por padrão, neste caso o valor do ponto de interseção dos eixos é calculado automaticamente dependendo do intervalo de dados selecionado. Você pode selecionar a opção <b>Valor</b> na lista suspensa e especificar um valor diferente no campo de entrada à direita ou definir o ponto de interseção dos eixos no <b>Valor mínimo/máximo</b > no eixo vertical.</li>
+                         <li><b>Unidades de exibição</b> - é usado para determinar a representação dos valores numéricos ao longo do eixo vertical. Esta opção pode ser útil se você estiver trabalhando com grandes números e desejar que os valores no eixo sejam exibidos de forma mais compacta e legível (por exemplo, você pode representar 50 000 como 50 usando o <b>Milhares</b> unidades de exibição). Selecione as unidades desejadas na lista suspensa: <b>Centenas</b>, <b>Milhares</b>, <b>10 000</b>, <b>100 000</b>, <b >Milhões</b>, <b>10 000 000</b>, <b>100 000 000</b>, <b>Bilhões</b>, <b>Trilhões</b>, ou escolha o opção <b>Nenhuma</b> para retornar às unidades padrão.</li>
+                         <li><b>Valores na ordem inversa</b> - é usado para exibir valores na direção oposta. Quando a caixa está desmarcada, o valor mais baixo está na parte inferior e o valor mais alto está na parte superior do eixo. Quando a caixa está marcada, os valores são ordenados de cima para baixo.</li>
+                        <li>
+                            A seção <b>Opções de Tick</b> permite ajustar a aparência das marcas de escala na escala vertical. Marcas de escala principais são as divisões de escala maiores que podem ter rótulos exibindo valores numéricos. Marcas secundárias são as subdivisões de escala que são colocadas entre as marcas principais e não possuem rótulos. As marcas de escala também definem onde as linhas de grade podem ser exibidas se a opção correspondente estiver definida na guia <b>Layout</b>. As listas suspensas <b>Tipo principal/secundário</b> contêm as seguintes opções de posicionamento:
+                             <ul>
+                                 <li><b>Nenhum</b> para não exibir marcas de escala principais/secundárias,</li>
+                                 <li><b>Cruz</b> para exibir marcas de escala maiores/menores em ambos os lados do eixo,</li>
+                                 <li><b>Dentro</b> para exibir marcas de escala maiores/menores dentro do eixo,</li>
+                                 <li><b>Fora</b> para exibir as marcas de escala principais/secundárias fora do eixo.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            A seção <b>Opções de rótulo</b> permite ajustar a aparência dos principais rótulos de marca de escala que exibem valores. Para especificar uma <b>Posição do rótulo</b> em relação ao eixo vertical, selecione a opção necessária na lista suspensa:
+                            <ul>
+                                <li><b>Nenhum</b> para não exibir rótulos de marca de escala,</li>
+                                 <li><b>Baixo</b> para exibir rótulos de marca de escala à esquerda da área de plotagem,</li>
+                                 <li><b>Alto</b> para exibir rótulos de marca de escala à direita da área de plotagem,</li>
+                                 <li><b>Ao lado do eixo</b> para exibir rótulos de marca de escala ao lado do eixo.</li>
+                                <li>
+                                    Para especificar um <b>Formato de etiqueta</b>, clique no botão Formato de etiqueta e escolha a categoria que julgar conveniente.
+                                      <p>Categorias de formato de etiqueta disponíveis:</p>
+                                    <ul>
+                                        <li>Geral</li>
+                                         <li>Número</li>
+                                         <li>Científico</li>
+                                         <li>Contabilidade</li>
+                                         <li>Moeda</li>
+                                         <li>Data</li>
+                                         <li>Tempo</li>
+                                         <li>Porcentagem</li>
+                                         <li>Fração</li>
+                                         <li>Texto</li>
+                                         <li>Personalizado</li>
+                                    </ul>
+                                    <p>As opções de formato de etiqueta variam dependendo da categoria selecionada. Para obter mais informações sobre como alterar o formato do número, acesse <a href="https://helpcenter.onlyoffice.com/ONLYOFFICE-Editors/ONLYOFFICE-Spreadsheet-Editor/UsageInstructions/ChangeNumberFormat.aspx">this page</a>.</p>
+                                </li>
+                                <li>Marque <b>Vinculado à fonte</b> para manter a formatação numérica da fonte de dados no gráfico.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>
+                        <img alt="Gráfico - Janela de configurações avançadas" src="../../../../../../common/main/resources/help/en/images/chartsettings_secondaryaxis1.png" />
+                    </p>
+                    <p class="note"><b>Observação</b>: os eixos secundários são compatíveis apenas com gráficos <b>Combo</b> .</p>
+                     <p><b>Eixos secundários</b> são úteis em gráficos combinados quando as séries de dados variam consideravelmente ou tipos mistos de dados são usados para plotar um gráfico. Os eixos secundários facilitam a leitura e a compreensão de um gráfico de combinação.</p>
+                     <p>A guia <b>Eixo Vertical/Horizontal Secundário</b> aparece quando você escolhe uma série de dados apropriada para um gráfico de combinação. Todas as configurações e opções na guia <b>Eixo Vertical/Horizontal Secundário</b> são iguais às configurações no Eixo Vertical/Horizontal. Para uma descrição detalhada das opções de <b>Eixo Vertical/Horizontal</b>, consulte a descrição acima/abaixo.</p>
+                    <p><img alt="Gráfico - Janela de configurações avançadas" src="../../../../../../common/main/resources/help/en/images/chartsettings_horizontalaxis.png" /></p>
+                    <p>A guia <b>Eixo horizontal</b> permite que você altere os parâmetros do eixo horizontal, também conhecido como eixo de categorias ou eixo x, que exibe rótulos de texto. Observe que o eixo horizontal será o eixo de valores que exibe os valores numéricos para os <b>Gráficos de barras</b>, portanto, neste caso, as opções da guia <b>Eixo horizontal</b> corresponderão às descritas no seção anterior. Para os gráficos <b>XY (Scatter)</b>, ambos os eixos são eixos de valor.</p>
+                    <ul>
+                        <li>Selecione <b>Ocultar</b> para ocultar o eixo horizontal no gráfico, deixe-o desmarcado para exibir o eixo horizontal.</li>
+                        <li>
+                            Especifique a orientação <b>Título</b> selecionando a opção necessária na lista suspensa:
+                             <ul>
+                                 <li><b>Nenhum</b> quando você não deseja exibir um título de eixo horizontal,</li>
+                                 <li><b>Sem sobreposição</b> para exibir o título abaixo do eixo horizontal,</li>
+                            </ul>
+                        </li>
+                        <li><b>Linhas de grade</b> é usado para especificar as <b>Linhas de grade horizontais</b> a serem exibidas, selecionando a opção necessária na lista suspensa: <b>Nenhuma</b>, <b>Principais</b> , <b>Menor</b> ou <b>Grande e Menor</b>.</li>
+                         <li><b>Cruzamento de eixo</b> - é usado para especificar um ponto no eixo horizontal onde o eixo vertical deve cruzá-lo. A opção <b>Auto</b> é selecionada por padrão, neste caso o valor do ponto de interseção dos eixos é calculado automaticamente dependendo do intervalo de dados selecionado. Você pode selecionar a opção <b>Valor</b> na lista suspensa e especificar um valor diferente no campo de entrada à direita ou definir o ponto de interseção dos eixos no <b>Valor mínimo/máximo</b> (que corresponde à primeira e última categoria) no eixo horizontal.</li>
+                         <li><b>Posição do eixo</b> - é usado para especificar onde os rótulos de texto do eixo devem ser colocados: <b>Nas marcas de escala</b> ou <b>Entre as marcas de escala</b>.</li>
+                        <li><b>Valores em ordem reversa</b> - é usado para exibir categorias na direção oposta. Quando a caixa está desmarcada, as categorias são exibidas da esquerda para a direita. Quando a caixa está marcada, as categorias são ordenadas da direita para a esquerda.</li>
+                         <li>
+                             A seção <b>Opções de Tick</b> permite ajustar a aparência das marcas de escala na escala horizontal. Marcas de escala principais são as divisões maiores que podem ter rótulos exibindo valores de categoria. Marcas secundárias são as divisões menores que são colocadas entre as marcas principais e não possuem rótulos. As marcas de escala também definem onde as linhas de grade podem ser exibidas se a opção correspondente estiver definida na guia <b>Layout</b>. Você pode ajustar os seguintes parâmetros de marca de escala:
+                             <ul>
+                                 <li><b>Tipo principal/secundário</b> - é usado para especificar as seguintes opções de posicionamento: <b>Nenhum</b> para não exibir marcas de escala principais/secundárias, <b>Cruz</b> para exibir marcas principais/secundárias em ambos os lados do eixo, <b>In</b> para exibir marcas principais/secundárias dentro do eixo, <b>Out</b> para exibir marcas principais/secundárias fora do eixo .</li>
+                                 <li><b>Intervalo entre marcas</b> - é usado para especificar quantas categorias devem ser exibidas entre duas marcas adjacentes.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            A seção <b>Opções de rótulo</b> permite ajustar a aparência dos rótulos que exibem categorias.
+                             <ul>
+                                 <li><b>Posição do rótulo</b> - é usado para especificar onde os rótulos devem ser colocados em relação ao eixo horizontal. Selecione a opção necessária na lista suspensa: <b>Nenhum</b> para não exibir rótulos de categoria, <b>Baixo</b> para exibir rótulos de categoria na parte inferior da área de plotagem, <b>Alto</b> para exibir rótulos de categoria na parte superior da área de plotagem, <b>Ao lado do eixo</b> para exibir rótulos de categoria ao lado do eixo.</li>
+                                 <li><b>Distância do rótulo do eixo</b> - é usado para especificar o quão próximo os rótulos devem ser colocados do eixo. Você pode especificar o valor necessário no campo de entrada. Quanto maior o valor que você definir, maior será a distância entre o eixo e os rótulos.</li>
+                                 <li><b>Intervalo entre rótulos</b> - é usado para especificar com que frequência os rótulos devem ser exibidos. A opção <b>Auto</b> é selecionada por padrão, neste caso, os rótulos são exibidos para cada categoria. Você pode selecionar a opção <b>Manual</b> na lista suspensa e especificar o valor necessário no campo de entrada à direita. Por exemplo, insira 2 para exibir rótulos para todas as outras categorias, etc.</li>
+                                 <li>
+                                     Para especificar um <b>Formato de etiqueta</b>, clique no botão Formato de etiqueta e escolha a categoria que julgar apropriada.
+                                     <p>Categorias de formato de etiqueta disponíveis:</p>
+                                    <ul>
+                                        <li>Geral</li>
+                                         <li>Número</li>
+                                         <li>Científico</li>
+                                         <li>Contabilidade</li>
+                                         <li>Moeda</li>
+                                         <li>Data</li>
+                                         <li>Tempo</li>
+                                         <li>Porcentagem</li>
+                                         <li>Fração</li>
+                                         <li>Texto</li>
+                                         <li>Personalizado</li>
+                                    </ul>
+                                    <p>As opções de formato de etiqueta variam dependendo da categoria selecionada. Para obter mais informações sobre como alterar o formato do número, acesse <a href="https://helpcenter.onlyoffice.com/ONLYOFFICE-Editors/ONLYOFFICE-Spreadsheet-Editor/UsageInstructions/ChangeNumberFormat.aspx">esta página</a>.</p>
+                                </li>
+                                <li>Marque <b>Vinculado à fonte</b> para manter a formatação numérica da fonte de dados no gráfico.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p><img alt="Gráfico - Configurações Avançadas: Ajuste de Células" src="../../../../../../common/main/resources/help/en/images/chartsettings_cellsnapping.png" /></p>
+                    <p>A guia <b>Cell Snapping</b> contém os seguintes parâmetros:</p>
+                    <ul>
+                        <li><b>Mover e dimensionar com células</b> - esta opção permite ajustar o gráfico à célula atrás dele. Se a célula se mover (por exemplo, se você inserir ou excluir algumas linhas/colunas), o gráfico será movido junto com a célula. Se você aumentar ou diminuir a largura ou a altura da célula, o tamanho do gráfico também mudará.</li>
+                         <li><b>Mover, mas não dimensionar com células</b> - esta opção permite encaixar o gráfico na célula atrás dele, evitando que o gráfico seja redimensionado. Se a célula se mover, o gráfico será movido junto com a célula, mas se você alterar o tamanho da célula, as dimensões do gráfico permanecerão inalteradas.</li>
+                         <li><b>Não mover ou dimensionar com células</b> - esta opção permite impedir que o gráfico seja movido ou redimensionado se a posição ou tamanho da célula for alterado.</li>
+                    </ul>
+                    <p><img alt="Gráfico - Configurações Avançadas" src="../../../../../../common/main/resources/help/en/images/chartsettings_alternativetext.png" /></p>
+                    <p>A guia <b>Texto alternativo</b> permite especificar um <b>Título</b> e uma <b>Descrição</b> que serão lidos para pessoas com deficiência visual ou cognitiva para ajudá-los a entender melhor quais informações o gráfico contém.</p>
+                </li>
+            </ol>
+			<hr />
+            <h3>Mover e redimensionar gráficos</h3>
+			<p><img class="floatleft" alt="Gráfico em movimento" src="../images/moving_chart.png" />Depois que o gráfico é adicionado, você pode alterar seu tamanho e posição. Para alterar o tamanho do gráfico, arraste pequenos quadrados <span class = "icon icon-resize_square"></span> situada em suas bordas. Para manter as proporções originais do gráfico selecionado durante o redimensionamento, mantenha pressionada a tecla <b>Shift</b> e arraste um dos ícones do canto.</p>
+			<p>Para alterar a posição do gráfico, use o ícone <span class = "icon icon-arrow"></span> que aparece depois de passar o cursor do mouse sobre o gráfico. Arraste o gráfico para a posição necessária sem soltar o botão do mouse. Quando você move o gráfico, as linhas de guia são exibidas para ajudá-lo a posicionar o objeto na página com precisão (se um estilo de quebra de linha diferente de embutido for selecionado).</p>
+            <p class="note">
+                <b>Nota</b>: a lista de atalhos de teclado que podem ser usados ao trabalhar com objetos está disponível <a href="../HelpfulHints/KeyboardShortcuts.htm#workwithobjects" onclick="onhyperlinkclick(this)">aqui</a>.
+            </p>
+            <hr />
+            <h3>Editar elementos do gráfico</h3>
+            <p>Para editar o <b>Título</b> do gráfico, selecione o texto padrão com o mouse e digite o texto necessário.</p>
+             <p>Para alterar a formatação da fonte nos elementos de texto, como título do gráfico, títulos dos eixos, entradas de legenda, rótulos de dados, etc., selecione o elemento de texto necessário clicando com o botão esquerdo do mouse nele. Em seguida, use os ícones correspondentes na guia <b>Página inicial</b> da barra de ferramentas superior para alterar a fonte <a href="../UsageInstructions/FontTypeSizeColor.htm" onclick="onhyperlinkclick(this)">tipo, tamanho, cor</a> ou seu <a href="../UsageInstructions/DecorationStyles.htm" onclick="onhyperlinkclick(this)">estilo de decoração</a>.</p>
+            <p>Quando o gráfico é selecionado, as <b>Configurações da forma</b> <span class = "icon icon-shape_settings_icon"></span> O ícone também está disponível à direita, pois uma forma é usada como plano de fundo para o gráfico. Você pode clicar neste ícone para abrir a guia <b>Configurações da forma</b> na barra lateral direita e ajustar <a href="../UsageInstructions/InsertAutoshapes.htm#shape_fill" onclick="onhyperlinkclick(this)"><b>Preencher</b></a>, <a href="../UsageInstructions/InsertAutoshapes.htm#shape_stroke" onclick="onhyperlinkclick(this)"><b>Traçado</b></a> e <b>Estilo da quebra automática</b> da forma. Observe que você não pode alterar o tipo de forma.</p>
+            <p>
+               Usando a guia <b>Configurações de forma</b> no painel direito, você pode ajustar a própria área do gráfico e alterar os elementos do gráfico, como <em>área de plotagem</em>, <em>série de dados</em>, <em>título do gráfico</em>, <em>legenda</em> etc e aplique diferentes tipos de preenchimento a eles. Selecione o elemento do gráfico clicando com o botão esquerdo do mouse e escolha o tipo de preenchimento preferido: <em>cor sólida</em>, <em>gradiente</em>, <em>textura</em> ou <em>imagem </em>, <em>padrão</em>. Especifique os parâmetros de preenchimento e defina o nível de <em>Opacidade</em>, se necessário.
+                 Quando você seleciona um eixo vertical ou horizontal ou linhas de grade, as configurações de traço estão disponíveis apenas na guia <b>Configurações da forma</b>: <em>cor</em>, <em>largura</em> e <em >tipo</em>. Para mais detalhes sobre como trabalhar com cores de formas, preenchimentos e traçados, você pode consultar <a href="../UsageInstructions/InsertAutoshapes.htm" onclick="onhyperlinkclick(this)">esta página</a>.
+            </p>
+            <p class="note"><b>Observação</b>: a opção <b>Mostrar sombra</b> também está disponível na guia <b>Configurações de forma</b>, mas está desativada para elementos do gráfico.</p>
+            <p>Se precisar redimensionar os elementos do gráfico, clique com o botão esquerdo para selecionar o elemento necessário e arraste um dos 8 quadrados brancos <span class = "icon icon-resize_square"></span> localizado ao longo do perímetro do elemento.</p>
+            <p><span class = "big big-resizeelement"></span></p>
+            <p>Para alterar a posição do elemento, clique com o botão esquerdo nele, verifique se o cursor mudou para <span class = "icon icon-arrow"></span>, segure o botão esquerdo do mouse e arraste o elemento para a posição desejada.</p>
+            <p><span class = "big big-moveelement"></span></p>
+            <p>Para excluir um elemento do gráfico, selecione-o clicando com o botão esquerdo e pressione a tecla <b>Excluir</b> no teclado.</p>
+            <p>Você também pode girar gráficos 3D usando o mouse. Clique com o botão esquerdo dentro da área de plotagem e segure o botão do mouse. Arraste o cursor sem soltar o botão do mouse para alterar a orientação do gráfico 3D.</p>
+            <p><img alt="gráfico 3D" src="../../../../../../common/main/resources/help/en/images/3dchart.png" /></p>
+            <hr />
+            <h3>Ajustar as configurações do gráfico</h3>
+            <p><img class="floatleft" alt="Guia de configurações do gráfico" src="../images/right_chart.png" /></p>
+			<p>Algumas das configurações do gráfico podem ser alteradas usando a guia <b>Configurações de gráfico</b> a barra lateral direita. Para ativá-lo, clique no gráfico e escolha o ícone <b>Configurações do gráfico</b> <span class = "icon icon-chart_settings_icon"></span> à direita. Aqui você pode alterar as seguintes propriedades:</p>
+			<ul style="margin-left: 280px;">
+                <li><b>Tamanho</b> é usado para visualizar a <b>Largura</b> e a <b>Altura</b> do gráfico atual.</li>
+                <li><b>Estilo de embrulho</b> é usado para selecionar um estilo de quebra de texto dentre os disponíveis - em linha, quadrado, apertado, através, superior e inferior, na frente, atrás (para mais informações, consulte a descrição das configurações avançadas abaixo).</li>
+                <li><b>Alterar tipo de gráfico</b> é usado para alterar o tipo e/ou estilo de gráfico selecionado.
+                                <p>Para selecionar o <b>Estilo</b> do gráfico necessário, use o segundo menu suspenso na seção <b>Alterar tipo de gráfico</b>.</p>
+                                </li>
+                <li><b>Editar dados</b> é usado para abrir a janela 'Editor de gráfico'.
+                <p class="note"><b>Nota</b>: para abrir rapidamente a janela 'Editor de gráfico', você também pode clicar duas vezes no gráfico no documento.</p>
+                </li>
+			</ul>
+            <p>Você também pode encontrar algumas dessas opções no <b>menu do botão direito</b>. As opções do menu são:</p>
+			<ul style="margin-left: 280px;">
+                <li><b>Recortar, Copiar, Colar</b> - opções padrão que são usadas para recortar ou copiar o texto/objeto selecionado e colar a passagem de texto ou objeto recortado/copiado anteriormente na posição atual do cursor.</li>
+                 <li><b>Arrange</b> é usado para trazer o gráfico selecionado para o primeiro plano, enviá-lo para o segundo plano, avançar ou retroceder, bem como agrupar ou desagrupar gráficos para realizar operações com vários deles ao mesmo tempo. Para saber mais sobre como organizar objetos, consulte <a href="../UsageInstructions/AlignArrangeObjects.htm" onclick="onhyperlinkclick(this)">esta página</a>.</li>
+				<li><b>Alinhar</b> é usado para alinhar o gráfico à esquerda, centro, direita, superior, meio e inferior. Para saber mais sobre como alinhar objetos, você pode consultar <a href="../UsageInstructions/AlignArrangeObjects.htm" onclick="onhyperlinkclick(this)">esta página</a>.</li>
+				<li><b>Estilo da quebra automática</b> é usado para selecionar um estilo de quebra de texto dentre os disponíveis - em linha, quadrado, apertado, através, superior e inferior, na frente, atrás. A opção <b>Editar limite de disposição</b> não está disponível para gráficos.</li>
+                <li><b>Editar dados</b> é usado para abrir a janela 'Editor de gráfico'.</li>
+                <li><b>Configurações avançadas do gráfico</b> é usado para abrir a janela 'Gráfico - Configurações avançadas'.</li>
+			</ul>				
+			<hr />
+            <p>Para alterar as configurações avançadas do gráfico, clique no gráfico necessário com o botão direito do mouse e selecione <b>Configurações avançadas do gráfico</b> no menu do botão direito ou apenas clique no link <b>Exibir configurações avançadas</b> em a barra lateral direita. A janela de propriedades do gráfico será aberta:</p>
+			<p><img alt="Gráfico - Configurações Avançadas: Tamanho" src="../images/chart_properties.png" /></p>
+			<p>A guia <b>Tamanho</b> contém os seguintes parâmetros:</p>
+			<ul>
+                <li><b>Largura</b> e <b>Altura</b> - use essas opções para alterar a largura e/ou altura do gráfico. Se as <b>proporções constantes</b> <div class = "icon icon-constantproportions"></div> botão é clicado (neste caso, parece com isso <div class = "icon icon-constantproportionsactivated"></div>), a largura e a altura serão alteradas juntas, preservando a proporção original do gráfico.</li>
+			</ul>
+			<p><img alt="Gráfico - Configurações avançadas: Quebra de texto" src="../images/chart_properties_1.png" /></p>
+			<p>A guia <b>Disposição do texto</b> contém os seguintes parâmetros:</p>
+			<ul>
+				<li><b>Estilo da quebra automática</b> - use esta opção para alterar a forma como o gráfico é posicionado em relação ao texto: será uma parte do texto (no caso de você selecionar o estilo embutido) ou ignorado por ele de todos os lados (se você seleciona um dos outros estilos).
+				    <ul>
+				    <li><p><div class = "icon icon-wrappingstyle_inline"></div> <b>Em linha</b> - o gráfico é considerado uma parte do texto, como um caractere, portanto, quando o texto se move, o gráfico também se move. Nesse caso, as opções de posicionamento ficam inacessíveis.</p>
+                    <p>Se um dos seguintes estilos for selecionado, o gráfico pode ser movido independentemente do texto e posicionado exatamente na página:</p>
+				    </li>
+				    <li><p><div class = "icon icon-wrappingstyle_square"></div> <b>Quadrado</b> - o texto envolve a caixa retangular que limita o gráfico.</p></li>
+				    <li><p><div class = "icon icon-wrappingstyle_tight"></div> <b>Justo</b> - o texto envolve as bordas reais do gráfico.</p></li>
+				    <li><p><div class = "icon icon-wrappingstyle_through"></div> <b>Através</b> - o texto envolve as bordas do gráfico e preenche o espaço em branco aberto dentro do gráfico.</p></li>
+				    <li><p><div class = "icon icon-wrappingstyle_topandbottom"></div> <b>Parte superior e inferior</b> - o texto está apenas acima e abaixo do gráfico.</p></li>
+				    <li><p><div class = "icon icon-wrappingstyle_infront"></div> <b>Na frente</b> - o gráfico se sobrepõe ao texto.</p></li>
+				    <li><p><div class = "icon icon-wrappingstyle_behind"></div> <b>Atrás</b> - o texto se sobrepõe ao gráfico.</p></li>
+				    </ul>
+				</li>
+			</ul>
+            <p>Se você selecionar os estilos quadrado, apertado, através ou superior e inferior, poderá configurar alguns parâmetros adicionais - <b>distância do texto</b> em todos os lados (superior, inferior, esquerda, direita).</p>
+            <p id="position"><img alt="Gráfico - Configurações Avançadas: Posição" src="../images/chart_properties_2.png" /></p>
+            <p>A guia <b>Posição</b> está disponível apenas se o estilo de quebra automática selecionado não for embutido. Esta guia contém os seguintes parâmetros que variam dependendo do estilo de embrulho selecionado:</p>
+			<ul>
+                <li>
+                    A seção <b>Horizontal</b> permite que você selecione um dos três tipos de posicionamento do gráfico a seguir:
+                    <ul>
+                        <li><b>Alinhamento</b> (esquerda, central, direita) <b>relativo para</b> caractere, coluna, margem esquerda, margem, página ou margem direita,</li>
+                         <li>Absoluta <b>Posição</b> medida em unidades absolutas, ou seja, <b>Centímetros</b>/<b>Pontos</b>/<b>Polegadas</b> (dependendo da opção especificada em a guia <b>Arquivo</b> -> <b>Configurações avançadas...</b>) <b>à direita de</b> caractere, coluna, margem esquerda, margem, página ou margem direita, </li>
+                         <li><b>Posição relativa</b> medida em porcentagem <b>relativa para</b> margem esquerda, margem, página ou margem direita.</li>
+                    </ul>
+                </li>
+                <li>
+                   A seção <b>Vertical</b> permite que você selecione um dos três tipos de posicionamento do gráfico a seguir:
+                    <ul>
+                        <li><b>Alinhamento</b> (superior, central, inferior) <b>relativo para</b> linha, margem, margem inferior, parágrafo, página ou margem superior,</li>
+                         <li>Absoluta <b>Posição</b> medida em unidades absolutas, ou seja, <b>Centímetros</b>/<b>Pontos</b>/<b>Polegadas</b> (dependendo da opção especificada em a guia <b>Arquivo</b> -> <b>Configurações avançadas...</b>) <b>abaixo</b> da linha, margem, margem inferior, parágrafo, página ou margem superior,</li >
+                         <li><b>Posição relativa</b> medida em porcentagem <b>relativa para</b> margem, margem inferior, página ou margem superior.</li>
+                    </ul>
+                </li>
+                <li><b>Mover objeto com texto</b> garante que o gráfico se mova junto com o texto ao qual está ancorado.</li>
+                 <li><b>Permitir sobreposição</b> permite que dois gráficos se sobreponham se você arrastá-los próximos um do outro na página.</li>
+			</ul>
+            <p><img alt="Gráfico - Configurações Avançadas" src="../images/chart_properties_3.png" /></p>
+            <p>A guia <b>Texto Alternativo</b> permite especificar um <b>Título</b> e uma <b>Descrição</b> que serão lidos para as pessoas com deficiência visual ou cognitiva para ajudá-las a entender melhor quais informações o gráfico contém.</p>
+		</div>
+	</body>
+</html>

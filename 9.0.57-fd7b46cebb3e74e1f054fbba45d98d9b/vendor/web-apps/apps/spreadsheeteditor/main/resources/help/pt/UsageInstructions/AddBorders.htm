@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Adicionar plano de fundo e bordas da célula</title>
+		<meta charset="utf-8" />
+		<meta name="descrição" content="Ajuste o estilo da célula adicionando o plano de fundo e as bordas da célula" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Adicionar plano de fundo e bordas da célula</h1>
+            <h3>Adicionar um fundo de célula</h3>
+            <p>Para aplicar e formatar um fundo de célula no <a href="https://www.onlyoffice.com/pt/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Planilhas</b></a>,</p>
+            <ol>
+                <li>
+                    selecione uma célula ou um intervalo de células com o mouse ou toda a planilha pressionando a combinação de teclas <b>Ctrl+A</b>,
+                     <p class="note"><b>Observação</b>: você também pode selecionar várias células não adjacentes ou intervalos de células mantendo pressionada a tecla <b>Ctrl</b> enquanto seleciona células/intervalos com o mouse.</p>
+                </li>
+                <li>para aplicar um preenchimento de <em>cor sólida</em> ao fundo da célula, clique no ícone <b>Cor de fundo</b> <div class = "icon icon-backgroundcolor"></div> no <b> Página inicial</b> da barra de ferramentas superior e escolha a cor desejada. 
+                </li>
+                <li>para usar outros tipos de preenchimento, como um preenchimento <em>gradiente</em> ou <em>padrão</em>, clique em <b>Configurações da célula</b> <div class = "icon icon-cellsettings_rightpanel"> </div> na barra lateral direita e use a seção <b>Preencher</b>:
+                    <ul>
+                        <li>
+                            <b>Preenchimento de cor</b> - selecione esta opção para especificar a cor sólida com a qual deseja preencher as células selecionadas.
+                            <p><img alt="Preenchimento de cor" src="../images/cell_fill_color.png" /></p>
+                            <p id="color">Clique na caixa colorida abaixo e selecione uma das seguintes paletas:</p>
+                            <p><img alt="Paleta" src="../images/palette.png" /></p>
+                            <ul>
+                                <li><b>Cores do tema</b> - as cores que correspondem ao esquema de cores selecionado da planilha.</li>
+                                <li><b>Cores padrão</b> - um conjunto de cores padrão. O esquema de cores selecionado não os afeta.</li>
+                                <li>
+                                    <b>Cor Personalizada</b> - clique nesta legenda se a cor desejada estiver faltando entre as paletas disponíveis. Selecione o intervalo de cores necessário movendo o controle deslizante de cores vertical e defina uma cor específica arrastando o seletor de cores no grande campo quadrado de cores. Depois de selecionar uma cor com o seletor de cores, os valores de cores RGB e sRGB apropriados serão exibidos nos campos à direita. Você também pode definir uma cor com base no modelo de cores RGB inserindo os valores numéricos correspondentes em <b>R</b>, <b>G</b>, <b>B</b> (vermelho , verde, azul) ou insira o código hexadecimal sRGB no campo marcado com o sinal <b>#</b>. A cor selecionada aparece na caixa de visualização <b>Novo</b>. Se o objeto foi preenchido anteriormente com qualquer cor personalizada, essa cor é exibida na caixa <b>Atual</b> para que você possa comparar as cores originais e modificadas. Quando a cor estiver definida, clique no botão <b>Adicionar</b>:
+                                    <p><img alt="Paleta - Cor Personalizada" src="../../../../../../common/main/resources/help/en/images/palette_custom.png" /></p>
+                                    <p>A cor personalizada será aplicada ao elemento selecionado e adicionada à paleta <b>Cor personalizada</b>.</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Preenchimento Gradiente</b> - preencha as células selecionadas com duas cores que mudam suavemente de uma para a outra.
+                            <p><img alt="Preenchimento Gradiente" src="../images/cell_fill_gradient.png" /></p>
+                            <ul>
+                                <li><b>Ângulo</b> - especifique manualmente um valor exato em graus que defina a direção do gradiente (as cores mudam em uma linha reta no ângulo especificado).</li>
+                                 <li><b>Direção</b> - escolha um modelo predefinido no menu. As seguintes direções estão disponíveis: superior esquerdo para inferior direito (<em>45&deg;</em>), superior para inferior (<em>90&deg;</em>), superior direito para inferior esquerdo (<em >135&deg;</em>), direita para esquerda (<em>180&deg;</em>), inferior direita para superior esquerda (<em>225&deg;</em>), de baixo para cima (<em> 270&deg;</em>), da esquerda para a direita (<em>315&deg;</em>), da esquerda para a direita (<em>0&deg;</em>).</li>
+                                <li>
+                                    <b>Ponto Gradiente</b> é um ponto específico para a transição de uma cor para outra
+                                    <ul>
+                                        <li>Use o <div class = "icon icon-addgradientpoint"></div> <b>Adicionar ponto de gradiente</b> ou barra deslizante para adicionar um ponto de gradiente. Você pode adicionar até 10 pontos de gradiente. Cada próximo ponto de gradiente adicionado não afetará de forma alguma a aparência do preenchimento de gradiente atual. Use o botão <div class = "icon icon-removegradientpoint"></div> <b>Remover ponto de gradiente</b> para excluir um determinado ponto de gradiente.</li>
+                                         <li>Use a barra deslizante para alterar a localização do ponto de gradiente ou especifique <b>Posição</b> em porcentagem para uma localização precisa.</li>
+                                         <li>Para aplicar uma cor a um ponto de gradiente, clique em um ponto na barra deslizante e clique em <b>Cor</b> para escolher a cor desejada.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Padrão</b> - selecione esta opção para preencher as células selecionadas com um desenho de duas cores composto por elementos repetidos regularmente.
+                            <p><img alt="Preenchimento padrão" src="../images/cell_fill_pattern.png" /></p>
+                            <ul>
+                                <li><b>Padrão</b> - selecione um dos designs predefinidos no menu.</li>
+                                 <li><b>Cor do primeiro plano</b> - clique nesta caixa de cor para alterar a cor dos elementos do padrão.</li>
+                                 <li><b>Cor de fundo</b> - clique nesta caixa de cor para alterar a cor do plano de fundo do padrão.</li>
+                            </ul>
+                        </li>
+                        <li><b>Sem preenchimento</b> - selecione esta opção se não quiser usar nenhum preenchimento.</li>
+                    </ul>
+                </li>
+            </ol>
+                        
+            <h3 id="cell_borders">Adicionar bordas de célula</h3>
+			<p>Para adicionar e formatar bordas a uma planilha,</p>
+			<ol>
+				<li>selecione uma célula, um intervalo de células com o mouse ou toda a planilha pressionando a combinação de teclas <b>Ctrl+A</b>,
+                 <p class="note"><b>Observação</b>: você também pode selecionar várias células não adjacentes ou intervalos de células mantendo pressionada a tecla <b>Ctrl</b> enquanto seleciona células/intervalos com o mouse.</p>
+                </li>
+				<li>click the <b>Borders</b> <div class = "icon icon-addborders"></div> icon on the <b>Home</b> tab of the top toolbar or click the <b>Cell settings</b> <div class = "icon icon-cellsettings_rightpanel"></div> icon on the right sidebar and use the <b>Borders Style</b> section,
+                <p><img alt="Guia de configurações da célula" src="../images/cellsettingstab.png" /></p>
+                </li>
+				<li>selecione o estilo de borda que deseja aplicar: 
+                <ol>
+                    <li>abra o submenu <b>Border Style</b> <div class = "icon icon-borderstyle"></div> e selecione uma das opções disponíveis, </li>
+                    <li>abra o submenu do ícone <b>Border Color</b> <div class = "icon icon-bordercolor"></div> ou use a paleta <b>Color</b> na barra lateral direita e selecione a cor desejada em a paleta,</li>
+                    <li>selecione um dos modelos de borda disponíveis: <b>Bordas externas</b> <div class = "icon icon-outsideborders"></div>, <b>Todas as bordas</b> <div class = "icon icon- allborders"></div>, <b>Bordas superiores</b> <div class = "icon icon-topborders"></div>, <b>Bordas inferiores</b> <div class = "icon icon- bottomborders"></div>, <b>Bordas à esquerda</b> <div class = "icon icon-leftborders"></div>, <b>Bordas à direita</b> <div class = "icon icon- rightborders"></div>, <b>Sem bordas</b> <div class = "icon icon-noborders"></div>, <b>Bordas internas</b> <div class = "icon icon- insideborders"></div>, <b>Bordas verticais internas</b> <div class = "icon icon-insideverticalborders"></div>, <b>Bordas horizontais internas</b> <div class = "icon icon-insidehorizontalborders"></div>, <b>Borda diagonal para cima</b> <div class = "icon icon-diagonal_up_border"></div>, <b>Borda diagonal para baixo</b> <div class = "icon icon-diagonal_down_border"></div>.</li>
+                </ol>
+                </li>
+			</ol>
+		</div>
+	</body>
+</html>

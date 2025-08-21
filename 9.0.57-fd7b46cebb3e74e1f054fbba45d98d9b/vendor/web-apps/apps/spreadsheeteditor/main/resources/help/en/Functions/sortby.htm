@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>SORTBY Function</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+    <link type="text/css" rel="stylesheet" href="../../images/sprite.css" />
+    <script type="text/javascript" src="../callback.js"></script>
+    <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+</head>
+<body>
+    <div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+        <h1>SORTBY Function</h1>
+        <p>The <b>SORTBY</b> function is one of the <a href="../UsageInstructions/InsertFunction.htm#lookupreference" onclick="onhyperlinkclick(this)">lookup and reference functions</a>. It is used to sort a range of data or an array based on the values in a corresponding range or array.</p>
+        <h3>Syntax</h3>
+        <p><b><em>SORTBY(array, by_array, [sort_order], ...)</em></b></p>
+        <p>The <b>SORTBY</b> function has the following arguments:</p>
+        <table style="width: 40%">
+            <tr>
+                <th style="background-color: #f4f4f4"><b>Argument</b></th>
+                <th style="background-color: #f4f4f4"><b>Description</b></th>
+            </tr>
+            <tr>
+                <td><b><em>array</em></b></td>
+                <td>A range of data to sort.</td>
+            </tr>
+            <tr>
+                <td><b><em>by_array</em></b></td>
+                <td>An array or range used for sorting.</td>
+            </tr>
+            <tr>
+                <td><b><em>sort_order</em></b></td>
+                <td>An optional argument. A number determining the sorting order. The possible values are listed in the table below.</td>
+            </tr>
+        </table>
+        <p>The <b><em>sort_order</em></b> argument can be one of the following:</p>
+        <table style="width: 40%">
+            <tr>
+                <th style="background-color: #f4f4f4"><b>Numeric value</b></th>
+                <th style="background-color: #f4f4f4"><b>Meaning</b></th>
+            </tr>
+            <tr>
+                <td><b><em>1 or omitted</em></b></td>
+                <td>Ascending order (by default)</td>
+            </tr>
+            <tr>
+                <td><b><em>-1</em></b></td>
+                <td>Descending order</td>
+            </tr>
+        </table>
+        <h3>Notes</h3>
+        <p>Please note that this is an array formula. To learn more, please read the <a href="../UsageInstructions/InsertArrayFormulas.htm" onclick="onhyperlinkclick(this)">Insert array formulas</a> article.</p>
+        <p><a href="../UsageInstructions/InsertFunction.htm#applyfunction" onclick="onhyperlinkclick(this)">How to apply</a> the <b>SORTBY</b> function.</p>
+        <h3>Examples</h3>
+        <p>The figure below displays the result returned by the <b>SORTBY</b> function.</p>
+        <p><img alt="SORTBY Function" src="../images/sortby.png" /></p>
+    </div>
+</body>
+</html>

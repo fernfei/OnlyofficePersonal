@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Adicionar hiperlinks</title>
+		<meta charset="utf-8" />
+		<meta name="descrição" content="Adicione hiperlinks a uma palavra ou fragmento de texto que leve a um site externo ou outra planilha" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Adicionar hiperlinks</h1>
+			<p>Para adicionar um hiperlink no <a href="https://www.onlyoffice.com/pt/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Planilhas</b></a>,</p>
+			<ol>
+				<li>selecione uma célula onde um hiperlink deve ser adicionado,</li>
+                 <li>mude para a guia <b>Inserir</b> da barra de ferramentas superior,</li>
+                <li>clique no ícone <div class = "icon icon-addhyperlink"></div> <b>Hiperlink</b> na barra de ferramentas superior,</li>
+                <li>a janela <b>Configurações de hiperlink</b> aparecerá e você poderá especificar as configurações de hiperlink:
+				<ul>
+					<li>Selecione o tipo de link necessário:
+						<p>Use a opção <b>Link externo</b> e insira um URL no formato <em>http://www.exemplo.com</em> no campo <b>Link para</b> abaixo, se você precisa adicionar um hiperlink que leve a um site <b>externo</b>. Se você precisar adicionar um hiperlink a um arquivo <b>local</b>, digite a URL no <em>arquivo://caminho/planilha.xlsx</em> (para Windows) ou <em>arquivo: ///caminho/planilha.xlsx</em> (para MacOS e Linux) no campo <b>Link para</b>.</p>
+                        <p class="note">O tipo de hiperlink <em>arquivo://caminho/planilha.xlsx</em> ou <em>arquivo://caminho/planilha.xlsx</em> pode ser aberto apenas em a versão desktop do editor. No editor da web, você só pode adicionar o link sem poder abri-lo.</p>
+                        <p><img alt="Janela de configurações de hiperlink" src="../../../../../../common/main/resources/help/en/images/hyperlinkwindow.png" /></p>
+						<p>Use a opção <b>intervalo de dados interno</b>, selecione uma planilha e um intervalo de células nos campos abaixo ou um <a href="UseNamedRanges.htm" onclick="onhyperlinkclick(this)">intervalo nomeado previamente adicionado </a> se precisar adicionar um hiperlink que leve a um determinado intervalo de células na mesma planilha.</p>
+                        <p>Você também pode gerar um link externo que levará a uma célula específica ou a um intervalo de células clicando no botão <b>Obter link</b> ou usando o <b>Obter link para este intervalo</b> opção no menu contextual do botão direito do mouse do intervalo de células necessário.</p>
+                        <p><img alt="Janela de configurações de hiperlink" src="../images/internallink.png" /></p>
+					</li>
+					<li><b>Exibição</b> - insira um texto que se tornará clicável e levará ao endereço da Web especificado no campo superior.
+                    <p class="note"><b>Observação</b>: se a célula selecionada já contiver dados, eles serão exibidos automaticamente neste campo.</p>
+                    </li>
+                    <li><b>Texto da dica de tela</b> - insira um texto que ficará visível em uma pequena janela pop-up com uma breve nota ou rótulo conectado ao hiperlink.</li>
+				</ul>				
+				</li>
+				<li>clique no botão <b>OK</b>.</li>
+			</ol>
+            <p>Para adicionar um hiperlink, você também pode usar a combinação de teclas <b>Ctrl+K</b> ou clicar com o botão direito do mouse na posição onde o hiperlink deve ser adicionado e selecionar a opção <b>Hiperlink</b> em o menu do botão direito.</p>
+            <p>Ao passar o cursor sobre o hiperlink adicionado, a dica de tela aparecerá. Para seguir o link, clique no link na planilha. Para selecionar uma célula que contém um link sem abrir o link, clique e segure o botão do mouse.</p>
+            <p>Para excluir o hiperlink adicionado, ative a célula que contém o hiperlink adicionado e pressione a tecla <b>Excluir</b> ou clique com o botão direito do mouse na célula e selecione a opção <b>Limpar tudo</b> na lista suspensa.</p>
+		</div>
+	</body>
+</html>

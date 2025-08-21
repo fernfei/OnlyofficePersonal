@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>TEXTSPLIT Function</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+			<div class="search-field">
+				<input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+			</div>
+			<h1>TEXTSPLIT Function</h1>
+			<p>The <b>TEXTSPLIT</b> function is one of the <a href="../UsageInstructions/InsertFunction.htm#textdata" onclick="onhyperlinkclick(this)">text and data functions</a>. It is used to split text strings through column and row delimiters.</p>
+			<h3>Syntax</h3>
+			<p><b><em>TEXTSPLIT(text, col_delimiter, [row_delimiter], [ignore_empty], [match_mode], [pad_with])</em></b></p>
+			<p>The <b>TEXTSPLIT</b> function has the following argument:</p>
+			<table style="width: 40%">
+                <tr>
+                    <th style="background-color: #f4f4f4" width="150ch"><b>Argument</b></th>
+                    <th style="background-color: #f4f4f4"><b>Description</b></th>
+                </tr>
+                <tr>
+                    <td><b><em>text</em></b></td>
+                    <td>The text you want to split.</td>
+                </tr>
+				<tr>
+                    <td><b><em>col_delimiter</em></b></td>
+                    <td>An optional argument. It is used to set the text that marks the point where to split the text across columns.</td>
+                </tr>
+				<tr>
+                    <td><b><em>row_delimiter</em></b></td>
+                    <td>An optional argument. It is used to set the text that marks the point where to split the text down rows.</td>
+                </tr>
+				<tr>
+                    <td><b><em>ignore_empty</em></b></td>
+                    <td>An optional argument. It is used to specify <b>FALSE</b> to create an empty cell when two delimiters are consecutive. Defaults to <b>TRUE</b>, which creates an empty cell.</td>
+                </tr>
+				<tr>
+                    <td><b><em>match_mode</em></b></td>
+                    <td>An optional argument. It is used to search the text for a delimiter match. By default, a case-sensitive match is done.</td>
+                </tr>
+				<tr>
+                    <td><b><em>pad_with</em></b></td>
+                    <td>Is used to set the value with which to pad the result. Defaults to #N/A.</td>
+                </tr>
+            </table>
+			<h3>Notes</h3>
+            <p>Please note that this is an array formula. To learn more, please read the <a href="../UsageInstructions/InsertArrayFormulas.htm" onclick="onhyperlinkclick(this)">Insert array formulas</a> article.</p>
+			<p><a href="../UsageInstructions/InsertFunction.htm#applyfunction" onclick="onhyperlinkclick(this)">How to apply</a> the <b>TEXTSPLIT</b> function.</p>
+			
+			<h3>Examples</h3>
+            <p>The figure below displays the result returned by the <b>TEXTSPLIT</b> function.</p>
+			<p><img alt="TEXTSPLIT Function" src="../images/textsplit.png" /></p>
+		</div>
+	</body>
+</html>

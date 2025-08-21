@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>WEEKNUM Function</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>WEEKNUM Function</h1>
+			<p>The <b>WEEKNUM</b> function is one of the <a href="../UsageInstructions/InsertFunction.htm#datetime" onclick="onhyperlinkclick(this)">date and time functions</a>. It used to return the number of the week the specified date falls within the year.</p>
+			<h3>Syntax</h3> 
+			<p><b><em>WEEKNUM(serial_number, [return_type])</em></b></p> 
+			<p>The <b>WEEKNUM</b> function has the following arguments:</p> 
+			<table style="width: 40%">
+                <tr>
+                    <th style="background-color: #f4f4f4" width="150ch"><b>Argument</b></th>
+                    <th style="background-color: #f4f4f4"><b>Description</b></th>
+                </tr>
+                <tr>
+                    <td><b><em>serial_number</em></b></td>
+                    <td>A number representing the date within the week, entered using the <a href="Date.htm" onclick="onhyperlinkclick(this)">DATE</a> function or other date and time function.</td>
+                </tr>
+				<tr>
+                    <td><b><em>return_type</em></b></td>
+                    <td>A numeric value used to determine on which day the week begins. The possible values are listed in the table below.</td>
+                </tr>
+            </table>
+            <p>The <b><em>return_type</em></b> argument can be one of the following:</p>
+            <table style="width: 40%">
+				<tr>
+					<th style="background-color: #f4f4f4"><b>Numeric value</b></th>
+					<th style="background-color: #f4f4f4"><b>Week begins on</b></th>
+                    <th style="background-color: #f4f4f4"><b>System</b></th>
+				</tr>
+				<tr>
+					<td><b><em>1 or omitted</em></b></td>
+					<td>Sunday</td>
+                    <td><b><em>1</em></b></td>
+				</tr>
+				<tr>
+					<td><b><em>2</em></b></td>
+					<td>Monday</td>
+                    <td><b><em>1</em></b></td>
+				</tr>
+                <tr>
+                    <td><b><em>11</em></b></td>
+                    <td>Monday</td>
+                    <td><b><em>1</em></b></td>
+                </tr>
+                <tr>
+                    <td><b><em>12</em></b></td>
+                    <td>Tuesday</td>
+                    <td><b><em>1</em></b></td>
+                </tr>
+                <tr>
+                    <td><b><em>13</em></b></td>
+                    <td>Wednesday</td>
+                    <td><b><em>1</em></b></td>
+                </tr>
+                <tr>
+                    <td><b><em>14</em></b></td>
+                    <td>Thursday</td>
+                    <td><b><em>1</em></b></td>
+                </tr>
+                <tr>
+                    <td><b><em>15</em></b></td>
+                    <td>Friday</td>
+                    <td><b><em>1</em></b></td>
+                </tr>
+                <tr>
+                    <td><b><em>16</em></b></td>
+                    <td>Saturday</td>
+                    <td><b><em>1</em></b></td>
+                </tr>
+                <tr>
+                    <td><b><em>17</em></b></td>
+                    <td>Sunday</td>
+                    <td><b><em>1</em></b></td>
+                </tr>
+                <tr>
+                    <td><b><em>21</em></b></td>
+                    <td>Monday</td>
+                    <td><b><em>2</em></b></td>
+                </tr>
+			</table>
+            <h3>Notes</h3>
+            <p>When <b><em>return_type</em></b> is set to 1-17, <b>System 1</b> is used. This means that the first week in a year is the week that contains January 1.</p>
+            <p>When <b><em>return_type</em></b> is set to 21, <b>System 2</b> is used. This means that the first week in a year is the week that contains the first Thursday of the year. System 2 is commonly used in Europe according to the ISO 8601 standard.</p>            
+            <p><a href="../UsageInstructions/InsertFunction.htm#applyfunction" onclick="onhyperlinkclick(this)">How to apply</a> the <b>WEEKNUM</b> function.</p>
+			
+			<h3>Examples</h3>
+            <p>The figure below displays the result returned by the <b>WEEKNUM</b> function.</p>
+			<p><img alt="WEEKNUM Function" src="../images/weeknum.png" /></p>
+		</div>
+	</body>
+</html>

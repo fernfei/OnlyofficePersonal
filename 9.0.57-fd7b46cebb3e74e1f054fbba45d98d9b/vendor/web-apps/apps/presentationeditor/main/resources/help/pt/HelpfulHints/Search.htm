@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Função Pesquisar e Substituir</title>
+		<meta charset="utf-8" />
+		<meta name="descrição" content="A descrição da função de pesquisa e substituição no Editor de Apresentação" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+        <div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+            <h1>Função Pesquisar e Substituir</h1>
+            <p>
+                <b>Para pesquisar</b> os caracteres, palavras ou frases necessários no <a target="_blank" href="https://www.onlyoffice.com/pt/presentation-editor.aspx" onclick="onhyperlinkclick(this)"><b>Editor de Apresentações</b></a>,
+                Clique no <span class="icon icon-searchicon"></span> ícone situado na barra lateral esquerda, o <span class="icon icon-search_icon_header"></span> localizado no canto superior direito ou use a combinação de teclas <em>Ctrl+F</em> (<em>Command+F</em> para MacOS) para abrir o pequeno painel Localizar ou <em>Ctrl+ H</em> combinação de teclas para abrir o painel Localizar completo.
+            </p>
+            <p>Um pequeno painel <b>Localizar</b> será aberto no canto superior direito da área de trabalho.</p>
+            <p><img alt="Find small panel" src="../../../../../../common/main/resources/help/en/images/find_small.png" /></p>
+            <p>Para acessar as configurações avançadas, clique no botão <span class="icon icon-search_advanced"></span>.</p>
+            <p>O painel <b>Localizar e substituir</b> será aberto:</p>
+            <img alt="Localizar e substituir janela" src="../images/search_window.png" />
+            <ol>
+                <li>Digite sua consulta no campo de entrada de dados <b>Encontrar</b> correspondente.</li>
+                 <li>Se você precisar substituir uma ou mais ocorrências dos caracteres encontrados, digite o texto de substituição no campo de entrada de dados <b>Substituir por</b> correspondente. Você pode optar por substituir uma única ocorrência atualmente realçada ou substituir todas as ocorrências clicando nos botões <b>Substituir</b> e <b>Substituir tudo</b> correspondentes.</li>
+                 <li>Para navegar entre as ocorrências encontradas, clique em um dos botões de seta. O botão <div class="icon icon-searchdownbutton"></div> mostra a próxima ocorrência enquanto o botão <div class="icon icon-searchupbutton"></div> mostra o anterior.</li>
+                <li>
+                    Especifique os parâmetros de pesquisa marcando as opções necessárias abaixo dos campos de entrada:
+                    <ul>
+                        <li><b>Diferenciar maiúsculas de minúsculas</b> - é usado para localizar apenas as ocorrências digitadas no mesmo caso de sua consulta (por exemplo, se sua consulta for 'Editor' e esta opção for selecionada, palavras como 'editor' ou 'EDITOR' etc. não foi encontrado).</li>
+                         <li><b>Apenas palavras inteiras</b> - é usado para destacar apenas palavras inteiras.</li>
+                    </ul>
+                </li>
+            </ol>
+            <p>O primeiro slide na direção selecionada que contém os caracteres inseridos será destacado na lista de slides e exibido na área de trabalho com os caracteres necessários contornados. Se não for o slide que você está procurando, clique no botão selecionado novamente para encontrar o próximo slide contendo os caracteres digitados.</p>
+        </div>
+	</body>
+</html>

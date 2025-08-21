@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>BETADIST Function</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>BETADIST Function</h1>
+			<p>The <b>BETADIST</b> function is one of the <a href="../UsageInstructions/InsertFunction.htm#statistical" onclick="onhyperlinkclick(this)">statistical functions</a>. It is used to return the cumulative beta probability density function.</p>
+			<h3>Syntax</h3> 
+			<p><b><em>BETADIST(x, alpha, beta, [A], [B])</em></b></p> 
+			<p>The <b>BETADIST</b> function has the following arguments:</p><table style="width: 40%">
+                <tr>
+                    <th style="background-color: #f4f4f4" width="150ch"><b>Argument</b></th>
+                    <th style="background-color: #f4f4f4"><b>Description</b></th>
+                </tr>
+                <tr>
+                    <td><b><em>x</em></b></td>
+                    <td>The value between <b><em>A</em></b> and <b><em>B</em></b> at which the function should be calculated.</td>
+                </tr>
+				<tr>
+                    <td><b><em>alpha</em></b></td>
+                    <td>The first parameter of the distribution, a numeric value greater than 0.</td>
+                </tr>
+				<tr>
+                    <td><b><em>beta</em></b></td>
+                    <td>The second parameter of the distribution, a numeric value greater than 0.</td>
+                </tr>
+				<tr>
+                    <td><b><em>A</em></b></td>
+                    <td>The lower bound to the interval of <b><em>x</em></b>. It is an optional parameter. If it is omitted, the default value of 0 is used.</td>
+                </tr>
+				<tr>
+                    <td><b><em>B</em></b></td>
+                    <td>The upper bound to the interval of <b><em>x</em></b>. It is an optional parameter. If it is omitted, the default value of 1 is used.</td>
+                </tr>
+            </table>
+			
+			<h3>Notes</h3>
+ 			<p><a href="../UsageInstructions/InsertFunction.htm#applyfunction" onclick="onhyperlinkclick(this)">How to apply</a> the <b>BETADIST</b> function.</p>
+			
+			<h3>Examples</h3>
+            <p>The figure below displays the result returned by the <b>BETADIST</b> function.</p>
+			<p><img alt="BETADIST Function" src="../images/betadist.png" /></p>
+		</div>
+	</body>
+</html>

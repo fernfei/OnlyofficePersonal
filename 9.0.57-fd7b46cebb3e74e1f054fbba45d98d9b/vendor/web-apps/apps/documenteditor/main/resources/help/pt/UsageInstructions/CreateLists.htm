@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Criar listas</title>
+		<meta charset="utf-8" />
+		<meta name="descrição" content="Crie listas com marcadores e numeradas no documento alterando o contorno das listas" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+        <div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+            <h1>Criar listas</h1>
+            <p>Para criar uma lista no <a href="https://www.onlyoffice.com/pt/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Documentos</b></a>,</p>
+            <ol>
+                <li>coloque o cursor na posição onde uma lista será iniciada (pode ser uma nova linha ou o texto já inserido),</li>
+                 <li>mude para a guia <b>Página Inicial</b> da barra de ferramentas superior,</li>
+                <li>
+                    selecione o tipo de lista que você gostaria de começar:
+                    <ul>
+                        <li><b>Lista não ordenada</b> com marcadores é criada usando ícone <b>Balas de flecha</b> <div class = "icon icon-bullets"></div> na barra de ferramentas superior</li>
+                        <li>
+                            <b>A lista ordenada</b> com dígitos ou letras é criada usando o ícone <b>Numeração</b> <div class = "icon icon-numbering"></div> na barra de ferramentas superior
+                            <p class="note">Clique na seta para baixo ao lado do ícone <b>Marcadores</b> ou <b>Numeração</b> para selecionar a aparência da lista.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>cada vez que você pressionar a tecla <b>Enter</b> no final da linha, um novo item de lista ordenado ou não ordenado aparecerá. Para parar isso, pressione a tecla <b>Backspace</b> e continue digitando parágrafos de texto comuns.</li>
+            </ol>
+            <p>O programa também cria listas numeradas automaticamente quando você insere o dígito 1 com um ponto ou colchete e um espaço após ele: <b>1.</b>, <b>1)</b>. As listas com marcadores podem ser criadas automaticamente quando você insere os caracteres <b>-</b>, <b>*</b> e um espaço após eles.</p>
+             <p>Você também pode alterar o recuo do texto nas listas e seu aninhamento clicando na ícones <b>Lista multinível</b> <span class = "icon icon-outline"></span>, <b>Diminuir o Recuo</b> <span class = "icon icon-decreaseindent"></span> e <b>Aumentar recuo</b> <span class = "icon icon-increaseindent"></span> na guia <b>Página Inicial</b> da barra de ferramentas superior.</p>
+            <p>Para alterar o nível da lista, clique no botão <b>Numeração</b> <span class = "icon icon-numbering"></span>, <b>Marcadores</b> <span class = "icon icon-bullets"></span> ou <b>Lista multinível</b> <span class = "icon icon-outline"></span> ícone e escolha a opção <b>Alterar nível de lista</b>, ou coloque o cursor no início da linha e pressione a tecla <b>Tab</b> em um teclado para mover para o próximo nível da lista. Prossiga com o nível de lista necessário.</p>
+            <p><img alt="change list level" src="../images/listlevel.png" /></p>
+            <p class="note">Os parâmetros adicionais de recuo e espaçamento podem ser alterados na barra lateral direita e na janela de configurações avançadas. Para saber mais sobre isso, leia o <a href="ParagraphIndents.htm" onclick="onhyperlinkclick(this)">Alterar recuos de parágrafo</a> e <a href="LineSpacing.htm" onclick="onhyperlinkclick(this)">Definir espaçamento entre linhas do parágrafo</a> seção.</p>
+
+            <h3>Combinar e separar listas</h3>
+             <p>Para combinar uma lista com a anterior:</p>
+             <ol>
+                 <li>clique no primeiro item da segunda lista com o botão direito do mouse,</li>
+                 <li>use a opção <b>Junta-se à lista anterior</b> no menu contextual.</li>
+             </ol>
+             <p>As listas serão unidas e a numeração continuará de acordo com a primeira numeração de lista.</p>
+
+            <p>Para separar uma lista:</p>
+             <ol>
+                 <li>clique no item da lista onde deseja iniciar uma nova lista com o botão direito do mouse,</li>
+                 <li>use a opção <b>Lista separada</b> no menu contextual.</li>
+             </ol>
+             <p>As listas serão combinadas, e a numeração continuará de acordo com a primeira numeração de lista.</p>
+
+            <h3>Alterar numeração</h3>
+             <p>Para continuar a numeração sequencial na segunda lista de acordo com a numeração da lista anterior:</p>
+             <ol>
+                 <li>clique no primeiro item da segunda lista com o botão direito do mouse,</li>
+                 <li>use a opção <b>Continuar numerando</b> no menu contextual.</li>
+             </ol>
+             <p>A numeração continuará de acordo com a numeração da primeira lista.</p>
+
+            <p>Para definir um determinado valor inicial de numeração:</p>
+             <ol>
+                 <li>clique no item da lista onde deseja aplicar um novo valor de numeração com o botão direito do mouse,</li>
+                 <li>use a opção <b>Definir valor de numeração</b> no menu contextual,</li>
+                 <li>na nova janela aberta, defina o valor numérico necessário e clique no botão <b>OK</b>.</li>
+            </ol>
+
+            <h3>Altere as configurações da lista</h3>
+             <p>Para alterar as configurações da lista numerada ou com marcadores, como tipo de marcador/número, alinhamento, tamanho e cor:</p>
+             <ol>
+                 <li>clique em um item de lista existente ou selecione o texto que deseja formatar como uma lista,</li>
+                 <li>clique nos <b>marcadores</b> <div class = "icon icon-bullets"></div> ou <b>Numeração</b> <div class = "icon icon-numbering"></div> ícone na guia <b>Página Inicial</b> da barra de ferramentas superior,</li>
+                 <li>selecione a opção <b>Configurações da lista</b>,</li>
+                <li>
+                    the <b>A janela Configurações da lista</b> será aberta. A janela de configurações da lista com marcadores se parece com esta:
+                    <p><img alt="Janela de configurações da lista com marcadores" src="../images/bulletedlistsettings.png" /></p>
+                    <p>A janela de configurações da lista numerada se parece com isso:</p>
+                    <p><img alt="Janela de configurações da lista numerada" src="../images/orderedlistsettings.png" /></p>
+                    <p>Para a lista com marcadores, você pode escolher um caractere usado como <b>marcador</b>, enquanto para a lista numerada, você pode escolher o <b>tipo</b> de numeração. As opções <b>Alinhamento</b>, <b>Tamanho</b> e <b>Cor</b> são as mesmas para as listas com marcadores e numeradas.</p>
+                    <ul>
+                        <li><b>Marcador</b> permite selecionar o caractere necessário usado para a lista de marcadores. Ao clicar no campo <b>Fonte e Símbolo</b>, a janela <b>Símbolo</b> aparecerá, e você poderá escolher um dos caracteres disponíveis. Para saber mais sobre como trabalhar com símbolos, consulte <a href="../UsageInstructions/InsertSymbols.htm" onclick="onhyperlinkclick(this)">este artigo</a>.</li>
+                        <li><b>Tipo</b> permite selecionar o tipo de numeração necessário usado para a lista numerada. As seguintes opções estão disponíveis: <em>Nenhum</em>, <em>1, 2, 3,...</em>, <em>a, b, c,...</em>, <em>A, B, C,...</em>, <em>i, ii, iii,...</em>, <em>I, II, III,...</em>.</li>
+                        <li><b>Alinhamento</b> permite selecionar o tipo de alinhamento de marcador/número necessário que é usado para alinhar marcadores/números horizontalmente. Os seguintes tipos de alinhamento estão disponíveis: <em>Esquerda</em>, <em>Centro</em>, <em>Direita</em>.</li>
+                         <li><b>Tamanho</b> permite selecionar o tamanho do marcador/número necessário. A opção <b>Como un texto</b> é selecionada por padrão. Quando esta opção é selecionada, o tamanho do marcador ou número corresponde ao tamanho do texto. Você pode escolher um dos tamanhos predefinidos que variam de <em>8</em> para <em>96</em>.</li>
+                        <li><b>Cor</b> permite selecionar a cor do marcador/número necessária. A opção <b>Como un texto</b> é selecionada por padrão. Quando esta opção é selecionada, a cor do marcador ou número corresponde à cor do texto. Você pode escolher a opção <b>Automático</b> para aplicar a cor automática ou selecionar uma das <em>cores do tema</em> ou <em>cores padrão</em> na paleta ou especificar uma cor <em>personalizada</em>.</li>
+                    </ul>
+                    <p>Todas as alterações são exibidas no campo <b>Visualizar</b>.</p>
+                 </li>
+                 <li>clique em <b>OK</b> para aplicar as alterações e fechar a janela de configurações.</li>
+            </ol>
+            <p>Para alterar as configurações da lista multinível,</p>
+            <ol>
+                <li>clique em um item da lista,</li>
+                 <li>clique na <b>Lista multinível</b> <div class = "icon icon-outline"></div> ícone na guia <b>Página Inicial</b> da barra de ferramentas superior,</li>
+                 <li>selecione a opção <b>Configurações da lista</b>,</li>
+                <li>
+                    a janela <b>Configurações da lista</b> será aberta. A janela de configurações da lista multinível se parece com esta:
+                    <p><img alt="Janela de configurações da lista multinível" src="../images/multilevellistsettings.png" /></p>
+                    <p>Escolha o nível necessário da lista no campo <b>Nível</b> à esquerda e use os botões na parte superior para ajustar o marcador ou a aparência do número para o nível selecionado:</p>
+                    <ul>
+                        <li><b>Tipo</b> permite selecionar o tipo de numeração necessário usado para a lista numerada ou o caractere necessário usado para a lista com marcadores. As seguintes opções estão disponíveis para a lista numerada: <em>Nenhum</em>, <em>1, 2, 3,...</em>, <em>a, b, c,...</em>, <em>A, B, C,...</em>, <em>i, ii, iii,...</em>, <em>I, II, III,...</em>. Para a lista com marcadores, você pode escolher um dos símbolos padrão ou usar a opção <b>Novo marcador</b>. Ao clicar nesta opção, a janela <b>Símbolo</b> aparecerá, e você poderá escolher um dos caracteres disponíveis. Para saber mais sobre como trabalhar com símbolos, consulte <a href="../UsageInstructions/InsertSymbols.htm" onclick="onhyperlinkclick(this)">este artigo</a>.</li>
+                        <li><b>Alinhamento</b> permite selecionar o tipo de alinhamento de marcador/número necessário que é usado para alinhar marcadores/números horizontalmente no início do parágrafo. Os seguintes tipos de alinhamento estão disponíveis: <em>Esquerda</em>, <em>Centro</em>, <em>Direita</em>.</li>
+                        <li><b>Tamanho</b> permite selecionar o tamanho do marcador/número necessário. A opção <b>Como un texto</b> é selecionada por padrão. Você pode escolher um dos tamanhos predefinidos que variam de <em>8</em> a <em>96</em>.</li>
+                         <li><b>Cor</b> permite selecionar a cor do marcador/número necessária. A opção <b>Como un texto</b> é selecionada por padrão. Quando esta opção é selecionada, a cor do marcador ou número corresponde à cor do texto. Você pode escolher a opção <b>Automático</b> para aplicar a cor automática ou selecionar uma das <em>cores do tema</em> ou <em>cores padrão</em> na paleta ou especificar uma cor <em>personalizada</em>.</li>
+                    </ul>
+                    <p>Todas as alterações são exibidas no campo <b>Visualizar</b>.</p>
+                </li>
+                <li>clique em <b>OK</b> para aplicar as alterações e fechar a janela de configurações.</li>
+            </ol>
+        </div>
+	</body>
+</html>

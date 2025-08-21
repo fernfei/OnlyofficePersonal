@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Usar tabelas formatadas</title>
+		<meta charset="utf-8" />
+        <meta name="descrição" content="Aplique um modelo de tabela ao intervalo de células selecionado e ative automaticamente o filtro." />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+        <div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+            <h1>Usar tabelas formatadas</h1>
+            <h3>Criar uma nova tabela formatada</h3>
+            <p>Para facilitar o trabalho com dados, o <a href="https://www.onlyoffice.com/pt/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Planilhas</b></a> permite que você aplique um modelo de tabela ao intervalo de células selecionado e ative automaticamente o filtro. Fazer isso,</p>
+            <ol>
+                <li>selecione um intervalo de células que você precisa formatar,</li>
+                 <li>clique no ícone <b>Formatar como modelo de tabela</b> <div class = "icon icon-tabletemplate"></div> situado na guia <b>Página inicial</b> da barra de ferramentas superior,</li>
+                 <li>selecione o modelo desejado na galeria,</li>
+                 <li>na janela pop-up aberta, verifique o intervalo de células a ser formatado como uma tabela,</li>
+                 <li>verifique o <b>Título</b> se desejar que os cabeçalhos da tabela sejam incluídos no intervalo de células selecionado, caso contrário, a linha do cabeçalho será adicionada no topo enquanto o intervalo de células selecionado será movido uma linha para baixo ,</li>
+                 <li>clique no botão <b>OK</b> para aplicar o modelo selecionado.</li>
+            </ol>
+            <p>O modelo será aplicado ao intervalo de células selecionado e você poderá editar os cabeçalhos da tabela e <a href="SortData.htm" onclick="onhyperlinkclick(this)">aplicar o filtro</a> para funcionar com seus dados.</p>
+             <p>Também é possível inserir uma tabela formatada usando o botão <b>Tabela</b> na guia <b>Inserir</b>. Nesse caso, o modelo de tabela padrão é aplicado.</p>
+            <p class="note"><b>Nota</b>: depois de criar uma nova tabela formatada, o <a href="UseNamedRanges.htm" onclick="onhyperlinkclick(this)">nome padrão</a> (<em>Tabela1</em>, <em>Tabela2</em>, etc.) será atribuído automaticamente à tabela. Você pode alterar esse nome tornando-o mais significativo e usá-lo para trabalhos futuros.</p>
+            <p>Se você inserir um novo valor na célula abaixo da última linha da tabela (se a tabela não tiver a linha Total) ou na célula à direita da última coluna da tabela, a tabela formatada será estendida automaticamente para incluir uma nova linha ou coluna. Caso não queira expandir a tabela, clique no botão especial <b>Colar</b> que aparecerá e selecione a opção <b>Desfazer expansão automática da tabela</b>. Depois de desfazer esta ação, a opção <b>Redo table autoexpansion</b> estará disponível neste menu.</p>
+            <p><img alt="Desfazer expansão automática da tabela" src="../images/undoautoexpansion.png" /></p>
+            <p class="note"><b>Nota</b>: Para ativar/desativar a expansão automática da tabela, selecione a opção <b>Parar a expansão automática das tabelas</b> no menu do botão especial <b>Colar</b> ou vá para <b>Configurações avançadas </b> -> <b>Verificação ortográfica</b> -> <b>Revisão</b> -> <b>Opções de autocorreção</b> -> <b>Formatação automática ao digitar</b>.</p>
+            <h3>Selecione linhas e colunas</h3>
+             <p>Para selecionar uma linha inteira na tabela formatada, mova o cursor do mouse sobre a borda esquerda da linha da tabela até que ela se transforme na seta preta <span class="icon icon-selectrow_cursor"></span>, em seguida, clique com o botão esquerdo.</p>
+            <p><img alt="Selecionar linha" src="../images/selectrow.png" /></p>
+            <p>Para selecionar uma coluna inteira na tabela formatada, mova o cursor do mouse sobre a borda superior do cabeçalho da coluna até que ele se transforme na seta preta <span class="icon icon-selectcolumn_cursor"></span> e clique com o botão esquerdo. Se você clicar uma vez, os dados da coluna serão selecionados (como mostra a imagem abaixo); se você clicar duas vezes, toda a coluna, incluindo o cabeçalho, será selecionada.</p>
+            <p><img alt="Selecionar coluna" src="../images/selectcolumn.png" /></p>
+            <p>Para selecionar uma tabela formatada inteira, mova o cursor do mouse sobre o canto superior esquerdo da tabela formatada até que ele se transforme na seta preta diagonal <span class="icon icon-selecttable_cursor"></span> e clique com o botão esquerdo.</p>
+            <p><img alt="Selecione a tabela" src="../images/selecttable.png" /></p>
+            <h3>Editar tabelas formatadas</h3>
+             <p>Algumas das configurações da tabela podem ser alteradas usando a guia <b>Configurações da tabela</b> da barra lateral direita que será aberta se você selecionar pelo menos uma célula dentro da tabela com o mouse e clicar em <b>Tabela configurações</b> ícone <span class="icon icon-table_settings_icon"></span> à direita.</p>
+            <p><img alt="Aba de configurações da tabela" src="../images/tablesettingstab.png" /></p>
+            <p>As seções <b>Linhas</b> e <b>Colunas</b> na parte superior permitem que você enfatize certas linhas/colunas aplicando formatação específica a elas ou destaque diferentes linhas/colunas com diferentes cores de fundo para distingui-las claramente . As seguintes opções estão disponíveis:</p>
+            <ul>
+                <li><b>Cabeçalho</b> - permite exibir a linha do cabeçalho.</li>
+                <li>
+                    <b>Total</b> - adiciona a linha <b>Resumo</b> na parte inferior da tabela.
+                     <p class="note"><b>Nota</b>: se esta opção for selecionada, você também pode selecionar uma função para calcular os valores de resumo. Depois de selecionar uma célula na linha <b>Resumo</b>, o botão <span class="icon icon-dropdownarrow"></span> estará disponível à direita da célula. Clique nele e escolha a função necessária na lista: <em>Média</em>, <um>Contagem</em>, <um>Máx.</em>, <em>Mim</em>, <em> Soma</em>, <em>Desvio Padrão</em> ou <em>Var</em>. A opção <em>Mais funções</em> permite abrir a janela <b>Inserir Função</b> e escolher qualquer outra função. Se você escolher a opção <em>Nenhum</em>, a célula atualmente selecionada na linha <b>Resumo</b> não exibirá um valor de resumo para esta coluna.</p>
+                    <p><img alt="Sumário" src="../images/summary.png" /></p>
+                </li>
+                <li><b>Com faixas</b> - permite a alternância de cores de fundo para linhas pares e ímpares.</li>
+                 <li><b>Botão Filtro</b> - permite exibir as setas suspensas <div class = "icon icon-dropdownarrow"></div> em cada célula da linha do cabeçalho. Esta opção só está disponível quando a opção <b>Cabeçalho</b> está selecionada.</li>
+                 <li><b>Primeiro</b> - enfatiza a coluna mais à esquerda na tabela com formatação especial.</li>
+                 <li><b>Último</b> - enfatiza a coluna mais à direita na tabela com formatação especial.</li>
+                 <li><b>Com faixas</b> - permite a alternância de cores de fundo para colunas pares e ímpares.</li>
+            </ul>
+            <p>
+                A seção <b>Selecionar do modelo</b> permite que você escolha um dos estilos de tabelas predefinidos. Cada modelo combina determinados parâmetros de formatação, como cor de fundo, estilo de borda, faixa de linha/coluna, etc.
+                 Dependendo das opções marcadas nas seções <b>Linhas</b> e/ou <b>Colunas</b> acima, os modelos definidos serão exibidos de forma diferente. Por exemplo, se você marcou a opção <b>Cabeçalho</b> na seção <b>Linhas</b> e a opção <b>Faixas</b> nas <b>Colunas</b> seção, a lista de modelos exibida incluirá apenas modelos com a linha de cabeçalho e as colunas em faixas ativadas:
+            </p>
+            <p><span class="big big-templateslist"></span></p>
+            <p>Se você quiser remover o estilo de tabela atual (cor de fundo, bordas, etc.) sem remover a própria tabela, aplique o modelo <b>Nenhum</b> da lista de modelos:</p>
+            <p><span class="big big-nonetemplate"></span></p>
+            <p>A seção <b>Redimensionar tabela</b> permite alterar o intervalo de células ao qual a formatação da tabela é aplicada. Clique no botão <b>Selecionar dados</b> - uma nova janela pop-up será aberta. Altere o link para o intervalo de células no campo de entrada ou selecione o intervalo de células necessário na planilha com o mouse e clique no botão <b>OK</b>.</p>
+            <p class="note"><b>Nota</b>: Os cabeçalhos devem permanecer na mesma linha e o intervalo da tabela resultante deve se sobrepor ao intervalo da tabela original.</p>
+            <p><img alt="Redimensionar tabela" src="../images/resizetable.png" /></p>
+            <p>A seção <b>Linhas e colunas</b> <span class="icon icon-rowsandcolumns"></span> permite que você execute as seguintes operações:</p>
+            <ul>
+                <li><b>Selecione</b> uma linha, coluna, todos os dados das colunas, exceto a linha do cabeçalho, ou a tabela inteira, incluindo a linha do cabeçalho.</li>
+                 <li><b>Insira</b> uma nova linha acima ou abaixo da selecionada, bem como uma nova coluna à esquerda ou à direita da selecionada.</li>
+                 <li><b>Excluir</b> uma linha, coluna (dependendo da posição do cursor ou da seleção) ou a tabela inteira.</li>
+            </ul>
+            <p class="note"><b>Observação</b>: as opções da seção <b>Linhas e colunas</b> também podem ser acessadas no <b>menu do botão direito</b>.</p>
+             <p>A opção <span class="icon icon-removeduplicates"></span> <b>Remover duplicados</b> pode ser usada se você quiser remover valores duplicados da tabela formatada. Para obter mais detalhes sobre como remover duplicatas, consulte <a href="RemoveDuplicates.htm" onclick="onhyperlinkclick(this)">esta página</a>.</p>
+             <p>A opção <span class="icon icon-converttorange"></span> <b>Converter para intervalo</b> pode ser usada se você quiser transformar a tabela em um intervalo de dados regular removendo o filtro, mas preservando o estilo da tabela (ou seja, células e cores da fonte, etc.). Depois de aplicar esta opção, a guia <b>Configurações da mesa</b> na barra lateral direita ficará indisponível.</p>
+             <p>A opção <span class="icon icon-insertslicer"></span> <b>Inserir slicer</b> é usada para criar um slicer para a tabela formatada. Para obter mais detalhes sobre como trabalhar com segmentações, consulte <a href="Slicers.htm" onclick="onhyperlinkclick(this)">esta página</a>.</p>
+             <p>A opção <span class="icon icon-insertpivot"></span> <b>Inserir tabela dinâmica</b> é usada para criar uma tabela dinâmica na base da tabela formatada. Para obter mais detalhes sobre como trabalhar com tabelas dinâmicas, consulte <a href="PivotTables.htm" onclick="onhyperlinkclick(this)">esta página</a>.</p>
+             <h3>Ajuste as configurações avançadas da tabela formatada</h3>
+             <p>Para alterar as propriedades avançadas da tabela, use o link <b>Mostrar configurações avançadas</b> na barra lateral direita. A janela 'Tabela - Configurações avançadas' será aberta:</p>
+             <p><img alt="Table - Advanced Settings" src="../images/tableadvancedsettings.png" /></p>
+             <p>A guia <b>Texto alternativo</b> permite que você especifique o <b>Título</b> e a <b>Descrição</b> que serão lidos para pessoas com deficiência visual ou cognitiva para ajudar eles entendam melhor quais informações a tabela contém.</p>
+             <p class="note"><b>Nota</b>: Para ativar/desativar a expansão automática da tabela, vá para <b>Configurações avançadas</b> -> <b>Verificação ortográfica</b> -> <b>Revisão</b> -> <b>Opções de autocorreção</b> -> <b>Formatação automática ao digitar</b>.</p>
+             <h3>Use o preenchimento automático de fórmulas para adicionar fórmulas a tabelas formatadas</h3>
+             <p>A lista <b>Fórmula Autocompletar</b> exibe todas as opções disponíveis quando você aplica fórmulas a tabelas formatadas. Você pode adicionar uma referência a uma tabela em sua fórmula dentro ou fora de uma tabela. Colunas e nomes de itens são usados em vez de endereços de células como referências.</p>
+             <p>O exemplo abaixo mostra uma referência a uma tabela na função SOMA.</p>
+                <ol>
+                    <li>
+                       Selecione uma célula e comece a digitar uma fórmula começando com um sinal de igual, selecione a função necessária na lista <b>Fórmula Autocompletar</b>. Após o parêntese de abertura, comece a digitar o <em>nome da tabela</em> e selecione o nome apropriado na lista <b>Fórmula Autocompletar</b>.
+                        <p><img alt="Fórmulas de tabela" src="../images/tableformulas.png" />
+                    </li>
+                    <li>
+                        Em seguida, digite um colchete de abertura para abrir a lista suspensa que contém colunas e itens que podem ser usados na fórmula. Uma dica de ferramenta descrevendo a referência aparece quando você passa o ponteiro do mouse sobre ela na lista.
+                        <p><img alt="Fórmulas de tabela" src="../images/tableformulas1.png" />
+                    </li>
+                </ol>
+            <p class="note"><b>Nota</b>: Cada referência deve conter uma abertura e um colchete de fechamento. Não se esqueça de verificar a sintaxe da fórmula.</p>
+        </div>
+	</body>
+</html>

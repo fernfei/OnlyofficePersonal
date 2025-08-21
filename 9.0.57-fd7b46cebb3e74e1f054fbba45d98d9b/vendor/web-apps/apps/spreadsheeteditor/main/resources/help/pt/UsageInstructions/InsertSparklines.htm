@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Inserir Minigráficos</title>
+		<meta charset="utf-8" />
+		<meta name="descrição" content="Adicione um gráfico à sua planilha e ajuste sua posição, tamanho e propriedades" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+        <div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+            <h1>Inserir Minigráficos</h1>
+            <h3>Usando Minigráficos</h3>
+            <p>Sparkline é um pequeno gráfico que se encaixa em uma célula para representar tendências ou variações de dados. Sparklines têm funcionalidade limitada em comparação com gráficos regulares, mas são uma excelente ferramenta para analisar rapidamente seus dados e criar uma representação visual concisa. O tamanho do minigráfico depende do tamanho da célula, altere a largura e o comprimento da célula para ajustar o tamanho. Depois de adicionar um minigráfico, você ainda pode digitar texto ou adicionar formatação condicional à célula. <a href="https://www.onlyoffice.com/pt/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"> <b>Editor de Planilhas do ONLYOFFICE</b></a> oferece três tipos de minigráficos:</p>
+            <p><div class = "big big-sparklines_types"></div> </p>
+            <ul>
+                <li><b>A coluna</b> é semelhante a um <b>Gráfico de colunas</b> normal.</li>
+                 <li><b>Linha</b> é semelhante a um <b>Gráfico de linhas</b> normal.</li>
+                 <li><b>Ganho/Perda</b> é adequado para representar dados que incluem valores positivos e negativos.</li>
+            </ul>
+            <h3>Inserir Minigráficos</h3>
+            <p>Para inserir um gráfico <b>Sparkline</b>, selecione o intervalo de dados a ser incluído no minigráfico ou clique em uma célula em branco onde colocá-lo, vá para a guia <b>Inserir</b> e clique no botão <b >Sparkline</b> <span class="icon icon-sparklines_button"></span> na barra de ferramentas superior. Escolha um minigráfico que atenda ao seu propósito. A janela <b>Criar Minigráficos</b> será aberta, clique no ícone <b>Selecionar dados</b> para especificar o intervalo de dados e a localização do minigráfico, clique em <b>OK</b> para confirmar</p>
+			<p><img alt="Criar janela Minigráfico" src="../images/createsparkline_window.png" /></p>
+            <h3>Editar e formatar minigráficos</h3>
+             <p>Depois de inserir um minigráfico, você pode personalizá-lo e editá-lo. Clique na célula com um minigráfico para ativar a guia <b>Configurações do minigráfico</b> na barra lateral direita.</p>
+            <p><img alt="Guia de configurações do Minigráfico" src="../images/sparklinesettings_tab.png" /></p>
+            <ul>
+                <li>Na seção <b>Tipo</b>, você pode selecionar um dos tipos de minigráficos disponíveis na lista suspensa:
+                 <p><b>Coluna</b> - este tipo é semelhante a um <b>Gráfico de colunas</b> normal.</p>
+                 <p><b>Linha</b> - este tipo é semelhante a um <b>Gráfico de linhas</b> normal.</p>
+                 <p><b>Ganho/Perda</b> - este tipo é adequado para representar dados que incluem valores positivos e negativos.</p>
+            </li>
+                <li>Na seção <b>Estilo</b>, você pode selecionar o estilo que melhor se adapta a você na lista suspensa <b>Modelo</b>, a <b>Cor</b> necessária para o minigráfico, e a <b>Pesagem da linha</b> necessária (disponível apenas para o minigráfico <b>Linha</b>)</li>
+                 <li>Na seção <b>Mostrar</b>, você pode destacar ou marcar determinados dados no minigráfico:
+                 <p><i>Ponto alto</i> – use-o para destacar o valor máximo.</p>
+                 <p><i>Ponto baixo</i> – use-o para destacar o valor mínimo.</p>
+                 <p><i>Ponto Negativo</i> – use-o para destacar valores negativos.</p>
+                 <p><i>Primeiro ponto</i> – use-o para destacar o ponto inicial no intervalo de dados.</p>
+                 <p><i>Último ponto</i> - use-o para destacar o ponto final no intervalo de dados. </p>
+                 <p><i>Marcadores</i> – está disponível apenas para minigráficos de linha, use-o para ativar um marcador para todos os pontos.</p>
+            </li>
+            </ul>    
+            <p>Clique na seta para baixo na caixa de cores para selecionar uma cor para cada ponto. </p>
+             <p>Se você precisar tornar seu minigráfico mais preciso e fácil de ler, clique na opção <b>Mostrar configurações avançadas</b> para abrir a janela <b>Sparkline – Configurações avançadas</b>.</p>
+            <p><img alt="Janela de configurações avançadas do minigráfico" src="../images/sparkline_advancedsettings1.png" /> </p>   
+            <p> </p>
+            <p>A guia <b>Tipo e dados</b> permite alterar o <b>Tipo</b> e o <b>Estilo</b> do minigráfico, bem como especificar as <b>Células ocultas e vazias</b > configurações de exibição:</p>
+            <ul>
+                <li>
+                    <b>Mostrar células vazias como</b> - esta opção permite controlar como minigráficos são exibidos se algumas células em um intervalo de dados estiverem vazias. Selecione a opção necessária na lista:
+                     <ul>
+                         <li><b>Lacunas</b> - para exibir o minigráfico com lacunas no lugar dos dados ausentes,</li>
+                         <li><b>Zero</b> - para exibir o minigráfico como se o valor em uma célula vazia fosse zero,</li>
+                         <li><b>Conectar pontos de dados com linha</b> (disponível apenas para o tipo <b>Linha</b>) - para ignorar células vazias e exibir uma linha de conexão entre os pontos de dados.</li>
+                    </ul>
+                </li>
+                <li><b>Mostrar dados em linhas e colunas ocultas</b> - marque esta caixa se quiser incluir valores das células ocultas em minigráficos.</li>
+            </ul>
+            <p><img alt="Janela de configurações avançadas do Sparkline" src="../images/sparkline_advancedsettings2.png" /></p>
+            <p>A guia <b>Opções de eixo</b> permite que você especifique os seguintes parâmetros de <b>Eixo horizontal/vertical</b>:</p>
+            <ul>
+                <li>
+                    Na seção <b>Eixo horizontal</b>, os seguintes parâmetros estão disponíveis:
+                     <ul>
+                         <li><b>Mostrar eixo</b> - marque esta caixa para exibir o eixo horizontal. Se os dados de origem contiverem valores negativos, essa opção ajudará a exibi-los com mais clareza.</li>
+                         <li><b>Ordem inversa</b> - marque esta caixa para exibir os dados na sequência inversa.</li>
+                    </ul>
+                </li>
+                <li>
+                    Na seção <b>Eixo Vertical</b>, os seguintes parâmetros estão disponíveis para definir o <b>Valor Mínimo/Máximo</b>:
+                     <ul>
+                         <li>
+                             <b>Valor mínimo/máximo</b>
+                             <ul>
+                                 <li><b>Auto para cada</b> - esta opção é selecionada por padrão. Ele permite que você use valores mínimos/máximos próprios para cada minigráfico. Os valores mínimo/máximo são obtidos das séries de dados separadas usadas para plotar cada minigráfico. O valor máximo para cada minigráfico estará localizado na parte superior da célula e o valor mínimo estará na parte inferior.
+                                    <p><span class="big big-autoforeach"></span></p>
+                                </li>
+                                <li><b>Igual para todos</b> - esta opção permite que você use o mesmo valor mínimo/máximo para todo o grupo de minigráficos. Os valores mínimo/máximo são obtidos de todo o intervalo de dados usado para plotar o grupo minigráfico. Os valores máximo/mínimo para cada minigráfico serão dimensionados em relação ao valor mais alto/mais baixo dentro do intervalo. Se você selecionar esta opção, será mais fácil comparar vários minigráficos.
+                                     <p><span class="big big-sameforall"></span></p>
+                                 </li><li><b>Fixo</b> - esta opção permite definir um valor mínimo/máximo personalizado. Os valores inferiores ou superiores aos especificados não são exibidos nos minigráficos.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Minigráficos claros</h3>
+             <p>Para excluir minigráficos, selecione a(s) célula(s) com o(s) minigráfico(s) a ser(em) removido(s) e clique com o botão direito sobre ele. Escolha <b>Sparklines</b> no menu suspenso e clique em <b>Limpar minigráficos selecionados</b> ou <b>Limpar os grupos de minigráficos selecionados</b>.
+        </div>
+	</body>
+</html>

@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+        <title>Apresentando a interface do usuário do Editor de Apresentações</title>
+		<meta charset="utf-8" />
+        <meta name="descrição" content="Apresentando a interface do usuário do Editor de Apresentações" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+        <h1>Apresentando a interface do usuário do Editor de Apresentações</h1>
+        <p>O <a target="_blank" href="https://www.onlyoffice.com/pt/presentation-editor.aspx" onclick="onhyperlinkclick(this)"><b>Editor de Apresentações</b></a> usa uma interface com abas onde os comandos de edição são agrupados em abas de acordo com sua funcionalidade.</p>
+            <div class="onlineDocumentFeatures">
+                <p>Janela principal do Editor de Apresentações online:</p>
+                <p><img alt="Janela do Editor de apresentações online" src="../images/interface/editorwindow.png" /></p>
+            </div>
+            <div class="desktopDocumentFeatures">
+                <p>Janela principal do Editor de Apresentações da área de trabalho:</p>
+                <p><img alt="Janela do Editor de Apresentações da área de trabalho" src="../images/interface/desktop_editorwindow.png" /></p>
+            </div>
+            <p>A interface do editor consiste nos seguintes elementos principais:</p>
+            <ol>
+                <li>
+                    O <b>cabeçalho do editor</b> exibe o logotipo, <span class="desktopDocumentFeatures">guias para todas as apresentações abertas com seus nomes</span> e guias de menu.
+                    <p>No lado esquerdo do botões <b>Cabeçalho do editor</b>, <b>Salvar</b>, <b>Imprimir arquivo</b>, <b>Desfazer</b> e <b>Refazer</b> estão localizados.</p>
+                    <p><span class="big big-leftpart"></span></p>
+                    <p>No lado direito do <b>cabeçalho do editor</b>, junto com o nome do usuário, os seguintes ícones são exibidos:</p>
+                    <ul>
+                        <li><div class="icon icon-gotodocuments"></div> <b>Abrir local do arquivo</b> - <span class="desktopDocumentFeatures">na <em>versão desktop</em>, permite abrir a pasta, onde o arquivo está armazenado, na janela <b>File Explorer</b>.</span> <span class="onlineDocumentFeatures"> Em a <em>versão online</em>, permite abrir a pasta do módulo <b>Documentos</b>, onde o arquivo está armazenado, em uma nova aba do navegador.</span></li>
+                        <li class="onlineDocumentFeatures"><div class="icon icon-access_rights"></div> <b>Compartilhar</b> - (disponível apenas na <em>versão online</em>) permite <a href="../HelpfulHints/CollaborativeEditing.htm" onclick="onhyperlinkclick(this)">definir direitos de acesso</a> para os documentos armazenados na nuvem.</li>
+                        <li><div class="icon icon-favorites_icon"></div> <b>Marcar como favorito</b> - clique na estrela para adicionar um arquivo aos favoritos para facilitar a localização. O arquivo adicionado é apenas um atalho para que o próprio arquivo permaneça armazenado em seu local original. Excluir um arquivo dos favoritos não remove o arquivo de seu local original.</li>
+                         <li><div class="icon icon-search_icon_header"></div> <b>Pesquisar</b> - permite pesquisar a apresentação por uma determinada palavra ou símbolo, etc.</li>
+                    </ul>
+                </li>
+                <li>
+                    A <b>barra de ferramentas superior</b> exibe um conjunto de comandos de edição, dependendo da guia de menu selecionada. Atualmente, as seguintes guias estão disponíveis: <a href="../ProgramInterface/FileTab.htm" onclick="onhyperlinkclick(this)">Arquivo</a>, <a href="../ProgramInterface/HomeTab.htm" onclick="onhyperlinkclick(this)">Home</a>, <a href="../ProgramInterface/InsertTab.htm" onclick="onhyperlinkclick(this)">Inserir</a>, <a href="../ProgramInterface/TransitionsTab.htm" onclick="onhyperlinkclick(this)">Transições</a>, <a href="../ProgramInterface/AnimationTab.htm" onclick="onhyperlinkclick(this)">Animação</a>, <a href="../ProgramInterface/CollaborationTab.htm" onclick="onhyperlinkclick(this)">Colaboração</a>, <span class="desktopDocumentFeatures">Proteção,</span> <a href="../ProgramInterface/PluginsTab.htm" onclick="onhyperlinkclick(this)">Plugins</a>.
+                    <p>O <span class="icon icon-copy"></span> <b>Copiar</b>, <span class="icon icon-paste"></span> <b>Colar</b>, <span class="icon icon-cut"></span> As opções <b>Cortar</b> e <span class="icon icon-selectall"></span> <b>Selecionar tudo</b> são sempre disponível no lado esquerdo da <b>barra de ferramentas superior</b> independentemente da guia selecionada.</p>
+                </li>
+                <li>A <b>barra de status</b> na parte inferior da janela do editor contém o <a href="../UsageInstructions/PreviewPresentation.htm" onclick="onhyperlinkclick(this)">Iniciar apresentação de slides</a> ícone, alguns <a href="../HelpfulHints/Navigation.htm" onclick="onhyperlinkclick(this)">ferramentas de navegação</a>: indicador do número do slide e botões de zoom. A <b>Barra de status</b> também exibe algumas notificações (como "Todas as alterações salvas", 'Conexão perdida' quando não há conexão e o editor está tentando reconectar etc.) e permite <a href="../HelpfulHints/SpellChecking.htm" onclick="onhyperlinkclick(this)">definir o idioma do texto e ativar a verificação ortográfica</a>.</li>
+                <li>
+                    A <b>barra lateral esquerda</b> contém os seguintes ícones:
+                        <ul>
+                            <li><div class="icon icon-searchicon"></div> - permite usar o <a href="../HelpfulHints/Search.htm" onclick="onhyperlinkclick(this)">Ferramenta Pesquisar e substituir</a>,</li>
+                            <li><div class="icon icon-slides"></div> - permite visualizar slides e navegar neles,</li>
+                            <li><div class="icon icon-commentsicon"></div> - permite abrir o <a href="../HelpfulHints/CollaborativeEditing.htm#comments" onclick="onhyperlinkclick(this)">Painel de comentários</a>,</li>
+                            <li class="onlineDocumentFeatures"><div class="icon icon-chaticon"></div> - (disponível apenas na <em>versão online</em>) permite abrir o <a href="../HelpfulHints/CollaborativeEditing.htm#chat" onclick="onhyperlinkclick(this)">Painel de bate-papo</a>,</li>
+                            <li class="onlineDocumentFeatures"><div class="icon icon-feedbackicon"></div> - (disponível apenas na <em>versão online</em>) permite entrar em contato com nossa equipe de suporte,</li>
+                            <li class="onlineDocumentFeatures"><div class="icon icon-about"></div> - (disponível apenas na <em>versão online</em>) permite visualizar as informações sobre o programa.</li>
+                        </ul>
+                </li>
+                <li>A <b>barra lateral direita</b> permite ajustar parâmetros adicionais de diferentes objetos. Quando você seleciona um determinado objeto em um slide, o ícone correspondente é ativado na barra lateral direita. Clique neste ícone para expandir a barra lateral direita.</li>
+                 <li>As <b>réguas</b> horizontais e verticais ajudam a colocar objetos em um slide e permitem configurar paradas de tabulação e recuos de parágrafo nas caixas de texto.</li>
+                <li>A <b>área de trabalho</b> permite visualizar o conteúdo da apresentação, inserir e editar dados.</li>
+                 <li>A <b>barra de rolagem</b> à direita permite rolar a apresentação para cima e para baixo.</li>
+            </ol>
+            <p>Para sua conveniência, você pode ocultar alguns componentes e exibi-los novamente quando necessário. Para saber mais sobre como ajustar as configurações de exibição, consulte <a href="../HelpfulHints/Navigation.htm" onclick="onhyperlinkclick(this)">esta página</a>.</p>
+           
+		</div>
+	</body>
+</html>

@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Comentando</title>
+		<meta charset="utf-8" />
+		<meta name="descrição" content="Dicas sobre como usar a ferramenta de bate-papo" />
+		<link type="text/css" rel="stylesheet" href="../../images/sprite.css" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<script type="text/javascript" src="../callback.js"></script>
+		<script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+			<div class="search-field">
+				<input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+			</div>
+			<h1>Comentando</h1>
+			<p>O <a target="_blank" href="https://www.onlyoffice.com/pt/presentation-editor.aspx" onclick="onhyperlinkclick(this)"><b>Editor de Apresentações</b></a> permite que você mantenha uma abordagem constante de toda a equipe para o fluxo de trabalho: <a href="https://helpcenter.onlyoffice.com/userguides/groups-guides-documents-share-documents.aspx" onclick="onhyperlinkclick(this)">compartilhar</a> arquivos e pastas, <a href="../HelpfulHints/CollaborativeEditing.htm" onclick="onhyperlinkclick(this)">colabore</a> em apresentações em tempo real, <a href="../HelpfulHints/UsingChat.htm" onclick="onhyperlinkclick(this)">comunique-se</a> diretamente no editor, salve <a href="../HelpfulHints/VersionHistory.htm" onclick="onhyperlinkclick(this)">versões de apresentação</a> para uso futuro.</p>
+			<p>No <b>Editor de Apresentações</b> você pode deixar comentários no conteúdo das apresentações sem realmente editá-lo. Diferente <a href="../HelpfulHints/UsingChat.htm" onclick="onhyperlinkclick(this)">mensagens de bate-papo</a>, os comentários permanecem até serem excluídos.</p>
+            <h3>Deixar comentários e respondê-los</h3>
+            <p>Para deixar um comentário a um determinado objeto (caixa de texto, forma etc.):</p>
+			<ol>
+				<li>selecione um objeto onde você acha que há um erro ou problema,</li>
+				<li>
+					mude para a guia <b>Inserir</b> ou <b>Colaboração</b> da barra de ferramentas superior e clique em <div class="icon icon-comment_toptoolbar"></div> <b>Comentar</b > botão, ou<br />
+                clique com o botão direito do mouse no objeto selecionado e selecione a opção <b>Adicionar comentário</b> no menu,<br />
+				</li>
+				<li>digite o texto necessário,</li>
+                <li>clique no botão <b>Adicionar comentário/Adicionar</b>.</li>
+			</ol>
+			<p>O objeto que você comentou será marcado com o ícone <span class="icon icon-added_comment_icon"></span>. Para visualizar o comentário, basta clicar neste ícone.</p>
+			<p>Para adicionar um comentário a um determinado slide, selecione o slide e use o botão <span class="icon icon-comment_toptoolbar"></span> <b>Comentar</b> em <b>Inserir</b> ou Guia <b>Colaboração</b> da barra de ferramentas superior. O comentário adicionado será exibido no canto superior esquerdo do slide.</p>
+			<p>Para criar um comentário no nível da apresentação que não esteja relacionado a um determinado objeto ou slide, clique no ícone <span class="icon icon-commentsicon"></span> na barra lateral esquerda para abrir os <b>Comentários</b > painel e use o link <b>Adicionar comentário ao documento</b>. Os comentários no nível da apresentação podem ser visualizados no painel <b>Comentários</b>. Comentários relacionados a objetos e slides também estão disponíveis aqui.</p>
+                <p>Qualquer outro usuário pode responder ao comentário adicionado fazendo perguntas ou relatando o trabalho que realizou. Para isso, clique no link <b>Adicionar resposta</b> localizado abaixo do comentário, digite o texto da sua resposta no campo de entrada e pressione o botão <b>Responder</b>.</p>
+                <p>Se você estiver usando o modo de coedição <b>Estrito</b>, novos comentários adicionados por outros usuários ficarão visíveis somente depois que você clicar no botão <span class="icon icon-saveupdate"></span> no canto superior esquerdo da barra de ferramentas superior.</p>
+			<h3>Gerenciando comentários</h3>
+                <p>Você pode gerenciar os comentários adicionados usando os ícones no balão de comentários ou no painel <b>Comentários</b> à esquerda:</p>
+			<ul>
+				<li>
+					classifique os comentários adicionados clicando no ícone <div class="icon icon-sortcommentsicon"></div>:
+					<ul>
+						<li>por data: <b>Mais recente</b> ou <b>Mais antigo</b>.</li>
+                        <li>por autor: <b>Autor de A a Z</b> ou <b>Autor de Z a A</b>.</li>
+                        <li>
+                            por grupo: <b>Todos</b> ou escolha um determinado grupo da lista. Esta opção de classificação está disponível se você estiver executando uma versão que inclui esta funcionalidade.
+							<p><img alt="Ordenar comentários" src="../images/sortcomments.png" /></p>
+						</li>
+					</ul>
+				</li>
+				<li>edite o selecionado atualmente clicando no ícone <div class="icon icon-editcommenticon"></div>,</li>
+                <li>exclua o selecionado atualmente clicando no ícone <div class="icon icon-deletecommenticon"></div>,</li>
+                <li>feche a discussão atualmente selecionada clicando no ícone <div class="icon icon-resolveicon"></div> se a tarefa ou problema que você declarou em seu comentário foi resolvido, depois disso a discussão que você abriu com seu comentário é o estado resolvido. Para abri-lo novamente, clique no ícone <div class="icon icon-resolvedicon"></div>,</li>
+                <li>se quiser gerenciar vários comentários, abra o menu suspenso <b>Resolver</b> na guia <b>Colaboração</b>. Selecione uma das opções para resolver comentários: <b>resolver comentários atuais</b>, <b>resolver meus comentários</b> ou <b>resolver todos os comentários</b> na apresentação.</li>
+			</ul>
+			<h3>Adicionando menções</h3>
+			<p class="note">Você só pode adicionar menções aos comentários feitos ao conteúdo da apresentação e não à própria apresentação.</p>
+            <p>Ao inserir comentários, você pode usar o recurso de <b>menções</b> que permite atrair a atenção de alguém para o comentário e enviar uma notificação ao usuário mencionado por e-mail e <b>Conversa</b>.</p>
+            <p>Para adicionar uma menção,</p>
+			<ol>
+				<li>Digite o sinal "+" ou "@" em qualquer lugar no texto do comentário - uma lista dos usuários do portal será aberta. Para simplificar o processo de pesquisa, você pode começar a digitar um nome no campo de comentário - a lista de usuários mudará conforme você digita.</li>
+                <li>Selecione a pessoa necessária na lista. Se o arquivo ainda não foi compartilhado com o usuário mencionado, a janela <b>Configurações de compartilhamento</b> será aberta. O tipo de acesso <b>Somente leitura</b> é selecionado por padrão. <a href="https://helpcenter.onlyoffice.com/userguides/groups-guides-documents-share-documents.aspx" onclick="onhyperlinkclick(this)">Altere se necessário</a>.</li>
+				<li>Clique <b>OK</b>.</li>
+			</ol>
+			<p>O usuário mencionado receberá uma notificação por e-mail de que foi mencionado em um comentário. Se o arquivo foi compartilhado, o usuário também receberá uma notificação correspondente.</p>
+			<h3>Removendo comentários</h3>
+                <p>Para remover comentários,</p>
+			<ol>
+				<li>clique no botão <div class="icon icon-removecomment_toptoolbar"></div> <b>Remover</b> na guia <b>Colaboração</b> da barra de ferramentas superior,</li>
+				<li>
+					selecione a opção necessária no menu:
+					<ul>
+						<li><b>Remover comentários atuais</b> - para remover o comentário atualmente selecionado. Se algumas respostas foram adicionadas ao comentário, todas as suas respostas também serão removidas.</li>
+                        <li><b>Remover meus comentários</b> - para remover os comentários que você adicionou sem remover os comentários adicionados por outros usuários. Se algumas respostas foram adicionadas ao seu comentário, todas as respostas também serão removidas.</li>
+                        <li><b>Remover todos os comentários</b> - para remover todos os comentários da apresentação que você e outros usuários adicionaram.</li>
+					</ul>
+				</li>
+			</ol>
+			<p>Para fechar o painel com comentários, clique novamente no ícone <span class="icon icon-commentsicon"></span> na barra lateral esquerda.</p>
+		</div>
+	</body>
+</html>

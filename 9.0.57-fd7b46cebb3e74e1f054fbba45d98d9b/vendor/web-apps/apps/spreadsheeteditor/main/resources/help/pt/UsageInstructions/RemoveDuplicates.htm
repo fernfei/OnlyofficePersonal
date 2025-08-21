@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Remover duplicatas</title>
+		<meta charset="utf-8" />
+        <meta name="descrição" content="Remover duplicatas em um intervalo de dados selecionado." />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Remover duplicatas</h1>
+            <p>No <a href="https://www.onlyoffice.com/pt/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Planilhas</b></a>, você pode remover valores duplicados do intervalo de dados selecionado ou uma <a href="FormattedTables.htm" onclick="onhyperlinkclick(this)">tabela formatada</a>.</p>
+             <p>Para remover duplicatas:</p>
+            <ol>
+                <li>Selecione o intervalo de células necessário contendo valores duplicados.</li>
+                 <li>Mude para a guia <b>Dados</b> e clique no botão <div class = "icon icon-removeduplicates_icon"></div> <b>Remover duplicados</b> na barra de ferramentas superior.
+                 <p>Se você deseja remover duplicatas de uma tabela formatada, também pode usar a opção <span class="icon icon-removeduplicates"></span> <b>Remover duplicatas</b> na barra lateral direita.</p>
+                 <p>Se você selecionar uma determinada parte do intervalo de dados, aparecerá uma janela de aviso onde será perguntado se você deseja expandir a seleção para incluir todo o intervalo de dados ou continuar com os dados atualmente selecionados. Clique no botão <b>Expandir</b> ou <b>Remover dos selecionados</b>. Se você escolher a opção <b>Remover no selecionado</b>, os valores duplicados nas células adjacentes ao intervalo selecionado não serão removidos.</p>
+                <p><img alt="Remover aviso de duplicatas" src="../images/removeduplicates_warning.png" /></p>
+                <p> A janela <b>Remover duplicados</b> será aberta:</p>
+                    <p><img alt="Remover Duplicatas" src="../images/removeduplicates_window.png" /></p>
+                </li>
+                <li>Verifique as opções necessárias na janela <b>Remover duplicados</b>:
+                 <ul>
+                     <li><b>Meus dados têm cabeçalhos</b> - marque esta caixa para excluir cabeçalhos de coluna da seleção.</li>
+                     <li><b>Colunas</b> - deixe a opção <b>Selecionar tudo</b> selecionada por padrão ou desmarque-a e selecione apenas as colunas necessárias.</li>
+                </ul>
+                </li>
+                <li>Clique no botão <b>OK</b>.</li>
+             </ol>
+             <p>Os valores duplicados do intervalo de dados selecionado serão removidos e você verá a janela que contém as informações sobre quantos valores duplicados foram removidos e quantos valores únicos foram deixados:</p>
+             <p><img alt="Duplicatas removidas" src="../images/removeduplicates_result.png" /></p>
+             <p>Se quiser restaurar os dados removidos logo após a exclusão, use o ícone <b>Desfazer</b> <span class="icon icon-undo"></span> na barra de ferramentas superior ou <em> Ctrl+Z</em> combinação de teclas.</p>
+            
+		</div>
+	</body>
+</html>

@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Função PPGTO</title>
+		<meta charset="utf-8" />
+		<meta name="descricao" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>Função PPGTO</h1>
+			<p>A função <b>PPGTO</b> é uma das funções financeiras. Ele é usado para calcular o pagamento principal de um investimento com base em uma taxa de juros especificada e um cronograma de pagamento constante.</p>
+			<p>A sintaxe da função <b>PPGTO</b> é:</p>
+			<p style="text-indent: 150px;"><b><em>PPGTO(taxa, per, nper, vp [, [vf] [,[tipo]]])</em></b></p>
+			<p><em>onde</em></p> 
+				<p style="text-indent: 50px;"><b><em>taxa</em></b> é a taxa de juros do título.</p>
+                <p style="text-indent: 50px;"><b><em>per</em></b> é o período para o qual você deseja encontrar o pagamento principal. O valor deve ser de <b><em>1</em></b> a <b><em>nper</em></b>.</p>
+				<p style="text-indent: 50px;"><b><em>nper</em></b> é o número de pagamentos.</p>
+				<p style="text-indent: 50px;"><b><em>vp</em></b> é o valor presente do investimento.</p>
+                <p style="text-indent: 50px;"><b><em>fv</em></b> é um valor futuro (ou seja, um saldo de caixa remanescente após o último pagamento ser feito). É um argumento opcional. Se for omitido, a função assumirá <b><em>fv</em></b> como 0.</p>
+				<p style="text-indent: 50px;"><b><em>tipo</em></b> é o período em que os pagamentos são devidos. É um argumento opcional. Se for definido como 0 ou omitido, a função assumirá os pagamentos a vencer no final do período. Se <b><em>tipo</em></b> for definido como 1, os pagamentos vencem no início do período.</p>
+			<p class="note"><b>Nota:</b> dinheiro pago (como depósitos em poupança) é representado por números negativos; o dinheiro recebido (como cheques de dividendos) é representado por números positivos. As unidades para <em>taxa</em> e <em>nper</em> devem ser consistentes: use N%/12 para <em>taxa</em> e N*12 para <em>nper</em> no caso de pagamentos mensais, N%/4 para <em>taxa</em> e N*4 para <em>nper</em> no caso de pagamentos trimestrais, N% para <em>taxa</em> e N para <em>nper</em> no caso de pagamentos anuais.</p>
+			<p>Os valores podem ser inseridos manualmente ou incluídos na célula à qual você faz referência.</p>
+			<p>Para aplicar a função <b>PPGTO</b>,</p>
+			<ol>
+			<li>selecione a célula onde deseja exibir o resultado,</li>
+			<li>clique no ícone <b>Inserir função</b> <div class = "icon icon-insertfunction"></div> situado na barra de ferramentas superior,
+				<br />ou clique com o botão direito em uma célula selecionada e selecione a opção <b>Inserir Função</b> no menu,
+				<br />ou clique no ícone <div class = "icon icon-function"></div> situado na barra de fórmulas,
+			</li>
+			<li>selecione o grupo de funções <b>Financeira</b> na lista,</li>
+			<li>clique na função <b>PPGTO</b>,</li>
+			<li>digite os argumentos necessários separando-os por vírgula,</li>
+			<li>pressione o botão <b>Entrar</b>.</li>
+			</ol>
+			<p>O resultado será exibido na célula selecionada.</p>
+			<p style="text-indent: 150px;"><img alt="Função PPGTO" src="../images/ppmt.png" /></p>
+		</div>
+	</body>
+</html>

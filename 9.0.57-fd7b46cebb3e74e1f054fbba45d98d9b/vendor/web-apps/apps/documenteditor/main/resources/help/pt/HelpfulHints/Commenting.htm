@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Comentando documentos</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Tips on collaborative editing" />
+    <link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+    <link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+    <script type="text/javascript" src="../callback.js"></script>
+    <script type="text/javascript" src="../search/js/page-search.js"></script>
+</head>
+<body>
+    <div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+        <h1>Comentando documentos</h1>
+        <p>O <a href="https://www.onlyoffice.com/pt/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Documentos</b></a> permite que você mantenha uma abordagem constante de toda a equipe para o fluxo de trabalho: <a href="https://helpcenter.onlyoffice.com/userguides/groups-guides-documents-share-documents.aspx" onclick="onhyperlinkclick(this)">compartilhar</a> arquivos e pastas, <a href="../HelpfulHints/CollaborativeEditing.htm" onclick="onhyperlinkclick(this)">collaborate</a> on documents in real time, <a href="../HelpfulHints/Communicating.htm" onclick="onhyperlinkclick(this)">comunicação</a> direto no editor, salve <a href="../HelpfulHints/VersionHistory.htm" onclick="onhyperlinkclick(this)">versões de documentos</a> para uso futuro, <a href="../HelpfulHints/Review.htm" onclick="onhyperlinkclick(this)">revise</a> documentos e adicione suas alterações sem realmente editar o arquivo, <a href="../HelpfulHints/Comparison.htm" onclick="onhyperlinkclick(this)">comparar e mesclar</a> documentos para facilitar o processamento e a edição.</p>
+        <p>No <b>Editor de Documentos</b> você pode deixar comentários no conteúdo dos documentos sem realmente editá-los. Diferente do <a href="../HelpfulHints/Communicating.htm" onclick="onhyperlinkclick(this)">chat</a>, os comentários permanecem até serem excluídos.</p>
+        <h3>Deixando comentários e respondendo a eles</h3>
+        <p>Para deixar um comentário,</p>
+        <ol>
+            <li>selecione uma passagem de texto onde você acha que há um erro ou problema,</li>
+            <li>
+                mudar para o <b>Inserir</b> ou <b>Colaboração</b> guia da barra de ferramentas superior e clique no botão <div class = "icon icon-comment_toptoolbar"></div> <b>Comentário</b>, ou<br />
+                use o <div class = "icon icon-commentsicon"></div> ícone na barra lateral esquerda para abrir o <b>Comentários</b> painel e clique no link <b>Adicionar comentário ao documento</b>, ou<br />
+                clique com o botão direito do mouse na passagem de texto selecionada e selecione a opção <b>Adicionar comentário</b> no menu contextual,
+            </li>
+            <li>digite o texto necessário,</li>
+            <li>clique no botão<b>Adicionar Comentário/Adicionar</b>.</li>
+        </ol>
+        <p>O comentário será visto no <b>Comentários</b> painel à esquerda. Qualquer outro usuário pode responder ao comentário adicionado fazendo perguntas ou relatando o trabalho que realizou. Para este propósito, Clique no <b>Adicionar resposta</b> link situado abaixo do comentário, digite sua resposta no campo de entrada e pressione o botão <b>Responder</b>.</p>
+        <p>Se você estiver usando o modo de coedição <b>Restrito</b>, novos comentários adicionados por outros usuários ficarão visíveis somente depois que você clicar no botão <span class = "icon icon-saveupdate"></span> ícone no canto superior esquerdo da barra de ferramentas superior.</p>
+        <h3>Desativando exibição de comentários</h3>
+        <p>A passagem do texto que você comentou será destacada no documento. Para visualizar o comentário, basta clicar dentro da passagem. Para desativar este recurso,</p>
+        <ol>
+            <li>clique na guia <b>Arquivo</b> na barra de ferramentas superior,</li>
+            <li>selecione a opção <b>Configurações avançadas...</b> ,</li>
+            <li>desmarque <b>Ativar a exibiçãoda caixa dos comentários</b>.</li>
+        </ol>
+        <p>Agora os trechos comentados serão destacados somente se você clicar no botão <span class = "icon icon-commentsicon"></span>.</p>
+        <h3>Gerenciando comentários</h3>
+        <p>Você pode gerenciar os comentários adicionados usando os ícones no balão de comentário ou no <b>Comentários</b> painel à esquerda:</p>
+        <ul>
+            <li>
+                classificar os comentários adicionados clicando no <div class = "icon icon-sortcommentsicon"></div> ícone:
+                <ul>
+                    <li>por data: <b>Novidades</b> ou <b>Mais antigo</b>. Esta é a ordem de classificação por padrão.</li>
+                    <li>por autor: <b>Autor de A a Z</b> ou <b>Autor de Z a A</b>.</li>
+                    <li>por localização: <b>De cima</b> ou <b>De baixo</b>. A ordem de classificação usual de comentários por sua localização em um documento é a seguinte (a partir do topo): <em>comentários para texto</em>, <em>comentários para notas de rodapé</em>, <em>comentários para notas finais</em>, <em>comentários para cabeçalhos/rodapés</em>, <em>comentários para todo o documento</em>.</li>
+                    <li>por grupo: <b>Todos</b> ou escolha um determinado grupo da lista. Esta opção de classificação está disponível se você estiver executando uma versão que inclui esta funcionalidade.
+                    <p><img alt="Ordenar comentários" src="../images/sortcomments.png" /></p>
+                    </li>
+                </ul>
+            <li>edite o comentário atualmente selecionado clicando no botão <div class = "icon icon-editcommenticon"></div> ícone,</li>
+            <li>exclua o comentário atualmente selecionado clicando no <div class = "icon icon-deletecommenticon"></div> ícone,</li>
+            <li>feche a discussão atualmente selecionada clicando no botão <div class = "icon icon-resolveicon"></div> ícone se a tarefa ou problema que você declarou em seu comentário foi resolvido, depois disso a discussão que você abriu com seu comentário recebe o status resolvido. Para abri-lo novamente, clique no botão <div class = "icon icon-resolvedicon"></div> ícone. Se você deseja ocultar os comentários resolvidos, clique na guia <b>Arquivo</b> na barra de ferramentas superior, selecione a opção <b>Configurações avançadas...</b>, desmarque a opção <b>Ativar exibição do comentários resolvidos</b> e clique em <b>Aplicar</b>. Neste caso, os comentários resolvidos serão destacados apenas se você clicar no botão <div class = "icon icon-commentsicon"></div> ícone,</li>
+            <li>se você deseja gerenciar comentários em grupo, abra o <b>Resolver</b> menu suspenso na guia <b>Colaboração</b>. Selecione uma das opções para resolver comentários: <b>resolver comentários atuais</b>, <b>resolver meus comentários</b> ou <b>resolver todos os comentários</b> no documento.</li>
+        </ul>
+        <h3>Adicionando menções</h3>
+        <p class="note">Você só pode adicionar menções aos comentários feitos nas partes do texto e não no próprio documento.</p>
+         <p>Ao inserir comentários, você pode usar o recurso de <b>menções</b> que permite atrair a atenção de alguém para o comentário e enviar uma notificação ao usuário mencionado por e-mail e <b>Talk</b>.</p>
+         <p>Para adicionar uma menção,</p>
+        <ol>
+            <li>Digite o sinal "+" ou "@" em qualquer lugar no texto do comentário - uma lista dos usuários do portal será aberta. Para simplificar o processo de pesquisa, você pode começar a digitar um nome no campo de comentário - a lista de usuários mudará conforme você digita.</li>
+             <li>Selecione a pessoa necessária na lista. Se o arquivo ainda não foi compartilhado com o usuário mencionado, a janela <b>Configurações de compartilhamento</b> será aberta. O tipo de acesso <b>Somente leitura</b> é selecionado por padrão. <a href="https://helpcenter.onlyoffice.com/userguides/groups-guides-documents-share-documents.aspx" onclick="onhyperlinkclick(this)">Altere-o se necessário</a>.</li>
+            <li>Clique <b>OK</b>.</li>
+        </ol>
+        <p>O usuário mencionado receberá uma notificação por e-mail de que foi mencionado em um comentário. Se o arquivo foi compartilhado, o usuário também receberá uma notificação correspondente.</p>
+         <h3>Removendo comentários</h3>
+         <p>Para remover comentários,</p>
+        <ol>
+            <li>clique no <div class = "icon icon-removecomment_toptoolbar"></div> <b>Remover</b> botão na guia <b>Colaboração</b> da barra de ferramentas superior,</li>
+             <li>
+                 selecione a opção necessária no menu:
+                <ul>
+                    <li><b>Excluir comentários atuais</b> - para remover o comentário atualmente selecionado. Se algumas respostas foram adicionadas ao comentário, todas as suas respostas também serão removidas.</li>
+                     <li><b>Excluir meus comentários</b> - para remover os comentários que você adicionou sem remover os comentários adicionados por outros usuários. Se algumas respostas foram adicionadas ao seu comentário, todas as respostas também serão removidas.</li>
+                     <li><b>Excluir todos os comentários</b> - para remover todos os comentários no documento que você e outros usuários adicionaram.</li>
+                </ul>
+            </li>
+        </ol>
+        <p>Para fechar o painel com comentários, clique no botão <span class = "icon icon-commentsicon"></span> ícone na barra lateral esquerda mais uma vez.</p>
+    </div>
+</body>
+</html>

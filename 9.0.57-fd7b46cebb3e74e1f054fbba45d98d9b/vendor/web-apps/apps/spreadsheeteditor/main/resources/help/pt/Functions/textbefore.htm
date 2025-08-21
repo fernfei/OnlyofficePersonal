@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Função TEXTOANTES</title>
+		<meta charset="utf-8" />
+		<meta name="descrição" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+			<div class="search-field">
+				<input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+			</div>
+			<h1>Função TEXTOANTES</h1>
+			<p>A função <b>TEXTOANTES</b> é uma das funções de texto e dados. É usado para retornar o texto que ocorre antes dos caracteres delimitadores.</p>
+            <p>A sintaxe da função <b>TEXTOANTES</b> é:</p>
+			<p style="text-indent: 150px;"><b><em>TEXTOANTES(texto, delimitador, [instance_num], [match_mode], [match_end], [if_not_found])</em></b></p>
+			<p>onde</p>
+			<p style="text-indent: 50px;"><b><em>texto</em></b> é o texto no qual a pesquisa é realizada. Caracteres curinga não são permitidos. Se <b>texto</b> for uma string vazia, a função retornará um texto vazio.</p>
+			<p style="text-indent: 50px;"><b><em>delimitador</em></b> é o texto que marca o ponto antes do qual a função extrai o texto.</p>
+			<p style="text-indent: 50px;"><b><em>instance_num</em></b> é um argumento opcional. A instância do delimitador antes da qual a função extrai o texto. Por padrão, <b>instance_num</b> é igual a <b>1</b>. Um número negativo iniciará a pesquisa de texto do final.</p>
+			<p style="text-indent: 50px;"><b><em>match_mode</em></b> é um argumento opcional. É usado para determinar se a pesquisa de texto diferencia maiúsculas de minúsculas. O padrão diferencia maiúsculas de minúsculas. Os seguintes valores são usados: <b>0</b> para diferenciar maiúsculas de minúsculas, <b>1</b> para não diferenciar maiúsculas de minúsculas.</p>
+			<p style="text-indent: 50px;"><b><em>match_end</em></b> é um argumento opcional. Trata o final do texto como um delimitador. Por padrão, o texto é uma correspondência exata. Os seguintes valores são usados: <b>0</b> para <b><em>não</em></b> corresponder o delimitador ao final do texto, <b>1</b> para corresponder o delimitador no final do texto.</p>
+			<p style="text-indent: 50px;"><b><em>if_not_found</em></b> é um argumento opcional. Ele define um valor que será retornado se nenhuma correspondência for encontrada.</p>
+            <p>Para aplicar a função <b>TEXTOANTES</b>,</p>
+			<ol>
+				<li>selecione a célula onde deseja exibir o resultado,</li>
+                <li>
+                    clique no ícone <b>Inserir função</b> <div class="icon icon-insertfunction"></div> situado na barra de ferramentas superior,
+                    <br />ou clique com o botão direito em uma célula selecionada e selecione a opção <b>Inserir Função</b> no menu,
+                    <br />ou clique no ícone <div class="icon icon-function"></div> situado na barra de fórmulas,
+				</li>
+				<li>selecione o grupo de funções <b>Texto e dados</b> na lista,</li>
+                <li>clique na função <b>TEXTOANTES</b>,</li>
+                <li>insira os argumentos necessários separando-os por vírgulas,</li>
+                <li>pressione o botão <b>Entrar</b>.</li>
+			</ol>
+			<p>O resultado será exibido na célula selecionada.</p>
+			<p style="text-indent: 150px;"><img alt="Função TEXTOANTES" src="../images/textbefore.png" /></p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixabay</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Beschreibung des Pixabay-Plugins für ONLYOFFICE-Editoren, mit dem Sie Ihrem Dokument kostenlose Bilder vom Pixabay-Dienst hinzufügen können" />
+    <link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+    <link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+    <script type="text/javascript" src="../callback.js"></script>
+    <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+</head>
+<body>
+    <div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+        <h1>Pixabay</h1>
+        <p>Mit dem Plugin <b>Pixabay</b> können Sie Ihrem Dokument Bilder aus einer offenen Sammlung des Pixabay-Dienstes hinzufügen, der urheberrechtsfreie Bilder anbietet.</p>
+        <p class="note">Das Plugin ist mit den <a href="https://git.onlyoffice.com/ONLYOFFICE/DocumentServer" target="_blank" onclick="onhyperlinkclick(this)">selbstgehosteten</a> und den <a href="https://git.onlyoffice.com/ONLYOFFICE/DesktopEditors" target="_blank" onclick="onhyperlinkclick(this)">Desktop</a>-Versionen der ONLYOFFICE-Editoren kompatibel und kann mithilfe des <a href="https://helpcenter.onlyoffice.com/ONLYOFFICE-Editors/Editors-User-Guides/AllEditors/Plugin-manager.aspx" target="_blank" onclick="onhyperlinkclick(this)">Plugin-Managers</a> manuell zu ONLYOFFICE-Instanzen hinzugefügt werden.</p>
+
+        <h3>Installation</h3>
+        <p>Um das <b>Pixabay</b>-Plugin zu installieren,</p>
+        <ol>
+            <li>Gehen Sie zur Registerkarte <b>Plugins</b>.</li>
+            <li>Öffnen Sie den <b>Plugin-Manager</b>.</li>
+            <li>Suchen Sie im Marktplatz nach <div class="icon icon-pixabay_store_icon"></div> und klicken Sie unten auf die Schaltfläche <b>Installieren</b>.</li>
+            <li>Klicken Sie auf der Registerkarte <b>Plugins</b> auf das <div class="icon icon-pixabay_icon"></div>-Symbol <b>Pixabay</b>.</li>
+            <li>Fahren Sie mit der Plugin-Konfiguration fort.</li>
+        </ol>
+        <p class="note">Lesen Sie bitte für weitere Details die <a href="https://api.onlyoffice.com/docs/plugin-and-macros/get-started/overview/" target="_blank" onclick="onhyperlinkclick(this)">ONLYOFFICE API-Dokumentation</a>.</p>
+
+        <h3>Konfiguration</h3>
+        <ol>
+            <li>Melden Sie sich bei Ihrem <b>Pixabay</b>-Konto an oder registrieren Sie ein neues.</li>
+            <li>Gehen Sie zum Abschnitt <b>Bilder suchen</b> der <a href="https://pixabay.com/api/docs" target="_blank" onclick="onhyperlinkclick(this)"><b>Pixabay API-Seite</b></a>.</li>
+            <li>
+                Scrollen Sie nach unten zur Liste <b>Parameter</b> und kopieren Sie den Link unter dem Parameter <b>Schlüssel</b>. Wenn Sie nicht angemeldet sind, drücken Sie neben dem Parameter <b>Schlüssel</b> auf <b>Anmelden</b>.
+                <p><img alt="Pixabay API key" src="../../../../../../common/main/resources/help/de/images/pixabay_apikey.png" /></p>
+            </li>
+            <li>Fügen Sie den Schlüssel in das Feld <b>API-Schlüssel</b> im linken Bereich der Registerkarte <b>Plugins</b> im <b>Dokumenteneditor</b> ein.</li>
+            <li>Klicken Sie auf <b>Speichern</b>.</li>
+        </ol>
+        <p><img alt="Pixabay Panel" src="../../../../../../common/main/resources/help/de/images/pixabay_left.png" /></p>
+
+        <h3>Anwendung</h3>
+        <ol>
+            <li>Gehen Sie zur Registerkarte <b>Plugins</b>.</li>
+            <li>Klicken Sie auf das <div class="icon icon-pixabay_icon"></div> <b>Pixabay</b>-Symbol.</li>
+            <li>Geben Sie im sich öffnenden linken Bereich das Schlüsselwort ein, das Sie mit dem gesuchten Bild verknüpfen.</li>
+            <li>
+                Verwenden Sie die Schaltfläche <b>Einstellungen anzeigen</b>, um Ihre Suche nach <b>Sprache</b>, <b>Bildtyp</b>, <b>Ausrichtung</b> und <b>Kategorie</b> zu verfeinern. Klicken Sie auf <b>Einstellungen ausblenden</b>, um den Suchbereich einzuschränken.
+                <p><img alt="Pixabay Einstellungen" src="../../../../../../common/main/resources/help/de/images/pixabay_settings.png" /></p>
+            </li>
+            <li>Klicken Sie auf <b>Suchen</b>.</li>
+            <li>Scrollen Sie durch die Suchergebnisse und klicken Sie auf das Bild, um es Ihrem Dokument hinzuzufügen.</li>
+        </ol>
+        <p><img alt="Pixabay-Ergebnisse" src="../images/pixabay_results.png" /></p>
+    </div>
+</body>
+</html>

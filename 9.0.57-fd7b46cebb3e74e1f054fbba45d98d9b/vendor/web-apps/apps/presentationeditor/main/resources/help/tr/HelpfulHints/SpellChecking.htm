@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Yazım denetimi</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Spell check the text in your language while editing a presentation" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+			<div class="search-field">
+				<input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+			</div>
+			<h1>Yazım denetimi</h1>
+			<p><a target="_blank" href="https://www.onlyoffice.com/en/presentation-editor.aspx" onclick="onhyperlinkclick(this)"><b>Sunu D&uuml;zenleyici</b></a>, metninizin belirli bir dildeki yazımını kontrol etmenizi ve d&uuml;zenlerken yapılan hataları d&uuml;zeltmenizi sağlar. <em>Masa&uuml;st&uuml; s&uuml;r&uuml;m&uuml;nde</em>, &uuml;&ccedil; d&uuml;zenleyicide de ortak olan &ouml;zel bir s&ouml;zl&uuml;ğe s&ouml;zc&uuml;kler eklemek de m&uuml;mk&uuml;nd&uuml;r.</p>
+			<p class="note"><b>S&uuml;r&uuml;m 6.3&apos;ten</b> başlayarak ONLYOFFICE d&uuml;zenleyicileri, kayda değer bir bellek t&uuml;ketimi olmadan daha sorunsuz &ccedil;alışma i&ccedil;in <b>SharedWorker</b> aray&uuml;z&uuml;n&uuml; destekler. Tarayıcınız SharedWorker&apos;ı desteklemiyorsa, sadece <b>Worker</b> aktif olacaktır. SharedWorker hakkında daha fazla bilgi i&ccedil;in l&uuml;tfen <a href="https://javascript.plainenglish.io/introduction-to-shared-workers-533d9abe9de3">bu yazıya</a> bakın.</p>
+			<p>Her şeyden &ouml;nce sununuz i&ccedil;in <b>bir dil se&ccedil;in</b>. Durum &ccedil;ubuğunun sağ tarafındaki <span class="icon icon-document_language"></span> simgesine tıklayın. A&ccedil;ılan pencerede gerekli dili se&ccedil;in ve <b>Tamam</b> se&ccedil;eneğine tıklayın. Se&ccedil;ilen dil t&uuml;m sunuya uygulanacaktır.</p>
+			<p><img alt="Sunu dilini ayarla penceresi" src="../../../../../../common/main/resources/help/tr/images/document_language_window.png" /></p>
+			<p>Sunudaki metnin herhangi bir par&ccedil;ası i&ccedil;in <b>farklı bir dil se&ccedil;mek</b> i&ccedil;in fare ile gerekli metin pasajını se&ccedil;in ve durum &ccedil;ubuğundaki <img alt="Yazım denetimi - Metin Dili seçici" src="../images/spellchecking_language.png" /> men&uuml;s&uuml;n&uuml; kullanın.</p>
+			<p>Yazım denetimi se&ccedil;eneğini <b>etkinleştirmek</b> i&ccedil;in:</p>
+			<ul>
+				<li>Durum &ccedil;ubuğundaki <div class = "icon icon-spellcheckdeactivated"></div> <b>Yazım denetimi</b> simgesine tıklayabilir veya</li>
+				<li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Dosya</b> sekmesini a&ccedil;abilir, <b>Gelişmiş Ayarlar</b> se&ccedil;eneğini se&ccedil;ebilir, <b>Yazım denetimi se&ccedil;eneğini etkinleştir</b> kutusuna tıklayabilir ve <b>Uygula</b> d&uuml;ğmesine tıklayabilirsiniz.</li>
+			</ul>
+			<p>Yanlış yazılmış s&ouml;zc&uuml;klerin altı kırmızı bir &ccedil;izgi ile &ccedil;izilir.</p>
+			<p>Men&uuml;y&uuml; etkinleştirmek i&ccedil;in gerekli kelimeye sağ tıklayın ve:</p>
+			<ul>
+				<li>Yanlış yazılan kelimeyi &ouml;nerilen kelimeyle değiştirmek i&ccedil;in &ouml;nerilen doğru yazılmış benzer kelimelerden birini se&ccedil;in. &Ccedil;ok fazla se&ccedil;enek varsa, men&uuml;de <b>Daha fazla se&ccedil;enek...</b> se&ccedil;eneği belirir;</li>
+				<li>Sadece o kelimeyi atlamak ve vurgusunu kaldırmak i&ccedil;in <b>Yoksay</b> se&ccedil;eneğini veya metinde tekrarlanan t&uuml;m aynı kelimeleri atlamak i&ccedil;in <b>Hepsini Yoksay</b> se&ccedil;eneğini kullanın;</li>
+				<li>Ge&ccedil;erli kelime s&ouml;zl&uuml;kte yoksa &ouml;zel s&ouml;zl&uuml;ğe ekleyebilirsiniz. Bu kelime bir dahaki sefer yanlış olarak değerlendirilmez. Bu se&ccedil;enek <em>Masa&uuml;st&uuml; s&uuml;r&uuml;m&uuml;nde</em> mevcuttur.</li>
+				<li>Bu kelime i&ccedil;in farklı bir dil se&ccedil;in.</li>
+			</ul>
+			<p><img alt="Yazım denetimi" src="../images/spellchecking_presentation.png" /></p>
+			<p>Yazım denetimi se&ccedil;eneğini <b>devre dışı bırakmak</b> i&ccedil;in:</p>
+			<ul>
+				<li>Durum &ccedil;ubuğundaki <div class = "icon icon-spellcheckactivated"></div> <b>Yazım denetimi</b> simgesine tıklayabilir veya</li>
+				<li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Dosya</b> sekmesini a&ccedil;abilir, <b>Gelişmiş Ayarlar</b> se&ccedil;eneğini se&ccedil;ebilir, <b>Yazım denetimi se&ccedil;eneğini etkinleştir</b> kutusunun onay işaretini kaldırabilir ve <b>Uygula</b> d&uuml;ğmesine tıklayabilirsiniz.</li>
+			</ul>
+		</div>
+	</body>
+</html>

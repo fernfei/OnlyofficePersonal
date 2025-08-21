@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>MID/MIDB Function</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>MID/MIDB Function</h1>
+			<p>The <b>MID/MIDB</b> function is one of the <a href="../UsageInstructions/InsertFunction.htm#textdata" onclick="onhyperlinkclick(this)">text and data functions</a>. Is used to extract the characters from the specified string starting from any position. The <b>MID</b> function is intended for languages that use the single-byte character set (SBCS), while <b>MIDB</b> - for languages that use the double-byte character set (DBCS) like Japanese, Chinese, Korean etc.</p>
+			<h3>Syntax</h3> 
+            <p><b><em>MID(text, start_num, num_chars)</em></b></p>
+            <p>The <b>MID</b> function has the following arguments:</p>
+            <table style="width: 40%">
+                <tr>
+                    <th style="background-color: #f4f4f4" width="150ch"><b>Argument</b></th>
+                    <th style="background-color: #f4f4f4"><b>Description</b></th>
+                </tr>
+                <tr>
+                    <td><b><em>text</em></b></td>
+                    <td>A string you need to extract the characters from.</td>
+                </tr>
+                <tr>
+                    <td><b><em>start_num</em></b></td>
+                    <td>A position you need to start extracting from.</td>
+                </tr>
+                <tr>
+                    <td><b><em>num_chars</em></b></td>
+                    <td>A number of the characters you need to extract.</td>
+                </tr>
+            </table>
+
+            <p><b><em>MIDB(text, start_num, num_bytes)</em></b></p>
+            <p>The <b>MIDB</b> function has the following arguments:</p>
+            <table style="width: 40%">
+                <tr>
+                    <th style="background-color: #f4f4f4" width="150ch"><b>Argument</b></th>
+                    <th style="background-color: #f4f4f4"><b>Description</b></th>
+                </tr>
+                <tr>
+                    <td><b><em>text</em></b></td>
+                    <td>A string you need to extract the characters from.</td>
+                </tr>
+                <tr>
+                    <td><b><em>start_num</em></b></td>
+                    <td>A position you need to start extracting from.</td>
+                </tr>
+                <tr>
+                    <td><b><em>num_bytes</em></b></td>
+                    <td>A number of the characters you need to extract, based on bytes.</td>
+                </tr>
+            </table>
+            <h3>Notes</h3>
+			<p><a href="../UsageInstructions/InsertFunction.htm#applyfunction" onclick="onhyperlinkclick(this)">How to apply</a> the <b>MID/MIDB</b> function.</p>
+			
+			<h3>Examples</h3>
+            <p>The figure below displays the result returned by the <b>MID</b> function.</p>
+            <p><img alt="MID Function" src="../images/mid.png" /></p>
+		</div>
+	</body>
+</html>

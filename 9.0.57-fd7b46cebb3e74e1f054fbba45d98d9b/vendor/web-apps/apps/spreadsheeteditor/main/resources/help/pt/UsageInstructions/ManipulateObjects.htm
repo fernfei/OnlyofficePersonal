@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Manipular objetos</title>
+		<meta charset="utf-8" />
+		<meta name="descrição" content="Mover, girar, redimensionar, remodelar e organizar formas automáticas, imagens, gráficos." />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+        <div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+            <h1>Manipular objetos</h1>
+            <p>No <a href="https://www.onlyoffice.com/pt/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Planilhas</b></a>, você pode redimensionar, mover, girar e organizar formas automáticas, imagens e gráficos inseridos em sua planilha.</p>
+            <p class="note">
+                <b>Observação</b>: a lista de atalhos de teclado que podem ser usados ao trabalhar com objetos está disponível <a href="../HelpfulHints/KeyboardShortcuts.htm#workwithobjects" onclick="onhyperlinkclick(this)">aqui</a>.
+            </p>
+            <h3>Redimensionar objetos</h3>
+             <p>Para alterar o <b>tamanho</b> de uma autoforma/imagem/gráfico, arraste pequenos quadrados <span class="icon icon-resize_square"></span> situados nas bordas do objeto. Para manter as proporções originais do objeto selecionado durante o redimensionamento, mantenha pressionada a tecla <b>Shift</b> e arraste um dos ícones do canto.</p>
+             <p class="note"><b>Nota</b>: para redimensionar o gráfico ou imagem inserida, você também pode usar a barra lateral direita que será ativada assim que você selecionar o objeto necessário. Para abri-lo, clique em <b>Configurações do gráfico</b> <span class="icon icon-chartsettingsicon"></span> ou em <b>Configurações de imagem</b> <span class="icon icon-image_settings_icon ícone "></span> à direita.</p>
+             <p><span class="big big-maintain_proportions"></span></p>
+             <h3>Mover objetos</h3>
+            <p>
+                Para alterar a <b>posição</b> de uma autoforma/imagem/gráfico, use o ícone de seta <span class="icon icon-arrow"></span> que aparece depois de passar o cursor do mouse sobre o objeto. Arraste o objeto para a posição necessária sem soltar o botão do mouse.
+                 Para mover o objeto em incrementos de um pixel, mantenha pressionada a tecla <b>Ctrl</b> e use as setas do teclado.
+                 Para mover o objeto estritamente na horizontal/vertical e evitar que ele se mova em uma direção perpendicular, mantenha pressionada a tecla <b>Shift</b> ao arrastar.
+            </p>
+            <h3>Girar objetos</h3>
+             <p>Para <b>girar</b> manualmente a autoforma/imagem, passe o cursor do mouse sobre a alça de rotação <span class="icon icon-greencircle"></span> e arraste-a no sentido horário ou anti-horário. Para restringir o ângulo de rotação a incrementos de 15 graus, mantenha pressionada a tecla <b>Shift</b> enquanto gira.</p>
+             <p>Para girar uma forma ou imagem em 90 graus no sentido anti-horário/horário ou virar o objeto horizontalmente/verticalmente, você pode usar a seção <b>Rotação</b> da barra lateral direita que será ativada assim que você selecionar o objeto necessário. Para abri-lo, clique no ícone <b>Configurações de forma</b> <span class="icon icon-shape_settings_icon"></span> ou no ícone <b>Configurações de imagem</b> <span class="icon icon- image_settings_icon"></span> à direita. Clique em um dos botões:</p>
+            <ul>
+                <li><div class = "icon icon-rotatecounterclockwise"></div> para girar o objeto em 90 graus no sentido anti-horário</li>
+                 <li><div class = "icon icon-rotate-horário"></div> para girar o objeto 90 graus no sentido horário</li>
+                 <li><div class = "icon icon-fliplefttoright"></div> para virar o objeto horizontalmente (da esquerda para a direita)</li>
+                 <li><div class = "icon icon-flipupsidedown"></div> para virar o objeto verticalmente (de cabeça para baixo)</li>
+            </ul>
+            <p>Também é possível clicar com o botão direito do mouse na imagem ou forma, escolher a opção <b>Girar</b> no menu contextual e usar uma das opções de rotação disponíveis.</p>
+             <p>Para girar uma forma ou imagem em um ângulo exatamente especificado, clique no link <b>Mostrar configurações avançadas</b> na barra lateral direita e use a guia <b>Rotação</b> de <b>Avançado Janela de configurações</b>. Especifique o valor necessário medido em graus no campo <b>Ângulo</b> e clique em <b>OK</b>.</p>
+             <h3>Remodelar autoformas</h3>
+             <p>Ao modificar algumas formas, por exemplo, setas com figuras ou legendas, o ícone <span class="icon icon-yellowdiamond"></span> em forma de diamante amarelo também está disponível. Permite ajustar alguns aspectos da forma, por exemplo, o comprimento da ponta de uma flecha.</p>
+             <p><span class="big big-reshaping"></span></p>
+             <p>Para remodelar uma forma automática, você também pode usar a opção <b>Editar pontos</b> no <b>menu de contexto</b>.</p>
+             <p>A opção <b>Editar pontos</b> é usada para personalizar ou alterar a curvatura de sua forma.</p>
+            <ol>
+                <li>
+                    Para ativar os pontos de ancoragem editáveis de uma forma, clique com o botão direito na forma e escolha <b>Editar pontos</b> no menu. Os quadrados pretos que se tornam ativos são os pontos onde duas linhas se encontram, e a linha vermelha contorna a forma. Clique e arraste-o para reposicionar o ponto e alterar o contorno da forma.
+                     <p><img alt="Menu Editar Pontos" src="../images/editpoints_rightclick.png" /></p>
+                </li>
+                <li>
+                   Depois de clicar no ponto de ancoragem, duas linhas azuis com quadrados brancos nas extremidades aparecerão. Estas são as alças de Bezier que permitem criar uma curva e alterar a suavidade de uma curva.
+                    <p><span class = "big big-editpoints_example"></span></p>
+                </li>
+                <li>
+                    Enquanto os pontos de ancoragem estiverem ativos, você pode adicioná-los e excluí-los:
+                     <ul>
+                         <li><b>Para adicionar um ponto a uma forma</b>, segure <b>Ctrl</b> e clique na posição onde deseja adicionar um ponto de ancoragem.</li>
+                         <li><b>Para excluir um ponto</b>, segure <b>Ctrl</b> e clique no ponto desnecessário.</li>
+                    </ul>
+                </li>
+            </ol>
+            <h3>Alinhar objetos</h3>
+             <p>Para <b>alinhar</b> <em>dois ou mais</em> objetos selecionados em relação um ao outro, mantenha pressionada a tecla <b>Ctrl</b> enquanto seleciona os objetos com o mouse, em seguida, clique no ícone <span class="icon icon-align_toptoolbar"></span> <b>Alinhar</b> na guia <b>Layout</b> da barra de ferramentas superior e selecione o tipo de alinhamento necessário na lista:</p>
+            <ul>
+                <li><b>Alinhar à esquerda</b> <div class = "icon icon-alignobjectleft"></div> - para alinhar objetos relativos uns aos outros à borda esquerda do objeto mais à esquerda,</li>
+                 <li><b>Alinhar centro</b> <div class = "icon icon-alignobjectcenter"></div> - para alinhar objetos relativos entre si no centro,</li>
+                 <li><b>Alinhar à direita</b> <div class = "icon icon-alignobjectright"></div> - para alinhar objetos relativos entre si à borda direita do objeto mais à direita,</li>
+                 <li><b>Alinhar superior</b> <div class = "icon icon-alignobjecttop"></div> - para alinhar objetos relativos entre si à borda superior do objeto superior,</li>
+                 <li><b>Alinhar meio</b> <div class = "icon icon-alignobjectmiddle"></div> - para alinhar objetos relativos entre si no meio,</li>
+                 <li><b>Alinhar inferior</b> <div class = "icon icon-alignobjectbottom"></div> - para alinhar objetos relativos entre si à borda inferior do objeto mais inferior.</li>
+            </ul>
+            <p>Como alternativa, você pode clicar com o botão direito do mouse nos objetos selecionados, escolher a opção <b>Alinhar</b> no menu contextual e usar uma das opções de alinhamento disponíveis.</p>
+             <p class="note"><b>Observação</b>: as opções de alinhamento serão desativadas se você selecionar menos de dois objetos.</p>
+             <h3>Distribuir objetos</h3>
+             <p>Para <b>distribuir</b> <em>três ou mais</em> objetos selecionados horizontal ou verticalmente entre dois objetos selecionados mais externos para que haja distância igual entre eles, clique no ícone <span class="icon -align_toptoolbar"></span> ícone <b>Alinhar</b> na guia <b>Layout</b> da barra de ferramentas superior e selecione o tipo de distribuição necessário na lista:</p>
+            <ul>
+                <li><b>Distribuir horizontalmente</b> <div class = "icon icon-distributehorizontally"></div> - para distribuir objetos uniformemente entre os objetos selecionados mais à esquerda e mais à direita.</li>
+                 <li><b>Distribuir verticalmente</b> <div class = "icon icon-distributevertically"></div> - para distribuir objetos uniformemente entre os objetos selecionados mais acima e mais abaixo.</li>
+            </ul>
+            <p>Como alternativa, você pode clicar com o botão direito nos objetos selecionados, escolher a opção <b>Alinhar</b> no menu contextual e usar uma das opções de distribuição disponíveis.</p>
+             <p class="note"><b>Observação</b>: as opções de distribuição serão desativadas se você selecionar menos de três objetos.</p>
+             <h3>Agrupar vários objetos</h3>
+             <p>Para manipular vários objetos ao mesmo tempo, você pode <b>agrupá-los</b>. Mantenha pressionada a tecla <b>Ctrl</b> enquanto seleciona os objetos com o mouse e clique na seta ao lado do <span class="icon icon-group_toptoolbar"></span> <b>Grupo</b> ícone na guia <b>Layout</b> da barra de ferramentas superior e selecione a opção necessária na lista:</p>
+            <ul>
+                <li><b>Grupo</b> <div class = "icon icon-group"></div> - para combinar vários objetos em um grupo para que possam ser simultaneamente girados, movidos, redimensionados, alinhados, organizados, copiados, colados, formatados como um único objeto.</li>
+                 <li><b>Desagrupar</b> <div class = "icon icon-ungroup"></div> - para desagrupar o grupo selecionado dos objetos previamente combinados.</li>
+            </ul>
+            <p>Como alternativa, você pode clicar com o botão direito nos objetos selecionados, escolher a opção <b>Organizar</b> no menu contextual e então usar a opção <b>Agrupar</b> ou <b>Desagrupar</b>.</p>
+             <p class="note"><b>Nota</b>: a opção <b>Grupo</b> é desativada se você selecionar menos de dois objetos. A opção <b>Desagrupar</b> está disponível somente quando um grupo dos objetos previamente combinados é selecionado.</p>
+             <p><img alt="Agrupar vários objetos" src="../images/grouping.png" /></p>
+             <h3 id="arrange">Organize vários objetos</h3>
+             <p>Para <b>organizar</b> o objeto selecionado ou vários objetos (por exemplo, para alterar sua ordem quando vários objetos se sobrepõem), você pode usar o <span class="icon icon-bringforward_toptoolbar"></span > Ícones <b>Avançar</b> e <span class="icon icon-sendbackward_toptoolbar"></span> <b>Retroceder</b> na guia <b>Layout</b> da parte superior barra de ferramentas e selecione o tipo de arranjo necessário na lista.</p>
+             <p>Para mover o(s) objeto(s) selecionado(s) para frente, clique na seta ao lado do ícone <span class="icon icon-bringforward_toptoolbar"></span> <b>Avançar</b> no <b>Layout </b> da barra de ferramentas superior e selecione o tipo de arranjo necessário na lista:</p>
+            <ul>
+                <li><b>Trazer para o primeiro plano</b> <div class = "icon icon-bringtofront"></div> - para mover o(s) objeto(s) na frente de todos os outros objetos,</li>
+                 <li><b>Avançar</b> <div class = "icon icon-bringforward"></div> - para mover o(s) objeto(s) selecionado(s) um nível adiante em relação a outros objetos.</li>
+             </ul>
+             <p>Para mover o(s) objeto(s) selecionado(s) para trás, clique na seta ao lado do ícone <span class="icon icon-sendbackward_toptoolbar"></span> <b>Enviar para trás</b> no <b>Layout </b> da barra de ferramentas superior e selecione o tipo de arranjo necessário na lista:</p>
+             <ul>
+                 <li><b>Enviar para segundo plano</b> <div class = "icon icon-sendtoback"></div> - para mover o(s) objeto(s) para trás de todos os outros objetos,</li>
+                 <li><b>Enviar para trás</b> <div class = "icon icon-sendbackward"></div> - para mover o(s) objeto(s) selecionado(s) um nível para trás em relação a outros objetos.</li>
+             </ul>
+             <p>Como alternativa, você pode clicar com o botão direito do mouse no(s) objeto(s) selecionado(s), escolher a opção <b>Organizar</b> no menu contextual e então usar uma das opções de arranjo disponíveis.</p>
+        </div>
+	</body>
+</html>

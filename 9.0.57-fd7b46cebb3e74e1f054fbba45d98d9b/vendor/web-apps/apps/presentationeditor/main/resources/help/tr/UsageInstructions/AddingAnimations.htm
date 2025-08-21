@@ -1,0 +1,90 @@
+﻿	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Animasyon ekleme</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Describing how to add and manage animation effects on a slide." />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<script type="text/javascript" src="../callback.js"></script>
+		<script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+        <div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+            </div>
+            <h1>Animasyon ekleme</h1>
+            <p><b>Animasyon</b>, sunununuzu daha dinamik hale getirmek ve &ouml;nemli bilgileri vurgulamak i&ccedil;in metin, nesne ve grafikleri hareketlendirmenizi sağlayan g&ouml;rsel bir efekttir. Metin, nesne ve grafiklerin hareketini, rengini ve boyutunu kontrol edebilirsiniz.</p>
+            <h3 id="applyanimation">Bir animasyon efekti uygulamak i&ccedil;in</h3>
+            <ol>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Animasyon</b> sekmesine ge&ccedil;iş yapın,</li>
+                <li>Animasyon efektini uygulamak istediğiniz metni, nesneyi veya grafik &ouml;ğesini se&ccedil;in,</li>
+                <li>Animasyon galerisinden bir <b>Animasyon</b> efekti se&ccedil;in,</li>
+                <li>Animasyon galerisinin yanında bulunan <b>Parametrelere</b> tıklayarak animasyon efekti hareket y&ouml;n&uuml;n&uuml; se&ccedil;in. Listedeki parametreler uyguladığınız efekte bağlıdır.</li>
+            </ol>
+            <p>Ge&ccedil;erli slaytta animasyon efektlerini &ouml;nizleyebilirsiniz. Varsayılan olarak, bir slayda eklediğinizde animasyon efektleri otomatik olarak oynatılır, ancak bunları kapatabilirsiniz. <b>Animasyon</b> sekmesinde <b>&Ouml;nizle</b> a&ccedil;ılır listesine tıklayın ve bir &ouml;nizleme modu se&ccedil;in:</p>
+            <ul>
+                <li><b>&Ouml;nizle</b> d&uuml;ğmesine tıkladığınızda bir &ouml;nizleme g&ouml;stermek i&ccedil;in <b>&Ouml;nizle</b>,</li>
+                <li>Bir slayda animasyon eklediğinizde veya mevcut bir animasyonu değiştirdiğinizde &ouml;nizlemenin otomatik olarak g&ouml;sterilmesi i&ccedil;in <b>Otomatik &Ouml;nizle</b>.</li>
+            </ul>
+
+            <h3>Animasyon t&uuml;rleri</h3>
+            <p>T&uuml;m <b>animasyon efektleri</b> <b>animasyon galerisinde</b> listelenir. A&ccedil;mak i&ccedil;in a&ccedil;ılır oka tıklayın. Her <b>animasyon efekti</b> yıldız şeklindeki bir simge ile temsil edilir. Animasyonlar oluştukları noktaya g&ouml;re gruplandırılır:</p>
+            <p><img alt="Animasyon Galerisi" src="../images/animationgallery.png" /></p>
+            <p><b>Giriş</b> efektleri, nesnelerin bir slaytta nasıl g&ouml;r&uuml;neceğini belirler ve galeride yeşil renkle g&ouml;sterilir.</p>
+            <p><b>Vurgu</b> efektleri, bir nesneyi vurgulamak ve izleyicinin dikkatini &ccedil;ekmek i&ccedil;in nesnenin boyutunu veya rengini değiştirir ve galeride sarı veya iki renklidir.</p>
+            <p><b>&Ccedil;ıkış</b> efektleri, nesnelerin bir slayttan nasıl kaybolduğunu ve galeride nasıl kırmızıya boyandığını belirler.</p>
+            <p><b>Hareket Yolları,</b> bir cismin hareketini ve izlediği yolu belirler. Galerideki simgeler &ouml;nerilen yolu temsil eder. <b>&Ouml;zel Yol</b> se&ccedil;eneği de mevcuttur. Daha fazla bilgi edinmek i&ccedil;in l&uuml;tfen <a href="../UsageInstructions/MotionPath.htm" onclick="onhyperlinkclick(this)">aşağıdaki yazıyı</a> okuyun.</p> 
+            <p>Galeride bulunan t&uuml;m efektleri g&ouml;rmek i&ccedil;in animasyonlar galerisini aşağı kaydırın. Gerekli animasyonu galeride g&ouml;rm&uuml;yorsanız, galerinin altındaki <b>Daha Fazla Efekt G&ouml;ster</b> se&ccedil;eneğine tıklayın.</p>
+            <p><img alt="Daha Fazla Efekt" src="../images/moreeffects.png" /></p>
+            <p>Burada animasyon efektlerinin tam listesi yer almaktadır. Efektler ayrıca izleyicileri &uuml;zerinde yarattıkları g&ouml;rsel etkiye g&ouml;re gruplandırılır.</p>
+            <ul>
+                <li><b>Giriş</b>, <b>Vurgu</b> ve <b>&Ccedil;ıkış</b> efektleri <b>Temel</b>, <b>Zarif</b>, <b>Orta</b> ve <b>Heyecanlı</b> kategorilerine g&ouml;re gruplandırılır.</li>
+                <li><b>Hareket Yolu</b> efektleri <b>Temel</b>, <b>Zarif</b> ve <b>Orta</b> kategorilerine g&ouml;re gruplandırılır.</li>
+            </ul>
+            <p><!-- The <b>Preview Effect</b> option is active by default, uncheck it if you don’t want a preview.--></p>
+
+            <h3 id="multipleanimations">&Ccedil;oklu Animasyon Uygulama</h3>
+            <p>Aynı nesneye birden fazla animasyon efekti ekleyebilirsiniz. Bir animasyon daha eklemek i&ccedil;in</p>
+            <ol>
+                <li><b>Animasyon</b> sekmesindeki <b>Animasyon ekle</b> d&uuml;ğmesine tıklayın.</li>
+                <li>Animasyon efektleri listesi a&ccedil;ılacaktır. Animasyon uygulamak i&ccedil;in yukarıdaki 3. ve 4. adımları tekrarlayın.</li>
+            </ol>
+            <p><b>Animasyon Ekle</b> d&uuml;ğmesini değil de <b>Animasyon galerisini</b> kullanırsanız, ilk animasyon efekti yenisinin yerini alacaktır. Nesnenin yanındaki k&uuml;&ccedil;&uuml;k bir kare, uygulanan efektlerin sıra numaralarını g&ouml;sterir.</p>
+            <p>Bir nesneye birka&ccedil; efekt eklediğinizde, animasyon galerisinde <b>&Ccedil;oklu</b> animasyon simgesi g&ouml;r&uuml;n&uuml;r.</p>
+            <p><img alt="Çoklu Efektler" src="../images/multipleeffect_icon.png" /></p>
+            <h3 id="animationsorder">Bir slayttaki animasyon efektlerinin sırasını değiştirme</h3>
+            <ol>
+                <li>Animasyon kare işaretine tıklayın.</li>
+                <li>Slayttaki g&ouml;r&uuml;n&uuml;m sırasını değiştirmek i&ccedil;in <b>Animasyon</b> sekmesindeki <img alt="Daha Önceye Taşı" src="../images/moveearlier.png" /> veya <img alt="Daha Sonraya Taşı" src="../images/movelater.png" /> oklarına tıklayın.</li>
+            </ol>
+            <p><img alt="Animasyon Sırası" src="../images/multipleanimations_order.png" /></p>
+            <h3 id="timing">Animasyon zamanlamasını ayarlama</h3>
+            <p>Animasyonların slayttaki <b>başlangı&ccedil;</b>, <b>s&uuml;re</b>, <b>gecikme</b>, <b>tekrarlama</b> ve <b>geri sarmasını</b> ayarlamak i&ccedil;in <b>Animasyon</b> sekmesindeki zamanlama se&ccedil;eneklerini kullanın.</p>
+            <h4>Animasyon Başlangı&ccedil; Se&ccedil;enekleri</h4>
+            <ul>
+                <li><b>Tıklatıldığında</b>&nbsp;- Slayta tıkladığınızda animasyon başlar. Bu varsayılan se&ccedil;enektir.</li>
+                <li><b>&Ouml;ncekiyle birlikte</b> &ndash; Animasyon, &ouml;nceki animasyon efekti başladığında başlar ve efektler aynı anda g&ouml;r&uuml;n&uuml;r.</li>
+                <li><b>&Ouml;ncekinden sonra</b> &ndash; Animasyon, bir &ouml;nceki animasyon efektinden hemen sonra başlar.</li>
+            </ul>
+            <p class="note"><b>Not:</b> Animasyon efektleri bir slaytta otomatik olarak numaralandırılır. <b>&Ouml;ncekiyle birlikte</b> ve <b>&Ouml;ncekinden sonra</b> olarak ayarlanan t&uuml;m animasyonlar otomatik olarak g&ouml;r&uuml;necekleri i&ccedil;in bağlı oldukları animasyonun numarasını alır.</p>
+            <p><img alt="Animasyonları Numaralandırma" src="../images/animationnumbering.png" /></p>
+            <h4>Animasyon Tetik Se&ccedil;enekleri</h4>
+            <p><b>Tetik</b> d&uuml;ğmesine tıklayın ve uygun se&ccedil;eneklerden birini se&ccedil;in:</p>
+            <ul>
+                <li><b>Tıklama Sırasında</b>&nbsp;&ndash; Slaytta herhangi bir yere her tıkladığınızda sıradaki sonraki animasyonu başlatmak i&ccedil;in. Bu varsayılan se&ccedil;enektir.</li>
+                <li><b>Tıklandığında</b> - A&ccedil;ılır listeden se&ccedil;tiğiniz nesneye tıkladığınızda animasyonu başlatmak i&ccedil;in.</li>
+            </ul>
+            <p><img alt="Tetik Seçenekleri" src="../images/triggeroptions.png" /></p>
+            <h4>Diğer zamanlama se&ccedil;enekleri</h4>
+            <p><img alt="Zamanlama Seçenekleri" src="../images/timingoptions.png" /></p>
+            <p><b>S&uuml;re</b> &ndash; Bir animasyonun ne kadar s&uuml;reyle g&ouml;r&uuml;nt&uuml;lenmesini istediğinizi belirlemek i&ccedil;in bu se&ccedil;eneği kullanın. Men&uuml;den mevcut se&ccedil;eneklerden birini se&ccedil;in veya gerekli zaman değerini yazın.</p>
+            <p><img alt="Animasyon Süresi" src="../images/animationduration.png" /></p>
+            <p><b>Gecikme</b> &ndash; Se&ccedil;ilen animasyonun belirli bir s&uuml;re g&ouml;r&uuml;nt&uuml;lenmesini istiyorsanız veya efektler arasında duraklamaya ihtiyacınız varsa bu se&ccedil;eneği kullanın. Gerekli zaman değerini se&ccedil;mek i&ccedil;in okları kullanın veya saniye cinsinden &ouml;l&ccedil;&uuml;len gerekli değeri girin.</p>
+            <p><b>Tekrarla</b> &ndash; Bir animasyonu birden fazla kez g&ouml;r&uuml;nt&uuml;lemek istiyorsanız bu se&ccedil;eneği kullanın. <b>Tekrarla</b> kutusuna tıklayın ve mevcut se&ccedil;eneklerden birini se&ccedil;in veya kendi değerinizi girin.</p>
+            <p><img alt="Animasyonu Tekrarla" src="../images/animationrepeat.png" /></p>
+            <p><b>Geri Sar</b> &ndash; Animasyon sona erdiğinde nesneyi başlangı&ccedil;taki durumuna d&ouml;nd&uuml;rmek istiyorsanız bu kutuyu işaretleyin.</p>
+        </div>
+		</body>
+	</html>

@@ -1,0 +1,430 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Grafik ekleme</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Add a chart to your document and adjust its position, size and properties" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Grafik ekleme</h1>
+            <h3>Grafik ekle</h3>
+			<p><a href="https://www.onlyoffice.com/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Belge D&uuml;zenleyicide</b></a> bir grafik eklemek i&ccedil;in</p>
+            <ol>
+                <li>İmleci grafiğin eklenmesi gereken yere getirin,</li>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Ekle</b> sekmesine ge&ccedil;iş yapın,</li>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunda <div class = "icon icon-insertchart"></div> <b>Grafik</b> simgesine tıklayın,</li>
+                <li>
+                    Mevcut olanlardan gerekli grafik tipini se&ccedil;in:
+                    <details class="details-example">
+                        <summary>S&uuml;tun Grafikleri</summary>
+                        <ul>
+                            <li>K&uuml;melenmiş s&uuml;tun</li>
+                            <li>Yığılmış s&uuml;tun</li>
+                            <li>%100 yığılmış s&uuml;tun</li>
+                            <li>3-B K&uuml;melenmiş S&uuml;tun</li>
+                            <li>3-B Yığılmış S&uuml;tun</li>
+                            <li>3-B %100 yığılmış s&uuml;tun</li>
+                            <li>3-B S&uuml;tun</li>
+                        </ul>
+                    </details>
+                    <details class="details-example">
+                        <summary>&Ccedil;izgi Grafikler</summary>
+                        <ul>
+                            <li>&Ccedil;izgi</li>
+                            <li>Yığılmış &ccedil;izgi</li>
+                            <li>%100 yığılmış &ccedil;izgi</li>
+                            <li>İşaret&ccedil;ileri olan &ccedil;izgi</li>
+                            <li>İşaret&ccedil;ileri olan yığılmış &ccedil;izgi</li>
+                            <li>İşaret&ccedil;ileri olan %100 yığılmış &ccedil;izgi</li>
+                            <li>3-B &Ccedil;izgi</li>
+                        </ul>
+                    </details>
+                    <details class="details-example">
+                        <summary>Pasta grafikler</summary>
+                        <ul>
+                            <li>Pasta</li>
+                            <li>Halka</li>
+                            <li>3-B Pasta</li>
+                        </ul>
+                    </details>
+                    <details class="details-example">
+                        <summary>&Ccedil;ubuk Grafikler</summary>
+                        <ul>
+                            <li>K&uuml;melenmiş &ccedil;ubuk</li>
+                            <li>Yığılmış &ccedil;ubuk</li>
+                            <li>%100 yığılmış &ccedil;ubuk</li>
+                            <li>3-B k&uuml;melenmiş &ccedil;ubuk</li>
+                            <li>3-B yığılmış &ccedil;ubuk</li>
+                            <li>3-B %100 yığılmış &ccedil;ubuk</li>
+                        </ul>
+                    </details>
+                    <details class="details-example">
+                        <summary>Alan Grafikleri</summary>
+                        <ul>
+                            <li>Alan</li>
+                            <li>Yığılmış alan</li>
+                            <li>%100 yığılmış alan</li>
+                        </ul>
+                    </details>
+                    <details class="details-example">
+                        <summary>Hisse Senedi Grafikleri</summary>
+                    </details>
+                    <details class="details-example">
+                        <summary>XY (Dağılım) Grafikleri</summary>
+                        <ul>
+                            <li>Dağılım</li>
+                            <li>Yığılmış &ccedil;ubuk</li>
+                            <li>D&uuml;zg&uuml;nleştirilmiş &ccedil;izgileri ve işaret&ccedil;ileri olan dağılım</li>
+                            <li>D&uuml;zg&uuml;nleştirilmiş &ccedil;izgileri olan dağılım</li>
+                            <li>D&uuml;z &ccedil;izgileri ve işaret&ccedil;ileri olan dağılım</li>
+                            <li>D&uuml;z &ccedil;izgileri olan dağılım</li>
+                        </ul>
+                    </details>
+                    <details class="details-example">
+                        <summary>Birleşik Grafikler</summary>
+                        <ul>
+                            <li>K&uuml;melenmiş s&uuml;tun - &ccedil;izgi</li>
+                            <li>K&uuml;melenmiş s&uuml;tun - ikincil eksende &ccedil;izgi</li>
+                            <li>Yığılmış alan - k&uuml;melenmiş s&uuml;tun</li>
+                            <li>&Ouml;zel birleşim</li>
+                        </ul>
+                    </details>
+                </li>
+                <p class="note"><b>Not</b>: <b>ONLYOFFICE Belge D&uuml;zenleyici</b>, &uuml;&ccedil;&uuml;nc&uuml; taraf d&uuml;zenleyicilerle oluşturulmuş aşağıdaki grafik t&uuml;rlerini destekler: <b>Piramit</b>, <b>Bar (Piramit)</b>, <b>Yatay/Dikey Silindirler</b>, <b>Yatay/Dikey Koniler</b>. B&ouml;yle bir grafiği i&ccedil;eren dosyayı a&ccedil;abilir ve mevcut grafik d&uuml;zenleme ara&ccedil;larını kullanarak d&uuml;zenleyebilirsiniz.</p>
+                <li>
+                    Ardından, aşağıdaki kontrolleri kullanarak gerekli verileri h&uuml;crelere girebileceğiniz <b>Grafik D&uuml;zenleyici</b> penceresi a&ccedil;ılacaktır:
+                    <ul>
+                        <li><div class = "icon icon-copy"></div> ve <div class = "icon icon-paste"></div> kopyalanan verileri kopyalayıp yapıştırmak i&ccedil;in</li>
+                        <li><div class = "icon icon-undo1"></div> ve <div class = "icon icon-redo1"></div> eylemleri geri almak ve yeniden yapmak i&ccedil;in</li>
+                        <li><div class = "icon icon-insertfunction"></div> bir işlev eklemek i&ccedil;in</li>
+                        <li><div class = "icon icon-decreasedec"></div> ve <div class = "icon icon-increasedec"></div> ondalık basamakları azaltmak ve artırmak i&ccedil;in</li>
+                        <li><img alt="Sayı biçimi" src="../../../../../../common/main/resources/help/tr/images/numberformat.png" /> sayı bi&ccedil;imini, yani girdiğiniz sayıların h&uuml;crelerde g&ouml;r&uuml;nme bi&ccedil;imini değiştirmek i&ccedil;in</li>
+                        <li><img alt="Grafik Türü" src="../../../../../../common/main/resources/help/tr/images/charttypebutton.png" /> farklı bir grafik t&uuml;r&uuml; se&ccedil;mek i&ccedil;in.</li>
+                    </ul>
+                    <p><img alt="Grafik Düzenleyici penceresi" src="../../../../../../common/main/resources/help/tr/images/charteditor.png" /></p>
+                </li>
+                <li>
+                    <b>Grafik D&uuml;zenleyici</b> penceresinde bulunan <b>Veri Se&ccedil;</b> d&uuml;ğmesine tıklayın. <b>Grafik Verileri</b> penceresi a&ccedil;ılacaktır.
+                    <ol>
+                        <li>
+                            <b>Grafik Veri Aralığı</b>, <b>G&ouml;sterge Girdileri (Seri)</b>, <b>Yatay (Kategori) Eksen Etiketi</b> ve <b>Satır/S&uuml;tun Değiştir</b> se&ccedil;eneklerini y&ouml;netmek i&ccedil;in <b>Grafik Verileri</b> diyaloğunu kullanın.
+                            <p><img alt="Grafik Verileri penceresi" src="../../../../../../common/main/resources/help/tr/images/chartdata.png" /></p>
+                            <ul>
+                                <li>
+                                    <b>Grafik Veri Aralığı</b> - Grafiğiniz i&ccedil;in verileri se&ccedil;in.
+                                    <ul>
+                                        <li>
+                                            Buradan <div class = "icon icon-changerange"></div> veri aralığını se&ccedil;mek i&ccedil;in <b>Grafik veri aralığı</b> kutusunun sağındaki simgeye tıklayın.
+                                            <p><img alt="Veri Aralığı Seç penceresi" src="../../../../../../common/main/resources/help/tr/images/selectdata.png" /></p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>G&ouml;sterge Girdileri (Seri)</b> - G&ouml;sterge girdilerini ekleyin, d&uuml;zenleyin veya kaldırın. G&ouml;sterge girdileri i&ccedil;in seri adını yazın veya se&ccedil;in.
+                                    <ul>
+                                        <li><b>G&ouml;sterge Girdilerinde (Seri)</b>, <b>Ekle</b> d&uuml;ğmesine tıklayın.</li>
+                                        <li>
+                                            <b>Seriyi D&uuml;zenlede</b>, yeni bir g&ouml;sterge girdisi yazın veya <div class = "icon icon-changerange"></div> <b>İsim se&ccedil;</b> kutusunun sağındaki simgeye tıklayın.
+                                            <p><img alt="Serileri Düzenle penceresi" src="../../../../../../common/main/resources/help/tr/images/editseries.png" /></p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>Yatay (Kategori) Eksen Etiketleri</b> - Kategori etiketleri i&ccedil;in metni değiştirin.
+                                    <ul>
+                                        <li><b>Yatay (Kategori) Eksen Etiketlerinde</b>, <b>D&uuml;zenle</b> d&uuml;ğmesine tıklayın.</li>
+                                        <li>
+                                            <b>Eksen etiketi aralığında</b>, eklemek istediğiniz etiketleri yazın veya <div class = "icon icon-changerange"></div> veri aralığını se&ccedil;mek i&ccedil;in <b>Eksen etiketi aralığı</b> kutusunun sağındaki simgeye tıklayın.
+                                            <p><img alt="Eksen Etiketleri penceresi" src="../images/axislabels.png" /></p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><b>Satır/S&uuml;tun Değiştir</b> - Grafikte yapılandırılan &ccedil;alışma sayfası verilerini istediğiniz şekilde yeniden d&uuml;zenleyin. Verileri farklı bir eksende g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in satırları s&uuml;tun olarak değiştirin.</li>
+                            </ul>
+                        </li>
+                        <li>Değişiklikleri uygulamak i&ccedil;in <b>Tamam</b> d&uuml;ğmesine tıklayın ve pencereyi kapatın.</li>
+                    </ol>
+                </li>
+                <li>
+                    Grafik t&uuml;r&uuml;n&uuml; ve stilini se&ccedil;mek i&ccedil;in <b>Grafik D&uuml;zenleyici</b> penceresinde <b>Grafik T&uuml;r&uuml;n&uuml; Değiştir</b> d&uuml;ğmesine tıklayın. Mevcut b&ouml;l&uuml;mlerden bir grafik se&ccedil;in: S&uuml;tun, &Ccedil;izgi, Pasta, &Ccedil;ubuk, Alan, Hisse Senedi, XY (Dağılım) veya Birleşik.
+                    <p><img alt="Grafik Türü penceresi" src="../../../../../../common/main/resources/help/tr/images/charttype.png" /></p>
+                    <p><b>Birleşik Grafikleri</b> se&ccedil;tiğinizde, <b>Grafik T&uuml;r&uuml;</b> penceresi grafik serilerini listeler ve birleştirilecek grafik t&uuml;rlerinin ve ikincil bir eksene yerleştirilecek veri serilerinin se&ccedil;ilmesine izin verir.</p>
+                    <p><img alt="Grafik Türü Birleşik" src="../../../../../../common/main/resources/help/tr/images/charttype_combo.png" /></p>
+                </li>
+                <li>
+                    <b>Grafik D&uuml;zenleyici</b> penceresinde bulunan <b>Grafiği D&uuml;zenle</b> d&uuml;ğmesine tıklayarak grafik ayarlarını değiştirin. <b>Grafik - Gelişmiş Ayarlar</b> penceresi a&ccedil;ılacaktır.
+                    <p><img alt="Grafik - Gelişmiş Ayarlar penceresi" src="../../../../../../common/main/resources/help/tr/images/chartsettings_layout.png" /></p>
+                    <p><b>D&uuml;zen</b> sekmesi, grafik &ouml;ğelerinin d&uuml;zenini değiştirmenizi sağlar.</p>
+                    <ul>
+                        <li>
+                            A&ccedil;ılır listeden gerekli se&ccedil;eneği se&ccedil;erek <b>Grafik Başlığı</b> konumunu grafiğinize g&ouml;re belirtin:
+                            <ul>
+                                <li>Grafik başlığını g&ouml;r&uuml;nt&uuml;lememek i&ccedil;in <b>Yok</b>,</li>
+                                <li>&Ccedil;izim alanına bir başlığı bindirmek ve ortalamak i&ccedil;in <b>Bindirme</b>,</li>
+                                <li>Başlığı &ccedil;izim alanının &uuml;zerinde g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in <b>Bindirme Yok</b>.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            A&ccedil;ılır listeden gerekli se&ccedil;eneği se&ccedil;erek <b>G&ouml;sterge</b> konumunu grafiğinize g&ouml;re belirtin:
+                            <ul>
+                                <li>G&ouml;stergeyi g&ouml;r&uuml;nt&uuml;lememek i&ccedil;in <b>Yok</b>,</li>
+                                <li>G&ouml;stergeyi g&ouml;r&uuml;nt&uuml;lemek ve &ccedil;izim alanının altına hizalamak i&ccedil;in <b>Alt</b>,</li>
+                                <li>G&ouml;stergeyi g&ouml;r&uuml;nt&uuml;lemek ve &ccedil;izim alanının &uuml;st&uuml;ne hizalamak i&ccedil;in <b>&Uuml;st</b>,</li>
+                                <li>G&ouml;stergeyi g&ouml;r&uuml;nt&uuml;lemek ve &ccedil;izim alanının sağına hizalamak i&ccedil;in <b>Sağ</b>,</li>
+                                <li>G&ouml;stergeyi g&ouml;r&uuml;nt&uuml;lemek ve &ccedil;izim alanının soluna hizalamak i&ccedil;in <b>Sol</b>,</li>
+                                <li>G&ouml;stergeyi &ccedil;izim alanında sola bindirmek ve ortalamak i&ccedil;in <b>Sola Bindir</b>,</li>
+                                <li>G&ouml;stergeyi &ccedil;izim alanında sağa bindirmek ve ortalamak i&ccedil;in <b>Sağa Bindir</b>.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Veri Etiketleri</b> (veri noktalarının tam değerlerini temsil eden metin etiketleri gibi) parametreleri belirtin:<br />
+                            <ul>
+                                <li>
+                                    A&ccedil;ılır listeden gerekli se&ccedil;eneği se&ccedil;erek <b>Veri Etiketleri</b> konumunu veri noktalarına g&ouml;re belirtin. Kullanılabilir se&ccedil;enekler, se&ccedil;ilen grafik t&uuml;r&uuml;ne g&ouml;re değişir.
+                                    <ul>
+                                        <li><b>S&uuml;tun/&Ccedil;ubuk</b> grafikler i&ccedil;in aşağıdaki se&ccedil;enekleri se&ccedil;ebilirsiniz: <b>Yok</b>, <b>Ortala</b>, <b>İ&ccedil; Alt</b>, <b>İ&ccedil; U&ccedil;</b>, <b>Dış U&ccedil;</b>.</li>
+                                        <li><b>Satır/XY (Dağılım)/Hisse Senedi</b> grafikleri i&ccedil;in aşağıdaki se&ccedil;enekleri se&ccedil;ebilirsiniz: <b>Yok</b>, <b>Ortala</b>, <b>Sol</b>, <b>Sağ</b>, <b>U&ccedil;</b>, <b>Taban</b>.</li>
+                                        <li><b>Pasta</b> grafikler i&ccedil;in aşağıdaki se&ccedil;enekleri se&ccedil;ebilirsiniz: <b>Yok</b>, <b>Ortala</b>, <b>Genişliğe Sığdır</b>, <b>İ&ccedil; U&ccedil;</b>, <b>Dış U&ccedil;</b>.</li>
+                                        <li><b>Alan</b> grafikleri ve ayrıca <b>3-B</b> <b>S&uuml;tun</b>, <b>&Ccedil;izgi</b>, <b>&Ccedil;ubuk</b> ve <b>Birleşik</b> grafikler i&ccedil;in aşağıdaki se&ccedil;enekleri se&ccedil;ebilirsiniz: <b>Yok</b>, <b>Ortala</b>.</li>
+                                    </ul>
+                                </li>
+                                <li>İlgili kutuları işaretleyerek etiketlerinize eklemek istediğiniz verileri se&ccedil;in: <b>Seri Adı</b>, <b>Kategori Adı</b>, <b>Değer</b>,</li>
+                                <li>Birka&ccedil; etiketi ayırmak i&ccedil;in kullanmak istediğiniz karakteri (virg&uuml;l, noktalı virg&uuml;l vb.) <b>Veri Etiketleri Ayırıcı</b> giriş alanına girin.</li>
+                            </ul>
+                        </li>
+                        <li><b>&Ccedil;izgiler</b> - <b>&Ccedil;izgi/XY (Dağılım) Grafikleri</b> i&ccedil;in bir &ccedil;izgi stili se&ccedil;mede kullanılır. Aşağıdaki se&ccedil;eneklerden birini se&ccedil;ebilirsiniz: Veri noktaları arasında d&uuml;z &ccedil;izgiler kullanmak i&ccedil;in <b>D&uuml;z</b>, veri noktaları arasında yumuşak eğriler kullanmak i&ccedil;in <b>D&uuml;zg&uuml;nleştirilmiş</b> veya satırları g&ouml;stermemek i&ccedil;in <b>Yok</b>.</li>
+                        <li>
+                            <b>İşaret&ccedil;iler</b> - <b>&Ccedil;izgi/XY (Dağılım) Grafikleri</b> i&ccedil;in işaret&ccedil;ilerin g&ouml;r&uuml;nt&uuml;lenip (kutu işaretliyse) veya g&ouml;r&uuml;nt&uuml;lenmeyeceğini (kutu işaretli değilse) belirtmede kullanılır.
+                            <p class="note"><b>Not</b>: <b>&Ccedil;izgiler</b> ve <b>İşaret&ccedil;iler</b> se&ccedil;enekleri yalnızca <b>&Ccedil;izgi grafikler</b> ve <b>XY (Dağılım) grafikleri</b> i&ccedil;in mevcuttur.</p>
+                        </li>
+                    </ul>
+                    <p><img alt="Grafik - Gelişmiş Ayarlar penceresi" src="../../../../../../common/main/resources/help/tr/images/chartsettings_verticalaxis.png" /></p>
+                    <p><b>Dikey Eksen</b> sekmesi, sayısal değerleri g&ouml;r&uuml;nt&uuml;leyen değerler ekseni veya y ekseni olarak da anılan dikey eksenin parametrelerini değiştirmenize olanak tanır. Dikey eksenin, <b>&Ccedil;ubuk grafikler</b> i&ccedil;in metin etiketlerini g&ouml;r&uuml;nt&uuml;leyen kategori ekseni olacağını ve dolayısıyla, bu durumda <b>Dikey eksen</b> sekme se&ccedil;eneklerinin bir sonraki b&ouml;l&uuml;mde a&ccedil;ıklananlara karşılık geleceğini unutmayın. <b>XY (Dağılım) grafikleri</b> i&ccedil;in her iki eksen değer eksenleridir.</p>
+                    <p class="note"><b>Not</b>: <b>Eksen Ayarları</b> ve <b>Kılavuz &Ccedil;izgileri</b> b&ouml;l&uuml;mleri, bu t&uuml;rden grafiklerin eksenleri ve kılavuz &ccedil;izgileri olmadığından <b>Pasta grafikler</b> i&ccedil;in devre dışı bırakılacaktır.</p>
+                    <ul>
+                        <li>Grafikte dikey ekseni gizlemek i&ccedil;in&nbsp;<b>Gizle</b>&nbsp;se&ccedil;eneğini se&ccedil;in, dikey eksenin g&ouml;r&uuml;nt&uuml;lenmesi i&ccedil;in se&ccedil;eneği işaretlenmemiş halde bırakın.</li>
+                        <li>
+                            A&ccedil;ılır listeden gerekli se&ccedil;eneği se&ccedil;erek&nbsp;<b>Başlık</b>&nbsp;y&ouml;nlendirmesini belirtin:
+                            <ul>
+                                <li>Dikey ekseni g&ouml;r&uuml;nt&uuml;lememek i&ccedil;in <b>Yok</b></li>
+                                <li>Başlığı aşağıdan yukarıya doğru dikey eksenin solunda g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in <b>D&ouml;nd&uuml;r&uuml;lm&uuml;ş</b>,</li>
+                                <li>Başlığı dikey eksenin solunda yatay olarak g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in <b>Yatay</b>.</li>
+                            </ul>
+                        </li>
+                        <li><b>Minimum Değer</b> - Dikey eksen başlangıcında g&ouml;r&uuml;nt&uuml;lenen en d&uuml;ş&uuml;k değeri belirtmek i&ccedil;in kullanılır. <b>Otomatik</b> se&ccedil;eneği varsayılan olarak se&ccedil;ilidir ve bu durumda minimum değer, se&ccedil;ilen veri aralığına g&ouml;re otomatik olarak hesaplanır. A&ccedil;ılır listeden <b>Sabit</b> se&ccedil;eneğini se&ccedil;ebilir ve sağdaki giriş alanında farklı bir değer belirtebilirsiniz.</li>
+                        <li><b>Maksimum Değer</b> - Dikey eksen başlangıcında g&ouml;r&uuml;nt&uuml;lenen en b&uuml;y&uuml;k değeri belirtmek i&ccedil;in kullanılır. <b>Otomatik</b> se&ccedil;eneği varsayılan olarak se&ccedil;ilidir ve bu durumda maksimum değer, se&ccedil;ilen veri aralığına g&ouml;re otomatik olarak hesaplanır. A&ccedil;ılır listeden <b>Sabit</b> se&ccedil;eneğini se&ccedil;ebilir ve sağdaki giriş alanında farklı bir değer belirtebilirsiniz.</li>
+                        <li><b>Eksen Ge&ccedil;işleri</b> - Dikey eksende, yatay eksenin dikey eksende ge&ccedil;mesi gereken noktayı belirtmek i&ccedil;in kullanılır. <b>Otomatik</b> se&ccedil;eneği varsayılan olarak se&ccedil;ilidir ve bu durumda eksen kesişim noktası değeri, se&ccedil;ilen veri aralığına g&ouml;re otomatik olarak hesaplanır. A&ccedil;ılır listeden <b>Değer</b> se&ccedil;eneğini se&ccedil;ebilir ve sağdaki giriş alanında farklı bir değer belirleyebilir veya eksen kesişim noktasını dikey eksende <b>Minimum/Maksimum Değerde</b> ayarlayabilirsiniz.</li>
+                        <li><b>G&ouml;r&uuml;nt&uuml;leme Birimleri</b> - Dikey eksen boyunca sayısal değerlerin g&ouml;sterimini belirlemek i&ccedil;in kullanılır. Bu se&ccedil;enek, b&uuml;y&uuml;k sayılarla &ccedil;alışıyorsanız ve eksendeki değerlerin daha kompakt ve okunabilir bir şekilde g&ouml;r&uuml;nt&uuml;lenmesini istiyorsanız yararlı olabilir (&ouml;rneğin <b>Bin</b> g&ouml;r&uuml;nt&uuml;leme birimini kullanarak 50.000 değerini 50 olarak g&ouml;sterebilirsiniz). A&ccedil;ılır listeden istenen birimi se&ccedil;in: <b>Y&uuml;z</b>, <b>Bin</b>, <b>10 000</b>, <b>100 000</b>, <b>Milyon</b>, <b>10 000 000</b>, <b>100 000 000</b>, <b>Milyar</b>, <b>Trilyon</b>veya varsayılan birimlere d&ouml;nmek i&ccedil;in <b>Hi&ccedil;biri</b> se&ccedil;eneğini se&ccedil;in.</li>
+                        <li><b>Değerler ters sırada</b> - Değerleri ters y&ouml;nde g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in kullanılır. Kutu işaretlenmediğinde, en d&uuml;ş&uuml;k değer eksenin en altında, en y&uuml;ksek değer ise en &uuml;st&uuml;nde yer alır. Kutu işaretlendiğinde değerler yukarıdan aşağıya doğru sıralanır.</li>
+                        <li>
+                            <b>Onay Se&ccedil;enekleri</b> b&ouml;l&uuml;m&uuml;, onay işaretlerinin dikey &ouml;l&ccedil;ekte g&ouml;r&uuml;n&uuml;m&uuml;n&uuml; ayarlamanıza olanak tanır. B&uuml;y&uuml;k onay işaretleri, sayısal değerleri g&ouml;steren etiketlere sahip olabilen daha b&uuml;y&uuml;k &ouml;l&ccedil;ekli b&ouml;l&uuml;mlerdir. K&uuml;&ccedil;&uuml;k onay işaretleri, b&uuml;y&uuml;k onay işaretleri arasına yerleştirilen ve etiketi olmayan &ouml;l&ccedil;ek alt b&ouml;l&uuml;mleridir. Onay işaretleri, karşılık gelen se&ccedil;enek <b>D&uuml;zen</b> sekmesinde ayarlanırsa kılavuz &ccedil;izgilerinin nerede g&ouml;r&uuml;nt&uuml;lenebileceğini de tanımlar. <b>B&uuml;y&uuml;k/K&uuml;&ccedil;&uuml;k T&uuml;r</b> a&ccedil;ılır listeleri aşağıdaki yerleştirme se&ccedil;eneklerini i&ccedil;erir:
+                            <ul>
+                                <li>B&uuml;y&uuml;k/k&uuml;&ccedil;&uuml;k onay işaretlerinin g&ouml;r&uuml;nt&uuml;lememek i&ccedil;in <b>Yok</b>,</li>
+                                <li>B&uuml;y&uuml;k/k&uuml;&ccedil;&uuml;k onay işaretlerini eksenin her iki yanında g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in <b>Ge&ccedil;iş</b>,</li>
+                                <li>B&uuml;y&uuml;k/k&uuml;&ccedil;&uuml;k onay işaretlerini eksenin i&ccedil;inde g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in <b>İ&ccedil;inde</b>,</li>
+                                <li>B&uuml;y&uuml;k/k&uuml;&ccedil;&uuml;k onay işaretlerini eksenin dışında g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in <b>Dışında</b>.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Etiket Se&ccedil;enekleri</b> b&ouml;l&uuml;m&uuml;, değerleri g&ouml;steren b&uuml;y&uuml;k onay işaretlerinin g&ouml;r&uuml;n&uuml;m&uuml;n&uuml; ayarlamanıza olanak tanır. Dikey eksene g&ouml;re bir <b>Etiket Konumu</b> belirtmek i&ccedil;in a&ccedil;ılır listeden gerekli se&ccedil;eneği se&ccedil;in:
+                            <ul>
+                                <li>Onay işaretlerini g&ouml;r&uuml;nt&uuml;lememek i&ccedil;in <b>Yok</b>,</li>
+                                <li>Onay işaretlerini &ccedil;izim alanının solunda g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in <b>Alt</b>,</li>
+                                <li>Onay işaretlerini &ccedil;izim alanının sağında g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in <b>&Uuml;st</b>,</li>
+                                <li>Onay işaretlerini eksenin yanında g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in <b>Eksenin yanında</b>.</li>
+                                <li>
+                                    Bir <b>Etiket Bi&ccedil;imi</b> belirtmek i&ccedil;in Etiket Bi&ccedil;imi d&uuml;ğmesine tıklayın ve uygun g&ouml;rd&uuml;ğ&uuml;n&uuml;z kategoriyi se&ccedil;in.
+                                    <p>Mevcut etiket bi&ccedil;imi kategorileri:</p>
+                                    <ul>
+                                        <li>Genel</li>
+                                        <li>Sayı</li>
+                                        <li>Bilimsel</li>
+                                        <li>Muhasebe</li>
+                                        <li>Para Birimi</li>
+                                        <li>Tarih</li>
+                                        <li>Zaman</li>
+                                        <li>Y&uuml;zde</li>
+                                        <li>Kesir</li>
+                                        <li>Metin</li>
+                                        <li>&Ouml;zel</li>
+                                    </ul>
+                                    <p>Etiket bi&ccedil;imi se&ccedil;enekleri, se&ccedil;ilen kategoriye g&ouml;re değişir. Sayı bi&ccedil;imini değiştirme hakkında daha fazla bilgi i&ccedil;in <a href="https://helpcenter.onlyoffice.com/ONLYOFFICE-Editors/ONLYOFFICE-Spreadsheet-Editor/UsageInstructions/ChangeNumberFormat.aspx">bu sayfaya</a> gidin.</p>
+                                </li>
+                                <li>Veri kaynağından alınan sayı bi&ccedil;imlendirmesini grafikte korumak i&ccedil;in <b>Kaynağa bağlı</b> se&ccedil;eneğini işaretleyin.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>
+                        <img alt="Grafik - Gelişmiş Ayarlar penceresi" src="../../../../../../common/main/resources/help/tr/images/chartsettings_secondaryaxis1.png" />
+                    </p>
+                    <p class="note"><b>Not</b>: İkincil eksenler sadece <b>Birleşik</b> grafiklerde desteklenir.</p>
+                    <p><b>İkincil eksenler</b>, veri serileri &ouml;nemli &ouml;l&ccedil;&uuml;de değiştiğinde veya bir grafiği &ccedil;izmek i&ccedil;in karışık veri t&uuml;rleri kullanıldığında Birleşik grafiklerde kullanışlıdır. İkincil Eksenler, birleşik grafiğin okunmasını ve anlaşılmasını kolaylaştırır.</p>
+                    <p><b>İkincil Dikey /Yatay Eksen</b> sekmesi, birleşik bir grafik i&ccedil;in uygun bir veri serisi se&ccedil;tiğinizde g&ouml;r&uuml;n&uuml;r. <b>İkincil Dikey /Yatay Eksen</b> sekmesindeki t&uuml;m ayarlar ve se&ccedil;enekler, Dikey/Yatay Eksen &uuml;zerindeki ayarlarla aynıdır. <b>Dikey/Yatay Eksen</b> se&ccedil;eneklerinin ayrıntılı a&ccedil;ıklaması i&ccedil;in yukarıdaki/aşağıdaki a&ccedil;ıklamaya bakın.</p>
+                    <p><img alt="Grafik - Gelişmiş Ayarlar penceresi" src="../../../../../../common/main/resources/help/tr/images/chartsettings_horizontalaxis.png" /></p>
+                    <p><b>Yatay Eksen</b> sekmesi, metin etiketlerini g&ouml;r&uuml;nt&uuml;leyen kategoriler ekseni veya X ekseni olarak da anılan yatay eksenin parametrelerini değiştirmenize olanak tanır. Yatay eksenin, <b>&Ccedil;ubuk grafikler</b> i&ccedil;in sayısal değerleri g&ouml;r&uuml;nt&uuml;leyen değer ekseni olacağını ve dolayısıyla, bu durumda <b>Yatay eksen</b> sekme se&ccedil;eneklerinin bir &ouml;nceki b&ouml;l&uuml;mde a&ccedil;ıklananlara karşılık geleceğini unutmayın. <b>XY (Dağılım) grafikleri</b> i&ccedil;in her iki eksen değer eksenleridir.</p>
+                    <ul>
+                        <li>Grafikte yatay ekseni gizlemek i&ccedil;in&nbsp;<b>Gizle</b>&nbsp;se&ccedil;eneğini se&ccedil;in, yatay eksenin g&ouml;r&uuml;nt&uuml;lenmesi i&ccedil;in se&ccedil;eneği işaretlenmemiş halde bırakın.</li>
+                        <li>
+                            A&ccedil;ılır listeden gerekli se&ccedil;eneği se&ccedil;erek&nbsp;<b>Başlık</b>&nbsp;y&ouml;nlendirmesini belirtin:
+                            <ul>
+                                <li>Yatay eksen başlığı g&ouml;r&uuml;nt&uuml;lemek istemediğinizde <b>Yok</b>,</li>
+                                <li>Başlığı yatay eksenin altında g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in <b>Bindirme Yok</b>,</li>
+                            </ul>
+                        </li>
+                        <li><b>Kılavuz &Ccedil;izgileri</b>, <b>Yatay Kılavuz &Ccedil;izgilerini</b>&nbsp;belirtmek i&ccedil;in kullanılır ve a&ccedil;ılır listeden gerekli se&ccedil;eneği se&ccedil;erek g&ouml;r&uuml;nt&uuml;leyebilirsiniz: <b>Yok</b>, <b>B&uuml;y&uuml;k</b>,&nbsp;<b>K&uuml;&ccedil;&uuml;k</b> veya&nbsp;<b>B&uuml;y&uuml;k ve K&uuml;&ccedil;&uuml;k</b>.</li>
+                        <li><b>Eksen Ge&ccedil;işleri</b> - Yatay eksende, dikey eksenin yatay eksende ge&ccedil;mesi gereken noktayı belirtmek i&ccedil;in kullanılır. <b>Otomatik</b> se&ccedil;eneği varsayılan olarak se&ccedil;ilidir ve bu durumda eksen kesişim noktası değeri, se&ccedil;ilen veri aralığına g&ouml;re otomatik olarak hesaplanır. A&ccedil;ılır listeden <b>Değer</b> se&ccedil;eneğini se&ccedil;ebilir ve sağdaki giriş alanında farklı bir değer belirleyebilir veya eksen kesişim noktasını yatay eksende <b>Minimum/Maksimum Değerde</b> (bu, ilk ve son kategoriye karşılık gelir) ayarlayabilirsiniz.</li>
+                        <li><b>Eksen Konumu</b> - Eksen metin etiketlerinin nereye yerleştirilmesi gerektiğini belirtmek i&ccedil;in kullanılır: <b>Onay İşaretlerinin &Uuml;zerinde</b> veya <b>Onay İşaretleri Arasında</b>.</li>
+                        <li><b>Değerler ters sırada</b> - Kategorileri ters y&ouml;nde g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in kullanılır. Kutunun işareti kaldırıldığında kategoriler soldan sağa doğru g&ouml;r&uuml;nt&uuml;lenir. Kutu işaretlendiğinde kategoriler sağdan sola doğru sıralanır.</li>
+                        <li>
+                            <b>Onay Se&ccedil;enekleri</b> b&ouml;l&uuml;m&uuml;, onay işaretlerinin yatay &ouml;l&ccedil;ekte g&ouml;r&uuml;n&uuml;m&uuml;n&uuml; ayarlamanıza olanak tanır. B&uuml;y&uuml;k onay işaretleri, kategori değerlerini g&ouml;steren etiketlere sahip olabilen daha b&uuml;y&uuml;k b&ouml;l&uuml;mlerdir. K&uuml;&ccedil;&uuml;k onay işaretleri, b&uuml;y&uuml;k onay işaretleri arasına yerleştirilen ve etiketi olmayan daha k&uuml;&ccedil;&uuml;k b&ouml;l&uuml;mlerdir. Onay işaretleri, karşılık gelen se&ccedil;enek <b>D&uuml;zen</b> sekmesinde ayarlanırsa kılavuz &ccedil;izgilerinin nerede g&ouml;r&uuml;nt&uuml;lenebileceğini de tanımlar. Aşağıdaki onay işareti parametrelerini ayarlayabilirsiniz:
+                            <ul>
+                                <li><b>B&uuml;y&uuml;k /K&uuml;&ccedil;&uuml;k Tip</b> - Aşağıdaki yerleştirme se&ccedil;eneklerini belirtmek i&ccedil;in kullanılır: B&uuml;y&uuml;k/k&uuml;&ccedil;&uuml;k onay işaretlerini g&ouml;r&uuml;nt&uuml;lememek i&ccedil;in <b>Yok</b>, b&uuml;y&uuml;k/k&uuml;&ccedil;&uuml;k onay işaretlerini eksenin her iki yanında g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in <b>Ge&ccedil;iş</b>, b&uuml;y&uuml;k/k&uuml;&ccedil;&uuml;k onay işaretlerini eksenin i&ccedil;inde g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in <b>İ&ccedil;inde</b>, b&uuml;y&uuml;k/k&uuml;&ccedil;&uuml;k onay işaretlerini eksenin dışında g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in <b>Dışında</b>.</li>
+                                <li><b>İşaretler arasındaki aralık</b> - İki bitişik onay işareti arasında ka&ccedil; kategorinin g&ouml;r&uuml;nt&uuml;lenmesi gerektiğini belirtmek i&ccedil;in kullanılır.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Etiket Se&ccedil;enekleri</b> b&ouml;l&uuml;m&uuml;, kategorileri g&ouml;steren etiketlerin g&ouml;r&uuml;n&uuml;m&uuml;n&uuml; ayarlamanıza olanak tanır.
+                            <ul>
+                                <li><b>Etiket Konumu</b> - Etiketlerin yatay eksene g&ouml;re nereye yerleştirilmesi gerektiğini belirtmek i&ccedil;in kullanılır. A&ccedil;ılır listeden gerekli se&ccedil;eneği se&ccedil;in: Kategori etiketlerini g&ouml;r&uuml;nt&uuml;lememek i&ccedil;in <b>Yok</b>, kategori etiketlerini &ccedil;izim alanının altında g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in <b>Alt</b>, kategori etiketlerini &ccedil;izim alanının &uuml;st&uuml;nde g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in <b>&Uuml;st</b>, kategori etiketlerini eksenin yanında g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in <b>Eksenin yanında</b>.</li>
+                                <li><b>Eksen Etiket Mesafesi</b> - Etiketlerin eksene ne kadar yakın yerleştirilmesi gerektiğini belirtmek i&ccedil;in kullanılır. Gerekli değeri giriş alanında belirtebilirsiniz. Ayarladığınız değer ne kadar fazlaysa, eksen ile etiketler arasındaki mesafe o kadar fazla olur.</li>
+                                <li><b>Etiketler Arası Aralık</b> - Etiketlerin ne sıklıkta g&ouml;r&uuml;nt&uuml;lenmesi gerektiğini belirtmek i&ccedil;in kullanılır. <b>Otomatik</b> se&ccedil;eneği varsayılan olarak se&ccedil;ilidir ve bu durumda etiketler her kategori i&ccedil;in g&ouml;r&uuml;nt&uuml;lenir. A&ccedil;ılır listeden <b>Manuel</b> se&ccedil;eneğini se&ccedil;ebilir ve gerekli değeri sağdaki giriş alanında belirtebilirsiniz. &Ouml;rneğin, diğer t&uuml;m kategorilerin vb. etiketlerini g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in 2 değerini girin.</li>
+                                <li>
+                                    Bir <b>Etiket Bi&ccedil;imi</b> belirtmek i&ccedil;in Etiket Bi&ccedil;imi d&uuml;ğmesine tıklayın ve uygun g&ouml;rd&uuml;ğ&uuml;n&uuml;z kategoriyi se&ccedil;in.
+                                    <p>Mevcut etiket bi&ccedil;imi kategorileri:</p>
+                                    <ul>
+                                        <li>Genel</li>
+                                        <li>Sayı</li>
+                                        <li>Bilimsel</li>
+                                        <li>Muhasebe</li>
+                                        <li>Para Birimi</li>
+                                        <li>Tarih</li>
+                                        <li>Zaman</li>
+                                        <li>Y&uuml;zde</li>
+                                        <li>Kesir</li>
+                                        <li>Metin</li>
+                                        <li>&Ouml;zel</li>
+                                    </ul>
+                                    <p>Etiket bi&ccedil;imi se&ccedil;enekleri, se&ccedil;ilen kategoriye g&ouml;re değişir. Sayı bi&ccedil;imini değiştirme hakkında daha fazla bilgi i&ccedil;in <a href="https://helpcenter.onlyoffice.com/ONLYOFFICE-Editors/ONLYOFFICE-Spreadsheet-Editor/UsageInstructions/ChangeNumberFormat.aspx">bu sayfaya</a> gidin.</p>
+                                </li>
+                                <li>Veri kaynağından alınan sayı bi&ccedil;imlendirmesini grafikte korumak i&ccedil;in <b>Kaynağa bağlı</b> se&ccedil;eneğini işaretleyin.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p><img alt="Grafik - Gelişmiş Ayarlar: Hücreye Uydurma" src="../../../../../../common/main/resources/help/tr/images/chartsettings_cellsnapping.png" /></p>
+                    <p><b>H&uuml;creye Uydurma</b> sekmesi aşağıdaki parametreleri i&ccedil;erir:</p>
+                    <ul>
+                        <li><b>H&uuml;crelerle taşıma ve boyutlandırma</b> - Bu se&ccedil;enek, grafiği arkasındaki h&uuml;creye uydurmanıza olanak tanır. H&uuml;cre hareket ederse (&ouml;rneğin bazı satırları/s&uuml;tunları ekler veya silerseniz), grafik h&uuml;cre ile birlikte taşınır. H&uuml;crenin genişliğini veya y&uuml;ksekliğini artırır veya azaltırsanız, grafiğin boyutu da değişir.</li>
+                        <li><b>Taşı ama h&uuml;crelerle boyutlandırma</b> - Bu se&ccedil;enek, grafiğin yeniden boyutlandırılmasını &ouml;nleyerek grafiği arkasındaki h&uuml;creye uydurmayı sağlar. H&uuml;cre hareket ederse grafik h&uuml;cre ile birlikte taşınır, ancak h&uuml;cre boyutunu değiştirirseniz grafik boyutları değişmeden kalır.</li>
+                        <li><b>H&uuml;crelerle taşıma veya boyutlandırma</b> - Bu se&ccedil;enek, h&uuml;cre konumu veya boyutu değiştirilmişse grafiğin taşınmasını veya yeniden boyutlandırılmasını &ouml;nlemeyi sağlar.</li>
+                    </ul>
+                    <p><img alt="Grafik - Gelişmiş Ayarlar" src="../../../../../../common/main/resources/help/tr/images/chartsettings_alternativetext.png" /></p>
+                    <p><b>Alternatif Metin</b> sekmesi, grafiğin hangi bilgileri i&ccedil;erdiğini daha iyi anlamalarına yardımcı olmak i&ccedil;in g&ouml;rme veya bilişsel bozuklukları olan kişilere okunacak bir <b>Başlık</b> ve <b>A&ccedil;ıklama</b> belirtmeye olanak tanır.</p>
+                </li>
+            </ol>
+			<hr />
+            <h3>Grafikleri taşıma ve yeniden boyutlandırma</h3>
+			<p><img class="floatleft" alt="Grafiği taşıma" src="../images/moving_chart.png" />Grafik eklendikten sonra boyutunu ve konumunu değiştirebilirsiniz. Grafik boyutunu değiştirmek i&ccedil;in <span class = "icon icon-resize_square"></span> kenarlarında bulunan k&uuml;&ccedil;&uuml;k kareleri s&uuml;r&uuml;kleyin. Yeniden boyutlandırırken se&ccedil;ilen grafiğin orijinal oranları korumak i&ccedil;in <b>Shift</b> tuşuna basın ve k&ouml;şe simgelerinden birini s&uuml;r&uuml;kleyin.</p>
+			<p>Grafik konumunu değiştirmek i&ccedil;in imlecinizi grafiğin &uuml;zerine getirdikten sonra g&ouml;r&uuml;nen <span class = "icon icon-arrow"></span> simgesini kullanın. Fare d&uuml;ğmesini bırakmadan grafiği gerekli konuma s&uuml;r&uuml;kleyin. Grafiği hareket ettirdiğinizde, nesneyi sayfada tam olarak konumlandırmanıza yardımcı olmak i&ccedil;in kılavuz &ccedil;izgileri g&ouml;r&uuml;nt&uuml;lenir (se&ccedil;ilen kaydırma stili satır i&ccedil;i değilse).</p>
+            <p class="note">
+                <b>Not</b>: nesnelerle &ccedil;alışırken kullanılabileceğiniz klavye kısayollarının listesini <a href="../HelpfulHints/KeyboardShortcuts.htm#workwithobjects" onclick="onhyperlinkclick(this)">burada</a> bulabilirsiniz.
+            </p>
+            <hr />
+            <h3>Grafik &ouml;ğelerini d&uuml;zenleme</h3>
+            <p>Grafiği <b>Başlığını</b> d&uuml;zenlemek i&ccedil;in, fare ile varsayılan metni se&ccedil;in ve gerekli metni yazın.</p>
+            <p>Grafik başlığı, eksen başlıkları, g&ouml;sterge girişleri, veri etiketleri vb. gibi metin &ouml;ğeleri i&ccedil;indeki yazı tipi bi&ccedil;imlendirmesini değiştirmek i&ccedil;in gerekli metin &ouml;ğesini sol tıklayarak se&ccedil;in. Ardından, yazı <a href="../UsageInstructions/FontTypeSizeColor.htm" onclick="onhyperlinkclick(this)">tipini, boyutunu, rengini</a> veya <a href="../UsageInstructions/DecorationStyles.htm" onclick="onhyperlinkclick(this)">s&uuml;sleme stilini</a> değiştirmek i&ccedil;in &uuml;st ara&ccedil; &ccedil;ubuğunun <b>Giriş</b> sekmesinde bulunan ilgili simgeleri kullanın.</p>
+            <p>Grafik se&ccedil;ildiğinde, grafik i&ccedil;in arka plan olarak bir şekil kullanıldığından sağda <b>Şekil ayarları</b> <span class = "icon icon-shape_settings_icon"></span> simgesi de bulunur. Sağ kenar &ccedil;ubuğunda <b>Şekil ayarları</b> sekmesini a&ccedil;mak ve şeklin <a href="../UsageInstructions/InsertAutoshapes.htm#shape_fill" onclick="onhyperlinkclick(this)"><b>Dolgu</b></a>, <a href="../UsageInstructions/InsertAutoshapes.htm#shape_stroke" onclick="onhyperlinkclick(this)"><b>&Ccedil;izgi</b></a> ve <b>Kaydırma Stilini</b> ayarlamak i&ccedil;in bu simgeye tıklayabilirsiniz. Şekil t&uuml;r&uuml;n&uuml; değiştiremeyeceğinizi unutmayın.</p>
+            <p>
+                Sağ paneldeki <b>Şekil Ayarları</b> sekmesini kullanarak, hem grafik alanını d&uuml;zenleyebilir hem de <em>&ccedil;izim alanı</em>, <em>veri serisi</em>, <em>grafik başlığı</em>, <em>g&ouml;sterge,</em> vb. gibi grafik &ouml;ğelerini değiştirebilir ve bunlara farklı dolgu t&uuml;rleri uygulayabilirsiniz.
+                Farenin sol tuşuyla tıklayarak grafik &ouml;ğesini ve tercih edilen dolgu tipini se&ccedil;in: <em>tek renk</em>, <em>gradyan</em>, <em>doku</em> veya <em>resim</em>, <em>desen</em>. Dolgu parametrelerini belirtin ve gerekirse <em>opaklık</em> seviyesini ayarlayın. Dikey veya yatay bir eksen veya kılavuz &ccedil;izgileri se&ccedil;tiğinizde, &ccedil;izgi ayarları yalnızca <b>Şekil Ayarları</b> sekmesi: <em>renk</em>, <em>genişlik</em> ve <em>t&uuml;r</em> se&ccedil;eneklerinde mevcuttur. Şekil renkleri, dolgular ve &ccedil;izgilerle nasıl &ccedil;alışılacağı hakkında daha fazla bilgi i&ccedil;in <a href="../UsageInstructions/InsertAutoshapes.htm" onclick="onhyperlinkclick(this)">bu sayfaya</a> bakabilirsiniz.
+            </p>
+            <p class="note"><b>Not</b>: <b>G&ouml;lge g&ouml;ster</b> se&ccedil;eneği de <b>Şekil ayarları</b> sekmesinde mevcuttur, ancak grafik &ouml;ğeleri i&ccedil;in devre dışı bırakılmıştır.</p>
+            <p>Grafik &ouml;ğelerini yeniden boyutlandırmanız gerekirse, gerekli &ouml;ğeyi se&ccedil;mek i&ccedil;in sol tıklayın ve &ouml;ğenin &ccedil;evresi boyunca yer alan 8 beyaz kareden <span class = "icon icon-resize_square"></span> birini s&uuml;r&uuml;kleyin.</p>
+            <p><span class = "big big-resizeelement"></span></p>
+            <p>&Ouml;ğenin konumunu değiştirmek i&ccedil;in &uuml;zerine sol tıklayın, imlecinizin <span class = "icon icon-arrow"></span> olarak değiştiğinden emin olun, sol fare d&uuml;ğmesini basılı tutun ve &ouml;ğeyi gerekli konuma s&uuml;r&uuml;kleyin.</p>
+            <p><span class = "big big-moveelement"></span></p>
+            <p>Bir grafik &ouml;ğesini silmek i&ccedil;in sol tıklayarak se&ccedil;in ve klavyede <b>Delete</b> tuşuna basın.</p>
+            <p>3-B grafikleri fareyi kullanarak da d&ouml;nd&uuml;rebilirsiniz. &Ccedil;izim alanı i&ccedil;inde sol tıklayın ve fare d&uuml;ğmesini basılı tutun. 3-B grafik y&ouml;n&uuml;n&uuml; değiştirmek i&ccedil;in fare d&uuml;ğmesini bırakmadan imleci s&uuml;r&uuml;kleyin.</p>
+            <p><img alt="3-B grafik" src="../../../../../../common/main/resources/help/tr/images/3dchart.png" /></p>
+            <hr />
+            <h3>Grafik ayarlarını yapma</h3>
+            <p><img class="floatleft" alt="Grafik Ayarları sekmesi" src="../images/right_chart.png" /></p>
+			<p>Grafik ayarlarından bazıları sağ kenar &ccedil;ubuğunun <b>Grafik ayarları</b> sekmesi kullanılarak değiştirilebilir. Etkinleştirmek i&ccedil;in grafiğe tıklayın ve sağdaki <b>Grafik ayarları</b> <span class = "icon icon-chart_settings_icon"></span> simgesini se&ccedil;in. Burada aşağıdaki &ouml;zellikleri değiştirebilirsiniz:</p>
+			<ul style="margin-left: 280px;">
+                <li><b>Boyut</b>, mevcut grafiğin <b>Genişlik</b> ve <b>Y&uuml;sekliğini</b> g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in kullanılır.</li>
+				<li><b>Kaydırma Stili</b>, mevcut satır i&ccedil;i, kare, sıkı, boyunca, &uuml;st ve alt, &ouml;nde, arkada se&ccedil;eneklerinden bir metin kaydırma stili se&ccedil;mek i&ccedil;in kullanılır (daha fazla bilgi i&ccedil;in aşağıdaki gelişmiş ayarlar a&ccedil;ıklamasına bakın).</li>
+				<li><b>Grafik T&uuml;r&uuml;n&uuml; Değiştir</b>, se&ccedil;ilen grafik t&uuml;r&uuml;n&uuml; ve/veya stilini değiştirmek i&ccedil;in kullanılır.
+                <p>Gerekli grafik <b>Stilini</b> se&ccedil;mek i&ccedil;in <b>Grafik T&uuml;r&uuml;n&uuml; Değiştir</b> b&ouml;l&uuml;m&uuml;nde ikinci a&ccedil;ılır men&uuml;y&uuml; kullanın.</p>
+                </li>
+				<li><b>Verileri D&uuml;zenle</b>, &apos;Grafik D&uuml;zenleyici&apos; penceresini a&ccedil;mak i&ccedil;in kullanılır.
+                <p class="note"><b>Not</b>: &apos;Grafik D&uuml;zenleyici&apos; penceresini hızlı bir şekilde a&ccedil;mak i&ccedil;in belgedeki grafiğe de &ccedil;ift tıklayabilirsiniz.</p>
+                </li>
+			</ul>
+            <p>Ayrıca bu se&ccedil;eneklerden bazılarını <b>sağ tıklama men&uuml;s&uuml;nde</b> de bulabilirsiniz. Men&uuml; se&ccedil;enekleri şunlardır:</p>
+			<ul style="margin-left: 280px;">
+                <li><b>Kes, Kopyala, Yapıştır</b> - Se&ccedil;ilen metni/nesneyi kesmek veya kopyalamak ve daha &ouml;nce kesilen/kopyalanan metin pasajını veya nesneyi ge&ccedil;erli imle&ccedil; konumuna yapıştırmak i&ccedil;in kullanılan standart se&ccedil;enekler.</li>
+                <li><b>D&uuml;zenle</b>, se&ccedil;ilen grafiği &ouml;n plana getirmek, arka plana g&ouml;ndermek, ileri veya geri hareket ettirmek ve aynı anda birka&ccedil;ıyla işlem yapmak &uuml;zere grafikleri gruplamak veya gruplarını &ccedil;&ouml;zmek i&ccedil;in kullanılır. Nesneleri d&uuml;zenleme hakkında daha fazla bilgi edinmek i&ccedil;in l&uuml;tfen <a href="../UsageInstructions/AlignArrangeObjects.htm" onclick="onhyperlinkclick(this)">bu yazıya</a> bakın.</li>
+				<li><b>Hizala</b>, grafiği sola, ortaya, sağa, yukarıya, ortaya, aşağıya hizalamak i&ccedil;in kullanılır. Nesneleri hizalama hakkında daha fazla bilgi edinmek i&ccedil;in <a href="../UsageInstructions/AlignArrangeObjects.htm" onclick="onhyperlinkclick(this)">bu yazıya</a> bakabilirsiniz.</li>
+				<li><b>Kaydırma Stili</b>, mevcut satır i&ccedil;i, kare, sıkı, boyunca, &uuml;st ve alt, &ouml;nde, arkada se&ccedil;eneklerinden bir metin kaydırma stili se&ccedil;mek i&ccedil;in kullanılır. <b>Kaydırma Kenarını D&uuml;zenle</b> se&ccedil;eneği grafikler i&ccedil;in kullanılamaz.</li>
+				<li><b>Verileri D&uuml;zenle</b>, &apos;Grafik D&uuml;zenleyici&apos; penceresini a&ccedil;mak i&ccedil;in kullanılır.</li>
+				<li><b>Grafik Gelişmiş Ayarları</b>, &apos;Grafik - Gelişmiş Ayarlar&apos; penceresini a&ccedil;mak i&ccedil;in kullanılır.</li>
+			</ul>
+			<hr />
+            <p>Grafik gelişmiş ayarlarını değiştirmek i&ccedil;in gerekli grafiğe fare ile sağ tıklayın ve sağ tıklama men&uuml;s&uuml;nden <b>Grafik Gelişmiş Ayarları</b> se&ccedil;eneğini se&ccedil;in veya sağ kenar &ccedil;ubuğundaki <b>Gelişmiş ayarları g&ouml;ster</b> bağlantısına tıklayın. Grafik &ouml;zellikleri penceresi a&ccedil;ılacaktır:</p>
+			<p><img alt="Grafik - Gelişmiş Ayarlar: Boyut" src="../images/chart_properties.png" /></p>
+			<p><b>Boyut</b> sekmesi aşağıdaki parametreleri i&ccedil;erir:</p>
+			<ul>
+                <li><b>Genişlik</b> ve <b>Y&uuml;kseklik</b> - Grafiğin genişliği ve/veya y&uuml;ksekliğini değiştirmek i&ccedil;in bu se&ccedil;enekleri kullanın. <b>Sabit Oranlar</b> d&uuml;ğmesine tıklanırsa <div class = "icon icon-constantproportions"></div> (bu durumda ş&ouml;yle g&ouml;r&uuml;n&uuml;r),<div class = "icon icon-constantproportionsactivated"></div>orijinal grafik en boy oranı korunarak genişlik ve y&uuml;kseklik birlikte değiştirilir.</li>
+			</ul>
+			<p><img alt="Grafik - Gelişmiş Ayarlar: Metin Kaydırma" src="../images/chart_properties_1.png" /></p>
+			<p><b>Metin Kaydırma</b> sekmesi aşağıdaki parametreleri i&ccedil;erir:</p>
+			<ul>
+				<li><b>Kaydırma Stili</b> - Grafiğin metne g&ouml;re konumlandırılma şeklini değiştirmek i&ccedil;in bu se&ccedil;eneği kullanın: ya metnin bir par&ccedil;ası olur (satır i&ccedil;i stilini se&ccedil;erseniz) ya da her taraftan atlanır (diğer stillerden birini se&ccedil;erseniz).
+                    <ul>
+				    <li><p><div class = "icon icon-wrappingstyle_inline"></div> <b>Satır İ&ccedil;i</b> - Grafik, bir karakter gibi metnin par&ccedil;ası olarak kabul edilir, bu nedenle metin hareket ettiğinde grafik de hareket eder. Bu durumda konumlandırma se&ccedil;eneklerine erişilemez.</p>
+				    <p>Aşağıdaki stillerden biri se&ccedil;ilirse, grafik metinden bağımsız olarak taşınabilir ve sayfada tam olarak konumlandırılabilir:</p>
+				    </li>
+				    <li><p><div class = "icon icon-wrappingstyle_square"></div> <b>Kare</b> - Metin, grafiği sınırlayan dikd&ouml;rtgen kutuyu sarar.</p></li>
+				    <li><p><div class = "icon icon-wrappingstyle_tight"></div> <b>Sıkı</b> - Metin, asıl grafiğin kenarlarını sarar.</p></li>
+				    <li><p><div class = "icon icon-wrappingstyle_through"></div> <b>Boyunca</b> - Metin, grafiğin kenarlarını sarar ve grafik i&ccedil;indeki a&ccedil;ık beyaz alanı doldurur.</p></li>
+				    <li><p><div class = "icon icon-wrappingstyle_topandbottom"></div> <b>&Uuml;ste ve alta</b> - Metin yalnızca grafiğin &uuml;st&uuml;nde ve altındadır.</p></li>
+				    <li><p><div class = "icon icon-wrappingstyle_infront"></div> <b>Metnin &Ouml;n&uuml;ne</b> - Grafik metinle &ouml;rt&uuml;ş&uuml;r.</p></li>
+				    <li><p><div class = "icon icon-wrappingstyle_behind"></div> <b>Metnin Arkasına</b> - Metin grafik ile &ouml;rt&uuml;ş&uuml;r.</p></li>
+				    </ul>
+				</li>
+			</ul>
+            <p>Kare, Sıkı, Boyunca veya &Uuml;ste ve Alta stillerini se&ccedil;erseniz, her tarafta (&uuml;st, alt, sol, sağ) <b>Metinden Uzaklık</b> gibi bazı ek parametreler ayarlayabilirsiniz.</p>
+            <p id="position"><img alt="Grafik - Gelişmiş Ayarlar: Konum" src="../images/chart_properties_2.png" /></p>
+            <p><b>Konum</b> sekmesi yalnızca se&ccedil;ilen kaydırma stili satır i&ccedil;i değilse kullanılabilir. Bu sekme, se&ccedil;ilen kaydırma stiline bağlı olarak değişen aşağıdaki parametreleri i&ccedil;erir:</p>
+			<ul>
+                <li>
+                    <b>Yatay</b> b&ouml;l&uuml;m&uuml;, aşağıdaki &uuml;&ccedil; grafik konumlandırma t&uuml;r&uuml;nden birini se&ccedil;menizi sağlar:
+                    <ul>
+                        <li>Karakter, s&uuml;tun, sol kenar boşluğu, kenar boşluğu, sayfa veya sağ kenar boşluğuna <b>g&ouml;re</b> <b>Hizalama</b> (sol, orta, sağ),</li>
+                        <li>S&uuml;tunun, sol kenar boşluğunun, kenar boşluğunun, sayfanın veya sağ kenar boşluğunun <b>sağına g&ouml;re</b> <b>Santimetre</b>/<b>Nokta</b>/<b>İn&ccedil;</b> (<b>Dosya</b> -&gt; <b>Gelişmiş Ayarlar...</b> sekmesinde belirtilen se&ccedil;eneğe bağlı olarak) gibi mutlak birimlerle &ouml;l&ccedil;&uuml;len Mutlak <b>Konum</b>,</li>
+                        <li>Sol kenar boşluğu, kenar boşluğu, sayfa veya sağ kenar boşluğuna <b>g&ouml;re</b> y&uuml;zde olarak &ouml;l&ccedil;&uuml;len <b>G&ouml;receli Konum</b>.</li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Dikey</b> b&ouml;l&uuml;m&uuml;, aşağıdaki &uuml;&ccedil; grafik konumlandırma t&uuml;r&uuml;nden birini se&ccedil;menizi sağlar:
+                    <ul>
+                        <li>Satır, kenar boşluğu, alt kenar boşluğu, paragraf, sayfa veya &uuml;st kenar boşluğuna <b>g&ouml;re</b> <b>Hizalama</b> (sol, orta, sağ),</li>
+                        <li>Satır, kenar boşluğu, alt kenar boşluğu, paragraf, sayfa veya &uuml;st kenar boşluğunun <b>altında</b> <b>Santimetre</b>/<b>Nokta</b>/<b>İn&ccedil;</b> (<b>Dosya</b> -&gt; <b>Gelişmiş Ayarlar...</b> sekmesinde belirtilen se&ccedil;eneğe bağlı olarak) gibi mutlak birimlerle &ouml;l&ccedil;&uuml;len Mutlak <b>Konum</b>,</li>
+                        <li>Kenar boşluğu, alt kenar boşluğu, sayfa veya &uuml;st kenar boşluğuna <b>g&ouml;re</b> y&uuml;zde olarak &ouml;l&ccedil;&uuml;len <b>G&ouml;receli konum</b>.</li>
+                    </ul>
+                </li>
+                <li><b>Nesneyi metinle taşı</b>, grafiğin bağlı olduğu metinle birlikte hareket etmesini sağlar.</li>
+                <li><b>&Ouml;rt&uuml;şmeye izin ver</b>, sayfada yan yana s&uuml;r&uuml;klerseniz, iki grafiğin &uuml;st &uuml;ste binmesini sağlar.</li>
+			</ul>
+            <p><img alt="Grafik - Gelişmiş Ayarlar" src="../images/chart_properties_3.png" /></p>
+            <p><b>Alternatif Metin</b> sekmesi, grafiğin hangi bilgileri i&ccedil;erdiğini daha iyi anlamalarına yardımcı olmak i&ccedil;in g&ouml;rme veya bilişsel bozuklukları olan kişilere okunacak bir <b>Başlık</b> ve <b>A&ccedil;ıklama</b> belirtmeye olanak tanır.</p>
+		</div>
+	</body>
+</html>

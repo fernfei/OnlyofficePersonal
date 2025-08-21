@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Valeur cible</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Configurer les paramètres de validation des données parameters pour contrôler l'édition du classeur" />
+    <link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+    <link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+    <script type="text/javascript" src="../callback.js"></script>
+    <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+</head>
+<body>
+    <div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Rechercher" type="text" onkeypress="doSearch(event)">
+        </div>
+        <h1>Valeur cible</h1>
+        <p><a href="https://www.onlyoffice.com/fr/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>L'éditeur de classeurs</b></a> ONLYOFFICE propose la fonctionnalité <b>Valeur cible</b> permettant de rechercher les nombres à substituer dans une formule pour produire un résultat que vous connaissez et que vous souhaitez obtenir.</p>
+        <ol>
+            <li>Passez à l'onglet <b>Données</b> et cliquez sur l'icône <b>Valeur cible </b>de la barre d'outils supérieure.</li>
+            <li>Dans la fenêtre <b>Valeur cible</b> qui s'affiche, sélectionnez les options appropriées.
+                <p><img alt="Valeur cible" src="../images/goal_seek.png" /></p>
+            <ul>
+                <li><b>Définir la cellule</b> - saisissez la référence de la cellule comportant une formule. Vous pouvez utiliser <div class="icon icon-changerange"></div> l'icône pour sélectionner la cellule.</li>
+                <li><b>Vers la valeur</b> - saisissez le résultat que vous souhaitez obtenir dans la cellule comportant la formule.</li>
+                <li><b>En modifiant la cellule</b> - saisissez la référence de la cellule comportant la valeur que vous souhaitez modifier. Vous pouvez utiliser <div class="icon icon-changerange"></div> l'icône pour sélectionner la cellule. Cette cellule doit être référencée par la formule de la cellule que vous avez indiquée dans le champ <b>Définir la cellule</b>.</li>
+            </ul>
+            </li>
+            <li>Cliquez sur <b>OK</b>.</li>
+            <li>Le résultat s'affichera dans la fenêtre <b>Statut de la valeur cible</b>. 
+                <p><img alt="Statut de la valeur cible" src="../images/goal_seek_status.png" /></p>
+            </li>
+            <li>Cliquez sur <b>OK</b> pour remplacer les valeurs dans des cellules que vous avez indiquées dans les champs <b>Définir la cellule</b> et <b>En modifiant la cellule</b>.</li>
+        </ol>
+        
+    </div>
+</body>
+</html>

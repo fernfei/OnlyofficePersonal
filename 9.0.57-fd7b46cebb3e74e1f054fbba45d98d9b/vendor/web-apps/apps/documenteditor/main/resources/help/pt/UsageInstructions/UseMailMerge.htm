@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Usar mala direta</title>
+		<meta charset="utf-8" />
+        <meta name="descrição" content="Use mala direta para criar muitas cartas personalizadas e enviá-las aos destinatários" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Usar mala direta</h1>
+            <p class="note"><b>Nota</b>: esta opção está disponível apenas na <em>versão online</em>.</p>
+            <p>O recurso <b>Mala Direta</b> é usado para criar um conjunto de documentos combinando um conteúdo comum que é retirado de um documento de texto e alguns componentes individuais (variáveis, como nomes, saudações, etc.) retirados de uma planilha (por exemplo, uma lista de clientes). Pode ser útil se você precisar criar muitas cartas personalizadas e enviá-las aos destinatários.</p>
+        <ul>
+            <li><b>Prepare uma fonte de dados e carregue-a no documento principal</b>
+            <ol>
+                <li>Uma fonte de dados usada para a mala direta deve ser uma planilha <b>.xlsx</b> armazenada em seu portal. Abra uma planilha existente ou crie uma nova e verifique se ela atende aos seguintes requisitos.
+                 <li>A planilha deve ter uma linha de cabeçalho com os títulos das colunas, pois os valores na primeira célula de cada coluna designarão campos de mesclagem (ou seja, variáveis que você pode inserir no texto). Cada coluna deve conter um conjunto de valores reais para uma variável. Cada linha da planilha deve corresponder a um registro separado (ou seja, um conjunto de valores que pertence a um determinado destinatário). Durante o processo de mesclagem, uma cópia do documento principal será criada para cada registro e cada campo de mesclagem inserido no texto principal será substituído por um valor real da coluna correspondente. Se você for enviar os resultados por e-mail, a planilha também deve incluir uma coluna com os endereços de e-mail dos destinatários.</li>
+                <li>
+                    Abra um documento de texto existente ou crie um novo. Deve conter o texto principal que será o mesmo para cada versão do documento mesclado. Clique no ícone <b>Mala Direta</b> <div class = "icon icon-mailmergeicon"></div> na guia <b>Início</b> da barra de ferramentas superior e selecione o local da fonte de dados: <b>Do arquivo</b>, <b>Do URL</b> ou <b>Do armazenamento</b>.
+                    <p><img alt="Opções de mala direta" src="../images/mailmerge_options.png" /></p>
+                </li>
+                <li>
+                    Selecione o arquivo necessário ou cole um URL e clique em <b>OK</b>.
+                     <p>Depois que a fonte de dados for carregada, a guia <b>Configuração de mala direta</b> estará disponível na barra lateral direita.</p>
+                    <p><img alt="Guia de configuração da mala direta" src="../images/right_mailmerge.png" /></p>
+                </li>
+            </ol>
+                <li><b>Verifique ou altere a lista de destinatários</b>
+                 <ol>
+                     <li>Clique no botão <b>Editar lista de destinatários</b> na parte superior da barra lateral direita para abrir a janela <b>Destinatários da mala direta</b>, onde o conteúdo da fonte de dados selecionada é exibido.
+                    <p><img alt="Janela Destinatários da mala direta" src="../images/mailmergerecipients.png" /></p>
+                    </li>
+                    <li>
+                        Na janela aberta, você pode adicionar novas informações, editar ou excluir os dados existentes, se necessário. Para simplificar o trabalho com dados, você pode usar os ícones na parte superior da janela:
+                        <ul>
+                            <li><div class = "icon icon-copy"></div> e <div class = "icon icon-paste"></div> - para copiar e colar os dados copiados</li>
+                            <li><div class = "icon icon-undo1"></div> e <div class = "icon icon-redo1"></div> - para desfazer e refazer ações desfeitas</li>
+                            <li><div class = "icon icon-sortatoz"></div> e <div class = "icon icon-sortztoa"></div> - para classificar seus dados dentro de um intervalo selecionado de células em ordem crescente ou decrescente</li>
+                            <li><div class = "icon icon-sortandfilter"></div> - para habilitar o filtro para o intervalo de células selecionado anteriormente ou para remover o filtro aplicado</li>
+                            <li>
+                                <div class = "icon icon-clearfilter"></div> - para limpar todos os parâmetros de filtro aplicados
+                                 <p class="note"><b>Observação</b>: para saber mais sobre como usar o filtro, consulte a seção <b>Classificar e filtrar dados</b> do <b>Editor de Planilhas</b> ajuda.</p>
+                            </li>
+                            <li>
+                                <div class = "icon icon-searchicon"></div> - procurar um determinado valor e substituí-lo por outro, se necessário
+                                 <p class="note"><b>Observação</b>: para saber mais sobre como usar a ferramenta Localizar e substituir, consulte a seção <b>Funções de pesquisa e substituição</b> do <b>Editor de Planilhas</b> ajuda.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Depois de fazer todas as alterações necessárias, clique no botão <b>Salvar e sair</b>. Para descartar as alterações, clique no botão <b>Fechar</b>.</li>
+                </ol>
+                </li>
+                <li><b>Insira campos de mesclagem e verifique os resultados</b>
+                 <ol>
+                     <li>Coloque o cursor do mouse onde o campo de mesclagem deve ser inserido, clique no botão <b>Inserir campo de mesclagem</b> na barra lateral direita e selecione o campo necessário na lista. Os campos disponíveis correspondem aos dados da primeira célula de cada coluna da fonte de dados selecionada. Todos os campos obrigatórios podem ser adicionados em qualquer lugar.
+                        <p><img alt="Seção de campos de mesclagem" src="../images/mergefields.png" /></p>
+                    </li>
+                    <li>Ative o seletor <b>Destacar campos de mesclagem</b> na barra lateral direita para tornar os campos inseridos mais perceptíveis no texto.
+                        <p><img alt="Documento principal com campos inseridos" src="../images/insertedfields.png" /></p>
+                    </li>
+                    <li>Ative o seletor <b>Visualizar resultados</b> na barra lateral direita para visualizar o texto com os campos de mesclagem substituídos por valores reais da fonte de dados. Use os botões de seta para visualizar as versões do documento mesclado para cada registro.
+                        <p><img alt="Visualizar resultados" src="../images/previewinsertedfields.png" /></p>
+                    </li>
+                </ol>
+                <ul>
+                    <li>Para excluir um campo inserido, desative o modo <b>Visualizar resultados</b>, selecione o campo com o mouse e pressione a tecla <b>Excluir</b> do teclado. </li>
+                     <li>Para substituir um campo inserido, desative o modo <b>Visualizar resultados</b>, selecione o campo com o mouse, clique no botão <b>Inserir campo de mesclagem</b> na barra lateral direita e escolha um novo campo da lista.</li>
+                </ul>
+                </li>
+                <li><b>Especifique os parâmetros de mesclagem</b>
+                 <ol>
+                     <li>Selecione o tipo de mesclagem. Você pode iniciar o envio em massa ou salvar o resultado como um arquivo PDF ou Docx para imprimir ou editar mais tarde. Selecione a opção necessária na lista <b>Mesclar para</b>:
+                        <p><img alt="Mesclar seleção de tipo" src="../images/mergeto.png" /></p>
+                        <ul>
+                            <li><b>PDF</b> - para criar um único documento PDF que inclua todas as cópias mescladas que podem ser impressas posteriormente.</li>
+                            <li><b>Docx</b> - para criar um único documento Docx que inclua todas as cópias mescladas que podem ser editadas individualmente posteriormente.</li>
+                            <li>
+                                <b>E-mail</b> - para enviar os resultados aos destinatários por e-mail
+                                 <p class="note"><b>Nota</b>: os endereços de e-mail dos destinatários devem ser especificados na fonte de dados carregada e você precisa ter pelo menos uma conta de e-mail conectada no <b>E-Mail</b> módulo no seu portal.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Escolha todos os registros necessários para serem aplicados:
+                        <ul>
+                            <li><b>Todos os registros</b> (esta opção é selecionada por padrão) - para criar documentos mesclados para todos os registros da fonte de dados carregada.</li>
+                             <li><b>Registro atual</b> - para criar um documento mesclado para o registro exibido no momento.</li>
+                             <li>
+                                 <b>De</b> ... <b>Para</b> - para criar documentos mesclados para um intervalo de registros (neste caso, você precisa especificar dois valores: o número do primeiro registro e o último registro na faixa desejada).
+                                 <p class="note"><b>Observação</b>: a quantidade máxima permitida de destinatários é 100. Se você tiver mais de 100 destinatários em sua fonte de dados, faça a mala direta por etapas: especifique os valores de 1 a 100, aguarde até que o processo de mala direta termine e repita a operação especificando os valores de 101 a N etc.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Conclua a mesclagem
+                         <ul>
+                             <li>Se você decidiu salvar os resultados da mesclagem como um arquivo,
+                             <ul>
+                                 <li>clique no botão <b>Baixar</b> para salvar o arquivo em seu PC. Você encontrará o arquivo baixado na pasta <em>Downloads</em> padrão.</li>
+                                 <li>clique no botão <b>Salvar</b> para salvar o arquivo em seu portal. Na janela aberta <b>Pasta para salvar</b>, você pode alterar o nome do arquivo e especificar a pasta onde deseja salvar o arquivo. Você também pode marcar a caixa <b>Abrir documento mesclado em uma nova guia</b> para verificar o resultado quando o processo de mesclagem for concluído. Finalmente, clique em <b>Salvar</b> na janela <b>Pasta para salvar</b>.</li>
+                            </ul>
+                            </li>
+                            <li>Se você selecionou a opção <b>E-mail</b>, o botão <b>Mesclar</b> estará disponível na barra lateral direita. Depois de clicar nele, a janela <b>Enviar para e-mail</b> será aberta:
+                                <p><img alt="Janela Enviar para e-mail" src="../images/sendtoemail.png" /></p>
+                            <ul>
+                                <li>Na lista <b>De</b>, selecione a conta de e-mail necessária se você tiver várias contas conectadas ao módulo <b>E-mail</b>.</li>
+                                 <li>Na lista <b>Para</b>, selecione o campo de mesclagem correspondente aos endereços de e-mail dos destinatários se esta opção não tiver sido selecionada automaticamente.</li>
+                                 <li>Digite o assunto da mensagem no campo <b>Linha do assunto</b>.</li>
+                                 <li>Selecione o formato de e-mail na lista: <b>HTML</b>, <b>Anexar como DOCX</b> ou <b>Anexar como PDF</b>. Quando uma das duas últimas opções é selecionada, você também precisa especificar o <b>Nome do arquivo</b> para os anexos e inserir a <b>Mensagem</b> (o texto da sua carta que será enviada aos destinatários).</li>
+                                 <li>Clique no botão <b>Enviar</b>.</li>
+                            </ul>
+                            <p>Assim que a correspondência terminar, você receberá uma notificação em seu e-mail especificado no campo <b>De</b>.</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+                </li>
+            </ul>
+		</div>
+	</body>
+</html>

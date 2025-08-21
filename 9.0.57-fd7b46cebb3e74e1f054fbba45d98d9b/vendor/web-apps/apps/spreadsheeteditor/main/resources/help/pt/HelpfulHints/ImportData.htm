@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Obter dados do arquivo TXT/CSV</title>
+		<meta charset="utf-8" />
+		<meta name="descrição" content="Como importar dados de um arquivo de texto/CSV" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+			<div class="search-field">
+				<input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+			</div>
+			<h1>Obter dados do arquivo TXT/CSV</h1>
+			<p>Se você precisa obter dados rapidamente de um arquivo .txt/.csv e organizá-los adequadamente em uma planilha, use a opção <b>Obter dados de arquivo de texto/CSV</b> disponível na seção <b>Dados</b> guia.</p>
+			<h2 id="step1">Etapa 1. Importando o arquivo</h2>
+			<ol>
+				<li>Clique na opção <b>Obter dados</b> na guia <b>Dados</b>.</li>
+                <li>Escolha uma das duas opções de importação:
+				<ul>
+					<li><b>Do TXT/CSV local</b>: encontre o arquivo necessário em seu disco rígido, selecione-o e clique em <b>Abrir</b>.</li>
+					<li><b>Do endereço da web TXT/CSV</b>: cole o link para o arquivo ou página da web no campo <b>Colar um URL de dados</b> e clique em <b>OK</b>.
+                        <p class="note">
+                            Um link para visualizar ou editar um arquivo armazenado no portal ONLYOFFICE ou em um armazenamento de terceiros não pode ser usado neste caso. Use o link para <b>baixar</b> o arquivo.
+                        </p>
+                    </li>
+				</ul>
+				</li>
+			</ol>
+			<h2 id="step2">Etapa 2. Definindo as configurações</h2>
+            <p>O <b>Assistente de importação de texto</b> abrange quatro seções: <b>Codificação</b>, <b>Delimitador</b>, <b>Visualizar</b> e <b>Escolher onde colocar dados</b>.</p>
+			<p><img alt="Assistente de importação de texto" src="../images/textimport.png" /></p>
+			<ol>
+				<li><b>Codificação</b>. O parâmetro é definido como <em>UTF-8</em> por padrão. Deixe por isso mesmo ou selecione o tipo que você precisa usando o menu suspenso.</li>
+                <li>
+                    <b>Delimitador</b>. O parâmetro define o tipo de delimitador usado para distribuir o texto simples em diferentes células. Os delimitadores disponíveis são <em>Vírgula</em>, <em>Ponto-e-vírgula</em>, <em>Dois pontos</em>, <em>Tab</em>, <em>Espaço</em> e <em>Outro</em> (digite manualmente).
+                     <p>Clique no botão <b>Avançado</b> localizado à direita para definir as configurações de dados reconhecidos como numéricos:</p>
+                    <p><img alt="Configurações avançadas de importação de dados" src="../images/dataimport_advanced.png" /></p>
+                    <ul>
+                        <li>Defina um <b>Separador decimal</b> e um <b>Separador de milhar</b>. Os separadores padrão são <b>“.”</b> para decimal e <b>“,”</b> para milhares.</li>
+                        <li>
+                            Selecione um <b>qualificador de texto</b>. Um <b>qualificador de texto</b> é um caractere usado para reconhecer onde o texto começa e termina quando você está importando dados. As opções disponíveis: <b>(nenhum)</b>, <b>aspas duplas</b> e <b>aspas simples</b>.
+                        </li>
+                    </ul>
+                </li>
+				<li><b>Visualizar</b>. A seção mostra como o texto será organizado na célula da planilhas.</li>
+				<li><b>Escolha onde colocar os dados</b>. Insira o intervalo necessário no campo ou escolha um usando o botão <b>Selecionar dados</b> à direita.</li>
+				<li>Clique em <b>OK</b> para importar o arquivo e saia do <b>Assistente de importação de texto</b>.</li>
+			</ol>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Preenchendo um formulário</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Preencha um modelo de formulário" />
+    <link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+    <link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+    <script type="text/javascript" src="../callback.js"></script>
+    <script type="text/javascript" src="../search/js/page-search.js"></script>
+</head>
+<body>
+    <div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+        <h1>Preenchendo um formulário</h1>
+        <p>Você pode preencher os campos do formulário no arquivo PDF e enviar, imprimir ou baixar o formulário após preenchê-lo.</p>
+            <h2>Como preencher um formulário:</h2>
+            <ol>
+                <li>
+                    Abra um arquivo PDF.
+                    <p><img alt="Formulário preenchível" src="../images/fillable_form.png" /><p>
+                </li>
+                <li>Preencha todos os campos obrigatórios. Se o formulário contiver um campo de data, escolha a data usando o Seletor de data. Os campos obrigatórios estão marcados com traço vermelho. Use os botões <b>Campo Anterior</b> ou <b>Próximo Campo</b> na barra de ferramentas superior para navegar entre os campos ou clique no campo que deseja preencher.</li>
+                <li>Use o botão <b>Limpar Campos</b> para esvaziar todos os campos de entrada.</li>
+                <li>Use o <a href="../HelpfulHints/Navigation.htm" onclick="onhyperlinkclick(this)">ferramentas de navegação</a> para navegar no PDF, ajustar o zoom, ajustar à página ou largura.</li>
+                <li>
+                    Depois de preencher todos os campos, clique no botão <div class="icon icon-submit_form_icon"></div> <b>Enviar</b> na barra de ferramentas superior para enviar o formulário para processamento posterior. Observe que esta ação não pode ser desfeita. O formulário não pode ser enviado até que todos os campos obrigatórios sejam preenchidos.
+                    <p class="note">Se você estiver usando a versão servidor do ONLYOFFICE Docs, a presença do botão <b>Enviar</b> depende da configuração. Quando não houver configuração para envio de formulário, o botão será exibido como <b>Salvar como</b>. Leia <a href="https://api.onlyoffice.com/editors/config/editor/customization">este artigo</a> para saber mais.</p>
+                    <span class="desktopDocumentFeatures">Nos editores <em>desktop</em>, o botão <b>Salvar como</b> é exibido em vez do botão <b>Enviar</b>.</span>
+                    <p>Você também pode usar o botão <b>Imprimir</b> para <a href="../UsageInstructions/SavePrintDownload.htm" onclick="onhyperlinkclick(this)">imprima</a> o formulário ou vá para a aba <b>Arquivo</b> e baixe o formulário em um dos formatos suportados.</p>
+                </li>
+            </ol>
+     </div>
+</body>
+</html>

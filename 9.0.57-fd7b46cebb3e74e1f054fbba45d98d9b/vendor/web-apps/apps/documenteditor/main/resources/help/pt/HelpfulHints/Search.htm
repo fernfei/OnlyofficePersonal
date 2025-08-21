@@ -1,0 +1,159 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Função Pesquisar e Substituir</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="The description of the document search and replace function in Document Editor" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+			<div class="search-field">
+				<input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+			</div>
+			<h1>Função Pesquisar e Substituir</h1>
+			<p>Para pesquisar os caracteres, palavras ou frases necessários usados no documento editado no momento, clique no botão <span class="icon icon-searchicon"></span> situado na barra lateral esquerda do <a href="https://www.onlyoffice.com/pt/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Documentos</b></a>, o <span class="icon icon-search_icon_header"></span> ícone situado no canto superior direito, ou use o <em>Ctrl+F</em> (<em>Command+F</em> para MacOS) combinação de teclas para abrir o pequeno painel Localizar ou a combinação de teclas <em>Ctrl+H</em> para abrir o painel Localizar completo.</p>
+			<p>Um pequeno painel <b>Localizar</b> será aberto no canto superior direito da área de trabalho.</p>
+			<p><img alt="Encontrar painel pequeno" src="../../../../../../common/main/resources/help/en/images/find_small.png" /></p>
+			<p>Para acessar as configurações avançadas, clique no botão <span class="icon icon-search_advanced"></span> ícone ou use a combinação de teclas Ctrl+H.</p>
+			<p>O painel <b>Localizar e substituir</b> será aberto:</p>
+			<p><img alt="Localizar e substituir janela" src="../images/search_window.png" /></p>
+			<ol>
+				<li>Digite sua consulta no campo de entrada de dados <b>Encontrar</b> correspondente.</li>
+<li>Se você precisar <b>substituir</b> uma ou mais ocorrências dos caracteres encontrados, digite o texto de substituição no campo de entrada de dados <b>Substituir com</b> correspondente. Você pode optar por substituir uma única ocorrência atualmente realçada ou substituir todas as ocorrências clicando nos botões <b>Substituir</b> e <b>Substituir tudo</b> correspondentes.</li>
+<li>Para navegar entre as ocorrências encontradas, clique em um dos botões de seta. o <div class="icon icon-searchdownbutton"></div> botão mostra a próxima ocorrência enquanto o botão <div class="icon icon-searchupbutton"></div> botão mostra o anterior.</li>
+				<li>
+					Especifique os parâmetros de pesquisa marcando as opções necessárias abaixo dos campos de entrada:
+					<ul>
+						<li><b>Diferenciar maiúsculas de minúsculas</b> - é usado para localizar apenas as ocorrências digitadas no mesmo caso de sua consulta (por exemplo, se sua consulta for 'Editor' e esta opção for selecionada, palavras como 'editor' ou 'EDITOR' etc. não foi encontrado).</li>
+<li><b>Palavras inteiras apenas</b> - é usado para destacar apenas palavras inteiras.</li>
+					</ul>
+				</li>
+			</ol>
+			<p>Todas as ocorrências serão realçadas no arquivo e mostradas como uma lista no painel <b>Localizar</b> à esquerda. Use a lista para pular para a ocorrência desejada ou use a navegação <span class="icon icon-searchupbutton"></span> e <span class="icon icon-searchdownbutton"></span> botões.</p>
+			<p>O <b>Editor de Documentos</b> oferece suporte à pesquisa de caracteres especiais. Para encontrar um caractere especial, insira-o na caixa de pesquisa.</p>
+			<details class="details-example">
+				<summary>A lista de caracteres especiais que podem ser usados em pesquisas</summary>
+				<table>
+					<tr>
+						<td><b>Caractere especial</b></td>
+						<td><b>Descrição</b></td>
+					</tr>
+					<tr>
+						<td>^l</td>
+						<td>Quebra de linha</td>
+</tr>
+<tr>
+<td>^t</td>
+<td>Parada de tabulação</td>
+</tr>
+<tr>
+<td>^?</td>
+<td>Qualquer símbolo</td>
+</tr>
+<tr>
+<td>^#</td>
+<td>Qualquer dígito</td>
+</tr>
+<tr>
+<td>^$</td>
+<td>Qualquer letra</td>
+</tr>
+<tr>
+<td>^n</td>
+<td>Quebra de coluna</td>
+</tr>
+<tr>
+<td>^e</td>
+<td>Nota final</td>
+</tr>
+<tr>
+<td>^f</td>
+<td>Nota de rodapé</td>
+</tr>
+<tr>
+<td>^g</td>
+<td>Elemento gráfico</td>
+</tr>
+<tr>
+<td>^m</td>
+<td>Quebra de página</td>
+</tr>
+<tr>
+<td>^~</td>
+<td>Hífen ininterrupto</td>
+</tr>
+<tr>
+<td>^s</td>
+<td>Espaço ininterrupto</td>
+</tr>
+<tr>
+<td>^^</td>
+<td>Escape do próprio cursor</td>
+</tr>
+<tr>
+<td>^w</td>
+<td>Qualquer espaço</td>
+</tr>
+<tr>
+<td>^+</td>
+<td>Traço</td>
+</tr>
+<tr>
+<td>^=</td>
+<td>Entraço</td>
+</tr>
+<tr>
+<td>^y</td>
+<td>Qualquer traço</td>
+					</tr>
+				</table>
+			</details>
+			<details class="details-example">
+				<summary>Caracteres especiais que também podem ser usados para substituição:</summary>
+				<table>
+					<tr>
+						<td><b>Caractere especial</b></td>
+<td><b>Descrição</b></td>
+</tr>
+<tr>
+<td>^l</td>
+<td>Quebra de linha</td>
+</tr>
+<tr>
+<td>^t</td>
+<td>Parada de tabulação</td>
+</tr>
+<tr>
+<td>^n</td>
+<td>Quebra de coluna</td>
+</tr>
+<tr>
+<td>^m</td>
+<td>Quebra de página</td>
+</tr>
+<tr>
+<td>^~</td>
+<td>Hífen ininterrupto</td>
+</tr>
+<tr>
+<td>^s</td>
+<td>Espaço ininterrupto</td>
+</tr>
+<tr>
+<td>^+</td>
+<td>Traço</td>
+</tr>
+<tr>
+<td>^=</td>
+<td>Entraço</td>
+					</tr>
+				</table>
+			</details>
+
+		</div>
+	</body>
+</html>

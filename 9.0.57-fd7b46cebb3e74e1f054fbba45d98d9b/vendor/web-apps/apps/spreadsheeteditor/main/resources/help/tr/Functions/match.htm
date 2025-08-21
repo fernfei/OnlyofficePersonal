@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>KA&Ccedil;INCI İşlevi</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>KA&Ccedil;INCI İşlevi</h1>
+			<p><b>KA&Ccedil;INCI</b> işlevi, arama ve başvuru işlevlerinden biridir. Belirli bir h&uuml;cre aralığındaki belirli bir &ouml;ğenin g&ouml;reli konumunu vermek i&ccedil;in kullanılır.</p>
+			<p><b>KA&Ccedil;INCI</b> işlevi s&ouml;z dizimi ş&ouml;yledir:</p> 
+			<p style="text-indent: 150px;"><b><em>KA&Ccedil;INCI(aranan-değer, aranan-dizi[ , [eşleştir_t&uuml;r]])</em></b></p> 
+			<p><em>Burada</em></p> 
+			<p style="text-indent: 50px;"><em><b>aranan-değer,</b></em> <em><b>aranan-dizide</b></em> bulunan ve aranacak olan bir değerdir. Sayısal, mantıksal veya metin değeri ya da h&uuml;cre başvurusu olabilir.</p>
+			<p style="text-indent: 50px;"><em><b>aranan-dizi,</b></em> analiz etmeniz gereken tek bir satır veya s&uuml;tundur.</p>
+			<p style="text-indent: 50px;"><em><b>eşleştir-t&uuml;r,</b></em> bir eşleştirme t&uuml;r&uuml;d&uuml;r. İsteğe bağlı bir bağımsız değişkendir. Aşağıdaki sayısal değerlerden biri olabilir:</p>
+				<table style="width: 40%">
+				<tr>
+					<td><b>Sayısal değer</b></td>
+					<td><b>Anlam</b></td>
+				</tr>
+				<tr>
+					<td>1 veya atlanır</td>
+					<td>Değerler artan d&uuml;zende sıralanmalıdır. Tam eşleşme bulunamazsa işlev, <em><b>aranan-değerden</b></em> k&uuml;&ccedil;&uuml;k olan en b&uuml;y&uuml;k değeri d&ouml;nd&uuml;r&uuml;r.</td>
+				</tr>
+				<tr>
+					<td>0</td>
+					<td>Değerler herhangi bir d&uuml;zende sıralanabilir. Tam eşleşme bulunamazsa işlev, #YOK hata değerini verir.</td>
+				</tr>
+				<tr>
+					<td>-1</td>
+					<td>Değerler azalan d&uuml;zende sıralanmalıdır. Tam eşleşme bulunamazsa işlev, <em><b>aranan-değerden</b></em> b&uuml;y&uuml;k olan en k&uuml;&ccedil;&uuml;k değeri d&ouml;nd&uuml;r&uuml;r.</td>
+				</tr>
+			</table>
+			<p><b>KA&Ccedil;INCI</b> işlevini uygulamak i&ccedil;in</p>
+			<ol>
+			<li>Sonucu g&ouml;r&uuml;nt&uuml;lemek istediğiniz h&uuml;creyi se&ccedil;in,</li>
+			<li>&Uuml;st ara&ccedil; &ccedil;ubuğunda bulunan <b>İşlev ekle</b> <div class = "icon icon-insertfunction"></div> simgesine tıklayın
+                <br />veya se&ccedil;ilen bir h&uuml;crenin i&ccedil;ine sağ tıklayın ve men&uuml;den <b>İşlev Ekle</b> se&ccedil;eneğini se&ccedil;in
+                <br />veya<div class = "icon icon-function"></div>form&uuml;l &ccedil;ubuğunda bulunan simgeye tıklayın,
+            </li>
+			<li>Listeden <b>Arama ve Başvuru</b> işlev grubunu se&ccedil;in,</li>
+			<li><b>KA&Ccedil;INCI</b> işlevine tıklayın,</li>
+			<li>Virg&uuml;lle ayırarak gerekli bağımsız değişkenleri girin,</li>
+			<li><b>Enter</b> d&uuml;ğmesine basın.</li>
+			</ol>
+			<p>Sonu&ccedil; se&ccedil;ili h&uuml;crede g&ouml;r&uuml;nt&uuml;lenecektir.</p>
+			<p style="text-indent: 150px;"><img alt="KAÇINCI İşlevi" src="../images/match.png" /></p>
+		</div>
+	</body>
+</html>

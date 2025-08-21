@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>TAHMİN.ETS İşlevi</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>TAHMİN.ETS İşlevi</h1>
+			<p><b>TAHMİN.ETS</b> işlevi, istatiksel işlevlerden biridir. &Uuml;stel D&uuml;zeltme (ETS) algoritmasının AAA s&uuml;r&uuml;m&uuml;n&uuml; kullanarak mevcut (ge&ccedil;miş) değerler temelinde gelecekteki bir değeri hesaplamak veya tahmin etmek i&ccedil;in kullanılır.</p>
+			<p><b>TAHMİN.ETS</b> işlevi s&ouml;z dizimi ş&ouml;yledir:</p> 
+			<p style="text-indent: 150px;"><b><em>TAHMİN.ETS(hedef_tarih, değerler, zaman_&ccedil;izelgesi, [mevsimsellik], [veri_tamamlama], [toplama])</em></b></p> 
+			<p><em>Burada</em></p>
+				<p style="text-indent: 50px;"><b><em>hedef_tarih,</em></b> yeni bir değeri tahmin etmek istediğiniz bir tarihtir. <b><em>Zaman_&ccedil;izelgesindeki</em></b> son tarihten sonra olmalıdır.</p>
+				<p style="text-indent: 50px;"><b><em>değerler,</em></b> yeni bir noktayı tahmin etmek istediğiniz tarihsel değerler aralığıdır.</p>
+                <p style="text-indent: 50px;"><b><em>zaman_&ccedil;izelgesi,</em></b> ge&ccedil;miş değerlere karşılık gelen bir tarih/saat değerleri aralığıdır. <b><em>Zaman_&ccedil;izelgesi</em></b> aralığı <b><em>değerler</em></b> aralığı ile aynı boyutta olmalıdır. Tarih/saat değerleri arasında sabit bir adım olmalıdır (bununla birlikte, eksik değerlerin %30&apos;a kadar olan kısmı,  <b><em>veri_tamamlama</em></b> bağımsız değişkeni ile belirtildiği şekilde işlenebilir ve yinelenen değerler, <b><em>toplama</em></b> bağımsız değişkeni ile belirtildiği şekilde toplanabilir).</p>
+                <p style="text-indent: 50px;"><b><em>mevsimsellik,</em></b> mevsimselliği algılamak i&ccedil;in hangi y&ouml;ntemin kullanılması gerektiğini belirten sayısal bir değerdir. İsteğe bağlı bir bağımsız değişkendir. Olası değerler aşağıdaki tabloda listelenmiştir.</p>
+            <table style="width: 40%">
+                <tr>
+                    <td><b>Sayısal değer</b></td>
+                    <td><b>Davranış</b></td>
+                </tr>
+                <tr>
+                    <td>1 veya atlanır</td>
+                    <td>Mevsimsellik otomatik olarak algılanır. Mevsimsel modelin uzunluğu i&ccedil;in pozitif, tam sayılar kullanılır.</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>Mevsimsellik yok, tahmin doğrusal olur.</td>
+                </tr>
+                <tr>
+                    <td>2&apos;den b&uuml;y&uuml;k veya 2&apos;ye eşit bir tamsayıdır,</td>
+                    <td>Belirtilen sayı, mevsimsel modelin uzunluğu i&ccedil;in kullanılır.</td>
+                </tr>
+            </table>
+                <p style="text-indent: 50px;"><b><em>veri_tamamlama,</em></b> eksik veri noktalarının <b><em>zaman_&ccedil;izelgesi</em></b> veri aralığında nasıl işleneceğini belirten sayısal bir değerdir. İsteğe bağlı bir bağımsız değişkendir. Olası değerler aşağıdaki tabloda listelenmiştir.</p>
+            <table style="width: 40%">
+                <tr>
+                    <td><b>Sayısal değer</b></td>
+                    <td><b>Davranış</b></td>
+                </tr>
+                <tr>
+                    <td>1 veya atlanır</td>
+                    <td>Eksik noktalar, yakın noktaların ortalaması alınarak hesaplanır.</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>Eksik noktalar sıfır değerler olarak kabul edilir.</td>
+                </tr>
+            </table>
+                <p style="text-indent: 50px;"><b><em>toplama,</em></b> sayısal bir değerdir ve <b><em>zaman_&ccedil;izelgesi</em></b> veri aralığında aynı zaman değerlerini toplamak i&ccedil;in hangi işlevin kullanılması gerektiğini belirtir. İsteğe bağlı bir bağımsız değişkendir. Olası değerler aşağıdaki tabloda listelenmiştir.</p>
+            <table style="width: 40%">
+                <tr>
+                    <td><b>Sayısal değer</b></td>
+                    <td><b>İşlev</b></td>
+                </tr>
+                <tr>
+                    <td>1 veya atlanır</td>
+                    <td><a href="../Functions/average.htm" onclick="onhyperlinkclick(this)">ORTALAMA</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="../Functions/count.htm" onclick="onhyperlinkclick(this)">SAY</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><a href="../Functions/counta.htm" onclick="onhyperlinkclick(this)">DOLU SAY</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><a href="../Functions/max.htm" onclick="onhyperlinkclick(this)">MAKS</a></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><a href="../Functions/median.htm" onclick="onhyperlinkclick(this)">ORTANCA DEĞER</a></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><a href="../Functions/min.htm" onclick="onhyperlinkclick(this)">MİN</a></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><a href="../Functions/sum.htm" onclick="onhyperlinkclick(this)">TOPLA</a></td>
+                </tr>
+            </table> 
+			<p><b>TAHMİN.ETS</b> işlevini uygulamak i&ccedil;in</p>
+			<ol>
+			<li>Sonucu g&ouml;r&uuml;nt&uuml;lemek istediğiniz h&uuml;creyi se&ccedil;in,</li>
+			<li>&Uuml;st ara&ccedil; &ccedil;ubuğunda bulunan <b>İşlev ekle</b> <div class = "icon icon-insertfunction"></div> simgesine tıklayın
+                <br />veya se&ccedil;ilen bir h&uuml;crenin i&ccedil;ine sağ tıklayın ve men&uuml;den <b>İşlev Ekle</b> se&ccedil;eneğini se&ccedil;in
+                <br />veya<div class = "icon icon-function"></div>form&uuml;l &ccedil;ubuğunda bulunan simgeye tıklayın,
+            </li>
+			<li>Listeden <b>İstatiksel</b> işlev grubunu se&ccedil;in,</li>
+			<li><b>TAHMİN.ETS</b> işlevine tıklayın,</li>
+			<li>Virg&uuml;lle ayırarak gerekli bağımsız değişkenleri girin,</li>
+			<li><b>Enter</b> d&uuml;ğmesine basın.</li>
+			</ol>
+			<p>Sonu&ccedil; se&ccedil;ili h&uuml;crede g&ouml;r&uuml;nt&uuml;lenecektir.</p>
+			<p style="text-indent: 150px;"><img alt="TAHMİN.ETS İşlevi" src="../images/forecast-ets.png" /></p>
+		</div>
+	</body>
+</html>

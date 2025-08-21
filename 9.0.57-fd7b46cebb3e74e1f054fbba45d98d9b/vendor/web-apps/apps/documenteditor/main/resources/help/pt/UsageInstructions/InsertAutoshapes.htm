@@ -1,0 +1,253 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Inserir autoformas</title>
+		<meta charset="utf-8" />
+		<meta name="descrição" content="Adicione uma forma automática ao seu documento e ajuste suas propriedades." />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Inserir autoformas</h1>
+            <h3>Inserir autoforma</h3>
+			<p>Para adicionar uma autoforma no <a href="https://www.onlyoffice.com/pt/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Documentos</b></a>,</p>
+			<ol>
+				<li>mude para a guia <b>Inserir</b> da barra de ferramentas superior,</li>
+				<li>Clique no ícone de <div class = "icon icon-insertautoshape"></div> <b>forma</b> na barra de ferramentas superior,</li>
+                <li>selecione um dos grupos de autoformas disponíveis na <b>Galeria de formas</b>: <em>Usado recentemente</em>, <em>Formas básicas</em>, <em>Setas figuradas</em>, <em>Matemática</em>, <em>Gráficos</em>, <em>Estrelas e Faixas</em>, <em>Textos explicativos</em>, <em>Botões</em>, <em>Retângulos</em>, <em>Linhas</em>,</li>
+				<li>clique na forma automática necessária dentro do grupo selecionado,</li>
+                <li>coloque o cursor do mouse onde a forma deve ser adicionada,</li>
+				<li>
+					depois que a autoforma é adicionada, você pode alterar seu tamanho, posição e propriedades.
+                <p class="note"><b>Observação</b>: para adicionar uma legenda a uma forma automática, verifique se a forma necessária está selecionada na página e comece a digitar seu texto. O texto adicionado torna-se parte da forma automática (quando você move ou gira a forma, o texto se move ou gira com ela).</p>
+				</li>
+			</ol>
+            <p>Também é possível adicionar uma legenda à forma automática. Para saber mais sobre como trabalhar com legendas para formas automáticas, consulte <a href="../UsageInstructions/AddCaption.htm" onclick="onhyperlinkclick(this)">este artigo</a>.</p>
+            <h3>Mover e redimensionar formas automáticas</h3>
+            <p id ="shape_resize">Para alterar o tamanho da forma automática, arraste pequenos quadrados <span class = "icon icon-resize_square"></span> situados nas bordas da forma. Para manter as proporções originais da forma automática selecionada durante o redimensionamento, mantenha pressionada a tecla <b>Shift</b> e arraste um dos ícones do canto.</p>
+			<p><span class="big big-reshaping"></span></p>
+            <p>Ao modificar algumas formas, por exemplo, setas ou legendas, o ícone <span class = "icon icon-yellowdiamond"></span> em forma de diamante amarelo também está disponível. Permite ajustar alguns aspectos da forma, por exemplo, o comprimento da ponta de uma flecha.</p>
+            <p>
+            Para alterar a posição da forma automática, use o ícone <span class = "icon icon-arrow"></span> que aparece depois de passar o cursor do mouse sobre a forma automática. Arraste a autoforma para a posição desejada sem soltar o botão do mouse.
+            Quando você move a forma automática, as linhas de guia são exibidas para ajudá-lo a posicionar o objeto com precisão na página (se o estilo de contorno selecionado não for embutido).
+            Para mover a forma automática em incrementos de um pixel, mantenha pressionada a tecla <b>Ctrl</b> e use as setas do teclado.
+            Para mover a forma automática estritamente na horizontal/vertical e evitar que ela se mova em uma direção perpendicular, mantenha pressionada a tecla <b>Shift</b> ao arrastar.
+			</p>
+			<p>Para girar a forma automática, passe o cursor do mouse sobre a alça de rotação <span class = "icon icon-greencircle"></span> e arraste-a no sentido horário ou anti-horário. Para restringir o ângulo de rotação a incrementos de 15 graus, mantenha pressionada a tecla <b>Shift</b> enquanto gira.</p>
+            <p class="note">
+                <b>Nota</b>: a lista de atalhos de teclado que podem ser usados ao trabalhar com objetos está disponível <a href="../HelpfulHints/KeyboardShortcuts.htm#workwithobjects" onclick="onhyperlinkclick(this)">aqui</a>.
+            </p>
+            <hr />
+            <h3>Ajustar as configurações de forma automática</h3>
+            <p id ="shape_rightclickmenu">Para alinhar e organizar formas automáticas, use o <b>menu do botão direito</b>. As opções do menu são:</p>
+			<ul>
+				<li><b>Recortar, Copiar, Colar</b> - opções padrão que são usadas para recortar ou copiar o texto/objeto selecionado e colar a passagem de texto ou objeto recortado/copiado anteriormente na posição atual do cursor.</li>
+                        <li><b>Imprimir seleção</b> é usada para imprimir apenas uma parte selecionada do documento.</li>
+                        <li><b>Aceitar / Rejeitar alterações</b> é usado para aceitar ou rejeitar alterações controladas em um documento compartilhado.</li>
+                        <li><b>Editar Pontos</b> é usado para personalizar ou alterar a curvatura de sua forma.
+					<ol>
+						<li>Para ativar os pontos de ancoragem editáveis de uma forma, clique com o botão direito na forma e escolha <b>Editar pontos</b> no menu. Os quadrados pretos que se tornam ativos são os pontos onde duas linhas se encontram, e a linha vermelha contorna a forma. Clique e arraste para reposicionar o ponto e alterar o contorno da forma.</li>
+						<li>
+							Depois de clicar no ponto de ancoragem, duas linhas azuis com quadrados brancos nas extremidades aparecerão. Estas são as alças de Bezier que permitem criar uma curva e alterar a suavidade de uma curva.
+							<p><img alt="Editar Pontos" src="../images/editpoints_example.png" /></p>
+						</li>
+						<li>
+							Enquanto os pontos de ancoragem estiverem ativos, você pode adicioná-los e excluí-los.
+                            <p><b>Para adicionar um ponto a uma forma</b>, segure <b>Ctrl</b> e clique na posição onde deseja adicionar um ponto de ancoragem.</p>
+                            <p><b>Para excluir um ponto</b>, segure <b>Ctrl</b> e clique no ponto desnecessário.</p>
+						</li>
+					</ol>
+				</li>
+				<li><b>Organizar</b> é usado para trazer a autoforma selecionada para o primeiro plano, enviá-la para o segundo plano, avançar ou retroceder, bem como agrupar ou desagrupar formas para realizar operações com várias delas ao mesmo tempo. Para saber mais sobre como organizar objetos, consulte <a href="../UsageInstructions/AlignArrangeObjects.htm" onclick="onhyperlinkclick(this)">esta página</a>.</li>
+				<li><b>Alinhar</b> é usado para alinhar a forma à esquerda, no centro, à direita, no topo, no meio, na parte inferior. Para saber mais sobre como alinhar objetos, consulte <a href="../UsageInstructions/AlignArrangeObjects.htm" onclick="onhyperlinkclick(this)">esta página</a>.</li>
+				<li><b>Estilo da quebra automática</b> é usado para selecionar um estilo de quebra de texto dentre os disponíveis - em linha, quadrado, apertado, através, superior e inferior, na frente, atrás - ou editar o limite de quebra. A opção <b>Editar limite de disposição</b> está disponível apenas se você selecionar um estilo de quebra automática diferente de Inline. Arraste os pontos de contorno para personalizar o limite. Para criar um novo ponto de quebra, clique em qualquer lugar na linha vermelha e arraste-o para a posição desejada. <div class = "big big-wrap_boundary"></div></li>
+				<li><b>Girar</b> é usado para girar a forma em 90 graus no sentido horário ou anti-horário, bem como para virar a forma horizontal ou verticalmente.</li>
+                <li><b>Configurações avançadas de forma</b> é usado para abrir a janela 'Forma - Configurações avançadas'.</li>
+			</ul>
+			<hr />
+			<p>Algumas das configurações de forma automática podem ser alteradas usando a guia <b>Configurações de forma</b> da barra lateral direita. Para ativá-lo, clique na forma e escolha o ícone <b>Configurações de forma</b> <span class = "icon icon-shape_settings_icon"></span> à direita. Aqui você pode alterar as seguintes propriedades:</p>
+			<ul>
+			<li  id="shape_fill"><b>Encher</b> - use esta seção para selecionar o preenchimento da forma automática. Você pode escolher as seguintes opções:
+			<ul>
+				<li><b>Preenchimento de cor</b> - selecione esta opção para especificar a cor sólida para preencher o espaço interno da forma automática selecionada.
+					<p><img alt="Preenchimento de cor" src="../images/fill_color.png" /></p>
+					<p id="color">Clique na caixa colorida abaixo e selecione a cor necessária nos <a href="../UsageInstructions/ChangeColorScheme.htm" onclick="onhyperlinkclick(this)">conjuntos de cores</a> disponíveis ou especifique qualquer cor de sua preferência:</p>
+				</li>
+                <li>
+                    <b>Preenchimento gradiente</b> - use esta opção para preencher a forma com duas ou mais cores esmaecidas. Personalize seu preenchimento de gradiente sem restrições. Clique no ícone <b>Configurações de forma</b> <div class = "icon icon-shape_settings_icon"></div> para abrir o menu <b>Preencher</b> na barra lateral direita:
+                    <p><img alt="Gradient Fill" src="../images/fill_gradient.png" /></p>
+                    <p>Opções de menu disponíveis:</p>
+                    <ul>
+                        <li>
+                            <b>Estilo</b> - escolha entre <b>Linear</b> ou <b>Radial</b>:
+                            <ul>
+                                <li><b>Linear</b> é usado quando você precisa que suas cores fluam da esquerda para a direita, de cima para baixo ou em qualquer ângulo escolhido em uma única direção. A janela de visualização <b>Direção</b> exibe a cor do gradiente selecionada, clique na seta para escolher uma direção de gradiente predefinida. Use as configurações de <b>Ângulo</b> para obter um ângulo de gradiente preciso.</li>
+                                <li><b>Radial</b> é usado para mover do centro, pois começa em um único ponto e emana para fora.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Ponto de gradiente</b> é um ponto específico para a transição de uma cor para outra.
+                            <ul>
+                                <li>Use o botão <div class = "icon icon-addgradientpoint"></div> <b>Adicionar ponto de gradiente</b> ou a barra deslizante para adicionar um ponto de gradiente. Você pode adicionar até 10 pontos de gradiente. Cada próximo ponto de gradiente adicionado não afetará de forma alguma a aparência do preenchimento de gradiente atual. Use o botão <div class = "icon icon-removegradientpoint"></div> <b>Remover ponto de gradiente</b> para excluir um determinado ponto de gradiente.</li>
+                                <li>Use a barra deslizante para alterar a localização do ponto de gradiente ou especifique <b>Posição</b> em porcentagem para localização precisa.</li>
+                                 <li>Para aplicar uma cor a um ponto de gradiente, clique em um ponto na barra deslizante e clique em <b>Cor</b> para escolher a cor desejada.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+				<li><b>Imagem ou Textura</b> - selecione esta opção para usar uma imagem ou uma textura predefinida como fundo da forma.
+				<p><img alt="Preenchimento com Imagem ou Textura" src="../images/fill_picture.png" /></p>
+					<ul>
+						<li>Se desejar usar uma imagem como plano de fundo para a forma, você pode adicionar uma imagem <b>Do arquivo</b> selecionando-a no disco rígido do computador, <b>Da URL</b> inserindo o endereço URL apropriado na janela aberta ou <b>Do armazenamento</b> selecionando a imagem necessária armazenada em seu portal.</li>
+                        <li>Se você deseja usar uma textura como plano de fundo para a forma, abra o menu <b>Da textura</b> e selecione a predefinição de textura necessária.
+                        <p>Atualmente, as seguintes texturas estão disponíveis: lona, papelão, tecido escuro, grão, granito, papel cinza, malha, couro, papel pardo, papiro, madeira.</p>
+						</li>
+					</ul>
+					<ul>
+						<li>Caso a <b>Imagem</b> selecionada tenha menos ou mais dimensões do que a forma automática, você pode escolher a configuração <b>Alongar</b> ou <b>Tela</b> na lista suspensa.
+                        <p>A opção <b>Alongar</b> permite que você ajuste o tamanho da imagem para caber no tamanho da forma automática para que ela preencha o espaço completamente.</p>
+                        <p>A opção <b>Tile</b> permite que você exiba apenas uma parte da imagem maior mantendo suas dimensões originais ou repita a imagem menor mantendo suas dimensões originais sobre a superfície do autoshape para que ela preencha o espaço completamente. </p>
+                        <p class="note"><b>Observação</b>: qualquer predefinição de <b>Textura</b> selecionada preenche o espaço completamente, mas você pode aplicar o efeito <b>Esticar</b> se necessário.</p>
+						</li>
+					</ul>
+				</li>
+				<li><b>Padrão</b> - selecione esta opção para preencher a forma com um desenho de duas cores composto por elementos repetidos regularmente.
+				<p><img alt="Preenchimento padrão" src="../images/fill_pattern.png" /></p>
+				    <ul>
+				        <li><b>Padrão</b> - selecione um dos designs predefinidos no menu.</li>
+                <li><b>Cor do primeiro plano</b> - clique nesta caixa de cor para alterar a cor dos elementos do padrão.</li>
+                <li><b>Cor de fundo</b> - clique nesta caixa de cor para alterar a cor do fundo do padrão.</li>
+                </ul>
+                </li>
+                <li><b>Sem preenchimento</b> - selecione esta opção se não quiser usar nenhum preenchimento.</li>
+			</ul>
+			</li>
+			</ul>
+			<p><img class="floatleft" alt="Guia Configurações de Autoforma" src="../images/right_autoshape.png" /></p>
+			<ul style="margin-left: 280px;">			
+			<li><b>Opacidade</b> - use esta seção para definir um nível de <b>Opacidade</b> arrastando o controle deslizante ou inserindo o valor percentual manualmente. O valor padrão é <b>100%</b>. Corresponde à opacidade total. O valor <b>0%</b> corresponde à transparência total.</li>
+            <li id="shape_stroke"><b>Linha</b> - use esta seção para alterar a largura, cor ou tipo da linha de forma automática.
+				<ul>
+				<li>Para alterar a largura da linha, selecione uma das opções disponíveis na lista suspensa <b>Tamanho</b>. As opções disponíveis são: 0,5 pt, 1 pt, 1,5 pt, 2,25 pt, 3 pt, 4,5 pt, 6 pt. Como alternativa, selecione a opção <b>Sem linha</b> se não quiser usar nenhuma linha.</li>
+                <li>Para alterar a <b>cor</b> da linha, clique na caixa colorida abaixo e <a href="../UsageInstructions/ChangeColorScheme.htm" onclick="onhyperlinkclick(this)">selecione a cor necessária </a>.</li>
+                 <li>Para alterar o <b>tipo</b> da linha, selecione a opção necessária na lista suspensa correspondente (uma linha sólida é aplicada por padrão, você pode alterá-la para uma das linhas tracejadas disponíveis).</li>
+				</ul>
+			</li>
+            <li><b>Rotação</b> é usada para girar a forma em 90 graus no sentido horário ou anti-horário, bem como para inverter a forma horizontal ou verticalmente. Clique em um dos botões:
+                <ul>
+                    <li><div class = "icon icon-rotatecounterclockwise"></div> para girar a forma em 90 graus no sentido anti-horário</li>
+                    <li><div class = "icon icon-rotateclockwise"></div> para girar a forma em 90 graus no sentido horário</li>
+                    <li><div class = "icon icon-fliplefttoright"></div> para inverter a forma horizontalmente (da esquerda para a direita)</li>
+                    <li><div class = "icon icon-flipupsidedown"></div> para virar a forma verticalmente (de cabeça para baixo)</li>
+                </ul>
+            </li>
+			<li><b>Estilo de quebra automática</b> - use esta seção para selecionar um estilo de quebra automática de texto dentre os disponíveis - em linha, quadrado, apertado, através, superior e inferior, na frente, atrás (para obter mais informações, consulte a descrição de configurações avançadas abaixo).</li>
+            <li><b>Alterar forma automática</b> - use esta seção para substituir a forma automática atual por outra selecionada na lista suspensa.</li>
+            <li><b>Mostrar sombra</b> - marque esta opção para exibir a forma com uma sombra.</li>
+			</ul>
+			<hr />
+			<h3>Ajustar configurações avançadas de forma automática</h3>
+            <p>Para alterar as <b>configurações avançadas</b> da forma automática, clique com o botão direito do mouse e selecione a opção <b>Configurações avançadas</b> no menu ou use a opção <b>Mostrar configurações avançadas</b> link na barra lateral direita. A janela 'Forma - Configurações avançadas' será aberta:</p>
+             <p><img alt="Forma - Configurações Avançadas" src="../images/shape_properties.png" /></p>
+            <p>A guia <b>Tamanho</b> contém os seguintes parâmetros:</p>
+			<ul>
+				<li><b>Largura</b> - use uma dessas opções para alterar a largura da forma automática.
+                 <ul>
+                     <li><b>Absoluto</b> - especifique um valor exato medido em unidades absolutas, ou seja, <b>Centímetros</b>/<b>Pontos</b>/<b>Polegadas</b> (dependendo do a opção especificada na guia <b>Arquivo</b> -> <b>Configurações avançadas...</b>).</li>
+                     <li><b>Relativo</b> - especifique uma porcentagem <b>relativa à</b> largura da <em>margem esquerda</em>, à <em>margem</em> (ou seja, a distância entre as margens esquerda e direita), a largura da <em>página</em> ou a largura da <em>margem direita</em>.</li>
+                </ul>
+                </li>
+                <li><b>Altura</b> - use uma dessas opções para alterar a altura da forma automática.
+                     <ul>
+                         <li><b>Absoluto</b> - especifique um valor exato medido em unidades absolutas, ou seja, <b>Centímetros</b>/<b>Pontos</b>/<b>Polegadas</b> (dependendo do a opção especificada na guia <b>Arquivo</b> -> <b>Configurações avançadas...</b>).</li>
+                         <li><b>Relativo</b> - especifique uma porcentagem <b>relativa</b> à <em>margem</em> (ou seja, a distância entre as margens superior e inferior), à <em>inferior altura da margem</em>, altura da <em>página</em> ou altura da <em>margem superior</em>.</li>
+                     </ul>
+                 </li>
+                 <li>Se a opção <b>Bloquear proporção</b> estiver marcada, a largura e a altura serão alteradas juntas, preservando a proporção da forma original.</li>
+			</ul>
+            <p><img alt="Forma - Configurações Avançadas" src="../images/shape_properties_6.png" /></p>
+            <p>A guia <b>Rotação</b> contém os seguintes parâmetros:</p>
+            <ul>
+                <li><b>Ângulo</b> - use esta opção para girar a forma em um ângulo exatamente especificado. Insira o valor necessário medido em graus no campo ou ajuste-o usando as setas à direita. </li>
+                 <li><b>Invertido</b> - marque a caixa <b>Horizontalmente</b> para virar a forma horizontalmente (da esquerda para a direita) ou marque a caixa <b>Verticalmente</b> para virar a forma verticalmente (de cabeça para baixo).</li>
+            </ul>
+            <p id="shape_wrapping"><img alt="Forma - Configurações Avançadas" src="../images/shape_properties_1.png" /></p>
+			<p>A guia <b>Disposição do texto</b> contém os seguintes parâmetros:</p>
+			<ul>
+				<li><b>Estilo da quebra automática</b> - use esta opção para alterar a forma como a forma é posicionada em relação ao texto: será uma parte do texto (no caso de você selecionar o estilo embutido) ou ignorado por ele de todos os lados (se você seleciona um dos outros estilos).
+				<ul>
+				    <li><p><div class = "icon icon-wrappingstyle_inline"></div> <b>Em linha</b> - a forma é considerada parte do texto, como um caractere, portanto, quando o texto se move, a forma também se move. Nesse caso, as opções de posicionamento ficam inacessíveis.</p>
+                    <p>Se um dos seguintes estilos for selecionado, a forma pode ser movida independentemente do texto e posicionada exatamente na página:</p>
+				    </li>
+				    <li><p><div class = "icon icon-wrappingstyle_square"></div> <b>Quadrado</b> - o texto envolve a caixa retangular que limita a forma.</p></li>
+				    <li><p><div class = "icon icon-wrappingstyle_tight"></div> <b>Justo</b> - o texto envolve as bordas da forma real.</p></li>
+				    <li><p><div class = "icon icon-wrappingstyle_through"></div> <b>Através</b> - o texto envolve as bordas da forma e preenche o espaço em branco aberto dentro da forma. Para que o efeito apareça, use a opção <b>Editar limite de disposição</b> no menu do botão direito.</p></li>
+				    <li><p><div class = "icon icon-wrappingstyle_topandbottom"></div> <b>Parte superior e inferior</b> - o texto está apenas acima e abaixo da forma.</p></li>
+				    <li><p><div class = "icon icon-wrappingstyle_infront"></div> <b>Na frente</b> - a forma se sobrepõe ao texto.</p></li>
+				    <li><p><div class = "icon icon-wrappingstyle_behind"></div> <b>Atrás</b> - o texto sobrepõe a forma.</p></li>
+				    </ul>
+				</li>
+			</ul>
+			<p>Se você selecionar os estilos quadrado, apertado, através ou superior e inferior, poderá configurar alguns parâmetros adicionais - <b>distância do texto</b> em todos os lados (superior, inferior, esquerda, direita).</p>
+            <p id="position"><img alt="Forma - Configurações Avançadas" src="../images/shape_properties_2.png" /></p>
+			<p>A guia <b>Posição</b> está disponível apenas se o estilo de quebra automática selecionado não for embutido. Esta guia contém os seguintes parâmetros que variam dependendo do estilo de embrulho selecionado:</p>
+			<ul>
+                <li>
+                   A seção <b>Horizontal</b> permite que você selecione um dos três tipos de posicionamento de forma automática a seguir:
+                    <ul>
+                        <li><b>Alinhamento</b> (esquerda, central, direita) <b>relativo a</b> caractere, coluna, margem esquerda, margem, página ou margem direita,</li>
+                         <li>Absoluta <b>Posição</b> medida em unidades absolutas, ou seja, <b>Centímetros</b>/<b>Pontos</b>/<b>Polegadas</b> (dependendo da opção especificada em a guia <b>Arquivo</b> -> <b>Configurações avançadas...</b>) <b>à direita de</b> caractere, coluna, margem esquerda, margem, página ou margem direita, </li>
+                         <li><b>Posição relativa</b> medida em porcentagem <b>relativa à</b> margem esquerda, margem, página ou margem direita.</li>
+                    </ul>
+                </li>
+                <li>
+                    A seção <b>Vertical</b> permite selecionar um dos três tipos de posicionamento de forma automática a seguir:
+                    <ul>
+                        <li><b>Alinhamento</b> (superior, central, inferior) <b>relativo à</b> linha, margem, margem inferior, parágrafo, página ou margem superior,</li>
+                         <li>Absoluta <b>Posição</b> medida em unidades absolutas, ou seja, <b>Centímetros</b>/<b>Pontos</b>/<b>Polegadas</b> (dependendo da opção especificada em a guia <b>Arquivo</b> -> <b>Configurações avançadas...</b>) <b>abaixo</b> da linha, margem, margem inferior, parágrafo, página ou margem superior,</li>
+                         <li><b>Posição relativa</b> medida em porcentagem <b>relativa à</b> margem, margem inferior, página ou margem superior.</li>
+                    </ul>
+                </li>
+				<li><b>Mover objeto com texto</b> garante que a forma automática se mova junto com o texto ao qual está ancorada.</li>
+                <li><b>Permitir sobreposição</b> permite que duas formas automáticas se sobreponham se você arrastá-las próximas uma da outra na página.</li>
+			</ul>
+			<p><img alt="Forma - Configurações Avançadas" src="../images/shape_properties_3.png" /></p>
+			<p>Os <b>Pesos e Setas</b> guia contém os seguintes parâmetros:</p>
+			<ul>
+				<li><b>Estilo de linha</b> - este grupo de opções permite especificar os seguintes parâmetros:
+					<ul>
+						<li>
+							<b>Tipo de tampa</b> - esta opção permite definir o estilo para o final da linha, portanto, pode ser aplicado apenas às formas com o contorno aberto, como linhas, polilinhas etc.:
+							<ul>
+								<li><b>Plano</b> - os pontos finais serão planos.</li>
+                                <li><b>Redondo</b> - os pontos finais serão arredondados.</li>
+                                <li><b>Quadrado</b> - os pontos finais serão quadrados.</li>
+							</ul>
+						</li>
+						<li>
+							<b>Tipo de junção</b> - esta opção permite definir o estilo para a interseção de duas linhas, por exemplo, pode afetar uma polilinha ou os cantos do triângulo ou contorno do retângulo:
+                            <ul>
+                            <li><b>Redondo</b> - o canto será arredondado.</li>
+                            <li><b>Bevel</b> - o canto será cortado angularmente.</li>
+                            <li><b>Mitra</b> - o canto ficará pontiagudo. Vai bem para formas com ângulos agudos.</li>
+							</ul>
+							<p class="note"><b>Nota</b>: o efeito será mais perceptível se você usar uma largura de contorno grande.</p>
+						</li>
+					</ul>
+				</li>
+				<li><b>Setas</b> - este grupo de opções está disponível se uma forma do grupo de formas <b>Linhas</b> for selecionada. Ele permite definir a seta <b>Início</b> e <b>Estilo final</b> e <b>Tamanho</b> selecionando a opção apropriada nas listas suspensas.</li>
+			</ul>
+            <p><img alt="Forma - Configurações Avançadas" src="../images/shape_properties_4.png" /></p>
+			<p>A guia <b>Preenchimento de Texto</b> permite alterar as margens internas <b>Superior</b>, <b>Inferior</b>, <b>Esquerda</b> e <b>Direita</b> da forma automática (ou seja, a distância entre o texto dentro da forma e as bordas da forma automática).</p>
+             <p class="note"><b>Observação</b>: esta guia só estará disponível se o texto for adicionado à forma automática, caso contrário, a guia será desativada.</p>
+            <p><img alt="Forma - Configurações Avançadas" src="../images/shape_properties_5.png" /></p>
+			<p>A guia <b>Texto Alternativo</b> permite especificar um <b>Título</b> e uma <b>Descrição</b> que serão lidos para pessoas com deficiência visual ou cognitiva para ajudá-los a entender melhor quais informações o a forma contém.</p>
+		</div>
+	</body>
+</html>

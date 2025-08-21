@@ -1,0 +1,55 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Inserir números de linha</title>
+    <meta charset="utf-8" />
+    <meta name="descrição" content="Inserir números de linha no Editor de Documentos" />
+    <link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+    <link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+    <script type="text/javascript" src="../callback.js"></script>
+    <script type="text/javascript" src="../search/js/page-search.js"></script>
+</head>
+<body>
+    <div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+        <h1>Inserir números de linha</h1>
+        <p>O <a href="https://www.onlyoffice.com/pt/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Documentos do ONLYOFFICE</b></a> pode contar linhas em seu documento automaticamente. Esse recurso pode ser útil quando você precisa fazer referência a uma linha específica do documento, por exemplo, em um acordo legal ou um script de código. Use a ferramenta <span class = "icon icon-linenumbers_icon"></span> <b>Números de linha</b> para aplicar a numeração de linha ao documento. Observe que a sequência de numeração de linhas não é aplicada ao texto em objetos como tabelas, caixas de texto, gráficos, cabeçalhos/rodapés, etc. Esses objetos são tratados como uma linha.</p>
+         <h2>Aplicando numeração de linha</h2>
+        <ol>
+            <li>Abra a guia <b>Layout</b> localizada na barra de ferramentas superior e clique no botão <div class = "icon icon-linenumbers_icon"></div> <b>Números de Linhas</b>.</li>
+            <li>
+                Escolha os parâmetros necessários para uma configuração rápida no menu suspenso aberto:
+                 <ul>
+                     <li><b>Contínuo</b> - a cada linha do documento será atribuído um número de sequência.</li>
+                     <li><b>Reiniciar cada página</b> - a sequência de numeração de linha será reiniciada em cada página do documento.</li>
+                     <li><b>Reiniciar cada uma das seçãos</b> - a sequência de numeração de linha será reiniciada em cada seção do documento. Por favor, consulte <a href="../UsageInstructions/SectionBreaks.htm" onclick="onhyperlinkclick(this)">este guia</a> para saber mais sobre quebras de seção.</li>
+                    <li><b>Suprimir para o parágrafo atual</b> - o parágrafo atual será ignorado na sequência de numeração de linha. Para excluir vários parágrafos da sequência, selecione-os com o botão esquerdo do mouse antes de aplicar este parâmetro.</li>
+                </ul>
+            </li>
+            <li>
+                Especifique os parâmetros avançados, se necessário. Clique no item <b>Opções de numeração de linha</b> no menu suspenso <b>Números de linhas</b>. Marque a caixa <b>Adicionar numeração de linha</b> para aplicar a numeração de linha ao documento e acessar os parâmetros avançados da opção:
+                <p><img alt="Janela de numeração de linha" src="../images/linenumbers_window.png" /></p>
+                <ul>
+                    <li><b>Começar em</b> define o valor numérico inicial da sequência de numeração de linha. O parâmetro é definido como <b>1</b> por padrão.</li>
+                     <li><b>Do texto</b> especifica a distância entre os números de linha e o texto. Digite o valor necessário em cm. O parâmetro é definido como <b>Auto</b> por padrão.</li>
+                     <li><b>Contar por</b> especifica os números de sequência que são exibidos se não forem contados por 1, ou seja, os números são contados em grupo por 2s, 3s, 4s, etc. Digite o valor numérico necessário. O parâmetro é definido como <b>1</b> por padrão.</li>
+                     <li><b>Reiniciar cada uma das página</b> - a sequência de numeração de linha será reiniciada em cada página do documento.</li>
+                     <li><b>Reiniciar cada uma das seções</b>a sequência de numeração de linha será reiniciada em cada seção do documento.</li>
+                     <li><b>Contínuo</b> - a cada linha do documento será atribuído um número de sequência.</li>
+                     <li>O parâmetro <b>Aplicar alterações a</b> especifica a parte do documento à qual você deseja atribuir números de sequência. Escolha uma das predefinições disponíveis: <b>Seção atual</b> para aplicar a numeração de linha à seção selecionada do documento; <b>Este ponto à frente</b> para aplicar a numeração de linha ao texto seguindo a posição atual do cursor; <b>Documento inteiro</b> para aplicar a numeração de linhas a todo o documento. O parâmetro é definido como <b>Documento inteiro</b> por padrão.</li>
+                     <li>Clique em <b>OK</b> para aplicar as alterações.</li>
+                </ul>
+            </li>
+        </ol>
+        <h2>Removendo a numeração das linhas</h2>
+         <p>Para remover a sequência de numeração de linha,</p>
+        <ol>
+            <li>abra a guia <b>Layout</b> localizada na barra de ferramentas superior e clique no ícone <div class = "icon icon-linenumbers_icon"></div> <b>Números de Linhas</b>,</li>
+            <li>escolha a opção <b>Nenhum</b> no menu suspenso aberto ou escolha o item <b>Opções de numeração de linha</b> no menu e desative a caixa <b>Adicionar numeração de linha</b> em a janela <b>Números de linhas</b> aberta.</li>
+        </ol>
+    </div>
+</body>
+</html>

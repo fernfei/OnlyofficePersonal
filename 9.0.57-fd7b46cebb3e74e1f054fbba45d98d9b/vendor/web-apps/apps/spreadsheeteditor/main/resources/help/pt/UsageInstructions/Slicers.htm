@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Criar segmentações para tabelas</title>
+		<meta charset="utf-8" />
+        <meta name="descrição" content="Crie segmentações para tabelas formatadas e tabelas dinâmicas para filtrar os dados rapidamente." />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Criar segmentações para tabelas</h1>
+            <h3>Criar uma nova segmentação</h3>
+			<p>Depois de criar uma nova <a href="FormattedTables.htm" onclick="onhyperlinkclick(this)">tabela formatada</a> no <a href="https://www.onlyoffice.com/pt/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Planilhas</b></a> ou <a href="PivotTables.htm" onclick="onhyperlinkclick(this)" >tabela dinâmica</a>, você pode criar segmentações para filtrar os dados rapidamente. Fazer isso,</p>
+			<ol>
+				<li>selecione pelo menos uma célula dentro da tabela com o mouse e clique no ícone <b>Configurações da tabela</b> <div class = "icon icon-table_settings_icon"></div> à direita.</li>
+                <li>clique na opção <div class = "icon icon-insertslicer"></div> <b>Inserir segmentação de dados</b> na guia <b>Configurações da tabela</b> da barra lateral direita. Como alternativa, você pode alternar para a guia <b>Inserir</b> da barra de ferramentas superior e clicar no botão <div class = "icon icon-slicer_icon"></div> <b>Slicer</b>. A janela <b>Inserir Slicers</b> será aberta:
+                 <p><img alt="Inserir segmentações" src="../images/insertslicer_window.png" /></p>
+                </li>
+				<li>verifique as colunas necessárias na janela <b>Inserir Slicers</b>.</li>
+                <li>clique no botão <b>OK</b>.</li>
+			</ol>
+            <p>Uma segmentação de dados será adicionada para cada uma das colunas selecionadas. Se você adicionar várias segmentações, elas se sobreporão. Depois que o slicer é adicionado, você pode <a href="ManipulateObjects.htm" onclick="onhyperlinkclick(this)">alterar seu tamanho e posição</a>, bem como suas configurações.</p>
+            <p><img alt="Cortador" src="../images/slicer.png" /></p>
+            <p>Uma segmentação de dados contém botões nos quais você pode clicar para filtrar a tabela. Os botões correspondentes às células vazias são marcados com o rótulo <em>(em branco)</em>. Ao clicar em um botão de segmentação, outros botões serão desmarcados e a coluna correspondente na tabela de origem será filtrada para exibir apenas o item selecionado:</p>
+             <p><img alt="Cortador" src="../images/slicer_filter.png" /></p>
+            <p>Se você adicionou várias segmentações, as alterações feitas em uma segmentação podem afetar os itens de outra segmentação. Quando um ou mais filtros são aplicados a uma segmentação, os itens sem dados podem aparecer em uma segmentação diferente (com uma cor mais clara):</p>
+             <p><img alt="Slicer - itens sem dados" src="../images/slicer_nodata.png" /></p>
+             <p>Você pode ajustar a maneira de exibir itens sem dados nas configurações do slicer.</p>
+             <p>Para selecionar vários botões do slicer, use o ícone <span class = "icon icon-multiselect"></span> <b>Multi-Select</b> no canto superior direito do slicer ou pressione <em> Alt+S</em>. Selecione os botões do slicer necessários clicando neles um por um.</p>
+             <p>Para limpar o filtro da segmentação, use o ícone <span class="icon icon-slicer_clearfilter"></span> <b>Limpar filtro</b> no canto superior direito da segmentação ou pressione <em>Alt+C</em>.</p>
+            
+            <h3>Editar segmentações</h3>
+             <p>Algumas das configurações do slicer podem ser alteradas usando a guia <b>Slicer settings</b> da barra lateral direita que será aberta se você selecionar o slicer com o mouse.</p>
+             <p>Você pode ocultar ou exibir esta guia clicando no ícone <span class="icon icon-slicer_settings"></span> à direita.</p>
+             <p><img alt="guia de configurações do Slicer" src="../images/right_slicer.png" /></p>
+             <h4>Altere o tamanho e a posição da segmentação</h4>
+            <p>As opções <b>Largura</b> e <b>Altura</b> permitem que você altere a largura e/ou a altura da segmentação. Se o botão <b>Proporções constantes</b> <span class="icon icon-constantproportions"></span> for clicado (neste caso, parece com isto <span class="icon icon-constantproportionsactivated"></span>), a largura e a altura serão alteradas em conjunto, preservando a proporção original do slicer.</p>
+             <p>A seção <b>Posição</b> permite que você altere a posição <b>Horizontal</b> e/ou <b>Vertical</b> da segmentação de dados.</p>
+             <p>A opção <b>Desativar redimensionamento ou movimentação</b> permite impedir que a segmentação de dados seja movida ou redimensionada. Quando esta opção está marcada, as opções <b>Largura</b>, <b>Altura</b>, <b>Posição</b> e <b>Botões</b> são desativadas.</p>
+            <h4>Altere o layout e o estilo do slicer</h4>
+             <p>A seção <b>Botões</b> permite que você especifique o número necessário de <b>Colunas</b> e defina a <b>Largura</b> e a <b>Altura</b> de os botões. Por padrão, uma segmentação de dados contém uma coluna. Se seus itens contiverem texto curto, você pode alterar o número da coluna para 2 ou mais:</p>
+             <p><img alt="Fatiador - duas colunas" src="../images/slicer_columns.png" /></p>
+             <p>Se você aumentar a largura do botão, a largura da segmentação mudará correspondentemente. Se você aumentar a altura do botão, a barra de rolagem será adicionada à segmentação de dados:</p>
+             <p><img alt="Fatiador - barra de rolagem" src="../images/slicer_scroll.png" /></p>
+             <p>A seção <b>Estilo</b> permite que você escolha um dos estilos de segmentação predefinidos.</p>
+                        
+            <h4>Aplicar parâmetros de classificação e filtragem</h4>
+             <ul>
+                 <li><b>Crescente (A a Z)</b> é usado para classificar os dados em ordem crescente - de A a Z em ordem alfabética ou do menor ao maior número para dados numéricos.</li>
+                 <li><b>Decrescente (Z para A)</b> é usado para classificar os dados em ordem decrescente - de Z para A alfabeticamente ou do maior para o menor para dados numéricos.</li>
+            </ul>
+            <p>A opção <b>Ocultar itens sem dados</b> permite ocultar itens sem dados da segmentação de dados. Quando esta opção está marcada, as opções <b>Indicar visualmente itens sem dados</b> e <b>Mostrar itens sem dados por último</b> são desativadas.</p>
+             <p>Quando a opção <b>Ocultar itens sem dados</b> está desmarcada, você pode usar as seguintes opções:</p>
+            <ul>
+                <li>A opção <b>Indicar visualmente itens sem dados</b> permite exibir itens sem dados com formatação diferente (com uma cor mais clara). Se você desmarcar esta opção, todos os itens serão exibidos com a mesma formatação.</li>
+                 <li>A opção <b>Mostrar itens sem dados por último</b> permite que você exiba itens sem dados no final da lista. Se você desmarcar esta opção, todos os itens serão exibidos na mesma ordem da tabela de origem.</li>
+            </ul>
+                        
+            <h3>Ajuste as configurações avançadas do slicer</h3>
+             <p>Para alterar as propriedades avançadas do slicer, use o link <b>Mostrar configurações avançadas</b> na barra lateral direita. A janela 'Slicer - Configurações avançadas' será aberta:</p>
+             <p><img alt="Fatiador - Configurações avançadas" src="../images/slicer_properties.png" /></p>
+             <p>O <b>Estilo &amp; A guia Tamanho</b> contém os seguintes parâmetros:</p>
+            <ul>
+                <li>A opção <b>Cabeçalho</b> permite que você altere o cabeçalho da segmentação. Desmarque a opção <b>Exibir cabeçalho</b> se não quiser exibir o cabeçalho da segmentação.</li>
+                 <li>A seção <b>Estilo</b> permite que você escolha um dos estilos de segmentação predefinidos.</li>
+                 <li>As opções <b>Largura</b> e <b>Altura</b> permitem alterar a largura e/ou a altura da segmentação de dados. Se o botão <b>Proporções constantes</b> <div class = "icon icon-constantproportions"></div> for clicado (neste caso, parece com isto <div class = "icon icon-constantproportionsactivated"></div>), a largura e a altura serão alteradas em conjunto, preservando a proporção original do slicer.</li>
+                 <li>A seção <b>Botões</b> permite que você especifique o número necessário de <b>Colunas</b> e defina a <b>Altura</b> dos botões.</li>
+            </ul>
+            <p><img alt="Fatiador - Configurações avançadas" src="../images/slicer_properties2.png" /></p>
+             <p>A <b>Classificação &amp; A guia Filtragem</b> contém os seguintes parâmetros:</p>
+            <ul>
+                <li><b>Crescente (A a Z)</b> é usado para classificar os dados em ordem crescente - de A a Z em ordem alfabética ou do menor ao maior número para dados numéricos.</li>
+                 <li><b>Decrescente (Z para A)</b> é usado para classificar os dados em ordem decrescente - de Z para A alfabeticamente ou do maior para o menor para dados numéricos.</li>
+            </ul>
+            <p>A opção <b>Ocultar itens sem dados</b> permite ocultar itens sem dados da segmentação de dados. Quando esta opção está marcada, as opções <b>Indicar visualmente itens sem dados</b> e <b>Mostrar itens sem dados por último</b> são desativadas.</p>
+             <p>Quando a opção <b>Ocultar itens sem dados</b> está desmarcada, você pode usar as seguintes opções:</p>
+            <ul>
+                <li>A opção <b>Indicar visualmente itens sem dados</b> permite exibir itens sem dados com formatação diferente (com uma cor mais clara).</li>
+                 <li>A opção <b>Mostrar itens sem dados por último</b> permite que você exiba itens sem dados no final da lista.</li>
+            </ul>
+            <p><img alt="Fatiador - Configurações avançadas" src="../images/slicer_properties3.png" /></p>
+            <p>A guia <b>Referências</b> contém os seguintes parâmetros:</p>
+             <ul>
+                 <li>A opção <b>Nome da fonte</b> permite visualizar o nome do campo correspondente ao cabeçalho da coluna do conjunto de dados de origem.</li>
+                 <li>A opção <b>Nome a ser usado em fórmulas</b> permite visualizar o nome da segmentação que é exibido no <a href="UseNamedRanges.htm" onclick="onhyperlinkclick(this)"><b> Gerenciador de nomes</b></a>.</li>
+                 <li>A opção <b>Nome</b> permite que você defina um nome personalizado para um slicer para torná-lo mais significativo e compreensível.</li>
+            </ul>
+            <p><img alt="Fatiador - Configurações avançadas" src="../images/slicer_properties4.png" /></p>
+            <p>A guia <b>Cell Snapping</b> contém os seguintes parâmetros:</p>
+             <ul>
+                 <li><b>Mover e dimensionar com células</b> - esta opção permite encaixar a segmentação na célula atrás dela. Se a célula se mover (por exemplo, se você inserir ou excluir algumas linhas/colunas), a segmentação será movida junto com a célula. Se você aumentar ou diminuir a largura ou a altura da célula, a segmentação também mudará seu tamanho.</li>
+                 <li><b>Mover, mas não dimensionar com as células</b> - esta opção permite encaixar a segmentação na célula atrás dela, evitando que a segmentação seja redimensionada. Se a célula se mover, a segmentação será movida junto com a célula, mas se você alterar o tamanho da célula, as dimensões da segmentação permanecerão inalteradas.</li>
+                 <li><b>Não mover ou dimensionar com células</b> - esta opção permite evitar que a segmentação de dados seja movida ou redimensionada se a posição ou o tamanho da célula for alterado.</li>
+            </ul>
+            <p><img alt="Fatiador - Configurações avançadas" src="../images/slicer_properties5.png" /></p>
+            <p>A guia <b>Texto alternativo</b> permite que você especifique o <b>Título</b> e a <b>Descrição</b> que serão lidos para pessoas com deficiência visual ou cognitiva para ajudá-los a entender melhor quais informações o cortador contém.</p>
+            
+             <h3>Excluir uma segmentação</h3>
+             <p>Para excluir uma segmentação,</p>
+             <ol>
+                 <li>Selecione a segmentação clicando nela.</li>
+                 <li>Pressione a tecla <b>Excluir</b>.</li>
+            </ol>
+		</div>
+	</body>
+</html>

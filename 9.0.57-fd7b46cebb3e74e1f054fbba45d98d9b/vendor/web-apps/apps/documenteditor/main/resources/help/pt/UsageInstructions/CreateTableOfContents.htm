@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Crie um sumário</title>
+		<meta charset="utf-8" />
+        <meta name="descrição" content="Um sumário contém uma lista de todos os capítulos (seções, etc.) em um documento e exibe os números das páginas onde cada capítulo começa." />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Crie um sumário</h1>
+            <p>Um sumário contém uma lista de todos os capítulos (seções, etc.) em um documento e exibe os números das páginas onde cada capítulo começa. No <a href="https://www.onlyoffice.com/pt/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Documentos</b></a>, permite navegar facilmente por um documento de várias páginas e alternar rapidamente para a parte necessária do texto. O sumário é gerado automaticamente com base nos cabeçalhos do documento formatados usando estilos integrados. Isso facilita a atualização do sumário criado sem a necessidade de editar os títulos e alterar os números das páginas manualmente se o texto do documento tiver sido alterado.</p>
+            <h2>Estrutura do título no sumário</h2>
+             <p><b>Formatar títulos</b></p>
+             <p>Antes de mais nada, formate os títulos em seu documento usando um dos estilos predefinidos. Fazer isso,</p>
+            <ol>
+                <li>Selecione o texto que deseja incluir no sumário.</li>
+                 <li>Abra o menu de estilos no lado direito da guia <b>Página Inicial</b> na barra de ferramentas superior.</li>
+                 <li>Clique no estilo desejado a ser aplicado. Por padrão, você pode usar os estilos <em>Título 1 - Título 9</em>.
+                     <p class="note">Se você quiser usar outros estilos (por exemplo, <em>Título</em>, <em>Subtítulo</em> etc.) para formatar títulos, será necessário ajustar o sumário configurações primeiro (consulte a seção correspondente abaixo). Para saber mais sobre os estilos de formatação disponíveis, consulte <a href="../UsageInstructions/FormattingPresets.htm" onclick="onhyperlinkclick(this)">esta página</a>.</p>
+                </li>
+            </ol>
+            <p>Para adicionar texto como título rapidamente,</p>
+             <ol>
+                 <li>Selecione o texto que deseja incluir no sumário.</li>
+                 <li>Vá para a guia <b>Referências</b> na barra de ferramentas superior.</li>
+                 <li>Clique no botão <b>Adicionar texto</b> na barra de ferramentas superior.</li>
+                 <li>Escolha o nível de título necessário.</li>
+            </ol>
+            <p id="navigation"><b>Gerenciar títulos</b></p>
+             <p>Depois que os títulos estiverem formatados, você pode clicar no ícone <span class = "icon icon-navigationicon"></span> <b>Títulos</b> na barra lateral esquerda para abrir o painel que exibe a lista de todos os cabeçalhos com níveis de aninhamento correspondentes. Este painel permite navegar facilmente entre os títulos no texto do documento, bem como gerenciar a estrutura do título.</p>
+             <p>Clique com o botão direito do mouse em um cabeçalho da lista e use uma das opções disponíveis no menu:</p>
+            <p><img alt="Painel de títulos" src="../images/navigationpanel.png" /></p>
+            <ul>
+                <li><b>Promover</b> - para mover o cabeçalho atualmente selecionado para o nível mais alto na estrutura hierárquica, por exemplo, altere-o de <em>Título 2</em> para <em>Título 1</em>.</li>
+                 <li><b>Rebaixar</b> - para mover o cabeçalho atualmente selecionado para o nível inferior na estrutura hierárquica, por exemplo, altere-o de <em>Título 1</em> para <em>Título 2</em>.</li>
+                 <li><b>Novo título antes de</b> - para adicionar um novo título vazio do mesmo nível antes do atualmente selecionado.</li>
+                 <li><b>Novo título após</b> - para adicionar um novo cabeçalho vazio do mesmo nível após o atualmente selecionado.</li>
+                 <li><b>Novo subtítulo</b> - para adicionar um novo subtítulo vazio (ou seja, um título com nível inferior) após o título atualmente selecionado.
+                 <p>Quando o cabeçalho ou subtítulo for adicionado, clique no cabeçalho vazio adicionado na lista e digite seu próprio texto. Isso pode ser feito tanto no texto do documento quanto no próprio painel <b>Títulos</b>.</p>
+                </li>
+                <li><b>Selecionar conteúdo</b> - para selecionar o texto abaixo do cabeçalho atual no documento (incluindo o texto relacionado a todos os subtítulos deste cabeçalho).</li>
+                 <li><b>Expandir tudo</b> - para expandir todos os níveis de títulos no painel <b>Títulos</b>.</li>
+                 <li><b>Recolher tudo</b> - para recolher todos os níveis de títulos, exceto o <em>nível 1</em>, no painel <b>Títulos</b>.</li>
+                 <li><b>Expandir ao nível</b> - para expandir a estrutura do título para o nível selecionado. Por exemplo. se você selecionar <em>nível 3</em>, os níveis 1, 2 e 3 serão expandidos, enquanto o nível 4 e todos os níveis inferiores serão recolhidos.</li>
+             </ul>
+             <p>Para expandir ou recolher manualmente níveis de títulos separados, use as setas à esquerda dos títulos.</p>
+            <p>Para fechar o painel <b>Títulos</b>, clique novamente no ícone <span class = "icon icon-navigationicon"></span> <b>Títulos</b> na barra lateral esquerda.</p>
+             <h2>Insira um sumário no documento</h2>
+             <p>Para inserir um sumário em seu documento:</p>
+            <ol>
+                <li>Posicione o ponto de inserção onde o sumário deve ser adicionado.</li>
+                 <li>Mude para a guia <b>Referências</b> da barra de ferramentas superior.</li>
+                 <li>Clique no ícone <div class = "icon icon-tocicon"></div> <b>Tabela de Conteúdo</b> na barra de ferramentas superior ou<br />
+                 clique na seta ao lado deste ícone e selecione a opção de layout necessária no menu. Você pode selecionar o sumário que exibe títulos, números de página e líderes ou apenas títulos.
+                <p><img alt="Opções de índice" src="../images/tociconmenu.png" /></p>
+                    <p class="note">A aparência do sumário pode ser ajustada posteriormente nas configurações.</p>
+                </li>
+            </ol>
+            <p>O sumário será adicionado na posição atual do cursor. Para alterar sua posição, você pode selecionar o campo sumário (controle de conteúdo) e simplesmente arrastá-lo para o local desejado. Para fazer isso, clique no botão <span class = "icon icon-toccontentcontrol"></span> no canto superior esquerdo do campo sumário e arraste-o sem soltar o botão do mouse para outra posição no texto do documento.</p>
+            <p><img alt="Movendo o sumário" src="../images/tocmove.png" /></p>
+            <p>Para navegar entre os cabeçalhos, pressione a tecla <b>Ctrl</b> e clique no cabeçalho necessário no campo do sumário. Você irá para a página correspondente.</p>
+             <h2>Ajuste o sumário criado</h2>
+             <p><b>Atualize o sumário</b></p>
+             <p>Após a criação do índice, você pode continuar editando seu texto adicionando novos capítulos, alterando sua ordem, removendo alguns parágrafos ou expandindo o texto relacionado a um cabeçalho para que os números das páginas correspondentes ao anterior ou ao seção seguinte pode mudar. Nesse caso, use a opção <b>Atualizar</b> para aplicar automaticamente todas as alterações.</p>
+             <p>Clique na seta ao lado do ícone <span class = "icon icon-tocrefreshicon"></span> <b>Atualizar</b> na guia <b>Referências</b> da barra de ferramentas superior e selecione a opção necessária no menu:</p>
+            <ul>
+                <li><b>Atualizar tabela inteira</b> - para adicionar os títulos que você adicionou ao documento, remova os que você excluiu do documento, atualize os títulos editados (renomeados), bem como atualize os números das páginas.</li>
+                 <li><b>Atualizar apenas os números das páginas</b> - para atualizar os números das páginas sem aplicar alterações nos títulos.</li>
+            </ul>
+            <p>Como alternativa, você pode selecionar o índice no texto do documento e clicar no ícone <span class = "icon icon-tocrefreshiconcc"></span> <b>Atualizar</b> na parte superior do campo do índice para exibir as opções mencionadas acima.</p>
+            <p><img alt="Atualizando o sumário" src="../images/tocrefreshcc.png" /></p>
+            <p>Também é possível clicar com o botão direito do mouse em qualquer lugar do sumário e usar as opções correspondentes no menu contextual.</p>
+            <p><img alt="Menu contextual" src="../images/tocrefreshcontextual.png" /></p>
+            <p><b>Ajuste as configurações do sumário</b></p>
+             <p>Para abrir as configurações do índice, você pode proceder das seguintes maneiras:</p>
+             <ul>
+                 <li>Clique na seta ao lado do ícone <div class = "icon icon-tocicon"></div> <b>Tabela de Conteúdo</b> na barra de ferramentas superior e selecione <b>Configurações</b> opção no menu.</li>
+                 <li>Selecione o sumário no texto do documento, clique na seta ao lado do título do campo e selecione a opção <b>Configurações</b> no menu.
+                <p><img alt="Opções de índice" src="../images/tocsettingscc.png" /></p>
+                </li>
+                <li>Clique com o botão direito do mouse em qualquer lugar do sumário e use a opção <b>Definições da tabela de conteúdo</b> no menu contextual.</li>
+            </ul>
+            <p>Uma nova janela será aberta e você poderá ajustar as seguintes configurações:</p>
+            <p><img alt="Janela de configurações do índice" src="../images/tocsettingswindow.png" /></p> 
+            <ul>
+                <li><b>Mostrar números de página</b> - esta opção permite exibir os números de página.</li>
+                 <li><b>Números de página alinhados à direita</b> - esta opção permite alinhar os números de página no lado direito da página.</li>
+                 <li><b>Líder</b> - esta opção permite escolher o tipo de líder desejado. Um líder é uma linha de caracteres (pontos ou hífens) que preenche o espaço entre um cabeçalho e o número da página correspondente. Também é possível selecionar a opção <b>Nenhum</b> se não quiser usar líderes.</li>
+                 <li><b>Formatar tabela de conteúdo como links</b> - esta opção é marcada por padrão. Se você desmarcá-la, não poderá alternar para o capítulo necessário pressionando <b>Ctrl</b> e clicando no título correspondente.</li>
+                 <li><b>Construir tabela de conteúdo de</b> - esta seção permite especificar o número necessário de níveis de estrutura de tópicos, bem como os estilos padrão que serão usados para criar o sumário. Verifique o botão de opção necessário:
+                     <ul>
+                         <li>
+                             <b>Níveis do marcador</b> - ao selecionar esta opção, você poderá ajustar o número de níveis hierárquicos utilizados. Clique nas setas no campo <b>Níveis</b> para diminuir ou aumentar o número de níveis (os níveis de 1 a 9 estão disponíveis). Por exemplo, se você selecionar o valor 3, os títulos com níveis 4 a 9 não serão incluídos no sumário.
+                         </li>
+                         <li>
+                             <b>Estilos selecionados</b> - quando esta opção é selecionada, você pode especificar estilos adicionais que podem ser usados para construir o sumário e atribuir o nível de estrutura de tópicos correspondente a cada um deles. Especifique o valor do nível desejado no campo à direita do estilo. Depois de salvar as configurações, você poderá usar esse estilo ao criar um sumário.
+                            <p><img alt="Janela de configurações do índice" src="../images/tocsettingswindow2.png" /></p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Estilos</b> - esta opção permite selecionar a aparência desejada do sumário. Selecione o estilo necessário na lista suspensa. O campo de visualização acima exibe a aparência do sumário.
+                     <p>Os quatro estilos padrão a seguir estão disponíveis: <em>Simples</em>, <em>Padrão</em>, <em>Moderno</em>, <em>Clássico</em>. A opção <em>Atual</em> é usada se você personalizar o estilo do sumário.</p>
+                </li>
+            </ul>
+            <p>Clique no botão <b>OK</b> na janela de configurações para aplicar as alterações.</p>
+             <p><b>Personalize o estilo do sumário</b></p>
+             <p>Depois de aplicar um dos estilos de sumário padrão na janela de configurações do <b>Tabela de conteúdo</b>, você também pode modificar esse estilo para que o texto dentro do campo de sumário tenha a aparência que você precisa.</p>
+            <ol>
+                <li>Selecione o texto no campo do sumário, por exemplo pressionando o botão <div class = "icon icon-toccontentcontrol"></div> no canto superior esquerdo do controle de conteúdo do sumário.</li>
+                 <li>Formate os itens do sumário alterando seu tipo de fonte, tamanho, cor ou aplicando os estilos de decoração da fonte.</li>
+                 <li>Atualize consequentemente os estilos dos itens de cada nível. Para atualizar o estilo, clique com o botão direito do mouse no item formatado, selecione a opção <b>Formatar como Estilo</b> no menu contextual e clique na opção <b>Update toc N style</b> (<em>toc 2 </em> estilo corresponde a itens que possuem <em>nível 2</em>, estilo <em>toc 3</em> corresponde a itens com <em>nível 3</em> e assim por diante).
+                    <p><img alt="Atualizar o estilo do sumário" src="../images/toccustomize.png" /></p>
+                </li>
+                <li>Atualize o sumário.</li>
+             </ol>
+             <p><b>Remover o sumário</b></p>
+             <p>Para remover o sumário do documento:</p>
+            <ul>
+                <li>clique na seta ao lado do ícone <div class = "icon icon-tocicon"></div> <b>Tabela de Conteúdo</b> na barra de ferramentas superior e use <b>Excluir tabela de conteúdo</b> opção,</li>
+                 <li>ou clique na seta ao lado do título do controle de conteúdo do sumário e use a opção <b>Excluir tabela de conteúdo</b>.</li>
+            </ul>
+		</div>
+	</body>
+</html>

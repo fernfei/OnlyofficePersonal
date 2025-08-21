@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Denklem ekleme</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Insert equations and mathematical symbols." />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Denklem ekleme</h1>
+            <p><a href="https://www.onlyoffice.com/en/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Belge D&uuml;zenleyici</b></a>, yerleşik şablonları kullanarak denklemler oluşturmanızı, bunları d&uuml;zenlemenizi, &ouml;zel karakterler eklemenizi (matematiksel işle&ccedil;ler, Yunan harfleri, aksanlar vb. dahil) sağlar.</p>
+            <h3>Yeni denklem ekleme</h3>
+            <p>Galeriden bir denklem eklemek i&ccedil;in</p>
+			<ol>
+				<li>İmleci gerekli satıra getirin,</li>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Ekle</b> sekmesine ge&ccedil;iş yapın,</li>
+				<li>&Uuml;st ara&ccedil; &ccedil;ubuğunda bulunan <div class = "icon icon-insertequationicon"></div> <b>Denklem</b> simgesine tıklayın,</li>
+				<li>A&ccedil;ılan a&ccedil;ılır listeden ihtiyacınız olan denklem kategorisini se&ccedil;in. Şu anda aşağıdaki kategoriler mevcuttur: <em>Semboller</em>, <em>Kesirler</em>, <em>Simgeler</em>, <em>K&ouml;kler</em>, <em>İntegraller</em>, <em>B&uuml;y&uuml;k İşle&ccedil;ler</em>, <em>Ayra&ccedil;lar</em>, <em>İşlevler</em>, <em>Aksanlar</em>, <em>Limitler ve Logaritmalar</em>, <em>İşle&ccedil;ler</em>, <em>Matrisler</em>,</li>
+                <li>karşılık gelen şablon grubundaki belirli sembole/denkleme tıklayın.</li>
+			</ol>
+            <p>Se&ccedil;ilen sembol/denklem kutusu imle&ccedil; konumuna eklenecektir. Se&ccedil;ilen satır boşsa denklem ortalanır. Denklemi sola veya sağa hizalamak i&ccedil;in denklem kutusuna tıklayın ve &uuml;st ara&ccedil; &ccedil;ubuğunun <b>Giriş</b> sekmesinde <span class = "icon icon-alignleft"></span> veya <span class = "icon icon-alignright"></span> simgesini kullanın.</p>
+            <div class = "icon icon-insertedequation"></div>
+            <p>Her denklem şablonu, bir yuva k&uuml;mesini temsil eder. Yuva, denklemi oluşturan her &ouml;ğe i&ccedil;in bir konumdur. Boş bir yuvanın (yer tutucu olarak da adlandırılır) noktalı bir dış &ccedil;izgisi <span class = "icon icon-equationplaceholder"></span> vardır. Gerekli değerleri belirterek t&uuml;m yer tutucuları doldurmanız gerekir.</p>
+            <p class="note"><b>Not</b>: Bir denklem oluşturmaya başlamak i&ccedil;in <b>Alt + =</b> klavye kısayolunu da kullanabilirsiniz.</p>
+            <p>Denkleme bir başlık da ekleyebilirsiniz. Denklemlerin başlıkları ile &ccedil;alışma hakkında daha fazla bilgi edinmek i&ccedil;in l&uuml;tfen <a href="../UsageInstructions/AddCaption.htm" onclick="onhyperlinkclick(this)">bu yazıya</a> bakın.</p>
+            <h3>Değerleri girme</h3>
+            <p><b>Ekleme noktası</b>, sonraki karakterin nerede g&ouml;r&uuml;neceğini belirtir. Ekleme noktasını tam olarak konumlandırmak i&ccedil;in yer tutucunun i&ccedil;ine tıklayın ve ekleme noktasını bir karakter sola/sağa veya bir satır yukarı/aşağı taşımak i&ccedil;in klavye oklarını kullanın.</p>
+            <p>Se&ccedil;ilen şablon i&ccedil;inde ekleme noktası bulunan yuvanın altında yeni bir yer tutucu oluşturmanız gerekirse <b>Enter</b> tuşuna basın.</p>
+            <div class = "big big-newslot"></div>
+            <p>Ekleme noktası konumlandırıldıktan sonra yer tutucuyu doldurabilirsiniz:
+            <ul>
+                <li>Klavyeyi kullanarak istenen sayısal/ger&ccedil;ek değeri girin,</li>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Ekle</b> sekmesinde bulunan <div class = "icon icon-insertequationicon"></div> <b>Denklem</b> men&uuml;s&uuml;nden <b>Semboller</b> paletini kullanarak veya bunları klavyeden yazarak &ouml;zel bir karakter ekleyin (<a href="../UsageInstructions/MathAutoCorrect.htm" onclick="onhyperlinkclick(this)"><b>Matematik Otomatik D&uuml;zeltme</b></a> se&ccedil;eneği a&ccedil;ıklamasına bakın),</li>
+                <li>Karmaşık bir i&ccedil; i&ccedil;e denklem oluşturmak i&ccedil;in paletten başka bir denklem şablonu ekleyin. Birincil denklemin boyutu, i&ccedil;eriğine uyacak şekilde otomatik olarak ayarlanacaktır. İ&ccedil; i&ccedil;e denklem &ouml;ğelerinin boyutu, birincil denklem yer tutucu boyutuna bağlıdır, ancak alt simge boyutundan k&uuml;&ccedil;&uuml;k olamaz.</li>                
+            </ul>
+            </p>
+            <p><div class = "big big-nestedfraction"></div></p>
+            <p>Bazı yeni denklem &ouml;ğeleri eklemek i&ccedil;in <b>sağ tıklama men&uuml;s&uuml; se&ccedil;eneklerini</b> kullanın:</p>
+            <ul>
+                <li><em>Ayra&ccedil;</em> i&ccedil;indeki mevcut değişkenden &ouml;nce veya sonra gelen yeni bir değişken eklemek i&ccedil;in mevcut değişkene sağ tıklayıp men&uuml;den <b>Değişkeni &ouml;nce/sonra ekle</b> se&ccedil;eneğini kullanabilirsiniz.</li>
+                <li><em>Ayra&ccedil;</em> grubundan &ccedil;eşitli koşullara sahip <em>&Ccedil;er&ccedil;eveler</em> i&ccedil;inde yeni bir denklem eklemek i&ccedil;in (veya daha &ouml;nce <b>Enter</b> tuşuna basarak yeni yer tutucular eklediyseniz diğer t&uuml;rden denklemler) boş bir yer tutucuya veya girilen denkleme sağ tıklayıp men&uuml;den <b>Değişkeni &ouml;nce/sonra ekle</b> se&ccedil;eneğini se&ccedil;ebilirsiniz.</li>
+                <li>Bir <em>Matris</em> i&ccedil;ine yeni bir satır veya s&uuml;tun eklemek i&ccedil;in i&ccedil;indeki yer tutucuya sağ tıklayabilir, men&uuml;den <b>Ekle</b> se&ccedil;eneğini ve ardından <b>&Uuml;ste/Alta Satır</b> veya <b>Sola/Sağa S&uuml;tun</b> se&ccedil;eneğini se&ccedil;ebilirsiniz.</li>
+            </ul>
+            <p class="note"><b>Not</b>: Mevut durumda denklemler lineer bi&ccedil;im, yani <b>\sqrt(4&amp;x^3)</b>  kullanılarak girilememektedir.</p>
+            <p>Matematiksel ifadelerin değerlerini girerken, işlemlerin karakterleri ve işaretleri arasındaki boşluklar otomatik olarak ayarlandığından <b>Spacebar</b> tuşunu kullanmanıza gerek yoktur.</p>
+            <p>Denklem &ccedil;ok uzunsa ve tek satıra sığmıyorsa yazarken otomatik satır kesme yapılır. Matematiksel bir işlece sağ tıklayarak ve men&uuml;den <b>Manuel satır sonu ekle</b> se&ccedil;eneğini se&ccedil;erek belirli bir konuma bir satır sonu ekleyebilirsiniz. Se&ccedil;ilen işle&ccedil; yeni bir satır başlatacaktır. Manuel satır sonu eklendikten sonra, yeni satırı &ouml;nceki satırın herhangi bir matematik işlecine g&ouml;re hizalamak i&ccedil;in <b>Sekme</b> tuşuna basın. Eklenen manuel satır sonunu silmek i&ccedil;in yeni bir satır başlatan matematiksel işlece sağ tıklayın ve <b>Manuel satır sonunu sil</b> se&ccedil;eneğini se&ccedil;in.</p>
+            <h3>Denklemleri bi&ccedil;imlendirme</h3>
+            <p>Denklemin <b>yazı tipi boyutunu</b> artırmak veya azaltmak i&ccedil;in  denklem kutusunda herhangi bir yere tıklayın ve &uuml;st ara&ccedil; &ccedil;ubuğunun <b>Giriş</b> sekmesinde bulunan <span class = "icon icon-larger"></span> ve <span class = "icon icon-smaller"></span> d&uuml;ğmelerini kullanın veya listeden gerekli yazı tipi boyutunu se&ccedil;in. T&uuml;m denklem &ouml;ğeleri buna g&ouml;re değişecektir.</p>
+            <p>Denklemin i&ccedil;indeki harfler varsayılan olarak italiktir. Gerekirse, b&uuml;t&uuml;n bir denklem veya par&ccedil;ası i&ccedil;in <b>yazı tipi stilini</b> (<em>kalın, italik, &uuml;st&uuml; &ccedil;izili</em>) veya <b>rengini</b> değiştirebilirsiniz. <em>Altı &ccedil;izili</em> stil, tek tek karakterlere yalnızca denklemin tamamına uygulanabilir. Tıklayıp s&uuml;r&uuml;kleyerek denklemin gerekli kısmını se&ccedil;in. Se&ccedil;ilen kısım mavi renkle vurgulanır. Ardından, se&ccedil;ili par&ccedil;ayı bi&ccedil;imlendirmek i&ccedil;in &uuml;st ara&ccedil; &ccedil;ubuğunun <b>Giriş</b> sekmesine tıklayın. &Ouml;rneğin, değişken veya sabit olmayan sıradan s&ouml;zc&uuml;kler i&ccedil;in italik bi&ccedil;imi kaldırabilirsiniz.</p>
+            <div class = "big big-formatastext"></div>
+            <p>Bazı denklem &ouml;ğelerini değiştirmek i&ccedil;in <b>sağ tıklama men&uuml;s&uuml; se&ccedil;eneklerini</b> de kullanabilirsiniz:</p>
+            <ul><li><em>Kesirler</em> bi&ccedil;imini değiştirmek i&ccedil;in bir kesre sağ tıklayıp men&uuml;den <b>Eğik/doğrusal/yığılı kesre ge&ccedil;</b> se&ccedil;eneğini se&ccedil;in (mevcut se&ccedil;enekler, se&ccedil;ilen kesir t&uuml;r&uuml;ne g&ouml;re değişir). <!--The <b>Remove/Add fraction bar</b> option is also available for stacked fractions.--></li>
+                <li><em>Simgelerin</em> konumunu metne g&ouml;re değiştirmek i&ccedil;in kodları i&ccedil;eren denkleme sağ tıklayıp men&uuml;den <b>Metinden &ouml;nce/sonra simge</b> se&ccedil;eneğini se&ccedil;ebilirsiniz.</li>
+                <li><em>Simgeler, K&ouml;kler, İntegraller, B&uuml;y&uuml;k İşle&ccedil;ler, Limitler ve Logaritmalar, İşle&ccedil;ler</em> ve ayrıca &uuml;st kuşaklar/alt kuşaklar ve <em>Aksanlar</em> grubundan gruplandırma karakterlerine sahip şablonlar i&ccedil;in değişken boyutunu değiştirmek i&ccedil;in değiştirmek istediğiniz değişkene sağ tıklayıp men&uuml;den <b>Değişken boyutunu artır/azalt</b> se&ccedil;eneğini se&ccedil;ebilirsiniz.</li>
+                <li>Bir <em>K&ouml;k</em> i&ccedil;in boş dereceli bir yer tutucusunun g&ouml;r&uuml;nt&uuml;lenip g&ouml;r&uuml;nt&uuml;lenmeyeceğini belirtmek i&ccedil;in k&ouml;ke sağ tıklayıp men&uuml;den <b>Dereceyi Gizle/G&ouml;ster</b> se&ccedil;eneğini se&ccedil;ebilirsiniz.</li>
+                <li>Bir <em>İntegral</em> veya <em>B&uuml;y&uuml;k İşle&ccedil;</em> i&ccedil;in boş bir limit yer tutucusunun g&ouml;r&uuml;nt&uuml;lenip g&ouml;r&uuml;nt&uuml;lenmeyeceğini belirtmek i&ccedil;in denkleme sağ tıklayıp men&uuml;den <b>&Uuml;st/alt limiti Gizle/G&ouml;ster</b> se&ccedil;eneğini se&ccedil;ebilirsiniz.</li>
+                <li>Limitlerin konumunu <em>İntegralin</em> veya <em>B&uuml;y&uuml;k İşle&ccedil;in</em> integral veya işle&ccedil; işaretine g&ouml;re değiştirmek i&ccedil;in denkleme sağ tıklayıp men&uuml;den <b>Limit konumunu değiştir</b> se&ccedil;eneğini se&ccedil;ebilirsiniz. Limitler, işle&ccedil; işaretinin sağ tarafında (alt simge ve &uuml;st simge olarak) veya doğrudan işle&ccedil; işaretinin &uuml;st&uuml;nde ve altında g&ouml;r&uuml;nt&uuml;lenebilir.</li>
+                <li><em>Limitler ve Logaritmalar</em> i&ccedil;in ve <em>Aksanlar</em> grubundan gruplandırma karakterlerine sahip şablonlar i&ccedil;in limitlerin konumunu metne g&ouml;re değiştirmek i&ccedil;in denkleme sağ tıklayıp men&uuml;den <b>Limit metnin &uuml;zerinde/altında</b> se&ccedil;eneğini se&ccedil;ebilirsiniz.</li>
+                <li><em>Ayra&ccedil;lardan</em> hangisinin g&ouml;r&uuml;nt&uuml;lenmesi gerektiğini se&ccedil;mek i&ccedil;in i&ccedil;lerindeki ifadeye sağ tıklayıp men&uuml;den <b>A&ccedil;ılış/kapanış ayracını gizle/g&ouml;ster</b> se&ccedil;eneğini se&ccedil;ebilirsiniz.</li>
+                <li><em>Ayra&ccedil;</em> boyutunu kontrol etmek i&ccedil;in i&ccedil;lerindeki ifadeye sağ tıklayabilirsiniz. Ayra&ccedil;ların i&ccedil;lerindeki ifadeye g&ouml;re b&uuml;y&uuml;yebilmesi i&ccedil;in <b>Ayra&ccedil;ları genişlet</b> se&ccedil;eneği varsayılan olarak se&ccedil;ilidir, ancak ayra&ccedil;ların genişlemesini &ouml;nlemek i&ccedil;in bu se&ccedil;eneğin se&ccedil;imini kaldırabilirsiniz. Bu se&ccedil;enek etkinleştirildiğinde, <b>Ayra&ccedil;ları değişken y&uuml;ksekliğine eşleştir</b> se&ccedil;eneğini de kullanabilirsiniz.</li>
+                <li><em>Aksanlar</em> grubundan alt kuşaklar/&uuml;st kuşaklar veya &uuml;st &ccedil;ubuklar/alt &ccedil;ubuklar i&ccedil;in karakterin konumunu metne g&ouml;re değiştirmek i&ccedil;in şablona sağ tıklayıp men&uuml;den <b>Karakter/&Ccedil;ubuk metnin altında/&uuml;zerinde</b> se&ccedil;eneğini se&ccedil;ebilirsiniz.</li>
+                <li><em>Aksanlar</em> grubundan <em>Kutulu form&uuml;l</em> i&ccedil;in hangi kenarlıkların g&ouml;r&uuml;nt&uuml;lenmesi gerektiğini se&ccedil;mek i&ccedil;in denkleme sağ tıklayıp men&uuml;den <b>Kenarlık &ouml;zellikleri</b> se&ccedil;eneğini se&ccedil;ip ardından <b>&Uuml;st/alt/sol/sağ kenarlığı Gizle/G&ouml;ster</b> veya <b>Yatay/dikey/&ccedil;apraz &ccedil;izgi Ekle/Gizle</b> se&ccedil;eneğini se&ccedil;ebilirsiniz.</li>
+                <li>Bir <em>Matriks</em> i&ccedil;in boş bir yer tutucusunun g&ouml;r&uuml;nt&uuml;lenip g&ouml;r&uuml;nt&uuml;lenmeyeceğini belirtmek i&ccedil;in matrikse sağ tıklayıp men&uuml;den <b>Yer Tutucuyu Gizle/G&ouml;ster</b> se&ccedil;eneğini se&ccedil;ebilirsiniz.</li>
+            </ul>
+            <p>Bazı denklem &ouml;ğelerini hizalamak i&ccedil;in <b>sağ tıklama men&uuml;s&uuml; se&ccedil;eneklerini</b> kullanabilirsiniz:</p>
+            <ul>
+                <li>Denklemleri <em>Ayra&ccedil;</em> grubundan &ccedil;eşitli koşullara sahip <em>&Ccedil;er&ccedil;eveler</em> i&ccedil;inde hizalamak i&ccedil;in (veya daha &ouml;nce <b>Enter</b> tuşuna basarak yeni yer tutucular eklediyseniz diğer t&uuml;rden denklemler) denkleme sağ tıklayıp men&uuml;den <b>Hizalama</b> se&ccedil;eneğine sağ tıklayıp ardından <b>&Uuml;ste</b>, <b>Ortaya</b> veya <b>Alta</b> hizalama t&uuml;r&uuml;n&uuml; se&ccedil;in.</li>
+                <li>Bir <em>Matrisi</em> dikey olarak hizalamak i&ccedil;in matrise sağ tıklayabilir, men&uuml;den <b>Matris Hizalama</b> se&ccedil;eneğini se&ccedil;ebilir ve ardından <b>&Uuml;ste</b>, <b>Ortaya</b> veya <b>Alta</b> hizalama t&uuml;r&uuml;n&uuml; se&ccedil;ebilirsiniz.</li>
+                <li>Bir <em>Matris</em> i&ccedil;indeki &ouml;ğeleri yatay olarak hizalamak i&ccedil;in s&uuml;tun i&ccedil;indeki yer tutucuya sağ tıklayabilir, men&uuml;den <b>S&uuml;tun Hizalama</b> se&ccedil;eneğini se&ccedil;ebilir ve ardından <b>Sola</b>, <b>Ortaya</b> veya <b>Sağa</b> hizalama t&uuml;r&uuml;n&uuml; se&ccedil;ebilirsiniz.</li>
+            </ul>
+            <h3>Denklem &ouml;ğelerini silme</h3>
+            <p>Denklemin bir b&ouml;l&uuml;m&uuml;n&uuml; silmek i&ccedil;in fareyi s&uuml;r&uuml;kleyerek veya <b>Shift</b> tuşunu basılı tutarak  ve ok d&uuml;ğmelerini kullanarak se&ccedil;in ve ardından klavyedeki <b>Delete</b> tuşuna basın.</p>
+            <p>Bir yuva, yalnızca ait olduğu şablonla birlikte silinebilir.</p>
+            <p>T&uuml;m denklemi silmek i&ccedil;in fareyi s&uuml;r&uuml;kleyerek veya denklem kutusuna &ccedil;ift tıklayarak denklemi tamamen se&ccedil;in ve klavyedeki <b>Delete</b> tuşuna basın.</p>
+            <div class = "icon icon-deleteequation"></div>
+            <p>Bazı denklem &ouml;ğelerini silmek i&ccedil;in <b>sağ tıklama men&uuml;s&uuml; se&ccedil;eneklerini</b> de kullanabilirsiniz:</p>
+            <ul>
+                <li>Bir <em>K&ouml;k&uuml;</em> silmek i&ccedil;in &uuml;zerine sağ tıklayıp men&uuml;den <b>K&ouml;k&uuml; sil</b> se&ccedil;eneğini se&ccedil;ebilirsiniz.</li>
+                <li>Bir <em>Alt Simgeyi</em> ve/veya <em>&Uuml;st Simge</em> silmek i&ccedil;in bunları i&ccedil;eren ifadeye sağ tıklayıp men&uuml;den <b>Alt simgeyi/&uuml;st simgeyi kaldır</b> se&ccedil;eneğini se&ccedil;ebilirsiniz. İfade, metinden &ouml;nce gelen simgeler i&ccedil;eriyorsa, <b>Simgeleri kaldır</b> se&ccedil;eneğini kullanabilirsiniz.</li>
+                <li><em>Ayra&ccedil;ları</em> silmek i&ccedil;in i&ccedil;lerindeki ifadeye sağ tıklayıp men&uuml;den <b>&Ccedil;evreleyen karakterleri sil</b> veya <b>&Ccedil;evreleyen karakterleri ve ayırıcıları sil</b> se&ccedil;eneğini se&ccedil;ebilirsiniz.</li>
+                <li><em>Ayra&ccedil;lar</em> i&ccedil;indeki ifade birden fazla değişken i&ccedil;eriyorsa, silmek istediğiniz değişkene sağ tıklayıp men&uuml;den <b>Değişkeni sil</b> se&ccedil;eneğini se&ccedil;ebilirsiniz.</li>
+                <li><em>Ayra&ccedil;lar</em> birden fazla denklem i&ccedil;eriyorsa (&ouml;rneğin, birka&ccedil; koşula sahip <em>&Ccedil;er&ccedil;eveler</em>), silmek istediğiniz denkleme sağ tıklayıp men&uuml;den <b>Denklemi sil</b> se&ccedil;eneğini se&ccedil;ebilirsiniz. Bu se&ccedil;enek, daha &ouml;nce <b>Enter</b> tuşuna basarak yeni yer tutucular eklediyseniz diğer t&uuml;rlerdeki denklemler i&ccedil;in de kullanılabilir.</li>
+                <li>Bir <em>Limiti</em> silmek i&ccedil;in &uuml;zerine sağ tıklayıp men&uuml;den <b>Limiti kaldır</b> se&ccedil;eneğini se&ccedil;ebilirsiniz.</li>
+                <li>Bir <em>Aksanı</em> silmek i&ccedil;in &uuml;zerine sağ tıklayıp men&uuml;den <b>Aksan karakterini kaldır</b>, <b>Karakteri sil</b> veya <b>&Ccedil;ubuğu kaldır</b> se&ccedil;eneğini se&ccedil;ebilirsiniz (mevcut se&ccedil;enekler se&ccedil;ilen aksana g&ouml;re değişir).</li>
+                <li>Bir <em>Matrisin</em> satırını veya s&uuml;tununu silmek i&ccedil;in silmeniz gereken satır/s&uuml;tun i&ccedil;indeki yer tutucuya sağ tıklayıp men&uuml;den <b>Sil</b> se&ccedil;eneğini ve ardından <b>Satırı/S&uuml;tunu Sil</b> se&ccedil;eneğini se&ccedil;in.</li>
+            </ul>
+            <h3 id="convertequation">Denklemleri d&ouml;n&uuml;şt&uuml;rme</h3>
+            <p>Denklem d&uuml;zenleyicinin eski bir s&uuml;r&uuml;m&uuml;yle (&ouml;rneğin, MS Office 2007&apos;den &ouml;nceki s&uuml;r&uuml;mlerle) oluşturulan denklemleri i&ccedil;eren mevcut bir belgeyi a&ccedil;arsanız, bu denklemleri d&uuml;zenleyebilmek i&ccedil;in Office Math ML bi&ccedil;imine d&ouml;n&uuml;şt&uuml;rmeniz gerekir.</p>
+            <p>Bir denklemi d&ouml;n&uuml;şt&uuml;rmek i&ccedil;in &uuml;zerine &ccedil;ift tıklayın. Uyarı penceresi g&ouml;r&uuml;necektir:</p>
+            <p><img alt="Denklemi dönüştürme" src="../images/convertequation.png" /></p>
+            <p>Yalnızca se&ccedil;ili denklemi d&ouml;n&uuml;şt&uuml;rmek i&ccedil;in uyarı penceresindeki <b>Evet</b> d&uuml;ğmesine tıklayın. Bu belgedeki t&uuml;m denklemleri d&ouml;n&uuml;şt&uuml;rmek i&ccedil;in <b>T&uuml;m denklemlere uygula</b> kutusuna ve <b>Evet</b> d&uuml;ğmesine tıklayın.</p>
+            <p>Denklemi d&ouml;n&uuml;şt&uuml;r&uuml;ld&uuml;kten sonra d&uuml;zenleyebilirsiniz.</p>
+		</div>
+	</body>
+</html>

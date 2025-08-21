@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Adicionar hiperlinks</title>
+		<meta charset="utf-8" />
+		<meta name="descrição" content="Adicione hiperlinks a uma palavra ou fragmento de texto que leve a um site externo ou a outro slide na mesma apresentação" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Adicionar hiperlinks</h1>
+			<p>Para adicionar um hiperlink no <a target="_blank" href="https://www.onlyoffice.com/pt/presentation-editor.aspx" onclick="onhyperlinkclick(this)"><b>Editor de Apresentações</b></a>,</p>
+			<ol>
+				<li>coloque o cursor dentro da caixa de texto onde um hiperlink deve ser adicionado,</li>
+                 <li>mude para a guia <b>Inserir</b> da barra de ferramentas superior,</li>
+				<li>clique no ícone <div class = "icon icon-addhyperlink"></div> <b>Hyperlink</b> na barra de ferramentas superior,</li>
+                <li>depois disso, a janela <b>Configurações do hiperlink</b> aparecerá, onde você poderá especificar os parâmetros do hiperlink:
+				<ul>
+				    <li>Selecione um tipo de link que deseja inserir:
+				    <ul>
+						<li>
+							Use a opção <b>Link externo</b> e insira um URL no formato <em>http://www.example.com</em> no campo <b>Link para</b> abaixo se você precisa adicionar um hiperlink que leva a um site <b>externo</b>. Se você precisar adicionar um hiperlink a um arquivo <b>local</b>, insira a URL no <em>arquivo://caminho/Apresentação.pptx</em> (para Windows) ou <em>arquivo: ///caminho/Apresentação.pptx</em> (para MacOS e Linux) no campo <b>Link para</b>.
+                        <p class="note">O tipo de hiperlink <em>arquivo://caminho/Apresentação.pptx</em> ou <em>arquivo://caminho/Apresentação.pptx</em> pode ser aberto apenas em a versão desktop do editor. No editor da web, você só pode adicionar o link sem poder abri-lo.</p>
+							<p><img alt="Janela de configurações de hiperlink" src="../../../../../../common/main/resources/help/en/images/hyperlinkwindow.png" /></p>
+						</li>
+				    <li>Use a opção <b>Slide nesta apresentação</b> e selecione uma das opções abaixo se precisar adicionar um hiperlink que leve a um determinado slide na mesma apresentação. As seguintes opções estão disponíveis: Próximo slide, Slide anterior, Primeiro slide, Último slide, Slide com o número especificado.
+				    <p><img alt="Janela de configurações de hiperlink" src="../images/hyperlinkwindow2.png" /></p>
+				    </li>
+				    </ul>
+				    </li>
+					<li><b>Exibição</b> - insira um texto que será clicável e levará ao endereço da web/slide especificado no campo superior.</li>
+                    <li><b>Texto da dica de tela</b> - digite um texto que ficará visível em uma pequena janela pop-up com uma breve nota ou rótulo pertencente ao hiperlink a ser apontado.</li>
+				</ul>
+				</li>
+				<li>Clique no botão <b>OK</b>.</li>
+			</ol>
+            <p>Para adicionar um hiperlink, você também pode usar a combinação de teclas <b>Ctrl+K</b> ou clicar com o botão direito do mouse onde um hiperlink deve ser adicionado e selecionar a opção <b>Hiperlink</b> à direita -clique no menu.</p>
+			<p class="note"><b>Nota</b>: também é possível selecionar um caractere, palavra ou combinação de palavras com o mouse ou <a href="../HelpfulHints/KeyboardShortcuts.htm#textselection" onclick="onhyperlinkclick(this)">usando o teclado</a> e
+                 em seguida, abra a janela <b>Configurações de hiperlink</b> conforme descrito acima. Neste caso, o campo <b>Exibir</b> será preenchido com o fragmento de texto que você selecionou.</p>
+			<p>Ao passar o cursor sobre o hiperlink adicionado, a dica de tela aparecerá contendo o texto que você especificou.
+            Você pode seguir o link pressionando a tecla <b>CTRL</b> e clicando no link em sua apresentação.</p>
+            <p>Para editar ou excluir o hiperlink adicionado, clique nele com o botão direito do mouse, selecione a opção <b>Hiperlink</b> no menu do botão direito e, em seguida, a ação que deseja executar - <b>Editar hiperlink</b> ou <b>Remover hiperlink</b>.</p>
+		</div>
+	</body>
+</html>

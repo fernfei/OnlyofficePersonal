@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Proteger intervalos</title>
+		<meta charset="utf-8" />
+		<meta name="descrição" content="Proteger intervalos para evitar alterações indesejadas e restringir as habilidades de edição de outros usuários" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+			<div class="search-field">
+				<input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+			</div>
+
+			<h1>Proteger intervalos</h1>
+			<p>A opção <b>Proteger Intervalo</b> permite especificar intervalos de células que não podem ser editados por usuários sem direitos de edição correspondentes concedidos pelo criador do arquivo ou um usuário com acesso total a ele.</p>
+			<p>Para selecionar um intervalo de células bloqueadas que um usuário poderá alterar:</p>
+			<ol>
+				<li>
+					Clique no botão <b>Proteger Intervalo</b> na barra de ferramentas superior da guia <b>Proteção</b>. A janela <b>Intervalos protegidos</b> será aberta.
+	                <p><img alt="Editar intervalos" src="../images/editranges.png" /></p>
+				</li>
+				<li>Use a lista suspensa <b>Filtro</b> para escolher a planilha necessária. Clique no botão <b>Novo</b> na janela <b>Intervalos protegidos</b> para selecionar e adicionar um intervalo de células que um usuário poderá editar.</li>
+                <li>
+                    Na janela <b>Novo intervalo</b>, digite o intervalo <b>Título</b> e selecione o intervalo de células clicando no botão <b>Selecionar intervalo</b>. Selecione os usuários <b>que podem editar</b> este intervalo e clique em <b>OK</b> para confirmar.
+					<p><img alt="Novo intervalo" src="../images/allowedit_newrange.png" /></p>
+				</li>
+				<li>Para editar ou excluir um intervalo, selecione-o na janela <b>Intervalos protegidos</b> e clique no botão <b>Editar</b> ou <b>Excluir</b> de acordo.</li>
+			    <li>Clique no botão <b>Fechar</b> na janela <b>Intervalos protegidos</b> quando estiver pronto.</li>
+			</ol>
+			<p>Para saber mais sobre como permitir intervalos de edição, consulte o <a href="../UsageInstructions/ProtectSheet.htm" onclick="onhyperlinkclick(this)">seguinte artigo</a>.</p>
+		</div>
+	</body>
+</html>

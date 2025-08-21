@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Yazım denetimi</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Spell check the text in your language while editing a spreadsheet" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+        <div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+            </div>
+            <h1>Yazım denetimi</h1>
+            <p><a href="https://www.onlyoffice.com/en/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Elektronik Tablo D&uuml;zenleyicisi,</b></a>, metnin belirli bir dildeki yazımını kontrol etmenizi ve d&uuml;zenlerken yapılan hataları d&uuml;zeltmenizi sağlar. <em>Masa&uuml;st&uuml; s&uuml;r&uuml;m&uuml;nde</em>, &uuml;&ccedil; d&uuml;zenleyicide de ortak olan &ouml;zel bir s&ouml;zl&uuml;ğe s&ouml;zc&uuml;kler eklemek de m&uuml;mk&uuml;nd&uuml;r.</p>
+            <p class="note"><b>S&uuml;r&uuml;m 6.3&apos;ten</b> başlayarak ONLYOFFICE d&uuml;zenleyicileri, kayda değer bir bellek t&uuml;ketimi olmadan daha sorunsuz &ccedil;alışma i&ccedil;in <b>SharedWorker</b> aray&uuml;z&uuml;n&uuml; destekler. Tarayıcınız SharedWorker&apos;ı desteklemiyorsa, sadece <b>Worker</b> aktif olacaktır. SharedWorker hakkında daha fazla bilgi i&ccedil;in l&uuml;tfen <a href="https://javascript.plainenglish.io/introduction-to-shared-workers-533d9abe9de3">bu yazıya</a> bakın.</p>
+            <p>Yazım denetimi panelini a&ccedil;mak i&ccedil;in sol kenar &ccedil;ubuğundaki <span class="icon icon-spellcheckdeactivated"></span> <b>Yazım denetimi</b> simgesine tıklayın.</p>
+            <p><img alt="Yazım denetimi paneli" src="../images/spellchecking_panel.png" /></p>
+            <p>Yanlış yazılmış bir metin değeri i&ccedil;eren sol &uuml;st h&uuml;cre, ge&ccedil;erli &ccedil;alışma sayfasında otomatik olarak se&ccedil;ilecektir. İlk yanlış yazılan kelime yazım denetimi alanında g&ouml;r&uuml;nt&uuml;lenecek ve doğru yazımı ile birlikte &ouml;nerilen benzer kelimeler aşağıdaki alanda g&ouml;r&uuml;necektir.</p>
+            <p>Yanlış yazılmış kelimeler arasında gezinmek i&ccedil;in <span class="icon icon-go_to_the_next_word"></span> <b>Sonraki kelimeye git</b> d&uuml;ğmesini kullanın.</p>
+            <h5>Yanlış yazılmış kelimeleri değiştirme</h5>
+            <p>Mevcut se&ccedil;ili yanlış yazılmış kelimeyi &ouml;nerilen kelime ile <b>değiştirmek</b> i&ccedil;in doğru yazılmış &ouml;nerilen benzer kelimelerden birini se&ccedil;in ve <b>Değiştir</b> se&ccedil;eneğini kullanın:</p>
+            <ul>
+                <li><b>Değiştir</b> d&uuml;ğmesine tıklayın veya</li>
+                <li><b>Değiştir</b> d&uuml;ğmesinin yanındaki aşağı oka tıklayın ve <b>Değiştir</b> se&ccedil;eneğini se&ccedil;in.</li>
+            </ul>
+            <p>Ge&ccedil;erli kelime değiştirilecek ve bir sonraki yanlış yazılmış kelimeye ge&ccedil;eceksiniz.</p>
+            <p>&Ccedil;alışma sayfasında tekrarlanan t&uuml;m aynı s&ouml;zc&uuml;kleri hızlı bir şekilde değiştirmek i&ccedil;in <b>Değiştir</b> d&uuml;ğmesinin yanındaki aşağı oka tıklayın ve <b>Hepsini değiştir</b> se&ccedil;eneğini se&ccedil;in.</p>
+            <h5>Kelimeleri yoksay</h5>
+            <p>Ge&ccedil;erli kelimeyi atlamak i&ccedil;in:</p>
+            <ul>
+                <li><b>Yoksay</b> d&uuml;ğmesine tıklayın veya</li>
+                <li><b>Yoksay</b> d&uuml;ğmesinin yanındaki aşağı oka tıklayın ve <b>Yoksay</b> se&ccedil;eneğini se&ccedil;in.</li>
+            </ul>
+            <p>Ge&ccedil;erli kelime atlanacak ve bir sonraki yanlış yazılmış kelimeye ge&ccedil;eceksiniz.</p>
+            <p>&Ccedil;alışma sayfasında tekrarlanan t&uuml;m aynı s&ouml;zc&uuml;kleri atlamak i&ccedil;in <b>Yoksay</b> d&uuml;ğmesinin yanındaki aşağı oka tıklayın ve <b>Hepsini yoksay</b> se&ccedil;eneğini se&ccedil;in.</p>
+            <p>Ge&ccedil;erli s&ouml;zc&uuml;k s&ouml;zl&uuml;kte eksikse, yazım denetimi panelinde <b>S&ouml;zl&uuml;ğe Ekle</b> d&uuml;ğmesini kullanarak &ouml;zel s&ouml;zl&uuml;ğe ekleyebilirsiniz. Bu kelime bir dahaki sefer yanlış olarak değerlendirilmez. Bu se&ccedil;enek <em>Masa&uuml;st&uuml; s&uuml;r&uuml;m&uuml;nde</em> mevcuttur.</p>
+            <p>Yazım denetimi i&ccedil;in kullanılan <b>S&ouml;zl&uuml;k Dili</b> aşağıdaki listede g&ouml;r&uuml;nt&uuml;lenir. Gerekirse değiştirebilirsiniz.</p>
+            <p>&Ccedil;alışma sayfasındaki t&uuml;m s&ouml;zc&uuml;kleri doğruladığınızda, yazım denetimi panelinde <b>Yazım denetimi tamamlandı</b> mesajı g&ouml;r&uuml;necektir.</p>
+            <p>Yazım denetimi panelini&nbsp;kapatmak i&ccedil;in sol kenar &ccedil;ubuğundaki <span class="icon icon-spellcheckactivated"></span> <b>Yazım denetimi</b> simgesine tıklayın.</p>
+            <h5>Yazım denetimi ayarlarını değiştirme</h5>
+            <p>Yazım denetimi ayarlarını değiştirmek i&ccedil;in elektronik tablo d&uuml;zenleyicisi gelişmiş ayarlarına gidin (<b>Dosya</b> sekmesi -&gt; <b>Gelişmiş Ayarlar</b>) ve  <b>Yazım denetimi</b> sekmesine ge&ccedil;in. Burada aşağıdaki parametreleri ayarlayabilirsiniz:</p>
+            <p><img alt="Yazım denetimi ayarları" src="../images/spellchecking_settings.png" /></p>
+            <ul>
+                <li><b>S&ouml;zl&uuml;k dili</b> - Listeden mevcut dillerden birini se&ccedil;in. Yazım denetimi panelindeki <b>S&ouml;zl&uuml;k Dili</b> de buna uygun olarak değiştirilecektir.</li>
+                <li><b>B&Uuml;Y&Uuml;K HARFLİ kelimeleri yoksay</b> - <em>SMB</em> gibi kısaltmalar gibi b&uuml;y&uuml;k harflerle yazılmış s&ouml;zc&uuml;kleri yok saymak i&ccedil;in bu se&ccedil;eneği işaretleyin.</li>
+                <li><b>Sayı i&ccedil;eren kelimeleri yoksay</b> - <em>B2B</em> gibi kısaltmalar gibi sayı i&ccedil;eren s&ouml;zc&uuml;kleri yoksaymak i&ccedil;in bu se&ccedil;eneği işaretleyin.</li>
+                <li><b>Yazım D&uuml;zeltme</b> - <b>Değiştir:</b> kutusuna yazılan veya listeden se&ccedil;ilen kelimeyi veya sembol&uuml; <b>Yeni Değer</b> kutusunda g&ouml;r&uuml;nt&uuml;lenen yeni bir kelime veya sembol ile otomatik olarak değiştirmek i&ccedil;in kullanılır.</li>
+            </ul>
+            <p>Yaptığınız değişiklikleri kaydetmek i&ccedil;in <b>Uygula</b> d&uuml;ğmesine tıklayın.</p>
+        </div>
+	</body>
+</html>

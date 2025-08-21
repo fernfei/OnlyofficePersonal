@@ -1,0 +1,222 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Verileri sıralama ve filtreleme</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Sort your data in ascending or descending order in a spreadsheet and use filters" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Verileri sıralama ve filtreleme</h1>
+			<h3>Verileri Sıralama</h3>
+			<p><a href="https://www.onlyoffice.com/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Elektronik Tablo D&uuml;zenleyicisinde</b></a> bulunan verileri aşağıdaki se&ccedil;eneklerden birini kullanarak hızlı bir şekilde sıralayabilirsiniz:</p>
+			<ul>
+			<li><b>Artan,</b> verileri artan d&uuml;zende, yani A&apos;dan Z&apos;ye alfabetik olarak veya sayısal veriler i&ccedil;in en k&uuml;&ccedil;&uuml;kten en b&uuml;y&uuml;ğe doğru sıralamak i&ccedil;in kullanılır.</li>
+			<li><b>Azalan,</b> verileri azalan d&uuml;zende, yani Z&apos;den A&apos;ya alfabetik olarak veya sayısal veriler i&ccedil;in en b&uuml;y&uuml;kten en k&uuml;&ccedil;&uuml;ğe doğru sıralamak i&ccedil;in kullanılır.</li>
+			</ul>
+            <p class="note"><b>Not</b>: <b>Sırala</b> se&ccedil;eneklerine hem <b>Giriş</b> hem de <b>Veri</b> sekmesinden erişilebilir.</p>
+			<p>Verileri sıralamak i&ccedil;in</p>
+			<ol>
+				<li>Sıralamak istediğiniz h&uuml;cre aralığını se&ccedil;in (t&uuml;m aralığı sıralamak i&ccedil;in aralıktaki tek bir h&uuml;creyi se&ccedil;ebilirsiniz),
+                </li>
+				<li>Verileri artan d&uuml;zende sıralamak i&ccedil;in &uuml;st ara&ccedil; &ccedil;ubuğunun <b>Giriş</b> veya <div class = "icon icon-sortatoz"></div> <b>Veri</b> sekmesinde bulunan <b>Artan d&uuml;zende sırala</b> simgesine
+                    <br />VEYA<br />
+                    verileri azalan d&uuml;zende sıralamak i&ccedil;in &uuml;st ara&ccedil; &ccedil;ubuğunun <b>Giriş</b> veya <div class = "icon icon-sortztoa"></div> <b>Veri</b> sekmesinde bulunan <b>Azalan d&uuml;zende sırala</b> simgesine tıklayın.
+                </li>
+			</ol>
+            <p class="note"><b>Not</b>: Bir h&uuml;cre aralığında tek bir s&uuml;tunu/satırı veya s&uuml;tunun/sıranın bir b&ouml;l&uuml;m&uuml;n&uuml; se&ccedil;erseniz, se&ccedil;imi bitişik h&uuml;creleri i&ccedil;erecek şekilde genişletmek mi yoksa yalnızca se&ccedil;ilen verileri sıralamak mı istediğiniz sorulacaktır.</p>
+			<p>Verilerinizi <b>bağlamsal men&uuml;</b> se&ccedil;eneklerini kullanarak da sıralayabilirsiniz. Se&ccedil;ilen h&uuml;cre aralığını sağ tıklayın, men&uuml;den <b>Sırala</b> se&ccedil;eneğini ve ardından alt men&uuml;den <b>Artan</b> veya <b>Azalan</b> se&ccedil;eneğini se&ccedil;in.</p>
+            <p>Verileri bağlamsal men&uuml;y&uuml; kullanarak renge g&ouml;re sıralamak da m&uuml;mk&uuml;nd&uuml;r:</p>
+            <ol>
+                <li>Verileri sıralamak istediğiniz rengi i&ccedil;eren bir h&uuml;creye sağ tıklayın,</li>
+                <li>Men&uuml;den <b>Sırala</b> se&ccedil;eneğini se&ccedil;in,</li>
+                <li>
+                    Alt men&uuml;den gerekli se&ccedil;eneği se&ccedil;in:
+                    <ul>
+                        <li><b>Se&ccedil;ilen H&uuml;cre Rengi &Uuml;stte</b> - Aynı h&uuml;cre arka plan rengine sahip girişleri s&uuml;tunun &uuml;st kısmında g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in kullanılır,</li>
+                        <li><b>Se&ccedil;ilen Yazı Tipi Rengi &Uuml;stte</b> - Aynı yazı tipi rengindeki girişleri s&uuml;tunun &uuml;st&uuml;nde g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in kullanılır.</li>
+                    </ul>
+                </li>
+            </ol>
+                        
+			<h3 id="filter">Veri Filtreleme</h3>
+			<p>Yalnızca belirli kriterlere uyan satırları g&ouml;r&uuml;nt&uuml;lemek ve diğerlerini gizlemek i&ccedil;in <b>Filtre</b> se&ccedil;eneğini kullanın.</p>
+            <p class="note"><b>Not</b>: <b>Filtre</b> se&ccedil;eneklerine hem <b>Giriş</b> hem de <b>Veri</b> sekmesinden erişilebilir.</p>
+            <b>Bir filtreyi etkinleştirmek i&ccedil;in</b>
+            <ol>
+                <li>Filtrelemek istediğiniz verileri i&ccedil;eren h&uuml;cre aralığını se&ccedil;in (t&uuml;m aralığı filtrelemek i&ccedil;in aralıktaki tek bir h&uuml;creyi se&ccedil;ebilirsiniz),</li>
+                <li>
+                    &Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Giriş</b> veya <div class = "icon icon-sortandfilter"></div> <b>Veri</b> sekmesinde bulunan <b>Filtre</b> simgesine tıklayın.
+                    <p>A&ccedil;ılır ok <span class = "icon icon-dropdownarrow"></span> se&ccedil;ilen h&uuml;cre aralığının her s&uuml;tununun ilk h&uuml;cresinde g&ouml;r&uuml;necektir. Bu, filtrenin etkinleştirildiği anlamına gelir.</p>
+                </li>
+            </ol>
+            <p><b>Bir filtreyi uygulamak i&ccedil;in</b></p>
+            <ol>
+                <li>A&ccedil;ılır oka tıklayın <div class = "icon icon-dropdownarrow"></div>. <b>Filtre</b> se&ccedil;enek listesi a&ccedil;ılacaktır:
+                <p><img alt="Filtre penceresi" src="../images/filterwindow.png" /></p>
+                <p class="note"><b>Not</b>: Verileri olabildiğince uygun şekilde g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in sağ kenarlığını sağa veya sola s&uuml;r&uuml;kleyerek filtre penceresinin boyutunu ayarlayabilirsiniz.</p>
+                </li>
+                <li>
+                <p>Filtre parametrelerini ayarlama. Aşağıdaki yollardan biriyle ilerleyebilirsiniz: g&ouml;r&uuml;nt&uuml;lenecek verileri se&ccedil;in, verileri belirli kriterlere g&ouml;re filtreleyin veya verileri renge g&ouml;re filtreleyin.</p>
+                    <ul>
+                        <li>
+                            <b>G&ouml;r&uuml;nt&uuml;lenecek verileri se&ccedil;me</b>
+                            <p>Gizlemeniz gereken verilerin yanındaki kutuların işaretini kaldırın. Size kolaylık sağlaması adına, <b>Filtre</b> se&ccedil;eneği listesindeki t&uuml;m veriler artan d&uuml;zende sıralanır.</p>
+                            <p>Filtrelenen aralıktaki benzersiz değerlerin sayısı, filtre penceresi i&ccedil;indeki her değerin sağında g&ouml;r&uuml;nt&uuml;lenir.</p>
+                            <p class="note"><b>Not</b>: <b>{Boşluklar}</b> onay kutusu boş h&uuml;crelere karşılık gelir. Se&ccedil;ilen h&uuml;cre aralığı en az bir boş h&uuml;cre i&ccedil;eriyorsa kullanılabilir.</p>
+                            <p>İşlemi kolaylaştırmak i&ccedil;in &uuml;stteki arama alanını kullanın. Sorgunuzu tamamen veya kısmen alana girin <!--and press the Enter key--> - Bu karakterleri i&ccedil;eren değerler aşağıdaki listede g&ouml;r&uuml;nt&uuml;lenecektir. Aşağıdaki iki se&ccedil;enek de kullanılabilir olacaktır:</p>
+                            <ul>
+                                <li><b>T&uuml;m Arama Sonu&ccedil;larını Se&ccedil;</b> - Varsayılan olarak işaretlidir. Listede sorgunuza karşılık gelen t&uuml;m değerleri se&ccedil;meyi sağlar.</li>
+                                <li><b>Ge&ccedil;erli se&ccedil;imi filtreye ekle</b> - Bu kutuyu işaretlerseniz, filtreyi uyguladığınızda se&ccedil;ilen değerler gizlenmez.</li>
+                            </ul>
+                            <p>Gerekli t&uuml;m verileri se&ccedil;tikten sonra, filtreyi uygulamak i&ccedil;in <b>Filtre</b> se&ccedil;enek listesinde <b>Tamam</b> d&uuml;ğmesine tıklayın.</p>
+                        </li>
+                        <li>
+                            <b>Verileri belirli kriterlere g&ouml;re filtreme</b>
+                            <p>Se&ccedil;ilen s&uuml;tundaki verilere bağlı olarak <b>Filtre</b> se&ccedil;enekleri listesinin sağ tarafında bulunan <b>Sayı filtresi</b> ya da <b>Metin filtresi</b> se&ccedil;eneğini ve ardından alt men&uuml;den se&ccedil;eneklerden birini se&ccedil;ebilirsiniz:</p>
+                            <ul>
+                                <li><b>Sayı filtresi</b> i&ccedil;in aşağıdaki se&ccedil;enekler mevcuttur: <em>Eşittir...</em>, <em>Eşit değil...</em>, <em>B&uuml;y&uuml;kt&uuml;r...</em>, <em>B&uuml;y&uuml;k veya eşit...</em>, <em>K&uuml;&ccedil;&uuml;kt&uuml;r...</em>, <em>K&uuml;&ccedil;&uuml;k veya eşit...</em>, <em>Arasında</em>, <em>İlk 10</em>, <em>Ortalamanın &uuml;st&uuml;</em>, <em>Ortalamanın altında</em>, <em>&Ouml;zel Filtre...</em>.</li>
+                                <li><b>Metin filtresi</b> i&ccedil;in aşağıdaki se&ccedil;enekler mevcuttur: <em>Eşittir...</em>, <em>Eşit değil...</em>, <em>ile başlar...</em>, <em>ile başlamaz...</em>, <em>ile biter...</em>, <em>ile bitmez...</em>, <em>i&ccedil;erir...</em>, <em>i&ccedil;ermez...</em>, <em>&Ouml;zel Filtre...</em>.</li>
+                            </ul>
+                            <p>Yukarıdaki se&ccedil;eneklerden (<em>İlk 10</em> ve <em>Ortalamanın &Uuml;st&uuml;/Altında</em> dışında) birini se&ccedil;tikten sonra, <b>&Ouml;zel Filtre</b> penceresi a&ccedil;ılacaktır. Karşılık gelen kriter, &uuml;stteki a&ccedil;ılır listeden se&ccedil;ilecektir. Sağdaki alanda gerekli değeri girin.</p>
+                            <p>Bir kriter daha eklemek i&ccedil;in verinin her iki kriteri de karşılamasını istiyorsanız <b>Ve</b> veya kriterlerden biri veya her ikisi karşılanabiliyorsa <b>Veya</b> se&ccedil;enek d&uuml;ğmesini kullanın. Ardından, alt a&ccedil;ılır listeden ikinci kriteri se&ccedil;in ve sağda gerekli değeri girin.</p>
+                            <p>Filtreyi uygulamak i&ccedil;in <b>Tamam</b> d&uuml;ğmesine tıklayın.</p>
+                            <p><img alt="Özel Filtre penceresi" src="../images/customfilterwindow.png" /></p>
+                            <p><b>Sayı/Metin filtresi</b> se&ccedil;enek listesinden <em>&Ouml;zel Filtre...</em> se&ccedil;eneğini se&ccedil;erseniz, ilk kriter otomatik olarak se&ccedil;ilmez, kendiniz ayarlayabilirsiniz.</p>
+                            <p><b>Sayı filtresi</b> se&ccedil;enek listesinden <em>İlk 10</em> se&ccedil;eneğini se&ccedil;erseniz, yeni bir pencere a&ccedil;ılır:</p>
+                            <p><img alt="İlk 10 Otomatik Filtre penceresi" src="../images/topten.png" /></p>
+                            <p>İlk a&ccedil;ılır liste, en y&uuml;ksek (<b>&Uuml;st</b>) veya en d&uuml;ş&uuml;k (<b>Alt</b>) değerleri se&ccedil;menizi sağlar. İkinci alan, listeden ka&ccedil; girişin veya toplam giriş sayısının y&uuml;zde ka&ccedil;ının g&ouml;r&uuml;nt&uuml;lenmesini istediğinizi belirlemenizi sağlar (1&apos;den 500&apos;e kadar bir sayı girebilirsiniz). &Uuml;&ccedil;&uuml;nc&uuml; a&ccedil;ılır liste, &ouml;l&ccedil;&uuml; birimlerini ayarlamayı sağlar: <b>&Ouml;ğe</b> veya <b>Y&uuml;zde</b>. Gerekli parametreler ayarlandıktan sonra, filtreyi uygulamak i&ccedil;in <b>Tamam</b> d&uuml;ğmesine tıklayın.</p>
+                            <p><b>Sayı filtresi</b> se&ccedil;enek listesinden <em>Ortalamanın &Uuml;st&uuml;/Altında</em> se&ccedil;eneğini se&ccedil;erseniz, filtre hemen uygulanır.</p>
+                        </li>
+                        <li>
+                            <b>Verileri renge g&ouml;re filtreleme</b>
+                            <p>Filtrelemek istediğiniz h&uuml;cre aralığı, arka planını veya yazı tipi rengini değiştirerek (el ile veya &ouml;nceden tanımlanmış stilleri kullanarak) bi&ccedil;imlendirdiğiniz bazı h&uuml;creler i&ccedil;eriyorsa, aşağıdaki se&ccedil;eneklerden birini kullanabilirsiniz:</p>
+                            <ul>
+                                <li><b>H&uuml;cre rengine g&ouml;re filtrele</b> - Yalnızca belirli bir h&uuml;cre arka plan rengine sahip girişleri g&ouml;r&uuml;nt&uuml;lemek ve diğerlerini gizlemek i&ccedil;in kullanılır,</li>
+                                <li><b>Yazı tipi rengine g&ouml;re filtrele</b> - Yalnızca belirli bir h&uuml;cre yazı tipi rengine sahip girişleri g&ouml;r&uuml;nt&uuml;lemek ve diğerlerini gizlemek i&ccedil;in kullanılır.</li>
+                            </ul>
+                            <p>Gerekli se&ccedil;eneği se&ccedil;tiğinizde, se&ccedil;ili h&uuml;cre aralığında kullanılan renkleri i&ccedil;eren bir palet a&ccedil;ılacaktır. Filtreyi uygulamak i&ccedil;in renklerden birini se&ccedil;in.</p>
+                            <p><img alt="Verileri renge göre filtreleme" src="../images/filterbycolor.png" /></p>
+                        </li>
+                    </ul>
+                    <p><b>Filtre</b> <span class = "icon icon-filterbutton"></span> d&uuml;ğmesi s&uuml;tunun ilk h&uuml;cresinde g&ouml;r&uuml;necektir. Bu, filtrenin uygulandığı anlamına gelir. Filtrelenen kayıtların sayısı durum &ccedil;ubuğunda g&ouml;r&uuml;nt&uuml;lenir (<em>80 kaydın 25&apos;i filtrelendi</em> gibi).</p>
+                    <p class="note"><b>Not</b>: Filtre uygulandığında, filtrelenen satırlar otomatik doldurma, bi&ccedil;imlendirme, g&ouml;r&uuml;n&uuml;r i&ccedil;erikleri silme sırasında değiştirilemez. Bu t&uuml;r işlemler yalnızca g&ouml;r&uuml;nen satırları etkiler, filtre ile gizlenen satırlar aynı kalır. Filtrelenen verileri kopyalayıp yapıştırırken, yalnızca g&ouml;r&uuml;nen satırlar kopyalanıp yapıştırılabilir. Bu, t&uuml;m benzer işlemlerden etkilenen manuel olarak gizlenen satırlara eşdeğer değildir.</p>
+                </li>
+			</ol>
+            <h3>Filtrelenen verileri sıralama</h3>
+            <p>Etkinleştirdiğiniz veya filtre uyguladığınız verilerin <b>sıralama d&uuml;zenini</b> ayarlayabilirsiniz.  A&ccedil;ılır oka <span class="icon icon-dropdownarrow"></span> ya da <b>Filtre</b> <span class="icon icon-filterbutton"></span> d&uuml;ğmesine tıklayın ve <b>Filtre</b> se&ccedil;enek listesindeki se&ccedil;eneklerden birini se&ccedil;in:</p>
+                <ul>
+                    <li><b>En D&uuml;ş&uuml;kten En Y&uuml;kseğe Sırala</b> - S&uuml;tunun &uuml;st&uuml;nde en d&uuml;ş&uuml;k değeri g&ouml;r&uuml;nt&uuml;leyerek verileri artan d&uuml;zende sıralamayı sağlar,</li>
+                    <li><b>En Y&uuml;ksekten En D&uuml;ş&uuml;ğe Sırala</b> - S&uuml;tunun en &uuml;st&uuml;nde en y&uuml;ksek değeri g&ouml;r&uuml;nt&uuml;leyerek verileri azalan d&uuml;zende sıralamayı sağlar,</li>
+                    <li><b>H&uuml;creleri rengine g&ouml;re sırala</b> - Renklerden birini se&ccedil;meyi ve aynı h&uuml;cre arka plan rengine sahip girişleri s&uuml;tunun &uuml;st kısmında g&ouml;r&uuml;nt&uuml;lemeyi sağlar,</li>
+                    <li><b>Yazı tipine g&ouml;re sırala</b> - Renklerden birini se&ccedil;meyi ve aynı yazı tipi rengindeki girişleri s&uuml;tunun &uuml;st&uuml;nde g&ouml;r&uuml;nt&uuml;lemeyi sağlar.</li>
+                </ul>
+                <p>Son iki se&ccedil;enek, filtrelemek istediğiniz h&uuml;cre aralığı, arka planını veya yazı tipi rengini değiştirerek (el ile veya &ouml;nceden tanımlanmış stilleri kullanarak) bi&ccedil;imlendirdiğiniz bazı h&uuml;creler i&ccedil;eriyorsa kullanılabilir.</p>
+            <p>Sıralama y&ouml;n&uuml;, filtre d&uuml;ğmelerinde bir okla g&ouml;sterilir.</p>
+            <ul>
+                <li>Veriler artan d&uuml;zende sıralanırsa, s&uuml;tunun ilk h&uuml;cresindeki a&ccedil;ılır ok şu şekilde g&ouml;r&uuml;n&uuml;r: <div class = "icon icon-lowesttohighest"></div> ve <b>Filtre</b> d&uuml;ğmesi şu şekilde g&ouml;r&uuml;n&uuml;r: <div class = "icon icon-lowesttohighest1"></div>.</li>
+                <li>Veriler azalan d&uuml;zende sıralanırsa, s&uuml;tunun ilk h&uuml;cresindeki a&ccedil;ılır ok ş&ouml;yle g&ouml;r&uuml;n&uuml;r: <div class = "icon icon-highesttolowest"></div> ve <b>Filtre</b> d&uuml;ğmesi şu şekilde g&ouml;r&uuml;n&uuml;r: <div class = "icon icon-highesttolowest1"></div>.</li>
+            </ul>
+            <p>Verileri bağlamsal men&uuml; se&ccedil;eneklerini kullanarak da hızlıca sıralayabilirsiniz:</p>
+            <ol>
+                <li>Verileri sıralamak istediğiniz rengi i&ccedil;eren bir h&uuml;creye sağ tıklayın,</li>
+                <li>Men&uuml;den <b>Sırala</b> se&ccedil;eneğini se&ccedil;in,</li>
+                <li>
+                    Alt men&uuml;den gerekli se&ccedil;eneği se&ccedil;in:
+                    <ul>
+                        <li><b>Se&ccedil;ilen H&uuml;cre Rengi &Uuml;stte</b> - Aynı h&uuml;cre arka plan rengine sahip girişleri s&uuml;tunun &uuml;st kısmında g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in kullanılır,</li>
+                        <li><b>Se&ccedil;ilen Yazı Tipi Rengi &Uuml;stte</b> - Aynı yazı tipi rengindeki girişleri s&uuml;tunun &uuml;st&uuml;nde g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in kullanılır.</li>
+                    </ul>
+                </li>
+            </ol>
+            <h3>Se&ccedil;ilen h&uuml;cre i&ccedil;eriğine g&ouml;re filtreleme</h3>
+            <p>Verilerinizi <b>bağlamsal</b> men&uuml; se&ccedil;eneklerini kullanarak se&ccedil;ili h&uuml;cre i&ccedil;eriklerine g&ouml;re de hızlıca sıralayabilirsiniz. Bir h&uuml;creye sağ tıklayın, men&uuml;den <b>Filtre</b> se&ccedil;eneğini ve ardından mevcut se&ccedil;eneklerden birini se&ccedil;in:</p>
+			<ul>
+                <li><b>Se&ccedil;ilen h&uuml;crenin değerine g&ouml;re filtrele</b> - Yalnızca se&ccedil;ili h&uuml;crenin i&ccedil;erdiği değer ile aynı değerlere sahip girdileri g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in kullanılır.</li>
+                <li><b>H&uuml;cre rengine g&ouml;re filtrele</b> - Yalnızca se&ccedil;ili h&uuml;cre ile aynı arka plan rengine sahip girişleri g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in kullanılır.</li>
+                <li><b>Yazı tipi rengine g&ouml;re filtrele</b> - Yalnızca se&ccedil;ili h&uuml;cre ile aynı h&uuml;cre yazı tipi rengine sahip girişleri g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in kullanılır.</li>
+            </ul>
+            <h3 id="tabletemplate">Tablo Şablonu Olarak Bi&ccedil;imlendirme</h3>
+			<p>Verilerle &ccedil;alışmanızı kolaylaştırmak i&ccedil;in <b>Elektronik Tablo D&uuml;zenleyicisi,</b> se&ccedil;ilen h&uuml;cre aralığına bir tablo şablonu uygulamanızı ve filtreyi otomatik olarak etkinleştirmenizi sağlar. Bunu yapmak i&ccedil;in</p>
+			<ol>
+				<li>Bi&ccedil;imlendirmeniz gereken h&uuml;cre aralığını se&ccedil;in,</li>
+				<li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Giriş</b> sekmesinde bulunan <div class = "icon icon-tabletemplate"></div> <b>Tablo şablonu olarak bi&ccedil;imlendir</b> simgesine tıklayın.</li>
+				<li>Galeride gerekli şablonu se&ccedil;in,</li>
+				<li>A&ccedil;ılan a&ccedil;ılır pencerede, tablo olarak bi&ccedil;imlendirilecek h&uuml;cre aralığını işaretleyin,</li>
+				<li>Tablo başlıklarının se&ccedil;ilen h&uuml;cre aralığına eklenmesini istiyorsanız <b>Başlık</b> se&ccedil;eneğini işaretleyin, aksi takdirde başlık satırı en &uuml;ste eklenir ve se&ccedil;ilen h&uuml;cre aralığı bir satır aşağı taşınır,</li>
+				<li>Se&ccedil;ilen şablonu uygulamak i&ccedil;in <b>Tamam</b> d&uuml;ğmesine tıklayın.</li>
+			</ol>
+			<p>Şablon se&ccedil;ilen h&uuml;cre aralığına uygulanacak ve tablo başlıklarını d&uuml;zenleyebilecek ve verilerinizle &ccedil;alışmak i&ccedil;in filtreyi uygulayabileceksiniz. Bi&ccedil;imlendirilmiş tablolar ile &ccedil;alışma hakkında daha fazla bilgi i&ccedil;in l&uuml;tfen <a href="../UsageInstructions/FormattedTables.htm" onclick="onhyperlinkclick(this)">bu sayfaya</a> bakın.</p>
+            <h3>Filtreyi Yeniden Uygulama</h3>
+            <p>Filtrelenmiş veriler değiştirilmişse, g&uuml;ncel bir sonu&ccedil; g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in filtreyi yenileyebilirsiniz:</p>
+            <ol>
+                <li>Filtrelenmiş verileri i&ccedil;eren s&uuml;tunun ilk h&uuml;cresindeki <b>Filtre</b> <div class = "icon icon-filterbutton"></div> d&uuml;ğmesine tıklayın,</li>
+                <li>A&ccedil;ılan <b>Filtre</b> se&ccedil;enek listesinde <b>Yeniden uygula</b> se&ccedil;eneğini se&ccedil;in.</li>
+            </ol>
+            <p>Ayrıca, filtre uygulanmış verileri i&ccedil;eren s&uuml;tundaki bir h&uuml;creye sağ tıklayıp bağlamsal men&uuml;den <b>Yeniden uygula</b> se&ccedil;eneğini de se&ccedil;ebilirsiniz.</p>
+            <h3>Filtreyi Temizleme</h3>
+			<p>Filtreyi temizlemek i&ccedil;in</p>
+            <ol>
+                <li>Filtrelenmiş verileri i&ccedil;eren s&uuml;tunun ilk h&uuml;cresindeki <b>Filtre</b> <div class = "icon icon-filterbutton"></div> d&uuml;ğmesine tıklayın,</li>
+                <li>A&ccedil;ılan <b>Filtre</b> se&ccedil;enek listesinde <b>Temizle</b> se&ccedil;eneğini se&ccedil;in.</li>
+            </ol>
+            <p>Aşağıdaki yollardan biriyle de yapabilirsiniz:</p>
+				<ol>
+					<li>Filtrelenmiş verileri i&ccedil;eren h&uuml;cre aralığını se&ccedil;in,</li>
+					<li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Giriş</b> veya <div class = "icon icon-clearfilter"></div> <b>Veri</b> sekmesinde bulunan <b>Filtreyi temizle</b> simgesine tıklayın.</li>
+				</ol>
+            <p>Filtre etkin kalır, ancak uygulanan t&uuml;m filtre parametreleri kaldırılır ve s&uuml;tunların ilk h&uuml;crelerindeki <b>Filtre</b> <span class="icon icon-filterbutton"></span> d&uuml;ğmeleri a&ccedil;ılır oklara <span class="icon icon-dropdownarrow"></span> d&ouml;n&uuml;ş&uuml;r.</p>
+            <h3>Filtreyi Kaldırma</h3>
+            <p>Filtreyi kaldırmak i&ccedil;in</p>
+            <ol>
+                <li>Filtrelenmiş verileri i&ccedil;eren h&uuml;cre aralığını se&ccedil;in,</li>
+                <li>Filtrelenmiş verileri i&ccedil;eren s&uuml;tunun ilk h&uuml;cresindeki <b>Filtre</b> <div class = "icon icon-sortandfilter"></div> <b>Veri</b> sekmesinde bulunan <b>Filtreyi temizle</b> simgesine tıklayın.</li>
+            </ol>
+            <p>Filtre devre dışı bırakılır ve a&ccedil;ılır oklar <span class="icon icon-dropdownarrow"></span> s&uuml;tunların ilk h&uuml;crelerinden kaybolur.</p>
+            <h3>Verileri birka&ccedil; s&uuml;tuna/satıra g&ouml;re sıralama</h3>
+            <p>Verileri birka&ccedil; s&uuml;tuna/satıra g&ouml;re sıralamak i&ccedil;in, <b>&Ouml;zel Sıralama</b> işlevini kullanarak birka&ccedil; sıralama d&uuml;zeyi oluşturabilirsiniz.</p>
+            <ol>
+                <li>Sıralamak istediğiniz h&uuml;cre aralığını se&ccedil;in (t&uuml;m aralığı sıralamak i&ccedil;in tek bir h&uuml;creyi se&ccedil;ebilirsiniz),</li>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Veri</b> <div class = "icon icon-customsort"></div> sekmesinde bulunan <b>&Ouml;zel Sıralama</b> simgesine tıklayın,</li>
+                <li>
+                    <b>Sıralama</b> penceresi g&ouml;r&uuml;necektir. S&uuml;tunlara g&ouml;re sıralama varsayılan olarak se&ccedil;ilidir.
+                    <p><img alt="Özel Sıralama penceresi" src="../images/customsortwindow.png" /></p>
+                    <p>Sıralama y&ouml;n&uuml;n&uuml; değiştirmek (yani verileri s&uuml;tunlar yerine satırlara g&ouml;re sıralamak) i&ccedil;in &uuml;stteki <b>Se&ccedil;enekler</b> d&uuml;ğmesine tıklayın. <b>Sıralama Se&ccedil;enekleri</b> penceresi a&ccedil;ılacaktır:</p>
+                    <p><img alt="Sıralama Seçenekleri penceresi" src="../images/sortoptionswindow.png" /></p>
+                    <ol>
+                        <li>Gerekirse <b>Verilerimde &uuml;st bilgi var</b> kutusu işaretleyin,</li>
+                        <li>Gerekli <b>Y&ouml;nlendirmeyi</b> se&ccedil;in: Verileri s&uuml;tunlara g&ouml;re sıralamak i&ccedil;in <b>Yukarıdan aşağıya sırala</b> veya verileri satırlara g&ouml;re sıralamak i&ccedil;in <b>Soldan sağa sırala</b> se&ccedil;eneğini se&ccedil;in,</li>
+                        <li>Değişiklikleri uygulamak ve pencereyi kapatmak i&ccedil;in <b>Tamam</b> d&uuml;ğmesine tıklayın.</li>
+                    </ol>
+                </li>
+                <li>
+                    <b>Sıralama t&uuml;r&uuml;</b> alanında ilk sıralama d&uuml;zeyini ayarlayın:
+                    <p><img alt="Özel Sıralama penceresi" src="../images/customsortwindow2.png" /></p>
+                    <ul>
+                        <li><b>S&uuml;tun</b> / <b>Satır</b> b&ouml;l&uuml;m&uuml;nde, sıralamak istediğiniz ilk s&uuml;tunu/satırı se&ccedil;in,</li>
+                        <li><b>Sırala</b> listesinde aşağıdaki se&ccedil;eneklerden birini se&ccedil;in: <b>Değerler</b>, <b>H&uuml;cre rengi</b> veya <b>Yazı rengi</b>,</li>
+                        <li>
+                            <b>D&uuml;zen</b> listesinde, gerekli sıralama d&uuml;zenini belirtin. Mevcut se&ccedil;enekler, <b>Sırala</b> listesinde se&ccedil;ilen se&ccedil;eneğe bağlı olarak değişir:
+                            <ul>
+                                <li>Eğer <b>Değerler</b> se&ccedil;eneği se&ccedil;ilirse, h&uuml;cre aralığı sayı i&ccedil;eriyorsa <b>Artan</b> / <b>Azalan</b> se&ccedil;eneğini veya h&uuml;cre aralığı metin değerleri i&ccedil;eriyorsa <b>A&apos;dan Z&apos;ye</b> / <b>Z&apos;den A&apos;ya</b> se&ccedil;eneğini se&ccedil;in,</li>
+                                <li>Eğer <b>H&uuml;cre rengi</b> se&ccedil;eneği se&ccedil;ilirse, gerekli h&uuml;cre rengini se&ccedil;in ve s&uuml;tunlar i&ccedil;in <b>&Uuml;st</b> / <b>Alt</b> se&ccedil;eneğini veya satırlar i&ccedil;in <b>Sol</b> / <b>Sağ</b> se&ccedil;eneğini se&ccedil;in,</li>
+                                <li>Eğer <b>Yazı tipi rengi</b> se&ccedil;eneği se&ccedil;ilirse, gerekli yazı tipi rengini se&ccedil;in ve s&uuml;tunlar i&ccedil;in <b>&Uuml;st</b> / <b>Alt</b> se&ccedil;eneğini veya satırlar i&ccedil;in <b>Sol</b> / <b>Sağ</b> se&ccedil;eneğini se&ccedil;in.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><b>D&uuml;zey ekle</b> d&uuml;ğmesine tıklayarak bir sonraki sıralama d&uuml;zeyini ekleyin, sıralamak istediğiniz ikinci s&uuml;tunu/satırı se&ccedil;in ve diğer sıralama parametrelerini yukarıda a&ccedil;ıklandığı gibi <b>Daha sonra</b> alanında belirtin. Gerekirse, aynı şekilde daha fazla d&uuml;zey ekleyin.</li>
+                <li>Pencerenin &uuml;st kısmında bulunan <b>D&uuml;zeyi sil</b>, <b>D&uuml;zeyi kopyala</b> d&uuml;ğmelerini kullanarak eklenen d&uuml;zeyleri y&ouml;netin veya <b>D&uuml;zeyi yukarı taşı</b> / <b>D&uuml;zeyi aşağı taşı</b> ok d&uuml;ğmelerini kullanarak d&uuml;zey sırasını değiştirin,</li>
+                <li>Değişiklikleri uygulamak ve pencereyi kapatmak i&ccedil;in <b>Tamam</b> d&uuml;ğmesine tıklayın.</li>
+            </ol>
+            <p>Veriler, belirtilen sıralama d&uuml;zeylerine g&ouml;re sıralanacaktır.</p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Função SUBTOTAL</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>Função SUBTOTAL</h1>
+			<p>A função <b>SUBTOTAL</b> é uma das funções matemáticas e trigonométricas. A função é usada para retornar um subtotal em uma lista ou banco de dados.</p>
+			<p>A sintaxe da função <b>SUBTOTAL</b> é:</p>
+			<p style="text-indent: 150px;"><b><em>SUBTOTAL(número-função, lista-de-argumento)</em></b></p>
+			<p><em>onde</em></p>
+			<p style="text-indent: 50px;"><b><em>número-função</em></b> é um valor numérico que especifica qual função usar para o subtotal. Os valores possíveis estão listados na tabela abaixo. Para os argumentos <em>número-função</em> de 1 a 11, a função <b>SUBTOTAL</b> inclui valores das linhas que foram ocultadas manualmente. Para os argumentos <em>número-função</em> 101 a 111, a função <b>SUBTOTAL</b> ignora os valores das linhas que foram ocultadas manualmente. Os valores ocultos pelo filtro são sempre excluídos.</p>
+			<p style="text-indent: 50px;"><b><em>lista-de-argumento</em></b> é uma referência ao intervalo de células que contém os valores para os quais você deseja o subtotal.</p>
+			<table style="width: 40%">
+				<tr>
+					<td><b>número-função<br/>(inclui valores ocultos)</b></td>
+                    <td><b>número-função<br />(exclui valores ocultos)</b></td>
+					<td><b>Function</b></td>
+				</tr>
+				<tr>
+					<td>1</td>
+                    <td>101</td>
+					<td><a href="../media.html" onclick="onhyperlinkclick(this)">MÉDIA</a></td>
+				</tr>
+                <tr>
+                    <td>2</td>
+                    <td>102</td>
+                    <td><a href="../contar.html" onclick="onhyperlinkclick(this)">CONTAR</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>103</td>
+                    <td><a href="../contar-se.html" onclick="onhyperlinkclick(this)">CONTAR-SE</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>104</td>
+                    <td><a href="../maximo.html" onclick="onhyperlinkclick(this)">MÁXIMO</a></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>105</td>
+                    <td><a href="../minimo.htm" onclick="onhyperlinkclick(this)">MINIMO</a></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>106</td>
+                    <td><a href="../produto.htm" onclick="onhyperlinkclick(this)">PRODUTO</a></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>107</td>
+                    <td><a href="../desvpad.html" onclick="onhyperlinkclick(this)">DESVPAD</a></td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>108</td>
+                    <td><a href="../desvpadp.html" onclick="onhyperlinkclick(this)">DESVPADP</a></td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>109</td>
+                    <td><a href="../soma.html" onclick="onhyperlinkclick(this)">SOMA</a></td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>110</td>
+                    <td><a href="../var.html" onclick="onhyperlinkclick(this)">VAR</a></td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>111</td>
+                    <td><a href="../varp.html" onclick="onhyperlinkclick(this)">VARP</a></td>
+                </tr>
+			</table>
+			<p>Para aplicar a função <b>SUBTOTAL</b>,</p>
+			<ol>
+			<li>selecione a célula onde deseja exibir o resultado,</li>
+			<li>clique no ícone <b>Inserir função</b> <div class = "icon icon-insertfunction"></div> situado na barra de ferramentas superior,
+				<br />ou clique com o botão direito em uma célula selecionada e selecione a opção <b>Inserir Função</b> no menu,
+				<br />ou clique no ícone <div class = "icon icon-function"></div> situado na barra de fórmulas,
+			</li>
+			<li>selecione o grupo de funções <b>Matemática</b> na lista,</li>
+			<li>clique na função <b>SUBTOTAL</b>,</li>
+			<li>digite os argumentos necessários separando-os por vírgula,</li>
+			<li>pressione o botão <b>Entrar</b>.</li>
+			</ol>
+			<p>O resultado será exibido na célula selecionada.</p>
+			<p style="text-indent: 150px;"><img alt="Função SUBTOTAL" src="../images/subtotal.png" /></p>
+            <p>A figura abaixo mostra o resultado retornado pela função <b>SUBTOTAL</b> quando várias linhas são ocultadas.</p>
+            <p style="text-indent: 150px;"><img alt="Função SUBTOTAL" src="../images/subtotal2.png" /></p>
+		</div>
+	</body>
+</html>

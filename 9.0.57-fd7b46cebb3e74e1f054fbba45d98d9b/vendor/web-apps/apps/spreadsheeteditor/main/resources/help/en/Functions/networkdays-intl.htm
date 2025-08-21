@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>NETWORKDAYS.INTL Function</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>NETWORKDAYS.INTL Function</h1>
+			<p>The <b>NETWORKDAYS.INTL</b> function is one of the <a href="../UsageInstructions/InsertFunction.htm#datetime" onclick="onhyperlinkclick(this)">date and time functions</a>. It is used to return the number of whole workdays between two dates using parameters to indicate which and how many days are weekend days.</p>
+			<h3>Syntax</h3> 
+			<p><b><em>NETWORKDAYS.INTL(start_date, end_date, [weekend], [holidays])</em></b></p> 
+			<p>The <b>NETWORKDAYS.INTL</b> function has the following arguments:</p> 
+			<table style="width: 40%">
+                <tr>
+                    <th style="background-color: #f4f4f4" width="150ch"><b>Argument</b></th>
+                    <th style="background-color: #f4f4f4"><b>Description</b></th>
+                </tr>
+                <tr>
+                    <td><b><em>start_date</em></b></td>
+                    <td>The first date of the period, entered using the <a href="Date.htm" onclick="onhyperlinkclick(this)">DATE</a> function or other date and time function.</td>
+                </tr>
+				<tr>
+                    <td><b><em>end_date</em></b></td>
+                    <td>The last date of the period, entered using the <a href="Date.htm" onclick="onhyperlinkclick(this)">DATE</a> function or other date and time function.</td>
+                </tr>
+                <tr>
+                    <td><b><em>weekend</em></b></td>
+                    <td>An optional argument, a number or a string that specifies which days to consider weekends. The possible numbers are listed in the table below.</td>
+                </tr>
+				<tr>
+                    <td><b><em>holidays</em></b></td>
+                    <td>An optional argument that specifies which dates in addition to <b><em>weekend</em></b> are nonworking. You can enter them using the <a href="Date.htm" onclick="onhyperlinkclick(this)">DATE</a> function or other date and time function or specify a reference to a range of cells containing dates.</td>
+                </tr>
+            </table>
+            <p>The <b><em>weekend</em></b> argument can be one of the following:</p>
+            <table style="width: 40%">
+                <tr>
+                    <th style="background-color: #f4f4f4"><b>Number</b></th>
+                    <th style="background-color: #f4f4f4"><b>Weekend days</b></th>
+                </tr>
+                <tr>
+                    <td><b><em>1 or omitted</em></b></td>
+                    <td>Saturday, Sunday</td>
+                </tr>
+                <tr>
+                    <td><b><em>2</em></b></td>
+                    <td>Sunday, Monday</td>
+                </tr>
+                <tr>
+                    <td><b><em>3</em></b></td>
+                    <td>Monday, Tuesday</td>
+                </tr>
+                <tr>
+                    <td><b><em>4</em></b></td>
+                    <td>Tuesday, Wednesday</td>
+                </tr>
+                <tr>
+                    <td><b><em>5</em></b></td>
+                    <td>Wednesday, Thursday</td>
+                </tr>
+                <tr>
+                    <td><b><em>6</em></b></td>
+                    <td>Thursday, Friday</td>
+                </tr>
+                <tr>
+                    <td><b><em>7</em></b></td>
+                    <td>Friday, Saturday</td>
+                </tr>
+                <tr>
+                    <td><b><em>11</em></b></td>
+                    <td>Sunday only</td>
+                </tr>
+                <tr>
+                    <td><b><em>12</em></b></td>
+                    <td>Monday only</td>
+                </tr>
+                <tr>
+                    <td><b><em>13</em></b></td>
+                    <td>Tuesday only</td>
+                </tr>
+                <tr>
+                    <td><b><em>14</em></b></td>
+                    <td>Wednesday only</td>
+                </tr>
+                <tr>
+                    <td><b><em>15</em></b></td>
+                    <td>Thursday only</td>
+                </tr>
+                <tr>
+                    <td><b><em>16</em></b></td>
+                    <td>Friday only</td>
+                </tr>
+                <tr>
+                    <td><b><em>17</em></b></td>
+                    <td>Saturday only</td>
+                </tr>
+            </table>
+            <h3>Notes</h3>
+            <p>A string that specifies weekend days must contain 7 characters. Each character represents a day of the week, starting from Monday. 0 represents a workday, 1 represents a weekend day. E.g. <em>"0000011"</em> specifies that weekend days are Saturday and Sunday. The string <em>"1111111"</em> is not valid.</p>
+            <p><a href="../UsageInstructions/InsertFunction.htm#applyfunction" onclick="onhyperlinkclick(this)">How to apply</a> the <b>NETWORKDAYS.INTL</b> function.</p>
+			
+			<h3>Examples</h3>
+            <p>The figure below displays the result returned by the <b>NETWORKDAYS.INTL</b> function.</p>
+			<p><img alt="NETWORKDAYS.INTL Function" src="../images/networkdays-intl.png" /></p>
+		</div>
+	</body>
+</html>

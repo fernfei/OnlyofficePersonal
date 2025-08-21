@@ -1,0 +1,169 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>İ&ccedil;erik denetimleri ekleme</title>
+		<meta charset="utf-8" />
+        <meta name="description" content="Insert content controls to create a form with input fields that can be filled in by other users, or protect some parts of the document from being edited or deleted" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>İ&ccedil;erik denetimleri ekleme</h1>
+            <p>ONLYOFFICE <a href="https://www.onlyoffice.com/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Belge D&uuml;zenleyici</b></a>, Microsoft Word gibi &uuml;&ccedil;&uuml;nc&uuml; taraf kelime işlemcilerle tamamen <b>geriye d&ouml;n&uuml;k uyumlu</b> olanlar gibi <b>klasik</b> i&ccedil;erik denetimleri eklemenizi sağlar.</p>
+            <p>ONLYOFFICE Belge D&uuml;zenleyici aşağıdaki klasik i&ccedil;erik denetimlerini destekler: <em>D&uuml;z Metin</em>, <em>Zengin Metin</em>, <em>Resim</em>, <em>A&ccedil;ılan kutu</em>, <em>A&ccedil;ılır liste</em>, <em>Tarih</em>, <em>Onay kutusu</em>.</p>
+            <ul>
+                <li><em>D&uuml;z Metin</em>, bi&ccedil;imlendirilemeyen metin i&ccedil;eren bir nesnedir. D&uuml;z metin i&ccedil;erik denetimleri birden fazla paragraf i&ccedil;eremez.</li>
+                <li><em>Zengin Metin</em>, bi&ccedil;imlendirilebilen metin i&ccedil;eren bir nesnedir. Zengin metin i&ccedil;eriği denetimleri birka&ccedil; paragraf, liste ve nesne (g&ouml;r&uuml;nt&uuml;ler, şekiller, tablolar vb.) i&ccedil;erebilir.</li>
+                <li><em>Resim</em>, tek bir g&ouml;r&uuml;nt&uuml; i&ccedil;eren bir nesnedir.</li>
+                <li><em>A&ccedil;ılan kutu</em>, bir dizi se&ccedil;eneğin bulunduğu a&ccedil;ılır bir liste i&ccedil;eren bir nesnedir. Listeden &ouml;nceden tanımlanmış değerlerden birini se&ccedil;meyi ve gerekirse se&ccedil;ilen değeri d&uuml;zenlemeyi sağlar.</li>
+                <li><em>A&ccedil;ılır liste</em>, bir dizi se&ccedil;eneğin bulunduğu a&ccedil;ılır bir liste i&ccedil;eren bir nesnedir. Listeden &ouml;nceden tanımlanmış değerlerden birini se&ccedil;meyi sağlar. Se&ccedil;ilen değer d&uuml;zenlenemez.</li>
+                <li><em>Tarih</em>, bir tarih se&ccedil;imine izin veren takvim i&ccedil;eren bir nesnedir.</li>
+                <li><em>Onay kutusu</em>, onay kutusunun se&ccedil;ili olup olmadığı ve onay kutusunun işaretin kaldırılıp kaldırılmadığı olmak &uuml;zere iki durumun g&ouml;r&uuml;nt&uuml;lenmesine izin veren bir nesnedir.</li>
+            </ul>
+            <h3>İ&ccedil;erik denetimlerini ekleme</h3>
+            <h5>Yeni bir D&uuml;z Metin i&ccedil;erik denetimi oluşturma</h5>
+            <ol>
+                <li>Ekleme noktasını metin satırında i&ccedil;erik denetimlerinin eklenmesi gereken yere getirin <br />veya bir i&ccedil;erik denetimine d&ouml;n&uuml;şt&uuml;rmek &uuml;zere bir metin pasajı se&ccedil;in.</li>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Ekle</b> sekmesine ge&ccedil;iş yapın.</li>
+                <li>Buradan <div class = "icon icon-insertccicon"></div> <b>İ&ccedil;erik Denetimleri</b> simgesine tıklayın.</li>
+                <li>Men&uuml;den <b>D&uuml;z Metin</b> se&ccedil;eneği se&ccedil;in.</li>
+            </ol>
+            <p>İ&ccedil;erik denetimi, mevcut metin satırındaki ekleme noktasına eklenecektir. İ&ccedil;erik denetimi i&ccedil;indeki varsayılan metni (&quot;Buradaki metniniz&quot;) kendi metninizle değiştirin: varsayılan metni se&ccedil;in ve yeni bir metin yazın veya herhangi bir yerden bir metin pasajını kopyalayıp i&ccedil;erik denetimine yapıştırın. D&uuml;z metin i&ccedil;erik denetimleri, satır sonu eklemeye izin vermez ve g&ouml;r&uuml;nt&uuml;ler, tablolar ve benzeri gibi başka nesneler i&ccedil;eremez.</p>
+            <p><img alt="Yeni düz metin içerik denetimi" src="../images/addedcontentcontrol.png" /></p>
+            <h5>Yeni bir Zengin Metin i&ccedil;erik denetimi oluşturma</h5>
+            <ol>
+                <li>Ekleme noktasını metin satırında i&ccedil;erik denetiminin eklenmesi gereken yere getirin <br />veya i&ccedil;erik denetimleri olmasını istediğiniz mevcut paragraflardan birini veya daha fazlasını se&ccedil;in.</li>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Ekle</b> sekmesine ge&ccedil;iş yapın.</li>
+                <li>Buradan <div class = "icon icon-insertccicon"></div> <b>İ&ccedil;erik Denetimleri</b> simgesine tıklayın.</li>
+                <li>Men&uuml;den <b>Zengin Metin</b> se&ccedil;eneği se&ccedil;in.</li>
+            </ol>
+            <p>Denetim yeni bir paragrafa eklenecektir. Denetim i&ccedil;indeki varsayılan metni (&quot;Buradaki metniniz&quot;) kendi metninizle değiştirin: varsayılan metni se&ccedil;in ve yeni bir metin yazın veya herhangi bir yerden bir metin pasajını kopyalayıp i&ccedil;erik denetimine yapıştırın. Zengin metin i&ccedil;erik denetimleri, satır sonları eklemeye izin verir, yani birden fazla paragrafın yanı sıra g&ouml;r&uuml;nt&uuml;ler, tablolar, başka i&ccedil;erik denetimleri ve benzeri gibi bazı nesneleri i&ccedil;erebilir.</p>
+            <p><img alt="Zengin metin içerik denetimi" src="../images/richtextcontentcontrol.png" /></p>
+            <h5>Yeni bir Resim i&ccedil;erik denetimi oluşturma</h5>
+            <ol>
+                <li>Ekleme noktasını, denetimin eklenmesini istediğiniz metnin bir satırına konumlandırın.</li>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Ekle</b> sekmesine ge&ccedil;iş yapın.</li>
+                <li>Buradan <div class = "icon icon-insertccicon"></div> <b>İ&ccedil;erik Denetimleri</b> simgesine tıklayın.</li>
+                <li>Men&uuml;den <b>Resim</b> se&ccedil;eneğini se&ccedil;in - i&ccedil;erik denetimi ekleme noktasına eklenecektir.</li>
+                <li>İ&ccedil;erik denetimi kenarının &uuml;zerindeki <div class = "icon icon-image_settings_icon"></div> g&ouml;r&uuml;nt&uuml; simgesine tıklayın - standart bir dosya se&ccedil;im penceresi a&ccedil;ılacaktır. Bilgisayarınızda bulunan bir g&ouml;r&uuml;nt&uuml;y&uuml; se&ccedil;in ve <b>A&ccedil;</b> se&ccedil;eneğine tıklayın.</li>
+            </ol>
+            <p>Se&ccedil;ilen g&ouml;r&uuml;nt&uuml;, i&ccedil;erik denetiminde g&ouml;r&uuml;nt&uuml;lenecektir. G&ouml;r&uuml;nt&uuml;y&uuml; değiştirmek i&ccedil;in i&ccedil;erik denetimi kenarının &uuml;zerindeki <span class = "icon icon-image_settings_icon"></span> g&ouml;r&uuml;nt&uuml; simgesine tıklayın ve başka bir g&ouml;r&uuml;nt&uuml; se&ccedil;in.</p>
+            <p><span class = "big big-picturecontentcontrol"></span></p>
+            <h5>Yeni bir A&ccedil;ılan kutu veya A&ccedil;ılır liste i&ccedil;erik denetimi oluşturma</h5>
+            <p><em>A&ccedil;ılan kutu</em> ve <em>A&ccedil;ılır liste</em> i&ccedil;erik denetimleri, bir dizi se&ccedil;eneğin bulunduğu a&ccedil;ılır bir liste i&ccedil;eren bir nesnedir. Hemen hemen aynı şekilde oluşturulabilirler. Aralarındaki temel fark, a&ccedil;ılır listede se&ccedil;ilen değerin d&uuml;zenlenemez, a&ccedil;ılan kutuda se&ccedil;ilen değerin değiştirilebil olmasıdır.</p>
+            <ol>
+                <li>Ekleme noktasını, denetimin eklenmesini istediğiniz metnin bir satırına konumlandırın.</li>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Ekle</b> sekmesine ge&ccedil;iş yapın.</li>
+                <li>Buradan <div class = "icon icon-insertccicon"></div> <b>İ&ccedil;erik Denetimleri</b> simgesine tıklayın.</li>
+                <li>Men&uuml;den <b>A&ccedil;ılan kutu</b> veya <b>A&ccedil;ılır liste</b> se&ccedil;eneğini se&ccedil;in - i&ccedil;erik denetimi ekleme noktasına eklenecektir.</li>
+                <li>Eklenen denetime sağ tıklayın ve bağlamsal men&uuml;den <b>İ&ccedil;erik denetimi ayarları</b> se&ccedil;eneğini se&ccedil;in.</li>
+                <li>A&ccedil;ılan <b>İ&ccedil;erik Denetimi Ayarları</b> penceresinde, se&ccedil;ilen i&ccedil;erik denetimi t&uuml;r&uuml;ne bağlı olarak <b>A&ccedil;ılan kutu</b> veya <b>A&ccedil;ılır liste</b> sekmesine ge&ccedil;in.
+                <p><img alt="Açılan kutusu ayarları penceresi" src="../images/comboboxsettings.png" /></p>
+                </li>
+                <li>
+                    Yeni bir liste &ouml;ğesi eklemek i&ccedil;in <b>Ekle</b> d&uuml;ğmesine tıklayın ve a&ccedil;ılan penceredeki mevcut alanları doldurun:
+                    <p><img alt="Açılan kutu - değer ekleme" src="../images/comboboxaddvalue.png" /></p>
+                    <ol>
+                        <li><b>G&ouml;r&uuml;nen ad</b> alanında gerekli metni belirtin, &ouml;rneğin <em>Evet</em>, <em>Hayır</em>, <em>Diğer</em>. Bu metin, belge i&ccedil;indeki i&ccedil;erik denetiminde g&ouml;r&uuml;nt&uuml;lenecektir.</li>
+                        <li>Varsayılan olarak, <b>Değer</b> alanındaki metin, <b>G&ouml;r&uuml;nen ad</b> alanına girilene karşılık gelir. <b>Değer</b> alanı i&ccedil;indeki metni d&uuml;zenlemek istiyorsanız, girilen değerin her &ouml;ğe i&ccedil;in benzersiz olması gerektiğini unutmayın.</li>
+                        <li><b>Tamam</b> d&uuml;ğmesine tıklayın.</li>
+                    </ol>
+                </li>
+                <li>Sağdaki <b>D&uuml;zenle</b> veya <b>Sil</b> d&uuml;ğmelerini kullanarak liste &ouml;ğelerini d&uuml;zenleyebilir veya silebilir veya <b>Yukarı</b> ve <b>Aşağı</b> d&uuml;ğmesini kullanarak &ouml;ğe sırasını değiştirebilirsiniz.</li>
+                <li>Gerekli t&uuml;m se&ccedil;enekler ayarlandığında, ayarları kaydetmek ve pencereyi kapatmak i&ccedil;in <b>Tamam</b> d&uuml;ğmesine basın.</li>
+            </ol>
+            <p><img alt="Yeni açılan kutu içerik denetimi" src="../images/comboboxcontentcontrol.png" /></p>
+            <p>&Ouml;ğe listesini a&ccedil;mak ve gerekli olanı se&ccedil;mek i&ccedil;in eklenen <b>A&ccedil;ılan kutu</b> veya <b>A&ccedil;ılır liste</b> i&ccedil;erik denetiminin sağ tarafında yer alan ok d&uuml;ğmesine tıklayabilirsiniz. <b>A&ccedil;ılan kutudan</b> gerekli &ouml;ğe se&ccedil;ildikten sonra, g&ouml;r&uuml;nt&uuml;lenen metni tamamen veya kısmen kendi metninizle değiştirerek d&uuml;zenleyebilirsiniz. <b>A&ccedil;ılır liste</b>, se&ccedil;ilen &ouml;ğenin d&uuml;zenlenmesine izin vermez.</p>
+            <p><img alt="Açılan kutu içerik denetimi" src="../images/comboboxcontentcontrol2.png" /></p>
+            <h5>Yeni bir Tarih i&ccedil;erik denetimi oluşturma</h5>
+            <ol>
+                <li>Ekleme noktasını, i&ccedil;erik denetiminin eklenmesi gereken yere getirin.</li>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Ekle</b> sekmesine ge&ccedil;iş yapın.</li>
+                <li>Buradan <div class = "icon icon-insertccicon"></div> <b>İ&ccedil;erik Denetimleri</b> simgesine tıklayın.</li>
+                <li>Men&uuml;den <b>Tarih</b> se&ccedil;eneğini se&ccedil;in - mevcut tarihin bulunduğu i&ccedil;erik denetimi ekleme noktasına eklenecektir.</li>
+                <li>Eklenen i&ccedil;erik denetimine sağ tıklayın ve bağlamsal men&uuml;den <b>İ&ccedil;erik denetimi ayarları</b> se&ccedil;eneğini se&ccedil;in.</li>
+                <li>
+                    A&ccedil;ılan <b>İ&ccedil;erik Denetimi Ayarları</b> penceresinde, <b>Tarih bi&ccedil;imi</b> sekmesine ge&ccedil;in.
+                    <p><img alt="Tarih ayarları penceresi" src="../images/datesettings.png" /></p>
+                </li>
+                <li>Gerekli <b>Dili</b> ve <b>Tarihi şu şekilde g&ouml;ster</b> listesinden gerekli tarih bi&ccedil;imini se&ccedil;in.</li>
+                <li>Ayarları kaydetmek i&ccedil;in <b>Tamam</b> d&uuml;ğmesine tıklayın ve pencereyi kapatın.</li>
+            </ol>
+            <p><span class = "big big-datecontentcontrol"></span></p>
+            <p>Takvimi a&ccedil;mak ve gerekli tarihi se&ccedil;mek i&ccedil;in eklenen <b>Tarih</b> i&ccedil;erik denetiminin sağ tarafında yer alan ok d&uuml;ğmesine tıklayabilirsiniz.</p>
+            <p><img alt="Tarihi içerik denetimi" src="../images/datecontentcontrol2.png" /></p>
+            <h5>Yeni bir Onay kutusu i&ccedil;erik denetimi oluşturma</h5>
+            <ol>
+                <li>Ekleme noktasını, i&ccedil;erik denetiminin eklenmesi gereken metin satırına getirin.</li>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Ekle</b> sekmesine ge&ccedil;iş yapın.</li>
+                <li>Buradan <div class = "icon icon-insertccicon"></div> <b>İ&ccedil;erik Denetimleri</b> simgesine tıklayın.</li>
+                <li>Men&uuml;den <b>Onay kutusu</b> se&ccedil;eneğini se&ccedil;in - i&ccedil;erik denetimi ekleme noktasına eklenecektir.</li>
+                <li>Eklenen i&ccedil;erik denetimine sağ tıklayın ve bağlamsal men&uuml;den <b>İ&ccedil;erik denetimi ayarları</b> se&ccedil;eneğini se&ccedil;in.</li>
+                <li>
+                    A&ccedil;ılan <b>İ&ccedil;erik Denetimi Ayarları</b> penceresinde, <b>Onay kutusu</b> sekmesine ge&ccedil;in.
+                    <p><img alt="Onay kutusu ayarları penceresi" src="../images/checkboxsettings.png" /></p>
+                </li>
+                <li>Se&ccedil;ilen onay kutusu i&ccedil;in gerekli sembol&uuml; se&ccedil;mek i&ccedil;in <b>İşaretli sembole</b> veya temizlenen onay kutusunun nasıl g&ouml;r&uuml;neceğini se&ccedil;mek i&ccedil;in <b>İşaretlenmemiş sembole</b> tıklayın. <b>Sembol</b> penceresi a&ccedil;ılacaktır. Sembollerle &ccedil;alışma hakkında daha fazla bilgi edinmek i&ccedil;in l&uuml;tfen <a href="../UsageInstructions/InsertSymbols.htm" onclick="onhyperlinkclick(this)">bu yazıya</a> bakın.</li>
+                <li>Semboller belirtildiğinde, ayarları kaydetmek i&ccedil;in <b>Tamam</b> d&uuml;ğmesine basın ve pencereyi kapatın.</li>
+            </ol>
+            <p>Eklenen onay kutusu, işaretlenmemiş modda g&ouml;r&uuml;nt&uuml;lenir.</p>
+            <p><span class = "icon icon-checkboxcontentcontrol"></span></p>
+            <p>Eklenen onay kutusuna tıklarsanız, <b>İşaretli sembol</b> listesinde se&ccedil;ilen sembolle işaretlenecektir.</p>
+            <p><span class = "icon icon-checkboxcontentcontrol2"></span></p>
+            
+            <p class="note"><b>Not</b>: İ&ccedil;erik denetimi kenarlığı yalnızca denetim se&ccedil;ildiğinde g&ouml;r&uuml;n&uuml;r. Basılı s&uuml;r&uuml;mde kenarlıklar g&ouml;r&uuml;nmez.</p>
+
+            <h3>İ&ccedil;erik denetimlerini taşıma</h3>
+            <p>İ&ccedil;erik denetimleri belgede başka bir yere taşınabilir: denetimi se&ccedil;mek i&ccedil;in denetim kenarlığının solundaki d&uuml;ğmeye tıklayın ve fare d&uuml;ğmesini metinde başka bir konuma bırakmadan s&uuml;r&uuml;kleyin.</p>
+            <p><img alt="İçerik denetimini taşıma" src="../images/movecontentcontrol.png" /></p>
+            <p>Ayrıca i&ccedil;erik denetimlerini <b>kopyalıp yapıştırabilirsiniz</b>: gerekli denetimi se&ccedil;in ve <b>Ctrl+C/Ctrl+V</b> tuş kombinasyonlarını kullanın.</p>
+            
+            <h3>D&uuml;z metin ve zengin metin i&ccedil;erik denetimlerini d&uuml;zenleme</h3>
+            <p>D&uuml;z metin ve zengin metin i&ccedil;erik denetimlerindeki metin, &uuml;st ara&ccedil; &ccedil;ubuğundaki simgeler kullanılarak bi&ccedil;imlendirilebilir: <a href="../UsageInstructions/FontTypeSizeColor.htm" onclick="onhyperlinkclick(this)">yazı tipini, boyutunu, rengini</a> d&uuml;zenleyebilir, <a href="../UsageInstructions/DecorationStyles.htm" onclick="onhyperlinkclick(this)">s&uuml;sleme stillerini</a> ve <a href="../UsageInstructions/FormattingPresets.htm" onclick="onhyperlinkclick(this)">bi&ccedil;imlendirme &ouml;n ayarlarını</a> uygulayabilirsiniz. Metin &ouml;zelliklerini değiştirmek i&ccedil;in bağlamsal men&uuml;den veya sağ kenar &ccedil;ubuğundan erişilebilen <b>Paragraf - Gelişmiş ayarlar</b> penceresini kullanmak da m&uuml;mk&uuml;nd&uuml;r. Zengin metin i&ccedil;erik denetimlerindeki metin, normal bir metin gibi bi&ccedil;imlendirilebilir, yani <a href="../UsageInstructions/LineSpacing.htm" onclick="onhyperlinkclick(this)">satır aralığını</a> ayarlayabilir, <a href="../UsageInstructions/ParagraphIndents.htm" onclick="onhyperlinkclick(this)">paragraf girintilerini</a> değiştirebilir, <a href="../UsageInstructions/SetTabStops.htm" onclick="onhyperlinkclick(this)">sekme duraklarını</a>, vb ayarlayabilirsiniz.</p>
+            
+            <h3>İ&ccedil;erik denetimi ayarlarını değiştirme</h3>
+            <p>Hangi t&uuml;r i&ccedil;erik denetimi se&ccedil;ilirse se&ccedil;ilsin, i&ccedil;erik denetimi ayarlarını <b>İ&ccedil;erik Denetimi Ayarları</b> penceresinin <b>Genel</b> ve <b>Kilitleme</b> b&ouml;l&uuml;mlerinde değiştirebilirsiniz.</p>
+            <p>İ&ccedil;erik denetimi ayarlarını a&ccedil;mak i&ccedil;in aşağıdaki şekillerde ilerleyebilirsiniz:</p>
+            <ul>
+                <li>Gerekli i&ccedil;erik denetimini se&ccedil;in, &uuml;st ara&ccedil; &ccedil;ubuğunda bulunan <div class = "icon icon-insertccicon"></div> <b>İ&ccedil;erik Denetimleri</b> simgesinin yanındaki oka tıklayın ve men&uuml;den <b>Denetim Ayarları</b> se&ccedil;eneğini se&ccedil;in.</li>
+                <li>İ&ccedil;erik denetimi i&ccedil;inde herhangi bir yere sağ tıklayın ve bağlamsal men&uuml;den <b>İ&ccedil;erik denetimi ayarları</b> se&ccedil;eneğini kullanın.</li>
+            </ul>
+            <p>Yeni bir pencere a&ccedil;ılacaktır. <b>Genel</b> sekmesinde, aşağıdaki ayarları yapabilirsiniz:</p>
+            <p><img alt="İçerik Denetimi ayarları penceresi - Genel" src="../images/ccsettingswindow.png" /></p>
+            <ul>
+                <li>İlgili alanlarda i&ccedil;erik denetimi <b>Başlığı</b>, <b>Yer tutucusu</b> veya <b>Etiketini</b> belirtin. Denetim se&ccedil;ildiğinde başlık g&ouml;r&uuml;nt&uuml;lenecektir. Yer tutucu, i&ccedil;erik denetimi &ouml;ğesinde g&ouml;r&uuml;nt&uuml;lenen ana metindir. Etiketler, i&ccedil;erik denetimlerini tanımlamak i&ccedil;in kullanılır, b&ouml;ylece kodunuzda bunlara atıfta bulunabilirsiniz.</li>
+                <li>İ&ccedil;erik denetimini <b>Sınırlayıcı kutu</b> ile g&ouml;r&uuml;nt&uuml;lemek isteyip istemediğinizi se&ccedil;in. İ&ccedil;erik denetimini sınırlayıcı kutusu olmadan g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in <b>Hi&ccedil;biri</b> se&ccedil;eneğini kullanın. <b>Sınırlayıcı kutu</b> se&ccedil;eneğini se&ccedil;erseniz, aşağıdaki alanı kullanarak bu kutunun <b>Rengini</b> se&ccedil;ebilirsiniz. Belirtilen <b>G&ouml;r&uuml;n&uuml;m&uuml;</b> belgedeki t&uuml;m i&ccedil;erik denetimlerine uygulamak i&ccedil;in <b>Hepsine Uygula</b> d&uuml;ğmesine tıklayın.</li>
+            </ul>
+            <p><b>Kilitleme</b> sekmesinde, aşağıdaki ayarları kullanarak i&ccedil;erik denetimini silinmeye veya d&uuml;zenlenmeye karşı koruyabilirsiniz:</p>
+            <p><img alt="İçerik Denetimi ayarları penceresi - Kilitleme" src="../images/ccsettingswindow2.png" /></p>
+                <ul>
+                    <li><b>İ&ccedil;erik denetimi silinemez</b> - İ&ccedil;erik denetimini silinmeye karşı korumak i&ccedil;in bu kutuyu işaretleyin.</li>
+                    <li><b>İ&ccedil;erik d&uuml;zenlenemez</b> - İ&ccedil;erik denetiminin i&ccedil;eriğini d&uuml;zenlenmeye karşı korumak i&ccedil;in bu kutuyu işaretleyin.</li>
+                </ul>
+                <p>Belirli i&ccedil;erik denetimi t&uuml;rleri i&ccedil;in se&ccedil;ilen i&ccedil;erik denetimi t&uuml;r&uuml; i&ccedil;in belirli ayarları i&ccedil;eren &uuml;&ccedil;&uuml;nc&uuml; sekme de mevcuttur: <em>A&ccedil;ılan kutu</em>, <em>A&ccedil;ılır liste</em>, <em>Tarih</em>, <em>Onay kutusu</em>. Bu ayarlar, yukarıda ilgili i&ccedil;erik denetimlerinin eklenmesiyle ilgili b&ouml;l&uuml;mlerde a&ccedil;ıklanmıştır.</p>
+            <p>Değişiklikleri uygulamak i&ccedil;in ayarlar penceresindeki <b>Tamam</b> d&uuml;ğmesine tıklayın.</p>
+            <p>İ&ccedil;erik denetimlerini belirli bir renkle vurgulamak da m&uuml;mk&uuml;nd&uuml;r. Denetimleri bir renkle vurgulamak i&ccedil;in:</p>
+            <ol>
+                <li>Denetimi se&ccedil;mek i&ccedil;in denetim kenarlığının solundaki d&uuml;ğmeye tıklayın,</li>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunda bulunan <div class = "icon icon-insertccicon"></div> <b>İ&ccedil;erik Denetimleri</b> simgesine tıklayın,</li>
+                <li>Men&uuml;den <b>Vurgulama Ayarları</b> se&ccedil;eneği se&ccedil;in,</li>
+                <li>Mevcut paletlerden gerekli rengi se&ccedil;in: <b>Tema Renkleri</b>, <b>Standart Renkler</b> veya yeni bir <b>&Ouml;zel Renk</b> belirtin. &Ouml;nceden uygulanmış renk vurgulamasını kaldırmak i&ccedil;in <b>Vurgulama yok</b> se&ccedil;eneğini se&ccedil;in.</li>
+            </ol>
+            <p>Se&ccedil;ilen vurgulama se&ccedil;enekleri, belgedeki t&uuml;m i&ccedil;erik denetimlerine uygulanacaktır.</p>
+            <h3>İ&ccedil;erik denetimlerini kaldırma</h3>
+            <p>Bir i&ccedil;erik denetimini kaldırmak ve t&uuml;m i&ccedil;eriğini bırakmak i&ccedil;in bir i&ccedil;erik denetimi se&ccedil;in ve ardından aşağıdaki yollardan birini uygulayın:</p>
+            <ul>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunda bulunan <div class = "icon icon-insertccicon"></div> <b>İ&ccedil;erik Denetimleri</b> simgesinin yanındaki oka tıklayın ve men&uuml;den <b>İ&ccedil;erik denetimini kaldır</b> se&ccedil;eneğini se&ccedil;in.</li>
+                <li>İ&ccedil;erik denetimine sağ tıklayın ve bağlamsal men&uuml;den <b>İ&ccedil;erik denetimini kaldır</b> se&ccedil;eneğini kullanın.</li>
+            </ul>
+            <p>Bir denetimi ve t&uuml;m i&ccedil;eriğini kaldırmak i&ccedil;in gerekli kontrol&uuml; denetimi se&ccedil;in ve klavyedeki <b>Delete</b> tuşuna basın.</p>
+                        
+		</div>
+	</body>
+</html>

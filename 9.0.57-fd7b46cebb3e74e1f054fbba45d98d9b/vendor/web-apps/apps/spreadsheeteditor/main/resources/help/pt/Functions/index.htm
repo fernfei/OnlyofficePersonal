@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Função ÍNDICE</title>
+		<meta charset="utf-8" />
+		<meta name="descricao" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>Função ÍNDICE</h1>
+			<p>A função <b>ÍNDICE</b> é uma das funções de pesquisa e referência. Ele é usado para retornar um valor dentro de um intervalo de células na base de uma linha especificada e número de coluna. A função <b>ÍNDICE</b> possui duas formas. <!--A forma de matriz é usada para retornar um valor dentro de um único intervalo de células. O formulário de referência é usado para retornar um valor em uma matriz que contém vários intervalos de células.--></p>
+			<p>A sintaxe da função <b>ÍNDICE</b> em forma de matriz é:</p>
+			<p style="text-indent: 150px;"><b><em>ÍNDICE(matriz, [número-da-linha][, [número-da-coluna]])</em></b></p>
+            <p>A sintaxe da função <b>ÍNDICE</b> em forma de referência é:</p>
+            <p style="text-indent: 150px;"><b><em>ÍNDICE(referência, [número-da-linha][, [número-da-coluna][, [número-da-área]]])</em></b></p>
+            <p><em>onde</em></p> 
+            <p style="text-indent: 50px;"><em><b>matriz</b></em> é um intervalo de células.</p>
+            <p style="text-indent: 50px;"><em><b>referência</b></em> é uma referência a um intervalo de células<!--ou vários intervalos entre parênteses e separados por vírgulas-->.</p>
+            <p style="text-indent: 50px;"><em><b>número-da-linha</b></em> é o número da linha da qual você deseja retornar um valor. Se for omitido, <em><b>número-da-linha</b></em> é obrigatório.</p>
+			<p style="text-indent: 50px;"><em><b>número-da-coluna</b></em> é o número da coluna da qual você deseja retornar um valor. Se for omitido, <em><b>número-da-linha</b></em> é obrigatório.</p>
+            <p style="text-indent: 50px;"><em><b>número-da-área</b></em> é uma área a ser usada caso a matriz contenha vários intervalos. É um argumento opcional. Se for omitido, a função assumirá <b><em>número-da-área</em></b> como 1.</p>
+			<p>Os valores podem ser inseridos manualmente ou incluídos na célula à qual você faz referência.</p>
+			<p>Para aplicar a função <b>ÍNDICE</b>,</p>
+			<ol>
+			<li>selecione a célula onde deseja exibir o resultado,</li>
+			<li>clique no ícone <b>Inserir função</b> <div class = "icon icon-insertfunction"></div> situado na barra de ferramentas superior,
+				<br />ou clique com o botão direito em uma célula selecionada e selecione a opção <b>Inserir Função</b> no menu,
+				<br />ou clique no ícone <div class = "icon icon-function"></div> situado na barra de fórmulas,
+			</li>
+			<li>selecione o grupo de funções <b>Pesquisa e Referência</b> na lista,</li>
+			<li>clique na função <b>ÍNDICE</b>,</li>
+			<li>digite os argumentos necessários separando-os por vírgula,</li>
+			<li>pressione o botão <b>Entrar</b>.</li>
+			</ol>
+			<p>O resultado será exibido na célula selecionada.</p>
+			<p style="text-indent: 150px;"><img alt="Função ÍNDICE" src="../images/index_1.png" /></p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+        <title>Introducing the user interface of the PDF Editor</title>
+		<meta charset="utf-8" />
+        <meta name="description" content="Introducing the PDF Editor user interface" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+        <h1>Introducing the user interface of the PDF Editor</h1>
+			<p>The <a href="https://www.onlyoffice.com/pdf-editor.aspx?docs=download" target="_blank" onclick="onhyperlinkclick(this)"><b>PDF Editor</b></a> uses a tabbed interface, where editing commands are grouped into tabs by functionality.</p>
+            <div class="onlineDocumentFeatures">
+                <p>Main window of the Online PDF Editor:</p>
+                <p><img alt="PDF Editor window" src="../images/interface/editorwindow.png" /></p>
+            </div>
+            <div class="desktopDocumentFeatures">
+                <p>Main window of the Desktop PDF Editor:</p>
+                <p><img alt="Desktop PDF Editor window" src="../images/interface/desktop_editorwindow.png" /></p>
+            </div>
+            <p>The editor interface consists of the following main elements:</p>
+            <ol>
+                <li>
+                    The <b>Editor header</b> displays the ONLYOFFICE logo, <span class="desktopDocumentFeatures">tabs for all opened documents </span>with their names and menu tabs.
+                    <p>On the left side of the <b>Editor header</b>, the <b>Save</b>, <b>Print file</b>, <b>Undo</b> and <b>Redo</b> buttons are located.</p>
+                    <p><img alt="Icons in the editor header" src="../images/interface/leftpart.png" /></p>
+                    <p>On the right side of the <b>Editor header</b> along with the username, the following icons are displayed:</p>
+                    <ul>
+                        <li><div class="icon icon-gotodocuments"></div> <b>Open file location</b> - <span class="desktopDocumentFeatures">in the <em>desktop version</em>, it allows opening the folder, where the file is stored, in the <b>File explorer</b> window.</span> <span class="onlineDocumentFeatures"> In the <em>online version</em>, it allows opening the folder of the <b>Documents</b> module, where the file is stored, in a new browser tab.</span></li>
+                        <li><div class="icon icon-search_icon_header"></div> <b>Search</b> - allows searching the PDF for a particular word or symbol, etc.</li>
+                    </ul>
+                </li>
+                <li>
+                    The <b>Top toolbar</b> displays a set of editing commands depending on the selected menu tab. Currently, the following tabs are available: <a href="../ProgramInterface/FileTab.htm" onclick="onhyperlinkclick(this)">File</a>, <a href="../ProgramInterface/HomeTab.htm" onclick="onhyperlinkclick(this)">Home</a>, <a href="../ProgramInterface/CommentTab.htm" onclick="onhyperlinkclick(this)">Comment</a>, <a href="../ProgramInterface/InsertTab.htm" onclick="onhyperlinkclick(this)">Insert</a>, <a href="../ProgramInterface/ViewTab.htm" onclick="onhyperlinkclick(this)">View</a>, <a href="../ProgramInterface/PluginsTab.htm" onclick="onhyperlinkclick(this)">Plugins</a>.
+                    <p>The <span class="icon icon-copy"></span> <b>Copy</b>, <span class="icon icon-paste"></span> <b>Paste</b>, <span class="icon icon-cut"></span> <b>Cut</b> and <span class="icon icon-selectall"></span> <b>Select All</b> options are always available on the left side of the <b>Top toolbar</b> regardless of the selected tab, as are the <span class="icon icon-selectiontool"></span> <b>Select</b> and <span class="icon icon-handtool"></span> <b>Hand</b> tools.</p>
+                </li>
+                <li>
+                    The <b>Left sidebar</b> contains the following icons:
+                    <ul>
+                        <li><div class="icon icon-searchicon"></div> - allows using the <a href="../HelpfulHints/Search.htm" onclick="onhyperlinkclick(this)">Search and Replace</a> tool.</li>
+                        <li><div class="icon icon-commentsicon"></div> - allows opening the <a href="../HelpfulHints/Commenting.htm" onclick="onhyperlinkclick(this)">Comments</a> panel.</li>
+                        <li><div class="icon icon-chaticon"></div> - (available in the <em>online version</em> only) allows opening the <a href="../HelpfulHints/Communicating.htm" onclick="onhyperlinkclick(this)">Chat</a> panel.</li>
+                        <li><div class="icon icon-navigationicon"></div> - allows opening the <a href="../HelpfulHints/Navigation.htm" onclick="onhyperlinkclick(this)">Headings</a> panel that displays the list of all headings with corresponding nesting levels.</li>
+                        <li><div class="icon icon-pagethumbnails"></div> - allows for the display of page thumbnails for quick <a href="../HelpfulHints/Navigation.htm" onclick="onhyperlinkclick(this)">navigation</a>.</li>
+                        <li><div class="icon icon-feedbackicon"></div> - (available in the <em>online version</em> only) allows contacting our support team.</li>
+                        <li><div class="icon icon-about"></div> - (available in the <em>online version</em> only) allows viewing the information about the program.</li>
+                    </ul>
+                </li>
+                <li>The <b>Status bar</b> located at the bottom of the editor window indicates the page number<!--and word count-->, as well as displays some notifications (for example, "All changes saved", ‘Connection is lost’ when there is no connection and the editor is trying to reconnect, etc.). It also allows <!--<a href="../HelpfulHints/SpellChecking.htm" onclick="onhyperlinkclick(this)">setting the text language, enabling spell checking</a><!--turning on the <a href="../HelpfulHints/Review.htm" onclick="onhyperlinkclick(this)">track changes mode</a> and -->adjusting <a href="../HelpfulHints/Navigation.htm" onclick="onhyperlinkclick(this)">zoom</a>.</li>
+                <li><b>Working area</b> allows viewing PDF content, enter and edit data.</li>
+                <li><b>Scroll bar</b> on the right allows scrolling up and down multipage PDFs.</li>
+            </ol>
+            <p>For your convenience, you can hide some components and display them again when necessary. To learn more about adjusting view settings, please refer to <a href="../HelpfulHints/Navigation.htm" onclick="onhyperlinkclick(this)">this page</a>.</p>
+           
+		</div>
+	</body>
+</html>

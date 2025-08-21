@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Verificação ortográfica</title>
+		<meta charset="utf-8" />
+		<meta name="descrição" content="Verifique a ortografia do texto em seu idioma ao editar uma planilha" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+        <div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+            <h1>Verificação ortográfica</h1>
+            <p>O <a href="https://www.onlyoffice.com/pt/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Planilhas</b></a> permite que você verifique a ortografia do texto em um determinado idioma e corrija erros durante a edição. Na <em>versão para desktop</em>, também é possível adicionar palavras em um dicionário personalizado que é comum para todos os três editores.</p>
+             <p class="note">A partir da <b>versão 6.3</b>, os editores do ONLYOFFICE suportam a interface <b>SharedWorker</b> para operação mais suave sem consumo significativo de memória. Se o seu navegador não suportar SharedWorker, apenas <b>Worker</b> estará ativo. Para obter mais informações sobre SharedWorker, consulte <a href="https://javascript.plainenglish.io/introduction-to-shared-workers-533d9abe9de3">este artigo</a>.</p>
+            <p>Clique no ícone <span class="icon icon-spellcheckdeactivated"></span> <b>Verificação ortográfica</b> na barra lateral esquerda para abrir o painel de verificação ortográfica.</p>
+            <p><img alt="Painel de verificação ortográfica" src="../images/spellchecking_panel.png" /></p>
+            <p>A célula superior esquerda que contém um valor de texto incorreto será selecionada automaticamente na planilha atual. A primeira palavra com erro ortográfico será exibida no campo de verificação ortográfica e as palavras semelhantes sugeridas com ortografia correta aparecerão no campo abaixo.</p>
+            <p>Use o botão <span class="icon icon-go_to_the_next_word"></span> <b>Ir para a próxima palavra</b> para navegar pelas palavras com erros ortográficos.</p>
+            <h3>Substituir palavras com erros ortográficos</h3>
+            <p>Para <b>substituir</b> a palavra incorreta atualmente selecionada pela palavra sugerida, escolha uma das palavras semelhantes sugeridas com a grafia correta e use a opção <b>Alterar</b>:</p>
+            <ul>
+                <li>clique no botão <b>Alterar</b> ou</li>
+                 <li>clique na seta para baixo ao lado do botão <b>Alterar</b> e selecione a opção <b>Alterar</b>.</li>
+             </ul>
+             <p>A palavra atual será substituída e você passará para a próxima palavra incorreta.</p>
+             <p>Para substituir rapidamente todas as palavras idênticas repetidas na planilha, clique na seta para baixo ao lado do botão <b>Alterar</b> e selecione a opção <b>Alterar tudo</b>.</p>
+             <h3>Ignorar palavras</h3>
+             <p>Para pular a palavra atual:</p>
+             <ul>
+                 <li>clique no botão <b>Ignorar</b> ou</li>
+                 <li>clique na seta para baixo ao lado do botão <b>Ignorar</b> e selecione a opção <b>Ignorar</b>.</li>
+            </ul>
+            <p>A palavra atual será ignorada e você passará para a próxima palavra incorreta.</p>
+            <p>Para pular todas as palavras idênticas repetidas na planilha, clique na seta para baixo ao lado do botão <b>Ignorar</b> e selecione a opção <b>Ignorar tudo</b>.</p>
+            <p>Se a palavra atual estiver faltando no dicionário, você pode adicioná-la ao dicionário personalizado usando o botão <b>Adicionar ao dicionário</b> no painel de verificação ortográfica. Esta palavra não será tratada como um erro na próxima vez. Esta opção está disponível na <em>versão para desktop</em>.</p>
+            <p>O <b>Idioma do dicionário</b> usado para verificação ortográfica é exibido na lista abaixo. Você pode alterá-lo, se necessário.</p>
+            <p>Depois de verificar todas as palavras na planilha, a mensagem <b>Verificação ortográfica concluída</b> aparecerá no painel de verificação ortográfica.</p>
+            <p>Para fechar o painel de verificação ortográfica, clique no ícone <span class="icon icon-spellcheckactivated"></span> <b>Verificação ortográfica</b> na barra lateral esquerda.</p>
+            <h3>Alterar as configurações de verificação ortográfica</h3>
+            <p>Para alterar as configurações de verificação ortográfica, vá para as configurações avançadas do Editor de Planilhas (guia <b>Arquivo</b> -> <b>Configurações avançadas</b>) e alterne para <b>Verificação ortográfica</b> guia. Aqui você pode ajustar os seguintes parâmetros:</p>
+            <p><img alt="Configurações de verificação ortográfica" src="../images/spellchecking_settings.png" /></p>
+            <ul>
+                <li><b>Idioma do dicionário</b> - selecione um dos idiomas disponíveis na lista. O <b>Idioma do dicionário</b> no painel de verificação ortográfica será alterado correspondentemente.</li>
+                <li><b>Ignorar palavras em MAIÚSCULAS</b> - marque esta opção para ignorar palavras escritas em letras maiúsculas, por exemplo siglas como <em>SMB</em>.</li>
+                <li><b>Ignorar palavras com números</b> - marque esta opção para ignorar palavras que contenham números, por exemplo siglas como <em>B2B</em>.</li>
+                <li><b>Revisão</b> - usado para substituir automaticamente a palavra ou símbolo digitado na caixa <b>Substituir:</b> ou escolhido na lista por uma nova palavra ou símbolo exibido na caixa <b>Por:</b> caixa.</li>
+             </ul>
+             <p>Para salvar as alterações feitas, clique no botão <b>Aplicar</b>.</p>
+        </div>
+	</body>
+</html>

@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>FDIST Function</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>FDIST Function</h1>
+			<p>The <b>FDIST</b> function is one of the <a href="../UsageInstructions/InsertFunction.htm#statistical" onclick="onhyperlinkclick(this)">statistical functions</a>. It is used to return the (right-tailed) F probability distribution (degree of diversity) for two data sets. You can use this function to determine whether two data sets have different degrees of diversity.</p>
+			<h3>Syntax</h3> 
+			<p><b><em>FDIST(x, deg_freedom1, deg_freedom2)</em></b></p> 
+			<p>The <b>FDIST</b> function has the following arguments:</p> 
+			<table style="width: 40%">
+				<tr>
+					<th style="background-color: #f4f4f4" width="150ch"><b>Argument</b></th>
+					<th style="background-color: #f4f4f4"><b>Description</b></th>
+				</tr>
+				<tr>
+					<td><b><em>x</em></b></td>
+					<td>The value at which the function should be calculated. A numeric value greater than 0.</td>
+				</tr>
+				<tr>
+					<td><b><em>deg_freedom1</em></b></td>
+					<td>The numerator degrees of freedom, a numeric value greater than 1 and less than 10^10.</td>
+				</tr>
+				<tr>
+					<td><b><em>deg_freedom2</em></b></td>
+					<td>The denominator degrees of freedom, a numeric value greater than 1 and less than 10^10.</td>
+				</tr>
+			</table>
+			
+			<h3>Notes</h3>
+ 			<p><a href="../UsageInstructions/InsertFunction.htm#applyfunction" onclick="onhyperlinkclick(this)">How to apply</a> the <b>FDIST</b> function.</p>
+			
+			<h3>Examples</h3>
+            <p>The figure below displays the result returned by the <b>FDIST</b> function.</p>
+			<p><img alt="FDIST Function" src="../images/fdist.png" /></p>
+		</div>
+	</body>
+</html>

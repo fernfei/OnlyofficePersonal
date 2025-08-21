@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Inserir notas finais</title>
+    <meta charset="utf-8" />
+    <meta name="descrição" content="Insira notas finais para fornecer explicações sobre alguns termos ou fazer referências às fontes" />
+    <link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+    <link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+    <script type="text/javascript" src="../callback.js"></script>
+    <script type="text/javascript" src="../search/js/page-search.js"></script>
+</head>
+<body>
+    <div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+        <h1>Inserir notas finais</h1>
+        <p>No <a href="https://www.onlyoffice.com/pt/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Documentos</b></a>, você pode inserir notas finais para adicionar explicações ou comentários a termos ou frases específicas, fazer referências às fontes, etc. que são exibidas no final do documento.</p>
+        <h2>Inserindo notas de fim</h2>
+         <p>Para inserir uma nota final em seu documento,</p>
+        <ol>
+            <li>posicione o ponto de inserção no final da passagem de texto ou na palavra à qual deseja adicionar a nota de fim,</li>
+             <li>mude para a guia <b>Referências</b> localizada na barra de ferramentas superior,</li>
+            <li>
+                Clique no ícone <div class = "icon icon-addfootnote"></div> <b>Nota de rodapé</b> na barra de ferramentas superior e selecione a opção <b>Inserir nota de fim</b> no menu.<br />
+            <p>A marca de nota final (ou seja, o caractere sobrescrito que indica uma nota final) aparece no texto do documento e o ponto de inserção se move para o final do documento.</p>
+            </li>
+            <li>digite o texto da nota final.</li>
+        </ol>
+        <p>Repita as operações mencionadas acima para adicionar notas de fim subsequentes para outras passagens de texto no documento. As notas finais são numeradas automaticamente: <em>i, ii, iii,</em> etc. por padrão.</p>
+        <p><img alt="Notas finais" src="../images/endnotesadded.png" /></p>
+        <h2>Exibição de notas finais no documento</h2>
+         <p>Se você passar o ponteiro do mouse sobre a marca da nota final no texto do documento, uma pequena janela pop-up com o texto da nota final aparecerá.</p>
+        <p><img alt="Texto da nota final" src="../images/endnotetext.png" /></p>
+        <h2>Navegando pelas notas de fim</h2>
+         <p>Para navegar facilmente pelas notas finais adicionadas no texto do documento,</p>
+        <ol>
+            <li>clique na seta ao lado do ícone <div class = "icon icon-addfootnote"></div> <b>Nota de rodapé</b> na guia <b>References</b> localizada na barra de ferramentas superior,</li>
+             <li>na seção <b>Ir para notas finais</b>, use o <div class = "icon icon-previousfootnote"></div> seta para ir para a nota de fim anterior ou para o <div class = "icon icon-nextfootnote"></div> seta para ir para a próxima nota de fim.</li>
+        </ol>
+        <h2>Editando notas finais</h2>
+         <p>Para editar as configurações das notas finais,</p>
+        <ol>
+            <li>clique na seta ao lado do ícone <div class = "icon icon-addfootnote"></div> <b>Nota de rodapé</b> na guia <b>References</b> localizada na barra de ferramentas superior,</li>
+             <li>selecione a opção <b>Configurações de notas</b> no menu,</li>
+            <li>
+                altere os parâmetros atuais na janela <b>Configurações de notas</b> que aparecerá:
+                <p><img alt="Janela de configurações de notas finais" src="../images/endnotes_settings.png" /></p>
+                <ul>
+                    <li>
+                        Defina a <b>Localização</b> das notas finais na página selecionando uma das opções disponíveis no menu suspenso à direita:
+                        <ul>
+                            <li><b>Fim da seção</b> - para posicionar as notas finais no final das seções.</li>
+                             <li><b>Fim do documento</b> - para posicionar notas finais no final do documento (definido por padrão).</li>
+                        </ul>
+                    </li>
+                    <li>
+                        Ajuste o <b>Formato</b> das notas finais:
+                         <ul>
+                             <li><b>Formato numérico</b> - selecione o formato numérico necessário entre os disponíveis: <em>1, 2, 3,...</em>, <em>a, b, c,...</em>, <em>A, B, C,...</em>, <em>i, ii, iii,...</em>, <em>I, II, III, ...</em>.</li>
+                             <li><b>Iniciar em</b> - use as setas para definir o número ou a letra com a qual deseja iniciar a numeração.</li>
+                            <li>
+                                <b>Numeração</b> - selecione uma forma de numerar suas notas finais:
+                                 <ul>
+                                     <li><b>Contínua</b> - para numerar as notas finais sequencialmente ao longo do documento,</li>
+                                     <li><b>Reiniciar cada seção</b> - para iniciar a numeração da nota final com 1 (ou outro caractere especificado) no início de cada seção,</li>
+                                     <li><b>Reiniciar cada página</b> - para iniciar a numeração da nota final com 1 (ou outro caractere especificado) no início de cada página.</li>
+                                </ul>
+                            </li>
+                            <li><b>Marca personalizada</b> - defina um caractere especial ou uma palavra que deseja usar como marca de nota final (por exemplo, * ou Nota1). Insira o caractere/palavra necessário no campo de entrada de texto e clique no botão <b>Inserir</b> na parte inferior da janela <b>Configurações de Notes</b>.</li>
+                        </ul>
+                    </li>
+                    <li>
+                       Use a lista suspensa <b>Aplicar alterações a</b> se desejar aplicar as configurações de notas especificadas apenas ao <b>Documento inteiro</b> ou à <b>Seção atual</b>.
+                        <p class="note"><b>Nota</b>: para usar diferentes formatações de notas finais em partes separadas do documento, você precisa adicionar <a href="../UsageInstructions/SectionBreaks.htm" onclick="onhyperlinkclick(this)">quebras de seção</a> primeiro.</p>
+                    </li>
+                </ul>
+            </li>
+            <li>Quando terminar, clique no botão <b>Aplicar</b>.</li>
+        </ol>
+
+        <h2>Removendo notas finais</h2>
+        <p>Para remover uma única nota final, posicione o ponto de inserção diretamente antes da marca da nota final no texto e pressione <b>Excluir</b>. Outras notas finais serão renumeradas automaticamente.</p>
+         <p>Para excluir todas as notas finais do documento,</p>
+        <ol>
+            <li>clique na seta ao lado do <div class = "icon icon-addfootnote"></div> <b>Nota de rodapé</b> na guia <b>Referências</b> localizada na barra de ferramentas superior,</li>
+             <li>selecione a opção <b>Excluir todas as notas</b> no menu.</li>
+             <li>escolha a opção <b>Excluir todas as notas finais</b> na janela exibida e clique <b>OK</b>.</li>
+        </ol>
+    </div>
+</body>
+</html>

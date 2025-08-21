@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Veri doğrulama</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Set data validation parameters to control further spreadsheet editing" />
+    <link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+    <link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+    <script type="text/javascript" src="../callback.js"></script>
+    <script type="text/javascript" src="../search/js/page-search.js"></script>
+</head>
+<body>
+    <div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+        </div>
+        <h1>Veri doğrulama</h1>
+        <p>ONLYOFFICE <a href="https://www.onlyoffice.com/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Elektronik Tablo D&uuml;zenleyicisi,</b></a> kullanıcılar tarafından h&uuml;crelere girilen bilgilerin parametrelerini kontrol eden bir&nbsp;<b>veri doğrulama</b>&nbsp;&ouml;zelliği sunar.</p>
+        <p>Veri doğrulama &ouml;zelliğine erişmek i&ccedil;in &ouml;zelliği uygulamak istediğiniz bir h&uuml;creyi, h&uuml;cre aralığını veya t&uuml;m bir elektronik tabloyu se&ccedil;in,&nbsp;<b>Veri</b>&nbsp;sekmesini a&ccedil;ın ve &uuml;st ara&ccedil; &ccedil;ubuğunda&nbsp;<b>Veri Doğrulama</b> simgesine tıklayın. A&ccedil;ılan&nbsp;<b>Veri Doğrulama</b>&nbsp;penceresi,&nbsp;<em>Ayarlar</em>, <em>Giriş İletisi</em> ve&nbsp;<em>Hata Uyarısı</em> olmak &uuml;zere &uuml;&ccedil; sekme i&ccedil;erir.</p>
+        <h2>Ayarlar</h2>
+        <p><b>Ayarlar</b> b&ouml;l&uuml;m&uuml;, girilebilecek veri t&uuml;r&uuml;n&uuml; belirlemenizi sağlar:</p>
+        <p class="note"><b>Not</b>: Se&ccedil;ili h&uuml;cre aralığında veya t&uuml;m &ccedil;alışma sayfasında aynı ayarları kullanmak i&ccedil;in <b>Bu değişiklikleri aynı ayarlara sahip diğer t&uuml;m h&uuml;crelere uygula</b> kutusunu işaretleyin.</p>
+        <p><img alt="Veri doğrulama - ayarlar penceresi" src="../images/dataval_settings.png" /></p>
+        <ul>
+            <li>
+                <b>İzin Verilen</b> nen&uuml;s&uuml;nden gerekli se&ccedil;eneği se&ccedil;in:
+                <ul>
+                    <li><b>Herhangi bir değer</b>: Bilgi t&uuml;r&uuml;nde herhangi bir sınırlama yoktur.</li>
+                    <li><b>T&uuml;m sayı</b>: Yalnızca t&uuml;m sayılara izin verilir.</li>
+                    <li><b>Ondalık</b>: Yalnızca ondalık noktalı sayılara izin verilir.</li>
+                    <li>
+                        <b>Liste</b>: Yalnızca oluşturduğunuz a&ccedil;ılır listedeki se&ccedil;eneklere izin verilir. A&ccedil;ılır oku gizlemek i&ccedil;in <b>A&ccedil;ılır listeyi h&uuml;crede g&ouml;ster</b> kutusunun işaretini kaldırın.
+                        <p><img alt="Liste - ayarlar" src="../images/dataval_list.png" /></p>
+                    </li>
+                    <li><b>Tarih</b>: Yalnızca tarih bi&ccedil;imine sahip h&uuml;crelere izin verilir.</li>
+                    <li><b>Saat</b>: Yalnızca saat bi&ccedil;imine sahip h&uuml;crelere izin verilir.</li>
+                    <li><b>Metin uzunluğu</b>: Karakter sınırını ayarlar.</li>
+                    <li><b>Diğer</b>: Form&uuml;l olarak verilen gerekli doğrulama parametresini ayarlar.</li>
+                </ul>
+                <p class="note"><b>Not</b>: Se&ccedil;ili h&uuml;cre aralığında veya t&uuml;m &ccedil;alışma sayfasında aynı ayarları kullanmak i&ccedil;in <b>Bu değişiklikleri aynı ayarlara sahip diğer t&uuml;m h&uuml;crelere uygula</b> kutusunu işaretleyin.</p>
+            </li>
+            <li>
+                <b>Veri</b> men&uuml;s&uuml;nde bir doğrulama koşulu belirtin:
+                <ul>
+                    <li><b>arasında</b>: H&uuml;crelerdeki veriler, doğrulama kuralı ile belirlenen aralık i&ccedil;inde olmalıdır.</li>
+                    <li><b>arasında değil</b>: H&uuml;crelerdeki veriler, doğrulama kuralı ile belirlenen aralık i&ccedil;inde olmamalıdır.</li>
+                    <li><b>eşittir</b>: H&uuml;crelerdeki veriler, doğrulama kuralı ile belirlenen değere eşit olmalıdır.</li>
+                    <li><b>eşit değil</b>: H&uuml;crelerdeki veriler, doğrulama kuralı ile belirlenen değere eşit olmamalıdır.</li>
+                    <li><b>b&uuml;y&uuml;k</b>: H&uuml;crelerdeki veriler, doğrulama kuralı ile belirlenen değerleri aşmalıdır.</li>
+                    <li><b>k&uuml;&ccedil;&uuml;k</b>: H&uuml;crelerdeki veriler, doğrulama kuralı ile belirlenen değerlerden k&uuml;&ccedil;&uuml;k olmalıdır.</li>
+                    <li><b>b&uuml;y&uuml;k ya da eşit</b>: H&uuml;crelerdeki veriler, doğrulama kuralı ile belirlenen değeri aşmalı veya bu değere eşit olmalıdır.</li>
+                    <li><b>k&uuml;&ccedil;&uuml;k ya da eşit</b>: H&uuml;crelerdeki veriler, doğrulama kuralı ile belirlenen değerden k&uuml;&ccedil;&uuml;k veya bu değere eşit olmalıdır.</li>
+                </ul>
+            </li>
+            <li>
+                İzin verilen bilgi t&uuml;r&uuml;ne bağlı olarak bir doğrulama kuralı oluşturun:
+                <div class="tg-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Doğrulama koşulu</th>
+                                <th>Doğrulama kuralı</th>
+                                <th>A&ccedil;ıklama</th>
+                                <th>Kullanılabilirlik</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="3">Arasında / arasında değil</td>
+                                <td>Minimum / Maksimum</td>
+                                <td>Değer aralığını ayarlar</td>
+                                <td>T&uuml;m sayı / Ondalık / Metin uzunluğu</td>
+                            </tr>
+                            <tr>
+                                <td>Başlangı&ccedil; tarihi / Bitiş tarihi</td>
+                                <td>Tarih aralığını ayarlar</td>
+                                <td>Tarih</td>
+                            </tr>
+                            <tr>
+                                <td>Başlangı&ccedil; zamanı / Bitiş zamanı</td>
+                                <td>S&uuml;reyi ayarlar</td>
+                                <td>Zaman</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="4"><br> <br>Eşit / eşit değil</td>
+                                <td>Karşılaştır</td>
+                                <td>Karşılaştırılacak değeri ayarlar</td>
+                                <td>T&uuml;m sayı / Ondalık</td>
+                            </tr>
+                            <tr>
+                                <td>Tarih</td>
+                                <td>Karşılaştırılacak tarihi ayarlar</td>
+                                <td>Tarih</td>
+                            </tr>
+                            <tr>
+                                <td>Ge&ccedil;en zaman</td>
+                                <td>Karşılaştırılacak zamanı ayarlar</td>
+                                <td>Zaman</td>
+                            </tr>
+                            <tr>
+                                <td>Uzunluk</td>
+                                <td>Karşılaştırılacak metin değerini ayarlar</td>
+                                <td>Metin uzunluğu</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3">B&uuml;y&uuml;k / b&uuml;y&uuml;k ya da eşit</td>
+                                <td>Minimum</td>
+                                <td>Alt sınırı ayarlar</td>
+                                <td>T&uuml;m sayı / Ondalık / Metin uzunluğu</td>
+                            </tr>
+                            <tr>
+                                <td>Başlangı&ccedil; tarihi</td>
+                                <td>Başlangı&ccedil; tarihini ayarlar</td>
+                                <td>Tarih</td>
+                            </tr>
+                            <tr>
+                                <td>Başlangı&ccedil; zamanı</td>
+                                <td>Başlangı&ccedil; zamanını ayarlar</td>
+                                <td>Zaman</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="3">K&uuml;&ccedil;&uuml;k / k&uuml;&ccedil;&uuml;k ya da eşit</td>
+                                <td>Maksimum</td>
+                                <td>&Uuml;st sınırı ayarlar</td>
+                                <td>T&uuml;m sayı / Ondalık / Metin uzunluğu</td>
+                            </tr>
+                            <tr>
+                                <td>Bitiş tarihi</td>
+                                <td>Bitiş tarihini ayarlar</td>
+                                <td>Tarih</td>
+                            </tr>
+                            <tr>
+                                <td>Bitiş zamanı</td>
+                                <td>Bitiş zamanını ayarlar</td>
+                                <td>Zaman</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                Ayrıca:
+                <ul>
+                    <li><b>Kaynak</b>: <em>Liste</em> bilgi t&uuml;r&uuml; i&ccedil;in bilgi kaynağını sağlar.</li>
+                    <li><b>Form&uuml;l</b>: <em>Diğer</em> bilgi t&uuml;r&uuml;ne ilişkin &ouml;zel bir doğrulama kuralı oluşturmak i&ccedil;in gerekli form&uuml;l&uuml; girin.</li>
+                </ul>
+            </li>
+        </ul>
+        <h2>Giriş İletisi</h2>
+        <p><b>Giriş İletisi</b> b&ouml;l&uuml;m&uuml;, bir kullanıcı fare imlecini h&uuml;crenin &uuml;zerine getirdiğinde g&ouml;r&uuml;nt&uuml;lenen &ouml;zelleştirilmiş bir mesaj oluşturmanızı sağlar.</p>
+        <p><img alt="Veri doğrulama - giriş iletisi ayarları" src="../images/dataval_inputmessage.png" /></p>
+        <ul>
+            <li><b>Başlığı</b> ve <b>Giriş İletinizin</b> g&ouml;vdesini belirtin.</li>
+            <li>İletinin g&ouml;r&uuml;nt&uuml;lenmesini devre dışı bırakmak i&ccedil;in <b>H&uuml;cre se&ccedil;ildiğinde giriş iletisini g&ouml;ster</b> kutusunun işaretini kaldırın. İletiyi g&ouml;r&uuml;nt&uuml;lemek i&ccedil;inse aynı bırakın.</li>
+        </ul>
+        <p><img alt="Giriş iletisi - örnek" src="../images/dataval_inputmessage_example.png" /></p>
+        <h2>Hata Uyarısı</h2>
+        <p><b>Hata Uyarısı</b> b&ouml;l&uuml;m&uuml;, kullanıcılar tarafından verilen veriler doğrulama kurallarına uymadığında g&ouml;sterilecek iletiyi belirlemenizi sağlar.</p>
+        <p><img alt="Veri doğrulama - hata uyarısı ayarları" src="../images/dataval_erroralert.png" /></p>
+        <ul>
+            <li><b>Stil</b>: Mevcut <em>Durma</em>, <em>Uyarı</em> veya <em>İleti</em> &ouml;n ayarlarından birini se&ccedil;in.</li>
+            <li><b>Başlık</b>: Uyarı iletisinin başlığını belirtin.</li>
+            <li><b>Hata İletisi</b>: Uyarı iletisinin metnini girin.</li>
+            <li>Uyarı iletisinin g&ouml;r&uuml;nt&uuml;lenmesini devre dışı bırakmak i&ccedil;in <b>Ge&ccedil;ersiz veri girildikten sonra hata uyarısını g&ouml;ster</b> kutusunun işaretini kaldırın.</li>
+        </ul>
+        <p><img alt="Hata iletisi - örnek" src="../images/dataval_erroralert_example.png" /></p>
+    </div>
+</body>
+</html>

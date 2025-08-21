@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Manipular objetos em um slide</title>
+		<meta charset="utf-8" />
+		<meta name="descrição" content="Mover, girar, redimensionar e remodelar formas automáticas, imagens, gráficos." />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+        <div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+            <h1>Manipular objetos em um slide</h1>
+            <p>No <a target="_blank" href="https://www.onlyoffice.com/pt/presentation-editor.aspx" onclick="onhyperlinkclick(this)"><b>Editor de Apresentações</b></a>, você pode redimensionar, mover, girar objetos diferentes em um slide manualmente usando as alças especiais. Você também pode especificar as dimensões e a posição de alguns objetos exatamente usando a barra lateral direita ou a janela <b>Configurações avançadas</b>.</p>
+            <p class="note">
+                <b>Observação</b>: a lista de atalhos de teclado que podem ser usados ao trabalhar com objetos está disponível <a href="../HelpfulHints/KeyboardShortcuts.htm#workwithobjects" onclick="onhyperlinkclick(this)">aqui</a>.
+            </p>
+            <h3>Redimensionar objetos</h3>
+             <p>Para alterar o tamanho da <b>forma automática/imagem/gráfico/tabela/caixa de texto</b>, arraste pequenos quadrados <span class="icon icon-resize_square"></span> situados nas bordas do objeto. Para manter as proporções originais do objeto selecionado durante o redimensionamento, mantenha pressionada a tecla <b>Shift</b> e arraste um dos ícones do canto.</p>
+             <p><span class="big big-maintain_proportions"></span></p>
+             <p>Para especificar a largura e a altura precisas de um <b>gráfico</b>, selecione-o em um slide e use a seção <b>Tamanho</b> da barra lateral direita que será ativada.</p>
+             <p>Para especificar as dimensões precisas de uma <b>imagem</b> ou <b>forma automática</b>, clique com o botão direito do mouse no objeto necessário no slide e selecione opção do menu <b>Configurações avançadas de imagem/forma</b>. Especifique os valores necessários na guia <b>Tamanho</b> da janela <b>Configurações avançadas</b> e pressione <b>OK</b>.</p>
+             <h3>Remodelar autoformas</h3>
+             <p>Ao modificar algumas formas, por exemplo, setas com figuras ou legendas, o ícone <span class="icon icon-yellowdiamond"></span> em forma de diamante amarelo também está disponível. Permite ajustar alguns aspectos da forma, por exemplo, o comprimento da ponta de uma flecha.</p>
+             <p><span class="big big-reshaping"></span></p>
+             <p>Para remodelar uma forma automática, você também pode usar a opção <b>Editar pontos</b> no <b>menu de contexto</b>.</p>
+             <p>A opção <b>Editar pontos</b> é usada para personalizar ou alterar a curvatura de sua forma.</p>
+            <ol>
+                <li>
+                    Para ativar os pontos de ancoragem editáveis de uma forma, clique com o botão direito na forma e escolha <b>Editar pontos</b> no menu. Os quadrados pretos que se tornam ativos são os pontos onde duas linhas se encontram, e a linha vermelha contorna a forma. Clique e arraste-o para reposicionar o ponto e alterar o contorno da forma.
+                     <p><img alt="Menu Editar Pontos" src="../images/editpoints_rightclick.png" /></p>
+                </li>
+                <li>
+                    Depois de clicar no ponto de ancoragem, duas linhas azuis com quadrados brancos nas extremidades aparecerão. Estas são as alças de Bezier que permitem criar uma curva e alterar a suavidade de uma curva.
+                    <p><span class="big big-editpoints_example"></span></p>
+                </li>
+                <li>
+                    Enquanto os pontos de ancoragem estiverem ativos, você pode adicioná-los e excluí-los:
+                     <ul>
+                         <li><b>Para adicionar um ponto a uma forma</b>, segure <b>Ctrl</b> e clique na posição onde deseja adicionar um ponto de ancoragem.</li>
+                         <li><b>Para excluir um ponto</b>, segure <b>Ctrl</b> e clique no ponto desnecessário.</li>
+                    </ul>
+                </li>
+            </ol>
+                <h3>Mover objetos</h3>
+             <p>
+                 Para alterar a posição da <b>forma automática/imagem/gráfico/tabela/caixa de texto</b>, use o ícone <span class="icon icon-arrow"></span> que aparece depois de passar o cursor do mouse sobre o objeto. Arraste o objeto para a posição necessária sem soltar o botão do mouse.
+                 Para mover o objeto em incrementos de um pixel, mantenha pressionada a tecla <b>Ctrl</b> e use as setas do teclado.
+                 Para mover o objeto estritamente na horizontal/vertical e evitar que ele se mova em uma direção perpendicular, mantenha pressionada a tecla <b>Shift</b> ao arrastar.
+            </p>
+            <p>Para especificar a posição precisa de uma <b>imagem</b>, clique com o botão direito em um slide e selecione a opção <b>Configurações avançadas de imagem</b> no menu. Especifique os valores necessários na seção <b>Posição</b> da janela <b>Configurações avançadas</b> e pressione <b>OK</b>.</p>
+             <h3>Girar objetos</h3>
+             <p>Para girar manualmente uma <b>forma automática/imagem/caixa de texto</b>, passe o cursor do mouse sobre a alça de rotação <span class="icon icon-greencircle"></span> e arraste-a no sentido horário ou anti-horário. Para restringir o ângulo de rotação a incrementos de 15 graus, mantenha pressionada a tecla <b>Shift</b> enquanto gira.</p>
+             <p>Para girar o objeto em 90 graus no sentido anti-horário/horário ou virar o objeto horizontalmente/verticalmente, você pode usar a seção <b>Rotação</b> da barra lateral direita que será ativada assim que você selecionar o objeto necessário. Para abri-lo, clique em <b>Configurações de forma</b> <span class="icon icon-shape_settings_icon"></span> ou em <b>Configurações de imagem</b> <span class="icon icon-image_settings_icon ícone "></span> à direita. Clique em um dos botões:</p>
+            <ul>
+                <li><div class = "icon icon-rotatecounterclockwise"></div> para girar o objeto em 90 graus no sentido anti-horário</li>
+                <li><div class = "icon icon-rotateclockwise"></div> para girar o objeto em 90 graus no sentido horário</li>
+                <li><div class = "icon icon-fliplefttoright"></div> para virar o objeto horizontalmente (da esquerda para a direita)</li>
+                <li><div class = "icon icon-flipupsidedown"></div> para virar o objeto verticalmente (de cabeça para baixo)</li>
+            </ul>
+            <p>Também é possível clicar com o botão direito do mouse no objeto, escolher a opção <b>Girar</b> no menu contextual e usar uma das opções de rotação disponíveis.</p>
+             <p>Para girar o objeto em um ângulo exatamente especificado, clique no link <b>Exibir configurações avançadas</b> na barra lateral direita e use a guia <b>Rotação</b> das janela <b>Configurações avançadas</b>. Especifique o valor necessário medido em graus no campo <b>Ângulo</b> e clique em <b>OK</b>.</p>
+
+        </div>
+	</body>
+</html>

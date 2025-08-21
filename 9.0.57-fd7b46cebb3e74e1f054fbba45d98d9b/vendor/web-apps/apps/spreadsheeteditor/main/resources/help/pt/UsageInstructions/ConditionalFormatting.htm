@@ -1,0 +1,412 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formatação condicional</title>
+		<meta charset="utf-8" />
+        <meta name="descrição" content="A formatação condicional permite aplicar vários estilos de formatação (cor, fonte, decoração, gradiente) às células para trabalhar com dados na planilha: destaque ou classifique e exiba os dados que atendem aos critérios necessários." />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Formatação condicional</h1>
+			<p><b>A formatação condicional</b> permite aplicar vários estilos de formatação (cor, fonte, decoração, gradiente) às células para trabalhar com dados na planilha: destaque ou classifique e exiba os dados que atendem aos critérios necessários. Especifique os critérios de adequação à finalidade e crie novas regras de formatação, edite, gerencie ou limpe as regras existentes.
+             Regras de formatação condicional suportadas pelo <a href="https://www.onlyoffice.com/pt/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Planilhas do ONLYOFFICE</b></a> são:</p>
+			<p><b>O valor é</b>, <b>Superior/Inferior</b>, <b>Média</b>, <b>Texto</b>, <b>Data</b>, <b>Em branco/ Erro</b>, <b>Duplicado/Único</b>, <b>Barras de dados</b>, <b>Escalas de cores</b>, <b>Conjuntos de ícones</b>, <b> Fórmula</b>.</p>
+            <p>Para acesso rápido, ou se você quiser escolher uma das condições predefinidas disponíveis, ou para acessar todas as opções de formatação condicional disponíveis, vá para a guia <b>Página inicial</b> e clique em <b>Formatação condicional</b> botão <span class="icon icon-conditionalformatting_button"></span>.</p>
+                    <p><img alt="Guia Início de Formatação Condicional" src="../images/interface/hometab.png" /></p>
+            <p>Todas as opções de <b>Formatação condicional</b> também estão disponíveis na barra lateral direita na guia <b>Configurações da célula</b>. Clique na seta para baixo do controle <b>Formatação condicional</b> para abrir o menu suspenso contendo todas as opções disponíveis.</p>
+                    <p><img alt="Barra Lateral Direita de Formatação Condicional" src="../images/conditionalformatting_rightsidebar.png" /></p>
+            <p>Para abrir a janela <b>Nova regra de formatação</b>, você pode clicar com o botão direito do mouse em qualquer célula e escolher <b>Formatação condicional</b> no menu contextual.</p>
+                    <p><img alt="Clique com o botão direito em formatação condicional" src="../images/conditionalformatting_rightclick.png" /></p>
+            <p>Para aplicar uma condição de regra de formatação, selecione o intervalo de células e clique no botão <b>Formatação condicional</b> <span class="icon icon-conditionalformatting_button"></span> na barra de ferramentas superior ou clique no botão <b> Controle de formatação condicional</b> da guia <b>Configurações da célula</b> na barra lateral direita e escolha a regra apropriada no menu suspenso.</p> 
+            <p><img alt="Menu suspenso de formatação condicional" src="../images/conditionalformatting_dropdown.png" />.
+            <p>A janela <b>Nova Regra de Formatação</b> será aberta para você formatar os critérios de destaque.</p>
+            <details class="details-example">
+                <summary><b>O valor é a regra de formatação</b></summary>
+                <p>A regra de formatação <b>Valor é</b> é usada para localizar e destacar células que atendem a uma determinada condição de comparação:</p>
+                <ul type="circle">
+                     <li>Maior que</li>
+                      <li>Maior ou igual a</li>
+                      <li>Menos de</li>
+                      <li>Menor ou igual a</li>
+                      <li>Igual a</li>
+                      <li>Diferente de</li>
+                      <li>Entre</li>
+                      <li>Não entre</li>
+                </ul>
+                    <p><img alt="O novo valor da regra é" src="../images/newrule_valueis.png" /></p>
+                <ul type="disc">
+                     <li>A seção <b>Regra</b> mostra a regra selecionada e a condição de comparação selecionada, clicando na seta para baixo você pode acessar a lista de regras e condições disponíveis. Use a caixa <b>Selecionar dados</b> para definir o valor da célula com o qual comparar. Use a referência a uma única célula ou a referência com a função de planilha, como =SUM(A1:B5). </li>
+                      <li>A seção <b>Formato</b> oferece uma variedade de opções de formatação de células. Você pode escolher um dos formatos disponíveis <b>Predefinições</b></li>
+                </ul>
+                     <p><img alt="Predefinições de formato" src="../images/format_presets.png" /></p>
+                <p>ou</p> 
+                <p>personalize a formatação usando as opções de formato de fonte (negrito, itálico, sublinhado, tachado), cor do texto, cor de preenchimento e bordas. Use a lista suspensa <b>Geral</b> para escolher o formato de número apropriado (Geral, Número, Científico, Contabilidade, Moeda, Data, Hora, Porcentagem). A caixa <b>Visualização</b> mostra como a célula ficará após a formatação. Clique em <b>Limpar</b>
+                 para excluir toda a formatação.</p>
+                 <p>Clique em <b>OK</b> para confirmar.</p>
+                 <p>O exemplo abaixo ilustra os critérios de formatação predefinidos, como <b>Maior</b> que e <b>Entre</b>. Isso formata montanhas com altura superior a 6.960 com fundo verde e percentil entre 5.000 e 6.500 com rosa.</p>
+                <p><img alt="Valor é" src="../images/conditionalformatting/valueis_example.png" /></p>
+            </details>
+            <details class="details-example">
+                <summary><b>Regra de formatação superior/inferior</b></summary>
+                 <p>A regra <b>Superior/Inferior</b> é usada para localizar e exibir os valores superiores e inferiores na planilha:</p>
+                 <ul type="círculo">
+                      <li>Os 10 principais itens</li>
+                      <li>10% principais</li>
+                      <li>Últimos 10 itens</li>
+                      <li>Últimos 10%</li>
+               </ul>
+                    <p><img alt="Nova Regra Superior & Inferior" src="../images/newrule_topbottom.png" /></p>
+                <ul type="disc">
+                     <li>A seção <b>Regra</b> mostra a regra selecionada e a condição selecionada, clicando na seta para baixo você pode acessar a lista de regras e condições disponíveis, o número de itens (porcentagem) para exibir e escolher se você deseja destacar itens ou porcentagem.</li>
+                      <li>A seção <b>Formato</b> oferece uma variedade de opções de formatação de células. Você pode escolher um dos formatos disponíveis <b>Predefinições</b></li>
+                </ul>
+                     <p><img alt="Predefinições de formato" src="../images/format_presets.png" /></p>
+                <p>ou</p>
+                <p>personalize a formatação usando as opções de formato de fonte (negrito, itálico, sublinhado, tachado), cor do texto, cor de preenchimento e bordas. Use a lista suspensa <b>Geral</b> para escolher o formato de número apropriado (Geral, Número, Científico, Contabilidade, Moeda, Data, Hora, Porcentagem). A caixa <b>Visualização</b> mostra como a célula ficará após a formatação. Clique no botão <b>Limpar</b> para excluir toda a formatação.</p>
+                 <p>Clique em <b>OK</b> para confirmar.</p>
+                 <p>O exemplo abaixo ilustra os critérios de formatação predefinidos, como <b>Top 10%</b> definido para mostrar os valores dos 20% principais e <b>Últimos 10 itens</b>. Isso formata os 20% principais de taxas nas cidades que você visitou com um fundo laranja e os valores mais baixos para cidades onde você vendeu um pequeno número de livros com um fundo azul.</p>
+                <p><img alt="Parte superior inferior" src="../images/conditionalformatting/topbottom_example.png" /></p>
+                </details>
+            <details class="details-example">
+                <summary><b>Regra de formatação média</b></summary>
+                 <p>A <b>Média</b> é usada para encontrar e exibir valores acima ou abaixo de uma média ou desvio padrão em uma classificação:</p> 
+                <ul type="circle">
+                     <li>Acima</li>
+                      <li>Abaixo</li>
+                      <li>Igual ou superior</li>
+                      <li>Igual ou inferior</li>
+                      <li>1 desenvolvimento acima</li>
+                      <li>1 desenvolvedor padrão abaixo</li>
+                      <li>2 desenvolvimento padrão acima</li>
+                      <li>2 desenvolvimento padrão abaixo</li>
+                      <li>3 desenvolvimento padrão acima</li>
+                      <li>3 desenvolvimento abaixo</li>
+               </ul>
+                    <p><img alt="Média da Nova Regra" src="../images/newrule_average.png" /></p>
+                <ul type="disc">
+                     <li>A seção <b>Regra</b> mostra a regra selecionada e a condição selecionada, clicando na seta para baixo você pode acessar a lista de regras e condições disponíveis.</li>
+                      <li>A seção <b>Formato</b> oferece uma variedade de opções de formatação de células. Você pode escolher um dos formatos disponíveis <b>Predefinições</b></li>
+                </ul>
+                     <p><img alt="Predefinições de formato" src="../images/format_presets.png" /></p>
+                <p>ou</p>
+                <p>personalize a formatação usando as opções de formato de fonte (negrito, itálico, sublinhado, tachado), cor do texto, cor de preenchimento e bordas. Use a lista suspensa <b>Geral</b> para escolher o formato de número apropriado (Geral, Número, Científico, Contabilidade, Moeda, Data, Hora, Porcentagem). A caixa <b>Visualização</b> mostra como a célula ficará após a formatação. Clique no botão <b>Limpar</b> para excluir toda a formatação.</p>
+                 <p>Clique em <b>OK</b> para confirmar.</p>
+                 <p>O exemplo abaixo ilustra os critérios de formatação predefinidos, como <b>Acima</b> da média. Isso formata as cidades onde o atendimento foi acima da média com um fundo verde.</p>
+                <p><img alt="Média" src="../images/conditionalformatting/average_example.png" /></p>
+                </details>
+            <details class="details-example">
+                <summary><b>Regra de formatação de texto</b></summary>
+                <p>A regra de formatação <b>Texto</b> é usada para localizar e realçar células contendo determinado texto e atendendo a uma das condições de formatação disponíveis:</p> 
+                <ul type="circle">
+                     <li>Contém</li>
+                      <li>Não contém</li>
+                      <li>Começa com</li>
+                      <li>Termina com</li>
+               </ul>
+                    <p><img alt="Texto da Nova Regra" src="../images/newrule_text.png" /></p>
+                <ul type="disc">
+                     <li>A seção <b>Regra</b> mostra a regra selecionada e a condição de formatação selecionada, clicando na seta para baixo você pode acessar a lista de regras e condições disponíveis. Use a caixa <b>Selecionar dados</b> para definir o valor da célula com o qual comparar. Use a referência a uma única célula ou a referência com a função de planilha como =SOMA(A1:B5).</li>
+                      <li>A seção <b>Formato</b> oferece uma variedade de opções de formatação de células. Você pode escolher um dos formatos disponíveis <b>Predefinições</b></li>
+                </ul>
+                     <p><img alt="Predefinições de formato" src="../images/format_presets.png" /></p>
+                <p>ou</p>
+                <p>personalize a formatação usando as opções de formato de fonte (negrito, itálico, sublinhado, tachado), cor do texto, cor de preenchimento e bordas. Use a lista suspensa <b>Geral</b> para escolher o formato de número apropriado (Geral, Número, Científico, Contabilidade, Moeda, Data, Hora, Porcentagem). A caixa <b>Visualização</b> mostra como a célula ficará após a formatação. Clique no botão <b>Limpar</b> para excluir toda a formatação.</p>
+                 <p>Clique em <b>OK</b> para confirmar.</p>
+                 <p>O exemplo abaixo ilustra os critérios de formatação predefinidos, como <b>Contém</b>. Isso formata as células que contêm a Dinamarca com um fundo rosa para destacar as vendas de uma região específica.</p>
+                <p><img alt="Texto" src="../images/conditionalformatting/text_example.png" /></p>
+                </details>
+            <details class="details-example">
+                <summary><b>Regra de formatação de data</b></summary>
+                <p>A regra de formatação <b>Data</b> é usada para localizar e realçar células contendo uma determinada data e atendendo a uma das condições de formatação disponíveis:</p> 
+                <ul type="circle">
+                     <li>Ontem</li>
+                      <li>Hoje</li>
+                      <li>Amanhã</li>
+                      <li>Nos últimos 7 dias</li>
+                      <li>Semana passada</li>
+                      <li>Esta semana</li>
+                      <li>Na próxima semana</li>
+                      <li>Mês passado</li>
+                      <li>Este mês</li>
+                      <li>Próximo mês</li>
+               </ul>
+                    <p><img alt="Data da Nova Regra" src="../images/newrule_date.png" /></p>
+                <ul type="disc">
+                     <li>A seção <b>Regra</b> mostra a regra selecionada e a condição de formatação selecionada, clicando na seta para baixo você pode acessar a lista de regras e condições disponíveis.</li>
+                      <li>A seção <b>Formato</b> oferece uma variedade de opções de formatação de células. Você pode escolher um dos formatos disponíveis <b>Predefinições</b></li>
+                </ul>
+                     <p><img alt="Predefinições de formato" src="../images/format_presets.png" /></p>
+                <p>ou</p> 
+                <p>personalize a formatação usando as opções de formato de fonte (negrito, itálico, sublinhado, tachado), cor do texto, cor de preenchimento e bordas. Use a lista suspensa <b>Geral</b> para escolher o formato de número apropriado (Geral, Número, Científico, Contabilidade, Moeda, Data, Hora, Porcentagem). A caixa <b>Visualização</b> mostra como a célula ficará após a formatação. Clique no botão <b>Limpar</b> para excluir toda a formatação.</p>
+                 <p>Clique em <b>OK</b> para confirmar.</p>
+                 <p>O exemplo abaixo ilustra os critérios de formatação predefinidos, como <b>Último mês</b>. Isso formata células contendo datas do mês anterior com um fundo amarelo para destacar as vendas de um período de tempo específico.</p>
+                <p><img alt="Data" src="../images/conditionalformatting/date_example.png" /></p>
+                </details>
+            <details class="details-example">
+                <summary><b>Regra de formatação em branco/erro</b></summary>
+                 <p>A regra de formatação <b>Branco/Erro</b> é usada para localizar e realçar células contendo ou não espaços em branco e erros:</p>
+                <ul type="circle">
+                     <li>Contém espaços em branco</li>
+                      <li>Não contém espaços em branco</li>
+                      <li>Contém erros</li>
+                      <li>Não contém erros</li>
+               </ul>
+                    <p><img alt="Nova regra em branco/erro" src="../images/newrule_blankerror.png" /></p>
+                <ul type="disc">
+                     <li>A seção <b>Regra</b> mostra a regra selecionada e a condição de formatação selecionada, clicando na seta para baixo você pode acessar a lista de regras e condições disponíveis. </li>
+                      <li>A seção <b>Formato</b> oferece uma variedade de opções de formatação de células. Você pode escolher um dos formatos disponíveis <b>Predefinições</b></li>
+                </ul>
+                     <p><img alt="Predefinições de formato" src="../images/format_presets.png" /></p>
+                <p>ou</p>
+                <p>personalize a formatação usando as opções de formato de fonte (negrito, itálico, sublinhado, tachado), cor do texto, cor de preenchimento e bordas. Use a lista suspensa <b>Geral</b> para escolher o formato de número apropriado (Geral, Número, Científico, Contabilidade, Moeda, Data, Hora, Porcentagem). A caixa <b>Visualização</b> mostra como a célula ficará após a formatação. Clique no botão <b>Limpar</b> para excluir toda a formatação.</p>
+                 <p>Clique em <b>OK</b> para confirmar.</p>
+                 <p>O exemplo abaixo ilustra os critérios de formatação predefinidos, como <b>Contém espaços em branco</b>. Isso formata as células em branco na coluna que mostra o número de vendas com um fundo azul claro.</p>
+                <p><img alt="Em branco/erro" src="../images/conditionalformatting/blankerror_example.png" /></p>
+                </details>
+            <details class="details-example">
+                <summary><b>Regra de formatação duplicada/única</b></summary>
+                 <p>A regra de formatação <b>Duplicado/Único</b> é usada para exibir valores duplicados dentro da planilha e o intervalo de células definido pela formatação condicional, as opções disponíveis são:</p> 
+                <ul type="circle">
+                     <li>Duplicar</li>
+                      <li>Único</li>
+               </ul>
+                    <p><img alt="Nova Regra Duplicada/Única" src="../images/newrule_duplicateunique.png" /></p>
+                <ul type="disc">
+                     <li>A seção <b>Regra</b> mostra a regra selecionada e a condição de formatação selecionada, clicando na seta para baixo você pode acessar a lista de regras e condições disponíveis. </li>
+                      <li>A seção <b>Formato</b> oferece uma variedade de opções de formatação de células. Você pode escolher um dos formatos disponíveis <b>Predefinições</b></li>
+                </ul>
+                     <p><img alt="Predefinições de formato" src="../images/format_presets.png" /></p>
+                <p>ou</p>
+                <p>personalize a formatação usando as opções de formato de fonte (negrito, itálico, sublinhado, tachado), cor do texto, cor de preenchimento e bordas. Use a lista suspensa <b>Geral</b> para escolher o formato de número apropriado (Geral, Número, Científico, Contabilidade, Moeda, Data, Hora, Porcentagem). A caixa <b>Visualização</b> mostra como a célula ficará após a formatação. Clique no botão <b>Limpar</b> para excluir toda a formatação.</p>
+                 <p>Clique em <b>OK</b> para confirmar.</p>
+                 <p>O exemplo abaixo ilustra os critérios de formatação predefinidos, como <b>Duplicar</b>. Isso formata contatos duplicados com fundo amarelo.</p>
+                    <p><img alt="Únicos e duplicados" src="../images/conditionalformatting/uniqueduplicates.gif" /></p>
+                </details>
+            <details class="details-example">
+                <summary><b>Formatação de barras de dados</b></summary>
+                 <p>As <b>Barras de dados</b> são usadas para comparar valores na forma de uma barra de diagrama.</p>
+                     <p><span class="big big-databars_diagrams"></span></p>
+                 <p>Por exemplo, compare alturas de montanhas exibindo seu valor padrão em metros (barra verde) e o mesmo valor na faixa de 0 a 100 por cento (barra amarela); percentil quando valores extremos inclinam os dados (barra azul claro); apenas barras em vez de números (barra azul); análise de dados de duas colunas para ver números e barras (barra vermelha).</p>
+                    <p><img alt="Barras de dados" src="../images/conditionalformatting/databars.png" /></p>
+                </details>
+            <details class="details-example">
+                <summary><b>Formatação de escalas de cores</b></summary>
+                 <p>As <b>Escalas de cores</b> são usadas para destacar valores na planilha por meio de uma escala de gradiente.</p>
+                 <p><span class="big big-colorscales"></span></p>
+                 <p>O exemplo abaixo ilustra as colunas de “Laticínios” a “Bebidas” que exibem dados por meio de uma escala de duas cores com variação de amarelo a vermelho; a coluna “Total Sales” exibe dados por meio de uma escala de três cores, do menor valor em vermelho ao maior valor em azul.</p>
+                    <p><img alt="Gradiente" src="../images/conditionalformatting/gradient.png" /></p>
+                </details>
+            <details class="details-example">
+                <summary><b>Formatação de conjuntos de ícones</b></summary>
+                 <p>Os <b>conjuntos de ícones</b> são usados para mostrar os dados exibindo um ícone correspondente na célula que atende aos critérios. O Editor de Planilhas suporta vários conjuntos de ícones:</p>
+                <ul type="circle">
+                      <li>Direcional</li>
+                      <li>Formas</li>
+                      <li>Indicadores</li>
+                      <li>Avaliações</li>
+               </ul>
+               <p><span class="big big-iconsets"></span></p>
+               <p>Abaixo você encontrará exemplos para os casos de formatação condicional de conjunto de ícones mais comuns.</p>
+               <ul>
+                        <li>Em vez de números e valores percentuais, você vê células formatadas com as setas correspondentes mostrando sua receita na coluna “Status” e a dinâmica das tendências futuras na coluna “Tendência”.
+                            <p><img alt="Conjunto de ícones" src="../images/conditionalformatting/iconsetrevenue.png" /></p>
+                        </li>
+                        <li>Em vez de células com números de classificação variando de 1 a 5, a ferramenta de formatação condicional exibe ícones correspondentes do mapa de legenda na parte superior de cada bicicleta na lista de classificação.
+                            <p><img alt="Conjunto de ícones" src="../images/conditionalformatting/iconsetbikerating.png" /></p>
+                        </li>
+                        <li>Em vez de comparar manualmente os dados mensais de dinâmica de lucro, as células formatadas têm uma seta vermelha ou verde correspondente.
+                            <p><img alt="Conjunto de ícones" src="../images/conditionalformatting/iconsettrends.png" /></p>
+                        </li>
+                        <li>Use o sistema de semáforos (círculos vermelho, amarelo e verde) para visualizar a dinâmica de vendas.
+                            <p><img alt="Conjunto de ícones" src="../images/conditionalformatting/iconsettrafficlights.png" /></p>
+                        </li>
+               </ul>                
+               </details>
+            <details class="details-example">
+                <summary><b>Formatação usando fórmulas</b></summary>
+                <p>A formatação <b>baseada em fórmula</b> usa várias fórmulas para filtrar dados de acordo com necessidades específicas.</p>
+                <p><img alt="Nova Fórmula de Regra" src="../images/newrule_formula.png" /></p>
+                <ul>     
+                <li>A seção <b>Regra</b> mostra a regra selecionada e a condição de formatação selecionada, clicando na seta para baixo você pode acessar a lista de regras e condições disponíveis. Use a caixa <b>Selecionar dados</b> para definir o valor da célula com o qual comparar. Use a referência a uma única célula ou a referência com a função de planilha como =SOMA(A1:B5).</li>
+                      <li>A seção <b>Formato</b> oferece uma variedade de opções de formatação de células. Você pode escolher um dos formatos disponíveis <b>Predefinições</b></li>
+                </ul>
+                     <p><img alt="Predefinições de formato" src="../images/format_presets.png" /></p>
+                <p>ou</p> 
+                <p>personalize a formatação usando as opções de formato de fonte (negrito, itálico, sublinhado, tachado), cor do texto, cor de preenchimento e bordas. Use a lista suspensa <b>Geral</b> para escolher o formato de número apropriado (Geral, Número, Científico, Contabilidade, Moeda, Data, Hora, Porcentagem). A caixa <b>Visualização</b> mostra como a célula ficará após a formatação. Clique no botão <b>Limpar</b> para excluir toda a formatação.</p>
+                 <p>Clique em <b>OK</b> para confirmar.</p>
+                 <p>Os exemplos abaixo ilustram as possibilidades de formatação da fórmula.</p>
+                    <p>Sombrear linhas alternativas,</p>
+                    <p><img alt="Baseado em fórmula" src="../images/conditionalformatting/shading.png" /></p>
+                    <p>Compare com um valor de referência (aqui é $ 55) e mostre se é maior (verde) ou menor (vermelho),</p>
+                    <p><img alt="Baseado em fórmula" src="../images/conditionalformatting/comparison.png" /></p>
+                    <p>Destaque as linhas que atendem aos critérios necessários (veja quais metas você deve atingir neste mês, neste caso, é outubro),</p>
+                    <p><img alt="Baseado em fórmula" src="../images/conditionalformatting/shaderows.png" /></p>
+                    <p>Ou destaque apenas linhas exclusivas</p>
+                    <p><img alt="Baseado em fórmula" src="../images/conditionalformatting/shadeunique.png" /></p>
+                </details>
+        <h2>Criar nova regra</h2>
+            <p>Quando você precisar criar uma nova regra para formatação condicional, poderá fazer isso de uma das seguintes maneiras:</p>
+                 <ul>
+                 <li> Vá para a guia <b>Página inicial</b>, clique no botão <b>Formatação condicional</b> <div class = "icon icon-conditionalformatting_button"></div> e escolha <b>Nova regra</b> no menu suspenso.</li>
+                  <li> Clique na guia <b>Configurações da célula</b> na barra lateral direita e clique na seta para baixo do controle <b>Formatação condicional</b> e escolha <b>Nova regra</b> no menu suspenso menu inferior.</li>
+                 <li> Clique com o botão direito do mouse em qualquer célula e escolha <b>Formatação condicional</b> no menu contextual.</li>
+                 </ul>
+            <p>A janela <b>Nova regra de formatação</b> será aberta imediatamente. Defina as opções necessárias para configurar a regra conforme descrito acima e clique em <b>OK</b> para confirmar.</p>
+        <h2>Gerenciar regras de formatação condicional</h2>
+             <p>Depois de configurar as regras para formatação condicional, você pode editá-las, excluí-las e visualizá-las facilmente usando a opção <b>Gerenciar regra</b> clicando no botão <b>Formatação condicional</b> <span class="icon icon-conditionalformatting_button"></span> na guia <b>Página inicial</b> ou no controle <b>Formatação condicional</b> na barra lateral direita <b>Configurações da célula</b> aba. A janela <b>Formatação condicional</b> é exibida:</p>
+            <p><img alt="Gerenciar regras" src="../images/managerules.png" /><p>
+            <p><b>Mostrar regras de formatação para</b> permite escolher as regras que deseja exibir:<p>
+        <ul type="circle">
+                     <li>Seleção atual</li>
+                      <li>Esta planilha</li>
+                      <li>Esta tabela</li>
+                      <li>Este eixo</li>
+        </ul>
+        <p> Todas as regras encontradas no intervalo selecionado serão mostradas em ordem de precedência (de cima para baixo) em <b>Regras</b>. O <b>Aplicar a</b> mostra o intervalo ao qual a regra é aplicada. Você pode alterar o intervalo clicando no ícone <b>Selecionar dados</b> <span class="icon icon-selectdata_icon"></extensão>. O <b>Formato</b> mostra a regra de formatação aplicada.</p>
+        <ul>
+        <li>Use o <b>botão Novo</b> para adicionar uma nova regra.</li>
+         <li>Use o botão <b>Editar</b>, se você quiser editar a regra existente, a janela <b>Editar regra de formatação</b> será aberta. Edite a regra conforme julgar apropriado e clique em <b>OK</b>.</li>
+         <li>Use as setas para cima e para baixo para alterar o local na ordem de precedência.</li>
+         <li>Clique em <b>Excluir</b> para remover a regra.</li>
+          <li>Clique em <b>OK</b> para confirmar.</li>
+        </ul>
+        <h2>Editar formatação condicional</h2>
+            <details class="details-example">
+            <summary><b>O valor de edição é, superior/inferior, média, texto, data, em branco/erro, duplicado/exclusivo, fórmula</b></summary>
+             <p>A janela <b>Editar regra de formatação</b> para <b>O valor é</b>, <b>Topo/baixo</b>, <b>Média</b>, <b>Texto </b>, <b>Data</b>, <b>Em branco/Erro</b>, <b>Duplicado/Único</b>, <b>Fórmula</b> oferece uma variedade de configurações regulares:</p>
+            <p><img alt="Editar valor é regra" src="../images/editrule_valueis.png" /></p>
+        <ul type="disc">
+                     <li>Clique em <b>Regra</b> para alterar a regra e a condição de formatação aplicada anteriormente;</li>
+                      <li>Use a caixa <b>Selecionar dados</b> para alterar o intervalo de células ao qual se referir (para <i>Valor é</i>, <i>Texto e Fórmula</i>)</li>
+                      <li>Use as opções de <b>Fonte</b> e formato de célula (<i>Negrito</i>, <i>Itálico</i>, <i>Sublinhado</i>, <i>Riscado</i>), <i>Cor do texto</i>, <i>Cor do preenchimento</i> e <i>Bordas</i>. </li>
+                      <li>Clique na lista suspensa <b>Geral</b> para escolher o formato de número apropriado (<i>Geral</i>, <i>Número</i>, <i>Científico</i> , <i>Contabilidade</i>, <i>Moeda</i>, <i>Data</i>, <i>Hora</i>, <i>Porcentagem</i>).</li >
+                      <li>A caixa <b>Visualizar</b> mostra como a célula ficará após a formatação.</li>
+                      <li>Clique em OK para confirmar.</li>
+        </ul>
+        </details>
+        <details class="details-example">
+            <summary><b>Editando barras de dados</b></summary>
+             <p>A janela <b>Editar regra de formatação</b> para <b>Barra de dados</b> oferece as seguintes opções:</p>
+            <p><img alt="Editar formatação da barra de dados" src="../images/editrule_databar.png" /></p>
+        <ul type="disc">
+             <li><b>Regra</b> para alterar a regra e a condição de formatação aplicada anteriormente;</li>
+            <li>
+                <b>Mínimo/Máximo</b> para definir o tipo de valores mínimo e máximo para barras de dados se você quiser focar nas diferenças. Os tipos de valor máximo/mínimo:
+                <ul>
+                    <li>Mínimo/Máximo</li>
+                     <li>Número</li>
+                     <li>Porcentagem</li>
+                     <li>Fórmula</li>
+                     <li>Percentual</li>
+                     <li>Automático</li>
+                </ul>
+                <p>Escolha <b>Automático</b> para definir o valor mínimo como zero e o valor máximo como o maior número no intervalo. <b>Automático</b> é a opção padrão.</p>
+                 <p>Clique na caixa <b>Selecionar dados</b> para alterar o intervalo de células para os valores mínimo/máximo.</p>
+                </li>              
+              <li><b>Aparência da barra</b>
+                   <p>Personalize a aparência da <b>Barra de dados</b> escolhendo o tipo e a cor do preenchimento, da borda e da direção da barra.</p>
+                   <ul>
+                       <li>Existem duas opções de tipo de <b>Preenchimento</b>: preenchimento <b>Sólido</b> e preenchimento <b>Gradiente</b>. Use a seta para baixo abaixo para selecionar a cor de preenchimento das barras que representam valores positivos e negativos.</li>
+                       <li>Existem duas opções de tipo <b>Borda</b>: <b>Sólido</b> e <b>Nenhum</b>. Use a seta para baixo abaixo para selecionar a cor da borda das barras que representam valores positivos e negativos.</li>
+                       <li>Ative a caixa de seleção <b>Igual ao positivo</b> para exibir positivo e negativo usando a mesma cor. As configurações de cores para valores <b>Negativos</b> serão desativadas quando esta caixa estiver marcada.</li>
+                       <li>Use <b>Direção da barra</b> para alterar a direção das barras de dados. <b>Contexto</b> é a opção padrão, mas você pode escolher <b>da esquerda para a direita</b> ou <b>da direita para a esquerda</b> dependendo de suas preferências de representação de dados.</li>
+                       <li>Ative a caixa de seleção <b>Mostrar apenas a barra</b> para exibir apenas as barras de dados nas células e ocultar os valores.</li>
+                  </ul>
+              </li>
+              <li><b>Eixo</b>
+               <p>Selecione a <b>Posição</b> do eixo da barra de dados em relação ao ponto médio da célula para separar valores positivos e negativos. Existem três opções de posição do eixo: <b>Automático</b>, <b>Ponto médio da célula</b> e <b>Nenhum</b>. Clique na seta para baixo da caixa de cores para definir a cor do eixo.</p>
+               </li>
+               <li>A caixa <b>Visualizar</b> mostra como a célula ficará após a formatação.</li>
+               <li>Clique em OK para confirmar.</li>
+        </ul>
+        </details>
+        <details class="details-example">
+            <summary><b>Editando Escalas de Cores</b></summary>
+        <details class="details-example">
+            <summary><b>Editando a formatação de 2 escalas de cores</b></summary>
+             <p>A janela <b>Editar regra de formatação</b> para <b>2 escalas de cores</b> oferece as seguintes opções de formatação:</p>
+            <p><img alt="Editar 2 Formatação de Escala de Cores" src="../images/editrule_2color.png" /></p>
+        <ul type="disc">
+             <li>Clique em <b>Regra</b> para alterar a regra e a condição de formatação aplicada anteriormente;</li>
+             <li>
+                 Clique em <b>Minpoint/Maxpoint</b> para definir o tipo de valores para os pontos mínimo e máximo da escala de cores se você quiser focar nas diferenças. Os tipos de valor minpoint/maxpoint:
+                <ul>
+                    <li>Mínimo/Máximo</li>
+                     <li>Número</li>
+                     <li>Porcentagem</li>
+                     <li>Fórmula</li>
+                     <li>Percentual</li>
+                </ul>
+                <p><b>Mínimo/Máximo</b> é a opção padrão.</p>
+             </li>
+         <li>Use a caixa <b>Selecionar dados</b> para alterar o intervalo de células para os pontos mínimo e máximo.</li>
+         <li>Use a seta para baixo abaixo para selecionar a cor de cada escala.</li>
+         <li>A caixa <b>Visualizar</b> mostra como a célula ficará após a formatação.</li>
+         <li>Clique em <b>OK</b> para confirmar.</li>
+        </ul>
+        </details>
+        <details class="details-example">
+            <summary><b>Editando a formatação de 3 escalas de cores</b></summary>
+             <p>A janela <b>Editar regra de formatação</b> para <b>Escala de cores 3</b> oferece as seguintes opções de formatação:</p>
+            <p><img alt="Edite a formatação da escala de 3 cores" src="../images/editrule_3color.png" /></p>
+        <ul type="disc">
+             <li>Clique em <b>Regra</b> para alterar a regra e a condição de formatação aplicada anteriormente;</li>
+             <li>
+                 Clique em <b>Minpoint/Midpoint/Maxpoint</b> para definir o tipo de valores para os pontos mínimo, médio e máximo da escala de cores se você quiser focar nas diferenças.
+                 <p>Os tipos de valor minpoint/maxpoint:</p>
+                <ul>
+                    <li>Mínimo/Máximo</li>
+                     <li>Número</li>
+                     <li>Porcentagem</li>
+                     <li>Fórmula</li>
+                     <li>Percentual</li>
+                </ul>
+                <p>Os tipos de valor de ponto médio:</p>
+                <ul>
+                    <li>Número</li>
+                     <li>Porcentagem</li>
+                     <li>Fórmula</li>
+                     <li>Percentual</li>
+                </ul>
+                <p><b>Mínimo/Percentull/Máximo</b> é a opção padrão para a formatação <b>3 Escalas de Cores</b>.</p>
+             </li>
+             <li>Use a caixa <b>Selecionar dados</b> para alterar o intervalo de células para os pontos mínimo, médio e máximo.</li>
+             <li>Use a seta para baixo abaixo para selecionar a cor de cada escala.</li>
+             <li>A caixa <b>Visualizar</b> mostra como a célula ficará após a formatação.</li>
+             <li>Clique em <b>OK</b> para confirmar.</li>
+            </ul>
+            </details>
+            </details>
+        <details class="details-example">
+            <summary><b>Editando conjuntos de ícones</b></summary>
+             <p>A janela <b>Editar regra de formatação</b> para <b>conjuntos de ícones</b> oferece as seguintes opções de formatação:</p>
+            <p><img alt="Editar a Formatação dos Conjuntos de Ícones" src="../images/editrule_iconsets.png" /></p>
+        <ul type="disc">
+                     <li>Clique em <b>Regra</b> para alterar a regra e a condição de formatação aplicada anteriormente;</li>
+                      <li>Clique em <b>Estilo do ícone</b> para personalizar o estilo dos ícones para a regra criada.</li>
+                      <li>Ative <b>Mostrar apenas ícone</b> para exibir apenas ícones nas células e ocultar valores.</li>
+                      <li>Ative <b>Inverter ordem dos ícones</b> para alterar a ordem dos ícones e organizá-los do valor mais baixo para o mais alto. Por padrão, os ícones são organizados do valor mais alto para o mais baixo.</li>
+                      <li>Defina a regra para cada ícone e ajuste os operadores de comparação (<i>maior ou igual a</i>, <i>maior que</i>), valores limite e tipo de valor (<i>Número</i>, <i>Porcentagem</i>, <i>Fórmula</i>, <i>Percentil</i>) para organizar os valores em sequência de cima para baixo. Por padrão, os valores são divididos igualmente.</li>
+                      <li>Clique em <b>OK</b> para confirmar.</li>
+        </ul>
+        </details>
+        <h2>Limpar formatação condicional</h2>
+             <p>Para limpar toda a formatação condicional, vá para a guia <b>Página inicial</b>, clique no botão <b>Formatação condicional</b> <span class="icon icon-conditionalformatting_button"></span> ou clique no controle <b>Formatação condicional</b> da guia <b>Configurações da célula</b> na barra lateral direita e, em seguida, clique em <b>Limpar regras</b> no menu suspenso e escolha uma das ações apropriadas:</p>
+        <ul type="circle">
+                     <li>Seleção atual</li>
+                      <li>Esta planilha</li>
+                      <li>Esta tabela</li>
+                      <li>Este eixo</li>
+        </ul>
+			<p class="note"><b>Observe</b> que este guia contém informações gráficas do Microsoft Office <a href="https://download.microsoft.com/download/e/4/0/e4089f75-cdb0-4658-9d34-bfa3f7b48815/Conditional%20Formatting%20examples.xlsx" onclick="onhyperlinkclick(this)">Amostras e diretrizes de formatação condicional</a> pasta de trabalho. Experimente a exibição de regras mencionada acima baixando a pasta de trabalho e abrindo-a no Editor de Planilhas.</p>
+			
+		</div>
+	</body>
+</html>

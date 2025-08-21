@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>OR Function</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>OR Function</h1>
+			<p>The <b>OR</b> function is one of the <a href="../UsageInstructions/InsertFunction.htm#logical" onclick="onhyperlinkclick(this)">logical functions</a>. It is used to check if the logical value you enter is TRUE or FALSE. The function returns FALSE if all the arguments are FALSE.</p>
+			<h3>Syntax</h3> 
+			<p><b><em>OR(logical1, [logical2], ...)</em></b></p> 
+			<p>The <b>OR</b> function has the following arguments:</p>
+			<table style="width: 40%">
+                <tr>
+                    <th style="background-color: #f4f4f4" width="150ch"><b>Argument</b></th>
+                    <th style="background-color: #f4f4f4"><b>Description</b></th>
+                </tr>
+                <tr>
+                    <td><b><em>logical1/2/n</em></b></td>
+                    <td>A condition that you want to check if it is TRUE or FALSE</td>
+                </tr>
+            </table>
+            <h3>Notes</h3>
+			<p>You can enter up to <b>255</b> logical values.</p>
+			<p><a href="../UsageInstructions/InsertFunction.htm#applyfunction" onclick="onhyperlinkclick(this)">How to apply</a> the <b>OR</b> function.</p>			
+			<p>The function returns TRUE if at least one of the argument is TRUE.</p>
+			<h3>Examples</h3>
+			<p>There are three arguments: <em>logical1</em> = <b>A1&lt;10</b>, <em>logical2</em> = <b>34&lt;10</b>, <em>logical3</em> = <b>50&lt;10</b>, where <b>A1</b> is <b>12</b>. All these logical expressions are <b>FALSE</b>. So the function returns <b>FALSE</b>.</p>
+			<p><img alt="OR Function: FALSE" src="../images/orfalse.png" /></p>
+			<p>If we change the <b>A1</b> value from <b>12</b> to <b>2</b>, the function returns <b>TRUE</b>:</p>
+			<p><img alt="OR Function: TRUE" src="../images/ortrue.png" /></p>
+		</div>
+	</body>
+</html>

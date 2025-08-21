@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Função XOU</title>
+		<meta charset="utf-8" />
+		<meta name="descricao" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>Função XOU</h1>
+			<p>A função <b>XOU</b> é uma das funções lógicas. É utilizado para retornar um Ou Exclusivo lógico de todos os argumentos. A função retorna VERDADEIRO quando o número de entradas VERDADEIRO é ímpar e FALSO quando o número de entradas VERDADEIRO é par.</p>
+			<p>A sintaxe da função <b>XOU</b> é:</p>
+			<p style="text-indent: 150px;"><b><em>XOU(lógica1 [, lógica2], ...)</em></b></p>
+			<p>onde <b><em>lógica1</em></b> é um valor inserido manualmente ou incluído na célula à qual você faz referência.</p>
+			<p>Para aplicar a função <b>XOU</b>,</p>
+			<ol>
+			<li>selecione a célula onde deseja exibir o resultado,</li>
+			<li>clique no ícone <b>Inserir função</b> <div class = "icon icon-insertfunction"></div> situado na barra de ferramentas superior,
+				<br />ou clique com o botão direito em uma célula selecionada e selecione a opção <b>Inserir Função</b> no menu,
+				<br />ou clique no ícone <div class = "icon icon-function"></div> situado na barra de fórmulas,
+			</li>
+			<li>selecione o grupo de funções <b>Lógica</b> na lista,</li>
+			<li>clique na função <b>XOU</b>,</li>
+			<li>digite os argumentos necessários separando-os por vírgula,
+			<p class="note"><b>Nota</b>: você pode inserir até <b>254</b> valores lógicos.</p>
+			</li>
+			<li>pressione o botão <b>Entrar</b>.</li>
+			</ol>
+			<p>O resultado será exibido na célula selecionada.</p>
+			<p><em>Por exemplo:</em></p>
+			<p>Existem dois argumentos: <em>lógica1</em> = <b>1&gt;0</b>, <em>lógica2</em> = <b>2&gt;0</b>. O número de entradas <b>VERDADEIRO</b> é par, então a função retorna <b>FALSO</b>.</p>
+			<p style="text-indent: 150px;"><img alt="Função XOU: FALSE" src="../images/xorfalse.png" /></p>
+			<p>Existem dois argumentos: <em>lógica1</em> = <b>1&gt;0</b>, <em>lógica2</em> = <b>2&lt;0</b>. O número de entradas <b>VERDADEIRO</b> é ímpar, então a função retorna <b>VERDADEIRO</b>.</p>
+			<p style="text-indent: 150px;"><img alt="Função XOU: VERDADEIRO" src="../images/xortrue.png" /></p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Inserir fórmulas de matriz</title>
+		<meta charset="utf-8" />
+        <meta name="descrição" content="Inserir fórmulas de matriz" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Inserir fórmulas de matriz</h1>
+			<p>O <a href="https://www.onlyoffice.com/pt/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Planilhas</b></a> permite que você use fórmulas de matriz. As fórmulas de matriz garantem consistência entre as fórmulas em uma planilha, pois você pode inserir uma única fórmula de matriz em vez de várias fórmulas usuais, simplificam o trabalho com grande quantidade de dados, permitem preencher rapidamente uma planilha com dados e muito mais.</p >
+             <p>Você pode inserir fórmulas e funções integradas como fórmulas de matriz para:</p>
+            <ul>
+                <li>realizar vários cálculos de uma só vez e exibir um único resultado ou</li>
+                 <li>retorna um intervalo de valores exibidos em várias linhas e/ou colunas.</li>
+            </ul>
+            <p>Também existem funções especialmente designadas que podem retornar vários valores. Se você inseri-los pressionando <b>Enter</b>, eles retornam um único valor. Se você selecionar um intervalo de saída de células para exibir os resultados e inserir uma função pressionando <b>Ctrl + Shift + Enter</b>, ele retornará um intervalo de valores (o número de valores retornados depende do tamanho do faixa de saída previamente selecionada). A lista abaixo contém links para descrições detalhadas dessas funções.</p>
+            <details class="details-example">
+                <summary><b>Funções de matriz</b></summary>
+                <ul>
+                    <li><a href="../Functions/cell.htm" onclick="onhyperlinkclick(this)">CÉLULA</a></li>
+                     <li><a href="../Functions/column.htm" onclick="onhyperlinkclick(this)">COLUNA</a></li>
+                     <li><a href="../Functions/formulatext.htm" onclick="onhyperlinkclick(this)">FORMULATEXT</a></li>
+                     <li><a href="../Functions/frequency.htm" onclick="onhyperlinkclick(this)">FREQUÊNCIA</a></li>
+                     <li><a href="../Functions/growth.htm" onclick="onhyperlinkclick(this)">CRESCIMENTO</a></li>
+                     <li><a href="../Functions/hyperlink.htm" onclick="onhyperlinkclick(this)">HYPERLINLK</a></li>
+                     <li><a href="../Functions/indirect.htm" onclick="onhyperlinkclick(this)">INDIRETO</a></li>
+                     <li><a href="../Functions/index.htm" onclick="onhyperlinkclick(this)">ÍNDICE</a></li>
+                     <li><a href="../Functions/isformula.htm" onclick="onhyperlinkclick(this)">ÉFORMULA</a></li>
+                     <li><a href="../Functions/linest.htm" onclick="onhyperlinkclick(this)">PROJ.LIN</a></li>
+                     <li><a href="../Functions/logest.htm" onclick="onhyperlinkclick(this)">PROJ.LOG</a></li>
+                     <li><a href="../Functions/minverse.htm" onclick="onhyperlinkclick(this)">MATRIZ.INVERSO</a></li>
+                     <li><a href="../Functions/mmult.htm" onclick="onhyperlinkclick(this)">MATRIZ.MULT</a></li>
+                     <li><a href="../Functions/munit.htm" onclick="onhyperlinkclick(this)">MUNIT</a></li>
+                     <li><a href="../Functions/offset.htm" onclick="onhyperlinkclick(this)">DESLOC</a></li>
+                     <li><a href="../Functions/randarray.htm" onclick="onhyperlinkclick(this)">MATRIZALEATÓRIA</a></li>
+                     <li><a href="../Functions/row.htm" onclick="onhyperlinkclick(this)">LINHA</a></li>
+                     <li><a href="../Functions/transpose.htm" onclick="onhyperlinkclick(this)">TRANSPOR</a></li>
+                     <li><a href="../Functions/trend.htm" onclick="onhyperlinkclick(this)">TENDÊNCIA</a></li>
+                     <li><a href="../Functions/unique.htm" onclick="onhyperlinkclick(this)">ÚNICO</a></li>
+                     <li><a href="../Functions/xlookup.htm" onclick="onhyperlinkclick(this)">PROCV</a></li>
+                </ul>  
+            </details>
+            <h3>Inserir fórmulas de matriz</h3>
+             <p>Para inserir uma fórmula de matriz,</p>
+			<ol>
+				<li>Selecione um intervalo de células onde deseja exibir os resultados.
+                    <p><img alt="Inserir fórmulas de matriz" src="../images/array3.png" /></p>
+                </li>
+                <li>Insira a fórmula que deseja usar na barra de fórmulas, especificando os argumentos necessários entre parênteses <b>()</b>.
+                    <p><img alt="Inserir fórmulas de matriz" src="../images/array4.png" /></p>
+                </li>
+				<li>Pressione a combinação de teclas <b>Ctrl + Shift + Enter</b>.
+                    <p><img alt="Inserir fórmulas de matriz" src="../images/array5.png" /></p>
+                </li>
+			</ol>
+            <p>Os resultados serão exibidos no intervalo de células selecionado e a fórmula na barra de fórmulas será automaticamente colocada entre chaves <b>{ }</b> para indicar que é uma fórmula de matriz. Por exemplo, <b>{=ÚNICO(B2:D6)}</b>. Essas chaves não podem ser inseridas manualmente.</p>
+             <h3>Crie uma fórmula de matriz de célula única</h3>
+             <p>O exemplo a seguir ilustra o resultado da fórmula de matriz exibida em uma única célula. Selecione uma célula, insira <em>=SOMA(C2:C11*D2:D11)</em> e pressione <b>Ctrl + Shift + Enter</b>.</p>
+            <p><img alt="Inserir fórmulas de matriz" src="../images/array1.png" /></p>
+            <h3>Crie uma fórmula de matriz de várias células</h3>
+             <p>O exemplo a seguir ilustra os resultados da fórmula de matriz exibida em um intervalo de células. Selecione um intervalo de células, digite <em>=C2:C11*D2:D11</em> e pressione <b>Ctrl + Shift + Enter</b>.</p>
+            <p><img alt="Inserir fórmulas de matriz" src="../images/array2.png" /></p>
+            <h3>Editar fórmulas de matriz</h3>
+             <p>Toda vez que você editar uma fórmula de matriz inserida (por exemplo, alterar argumentos), será necessário pressionar a combinação de teclas <b>Ctrl + Shift + Enter</b> para salvar as alterações.</p>
+             <p>O exemplo a seguir explica como expandir uma fórmula de matriz de várias células ao adicionar novos dados. Selecione todas as células que contêm uma fórmula de matriz, bem como células vazias ao lado de novos dados, edite argumentos na barra de fórmulas para que incluam novos dados e pressione <b>Ctrl + Shift + Enter</b>.</p>
+            <p><img alt="Editar fórmulas de matriz" src="../images/array6.png" /></p>
+            <p>Se você deseja aplicar uma fórmula de matriz de várias células a um intervalo menor de células, é necessário excluir a fórmula de matriz atual e inserir uma nova fórmula de matriz.</p>
+             <p>Uma parte da matriz não pode ser modificada ou excluída. Se você tentar editar, mover ou excluir uma única célula dentro da matriz ou inserir uma nova célula na matriz, receberá o seguinte aviso: <em>Você não pode alterar parte de uma matriz</em>.</p >
+             <p>Para excluir uma fórmula de matriz, selecione todas as células que contêm a fórmula de matriz e pressione <b>Excluir</b>. Como alternativa, selecione a fórmula de matriz na barra de fórmulas, pressione <b>Delete</b> e pressione <b>Ctrl + Shift + Enter</b>.</p>
+            <details class="details-example">
+                <summary><b>Exemplos de uso de fórmula de matriz</b></summary>
+                 <p>Esta seção fornece alguns exemplos de como usar fórmulas de matriz para executar determinadas tarefas.</p>
+                 <p><b>Contar um número de caracteres em um intervalo de células</b></p>
+                <p>Você pode usar a seguinte fórmula de matriz, substituindo o intervalo de células no argumento pelo seu: <b>=SOMA(NÚM.CARACT(B2:B11))</b>. O <a href="../Functions/len.htm" onclick="onhyperlinkclick(this)">NÚM.CARACT</a> A função calcula o comprimento de cada string de texto no intervalo de células. O <a href="../Functions/sum.htm" onclick="onhyperlinkclick(this)">SOMA</a> função adiciona os valores juntos.</p>
+                <p><img alt="Usar fórmulas de matriz" src="../images/array7.png" /></p>
+                <p>Para obter o número médio de caracteres, substitua <a href="../Functions/sum.htm" onclick="onhyperlinkclick(this)">SOMA</a> com <a href="../Functions/average.htm" onclick="onhyperlinkclick(this)">MÉDIA</a>.</p>
+                <p><b>Encontre a string mais longa em um intervalo de células</b></p>
+                 <p>Você pode usar a seguinte fórmula de matriz, substituindo os intervalos de células nos argumentos pelos seus próprios: <b>=ÍNDICE(B2:B11,CORRESP(MÁXIMO(NÚM.CARACT(B2:B11)),NÚM.CARACT(B2:B11),0),1)</b>. O <a href="../Functions/len.htm" onclick="onhyperlinkclick(this)">NÚM.CARACT</a> A função calcula o comprimento de cada string de texto no intervalo de células. A função <a href="../Functions/max.htm" onclick="onhyperlinkclick(this)">MÁXIMO</a> calcula o maior valor. O <a href="../Functions/match.htm" onclick="onhyperlinkclick(this)">MATCH</a> A função encontra o endereço da célula com a string mais longa. A função <a href="../Functions/index.htm" onclick="onhyperlinkclick(this)">ÍNDECE</a> retorna o valor da célula encontrada.</p>
+                <p><img alt="Usar fórmulas de matriz" src="../images/array8.png" /></p>
+                <p>Para encontrar a string mais curta, substitua <a href="../Functions/max.htm" onclick="onhyperlinkclick(this)">MÁXIMO</a> com <a href="../Functions/min.htm" onclick="onhyperlinkclick(this)">MÍNIMO</a>.</p>
+                <p><b>Somar valores com base em condições</b></p>
+                <p>Para somar valores maiores que um número especificado (2 neste exemplo), você pode usar a seguinte fórmula de matriz, substituindo os intervalos de células nos argumentos pelos seus próprios: <b>=SOMA(SE(C2:C11>2,C2:C11))</b>. O <a href="../Functions/if.htm" onclick="onhyperlinkclick(this)">SE</a> A função cria uma matriz de valores positivos e falsos. O <a href="../Functions/sum.htm" onclick="onhyperlinkclick(this)">SOMA</a> função ignora valores falsos e adiciona os valores positivos juntos.</p>
+                <p><img alt="Usar fórmulas de matriz" src="../images/array9.png" /></p>
+            </details>
+		</div>
+	</body>
+</html>

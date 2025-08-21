@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Slayttaki nesneleri işleme</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Move, rotate, resize and reshape autoshapes, images, charts." />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+        <div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+            </div>
+            <h1>Slayttaki nesneleri işleme</h1>
+            <p><a target="_blank" href="https://www.onlyoffice.com/presentation-editor.aspx" onclick="onhyperlinkclick(this)"><b>Sunum D&uuml;zenleyicide</b></a>, bir slayttaki farklı nesneleri &ouml;zel tutama&ccedil;ları kullanarak manuel olarak yeniden boyutlandırabilir, taşıyabilir ve d&ouml;nd&uuml;rebilirsiniz. Bazı nesnelerin boyutlarını ve konumunu tam olarak sağ kenar &ccedil;ubuğunu veya <b>Gelişmiş Ayarlar</b> penceresi kullanarak da belirtebilirsiniz.</p>
+            <p class="note">
+                <b>Not</b>: Nesnelerle &ccedil;alışırken kullanılabileceğiniz klavye kısayollarının listesini <a href="../HelpfulHints/KeyboardShortcuts.htm#workwithobjects" onclick="onhyperlinkclick(this)">burada</a> bulabilirsiniz.
+            </p>
+            <h3>Nesneleri yeniden boyutlandırma</h3>
+            <p><b>Otomatik şekil/g&ouml;r&uuml;nt&uuml;/grafik/tablo/metin kutusu</b> boyutunu değiştirmek i&ccedil;in şekil kenarlarında bulunan k&uuml;&ccedil;&uuml;k kareleri <span class="icon icon-resize_square"></span> s&uuml;r&uuml;kleyin. Yeniden boyutlandırırken se&ccedil;ilen nesnenin orijinal oranlarını korumak i&ccedil;in <b>Shift</b> tuşuna basın ve k&ouml;şe simgelerinden birini s&uuml;r&uuml;kleyin.</p>
+            <p><span class="big big-maintain_proportions"></span></p>
+            <p>Bir <b>grafiğin</b> tam genişliğini ve y&uuml;ksekliğini belirtmek i&ccedil;in bir slaytta se&ccedil;in ve etkinleştirilecek olan sağ kenar &ccedil;ubuğunun <b>Boyut</b> b&ouml;l&uuml;m&uuml;n&uuml; kullanın.</p>
+            <p>Bir <b>g&ouml;r&uuml;nt&uuml;n&uuml;n</b> veya <b>otomatik şeklin</b> tam boyutlarını belirtmek i&ccedil;in slaytta gerekli nesneye sağ tıklayın ve men&uuml;den <b>G&ouml;r&uuml;nt&uuml;/Şekil Gelişmiş Ayarlar</b> se&ccedil;eneğini se&ccedil;in. <b>Gelişmiş Ayarlar</b> penceresinin <b>Boyut</b> sekmesinde gerekli değerleri belirtin ve <b>Tamam</b> d&uuml;ğmesine basın.</p>
+            <h3>Otomatik şekilleri yeniden şekillendirme</h3>
+            <p>Şekilli oklar veya belirtme &ccedil;izgileri gibi bazı şekilleri değiştirirken, sarı renkli baklava şeklindeki <span class="icon icon-yellowdiamond"></span> simgesi de kullanabilir. Şeklin bazı y&ouml;nlerini, &ouml;rneğin bir ok başının uzunluğunu ayarlamanızı sağlar.</p>
+            <p><span class="big big-reshaping"></span></p>
+            <p>Bir otomatik şekli yeniden şekillendirmek i&ccedil;in&nbsp;<b>bağlam men&uuml;s&uuml;nden</b> <b>Noktaları D&uuml;zenle</b> se&ccedil;eneğini kullanın.</p>
+            <p><b>Noktaları D&uuml;zenle</b> se&ccedil;eneği, şeklinizin eğriliğini &ouml;zelleştirmek veya değiştirmek i&ccedil;in kullanılır.</p>
+            <ol>
+                <li>
+                    Bir şeklin d&uuml;zenlenebilir bağlantı noktalarını etkinleştirmek i&ccedil;in şekle sağ tıklayın ve men&uuml;den <b>Nokta D&uuml;zenle</b> se&ccedil;eneğini se&ccedil;in. Etkin hale gelen siyah kareler iki &ccedil;izginin birleştiği noktalardır ve kırmızı &ccedil;izgi şeklin ana hatlarını &ccedil;izer. Noktayı yeniden konumlandırmak ve şeklin dış hatlarını değiştirmek i&ccedil;in tıklayın ve s&uuml;r&uuml;kleyin.
+                    <p><img alt="Noktaları D&uuml;zenle Men&uuml;s&uuml;" src="../images/editpoints_rightclick.png" /></p>
+                </li>
+                <li>
+                    Bağlantı noktasına tıkladığınızda, u&ccedil;larında beyaz kareler olan iki mavi &ccedil;izgi g&ouml;r&uuml;necektir. Bunlar, bir eğri oluşturmanıza ve bir eğrinin d&uuml;zg&uuml;nl&uuml;ğ&uuml;n&uuml; değiştirmenize izin veren Bezier tutama&ccedil;larıdır.
+                    <p><span class="big big-editpoints_example"></span></p>
+                </li>
+                <li>
+                    Bağlantı noktaları etkin olduğu s&uuml;rece bunları ekleyebilir ve silebilirsiniz:
+                    <ul>
+                        <li><b>Şekle nokta eklemek i&ccedil;in</b> <b>Ctrl</b> tuşuna basın ve bağlantı noktası eklemek istediğiniz konumu tıklayın.</li>
+                        <li><b>Bir noktayı silmek i&ccedil;in</b> Ctrl tuşuna basın ve gereksiz noktayı tıklayın.</li>
+                    </ul>
+                </li>
+            </ol>
+                <h3>Nesneleri taşıma</h3>
+            <p>
+                <b>Otomatik şekil/g&ouml;r&uuml;nt&uuml;/grafik/tablo/metin kutusu</b> konumunu değiştirmek i&ccedil;in imlecinizi nesnenin &uuml;zerine getirdikten sonra g&ouml;r&uuml;nen <span class="icon icon-arrow"></span> simgesini kullanın.
+                Fare d&uuml;ğmesini bırakmadan nesneyi gerekli konuma s&uuml;r&uuml;kleyin. Nesneyi bir piksellik artışlarla taşımak i&ccedil;in <b>Ctrl</b> tuşuna basın ve klavye oklarını kullanın.
+                Nesneyi tamamen yatay/dikey olarak hareket ettirmek ve d&uuml;şey y&ouml;nde hareket etmesini &ouml;nlemek i&ccedil;in s&uuml;r&uuml;klerken <b>Ctrl</b> tuşuna basın.
+            </p>
+            <p>Bir <b>g&ouml;r&uuml;nt&uuml;n&uuml;n</b> tam boyutlarını belirtmek i&ccedil;in slaytta gerekli nesneye sağ tıklayın ve men&uuml;den <b>G&ouml;r&uuml;nt&uuml; Gelişmiş Ayarları</b> se&ccedil;eneğini se&ccedil;in. <b>Gelişmiş Ayarlar</b> penceresinin <b>Konum</b> sekmesinde gerekli değerleri belirtin ve <b>Tamam</b> d&uuml;ğmesine basın.</p>
+            <h3>Nesneleri d&ouml;nd&uuml;rme</h3>
+            <p><b>Otomatik şekli/g&ouml;r&uuml;nt&uuml;y&uuml;/metin kutusunu</b> manuel olarak d&ouml;nd&uuml;rmek i&ccedil;in fare imlecini d&ouml;nd&uuml;rme tutamacının <span class="icon icon-greencircle"></span> &uuml;zerine getirin ve saat y&ouml;n&uuml;nde veya saat y&ouml;n&uuml;n&uuml;n tersine s&uuml;r&uuml;kleyin. D&ouml;n&uuml;ş a&ccedil;ısını 15 derecelik artışlarla sınırlamak i&ccedil;in d&ouml;nd&uuml;r&uuml;rken <b>Shift</b> tuşuna basın.</p>
+            <p>Nesneyi saat y&ouml;n&uuml;n&uuml;n tersine/saat y&ouml;n&uuml;nde 90 derece d&ouml;nd&uuml;rmek veya nesneyi yatay/dikey olarak &ccedil;evirmek i&ccedil;in gerekli nesneyi se&ccedil;tiğinizde etkinleştirilecek olan sağ kenar &ccedil;ubuğunun <b>D&ouml;nd&uuml;rme</b> b&ouml;l&uuml;m&uuml;n&uuml; kullanabilirsiniz. A&ccedil;mak i&ccedil;in sa&uuml;daki <b>Şekil ayarları</b> <span class="icon icon-shape_settings_icon"></span> simgesine ya da <b>G&ouml;r&uuml;nt&uuml; ayarları</b> <span class="icon icon-image_settings_icon"></span> simgesine tıklayın. Aşağıdaki işlemler i&ccedil;in d&uuml;ğmelerden birine tıklayın:</p>
+            <ul>
+                <li><div class = "icon icon-rotatecounterclockwise"></div> Nesneyi saat y&ouml;n&uuml;n&uuml;n tersine 90 derece d&ouml;nd&uuml;rmek i&ccedil;in</li>
+                <li><div class = "icon icon-rotateclockwise"></div> Nesneyi saat y&ouml;n&uuml;nde 90 derece d&ouml;nd&uuml;rmek i&ccedil;in</li>
+                <li><div class = "icon icon-fliplefttoright"></div> Nesneyi yatay olarak &ccedil;evirmek i&ccedil;in (soldan sağa)</li>
+                <li><div class = "icon icon-flipupsidedown"></div> Nesneyi dikey olarak &ccedil;evirmek i&ccedil;in (baş aşağı)</li>
+            </ul>
+            <p>Nesneye sağ tıklayıp bağlamsal men&uuml;den <b>D&ouml;nd&uuml;r</b> se&ccedil;eneğini se&ccedil;ebilir ve ardından mevcut d&ouml;nd&uuml;rme se&ccedil;eneklerinden birini de kullanabilirsiniz.</p>
+            <p>Nesneyi tam olarak belirlenmiş bir a&ccedil;ıyla d&ouml;nd&uuml;rmek i&ccedil;in sağ kenar &ccedil;ubuğundaki <b>Gelişmiş ayarları g&ouml;ster</b> bağlantısına tıklayın ve <b>Gelişmiş Ayarlar</b> penceresinin <b>D&ouml;nd&uuml;rme</b> sekmesini kullanın. Derece cinsinden &ouml;l&ccedil;&uuml;len gerekli değeri <b>A&ccedil;ı</b> alanında belirtin ve <b>Tamam</b> d&uuml;ğmesine tıklayın.</p>
+
+        </div>
+	</body>
+</html>

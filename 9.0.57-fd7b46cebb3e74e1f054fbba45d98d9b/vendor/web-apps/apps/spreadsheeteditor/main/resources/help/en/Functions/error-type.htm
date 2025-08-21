@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>ERROR.TYPE Function</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>ERROR.TYPE Function</h1>
+			<p>The <b>ERROR.TYPE</b> function is one of the <a href="../UsageInstructions/InsertFunction.htm#information" onclick="onhyperlinkclick(this)">information functions</a>. It is used to return the numeric representation of one of the existing errors. </p>
+			<h3>Syntax</h3> 
+			<p><b><em>ERROR.TYPE(error_val)</em></b></p> 
+			<p>The <b>ERROR.TYPE</b> function has the following argument:</p>
+			<table style="width: 40%">
+                <tr>
+                    <th style="background-color: #f4f4f4" width="150ch"><b>Argument</b></th>
+                    <th style="background-color: #f4f4f4"><b>Description</b></th>
+                </tr>
+                <tr>
+                    <td><b><em>error_val</em></b></td>
+                    <td>An error value. The possible values are listed in the table below.</td>
+                </tr>
+            </table>
+			<p>The <b><em>error_val</em></b> argument can be one of the following:</p>
+			<table style="width: 40%">
+				<tr>
+					<th style="background-color: #f4f4f4"><b>Error value</b></th>
+					<th style="background-color: #f4f4f4"><b>Numeric representation</b></th>
+				</tr>
+				<tr>
+					<td><b><em>#NULL!</em></b></td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td><b><em>#DIV/0!</em></b></td>
+					<td>2</td>
+				</tr>
+				<tr>
+					<td><b><em>#VALUE!</em></b></td>
+					<td>3</td>
+				</tr>
+				<tr>
+					<td><b><em>#REF!</em></b></td>
+					<td>4</td>
+				</tr>
+				<tr>
+					<td><b><em>#NAME?</em></b></td>
+					<td>5</td>
+				</tr>
+				<tr>
+					<td><b><em>#NUM!</em></b></td>
+					<td>6</td>
+				</tr>
+				<tr>
+					<td><b><em>#N/A</em></b></td>
+					<td>7</td>
+				</tr>
+				<tr>
+					<td><b><em>#GETTING_DATA</em></b></td>
+					<td>8</td>
+				</tr>
+				<tr>
+					<td><b><em>Other</em></b></td>
+					<td>#N/A</td>
+				</tr>
+			</table>
+            <h3>Notes</h3>
+			<p><a href="../UsageInstructions/InsertFunction.htm#applyfunction" onclick="onhyperlinkclick(this)">How to apply</a> the <b>ERROR.TYPE</b> function.</p>
+			
+			<h3>Examples</h3>
+            <p>The figure below displays the result returned by the <b>ERROR.TYPE</b> function.</p>
+			<p><img alt="ERROR.TYPE Function" src="../images/error.type.png" /></p>
+		</div>
+	</body>
+</html>

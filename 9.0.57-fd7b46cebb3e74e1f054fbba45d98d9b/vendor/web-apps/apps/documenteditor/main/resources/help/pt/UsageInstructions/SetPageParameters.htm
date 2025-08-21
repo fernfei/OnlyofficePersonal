@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Definir parâmetros da página</title>
+		<meta charset="utf-8" />
+        <meta name="descrição" content="Defina os parâmetros da página: altere a orientação e o tamanho da página, ajuste as margens e insira colunas" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+        <div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+            <h1>Definir parâmetros da página</h1>
+            <p>Para alterar o layout da página no <a href="https://www.onlyoffice.com/pt/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Documentos</b></a>, ou seja, defina a orientação e o tamanho da página, ajuste as margens e insira colunas, use os ícones correspondentes na guia <b>Layout</b> da barra de ferramentas superior.</p>
+            <p class="note"><b>Nota</b>: todos esses parâmetros são aplicados a todo o documento. Se você precisar definir diferentes margens de página, orientação, tamanho ou número de coluna para as partes separadas do seu documento, consulte <a href="../UsageInstructions/SectionBreaks.htm" onclick="onhyperlinkclick(this)">esta página</a>.</p>
+            <h3 id="orientation">Orientação da página</h3>
+            <p>Altere a orientação atual digitando clicando no ícone <span class = "icon icon-orientation"></span> <b>Orientação</b>. O tipo de orientação padrão é <b>Retrato</b> que pode ser alterado para <b>Álbum</b>.</p>
+            <h3 id="size">Tamanho da página</h3>
+             <p>Altere o formato A4 padrão clicando no ícone <span class = "icon icon-pagesize"></span> <b>Tamanho</b> e selecionando o formato necessário na lista. Os seguintes tamanhos predefinidos estão disponíveis:</p>
+            <ul>
+                <li>US Letter (21,59cm x 27,94cm)</li>
+                <li>US Legal (21,59cm x 35,56cm)</li>
+                <li>A4 (21cm x 29,7cm)</li>
+                <li>A5 (14,81cm x 20,99cm)</li>
+                <li>B5 (17,6cm x 25,01cm)</li>
+                <li>Envelope #10 (10,48cm x 24,13cm)</li>
+                <li>Envelope DL (11,01cm x 22,01cm)</li>
+                <li>Tabloid (27,94cm x 43,17cm)</li>
+                <li>AЗ (29,7cm x 42,01cm)</li>
+                <li>Tamanho grande tablóide (29,69cm x 45,72cm)</li>
+                <li>ROC 16K (19,68cm x 27,3cm)</li>
+                <li>Envelope Choukei 3 (12cm x 23,5cm)</li>
+                <li>Super B/A3 (30,5cm x 48,7cm)</li>
+            </ul>
+            <p>Você também pode definir um tamanho de página especial selecionando a opção <b>Tamanho de página personalizado</b> na lista. A janela Tamanho da página será aberta, onde você poderá selecionar o <b>Predefinido</b> necessário (US Letter, US Legal, A4, A5, B5, Envelope nº 10, Envelope DL, Tablóide, AЗ, Tablóide tamanho grande, ROC 16K, Envelope Choukei 3, Super B/A3, A0, A1, A2, A6) ou defina valores personalizados de <b>Largura</b> e <b>Altura</b>. Insira novos valores nos campos de entrada ou ajuste os valores existentes usando os botões de seta. Quando terminar, clique em <b>OK</b> para aplicar as alterações.</p>
+            <p><img alt="Tamanho de página personalizado" src="../images/custompagesize.png" /></p>
+            <h3 id="margins">Margens da página</h3>
+             <p>Altere as margens padrão, ou seja, o espaço em branco entre as bordas esquerda, direita, superior e inferior da página e o texto do parágrafo, clicando em the <span class = "icon icon-pagemargins"></span> <b>Margens</b> e selecionando uma das predefinições disponíveis: <b>Normal</b>, <b>Normal dos EUA</b>, <b>Estreito</b>, <b>Moderado</b>, <b>Largo</b>. Você também pode usar a opção <b>Margens personalizadas</b> para definir seus próprios valores na janela Margens. Insira os valores de margem de página <b>Superior</b>, <b>Inferior</b>, <b>Esquerda</b> e <b>Direita</b> necessários nos campos de entrada ou ajuste os valores existentes usando botões de seta.</p>
+            <p><img alt="Custom Margins" src="../images/custommargins.png" /></p>
+            <p><b>A posição da medianiz</b> é usada para configurar espaço adicional no lado esquerdo do documento ou na parte superior. A opção <b>Gutter</b> é útil para garantir que a encadernação não cubra o texto. Nas <b>Margens</b> insira a posição da calha necessária nos campos de entrada e escolha onde ela deve ser colocada.</p>
+            <p class="note"><b>Nota</b>: a <b>Posição da medianiz</b> não pode ser usada quando a opção <b>Margens espelhadas</b> estiver marcada.</p>
+             <p>No menu suspenso <b>Várias páginas</b>, escolha a opção <b>Margens espelhadas</b> para configurar páginas opostas para documentos frente e verso. Com esta opção marcada, as margens <b>Esquerda</b> e <b>Direita</b> se transformam em margens <b>Inside</b> e <b>Outside</b>, respectivamente.</p>
+             <p>No menu suspenso <b>Orientação</b>, escolha entre as opções <b>Retrato</b> e <b>Paisagem</b>.</p>
+             <p>Todas as alterações aplicadas ao documento serão exibidas na janela <b>Visualização</b>.</p>
+             <p>Ao terminar, clique em <b>OK</b>. As margens personalizadas serão aplicadas ao documento atual e a opção <b>Últimos personalizados</b> com os parâmetros especificados aparecerá nas <span class = "icon icon-pagemargins"></span> <b>Margens</b> lista para que você possa aplicá-los a outros documentos.</p>
+            <p>Você também poderá alterar as margens manualmente arrastando a borda entre as áreas cinza e branca nas réguas (as áreas cinzas das réguas indicam as margens da página):</p>
+            <p><span class = "big big-margins"></span></p>
+            <h3 id="columns">Colunas</h3>
+             <p>Aplique um layout de várias colunas clicando no ícone <span class = "icon icon-insertcolumns"></span> <b>Colunas</b> e selecionando o tipo de coluna necessário na lista suspensa. As seguintes opções estão disponíveis:</p>
+            <ul>
+                <li><b>Duas</b> <div class = "icon icon-twocolumns"></div> - para adicionar duas colunas da mesma largura,</li>
+                <li><b>Três</b> <div class = "icon icon-threecolumns"></div> - para adicionar três colunas da mesma largura,</li>
+                <li><b>Esquerda</b> <div class = "icon icon-leftcolumn"></div> - para adicionar duas colunas: uma coluna estreita à esquerda e uma coluna larga à direita,</li>
+                <li><b>Direita</b> <div class = "icon icon-rightcolumn"></div> - para adicionar duas colunas: uma coluna estreita à direita e uma coluna larga à esquerda.</li>
+            </ul>
+            <p>Se você quiser ajustar as configurações da coluna, selecione a opção <b>Colunas personalizadas</b> na lista. A janela <b>Colunas</b> aparecerá e você poderá definir o <b>Número de colunas</b> necessário (você pode adicionar até 12 colunas) e o <b>Espaçamento entre as colunas</b>. Insira seus novos valores nos campos de entrada ou ajuste os valores existentes usando os botões de seta. Marque a caixa <b>Divisor de coluna</b> para adicionar uma linha vertical entre as colunas. Quando terminar, clique em <b>OK</b> para aplicar as alterações.</p>
+            <p><img alt="Colunas personalizadas" src="../images/customcolumns.png" /></p>
+            <p>Para especificar exatamente onde uma nova coluna deve começar, coloque o cursor antes do texto que deseja mover para a nova coluna, clique em <span class = "icon icon-pagebreak1"></span> <b>Quebras</b > ícone na barra de ferramentas superior e selecione a opção <b>Inserir quebra de coluna</b>. O texto será movido para a próxima coluna.</p>
+            <p>As quebras de coluna inseridas são indicadas em seu documento com uma linha pontilhada: <span class = "big big-columnbreak"></span>. Se você não vir as quebras de coluna inseridas, clique no ícone <span class = "icon icon-nonprintingcharacters"></span> na guia <b>Página Inicial</b> na barra de ferramentas superior para torná-las visíveis. Para remover uma quebra de coluna, selecione-a com o mouse e pressione a tecla <b>Excluir</b>.</p>
+             <p>Para alterar manualmente a largura e o espaçamento da coluna, você pode usar a régua horizontal.</p>
+            <p><div class = "big big-columnspacing"></div></p>
+            <p>Para cancelar colunas e retornar a um layout regular de coluna única, clique no ícone <span class = "icon icon-insertcolumns"></span> <b>Colunas</b> na barra de ferramentas superior e selecione opção <b>Um</b> <span class = "icon icon-onecolumn"></span> da lista.</p>
+        </div>
+	</body>
+</html>

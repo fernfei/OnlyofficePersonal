@@ -1,0 +1,167 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Validação de dados</title>
+    <meta charset="utf-8" />
+    <meta name="descrição" content="Definir parâmetros de validação de dados para controlar outras edições de planilhas" />
+    <link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+    <link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+    <script type="text/javascript" src="../callback.js"></script>
+    <script type="text/javascript" src="../search/js/page-search.js"></script>
+</head>
+<body>
+    <div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+        <h1>Validação de dados</h1>
+        <p>ONLYOFFICE <a href="https://www.onlyoffice.com/pt/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Planilhas</b></a> oferece um recurso de <b>validação de dados</b> que controla os parâmetros das informações inseridas nas células pelos usuários.</p>
+         <p>Para acessar o recurso de validação de dados, escolha uma célula, um intervalo de células ou uma planilha inteira à qual deseja aplicar o recurso, abra a guia <b>Dados</b> e clique em <b>Dados Ícone de validação</b> na barra de ferramentas superior. A janela <b>Validação de dados</b> aberta contém três guias: <em>Configurações</em>, <em>Mensagem de entrada</em> e <em>Alerta de erro</em>.</p>
+         <h2>Configurações</h2>
+         <p>A seção <b>Configurações</b> permite que você especifique o tipo de dados que podem ser inseridos:</p>
+         <p class="note"><b>Observação</b>: marque a caixa <b>Aplicar essas alterações a todas as outras células com as mesmas configurações</b> para usar as mesmas configurações no intervalo de células selecionado ou uma planilha inteira.</p>
+        <p><img alt="Validação de dados - janela de configurações" src="../images/dataval_settings.png" /></p>
+        <ul>
+            <li>
+                escolha a opção necessária no menu <b>Permitir</b>:
+                <ul>
+                    <li><b>Qualquer valor</b>: sem limitações no tipo de informação.</li>
+                    <li><b>Número inteiro</b>: somente números inteiros são permitidos.</li>
+                    <li><b>Decimal</b>: somente números com ponto decimal são permitidos.</li>
+                    <li>
+                        <b>Lista</b>: apenas as opções da lista suspensa que você criou são permitidas. Desmarque a caixa <b>Mostrar lista suspensa na célula</b> para ocultar a seta suspensa.
+                        <p><img alt="Lista - configurações" src="../images/dataval_list.png" /></p>
+                    </li>
+                    <li><b>Data</b>: somente células com o formato de data são permitidas.</li>
+                    <li><b>Hora</b>: apenas células com o formato de hora são permitidas.</li>
+                    <li><b>Comprimento do texto</b>: define o limite de caracteres.</li>
+                    <li><b>Outro</b>: define o parâmetro de validação necessário fornecido como uma fórmula.</li>
+                </ul>
+                <p class="note"><b>Observação</b>: marque a caixa <b>Aplicar essas alterações a todas as outras células com as mesmas configurações</b> para usar as mesmas configurações no intervalo de células selecionado ou em uma planilha inteira.</p>
+            </li>
+            <li>
+                especifique uma condição de validação no menu <b>Dados</b>:
+                <ul>
+                    <li><b>entre</b>: os dados nas células devem estar dentro do intervalo definido pela regra de validação.</li>
+                    <li><b>não entre</b>: os dados nas células não devem estar dentro do intervalo definido pela regra de validação.</li>
+                    <li><b>igual a</b>: os dados nas células devem ser iguais ao valor definido pela regra de validação.</li>
+                    <li><b>não é igual</b>: os dados nas células não devem ser iguais ao valor definido pela regra de validação.</li>
+                    <li><b>maior que</b>: os dados nas células devem exceder os valores definidos pela regra de validação.</li>
+                    <li><b>menor que</b>: os dados nas células devem ser menores que os valores definidos pela regra de validação.</li>
+                    <li><b>maior ou igual a</b>: os dados nas células devem exceder ou ser iguais ao valor definido pela regra de validação.</li>
+                    <li><b>menor ou igual a</b>: os dados nas células devem ser menores ou iguais ao valor definido pela regra de validação.</li>
+                </ul>
+            </li>
+            <li>
+                crie uma regra de validação dependendo do tipo de informação permitido:
+                <div class="tg-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Condição de validação</th>
+                                 <th>Regra de validação</th>
+                                 <th>Descrição</th>
+                                 <th>Disponibilidade</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="3">Entre / não entre</td>
+                                 <td>Mínimo / Máximo</td>
+                                 <td>Define o intervalo de valores</td>
+                                 <td>Número inteiro / Decimal / Comprimento do texto</td>
+                            </tr>
+                            <tr>
+                                <td>Data de início / Data de término</td>
+                                 <td>Define o intervalo de datas</td>
+                                 <td>Data</td>
+                            </tr>
+                            <tr>
+                                <td>Hora de início / Hora de fim</td>
+                                 <td>Define o período de tempo</td>
+                                 <td>Tempo</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="4"> <br> <br>Igual / diferente</td>
+                                 <td>Comparar com</td>
+                                 <td>Define o valor para comparação</td>
+                                 <td>Número inteiro / Decimal</td>
+                            </tr>
+                            <tr>
+                                <td>Data</td>
+                                 <td>Define a data para comparação</td>
+                                 <td>Data</td>
+                            </tr>
+                            <tr>
+                                <td>Tempo decorrido</td>
+                                 <td>Define o tempo para comparação</td>
+                                 <td>Tempo</td>
+                             </tr>
+                             <tr>
+                                 <td>Comprimento</td>
+                                 <td>Define o valor do comprimento do texto para comparação</td>
+                                 <td>Comprimento do texto</td>
+                             </tr>
+                             <tr>
+                                 <td rowspan="3">Maior que / maior que ou igual a</td>
+                                 <td>Mínimo</td>
+                                 <td>Define o limite inferior</td>
+                                 <td>Número inteiro / Decimal / Comprimento do texto</td>
+                             </tr>
+                             <tr>
+                                 <td>Data de início</td>
+                                 <td>Define a data de início</td>
+                                 <td>Data</td>
+                             </tr>
+                             <tr>
+                                 <td>Hora de início</td>
+                                 <td>Define a hora de início</td>
+                                 <td>Tempo</td>
+                             </tr>
+                             <tr>
+                                 <td rowspan="3">Menor que / menor que ou igual a</td>
+                                 <td>Máximo </td>
+                                 <td>Define o limite superior</td>
+                                 <td>Número inteiro / Decimal / Comprimento do texto</td>
+                             </tr>
+                             <tr>
+                                 <td>Data final</td>
+                                 <td>Define a data final</td>
+                                 <td>Data</td>
+                             </tr>
+                             <tr>
+                                 <td>Hora de término</td>
+                                 <td>Define o tempo final</td>
+                                 <td>Tempo </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+               Assim como:
+                <ul>
+                    <li><b>Fonte</b>: forneça a fonte de informação para o tipo de informação <em>Lista</em>.</li>
+                    <li><b>Fórmula</b>: insira a fórmula necessária para criar uma regra de validação personalizada para o tipo de informação <em>Outro</em>.</li>
+                </ul>
+            </li>
+        </ul>
+        <h2>Mensagem de entrada</h2>
+         <p>A seção <b>Mensagem de entrada</b> permite que você crie uma mensagem personalizada exibida quando um usuário passa o ponteiro do mouse sobre a célula.</p>
+        <p><img alt="Validação de dados - configurações de mensagem de entrada" src="../images/dataval_inputmessage.png" /></p>
+        <ul>
+            <li>Especifique o <b>Título</b> e o corpo da sua <b>Mensagem de entrada</b>.</li>
+            <li>Desmarque <b>Mostrar mensagem de entrada quando a célula for selecionada</b> para desativar a exibição da mensagem. Deixe para exibir a mensagem.</li>
+        </ul>
+        <p><img alt="Mensagem de entrada - exemplo" src="../images/dataval_inputmessage_example.png" /></p>
+        <h2>Alerta de erro</h2>
+        <p>A seção <b>Alerta de erro</b> permite especificar a mensagem exibida quando os dados fornecidos pelos usuários não atendem às regras de validação.</p>
+        <p><img alt="Validação de dados - configurações de alerta de erro" src="../images/dataval_erroralert.png" /></p>
+        <ul>
+            <li><b>Estilo</b>: escolha uma das predefinições disponíveis, <em>Parar</em>, <em>Alerta</em> ou <em>Mensagem</em>.</li>
+            <li><b>Título</b>: especifique o título da mensagem de alerta.</li>
+            <li><b>Mensagem de erro</b>: insira o texto da mensagem de alerta.</li>
+            <li>Desmarque a caixa <b>Mostrar alerta de erro após a inserção de dados inválidos</b> para desativar a exibição da mensagem de alerta.</li>
+        </ul>
+        <p><img alt="Alerta de erro - exemplo" src="../images/dataval_erroralert_example.png" /></p>
+    </div>
+</body>
+</html>

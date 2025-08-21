@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>&Ccedil;apraz başvuru ekleme</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Use cross-references to create links leading to other parts of the same document" />
+    <link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+    <link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+    <script type="text/javascript" src="../callback.js"></script>
+    <script type="text/javascript" src="../search/js/page-search.js"></script>
+</head>
+<body>
+    <div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+        </div>
+        <h1>&Ccedil;apraz başvuru ekleme</h1>
+        <p><a href="https://www.onlyoffice.com/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Belge D&uuml;zenleyicide</b></a>, &ccedil;apraz başvurular, aynı belgenin diğer b&ouml;l&uuml;mlerine, &ouml;rneğin başlıklara veya grafikler veya tablolar gibi nesnelere giden bağlantılar oluşturmak i&ccedil;in kullanılır. Bu başvurular bir k&ouml;pr&uuml; şeklinde g&ouml;r&uuml;n&uuml;r.</p>
+        <h2>&Ccedil;apraz başvuru oluşturma</h2>
+        <ol>
+            <li>İmlecinizi &ccedil;apraz başvuru eklemek istediğiniz yere getirin.</li>
+            <li><b>Başvurular</b> sekmesine gidin ve <b>&Ccedil;apraz başvuru</b> simgesine tıklayın.</li>
+            <li>
+                A&ccedil;ılan <b>&Ccedil;apraz başvuru</b> penceresinde gerekli parametreleri ayarlayın:
+                <p><img alt="Çapraz başvuru penceresi" src="../images/cross_refference_window.png" /></p>
+                <ul>
+                    <li><b>Başvuru tipi</b> a&ccedil;ılır men&uuml;s&uuml;, başvurmak istediğiniz &ouml;ğeyi, yani numaralandırılmış bir &ouml;ğe (varsayılan olarak ayarlanmıştır), <em>başlık, yer imi, dipnot, son not, denklem, şekil</em> ve <em>tabloyu</em> belirtir. Gerekli &ouml;ğe t&uuml;r&uuml;n&uuml; se&ccedil;in.</li>
+                    <li>
+                        <b>Başvuru ekle</b> a&ccedil;ılır men&uuml;s&uuml;, <b>Başvuru tipi</b> men&uuml;s&uuml;nde se&ccedil;tiğiniz &ouml;ğeye bağlı olarak eklemek istediğiniz başvuru metnini veya sayısal değerini belirtir. &Ouml;rneğin, <b>Başlık</b> se&ccedil;eneğini se&ccedil;erseniz, aşağıdaki i&ccedil;erikleri belirtebilirsiniz: <em>Başlık metni, Sayfa numarası, Başlık numarası, Başlık numarası (bağlam yok), Başlık numarası (tam bağlam), Yukarı/aşağı</em>.
+                        <details class="details-example">
+                            <summary>Se&ccedil;ilen başvuru t&uuml;r&uuml;ne bağlı olarak sağlanan se&ccedil;eneklerin tam listesi</summary>
+                            <table class="cross-reference">
+                                <tr>
+                                    <th>Başvuru t&uuml;r&uuml;</th>
+                                    <th>Başvuru ekleme</th>
+                                    <th style="text-align: left;">A&ccedil;ıklama</th>
+                                </tr>
+                                <tr>
+                                    <td rowspan="6">Numaralandırılmış &ouml;ğe</td>
+                                    <td style="text-align: left;">Sayfa numarası</td>
+                                    <td style="text-align: left;">Numaralandırılmış &ouml;ğenin sayfa numarasını ekler</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Paragraf numarası</td>
+                                    <td style="text-align: left;">Numaralandırılmış &ouml;ğenin paragraf numarasını ekler</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Paragraf numarası (bağlam yok)</td>
+                                    <td style="text-align: left;">Kısaltılmış bir paragraf numarası ekler. Başvuru, yalnızca numaralandırılmış listenin belirli bir maddesine yapılır, &ouml;rneğin, &quot;4.1.1&quot; yerine yalnızca &quot;1&quot;e başvurursunuz</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Paragraf numarası (tam bağlam)</td>
+                                    <td style="text-align: left;">Tam bir paragraf numarası ekler, &ouml;rneğin, &quot;4.1.1&quot;</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Paragraf metni</td>
+                                    <td style="text-align: left;">Paragrafın metin değerini ekler, &ouml;rneğin, &ldquo;4.1.1. Şartlar ve Koşullar&rdquo;, yalnızca &ldquo;Şartlar ve Koşullar&rdquo;a başvurursunuz</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Yukarı, aşağı</td>
+                                    <td style="text-align: left;">&Ouml;ğenin konumuna bağlı olarak s&ouml;zc&uuml;kleri &quot;yukarıya&quot; veya &quot;aşağıya&quot; ekler</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="6">Başlık</td>
+                                    <td style="text-align: left;">Başlık metni</td>
+                                    <td style="text-align: left;">Başlığın t&uuml;m metnini ekler</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Sayfa numarası</td>
+                                    <td style="text-align: left;">Başlığın sayfa numarasını ekler</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Başlık numarası</td>
+                                    <td style="text-align: left;">Başlığın sıra numarasını ekler</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Başlık numarası (bağlam yok)</td>
+                                    <td style="text-align: left;">Kısaltılmış bir başlık numarası ekler. İmle&ccedil; noktasının başvurduğunuz b&ouml;l&uuml;mde olduğundan emin olun, &ouml;rneğin, 4. b&ouml;l&uuml;mdesiniz ve 4.B başlığına başvurmak istiyorsunuz, bu nedenle &quot;4.B&quot; yerine yalnızca &quot;B&quot; alırsınız</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Başlık numarası (tam bağlam)</td>
+                                    <td style="text-align: left;">İmle&ccedil; noktası aynı b&ouml;l&uuml;mde olsa bile tam bir başlık numarası ekler</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Yukarı, aşağı</td>
+                                    <td style="text-align: left;">&Ouml;ğenin konumuna bağlı olarak s&ouml;zc&uuml;kleri &quot;yukarıya&quot; veya &quot;aşağıya&quot; ekler</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="6">Yer imi</td>
+                                    <td style="text-align: left;">Yer imi metni</td>
+                                    <td style="text-align: left;">Yer iminin t&uuml;m metnini ekler</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Sayfa numarası</td>
+                                    <td style="text-align: left;">Yer iminin sayfa numarasını ekler</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Paragraf numarası</td>
+                                    <td style="text-align: left;">Yer iminin paragraf numarasını ekler</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Paragraf numarası (bağlam yok)</td>
+                                    <td style="text-align: left;">Kısaltılmış bir paragraf numarası ekler. Başvuru, yalnızca belirli bir &ouml;ğeye yapılır, &ouml;rneğin, &quot;4.1.1&quot; yerine yalnızca &quot;1&quot;e başvurursunuz</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Paragraf numarası (tam bağlam)</td>
+                                    <td style="text-align: left;">Tam bir paragraf numarası ekler, &ouml;rneğin, &quot;4.1.1&quot;</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Yukarı, aşağı</td>
+                                    <td style="text-align: left;">&Ouml;ğenin konumuna bağlı olarak s&ouml;zc&uuml;kleri &quot;yukarıya&quot; veya &quot;aşağıya&quot; ekler</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="4">Dipnot</td>
+                                    <td style="text-align: left;">Dipnot numarası</td>
+                                    <td style="text-align: left;">Dipnot numarasını ekler</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Sayfa numarası</td>
+                                    <td style="text-align: left;">Dipnotun sayfa numarasını ekler</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Yukarı, aşağı</td>
+                                    <td style="text-align: left;">&Ouml;ğenin konumuna bağlı olarak s&ouml;zc&uuml;kleri &quot;yukarıya&quot; veya &quot;aşağıya&quot; ekler</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Dipnot numarası (bi&ccedil;imlendirilmiş)</td>
+                                    <td style="text-align: left;">Dipnot olarak bi&ccedil;imlendirilen dipnotun numarasını ekler. Asıl dipnotların numaralandırılması etkilenmez</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="4">Son not</td>
+                                    <td style="text-align: left;">Son not numarası</td>
+                                    <td style="text-align: left;">Son not numarasını ekler</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Sayfa numarası</td>
+                                    <td style="text-align: left;">Son notun sayfa numarasını ekler</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Yukarı, aşağı</td>
+                                    <td style="text-align: left;">&Ouml;ğenin konumuna bağlı olarak s&ouml;zc&uuml;kleri &quot;yukarıya&quot; veya &quot;aşağıya&quot; ekler</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Son not numarası (bi&ccedil;imlendirilmiş)</td>
+                                    <td style="text-align: left;">Son not olarak bi&ccedil;imlendirilen son not numarasını ekler. Asıl son notların numaralandırılması etkilenmez</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="5">Denklem / Şekil / Tablo</td>
+                                    <td style="text-align: left;">T&uuml;m başlık yazısı</td>
+                                    <td style="text-align: left;">Başlık yazısının t&uuml;m metnini ekler</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Sadece etiket ve numara</td>
+                                    <td style="text-align: left;">Yalnızca etiketi ve nesne numarasını ekler, &ouml;rneğin, &quot;Tablo 1.1&quot;</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Sadece başlık yazısı metni</td>
+                                    <td style="text-align: left;">Yalnızca başlık yazısının metnini ekler</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Sayfa numarası</td>
+                                    <td style="text-align: left;">Başvurulan nesneyi i&ccedil;eren sayfa numarasını ekler</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Yukarı, aşağı</td>
+                                    <td style="text-align: left;">&Ouml;ğenin konumuna bağlı olarak s&ouml;zc&uuml;kleri &quot;yukarıya&quot; veya &quot;aşağıya&quot; ekler</td>
+                                </tr>
+                            </table>
+                        </details>
+                    <br />
+                    </li>
+
+                    <li>Başvuruyu aktif bir bağlantıya d&ouml;n&uuml;şt&uuml;rmek i&ccedil;in <b>K&ouml;pr&uuml; olarak ekle</b> kutusunu işaretleyin.</li>
+                    <li>Başvurduğunuz &ouml;ğenin konumunu belirtmek i&ccedil;in <b>Yukarıya/aşağıya ekle</b> kutusunu (varsa) işaretleyin. ONLYOFFICE Belge D&uuml;zenleyicisi, otomatik olarak s&ouml;zc&uuml;kleri &ouml;ğenin konumuna bağlı olarak &apos;&apos;<em>yukarıya</em>&quot; veya &quot;<em>aşağıya</em>&rdquo; ekler.</li>
+                    <li>Ayırıcıyı sağdaki kutuda belirtmek i&ccedil;in <b>Numaralar ile ayır</b> kutusunu işaretleyin. Ayırıcılar, tam bağlam başvuruları i&ccedil;in gereklidir.</li>
+                    <li><b>Hangisi i&ccedil;in</b> alanı, se&ccedil;tiğiniz <b>Başvuru t&uuml;r&uuml;ne</b> g&ouml;re mevcut &ouml;ğeleri size sunar, &ouml;rneğin, <b>Başlık</b> se&ccedil;eneğini se&ccedil;erseniz, belgedeki başlıkların tam listesini g&ouml;r&uuml;rs&uuml;n&uuml;z.</li>
+                </ul>
+            </li>
+            <li>Bir &ccedil;apraz başvuru oluşturmak i&ccedil;in <b>Ekle</b> d&uuml;ğmesine tıklayın.</li>
+        </ol>
+        <h2>&Ccedil;apraz başvuruyu kaldırma</h2>
+        <p>Bir &ccedil;apraz başvuruyu silmek i&ccedil;in kaldırmak istediğiniz &ccedil;apraz başvuruyu se&ccedil;in ve <b>Delete</b> tuşuna basın.</p>
+    </div>
+</body>
+</html>

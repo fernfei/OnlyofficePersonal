@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sayfa parametrelerini ayarlama</title>
+		<meta charset="utf-8" />
+        <meta name="description" content="Set page parameters: change page orientation and size, adjust margins and insert columns" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+        <div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+            </div>
+            <h1>Sayfa parametrelerini ayarlama</h1>
+            <p><a href="https://www.onlyoffice.com/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Belge D&uuml;zenleyicide</b></a> sayfa d&uuml;zenini değiştirmek, yani sayfa y&ouml;n&uuml;n&uuml; ve boyutunu belirlemek, kenar boşluklarını ayarlamak ve s&uuml;tunlar eklemek i&ccedil;in &uuml;st ara&ccedil; &ccedil;ubuğunun <b>D&uuml;zen</b> sekmesindeki ilgili simgeleri kullanın.</p>
+            <p class="note"><b>Not</b>: T&uuml;m bu parametreler belgenin t&uuml;m&uuml;ne uygulanır. Belgenizin ayrı b&ouml;l&uuml;mleri i&ccedil;in farklı sayfa kenar boşlukları, y&ouml;n&uuml;, boyutu veya s&uuml;tun numarası ayarlamanız gerekirse, l&uuml;tfen <a href="../UsageInstructions/SectionBreaks.htm" onclick="onhyperlinkclick(this)">bu sayfaya</a> bakın.</p>
+            <h3 id="orientation">Sayfa Y&ouml;nlendirmesi</h3>
+            <p><span class = "icon icon-orientation"></span> <b>Y&ouml;nlendirme</b> simgesine tıklayarak mevcut y&ouml;nlendirme t&uuml;r&uuml;n&uuml; değiştirin. Varsayılan y&ouml;nlendirme t&uuml;r&uuml; <b>Portrait</b> olup <b>Album</b> olarak değiştirilebilir.</p>
+            <h3 id="size">Sayfa Boyutu</h3>
+            <p><span class = "icon icon-pagesize"></span> <b>Boyut</b> simgesine tıklayarak ve listeden gerekli formatı se&ccedil;erek varsayılan A4 bi&ccedil;imini değiştirin. Aşağıdaki &ouml;nceden belirlenmiş boyutlar mevcuttur:</p>
+            <ul>
+                <li>US Letter (21,59cm x 27,94cm)</li>
+                <li>US Legal (21,59cm x 35,56cm)</li>
+                <li>A4 (21cm x 29,7cm)</li>
+                <li>A5 (14,81cm x 20,99cm)</li>
+                <li>B5 (17,6cm x 25,01cm)</li>
+                <li>Envelope #10 (10,48cm x 24,13cm)</li>
+                <li>Envelope DL (11,01cm x 22,01cm)</li>
+                <li>Tabloid (27,94cm x 43,17cm)</li>
+                <li>AЗ (29,7cm x 42,01cm)</li>
+                <li>Tabloid Oversize (29,69cm x 45,72cm)</li>
+                <li>ROC 16K (19,68cm x 27,3cm)</li>
+                <li>Envelope Choukei 3 (12cm x 23,5cm)</li>
+                <li>Super B/A3 (30,5cm x 48,7cm)</li>
+            </ul>
+            <p>Listeden <b>&Ouml;zel Sayfa Boyutu</b> se&ccedil;eneğini se&ccedil;erek &ouml;zel bir sayfa boyutu da ayarlayabilirsiniz. Sayfa Boyutu penceresi a&ccedil;ılacak ve buradan <b>&Ouml;nceden Belirlenmiş</b> (US Letter, US Legal, A4, A5, B5, Envelope #10, Envelope DL, Tabloid, AЗ, Tabloid Oversize, ROC 16K, Envelope Choukei 3, Super B/A3, A0, A1, A2, A6) se&ccedil;eneklerini se&ccedil;ebilecek veya &ouml;zel <b>Genişlik</b> ve <b>Y&uuml;kseklik</b> değerleri ayarlayabileceksiniz. Giriş alanlarına yeni değerler girin veya ok d&uuml;ğmelerini kullanarak mevcut değerleri ayarlayın. Bitirdiğinizde, değişiklikleri uygulamak i&ccedil;in <b>Tamam</b> d&uuml;ğmesine tıklayın.</p>
+            <p><img alt="Özel Sayfa Boyutu" src="../images/custompagesize.png" /></p>
+            <h3 id="margins">Sayfa Kenar Boşlukları</h3>
+            <p>Varsayılan kenar boşluklarını, yani sayfanın sol, sağ, &uuml;st ve alt kenarları ile paragraf metni arasındaki boşlukları, <span class = "icon icon-pagemargins"></span> <b>Kenar Boşlukları</b> simgesine tıklayarak ve mevcut <b>Normal</b>, <b>US Normal</b>, <b>Dar</b>, <b>Orta</b>, <b>Geniş</b> hazır ayarlarından birini se&ccedil;erek değiştirin. Kenar Boşlukları penceresinde kendi değerlerinizi ayarlamak i&ccedil;in <b>&Ouml;zel Kenar Boşlukları</b> se&ccedil;eneğini de kullanabilirsiniz. Gerekli olan <b>&Uuml;st</b>, <b>Alt</b>, <b>Sol</b> ve <b>Sağ</b> sayfa kenar boşluğu değerlerini giriş alanlarına girin veya ok d&uuml;ğmelerini kullanarak mevcut değerleri ayarlayın.</p>
+            <p><img alt="Özel Kenar Boşlukları" src="../images/custommargins.png" /></p>
+            <p><b>Cilt payı konumu</b>, belgenin sol tarafında veya &uuml;st&uuml;nde ek alan oluşturmak i&ccedil;in kullanılır. <b>Cilt payı</b> se&ccedil;eneği, ciltlemenin metni kaplamamasını sağlamak i&ccedil;in yararlıdır. <b>Kenar boşluklarında</b>, gerekli cilt payı konumunu giriş alanlarına girin ve nereye yerleştirilmesi gerektiğini se&ccedil;in.</p>
+            <p class="note"><b>Not</b>: <b>Cilt payı konumu</b>, <b>Ayna kenar boşlukları</b> se&ccedil;eneği işaretlendiğinde kullanılamaz. </p>
+            <p><b>&Ccedil;oklu sayfa</b> a&ccedil;ılır men&uuml;s&uuml;nde, &ccedil;ift taraflı belgeler i&ccedil;in y&uuml;z y&uuml;ze sayfalar ayarlamak i&ccedil;in <b>Karşılıklı kenar boşlukları</b> se&ccedil;eneğini se&ccedil;in. Bu se&ccedil;enek işaretlendiğinde, <b>Sol</b> ve <b>Sağ</b> kenar boşlukları sırasıyla <b>İ&ccedil;</b> ve <b>Dış</b> kenar boşluklarına d&ouml;n&uuml;ş&uuml;r.</p>
+            <p><b>Y&ouml;nlendirme</b> a&ccedil;ılır men&uuml;s&uuml;nde, <b>Portrait</b> ve <b>Landscape</b> se&ccedil;eneklerini se&ccedil;in.</p>
+            <p>Belgede uygulanan t&uuml;m değişiklikler, <b>&Ouml;n izleme</b> penceresinde g&ouml;r&uuml;nt&uuml;lenir.</p>
+            <p>Bitirdiğinizde <b>Tamam</b> d&uuml;ğmesine tıklayın. &Ouml;zel kenar boşlukları ge&ccedil;erli belgeye uygulanacak ve belirtilen parametrelere sahip <b>Son &Ouml;zel</b> se&ccedil;eneği, diğer belgelere uygulayabilmeniz i&ccedil;in <span class = "icon icon-pagemargins"></span> <b>Kenar Boşlukları</b> listesinde g&ouml;r&uuml;necektir.  </p>
+            <p>Kenar boşluklarını cetvellerdeki gri ve beyaz alanlar arasındaki sınırı s&uuml;r&uuml;kleyerek de manuel olarak değiştirebilirsiniz (cetvellerin gri alanları sayfa kenar boşluklarını g&ouml;sterir):</p>
+            <p><span class = "big big-margins"></span></p>
+            <h3 id="columns">S&uuml;tunlar</h3>
+            <p><span class = "icon icon-insertcolumns"></span> <b>S&uuml;tunlar</b> simgesine tıklayıp a&ccedil;ılır listeden gerekli s&uuml;tun tipini se&ccedil;erek &ccedil;ok s&uuml;tunlu bir d&uuml;zen uygulayın.  Aşağıdaki se&ccedil;enekler mevcuttur:</p>
+            <ul>
+                <li><b>İki</b><div class = "icon icon-twocolumns"></div> - aynı genişlikte iki s&uuml;tun eklemek i&ccedil;in,</li>
+                <li><b>&Uuml;&ccedil;</b><div class = "icon icon-threecolumns"></div> - aynı genişlikte &uuml;&ccedil; s&uuml;tun eklemek i&ccedil;in,</li>
+                <li><b>Sol</b><div class = "icon icon-leftcolumn"></div> - solda dar bir s&uuml;tun ve sağda geniş bir s&uuml;tun olmak &uuml;zere iki s&uuml;tun eklemek i&ccedil;in,</li>
+                <li><b>Sağ</b><div class = "icon icon-rightcolumn"></div> - sağda dar bir s&uuml;tun ve solda geniş bir s&uuml;tun olmak &uuml;zere iki s&uuml;tun eklemek i&ccedil;in.</li>
+            </ul>
+            <p>S&uuml;tun ayarlarını yapmak istiyorsanız, listeden <b>&Ouml;zel S&uuml;tunlar</b> se&ccedil;eneğini se&ccedil;in. <b>S&uuml;tunlar</b> penceresi g&ouml;r&uuml;necek ve gerekli <b>S&uuml;tun sayısı</b> (en fazla 12 s&uuml;tun ekleyebilirsiniz) ve <b>S&uuml;tunlar arasındaki boşluk</b> ayarlarını yapabileceksiniz. Giriş alanlarına yeni değerlerinizi girin veya ok d&uuml;ğmelerini kullanarak mevcut değerleri ayarlayın. S&uuml;tunlar arasına dikey bir &ccedil;izgi eklemek i&ccedil;in <b>S&uuml;tun b&ouml;l&uuml;c&uuml;</b> kutusunu işaretleyin. Bitirdiğinizde, değişiklikleri uygulamak i&ccedil;in <b>Tamam</b> d&uuml;ğmesine tıklayın.</p>
+            <p><img alt="Özel Sütunlar" src="../images/customcolumns.png" /></p>
+            <p>Yeni bir s&uuml;tunun tam olarak nerede başlaması gerektiğini belirtmek i&ccedil;in imleci yeni s&uuml;tuna taşımak istediğiniz metnin &ouml;n&uuml;ne getirin, &uuml;st ara&ccedil; &ccedil;ubuğundaki <span class = "icon icon-pagebreak1"></span> <b>Sonlar</b> simgesine tıklayın ve ardından <b>S&uuml;tun Sonu Ekle</b> se&ccedil;eneğini se&ccedil;in. Metin sonraki s&uuml;tuna taşınacaktır.</p>
+            <p>Eklenen s&uuml;tun sonları, belgenizde noktalı bir &ccedil;izgi ile g&ouml;sterilir: <span class = "big big-columnbreak"></span>. Eklenen s&uuml;tun sonlarını g&ouml;rm&uuml;yorsanız, g&ouml;r&uuml;&uuml;r kılmak i&ccedil;in &uuml;st ara&ccedil; &ccedil;ubuğunun <b>Giriş</b> sekmesindeki <span class = "icon icon-nonprintingcharacters"></span> simgesine tıklayın. Bir s&uuml;tun sonunu kaldırmak i&ccedil;in fareyle se&ccedil;in ve <b>Delete</b> tuşuna basın.</p>
+            <p>S&uuml;tun genişliğini ve aralığını manuel olarak değiştirmek i&ccedil;in yatay cetveli kullanabilirsiniz.</p>
+            <p><div class = "big big-columnspacing"></div></p>
+            <p>S&uuml;tunları iptal etmek ve normal tek s&uuml;tunlu d&uuml;zene d&ouml;nmek i&ccedil;in &uuml;st ara&ccedil; &ccedil;ubuğundaki <span class = "icon icon-insertcolumns"></span> <b>S&uuml;tunlar</b> simgesine tıklayın ve listeden <b>Bir</b> <span class = "icon icon-onecolumn"></span> se&ccedil;eneğini se&ccedil;in.</p>
+        </div>
+	</body>
+</html>

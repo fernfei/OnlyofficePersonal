@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Adicionar links externos às células</title>
+		<meta charset="utf-8" />
+        <meta name="descrição" content="Adicionar um link externo a uma célula ou a um intervalo de células em outra pasta de trabalho" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Adicionar links externos às células</h1>
+			<p>No <a href="https://www.onlyoffice.com/pt/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Planilhas</b></a>, você pode criar um link externo para uma célula ou um intervalo de células em outra pasta de trabalho. Os links externos para células podem ser criados entre arquivos dentro do portal atual (no editor online) ou entre arquivos locais (no editor de área de trabalho).</p>
+            <p class="note"><b>Nota</b>: no editor online, a capacidade de inserir dados por meio de um link externo também deve ser implementada no lado do integrador (por exemplo, em um sistema de gerenciamento de documentos de terceiros ).</p>
+            <p>Se os dados na pasta de trabalho de origem forem alterados, você poderá atualizar os valores na pasta de trabalho de destino sem copiá-los manualmente novamente.</p>
+			<p>Para adicionar um link externo,</p>
+            <ol>
+				<li>abra a pasta de trabalho de origem e a pasta de trabalho de destino,</li>
+                <li>na pasta de trabalho de origem, copie uma célula ou um intervalo de células (Ctrl+C),</li>
+                <li>na pasta de trabalho de destino, cole os dados copiados (Ctrl+V),</li>
+                <li>clique no botão Colar especial e escolha a opção <b>Colar link</b> (Ctrl+N).</li>
+			</ol>
+            <p>O link será adicionado. Se você clicar na célula que contém um link externo, ela se parecerá com <code>='[SourceWorkbook.xlsx]Sheet1'!A1</code> na barra de fórmulas.</p>
+            <p>Para atualizar os links externos adicionados,</p>
+            <ol>
+                <li>mude para a guia <b>Dados</b>,</li>
+                <li>clique no botão <b>Links externos</b>,</li>
+                <li>selecione o link necessário na lista,
+                    <p><img alt="Links externos" src="../images/externallinks.png" /></p>
+                </li>
+                <li>clique no botão <b>Atualizar valores</b> ou clique na seta ao lado dele e escolha se deseja <b>Atualizar valores</b> (atualmente selecionado) ou <b>Atualizar tudo</b>.</li>
+                </ol>
+                <p>O status será alterado para 'OK'.</p>
+                <p>Ao abrir a pasta de trabalho que contém links externos, o aviso aparece:</p>
+            <p><img alt="Links externos" src="../images/extlinkwarning.png" /></p>
+            <p>Clique em <b>Atualizar</b> para atualizar todos os links externos.</p>
+            <p>Para quebrar os links externos adicionados,</p>
+            <ol>
+                <li>mude para a guia <b>Dados</b>,</li>
+                <li>clique no botão <b>Links externos</b>,</li>
+                <li>selecione o link necessário na lista,</li>
+                <li>clique no botão <b>Quebrar links</b> ou clique na seta ao lado dele e escolha se deseja <b>Quebrar links</b> (atualmente selecionado) ou <b>Quebrar todos os links</b>.</li>
+            </ol>
+            <p>Os links serão quebrados e os valores não serão atualizados.</p>
+		</div>
+	</body>
+</html>

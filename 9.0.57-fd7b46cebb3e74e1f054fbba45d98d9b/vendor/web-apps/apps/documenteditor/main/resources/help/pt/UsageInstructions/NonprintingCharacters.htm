@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mostrar/ocultar caracteres não imprimíveis</title>
+		<meta charset="utf-8" />
+		<meta name="descrição" content="Mostrar ou ocultar caracteres não imprimíveis durante a formatação de texto, criação de tabelas e edição de documentos" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Mostrar/ocultar caracteres não imprimíveis</h1>
+			<p>No <a href="https://www.onlyoffice.com/pt/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Documentos</b></a>, você pode habilitar a exibição de caracteres não imprimíveis que o ajudam a editar um documento. Eles indicam a presença de vários tipos de elementos de formatação, mas não podem ser impressos com o documento, mesmo que sejam exibidos na tela.</p>
+            <p>Para mostrar ou ocultar caracteres não imprimíveis, clique em <b>Caracteres não imprimíveis</b> <span class = "icon icon-nonprintingcharacters"></span> ícone na guia <b>Página Inicial</b> na barra de ferramentas superior. Como alternativa, você pode usar a combinação de teclas <em>Ctrl+Shift+Num8</em>.</p>
+			<p>Os caracteres não imprimíveis incluem:</p>
+			<table>
+				<tr>
+					<td>Espaços</td>
+					<td><div class = "icon icon-space"></div></td>
+					<td>Inserido quando você pressiona a <b>Barra de espaço</b> no teclado. Eles criam um espaço entre os personagens.</td>
+				</tr>
+				<tr>
+					<td>Guias</td>
+					<td><div class = "icon icon-tab"></div></td>
+					<td>Inserido quando você pressiona a tecla <b>Tab</b>. Eles são usados para avançar o cursor para a próxima parada de tabulação.</td>
+				</tr>
+				<tr>
+					<td>Marcas de parágrafo (ou seja, retornos rígidos)</td>
+					<td><div class = "icon icon-hard"></div></td>
+					<td>Inserido quando você pressiona a tecla <b>Enter</b>. Eles terminam um parágrafo e adicionam um pouco de espaço depois dele. Eles também contêm informações sobre a formatação do parágrafo.</td>
+				</tr>
+				<tr>
+					<td>Quebras de linha (ou seja, retornos suaves)</td>
+					<td><div class = "icon icon-soft"></div></td>
+					<td>Inserido quando você usa a combinação de teclas <b>Shift+Enter</b>. Eles quebram a linha atual e colocam as linhas de texto juntas. Os retornos suaves são usados principalmente em títulos e cabeçalhos.</td>
+				</tr>
+				<tr>
+					<td>Espaços não separáveis</td>
+					<td><div class = "icon icon-nonbreakspace"></div></td>
+					<td>Inserido quando você usa a combinação de teclas <b>Ctrl+Shift+Barra de espaço</b>. Eles criam um espaço entre os caracteres que não pode ser usado para iniciar uma nova linha.</td>
+				</tr>
+				<tr>
+					<td>Quebras de página</td>
+					<td><div class = "big big-pagebreak"></div></td>
+					<td>Inserido quando você usa o <div class = "icon icon-pagebreak1"></div> <b>Quebras</b> nas guias <b>Inserir</b> ou <b>Layout</b> da barra de ferramentas superior e selecione uma das opções do submenu <b>Inserir quebra de página</b> (o indicador de quebra de seção difere dependendo da opção selecionada: Próxima página, Página contínua, Página par ou Página ímpar).</td>
+				</tr>
+				<tr>
+					<td>Quebras de seção</td>
+					<td><div class = "big big-sectionbreak"></div></td>
+					<td>Inserido quando você usa o ícone <div class = "icon icon-pagebreak1"></div> <b>Quebras</b> na guia <b>Inserir</b> ou <b>Layout</b> de na barra de ferramentas superior e, em seguida, selecione uma das opções do submenu <b>Inserir quebra de seção</b> (o indicador de quebra de seção difere dependendo da opção selecionada: Próxima página, Página contínua, Página par ou Página ímpar).</td>
+				</tr>
+                <tr>
+                    <td>Quebras de coluna</td>
+                    <td><div class = "big big-columnbreak"></div></td>
+                    <td>Inserido quando você usa o <div class = "icon icon-pagebreak1"></div> <b>Quebras</b> na guia <b>Inserir</b> ou <b>Layout</b> da barra de ferramentas superior e, em seguida, selecione a opção <b>Inserir quebra de coluna</b>.</td>
+                </tr>
+				<tr>
+					<td>Marcadores de fim de célula e fim de linha em tabelas</td>
+					<td><div class = "icon icon-cellrow"></div></td>
+					<td>Contêm códigos de formatação para uma célula individual e uma linha, respectivamente.</td>
+				</tr>
+				<tr>
+					<td>Pequeno quadrado preto na margem à esquerda de um parágrafo</td>
+					<td><div class = "icon icon-square"></div></td>
+					<td>Indica que pelo menos uma das opções de parágrafo foi aplicada, por exemplo <b>Manter as linhas juntas</b>, <b>Quebra de página antes</b>.</td>
+				</tr>
+				<tr>
+					<td>Símbolos de âncora</td>
+					<td><div class = "icon icon-anchor"></div></td>
+					<td>Indique a posição dos objetos flutuantes (objetos cujo estilo de quebra automática é diferente de <b>Em linha</b>), por exemplo imagens, formas automáticas, gráficos. Você deve selecionar um objeto para tornar sua âncora visível.</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

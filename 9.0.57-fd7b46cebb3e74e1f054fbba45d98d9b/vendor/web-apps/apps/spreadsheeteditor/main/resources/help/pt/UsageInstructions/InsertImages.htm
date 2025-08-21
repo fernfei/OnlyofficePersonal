@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Inserir imagens</title>
+		<meta charset="utf-8" />
+		<meta name="descrição" content="Adicione uma imagem à sua planilha e ajuste sua posição e tamanho" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+        <div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+            <h1>Inserir imagens</h1>
+            <p>O <a href="https://www.onlyoffice.com/pt/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Planilhas</b></a> permite que você insira imagens nos formatos mais populares em sua planilha. Os seguintes formatos de imagem são suportados: <b>BMP</b>, <b>GIF</b>, <b>JPEG</b>, <b>JPG</b>, <b>PNG</b>.</p>
+            <h3>Insira uma imagem</h3>
+            <p>Para inserir uma imagem na planilha,</p>
+            <ol>
+                <li>coloque o cursor onde a imagem deve ser adicionada,</li>
+                 <li>mude para a guia <b>Inserir</b> da barra de ferramentas superior,</li>
+                 <li>clique no ícone <div class = "icon icon-image"></div> <b>Imagem</b> na barra de ferramentas superior,</li>
+                 <li>
+                     selecione uma das seguintes opções para carregar a imagem:
+                     <ul>
+                         <li>a opção <b>Imagem do arquivo</b> abrirá a janela de diálogo padrão para selecionar um arquivo. Navegue na unidade de disco rígido do seu computador para localizar o arquivo necessário e clique no botão <b>Abrir</b>
+                             <p class="note">No <em>editor online</em>, você pode selecionar várias imagens de uma só vez.</p>
+                         </li>
+                         <li>a opção <b>Imagem do URL</b> abrirá a janela onde você pode inserir o endereço da web da imagem desejada e clicar no botão <b>OK</b></li>
+                         <li class="onlineDocumentFeatures"> a opção <b>Imagem do armazenamento</b> abrirá a janela <b>Selecionar fonte de dados</b>. Selecione uma imagem armazenada em seu portal e clique no botão <b>OK</b></li>
+                    </ul>
+                </li>
+            </ol>
+            <p>Depois disso, a imagem será adicionada à planilha.</p>
+             <h3>Ajuste as configurações de imagem</h3>
+             <p>Uma vez que a imagem é adicionada, você pode <a href="ManipulateObjects.htm" onclick="onhyperlinkclick(this)">mude seu tamanho e posição</a>.</p>
+             <p>Para especificar as dimensões exatas da imagem:</p>
+            <ol>
+                <li>selecione a imagem desejada com o mouse,</li>
+                 <li>
+                     clique em <b>configurações de imagem</b> <div class = "icon icon-image_settings_icon"></div> ícone na barra lateral direita,
+                    <p><img alt="Janela do painel do lado direito das configurações de imagem" src="../images/imagesettings.png" /></p>
+                </li>
+                <li>na seção <b>Tamanho</b>, defina os valores necessários de <b>Largura</b> e <b>Altura</b>. Se o botão <b>Proporções constantes</b> <div class = "icon icon-constantproportions"></div> for clicado (neste caso, parece com isto <div class = "icon icon-constantproportionsactivated"></div>), a largura e a altura serão alteradas juntas, preservando a proporção da imagem original. Para restaurar o tamanho real da imagem adicionada, clique no botão <b>Tamanho real</b>.</li>
+            </ol>
+            <p>Para recortar a imagem:</p>
+            <p>Clique no botão <b>Cortar</b> para ativar as alças de corte que aparecem nos cantos da imagem e no centro de cada lado. Arraste manualmente as alças para definir a área de corte. Você pode mover o cursor do mouse sobre a borda da área de corte para que ela se transforme no ícone de seta <span class="icon icon-arrow"></span> e arraste a área.</p>
+             <ul>
+                 <li>Para cortar um único lado, arraste a alça localizada no centro desse lado.</li>
+                 <li>Para cortar simultaneamente dois lados adjacentes, arraste uma das alças dos cantos.</li>
+                 <li>Para cortar igualmente dois lados opostos da imagem, mantenha pressionada a tecla <em>Ctrl</em> ao arrastar a alça no centro de um desses lados. </li>
+                 <li>Para cortar igualmente todos os lados da imagem, mantenha pressionada a tecla <em>Ctrl</em> ao arrastar qualquer uma das alças dos cantos.</li>
+            </ul>
+            <p>Quando a área de corte for especificada, clique no botão <b>Cortar</b> novamente ou pressione a tecla <em>Esc</em> ou clique em qualquer lugar fora da área de corte para aplicar as alterações.</p >
+             <p>Depois de selecionar a área de corte, também é possível usar as opções <b>Cortar no formato</b>, <b>Preencher</b> e <b>Ajustar</b> disponíveis no <b Menu suspenso >Cortar</b>. Clique no botão <b>Cortar</b> novamente e selecione a opção desejada: </p>
+             <ul>
+                 <li>Se você selecionar a opção <b>Cortar no formato</b>, a imagem preencherá uma determinada forma. Você pode selecionar uma forma na galeria, que é aberta quando você passa o ponteiro do mouse sobre a opção <b>Cortar para Forma</b>. Você ainda pode usar as opções <b>Preencher</b> e <b>Ajustar</b> para escolher como sua imagem corresponde à forma.</li>
+                 <li>Se você selecionar a opção <b>Preencher</b>, a parte central da imagem original será preservada e usada para preencher a área de corte selecionada, enquanto outras partes da imagem serão removidas.</li>
+                 <li>Se você selecionar a opção <b>Ajustar</b>, a imagem será redimensionada para caber na altura ou largura da área de corte. Nenhuma parte da imagem original será removida, mas espaços vazios podem aparecer na área de corte selecionada.</li>
+            </ul>
+            <p>Para girar a imagem:</p>
+            <ol>
+                <li>selecione a imagem desejada com o mouse,</li>
+                 <li>clique no ícone <b>Configurações de imagem</b> <div class = "icon icon-image_settings_icon"></div> na barra lateral direita,</li>
+                 <li>
+                     na seção <b>Rotação</b>, clique em um dos botões:
+                    <ul>
+                        <li><div class = "icon icon-rotatecounterclockwise"></div> para girar a imagem 90 graus no sentido anti-horário</li>
+                         <li><div class = "icon icon-rotate-horário"></div> para girar a imagem 90 graus no sentido horário</li>
+                         <li><div class = "icon icon-fliplefttoright"></div> para virar a imagem horizontalmente (da esquerda para a direita)</li>
+                         <li><div class = "icon icon-flipupsidedown"></div> para virar a imagem verticalmente (de cabeça para baixo)</li>
+                    </ul>
+                    <p class="note">Como alternativa, você pode clicar com o botão direito do mouse na imagem e usar a opção <b>Girar</b> no menu contextual.</p>
+                </li>
+            </ol>
+            <p>Para substituir a imagem inserida,</p>
+             <ol>
+                 <li>selecione a imagem desejada com o mouse,</li>
+                 <li>clique no ícone <b>Configurações de imagem</b> <div class = "icon icon-image_settings_icon"></div> na barra lateral direita,</li>
+                 <li>clique no botão <b>Substituir imagem</b>,</li>
+                <li>
+                    escolha a opção necessária: <b>Do arquivo</b>, <b>Do armazenamento</b> ou <b>Da URL</b> e selecione a imagem desejada.
+                     <p class="note">Como alternativa, você pode clicar com o botão direito do mouse na imagem e usar a opção <b>Substituir imagem</b> no menu contextual.</p>
+                </li>
+            </ol>
+            <p>A imagem selecionada será substituída.</p>
+             <p>Quando a imagem é selecionada, o ícone <b>Configurações de forma</b> <span class="icon icon-shape_settings_icon"></span> também está disponível à direita. Você pode clicar neste ícone para abrir a guia <b>Configurações de forma</b> na barra lateral direita e ajustar a forma <a href="../UsageInstructions/InsertAutoshapes.htm#shape_stroke" onclick="onhyperlinkclick(this)" Tipo de ><b>linha</b></a>, seu tamanho e cor, bem como alterar o tipo de forma selecionando outra forma no menu <b>Alterar forma automática</b>. A forma da imagem mudará correspondentemente.</p>
+             <p>Na guia <b>Configurações de forma</b>, você também pode usar a opção <b>Mostrar sombra</b> para adicionar uma sombra à imagem.</p>
+             <p><img alt="guia Configurações de forma" src="../images/right_image_shape.png" /></p>
+             <h3>Ajuste as configurações avançadas da imagem</h3>
+             <p>Para alterar as configurações avançadas, clique na imagem com o botão direito do mouse e selecione a opção <b>Configurações avançadas da imagem</b> no menu do botão direito ou apenas clique em <b>Mostrar configurações avançadas</b > link na barra lateral direita. A janela de propriedades da imagem será aberta:</p>
+             <p><img alt="Imagem - Configurações avançadas: rotação" src="../images/imageadvancedsettings1.png" /></p>
+             <p>A guia <b>Rotação</b> contém os seguintes parâmetros:</p>
+            <ul>
+                <li><b>Ângulo</b> - use esta opção para girar a imagem em um ângulo especificado exatamente. Insira o valor necessário medido em graus no campo ou ajuste-o usando as setas à direita. </li>
+                 <li><b>Invertida</b> - marque a caixa <b>Horizontalmente</b> para inverter a imagem horizontalmente (da esquerda para a direita) ou marque a caixa <b>Verticalmente</b> para inverter a imagem verticalmente (de cabeça para baixo).</li>
+            </ul>
+            <p><img alt="Imagem - Configurações Avançadas: Ajuste de Células" src="../images/imageadvancedsettings2.png" /></p>
+            <p>A guia <b>Cell Snapping</b> contém os seguintes parâmetros:</p>
+            <ul>
+                <li><b>Mover e dimensionar com células</b> - esta opção permite encaixar a imagem na célula atrás dela. Se a célula se mover (por exemplo, se você inserir ou excluir algumas linhas/colunas), a imagem será movida junto com a célula. Se você aumentar ou diminuir a largura ou a altura da célula, a imagem também mudará de tamanho.</li>
+                 <li><b>Mover, mas não dimensionar com células</b> - esta opção permite que você encaixe a imagem na célula atrás dela, evitando que a imagem seja redimensionada. Se a célula se mover, a imagem será movida junto com a célula, mas se você alterar o tamanho da célula, as dimensões da imagem permanecerão inalteradas.</li>
+                 <li><b>Não mover ou dimensionar com células</b> - esta opção permite evitar que a imagem seja movida ou redimensionada se a posição ou tamanho da célula for alterado.</li>
+            </ul>
+            <p><img alt="Imagem - Configurações avançadas: texto alternativo" src="../images/imageadvancedsettings.png" /></p>
+            <p>A guia <b>Texto alternativo</b> permite que você especifique o <b>Título</b> e a <b>Descrição</b> que serão lidos para pessoas com deficiência visual ou cognitiva para ajudá-los a entender melhor quais informações a imagem contém.</p>
+             <p>Para excluir a imagem inserida, clique nela e pressione a tecla <b>Excluir</b>.</p>
+             <h3>Atribuir uma macro a uma imagem</h3>
+             <p>Você pode fornecer um acesso rápido e fácil a uma macro em uma planilha atribuindo uma macro a qualquer imagem. Depois de atribuir uma macro, a imagem aparece como um controle de botão e você pode executar a macro sempre que clicar nela.</p>
+            <p>To assign a macro:</p>
+            <ul type="circle">
+                <li>
+                    Clique com o botão direito do mouse na imagem para atribuir uma macro e escolha a opção <b>Atribuir Macro</b> no menu suspenso.
+                    <p><img alt="Atribuir macro no menu" src="../images/assignmacro_rightclickimage.png" /></p>
+                </li>
+                <li>A caixa de diálogo <b>Atribuir macro</b> será aberta</li>
+                <li>
+                    Escolha uma macro na lista ou digite o nome da macro e clique em <b>OK</b> para confirmar.
+                    <p><img alt="Atribuir macro" src="../images/assignmacro.png" /></p>
+                </li>
+            </ul>
+        </div>
+	</body>
+</html>

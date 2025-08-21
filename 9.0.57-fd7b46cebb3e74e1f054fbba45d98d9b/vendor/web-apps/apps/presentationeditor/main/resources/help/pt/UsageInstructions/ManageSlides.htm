@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Gerenciar slides</title>
+		<meta charset="utf-8" />
+		<meta name="descrição" content="Adicione novos slides em branco, duplique, mova ou exclua-os" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Gerenciar slides</h1>
+			<p>Por padrão, uma apresentação recém-criada tem um <em>Slide de título</em> em branco. No <a target="_blank" href="https://www.onlyoffice.com/pt/presentation-editor.aspx" onclick="onhyperlinkclick(this)"><b>Editor de Apresentações</b></a>, você pode criar novos slides, copiar um slide para colá-lo posteriormente em outro local da lista de slides, duplicar slides, mover slides para alterar sua ordem, excluir slides desnecessários e marcar alguns slides como ocultos.</p>
+                <p><b>Para criar um novo slide <em>Título e conteúdo</em>:</b></p>
+			<ul>
+				<li>clique no ícone <div class = "icon icon-addslide"></div> <b>Adicionar slide</b> na guia <b>Página Inicial</b> ou <b>Inserir</b> do barra de ferramentas superior ou</li>
+                <li>clique com o botão direito do mouse em qualquer slide da lista e selecione a opção <b>Novo slide</b> no menu contextual ou</li>
+                                <li>pressione a combinação de teclas <b>Ctrl+M</b>.</li>
+                </ul>
+             <p><b>Para criar um novo slide com um layout diferente:</b></p>
+            <ol>
+                <li>clique na seta ao lado do ícone <div class = "icon icon-addslide"></div> <b>Adicionar slide</b> na <b>Página Inicial</b> ou <b>Inserir</b> guia da barra de ferramentas superior,</li>
+                 <li>
+                     selecione um slide com o layout necessário no menu.
+                     <p class="note"><b>Observação</b>: você pode alterar o layout do slide adicionado a qualquer momento. Para obter informações adicionais sobre como fazer isso, consulte a seção <a href="../UsageInstructions/SetSlideParameters.htm#changelayout" onclick="onhyperlinkclick(this)">Definir parâmetros do slide</a>.</p>
+                </li>
+            </ol>
+			<p>Um novo slide será inserido após o selecionado na lista de slides existentes à esquerda.</p>
+                <p><b>Para duplicar slides:</b></p>
+                <ol>
+                <li>selecione um slide ou vários slides na lista de slides existentes à esquerda,</li>
+                <li>clique com o botão direito do mouse e selecione a opção <b>Duplicar slide</b> no menu de contexto ou vá para a guia <b>Página Inicial</b> ou <b>Inserir</b>, clique no botão <b>Adicionar slide</b> e selecione a opção de menu <b>Duplicar slide</b>.</li>
+                </ol>
+                <p>O slide duplicado será inserido após o selecionado na lista de slides.</p>
+                <p><b>Para copiar slides:</b></p>
+                <ol>
+                <li>na lista de slides existentes à esquerda, selecione um slide ou vários slides que você precisa copiar,</li>
+                <li>pressione a combinação de teclas <b>Ctrl+C</b>,</li>
+                <li>na lista de slides, selecione o slide após o qual o slide copiado deve ser colado,</li>
+                <li>pressione a combinação de teclas <b>Ctrl+V</b>.</li>
+			</ol>
+			<p><b>Para mover slides existentes:</b></p>
+                <ol>
+                <li>clique com o botão esquerdo no slide ou slides necessários na lista de slides existentes à esquerda,</li>
+                <li>sem soltar o botão do mouse, arraste-o para o local desejado na lista (uma linha horizontal indica um novo local).</li>
+                </ol>
+                <p><b>Para excluir slides desnecessários:</b></p>
+                <ol>
+                <li>clique com o botão direito do mouse no slide ou slides que deseja excluir na lista de slides existentes à esquerda,</li>
+                <li>selecione a opção <b>Excluir slide</b> no menu contextual.</li>
+                </ol>
+             <p><b>Para marcar slides como ocultos:</b></p>
+             <ol>
+                 <li>clique com o botão direito do mouse no slide ou slides que deseja ocultar na lista de slides existentes à esquerda,</li>
+                 <li>selecione a opção <b>Ocultar slide</b> no menu contextual.</li>
+             </ol>
+             <p>O número que corresponde ao slide oculto na lista de slides à esquerda será riscado. Para exibir o slide oculto como normal na lista de slides, clique novamente na opção <b>Ocultar slide</b>.</p>
+            <p><div class = "big big-hidden_slide"></div></p>
+            <p class="note"><b>Observação</b>: use esta opção se não quiser demonstrar alguns slides para o público, mas quiser acessá-los se necessário. Se você iniciar a apresentação de slides no modo <a href="../UsageInstructions/PreviewPresentation.htm#presenter" onclick="onhyperlinkclick(this)"><b>Apresentador</b></a>, poderá ver todos os slides existentes na lista à esquerda, enquanto os números dos slides ocultos são riscados. Se você deseja mostrar um slide marcado como oculto para outras pessoas, basta clicar nele na lista de slides à esquerda - o slide será exibido.</p>
+             <p><b>Para selecionar todos os slides existentes de uma só vez:</b></p>
+                <ol>
+                <li>clique com o botão direito do mouse em qualquer slide na lista de slides existentes à esquerda,</li>
+                <li>selecione a opção <b>Selecionar tudo</b> no menu contextual.</li>
+                </ol>
+                <p><b>Para selecionar vários slides:</b></p>
+                <ol>
+                <li>mantenha pressionada a tecla <b>Ctrl</b>,</li>
+                <li>selecione os slides necessários clicando neles com o botão esquerdo na lista de slides existentes à esquerda.</li>
+                </ol>
+             <p class="note"><b>Observação</b>: todas as combinações de teclas que podem ser usadas para gerenciar slides estão listadas em página <a href="../HelpfulHints/KeyboardShortcuts.htm#manageslides" onclick="onhyperlinkclick(this)">Atalhos de teclado</a>.</p>
+		</div>
+	</body>
+</html>

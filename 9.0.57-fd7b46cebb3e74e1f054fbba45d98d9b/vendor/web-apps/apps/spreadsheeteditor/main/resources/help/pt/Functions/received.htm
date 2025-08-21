@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Função RECEBER</title>
+		<meta charset="utf-8" />
+		<meta name="descricao" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>Função RECEBER</h1>
+			<p>A função <b>RECEBER</b> é uma das funções financeiras. É usado para calcular o valor recebido no vencimento de um título totalmente investido.</p>
+			<p>A sintaxe da função <b>RECEBER</b> é:</p>
+			<p style="text-indent: 150px;"><b><em>RECEBER(liquidação, vencimento, investimento, desconto[, [base]])</em></b></p>
+			<p><em>onde</em></p> 
+				<p style="text-indent: 50px;"><b><em>liquidação</em></b> é a data em que o título é comprado.</p>
+				<p style="text-indent: 50px;"><b><em>vencimento</em></b> é a data em que o título expira.</p>
+				<p style="text-indent: 50px;"><b><em>investimento</em></b> é o valor pago pelo título.</p>
+				<p style="text-indent: 50px;"><b><em>desconto</em></b> é a taxa de desconto do título.</p>
+            <p style="text-indent: 50px;"><b><em>base</em></b> é a base de contagem de dias a ser usada, um valor numérico maior ou igual a 0, mas menor ou igual a 4. É um argumento opcional. Pode ser um dos seguintes:</p>
+            <table style="width: 40%">
+                <tr>
+                    <td><b>Valor numérico</b></td>
+                    <td><b>Base de contagem</b></td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>US (NASD) 30/360</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Atual/atual</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Atual/360</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Atual/365</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Europeu 30/360</td>
+                </tr>
+            </table>
+            <p class="note"><b>Nota:</b> as datas devem ser inseridas usando a função DATA.</p>
+			<p>Os valores podem ser inseridos manualmente ou incluídos na célula à qual você faz referência.</p>
+			<p>Para aplicar a função <b>RECEBER</b>,</p>
+			<ol>
+			<li>selecione a célula onde deseja exibir o resultado,</li>
+			<li>clique no ícone <b>Inserir função</b> <div class = "icon icon-insertfunction"></div> situado na barra de ferramentas superior,
+				<br />ou clique com o botão direito em uma célula selecionada e selecione a opção <b>Inserir Função</b> no menu,
+				<br />ou clique no ícone <div class = "icon icon-function"></div> situado na barra de fórmulas,
+			</li>
+			<li>selecione o grupo de funções <b>Financeira</b> na lista,</li>
+			<li>clique na função <b>RECEBER</b>,</li>
+			<li>digite os argumentos necessários separando-os por vírgula,</li>
+			<li>pressione o botão <b>Entrar</b>.</li>
+			</ol>
+            <p>O resultado será exibido na célula.</p>
+			<p style="text-indent: 150px;"><img alt="Função RECEBER" src="../images/received.png" /></p>
+		</div>
+	</body>
+</html>

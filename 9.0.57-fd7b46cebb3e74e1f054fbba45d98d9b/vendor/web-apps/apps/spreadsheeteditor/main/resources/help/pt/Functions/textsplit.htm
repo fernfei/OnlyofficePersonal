@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Função DIVIDIRTEXTO</title>
+		<meta charset="utf-8" />
+		<meta name="descrição" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+			<div class="search-field">
+				<input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+			</div>
+			<h1>Função DIVIDIRTEXTO</h1>
+			<p>A função <b>DIVIDIRTEXTO</b> é uma das funções de texto e dados. É usado para dividir strings de texto por meio de delimitadores de colunas e linhas.</p>
+            <p class="note">Observe que esta é uma fórmula de matriz. Para saber mais, leia o <a href="../UsageInstructions/InsertArrayFormulas.htm" onclick="onhyperlinkclick(this)">Inserir fórmulas de matriz</a> artigo.</p>
+			<p>A sintaxe da função <b>DIVIDIRTEXTO</b> é:</p>
+			<p style="text-indent: 150px;"><b><em>DIVIDIRTEXTO(texto, col_delimiter,[row_delimiter],[ignore_empty], [match_mode], [pad_with])</em></b></p>
+			<p>onde</p>
+			<p style="text-indent: 50px;"><b><em>texto</em></b> é usado para definir o texto que você deseja dividir.</p>
+            <p style="text-indent: 50px;"><b><em>col_delimiter</em></b> é um argumento opcional. É usado para definir o texto que marca o ponto onde dividir o texto nas colunas.</p>
+			<p style="text-indent: 50px;"><b><em>row_delimiter</em></b> é um argumento opcional. É usado para definir o texto que marca o ponto onde o texto será dividido em linhas.</p>
+			<p style="text-indent: 50px;"><b><em>ignore_empty</em></b> é um argumento opcional. É usado para especificar <b>FALSO</b> para criar uma célula vazia quando dois delimitadores são consecutivos. O padrão é <b>VERDADEIRO</b>, o que cria uma célula vazia.</p>
+			<p style="text-indent: 50px;"><b><em>match_mode</em></b> é um argumento opcional. É usado para pesquisar no texto uma correspondência de delimitador. Por padrão, é feita uma correspondência com distinção entre maiúsculas e minúsculas.</p>
+			<p style="text-indent: 50px;"><b><em>pad_with</em></b> é usado para definir o valor com o qual preencher o resultado. O padrão é #N/A.</p>
+            <p>Para aplicar a função <b>DIVIDIRTEXTO</b>,</p>
+			<ol>
+				<li>selecione a célula onde deseja exibir o resultado,</li>
+				<li>
+					clique no ícone <b>Inserir função</b> <div class="icon icon-insertfunction"></div> situado na barra de ferramentas superior,
+                    <br />ou clique com o botão direito em uma célula selecionada e selecione a opção <b>Inserir Função</b> no menu,
+                    <br />ou clique no ícone <div class="icon icon-function"></div> situado na barra de fórmulas,
+				</li>
+				<li>selecione o grupo de funções <b>Texto e dados</b> na lista,</li>
+                <li>clique na função <b>DIVIDIRTEXTO</b>,</li>
+                <li>insira os argumentos necessários separando-os por vírgulas,</li>
+                <li>pressione o botão <b>Entrar</b>.</li>
+			</ol>
+			<p>O resultado será exibido na célula selecionada.</p>
+			<p style="text-indent: 150px;"><img alt="Função DIVIDIRTEXTO" src="../images/textsplit.png" /></p>
+		</div>
+	</body>
+</html>

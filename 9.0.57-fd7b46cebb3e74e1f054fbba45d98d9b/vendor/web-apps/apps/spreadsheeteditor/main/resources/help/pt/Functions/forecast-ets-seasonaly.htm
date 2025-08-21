@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Função PREVISÃO.ETS.SAZONALIDADE</title>
+		<meta charset="utf-8" />
+		<meta name="descricao" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>Função PREVISÃO.ETS.SAZONALIDADE</h1>
+			<p>A função <b>PREVISÃO.ETS.SAZONALIDADE</b> é uma das funções estatísticas. Ele é usado para retornar o comprimento do padrão repetitivo que o aplicativo detecta para a série temporal especificada.</p>
+			<p>A sintaxe da função <b>PREVISÃO.ETS.SAZONALIDADE</b> é:</p> 
+			<p style="text-indent: 150px;"><b><em>PREVISÃO.ETS.SAZONALIDADE(valores, linha-do-tempo, [preenchimento-dados], [agregação])</em></b></p> 
+			<p><em>onde</em></p>
+				<p style="text-indent: 50px;"><b><em>valores</em></b> é um intervalo de valores históricos para os quais você deseja prever um novo ponto.</p>
+                <p style="text-indent: 50px;"><b><em>linha-do-tempo</em></b> é um intervalo de valores de data/hora que correspondem aos valores históricos. O intervalo de <b><em>linha-do-tempo</em></b> deve ser do mesmo tamanho que o intervalo de <b><em>valores</em></b>. Os valores de data/hora devem ter uma etapa constante entre eles (embora até 30% dos valores ausentes possam ser processados ​​conforme especificado pelo argumento <b><em>preenchimento-dados</em></b> e os valores duplicados possam ser agregados como especificado pelo argumento <b><em>agregação</em></b>).</p>
+		<p style="text-indent: 50px;"><b><em>preenchimento-dados</em></b> é um valor numérico que especifica como processar os pontos de dados ausentes no intervalo de dados da <b><em>linha-do-tempo</em></b>. É um argumento opcional. Os valores possíveis estão listados na tabela abaixo.</p>
+            <table style="width: 40%">
+                <tr>
+                    <td><b>Valor numérico</b></td>
+                    <td><b>Compotamento</b></td>
+                </tr>
+                <tr>
+                    <td>1 ou omitido</td>
+                    <td>Os pontos ausentes são calculados como a média dos pontos vizinhos.</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>Os pontos ausentes são tratados como valores zero.</td>
+                </tr>
+            </table>
+                <p style="text-indent: 50px;"><b><em>agregação</em></b> é um valor numérico que especifica qual função deve ser usada para agregar valores de tempo idênticos no intervalo de dados <b><em>linha-do-tempo</em></b>. É um argumento opcional. Os valores possíveis estão listados na tabela abaixo.</p>
+            <table style="width: 40%">
+                <tr>
+                    <td><b>Valor numérico</b></td>
+                    <td><b>Função</b></td>
+                </tr>
+                <tr>
+                    <td>1 ou omitido</td>
+                    <td><a href="../media.html" onclick="onhyperlinkclick(this)">MÉDIA</a></td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td><a href="../Only Office/contar.html" onclick="onhyperlinkclick(this)">CONTAR</a></td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td><a href="../Only Office/contar-val.html" onclick="onhyperlinkclick(this)">CONTAR.VAL</a></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td><a href="../Only Office/maximo.html" onclick="onhyperlinkclick(this)">MÁXIMO</a></td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td><a href="../Only Office/med.html" onclick="onhyperlinkclick(this)">MEDIANA</a></td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td><a href="../Only Office/minimo.htm" onclick="onhyperlinkclick(this)">MÍNIMO</a></td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td><a href="../Only Office/soma.htm" onclick="onhyperlinkclick(this)">SOMA</a></td>
+                </tr>
+            </table> 
+			<p>Para aplicar a função <b>PREVISÃO.ETS.SAZONALIDADE</b>,</p>
+			<ol>
+			<li>selecione a célula onde deseja exibir o resultado,</li>
+			<li>clique no ícone <b>Inserir função</b> <div class = "icon icon-insertfunction"></div> situado na barra de ferramentas superior,
+				<br />ou clique com o botão direito em uma célula selecionada e selecione a opção <b>Inserir Função</b> no menu,
+				<br />ou clique no ícone <div class = "icon icon-function"></div> situado na barra de fórmulas,
+			</li>
+			<li>selecione o grupo de funções <b>Estatística</b> na lista,</li>
+			<li>clique na função <b>PREVISÃO.ETS.SAZONALIDADE</b>,</li>
+			<li>digite os argumentos necessários separando-os por vírgula,</li>
+			<li>pressione o botão <b>Entrar</b>.</li>
+			</ol>
+			<p>O resultado será exibido na célula selecionada.</p>
+			<p style="text-indent: 150px;"><img alt="Função PREVISÃO.ETS.SAZONALIDADE" src="../images/forecast-ets-seasonality.png" /></p>
+		</div>
+	</body>
+</html>

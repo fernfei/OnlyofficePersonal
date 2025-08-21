@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Adicionar favoritos</title>
+		<meta charset="utf-8" />
+        <meta name="descrição" content="Os favoritos permitem pular rapidamente para uma determinada posição no documento atual ou adicionar um link para esse local no documento." />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Adicionar favoritos</h1>
+            <p>Os marcadores permitem acessar rapidamente uma determinada parte do texto ou adicionar um link para sua localização no documento.</p>
+			<p>Para adicionar um marcador no <a href="https://www.onlyoffice.com/pt/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Documentos</b></a>:</p>
+			<ol>
+                <li>especifique o local onde deseja que o marcador seja adicionado:
+                <ul>
+                    <li>coloque o cursor do mouse no início da passagem de texto necessária ou</li>
+                     <li>selecione a passagem de texto necessária,</li>
+                </ul>
+                </li>
+                <li>mude para a guia <b>Referências</b> da barra de ferramentas superior,</li>
+                 <li>clique no ícone <div class = "icon icon-bookmark"></div> <b>Favorito</b> na barra de ferramentas superior,</li>
+                <li>na janela <b>Favoritos</b>, insira o <b>Nome do favorito</b> e clique no botão <b>Adicionar</b> - um favorito será adicionado à lista de favoritos exibida abaixo,
+                    <p class="note"><b>Nota</b>: o nome do marcador deve começar com uma letra, mas também pode conter números. O nome do marcador não pode conter espaços, mas pode incluir o caractere de sublinhado "_".</p>
+                    <p><img alt="Janela de favoritos" src="../images/bookmark_window.png" /></p>
+                </li>
+			</ol>
+            <p>Para acessar um dos marcadores adicionados no texto:</p>
+            <ol>
+                <li>clique no ícone <div class = "icon icon-bookmark"></div> <b>Favorito</b> na guia <b>Referências</b> da barra de ferramentas superior,</li>
+                 <li>na janela <b>Favoritos</b>, selecione o favorito que deseja acessar. Para encontrar facilmente o favorito desejado na lista, você pode classificar a lista de favoritos por <b>Nome</b> ou por <b>Localização</b> no texto,</li>
+                 <li>marque a opção <b>Favoritos ocultos</b> para exibir os favoritos ocultos na lista (ou seja, os favoritos criados automaticamente pelo programa ao adicionar referências a uma determinada parte do documento. Por exemplo, se você criar um hiperlink para um determinado título dentro do documento, o editor do documento cria automaticamente um marcador oculto para o destino deste link).</li>
+                 <li>clique no botão <b>Ir para</b> - o cursor será posicionado onde o marcador selecionado foi adicionado ao texto ou a passagem de texto correspondente será selecionada,</li>
+                <li>
+                   clique no botão <b>Obter link</b> - uma nova janela será aberta onde você pode pressionar o botão <b>Copiar</b> para copiar o link para o arquivo que especifica o local do marcador no documento. Ao colar este link em uma barra de endereços do navegador e pressionar Enter, o documento será aberto onde o marcador selecionado foi adicionado.
+                    <p><img alt="Janela de favoritos" src="../images/bookmark_window2.png" /></p>
+                    <p class="note"><b>Nota</b>: se você quiser compartilhar este link com outros usuários, você precisará fornecer a eles os direitos de acesso correspondentes usando a opção <b>Compartilhamento</b> em <b>Colaboração</b> aba.</p>
+                </li>
+                <li>clique no botão <b>Fechar</b> para fechar a janela.</li>
+            </ol>
+            <p>Para excluir um marcador, selecione-o na lista de marcadores e clique no botão <b>Excluir</b>.</p>
+             <p>Para saber como usar marcadores ao criar links, consulte o <a href="../UsageInstructions/AddHyperlinks.htm" onclick="onhyperlinkclick(this)">Adicionar seção de hiperlinks</a>.</p>
+
+		</div>
+	</body>
+</html>

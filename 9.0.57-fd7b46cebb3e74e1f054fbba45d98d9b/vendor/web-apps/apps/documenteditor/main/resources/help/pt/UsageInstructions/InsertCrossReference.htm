@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Inserir referências cruzadas</title>
+    <meta charset="utf-8" />
+    <meta name="descrição" content="Use referências cruzadas para criar links que levam a outras partes do mesmo documento" />
+    <link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+    <link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+    <script type="text/javascript" src="../callback.js"></script>
+    <script type="text/javascript" src="../search/js/page-search.js"></script>
+</head>
+<body>
+    <div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+        <h1>Inserir referências cruzadas</h1>
+        <p>No <a href="https://www.onlyoffice.com/pt/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Editor de Documentos</b></a>, as referências cruzadas são usadas para criar links que levam a outras partes do mesmo documento, por exemplo cabeçalhos ou objetos como gráficos ou tabelas. Essas referências aparecem na forma de um hiperlink.</p>
+         <h2>Criando uma referência cruzada</h2>
+        <ol>
+            <li>Posicione o cursor no local onde deseja inserir uma referência cruzada.</li>
+             <li>Vá para a guia <b>Referências</b> e clique no ícone <b>Referência cruzada</b>.</li>
+             <li>
+                 Defina os parâmetros necessários na janela <b>Referência cruzada</b> aberta:
+                <p><img alt="Janela de referência cruzada" src="../images/cross_refference_window.png" /></p>
+                <ul>
+                    <li>O menu suspenso <b>Tipo de referência</b> especifica o item ao qual você deseja se referir, ou seja, um item numerado (definido por padrão), <em>um título, um marcador, uma nota de rodapé, uma nota final, uma equação , uma figura,</em> e <em>uma tabela</em>. Escolha o tipo de item necessário.</li>
+                    <li>
+                       O menu suspenso <b>Inserir referência a</b> especifica o texto ou o valor numérico de uma referência que você deseja inserir, dependendo do item escolhido no menu <b>Tipo de referência</b>. Por exemplo, se você escolher a opção <b>Título</b>, poderá especificar o seguinte conteúdo: <em>Texto do título, Número da página, Número do título, Número do título (sem contexto), Número do título (contexto completo), Acima abaixo</em>.
+                        <details class="details-example">
+                            <summary>A lista completa das opções fornecidas dependendo do tipo de referência escolhido</summary>
+                            <table class="cross-reference">
+                                <tr>
+                                    <th>Tipo de referência</th>
+                                     <th>Inserir referência a</th>
+                                     <th style="text-align: left;">Descrição</th>
+                                </tr>
+                                <tr>
+                                    <td rowspan="6">item numerado</td>
+                                    <td style="text-align: left;">Número da página</td>
+                                     <td style="text-align: left;">Insere o número da página do item numerado</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Número do parágrafo</td>
+                                    <td style="text-align: left;">Insere o número do parágrafo do item numerado</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Número do parágrafo (sem contexto)</td>
+                                    <td style="text-align: left;">Insere um número de parágrafo abreviado. A referência é feita apenas ao item específico da lista numerada, por exemplo, em vez de “4.1.1” você se refere apenas a “1”</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Número do parágrafo (contexto completo)</td>
+                                    <td style="text-align: left;">Insere um número de parágrafo completo, por exemplo, “4.1.1”</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Texto do parágrafo</td>
+                                    <td style="text-align: left;">Insere o valor do texto do parágrafo, por exemplo, se você tiver “4.1.1. Termos e Condições”, você se refere apenas a “Termos e Condições”</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Acima/abaixo</td>
+                                     <td style="text-align: left;">Insere as palavras “acima” ou “abaixo” dependendo da posição do item</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="6">Cabeçalho</td>
+                                    <td style="text-align: left;">Texto do título</td>
+                                    <td style="text-align: left;">Insere todo o texto do título</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Número da página</td>
+                                    <td style="text-align: left;">Insere o número da página do título</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Número do título</td>
+                                    <td style="text-align: left;">Insere o número de sequência do título</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Número do título (sem contexto)</td>
+                                    <td style="text-align: left;">Insere um número de cabeçalho abreviado. Certifique-se de que o ponto do cursor esteja na seção à qual você está se referindo, por exemplo, você está na seção 4 e deseja se referir ao título 4.B, portanto, em vez de “4.B”, você recebe apenas “B”</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Número do cabeçalho (contexto completo)</td>
+                                     <td style="text-align: left;">Insere um número de título completo, mesmo que o ponto do cursor esteja na mesma seção</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Acima/abaixo</td>
+                                     <td style="text-align: left;">Insere as palavras “acima” ou “abaixo” dependendo da posição do item</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="6">Marca páginas</td>
+                                    <td style="text-align: left;">Marcar texto</td>
+                                     <td style="text-align: left;">Insere todo o texto do marcador</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Número da página</td>
+                                     <td style="text-align: left;">Insere o número da página do marcador</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Número do parágrafo</td>
+                                     <td style="text-align: left;">Insere o número do parágrafo do marcador</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Número do parágrafo (sem contexto)</td>
+                                     <td style="text-align: left;">Insere um número de parágrafo abreviado. A referência é feita apenas ao item específico, por exemplo, em vez de “4.1.1” você se refere apenas a “1”</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Número do parágrafo (contexto completo)</td>
+                                     <td style="text-align: left;">Insere um número de parágrafo completo, por exemplo, “4.1.1”</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Acima/abaixo</td>
+                                     <td style="text-align: left;">Insere as palavras “acima” ou “abaixo” dependendo da posição do item</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="4">Nota de rodapé</td>
+                                    <td style="text-align: left;">Número da nota de rodapé</td>
+                                     <td style="text-align: left;">Insere o número da nota de rodapé</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Número da página</td>
+                                     <td style="text-align: left;">Insere o número da página da nota de rodapé</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Acima/abaixo</td>
+                                     <td style="text-align: left;">Insere as palavras “acima” ou “abaixo” dependendo da posição do item</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Número da nota de rodapé (formatado)</td>
+                                     <td style="text-align: left;">Insere o número da nota de rodapé formatada como nota de rodapé. A numeração das notas de rodapé reais não é afetada</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="4">Nota final</td>
+                                    <td style="text-align: left;">Número da nota final</td>
+                                     <td style="text-align: left;">Insere o número da nota final</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Número da página</td>
+                                     <td style="text-align: left;">Insere o número da página da nota final</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Acima/abaixo</td>
+                                     <td style="text-align: left;">Insere as palavras “acima” ou “abaixo” dependendo da posição do item</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Número da nota final (formatado)</td>
+                                     <td style="text-align: left;">Insere o número da nota final formatada como nota final. A numeração das notas de fim reais não é afetada</td>
+                                </tr>
+                                <tr>
+                                    <td rowspan="5">Equação / Figura / Tabela</td>
+                                     <td style="text-align: left;">Legenda inteira</td>
+                                     <td style="text-align: left;">Insere o texto completo da legenda</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Apenas etiqueta e número</td>
+                                     <td style="text-align: left;">Insere apenas o rótulo e o número do objeto, por exemplo, “Tabela 1.1”</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Apenas texto da legenda</td>
+                                     <td style="text-align: left;">Insere apenas o texto da legenda</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Número da página</td>
+                                     <td style="text-align: left;">Insere o número da página que contém o objeto referenciado</td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">Acima/abaixo</td>
+                                     <td style="text-align: left;">Insere as palavras “acima” ou “abaixo” dependendo da posição do item</td>
+                                </tr>
+                            </table>
+                        </details>
+                        <br />
+                    </li>
+
+                    <li>Marque a caixa <b>Inserir como hiperlink</b> para transformar a referência em um link ativo.</li>
+                     <li>Marque a caixa <b>Incluir acima/abaixo</b> (se disponível) para especificar a posição do item ao qual você se refere. O Editor de Documentos do ONLYOFFICE inserirá automaticamente as palavras “<em>acima</em>” ou “<em>abaixo</em>” dependendo da posição do item.</li>
+                     <li>Marque a caixa <b>Números separados com</b> para especificar o separador na caixa à direita. Os separadores são necessários para referências de contexto completo.</li>
+                     <li>O campo <b>Para qual</b> oferece os itens disponíveis de acordo com o <b>Tipo de referência</b> que você escolheu, por exemplo, se você escolheu a opção <b>Título</b>, verá a lista completa dos títulos no documento.</li>
+                </ul>
+            </li>
+            <li>Clique em <b>Inserir</b> para criar uma referência cruzada.</li>
+        </ol>
+        <h2>Removendo uma referência cruzada</h2>
+         <p>Para excluir uma referência cruzada, selecione a referência cruzada que deseja remover e pressione a tecla <b>Excluir</b>.</p>
+    </div>
+</body>
+</html>

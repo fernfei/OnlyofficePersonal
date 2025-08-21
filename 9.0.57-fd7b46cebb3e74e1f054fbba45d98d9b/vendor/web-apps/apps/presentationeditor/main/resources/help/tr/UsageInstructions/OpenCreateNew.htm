@@ -1,0 +1,77 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Yeni bir sunu oluşturma veya mevcut bir sunuyu a&ccedil;ma</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Open a recently edited presentation, create a new one, or return to the list of existing presentations" />
+    <link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+    <link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+    <script type="text/javascript" src="../callback.js"></script>
+    <script type="text/javascript" src="../search/js/page-search.js"></script>
+</head>
+<body>
+    <div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+        </div>
+        <h1>Yeni bir sunu oluşturma veya mevcut bir sunuyu a&ccedil;ma</h1>
+        <p><a target="_blank" href="https://www.onlyoffice.com/presentation-editor.aspx" onclick="onhyperlinkclick(this)"><b>Sunu D&uuml;zenleyicide</b></a>, yeni d&uuml;zenlenmiş bir sunuyu a&ccedil;abilir, yeniden adlandırabilir, yeni bir sunu oluşturabilir veya mevcut sunular listesine geri d&ouml;nebilirsiniz.</p>
+        <h3>Yeni bir sunu oluşturmak i&ccedil;in</h3>
+        <div class="onlineDocumentFeatures">
+            <p><em>&Ccedil;evrimi&ccedil;i d&uuml;zenleyicide</em></p>
+            <ol>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğundaki <b>Dosya</b> sekmesine tıklayın,</li>
+                <li><b>Yeni Oluştur</b> se&ccedil;eneğini se&ccedil;in. <!--Here you can choose whether to create a <b>blank</b> text document or use one of the available document <b>templates</b>: contract, letter, list, or plan.--></li>
+            </ol>
+        </div>
+        <div class="desktopDocumentFeatures">
+            <p><em>Masa&uuml;st&uuml; d&uuml;zenleyicide</em></p>
+            <ol>
+                <li>Ana program penceresinde, sol kenar &ccedil;ubuğundaki <b>Yeni Oluştur</b> b&ouml;l&uuml;m&uuml;nden <b>Sunu</b> men&uuml; &ouml;ğesini se&ccedil;in - yeni bir sekmede yeni bir dosya a&ccedil;ılacaktır,</li>
+                <li>Gerekli t&uuml;m değişiklikler yapıldığında, sol &uuml;st k&ouml;şedeki <b>Kaydet</b> <div class="icon icon-save"></div> simgesine tıklayın veya <b>Dosya</b> sekmesine ge&ccedil;in ve <b>Farklı kaydet</b> men&uuml; se&ccedil;eneğini se&ccedil;in.</li>
+                <li>Dosya y&ouml;neticisi penceresinde, dosya konumunu se&ccedil;in, adını belirtin, sunuyu kaydetmek istediğiniz bi&ccedil;imi (PPTX, Sunu şablonu (POTX), ODP, OTP, PDF veya PDFA) se&ccedil;in ve <b>Kaydet</b> d&uuml;ğmesine tıklayın.</li>
+            </ol>
+        </div>
+
+        <div class="desktopDocumentFeatures">
+            <h3>Mevcut bir sunuyu a&ccedil;mak i&ccedil;in</h3>
+            <p><em>Masa&uuml;st&uuml; d&uuml;zenleyicide</em></p>
+            <ol>
+                <li>Ana program penceresinde, sol kenar &ccedil;ubuğundaki <b>Yerel dosyayı a&ccedil;</b> men&uuml; &ouml;ğesini se&ccedil;in,</li>
+                <li>Dosya y&ouml;neticisi penceresinden gerekli sunuyu se&ccedil;in ve <b>A&ccedil;</b> d&uuml;ğmesine tıklayın.</li>
+            </ol>
+            <p>Ayrıca, dosya y&ouml;neticisi penceresinde gerekli sunuya sağ tıklayabilir, <b>Birlikte a&ccedil;</b> se&ccedil;eneğini se&ccedil;ebilir ve men&uuml;den gerekli uygulamayı se&ccedil;ebilirsiniz. Ofis belgeleri dosyaları uygulamayla ilişkilendirilmişse, sunuları dosya gezgini penceresinde dosya adına &ccedil;ift tıklayarak da a&ccedil;abilirsiniz.</p>
+            <p>Masa&uuml;st&uuml; d&uuml;zenleyiciyi kullanarak eriştiğiniz t&uuml;m dizinler, daha sonra hızlı bir şekilde erişebilmeniz i&ccedil;in <b>Son klas&ouml;rler</b> listesinde g&ouml;r&uuml;nt&uuml;lenir. Burada saklanan dosyalardan birini se&ccedil;mek i&ccedil;in gerekli klas&ouml;re tıklayın.</p>
+        </div>
+
+        <h3>En son d&uuml;zenlenen bir sunuyu a&ccedil;mak i&ccedil;in</h3>
+        <div class="onlineDocumentFeatures">
+            <p><em>&Ccedil;evrimi&ccedil;i d&uuml;zenleyicide</em></p>
+            <ol>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğundaki <b>Dosya</b> sekmesine tıklayın,</li>
+                <li><b>Son Kullanılan Belgeleri A&ccedil;</b> se&ccedil;eneğini se&ccedil;in,</li>
+                <li>Son d&uuml;zenlenen belgeler listesinden ihtiyacınız olan sunuyu se&ccedil;in.</li>
+            </ol>
+        </div>
+        <div class="desktopDocumentFeatures">
+            <p><em>Masa&uuml;st&uuml; d&uuml;zenleyicide</em></p>
+            <ol>
+                <li>Ana program penceresinde, sol kenar &ccedil;ubuğundaki <b>Son kullanılan dosyalar</b> men&uuml; &ouml;ğesini se&ccedil;in,</li>
+                <li>Son d&uuml;zenlenen belgeler listesinden ihtiyacınız olan sunuyu se&ccedil;in.</li>
+            </ol>
+        </div>
+
+        <h3>A&ccedil;ılmış bir sunuyu yeniden adlandırmak i&ccedil;in</h3>
+        <div class="onlineDocumentFeatures">
+            <p><em>&Ccedil;evrimi&ccedil;i d&uuml;zenleyicide</em></p>
+            <ol>
+                <li>Sayfanın &uuml;st kısmındaki belge adına tıklayın,</li>
+                <li>Yeni bir sunu adı girin,</li>
+                <li>Değişiklikleri kabul etmek i&ccedil;in <b>Enter</b> tuşuna basın.</li>
+            </ol>
+        </div>
+
+        <p>Dosyanın saklandığı klas&ouml;r&uuml; <span class="onlineDocumentFeatures">&ccedil;evrimi&ccedil;i s&uuml;r&uuml;mde <em>yeni bir tarayıcı sekmesinde,</em></span> <span class="desktopDocumentFeatures">masa&uuml;st&uuml; s&uuml;r&uuml;m&uuml;nde<em>dosya gezgini penceresinde</em> a&ccedil;mak i&ccedil;in d&uuml;zenleyici başlığının sağ </span> tarafındaki <span class="icon icon-gotodocuments"></span> <b>Dosya konumunu a&ccedil;</b> simgesine tıklayın. Alternatif olarak, &uuml;st ara&ccedil; &ccedil;ubuğundaki <b>Dosya</b> sekmesine ge&ccedil;ebilir ve <b>Dosya konumunu a&ccedil;</b> se&ccedil;eneğini se&ccedil;ebilirsiniz.</p>
+    </div>
+</body>
+</html>

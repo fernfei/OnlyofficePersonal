@@ -1,0 +1,52 @@
+﻿	<!DOCTYPE html>
+	<html>
+	<head>
+		<title>Criando uma animação de caminho de movimento</title>
+		<meta charset="utf-8" />
+		<meta name="descrição" content="Descrevendo como adicionar e gerenciar animações de caminho de movimento para objetos." />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<script type="text/javascript" src="../callback.js"></script>
+		<script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+        <div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+            <h1>Criando uma animação de caminho de movimento</h1>
+            <p><b>Caminho de movimento</b> é uma parte dos efeitos da galeria de animação que determina o movimento de um objeto e o caminho que ele segue. Os ícones na galeria representam o caminho sugerido. A <b>galeria de animações</b> está disponível na guia <b>Animação</b> na barra de ferramentas superior.</p>
+            <h3 id="applyanimation">Aplicando um efeito de animação de caminho de movimento</h3>
+            <ol>
+                <li>mude para a guia <b>Animação</b> na barra de ferramentas superior,</li>
+                 <li>selecione um texto, um objeto ou elemento gráfico ao qual deseja aplicar o efeito de animação,</li>
+                 <li>selecione um dos padrões de caminho de movimento predefinidos na seção <b>Caminhos de movimento</b> na galeria de animações (<em>Linhas</em>, <em>Arcos</em>, etc.), ou escolha a opção <b>Caminho personalizado</b> se quiser criar um caminho próprio.</li>
+             </ol>
+             <p>Você pode visualizar efeitos de animação no slide atual. Por padrão, os efeitos de animação serão reproduzidos automaticamente quando você os adicionar a um slide, mas você pode desativá-los. Clique no menu suspenso <b>Visualizar</b> na guia <b>Animação</b> e selecione um modo de visualização:</p>
+             <ul>
+                 <li><b>Visualizar</b> para mostrar uma visualização quando você clicar no botão <b>Visualizar</b>,</li>
+                 <li><b>Visualização automática</b> para mostrar uma visualização automaticamente quando você adiciona uma animação a um slide ou substitui uma existente.</li>
+             </ul>
+
+             <h3>Adicionando um efeito de animação de caminho personalizado</h3>
+             <p>Para desenhar um caminho personalizado,</p> 
+            <ol>
+                <li>Clique no objeto para o qual deseja fornecer uma animação de caminho personalizada.</li>
+                 <li>Marque os pontos do caminho com o botão esquerdo do mouse. Um clique com o botão esquerdo do mouse desenhará uma linha, enquanto segurar o botão esquerdo do mouse permite que você faça qualquer curva que desejar.
+                     <p>O ponto inicial do caminho será marcado com uma seta direcional verde, o ponto final será vermelho.</p>
+                 <p><div class="big big-custom_path"></div></p></li>
+                 <li>Quando estiver pronto, clique duas vezes com o botão esquerdo do mouse ou pressione o botão <b>Esc</b> para parar de desenhar seu caminho.</li>
+            </ol>
+
+            <h3>Edição de pontos de caminho de movimento</h3>
+             <ol>
+                 <li>
+                     Para editar os pontos do caminho de movimento, selecione o objeto do caminho, clique com o botão direito do mouse para abrir o menu de contexto e escolha a opção <b>Editar pontos</b>.
+                     <p><div class="big big-edit_points"></div></p>
+                     <p>Arraste os quadrados <b>pretos</b> para ajustar a posição dos nós dos pontos do caminho; arraste os quadrados <b>brancos</b> para ajustar a direção nos pontos de entrada e saída do nó. Pressione <b>Esc</b> ou em qualquer lugar fora do objeto de caminho para sair do modo de edição.</p>
+                 </li>
+                 <li>Você pode dimensionar o caminho de movimento clicando nele e arrastando os pontos quadrados nas bordas do objeto.</li>
+            </ol>
+        </div>
+		</body>
+	</html>

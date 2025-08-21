@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Visualizar sua apresentação</title>
+		<meta charset="utf-8" />
+		<meta name="descrição" content="Visualizar sua apresentação" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Visualizar sua apresentação</h1>
+            <h3>Iniciar a visualização</h3>
+            <p class="note">Nota: Se você baixar uma apresentação que foi criada usando um aplicativo de terceiros, poderá ver uma prévia dos efeitos de animação, se houver.</p>
+			<p>Para visualizar a apresentação atual no <a target="_blank" href="https://www.onlyoffice.com/pt/presentation-editor.aspx" onclick="onhyperlinkclick(this)"><b>Editor de Apresentações</b></a>, você pode:</p>
+            <ul>
+                <li>clique no ícone <b>Iniciar apresentação de slides</b> <div class = "icon icon-startpreview"></div> na guia <b>Página Inicial</b> da barra de ferramentas superior ou no lado esquerdo do status barra, ou</li>
+                 <li>selecione um determinado slide na lista de slides à esquerda, clique com o botão direito do mouse e escolha a opção <b>Iniciar apresentação de slides</b> no menu contextual.</li>
+             </ul>
+             <p>A visualização começará a partir do slide atualmente selecionado. </p>
+             <p>Você também pode clicar na seta ao lado do ícone <b>Iniciar apresentação de slides</b> <span class = "icon icon-startpreview"></span> na guia <b>Página Inicial</b> da barra de ferramentas superior e selecione uma das opções disponíveis:</p>
+            <ul>
+                <li><b>Mostrar do início</b> - para iniciar a visualização desde o primeiro slide,</li>
+                 <li><b>Mostrar a partir do slide atual</b> - para iniciar a visualização do slide atualmente selecionado,</li>
+                 <li><b>Exibir vista de apresentador</b> - para iniciar a visualização no modo <b>Apresentador</b> que permite que você mostre a apresentação para o público sem anotações do slide enquanto visualiza a apresentação com as anotações do slide em um monitor diferente.</li>
+                 <li><b>Exibir configurações</b> - para abrir a janela de configurações que permite definir apenas uma opção: <b>Loop contínuo até "Esc" ser pressionado</b>. Marque esta opção se necessário e clique em <b>OK</b>. Se você habilitar esta opção, a apresentação será exibida até que você pressione a tecla <b>Escape</b>, ou seja, quando chegar ao último slide da apresentação, você poderá ir para o primeiro slide novamente, etc. Se você desabilitar esta opção, assim que chegar ao último slide da apresentação, uma tela preta aparecerá indicando que a apresentação foi finalizada e você poderá sair da <b>Pré-visualizar</b>.
+                <p><img alt="Mostrar janela de configurações" src="../images/showsettings.png" /></p>
+                </li>
+            </ul>
+            <h3>Use o modo de visualização</h3>
+             <p>No modo <b>Visualização</b>, você pode usar os seguintes controles no canto inferior esquerdo:</p>
+             <p><img alt="Controles do modo de visualização" src="../images/preview_mode.png" /></p>
+            <ul>
+                <li>o botão <b>Slide anterior</b> <div class = "icon icon-previousslide"></div> permite retornar ao slide anterior.</li>
+                 <li>o botão <b>Pausar apresentação</b> <div class = "icon icon-pausepresentation"></div> permite interromper a visualização. Quando o botão é pressionado, ele se transforma no botão <div class = "icon icon-startpresentation"></div>.</li>
+                 <li>o botão <b>Iniciar apresentação</b> <div class = "icon icon-startpresentation"></div> permite retomar a visualização. Quando o botão é pressionado, ele se transforma no botão <div class = "icon icon-pausepresentation"></div>.</li>
+                 <li>o botão <b>Próximo slide</b> <div class = "icon icon-nextslide"></div> permite que você avance para o próximo slide.</li>
+                 <li>o <b>Indicador de número do slide</b> exibe o número do slide atual, bem como o número total de slides na apresentação. Para ir para um determinado slide no modo de visualização, clique no <b>Indicador de número do slide</b>, digite o número do slide necessário na janela aberta e pressione <b>Enter</b>.</li>
+                 <li>o botão <b>Tela cheia</b> <div class = "icon icon-fullscreen"></div> permite alternar para o modo de tela cheia.</li>
+                 <li>o botão <b>Sair da tela cheia</b> <div class = "icon icon-exitfullscreen"></div> permite que você saia do modo de tela cheia.</li>
+                 <li>o botão <b>Fechar apresentação de slides</b> <div class = "icon icon-closepreview"></div> permite que você saia do modo de visualização.</li>
+            </ul>
+			<p>Você também pode <a href="../HelpfulHints/KeyboardShortcuts.htm#preview" onclick="onhyperlinkclick(this)">usar os atalhos de teclado</a> para navegar entre os slides no modo de visualização.</p>
+             <h3 id="presenter">Use o modo Apresentador</h3>
+             <p class="note"><b>Nota</b>: na <em>versão desktop</em>, o modo apresentador pode ser ativado apenas se o segundo monitor estiver conectado.</p>
+            <p>No modo <b>Apresentador</b>, você pode visualizar suas apresentações com notas de slides em uma janela separada, enquanto as demonstra sem notas em um monitor diferente. As notas de cada slide são exibidas abaixo da área de visualização do slide.</p>
+             <p>Para navegar entre os slides, você pode usar os botões <span class="icon icon-previousslide"></span> e <span class="icon icon-nextslide"></span> ou clicar nos slides na lista à esquerda. Os números dos slides ocultos são riscados na lista de slides à esquerda. Se você deseja mostrar um slide marcado como oculto para outras pessoas, basta clicar nele na lista de slides à esquerda - o slide será exibido.</p>
+             <p>Você pode usar os seguintes controles abaixo da área de visualização de slides:</p>
+            <p><img alt="Controles do modo apresentador" src="../images/presenter_mode.png" /></p>
+            <ul>
+                <li>o <b>Timer</b> exibe o tempo decorrido da apresentação no formato <em>hh.mm.ss</em>.</li>
+                 <li>o botão <b>Pausar apresentação</b> <div class = "icon icon-presenter_pausepresentation"></div> permite interromper a visualização. Quando o botão é pressionado, ele se transforma no botão <div class = "icon icon-presenter_startpresentation"></div>.</li>
+                 <li>o botão <b>Iniciar apresentação</b> <div class = "icon icon-presenter_startpresentation"></div> permite retomar a visualização. Quando o botão é pressionado, ele se transforma no botão <div class = "icon icon-presenter_pausepresentation"></div>.</li>
+                 <li>o botão <b>Redefinir</b> permite redefinir o tempo decorrido da apresentação.</li>
+                 <li>o botão <b>Slide anterior</b> <div class = "icon icon-presenter_previousslide"></div> permite retornar ao slide anterior.</li>
+                 <li>o botão <b>Próximo slide</b> <div class = "icon icon-presenter_nextslide"></div> permite que você avance para o próximo slide.</li>
+                 <li>o <b>Indicador de número do slide</b> exibe o número do slide atual, bem como o número total de slides na apresentação.</li>
+                 <li>o botão <b>Ponteiro</b> <div class = "icon icon-pointer"></div> permite destacar algo na tela ao mostrar a apresentação. Quando esta opção está habilitada, o botão fica assim: <div class = "icon icon-pointer_enabled"></div>. Para apontar alguns objetos, passe o ponteiro do mouse sobre a área de visualização do slide e mova o ponteiro pelo slide. O ponteiro terá a seguinte aparência: <div class = "icon icon-pointer_screen"></div>. Para desativar essa opção, clique no botão <div class = "icon icon-pointer_enabled"></div> novamente.</li>
+                 <li>o botão <b>Encerrar apresentação de slides</b> permite que você saia do modo <b>Apresentador</b>.</li>
+            </ul>
+		</div>
+	</body>
+</html>

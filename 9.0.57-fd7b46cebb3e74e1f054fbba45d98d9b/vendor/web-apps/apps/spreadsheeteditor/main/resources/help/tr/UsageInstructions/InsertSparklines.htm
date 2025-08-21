@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Mini Grafikler Ekleme</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Add a chart to your spreadsheet and adjust its position, size and properties" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+        <div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+            </div>
+            <h1>Mini Grafikler Ekleme</h1>
+            <h3>Mini Grafikleri Kullanma</h3>
+            <p>Mini grafik, verilerin eğilimlerini veya varyasyonlarını temsil etmek &uuml;zere bir h&uuml;creye sığan k&uuml;&ccedil;&uuml;k bir grafiktir. Mini grafikler, normal grafiklerle karşılaştırıldığında sınırlı işlevselliğe sahiptir, ancak verilerinizi hızlı bir şekilde analiz etmek ve &ouml;zl&uuml; bir g&ouml;rsel sunum oluşturmak i&ccedil;in m&uuml;kemmel bir ara&ccedil;tır. Mini grafik boyutu, h&uuml;crenin boyutuna bağlıdır, boyutu ayarlamak i&ccedil;in h&uuml;cre genişliğini ve uzunluğunu değiştirin. Bir mini grafik ekledikten sonra, h&uuml;creye yine metin yazabilir veya koşullu bi&ccedil;imlendirme ekleyebilirsiniz. ONLYOFFICE <a href="https://www.onlyoffice.com/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Elektronik Tablo D&uuml;zenleyicisi,</b></a> &uuml;&ccedil; t&uuml;r mini grafik sunar:</p>
+            <p><div class = "big big-sparklines_types"></div></p>
+            <ul>
+                <li><b>S&uuml;tun,</b> normal bir <b>S&uuml;tun Grafiğine</b> benzer.</li>
+                <li><b>&Ccedil;izgi,</b> normal bir <b>&Ccedil;izgi Grafiğine</b> benzer.</li>
+                <li><b>Kazan&ccedil;/Kayıp</b> hem pozitif hem de negatif değerler i&ccedil;eren verileri g&ouml;stermek i&ccedil;in uygundur.</li>
+            </ul>
+            <h3>Mini Grafikler Ekleme</h3>
+            <p>Bir <b>Mini Grafik</b> eklemek i&ccedil;in mini grafiğe eklenecek veri aralığını se&ccedil;in ya da yerleştireceğiniz boş bir h&uuml;creye tıklayın, <b>Ekle</b> sekmesine gidin ve &uuml;st ara&ccedil; &ccedil;ubuğunda <b>Mini Grafik</b> <span class="icon icon-sparklines_button"></span> d&uuml;ğmesine tıklayın. İhtiyacınız olan bir mini grafik se&ccedil;in. <b>Mini Grafik Oluştur</b> penceresi a&ccedil;ılacaktır, burada veri aralığını ve mini grafiğin konumunu belirtmek i&ccedil;in <b>veri se&ccedil;</b> simgesine tıklayın, onaylamak i&ccedil;in <b>Tamam</b> d&uuml;ğmesine tıklayın.</p>
+			<p><img alt="Mini Grafik Oluştur Penceresi" src="../images/createsparkline_window.png" /></p>
+            <h3>Mini Grafikleri D&uuml;zenleme ve Bi&ccedil;imlendirme</h3>
+            <p>Bir mini grafik ekledikten sonra &ouml;zelleştirebilir ve d&uuml;zenleyebilirsiniz. Sağ kenar &ccedil;ubuğundaki <b>Mini grafik ayarları</b> sekmesini etkinleştirmek i&ccedil;in mini grafiğin bulunduğu h&uuml;creye tıklayın.</p>
+            <p><img alt="Mini Grafik Ayarları Sekmesi" src="../images/sparklinesettings_tab.png" /></p>
+            <ul>
+                <li><b>T&uuml;r</b> b&ouml;l&uuml;m&uuml;nde, mevcut mini grafik t&uuml;rleri a&ccedil;ılır listesinden birini se&ccedil;ebilirsiniz:
+                <p><b>S&uuml;tun,</b> bu normal bir <b>S&uuml;tun Grafiğine</b> benzer.</p> 
+                <p><b>&Ccedil;izgi,</b> bu normal bir <b>&Ccedil;izgi Grafiğine</b> benzer.</p>
+                <p><b>Kazan&ccedil;/Kayıp</b> hem pozitif hem de negatif değerler i&ccedil;eren verileri g&ouml;stermek i&ccedil;in uygundur.</p>
+            </li>
+                <li><b>Stil</b> b&ouml;l&uuml;m&uuml;nde, size en uygun stili <b>Şablon</b> a&ccedil;ılır listesinden, mini grafik i&ccedil;in gerekli <b>Rengi</b> ve gerekli <b>&Ccedil;izgi Kalınlığını</b> (sadece <b>&Ccedil;izgi</b> mini grafik i&ccedil;in mevcuttur) se&ccedil;ebilirsiniz.</li>
+                <li><b>G&ouml;ster</b> b&ouml;l&uuml;m&uuml;nde, mini grafikte belirli verileri vurgulayabilir veya işaretleyebilirsiniz:
+                <p><i>Y&uuml;ksek Nokta</i> &ndash; Maksimum değeri vurgulamak i&ccedil;in kullanın.</p>
+                <p><i>D&uuml;ş&uuml;k Nokta</i> &ndash; Minimum değeri vurgulamak i&ccedil;in kullanın.</p>
+                <p><i>Negatif Nokta</i> &ndash; Negatif değerleri vurgulamak i&ccedil;in kullanın.</p>
+                <p><i>İlk Nokta</i> &ndash; Veri aralığındaki başlangı&ccedil; noktasını vurgulamak i&ccedil;in kullanın.</p>
+                <p><i>Son Nokta</i> - Veri aralığındaki bitiş noktasını vurgulamak i&ccedil;in kullanın.</p>
+                <p><i>İşaret&ccedil;iler</i> &ndash; Yalnızca &Ccedil;izgi mini grafikleri i&ccedil;in kullanılabilir, t&uuml;m noktalar i&ccedil;in bir işaret&ccedil;iyi etkinleştirmek i&ccedil;in bunu kullanın.</p>
+            </li>
+            </ul>
+            <p>Her nokta i&ccedil;in bir renk se&ccedil;mek &uuml;zere renk kutusundaki aşağı oka tıklayın.</p>
+            <p>Mini grafiğinizi daha doğru ve okunması kolay hale getirmeniz gerekirse, <b>Mini Grafik &ndash; Gelişmiş Ayarlar</b> penceresini a&ccedil;mak i&ccedil;in <b>Gelişmiş ayarları g&ouml;ster</b> se&ccedil;eneğine tıklayın.</p>
+            <p><img alt="Mini Grafik Gelişmiş Ayarlar Penceresi" src="../images/sparkline_advancedsettings1.png" /></p>
+            <p></p>
+            <p><b>T&uuml;r ve Veri</b> sekmesi hem mini grafik <b>Tipini</b> ve <b>Stilini</b> değiştirmenizi hem de <b>Gizli ve Boş h&uuml;crelerin</b> g&ouml;r&uuml;nt&uuml; ayarlarını belirtmenizi sağlar:</p>
+            <ul>
+                <li>
+                    <b>Boş h&uuml;creleri farklı g&ouml;ster:</b> - Bu se&ccedil;enek, bir veri aralığındaki bazı h&uuml;creler boşsa mini grafiklerin nasıl g&ouml;r&uuml;nt&uuml;leneceğini kontrol etmenizi sağlar. Listeden gerekli se&ccedil;eneği se&ccedil;in:
+                    <ul>
+                        <li><b>Boşluklar</b> - Mini grafiği eksik verilerin yerine boşluklarla g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in kullanılır,</li>
+                        <li><b>Sıfır</b> - Mini grafiği boş bir h&uuml;credeki değer sıfırmış gibi g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in kullanılır,</li>
+                        <li><b>Veri noktalarını &ccedil;izgi ile bağla</b> (yalnızca <b>&Ccedil;izgi</b> tipi i&ccedil;in mevcuttur) - Boş h&uuml;creleri yok saymak ve veri noktaları arasında bir bağlantı &ccedil;izgisi g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in kullanılır,</li>
+                    </ul>
+                </li>
+                <li><b>Gizli satır ve s&uuml;tunlardaki verileri g&ouml;ster</b> - Mini grafiklere gizli h&uuml;crelerden değerler eklemek istiyorsanız bu kutuyu işaretleyin.</li>
+            </ul>
+            <p><img alt="Mini Grafik Gelişmiş Ayarlar penceresi" src="../images/sparkline_advancedsettings2.png" /></p>
+            <p><b>Eksen Se&ccedil;enekleri</b> sekmesi, aşağıdaki <b>Yatay/Dikey Eksen</b> parametrelerini belirtmenizi sağlar:</p>
+            <ul>
+                <li>
+                    <b>Yatay Eksen</b> b&ouml;l&uuml;m&uuml;nde, aşağıdaki parametreler mevcuttur:
+                    <ul>
+                        <li><b>Ekseni g&ouml;ster</b> - Yatay ekseni g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in bu kutuyu işaretleyin. Kaynak veriler negatif değerler i&ccedil;eriyorsa, bu se&ccedil;enek bunların daha canlı g&ouml;r&uuml;nt&uuml;lenmesine yardımcı olur.</li>
+                        <li><b>Ters sırala</b> - Verileri ters sırayla g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in bu kutuyu işaretleyin.</li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Dikey eksen</b> b&ouml;l&uuml;m&uuml;nde, aşağıdaki parametreler <b>Minimum/Maksimum Değeri</b> tanımlamak i&ccedil;in kullanılabilir:
+                    <ul>
+                        <li>
+                            <b>Minimum/Maksimum Değer</b>
+                            <ul>
+                                <li><b>Her Biri İ&ccedil;in Otomatik</b> - Bu se&ccedil;enek varsayılan olarak se&ccedil;ilidir. Her mini grafik i&ccedil;in kendi minimum/maksimum değerlerinizi kullanmanızı sağlar. Minimum/maksimum değerler, her mini grafiği &ccedil;izmek i&ccedil;in kullanılan ayrı veri serilerinden alınır. Her mini grafik i&ccedil;in maksimum değer h&uuml;crenin &uuml;st kısmında, minimum değer ise alt kısmında yer alacaktır.
+                                    <p><span class="big big-autoforeach"></span></p>
+                                </li>
+                                <li><b>Hepsi İ&ccedil;in Aynı</b> - Bu se&ccedil;enek, mini grafik grubunun tamamı i&ccedil;in aynı minimum/maksimum değeri kullanmanızı sağlar. Minimum/maksimum değerler, mini grafik grubunu &ccedil;izmek i&ccedil;in kullanılan t&uuml;m veri serilerinden alınır. Her mini grafik i&ccedil;in maksimum/minimum değerler, aralık i&ccedil;indeki en y&uuml;ksek/en d&uuml;ş&uuml;k değere g&ouml;re &ouml;l&ccedil;eklendirilecektir. Bu se&ccedil;eneği se&ccedil;erseniz, birka&ccedil; mini grafiği karşılaştırmak daha kolay olacaktır.
+                                    <p><span class="big big-sameforall"></span></p>
+                                </li><li><b>Sabit</b> - Bu se&ccedil;enek, &ouml;zel bir minimum/maksimum değer belirlemenizi sağlar. Belirtilen değerlerden daha d&uuml;ş&uuml;k veya daha y&uuml;ksek değerler mini grafiklerde g&ouml;sterilmez.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <h3>Mini Grafikleri Temizle</h3>
+            <p>Mini grafikleri silmek i&ccedil;in mini grafiklerin kaldırılacağı h&uuml;creyi/h&uuml;creleri se&ccedil;in ve &uuml;zerine sağ tıklayın. A&ccedil;ılır men&uuml;den <b>Mini grafikleri</b> se&ccedil;in ve <b>Se&ccedil;ili Mini Grafikleri Temizle</b> veya <b>Se&ccedil;ili Mini Grafik Gruplarını Temizle</b> se&ccedil;eneğine tıklayın.
+        </div>
+	</body>
+</html>
