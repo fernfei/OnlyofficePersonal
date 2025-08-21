@@ -1,5 +1,0 @@
-/*!
- * 
- * * Version: d (build: undefined)
- *
- */

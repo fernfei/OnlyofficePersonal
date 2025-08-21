@@ -6,7 +6,6 @@
     <title>Office文档管理器</title>
     <link rel="icon" href="./assets/favicon.ico" type="image/x-icon"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script type="text/javascript" src="./vendor/web-apps/apps/api/documents/api.js"></script>
     <style>
         * {
             margin: 0;
@@ -134,6 +133,15 @@
 
         .ppt .doc-icon {
             color: #ff9800;
+        }
+
+        .doc-card.pdf {
+            background: linear-gradient(135deg, #ffebee 0%, #ffcdd2 100%);
+            border-color: #f44336;
+        }
+
+        .pdf .doc-icon {
+            color: #f44336;
         }
 
         .doc-title {
@@ -376,6 +384,14 @@
                     <div class="doc-title">PowerPoint演示</div>
                     <div class="doc-subtitle">创建新的PPT演示文稿</div>
                 </div>
+
+                <div class="doc-card pdf" onclick="createNewDoc('pdf')">
+                    <div class="doc-icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </div>
+                    <div class="doc-title">PDF文档</div>
+                    <div class="doc-subtitle">创建新的PDF文档</div>
+                </div>
             </div>
         </div>
 
@@ -405,7 +421,7 @@
                         </button>
                     </div>
                     <input type="file" id="fileInput" class="file-input"
-                           accept=".doc,.docx,.xls,.xlsx,.ppt,.pptx"
+                           accept=".doc,.docx,.xls,.xlsx,.ppt,.pptx,.pdf"
                            onchange="handleFileSelect(event)">
                 </div>
 
@@ -443,10 +459,6 @@
 
     // 页面加载时显示文件列表
     document.addEventListener('DOMContentLoaded', function() {
-        if (typeof DocsAPI === 'undefined') {
-            alert('OnlyOffice API 未加载，请检查文档服务器地址')
-            return
-        }
         displayFileList()
         setupDragAndDrop()
     })
@@ -470,7 +482,7 @@
     function generateUniqueFileName(originalName) {
         let fileName = originalName
         let counter = 1
-        
+
         // 检查文件名是否已存在
         while (fileList.some(file => file.name === fileName)) {
             // 分离文件名和扩展名
@@ -486,7 +498,7 @@
             }
             counter++
         }
-        
+
         return fileName
     }
 
@@ -495,27 +507,46 @@
         const fileNames = {
             word: '新建Word文档.docx',
             excel: '新建Excel表格.xlsx',
-            ppt: '新建PowerPoint演示.pptx'
+            ppt: '新建PowerPoint演示.pptx',
+            pdf: '新建PDF文档.pdf'
         }
-        
+
         const documentTypes = {
             word: 'word',
-            excel: 'cell', 
-            ppt: 'slide'
+            excel: 'cell',
+            ppt: 'slide',
+            pdf: 'pdf'
         }
-        
+
         const fileTypes = {
             word: 'docx',
             excel: 'xlsx',
-            ppt: 'pptx'
+            ppt: 'pptx',
+            pdf: 'pdf'
         }
-
         // 生成唯一文件名
-        const uniqueFileName = generateUniqueFileName(fileNames[type])
+        const uniqueFileName = generateUniqueFileName(fileNames[type]);
         docConfig.document.title = uniqueFileName
+        delete docConfig.document.url
         docConfig.document.fileType = fileTypes[type]
         docConfig.documentType = documentTypes[type]
 
+
+        if (type === 'pdf') {
+            // 读取空PDF文件
+            fetch('./assets/empty.pdf')
+                .then(response => response.arrayBuffer())
+                .then(buffer => {
+                    const uint8Array = new Uint8Array(buffer);
+                    const blob = new Blob([uint8Array], { type: 'application/pdf' });
+                    docConfig.document.url = URL.createObjectURL(blob);
+                    openNewWindow(docConfig);
+                })
+                .catch(error => {
+                    console.error('读取PDF文件失败:', error);
+                });
+            return; // 提前返回，避免执行后面的openNewWindow
+        }
         openNewWindow(docConfig)
 
 
@@ -537,7 +568,7 @@
     async function handleFileSelect(event) {
         const file = event.target.files[0]
         if (!file) return
-        
+
         try {
             // 生成唯一文件名
             const uniqueFileName = generateUniqueFileName(file.name)
@@ -547,32 +578,33 @@
             const blobUrl = URL.createObjectURL(blob)
             // 获取文件类型
             const fileType = getFileType(file.name)
-            
+
             // 获取文档类型映射
             const documentTypes = {
                 word: 'word',
                 excel: 'cell',
-                ppt: 'slide'
+                ppt: 'slide',
+                pdf: 'pdf'
             }
-            
+
             const fileTypes = {
                 word: 'docx',
                 excel: 'xlsx',
-                ppt: 'pptx'
+                ppt: 'pptx',
+                pdf: 'pdf'
             }
-            
+
             // 配置OnlyOffice
             docConfig.document.url = blobUrl
             docConfig.document.title = uniqueFileName
             docConfig.document.fileType = fileExt
             docConfig.documentType = documentTypes[fileType] || 'word'
-            docConfig.document.key = 'local-doc-' + Date.now()
 
             openNewWindow(docConfig)
-            
+
             // 添加到文件列表
             addFileToList(file, blobUrl, uniqueFileName)
-            
+
         } catch (error) {
             console.error('处理文件失败:', error)
             alert('文件处理失败，请重试')
@@ -583,7 +615,7 @@
     function addFileToList(file, blobUrl, customFileName) {
         const fileType = getFileType(file.name)
         const fileName = customFileName || file.name
-        
+
         const newFile = {
             id: Date.now() + Math.random(),
             name: fileName,
@@ -611,33 +643,35 @@
             // 获取文件名和类型
             const fileName = url.split('/').pop() || '网络文档'
             const fileType = getFileType(fileName)
-            
+
             // 生成唯一文件名
             const uniqueFileName = generateUniqueFileName(fileName)
-            
+
             // 通过fetch下载文件并转换为Blob URL
             const response = await fetch(url)
             if (!response.ok) {
                 throw new Error('无法下载文件')
             }
-            
+
             const arrayBuffer = await response.arrayBuffer()
             const blob = new Blob([arrayBuffer])
             const blobUrl = URL.createObjectURL(blob)
-            
+
             // 获取文档类型映射
             const documentTypes = {
                 word: 'word',
                 excel: 'cell',
-                ppt: 'slide'
+                ppt: 'slide',
+                pdf: 'pdf'
             }
-            
+
             const fileTypes = {
                 word: 'docx',
-                excel: 'xlsx', 
-                ppt: 'pptx'
+                excel: 'xlsx',
+                ppt: 'pptx',
+                pdf: 'pdf'
             }
-            
+
             // 配置OnlyOffice
             docConfig.document.url = blobUrl
             docConfig.document.title = uniqueFileName
@@ -664,7 +698,7 @@
             displayFileList()
 
             document.getElementById('urlInput').value = ''
-            
+
         } catch (error) {
             console.error('下载文件失败:', error)
             alert('无法下载文件，请检查链接是否有效或网络连接')
@@ -677,6 +711,7 @@
         if (['doc', 'docx'].includes(ext)) return 'word'
         if (['xls', 'xlsx'].includes(ext)) return 'excel'
         if (['ppt', 'pptx'].includes(ext)) return 'ppt'
+        if (['pdf'].includes(ext)) return 'pdf'
         return 'unknown'
     }
 
@@ -701,7 +736,7 @@
                 <div class="file-item">
                     <div class="file-info">
                         <div class="file-icon ${file.type}">
-                            <i class="fas fa-file-${file.type === 'word' ? 'word' : file.type === 'excel' ? 'excel' : file.type === 'ppt' ? 'powerpoint' : 'alt'}"></i>
+                            <i class="fas fa-file-${file.type === 'word' ? 'word' : file.type === 'excel' ? 'excel' : file.type === 'ppt' ? 'powerpoint' : file.type === 'pdf' ? 'pdf' : 'alt'}"></i>
                         </div>
                         <div class="file-details">
                             <h4>${file.name}</h4>
@@ -730,15 +765,17 @@
             const documentTypes = {
                 word: 'word',
                 excel: 'cell',
-                ppt: 'slide'
+                ppt: 'slide',
+                pdf: 'pdf'
             }
-            
+
             const fileTypes = {
                 word: 'docx',
                 excel: 'xlsx',
-                ppt: 'pptx'
+                ppt: 'pptx',
+                pdf: 'pdf'
             }
-            
+
             // 配置OnlyOffice
             docConfig.document.url = file.blobUrl
             docConfig.document.title = file.name
@@ -754,27 +791,27 @@
             alert('无法打开文件')
         }
     }
-    
+
     // 根据ID重新从URL打开文件
     async function openFromUrlById(fileId) {
         const file = fileList.find(f => f.id === fileId)
         if (!file || !file.url) return
-        
+
         try {
             const response = await fetch(file.url)
             if (!response.ok) throw new Error('无法下载文件')
-            
+
             const arrayBuffer = await response.arrayBuffer()
             const blob = new Blob([arrayBuffer])
             const blobUrl = URL.createObjectURL(blob)
-            
+
             // 更新文件记录
             file.blobUrl = blobUrl
             saveFileList()
-            
+
             // 打开文件
             openFile(fileId)
-            
+
         } catch (error) {
             console.error('重新下载文件失败:', error)
             alert('无法重新加载文件')
@@ -829,7 +866,7 @@
                     try {
                         // 生成唯一文件名
                         const uniqueFileName = generateUniqueFileName(file.name)
-                        
+
                         const arrayBuffer = await file.arrayBuffer()
                         const blob = new Blob([arrayBuffer])
                         const blobUrl = URL.createObjectURL(blob)
@@ -846,7 +883,7 @@
     // 检查是否为Office文件
     function isOfficeFile(fileName) {
         const ext = fileName.split('.').pop().toLowerCase()
-        return ['doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx'].includes(ext)
+        return ['doc', 'docx', 'xls', 'xlsx', 'ppt', 'pptx', 'pdf'].includes(ext)
     }
 </script>
 </body>

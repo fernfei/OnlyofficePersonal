@@ -1,2 +1,0 @@
-/*! For license information please see 612.js.LICENSE.txt */
-"use strict";(self.webpackChunkdocumenteditor=self.webpackChunkdocumenteditor||[]).push([[612],{"../../apps/presentationeditor/mobile/src/less/app.less":function(e,s,t){t.r(s)}}]);
