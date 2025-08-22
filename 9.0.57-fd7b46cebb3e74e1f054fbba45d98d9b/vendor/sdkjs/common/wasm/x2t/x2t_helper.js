@@ -706,18 +706,20 @@
 
     X2TConverter.prototype.fetchFonts = async function () {
         let that = this;
-        let promises = [];
-
-        let promise = new Promise(function (resolve, reject) {
-            window["AscCommon"]['fetchFonts'](function (binary, fileName) {
-                that.x2tModule.FS.writeFile('/working/fonts/' + fileName, binary);
-                resolve()
-            }, function () {
-                reject()
+        return new Promise(function (resolve, reject) {
+            window["AscCommon"]['fetchFonts'](function (data) {
+                try {
+                    if (data && data.length > 0) {
+                        data.forEach(function (obj) {
+                            that.x2tModule.FS.writeFile('/working/fonts/' + obj['fileName'], obj['binary']);
+                        })
+                    }
+                    resolve();
+                } catch (error) {
+                    reject(error);
+                }
             });
         });
-        promises.push(promise);
-        return Promise.all(promises);
     };
 
     X2TConverter.prototype.convertFromBin = async function (obj) {
