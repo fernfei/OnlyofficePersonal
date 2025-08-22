@@ -81,6 +81,11 @@ Create beautiful slideshows with animation effects, theme templates, multimedia 
 
 ![PowerPoint Editor](docs/imgs/img_3.png)
 
+### 📄 PDF Editor
+Professional PDF editing capabilities with support for annotations, form filling, text modification, page management and other comprehensive PDF operations.
+
+![PDF Editor](docs/imgs/img_5.png)
+
 ## 🔧 Technical Architecture
 
 - **Frontend**: HTML5 + JavaScript + CSS3

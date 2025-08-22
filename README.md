@@ -82,6 +82,11 @@ php -S localhost:8000
 
 ![PowerPoint编辑器](docs/imgs/img_3.png)
 
+### 📄 PDF编辑器
+专业的PDF编辑功能，支持注释、表单填写、文本修改、页面管理等全面的PDF操作。
+
+![PDF编辑器](docs/imgs/img_5.png)
+
 ## 🔧 技术架构
 
 - **前端**: HTML5 + JavaScript + CSS3
