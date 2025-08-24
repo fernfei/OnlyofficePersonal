@@ -128,16 +128,6 @@ OnlyofficePersonal/
 - [ONLYOFFICE](https://www.onlyoffice.com/) - 提供优秀的办公套件解决方案
 - [WebAssembly](https://webassembly.org/) - 使浏览器中运行高性能应用成为可能
 
-## 📞 联系方式
-
-如果您有任何问题或建议，欢迎联系我：
-
-![联系方式](docs/imgs/img_4.png)
-
----
-
-<div align="center">
-
 **⭐ 如果这个项目对您有帮助，请给它一个星标！**
 
 </div>
