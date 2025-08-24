@@ -127,11 +127,6 @@ This project is licensed under the AGPL-3.0 License - see the [LICENSE](LICENSE)
 - [ONLYOFFICE](https://www.onlyoffice.com/) - For providing excellent office suite solutions
 - [WebAssembly](https://webassembly.org/) - For making high-performance applications in browsers possible
 
-## 📞 Contact
-
-If you have any questions or suggestions, please feel free to contact us:
-
-![Contact Information](docs/imgs/img_4.png)
 
 ---
 
