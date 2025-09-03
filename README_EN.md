@@ -3,8 +3,8 @@
 <div align="center">
 
 [![License](https://img.shields.io/badge/license-AGPL--3.0-blue.svg)](LICENSE)
-[![Stars](https://img.shields.io/github/stars/username/OnlyofficePersonal.svg)](https://github.com/username/OnlyofficePersonal/stargazers)
-[![Forks](https://img.shields.io/github/forks/username/OnlyofficePersonal.svg)](https://github.com/username/OnlyofficePersonal/network)
+[![Stars](https://img.shields.io/github/stars/fernfei/OnlyofficePersonal.svg)](https://github.com/fernfei/OnlyofficePersonal/stargazers)
+[![Forks](https://img.shields.io/github/forks/fernfei/OnlyofficePersonal.svg)](https://github.com/fernfei/OnlyofficePersonal/network)
 
 **Local ONLYOFFICE Office Suite Based on WebAssembly**
 
