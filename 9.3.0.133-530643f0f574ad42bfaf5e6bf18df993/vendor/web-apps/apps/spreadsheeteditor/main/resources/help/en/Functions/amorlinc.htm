@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>AMORLINC Function</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>AMORLINC Function</h1>
+			<p>The <b>AMORLINC</b> function is one of the <a href="../UsageInstructions/InsertFunction.htm#financial" onclick="onhyperlinkclick(this)">financial functions</a>. It is used to calculate the depreciation of an asset for each accounting period using a linear depreciation method.</p>
+			<h3>Syntax</h3> 
+			<p><b><em>AMORLINC(cost, date_purchased, first_period, salvage, period, rate, [basis])</em></b></p> 
+            <p>The <b>AMORLINC</b> function has the following arguments:</p>
+            <table style="width: 40%">
+                <tr>
+                    <th style="background-color: #f4f4f4" width="150ch"><b>Argument</b></th>
+                    <th style="background-color: #f4f4f4"><b>Description</b></th>
+                </tr>
+                <tr>
+                    <td><b><em>cost</em></b></td>
+                    <td>The cost of the asset.</td>
+                </tr>
+                <tr>
+                    <td><b><em>date_purchased</em></b></td>
+                    <td>The date when asset is purchased.</td>
+                </tr>
+                <tr>
+                    <td><b><em>first_period</em></b></td>
+                    <td>The date when the first period ends.</td>
+                </tr>
+                <tr>
+                    <td><b><em>salvage</em></b></td>
+                    <td>The salvage value of the asset at the end of its lifetime.</td>
+                </tr>
+                <tr>
+                    <td><b><em>period</em></b></td>
+                    <td>The period you wish to calculate depreciation for.</td>
+                </tr>
+                <tr>
+                    <td><b><em>rate</em></b></td>
+                    <td>The rate of depreciation.</td>
+                </tr>
+                <tr>
+                    <td><b><em>basis</em></b></td>
+                    <td>The day count basis to use, a numeric value greater than or equal to 0, but less than or equal to 4. It is an optional argument. The possible values are listed in the table below.</td>
+                </tr>
+            </table> 
+            <p>The <b><em>basis</em></b> argument can be one of the following:</p>
+            <table style="width: 40%">
+                <tr>
+                    <th style="background-color: #f4f4f4"><b>Numeric value</b></th>
+                    <th style="background-color: #f4f4f4"><b>Count basis</b></th>
+                </tr>
+                <tr>
+                    <td><b><em>0</em></b></td>
+                    <td>US (NASD) 30/360</td>
+                </tr>
+                <tr>
+                    <td><b><em>1</em></b></td>
+                    <td>Actual/actual</td>
+                </tr>
+                <tr>
+                    <td><b><em>2</em></b></td>
+                    <td>Actual/360</td>
+                </tr>
+                <tr>
+                    <td><b><em>3</em></b></td>
+                    <td>Actual/365</td>
+                </tr>
+                <tr>
+                    <td><b><em>4</em></b></td>
+                    <td>European 30/360</td>
+                </tr>
+            </table>
+            <h3>Notes</h3>
+            <p> Dates must be entered by using the <a href="Date.htm" onclick="onhyperlinkclick(this)">DATE</a> function.</p>            
+			<p><a href="../UsageInstructions/InsertFunction.htm#applyfunction" onclick="onhyperlinkclick(this)">How to apply</a> the <b>AMORLINC</b> function.</p>			
+			<h3>Examples</h3>
+            <p>The figure below displays the result returned by the <b>AMORLINC</b> function.</p>
+			<p><img alt="AMORLINC Function" src="../images/amorlinc.png" /></p>
+		</div>
+	</body>
+</html>

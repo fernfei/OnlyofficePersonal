@@ -1,0 +1,163 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Formats de diagrammes numériques pris en charge</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="La liste des Formats de diagrammes numériques pris en charge par la Visionneuse de diagrammes" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+        <div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Rechercher" type="text" onkeypress="doSearch(event)">
+            </div>
+            <h1>Formats de diagrammes numériques pris en charge</h1>
+            <p>
+                Les diagrammes numériques sont les fichiers les plus courants informatiques. Grâce à l'utilisation du réseau informatique tant développé aujourd'hui, il est possible et plus pratique de distribuer des diagrammes numériques que des versions imprimées. Les formats de fichier ouverts et propriétaires sont bien nombreux à cause de la variété des périphériques utilisés pour la présentation des documents. <a href="https://www.onlyoffice.com/en/diagram-viewer.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Visionneuse de diagrammes</b></a> prend en charge les formats les plus courants.
+            </p>
+            <p class="note">Lors du téléchargement ou de l'ouverture d'un fichier, celui-ci sera converti au format Open Office XML. Cette conversion permet d'accélérer le traitement des fichiers et d'améliorer l'interopérabilité des données.</p>
+            <p>Le tableau ci-dessous présente les formats de fichiers pour l'affichage et/ou pour l'édition.</p>
+            <table>
+                    <tr class="tableHeader">
+                        <td><b>Formats</b></td>
+                        <td><b>Description</b></td>
+                        <td>Affichage au format natif</td>
+                        <td>Affichage lors de la conversion en OOXML</td>
+                        <td>Édition au format natif</td>
+                        <td>Édition lors de la conversion en OOXML</td>
+                    </tr>
+                    <tr>
+                        <td>JPG/JPEG</td>
+                        <td>Joint Photographic Experts Group<br />Le format d'image raster qui compresse les rasters pour stocker des images.</td>
+                        <td>+</td>
+                        <td>+</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>PDF</td>
+                        <td>Portable Document Format<br>Format de fichier utilisé pour représenter les documents d'une manière indépendante du logiciel, du matériel et des systèmes d'exploitation</td>
+                        <td>-</td>
+                        <td>+</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>PDF/A</td>
+                        <td>Portable Document Format / A<br>Une version normalisée ISO du format PDF (Portable Document Format) conçue pour l'archivage et la conservation à long terme des documents électroniques. </td>
+                        <td>-</td>
+                        <td>+</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>PNG</td>
+                        <td>Portable Network Graphics<br>Le format de fichiers graphiques raster qui prend en charge la compression de données sans perte</td>
+                        <td>+</td>
+                        <td>+</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>VSDM</td>
+                        <td>Le format de fichiers graphiques prenant en charge les macros qui est utilisé par Microsoft Visio</td>
+                        <td>+</td>
+                        <td>+</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>VSDX</td>
+                        <td>Le format de fichier conçu principalement pour stocker les documents numérisés, en particulier ceux qui contiennent une combinaison du texte, des dessins au trait et des photographies</td>
+                        <td>+</td>
+                        <td>+</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>VSSM</td>
+                        <td>Les fichiers Microsoft Visio Stencil qui prennent en charge les macros.</td>
+                        <td>+</td>
+                        <td>+</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>VSSX</td>
+                        <td>Les fichiers Microsoft Visio Stencil basés sur XML.</td>
+                        <td>+</td>
+                        <td>+</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>VSTM</td>
+                        <td>Les fichiers modèles créés avec Microsoft Visio qui prennent en charge les macros</td>
+                        <td>+</td>
+                        <td>+</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>VSTX</td>
+                        <td>Les fichiers modèles créés avec Microsoft Visio</td>
+                        <td>+</td>
+                        <td>+</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+            </table>
+            <p>Le tableau ci-dessous présente les formats pris en charge pour le téléchargement d'un document dans le menu <b>Fichier</b> -&gt; <b>Télécharger comme</b>.</p>
+            <table>
+                    <tr class="tableHeader">
+                        <td><b>Format en entrée</b></td>
+                        <td><b>Téléchargeable comme</b></td>
+                    </tr>
+                    <tr>
+                        <td>JPG</td>
+                        <td>PDF, PDF/A, PNG, VSDX</td>
+                    </tr>
+                    <tr>
+                        <td>PDF</td>
+                        <td>JPG, PDF/A, PNG, VSDX</td>
+                    </tr>
+                    <tr>
+                        <td>PDF/A</td>
+                        <td>JPG, PDF, PNG, VSDX</td>
+                    </tr>
+                    <tr>
+                        <td>PNG</td>
+                        <td>JPG, PDF, PDF/A, VSDX</td>
+                    </tr>
+                    <tr>
+                        <td>VSDM</td>
+                        <td>BMP, GIF, JPG, PDF, PDF/A, PNG</td>
+                    </tr>
+                    <tr>
+                        <td>VSDX</td>
+                        <td>BMP, GIF, JPG, PDF, PDF/A, PNG</td>
+                    </tr>
+                    <tr>
+                        <td>VSSM</td>
+                        <td>BMP, GIF, JPG, PDF, PDF/A, PNG</td>
+                    </tr>
+                    <tr>
+                        <td>VSSX</td>
+                        <td>BMP, GIF, JPG, PDF, PDF/A, PNG</td>
+                    </tr>
+                    <tr>
+                        <td>VSTM</td>
+                        <td>BMP, GIF, JPG, PDF, PDF/A, PNG</td>
+                    </tr>
+                    <tr>
+                        <td>VSTX</td>
+                        <td>BMP, GIF, JPG, PDF, PDF/A, PNG</td>
+                    </tr>
+            </table>
+            <p>Veuillez consulter la matrice de conversion sur <a href="https://api.onlyoffice.com/docs/docs-api/additional-api/conversion-api/conversion-tables/#diagram-document-file-formats" target="_blank" onclick="onhyperlinkclick(this)"><b>api.onlyoffice.com</b></a> pour vérifier s'il est possible de convertir vos diagrammes dans des formats les plus populaires.</p>
+        </div>
+	</body>
+</html>

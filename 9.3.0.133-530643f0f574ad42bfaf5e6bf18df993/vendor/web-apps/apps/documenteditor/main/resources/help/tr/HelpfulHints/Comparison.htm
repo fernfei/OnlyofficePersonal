@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Belgeleri karşılaştırma</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Instructions on how to compare and merge two documents" />
+    <link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+    <link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+    <script type="text/javascript" src="../callback.js"></script>
+    <script type="text/javascript" src="../search/js/page-search.js"></script>
+</head>
+<body>
+    <div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+        </div>
+        <h1>Belgeleri karşılaştırma</h1>
+        <p><a href="https://www.onlyoffice.com/en/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Belge D&uuml;zenleyici</b></a>, dosyaları ve klas&ouml;rleri <a href="https://helpcenter.onlyoffice.com/userguides/groups-guides-documents-share-documents.aspx" onclick="onhyperlinkclick(this)">paylaşma</a>, belgeler &uuml;zerinde ger&ccedil;ek zamanlı olarak <a href="../HelpfulHints/CollaborativeEditing.htm" onclick="onhyperlinkclick(this)">işbirliği yapma</a>, doğrudan edit&ouml;r aracında <a href="../HelpfulHints/Communicating.htm" onclick="onhyperlinkclick(this)">iletişim kurma</a>, belgelerinizin ek &uuml;&ccedil;&uuml;nc&uuml; taraf girdisi gerektiren belirli b&ouml;l&uuml;mleri hakkında <a href="../HelpfulHints/Commenting.htm" onclick="onhyperlinkclick(this)">yorumda bulunma</a>, gelecekte kullanmak &uuml;zere <a href="../HelpfulHints/VersionHistory.htm" onclick="onhyperlinkclick(this)">belge s&uuml;r&uuml;mlerini</a> kaydetme ve belgeleri <a href="../HelpfulHints/Review.htm" onclick="onhyperlinkclick(this)">g&ouml;zden ge&ccedil;irme</a> ve dosyayı ger&ccedil;ekten d&uuml;zenlemeden değişikliklerinizi kaydetme gibi iş akışlarına s&uuml;rekli ekip genelinde bir yaklaşım s&uuml;rd&uuml;rmenize olanak tanır.</p>
+        <p>İki belgeyi karşılaştırmanız ve birleştirmeniz gerekirse, <a href="https://www.onlyoffice.com/en/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Belge D&uuml;zenleyici</b></a> size belgeyi <b>Karşılaştırma</b> &ouml;zelliği sağlar. İki belge arasındaki farklılıkları g&ouml;r&uuml;nt&uuml;lemeyi ve değişiklikleri tek tek veya t&uuml;m&uuml;n&uuml; birden kabul ederek belgeleri birleştirmeyi sağlar.</p>
+        <p>İki belgeyi karşılaştırıp birleştirdikten sonra sonu&ccedil;, orijinal dosyanın yeni bir s&uuml;r&uuml;m&uuml; olarak portalda saklanır<!-- (in the <em>online version</em> of editors)-->. <!--In the desktop version, when you click the <b>Save</b> button, the dialog window will appear where you will be suggested to save a new file.--></p>
+        <p>Karşılaştırılan belgeleri birleştirmeniz gerekmiyorsa, t&uuml;m değişiklikleri reddedebilirsiniz, b&ouml;ylece orijinal belge değişmeden aynı kalır.</p>
+
+        <h3 id="choosedocument">Karşılaştırma i&ccedil;in bir belge se&ccedil;in</h3>
+        <p>İki belgeyi karşılaştırmak i&ccedil;in karşılaştırmanız gereken orijinal belgeyi a&ccedil;ın ve karşılaştırılacak ikinci belgeyi se&ccedil;in:</p>
+        <ol>
+            <li>&Uuml;st ara&ccedil; &ccedil;ubuğundaki <b>İşbirliği</b> sekmesine ge&ccedil;iş yapın ve <div class = "icon icon-comparebutton"></div> <b>Karşılaştır</b> d&uuml;ğmesine basın,</li>
+            <li>
+                Belgeyi y&uuml;klemek i&ccedil;in aşağıdaki se&ccedil;eneklerden birini se&ccedil;in:
+                <ul>
+                    <li><b>Dosyadan Belge</b> se&ccedil;eneği, dosya se&ccedil;imi i&ccedil;in standart iletişim penceresini a&ccedil;ar. Gerekli <em>.docx</em> dosyası i&ccedil;in bilgisayarınızın sabit disk s&uuml;r&uuml;c&uuml;s&uuml;ne g&ouml;z atın ve <b>A&ccedil;</b> d&uuml;ğmesine tıklayın.</li>
+                    <li>
+                        <b>URL&apos;den Belge</b> se&ccedil;eneği, ilgili erişim haklarınız varsa, &uuml;&ccedil;&uuml;nc&uuml; taraf bir internet depolama alanında (&ouml;rneğin, Nextcloud) saklanan dosyaya giden bir bağlantı girebileceğiniz pencereyi a&ccedil;ar. Bu bağlantı, <b>dosyayı indirmek i&ccedil;in doğrudan bağlantı</b> olmalıdır. Bağlantı belirtildiğinde, <b>Tamam</b> d&uuml;ğmesine tıklayın.
+                        <p class="note"><b>Not</b>: Doğrudan bağlantı, dosyayı bir web tarayıcısında a&ccedil;madan doğrudan indirmenizi sağlar. &Ouml;rneğin, Nextcloud&apos;da doğrudan bir bağlantı almak i&ccedil;in dosya listesinde gerekli belgeyi bulun, dosya men&uuml;s&uuml;nden <b>Ayrıntılar</b> se&ccedil;eneğini se&ccedil;in. Ayrıntılar panelinde dosya adının sağındaki <b>Doğrudan bağlantıyı kopyala (yalnızca bu dosyaya/klas&ouml;re erişim izni olan kullanıcılar i&ccedil;in &ccedil;alışır)</b> simgesine tıklayın. Dosyayı farklı bir &uuml;&ccedil;&uuml;nc&uuml; taraf internet depolama alanına indirmek amacıyla nasıl doğrudan bağlantı alacağınızı &ouml;ğrenmek i&ccedil;in l&uuml;tfen ilgili &uuml;&ccedil;&uuml;nc&uuml; taraf hizmet belgelerine bakın.</p>
+                    </li>
+                    <li class="onlineDocumentFeatures"><b>Depolama Alanından Belge</b> se&ccedil;eneği, <!--(available in the <em>online version</em> only)--> <b>Veri Kaynağını Se&ccedil;</b> penceresini a&ccedil;ar. Portalınızda depolanan ve erişim haklarına sahip olduğunuz t&uuml;m <em>.docx</em> belgelerinin listesini g&ouml;r&uuml;nt&uuml;ler. <b>Belgeler</b> mod&uuml;l&uuml; b&ouml;l&uuml;mleri arasında gezinmek i&ccedil;in pencerenin sol tarafındaki men&uuml;y&uuml; kullanın. Gerekli <em>.docx</em> belgesini se&ccedil;in ve <b>Tamam</b> d&uuml;ğmesine tıklayın.</li>
+                </ul>
+            </li>
+        </ol>
+        <p>Karşılaştırılacak ikinci belge se&ccedil;ildiğinde karşılaştırma işlemi başlar ve belge, <b>G&ouml;zden Ge&ccedil;ir</b> modunda a&ccedil;ılmış gibi g&ouml;r&uuml;n&uuml;r. T&uuml;m değişiklikler bir renkle vurgulanır ve değişiklikleri g&ouml;r&uuml;nt&uuml;leyebilir, aralarında gezinebilir, tek tek veya t&uuml;m&uuml;n&uuml; bir kerede kabul edebilir veya reddedebilirsiniz. G&ouml;r&uuml;nt&uuml;leme modunu değiştirmek ve belgenin karşılaştırmadan &ouml;nce, karşılaştırma s&uuml;recinde nasıl g&ouml;r&uuml;nd&uuml;ğ&uuml;n&uuml; veya t&uuml;m değişiklikleri kabul ederseniz karşılaştırmadan sonra nasıl g&ouml;r&uuml;neceğini g&ouml;rmek de m&uuml;mk&uuml;nd&uuml;r.</p>
+
+        <h3 id="displaymode">Değişiklikleri g&ouml;r&uuml;nt&uuml;le modunu se&ccedil;in</h3>
+        <p>&Uuml;st ara&ccedil; &ccedil;ubuğundaki <span class = "icon icon-review_displaymode"></span> <b>G&ouml;r&uuml;nt&uuml;leme Modu</b> d&uuml;ğmesine tıklayın ve listedeki mevcut modlardan birini se&ccedil;in:</p>
+        <ul>
+            <li>
+                <b>İşaretleme</b> - Bu se&ccedil;enek varsayılan olarak se&ccedil;ilidir. <b>Karşılaştırma s&uuml;recinde</b> olan belgeyi g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in kullanılır. Bu mod, hem değişiklikleri g&ouml;r&uuml;nt&uuml;lemeye hem de belgeyi d&uuml;zenlemeye izin verir.
+                <p><img alt="Belgeleri karşılaştır - İşaretleme" src="../images/compare_markup.png" /></p>
+            </li>
+            <li>
+                <b>Son</b> - Bu mod, <b>karşılaştırmadan sonra</b> belgeyi t&uuml;m değişiklikler kabul edilmiş gibi g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in kullanılır. Bu se&ccedil;enek aslında t&uuml;m değişiklikleri kabul etmez, yalnızca t&uuml;m değişiklikleri kabul ettikten sonra belgenin nasıl g&ouml;r&uuml;neceğini g&ouml;rmenizi sağlar. Bu modda belgeyi d&uuml;zenleyemezsiniz.
+                <p><img alt="Belgeleri karşılaştır - Son" src="../images/compare_final.png" /></p>
+            </li>
+            <li>
+                <b>Orijinal</b> - Bu mod, <b>karşılaştırmadan &ouml;nce</b> belgeyi t&uuml;m değişiklikler reddedilmiş gibi g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in kullanılır. Bu se&ccedil;enek aslında t&uuml;m değişiklikleri reddetmez, yalnızca belgeyi değişiklikler olmadan g&ouml;r&uuml;nt&uuml;lemenizi sağlar. Bu modda belgeyi d&uuml;zenleyemezsiniz.
+                <p><img alt="Belgeleri karşılaştır - Orijinal" src="../images/compare_original.png" /></p>
+            </li>
+        </ul>
+
+        <h3 id="managechanges">Değişiklikleri kabul et veya reddet</h3>
+        <p>Değişiklikler arasında gezinmek i&ccedil;in &uuml;st ara&ccedil; &ccedil;ubuğundaki <span class = "icon icon-review_previous"></span> <b>&Ouml;nceki</b> ve <span class = "icon icon-review_next"></span> <b>Sonraki</b> d&uuml;ğmelerini kullanın.</p>
+        <p>Halihazırda se&ccedil;ili olan değişikliği kabul etmek i&ccedil;in:</p>
+        <ul>
+            <li>&Uuml;st ara&ccedil; &ccedil;ubuğundaki <div class = "icon icon-review_accepttoptoolbar"></div> <b>Kabul Et</b> d&uuml;ğmesine veya</li>
+            <li><b>Kabul Et</b> d&uuml;ğmesinin altındaki aşağı oka tıklayın ve <b>Ge&ccedil;erli Değişikliği Kabul Et</b> se&ccedil;eneğini se&ccedil;in (bu durumda değişiklik kabul edilecek ve bir sonraki değişikliğe ge&ccedil;eceksiniz) veya</li>
+            <li>Değişiklik a&ccedil;ılır penceresinin <b>Kabul Et</b> <div class = "icon icon-review_accept"></div> d&uuml;ğmesine tıklayın.</li>
+        </ul>
+        <p>T&uuml;m değişiklikleri hızlı bir şekilde kabul etmek i&ccedil;in <span class = "icon icon-review_accepttoptoolbar"></span> <b>Kabul Et</b> d&uuml;ğmesinin altındaki aşağı oka tıklayın ve <b>T&uuml;m Değişiklikleri Kabul Et</b> se&ccedil;eneğini se&ccedil;in.</p>
+        <p>Mevcut değişikliği reddetmek i&ccedil;in:</p>
+        <ul>
+            <li>&Uuml;st ara&ccedil; &ccedil;ubuğundaki <div class = "icon icon-review_rejecttoptoolbar"></div> <b>Reddet</b> d&uuml;ğmesine veya</li>
+            <li><b>Reddet</b> d&uuml;ğmesinin altındaki aşağı oka tıklayın ve <b>Ge&ccedil;erli Değişikliği Reddet</b> se&ccedil;eneğini se&ccedil;in (bu durumda değişiklik reddedilecek ve bir sonraki değişikliğe ge&ccedil;eceksiniz) veya</li>
+            <li>Değişiklik a&ccedil;ılır penceresinin <b>Reddet</b> <div class = "icon icon-review_reject"></div> d&uuml;ğmesine tıklayın.</li>
+        </ul>
+        <p>T&uuml;m değişiklikleri hızlı bir şekilde reddetmek i&ccedil;in <span class = "icon icon-review_rejecttoptoolbar"></span> <b>Reddet</b> d&uuml;ğmesinin altındaki aşağı oka tıklayın ve <b>T&uuml;m Değişiklikleri Reddet</b> se&ccedil;eneğini se&ccedil;in.</p>
+
+        <h3 id="comparisonnotes">Karşılaştırma &ouml;zelliği hakkında ek bilgi</h3>
+        <h5>Karşılaştırma y&ouml;ntemi</h5>
+        <p>Belgeler <b>kelimelere g&ouml;re</b> karşılaştırılır. Bir kelimede en az bir karakterlik değişiklik varsa (&ouml;rneğin, bir karakter kaldırılmış veya değiştirilmişse), sonu&ccedil;ta bu farklılık, karakterin değil, t&uuml;m kelimenin değişikliği olarak g&ouml;r&uuml;nt&uuml;lenir.</p>
+        <p>Aşağıdaki resim, orijinal dosyanın &apos;Karakterler&apos; kelimesini i&ccedil;erdiği ve karşılaştırılacak belgenin &apos;Karakter&apos; kelimesini i&ccedil;erdiği durumu g&ouml;stermektedir.</p>
+        <p><img alt="Belgeleri karşılaştır - Yöntem" src="../images/compare_method.png" /></p>
+
+        <h5>Belgenin yazarlığı</h5>
+        <p>Karşılaştırma işlemi başlatıldığında, karşılaştırma i&ccedil;in ikinci belge y&uuml;klenir ve mevcut belgeyle karşılaştırılır.</p>
+        <ul>
+            <li>Y&uuml;klenen belge, orijinal belgede belirtilmeyen bazı veriler varsa, bu veriler bir g&ouml;zden ge&ccedil;iren tarafından eklenmiş olarak işaretlenir.</li>
+            <li>Orijinal belgede, y&uuml;klenen belgede belirtilmeyen bazı veriler varsa, bu veriler bir g&ouml;zden ge&ccedil;iren tarafından silinmiş olarak işaretlenir.</li>
+        </ul>
+        <p>Orijinal ve y&uuml;klenen belgelerin yazarları aynı kişiyse, g&ouml;zden ge&ccedil;iren aynı kullanıcıdır. Adı, değişiklik balonunda g&ouml;r&uuml;nt&uuml;lenir.</p>
+        <p>İki dosyanın yazarları farklı kullanıcılarsa, karşılaştırma i&ccedil;in y&uuml;klenen ikinci dosyanın yazarı eklenen/kaldırılan değişikliklerin yazarıdır.</p>
+
+        <h5>Karşılaştırılan belgede izlenen değişiklikler olması</h5>
+        <p>Orijinal belgede g&ouml;zden ge&ccedil;irme modunda yapılmış bazı değişiklikler varsa, bu değişiklikler karşılaştırma işlemi sırasında kabul edilir. Karşılaştırma i&ccedil;in ikinci dosyayı se&ccedil;tiğinizde ilgili uyarı mesajını g&ouml;r&uuml;rs&uuml;n&uuml;z.</p>
+        <p>Bu durumda, <b>Orijinal</b> g&ouml;r&uuml;nt&uuml;leme modunu se&ccedil;tiğinizde, belge herhangi bir değişiklik i&ccedil;ermez.</p>
+    </div>
+</body>
+</html>

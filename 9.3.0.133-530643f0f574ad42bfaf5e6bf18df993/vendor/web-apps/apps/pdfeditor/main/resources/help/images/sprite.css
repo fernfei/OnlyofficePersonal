@@ -1,0 +1,302 @@
+@import "../../../../../common/main/resources/help/images/symbols.css";
+
+.big{
+	background-image: url(../images/big.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.big-checkbox_checked {
+	background-position: 0px 0px;
+	width: 127px;
+	height: 45px;
+}
+
+.icon{
+	background-image: url(../images/icons.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.icon-speech {
+	background-position: 0px 0px;
+	width: 28px;
+	height: 28px;
+}
+
+.icon-speechinput {
+	background-position: -28px 0px;
+	width: 28px;
+	height: 28px;
+}
+
+.icon-translator {
+	background-position: 0px -28px;
+	width: 26px;
+	height: 26px;
+}
+
+.icon-telegram_icon {
+	background-position: -26px -28px;
+	width: 24px;
+	height: 24px;
+}
+
+.icon-thesaurus_icon {
+	background-position: -56px 0px;
+	width: 28px;
+	height: 22px;
+}
+
+.icon-saveas_form_icon {
+	background-position: -56px -22px;
+	width: 22px;
+	height: 22px;
+}
+
+.icon-submit_form_icon {
+	background-position: 0px -54px;
+	width: 20px;
+	height: 22px;
+}
+
+.icon-favorites_icon {
+	background-position: -20px -54px;
+	width: 20px;
+	height: 20px;
+}
+
+.icon-sortcommentsicon {
+	background-position: -40px -54px;
+	width: 20px;
+	height: 20px;
+}
+
+.icon-comment_toptoolbar {
+	background-position: -60px -54px;
+	width: 22px;
+	height: 19px;
+}
+
+.icon-removecomment_toptoolbar {
+	background-position: -84px 0px;
+	width: 15px;
+	height: 19px;
+}
+
+.icon-saveupdate {
+	background-position: 0px -76px;
+	width: 18px;
+	height: 18px;
+}
+
+.icon-search_advanced {
+	background-position: -18px -76px;
+	width: 18px;
+	height: 18px;
+}
+
+.icon-search_icon_header {
+	background-position: -36px -76px;
+	width: 18px;
+	height: 18px;
+}
+
+.icon-access_rights {
+	background-position: -54px -76px;
+	width: 22px;
+	height: 17px;
+}
+
+.icon-gotodocuments {
+	background-position: -76px -76px;
+	width: 20px;
+	height: 17px;
+}
+
+.icon-editcommenticon {
+	background-position: -99px 0px;
+	width: 16px;
+	height: 16px;
+}
+
+.icon-handtool {
+	background-position: -99px -16px;
+	width: 13px;
+	height: 16px;
+}
+
+.icon-pagethumbnails {
+	background-position: -99px -32px;
+	width: 12px;
+	height: 16px;
+}
+
+.icon-selectiontool {
+	background-position: -99px -48px;
+	width: 10px;
+	height: 16px;
+}
+
+.icon-search_options {
+	background-position: 0px -94px;
+	width: 22px;
+	height: 15px;
+}
+
+.icon-chaticon {
+	background-position: -22px -94px;
+	width: 18px;
+	height: 15px;
+}
+
+.icon-chaticon_new {
+	background-position: -40px -94px;
+	width: 17px;
+	height: 15px;
+}
+
+.icon-print {
+	background-position: -57px -94px;
+	width: 17px;
+	height: 15px;
+}
+
+.icon-about {
+	background-position: -99px -64px;
+	width: 15px;
+	height: 15px;
+}
+
+.icon-fitpage {
+	background-position: -99px -79px;
+	width: 13px;
+	height: 15px;
+}
+
+.icon-pagenumber {
+	background-position: -115px 0px;
+	width: 65px;
+	height: 14px;
+}
+
+.icon-commentsicon {
+	background-position: -115px -14px;
+	width: 14px;
+	height: 14px;
+}
+
+.icon-save {
+	background-position: -129px -14px;
+	width: 14px;
+	height: 14px;
+}
+
+.icon-searchicon {
+	background-position: -143px -14px;
+	width: 14px;
+	height: 14px;
+}
+
+.icon-firstpage {
+	background-position: -157px -14px;
+	width: 11px;
+	height: 14px;
+}
+
+.icon-lastpage {
+	background-position: -168px -14px;
+	width: 11px;
+	height: 14px;
+}
+
+.icon-nextpage {
+	background-position: -115px -28px;
+	width: 9px;
+	height: 14px;
+}
+
+.icon-previouspage {
+	background-position: -124px -28px;
+	width: 9px;
+	height: 14px;
+}
+
+.icon-feedbackicon {
+	background-position: -133px -28px;
+	width: 15px;
+	height: 13px;
+}
+
+.icon-copy {
+	background-position: -148px -28px;
+	width: 14px;
+	height: 13px;
+}
+
+.icon-paste {
+	background-position: -162px -28px;
+	width: 14px;
+	height: 13px;
+}
+
+.icon-selectall {
+	background-position: -115px -42px;
+	width: 14px;
+	height: 13px;
+}
+
+.icon-zoomin {
+	background-position: -129px -42px;
+	width: 13px;
+	height: 13px;
+}
+
+.icon-deletecommenticon {
+	background-position: -142px -42px;
+	width: 11px;
+	height: 12px;
+}
+
+.icon-fitwidth {
+	background-position: -153px -42px;
+	width: 16px;
+	height: 11px;
+}
+
+.icon-resolvedicon {
+	background-position: -115px -55px;
+	width: 12px;
+	height: 11px;
+}
+
+.icon-resolveicon {
+	background-position: -127px -55px;
+	width: 12px;
+	height: 11px;
+}
+
+.icon-zoomout {
+	background-position: -169px -42px;
+	width: 10px;
+	height: 11px;
+}
+
+.icon-navigationicon {
+	background-position: -139px -55px;
+	width: 13px;
+	height: 10px;
+}
+
+.icon-searchdownbutton {
+	background-position: -152px -55px;
+	width: 14px;
+	height: 8px;
+}
+
+.icon-searchupbutton {
+	background-position: -166px -55px;
+	width: 14px;
+	height: 8px;
+}
+

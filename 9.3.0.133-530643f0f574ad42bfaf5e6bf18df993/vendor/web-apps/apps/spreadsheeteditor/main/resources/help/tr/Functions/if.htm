@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>EĞER İşlevi</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>EĞER İşlevi</h1>
+			<p><b>EĞER</b> işlevi, mantıksal işlevlerden biridir. Mantıksal ifadeyi kontrol etmek ve DOĞRU ise bir değer, YANLIŞ ise başka bir değer vermek i&ccedil;in kullanılır.</p>
+			<p><b>EĞER</b> işlevi s&ouml;z dizimi ş&ouml;yledir:</p> 
+			<p style="text-indent: 150px;"><b><em>EĞER(mantıksal_test, değer_doğruysa, değer_yanlışsa)</em></b></p> 
+			<p>Burada <b><em>mantıksal_test</em></b>, <b><em>değer_doğruysa</em></b>, <b><em>değer_yanlışsa</em></b> değerleri başvuru yaptığınız h&uuml;creye manuel olarak girilen veya eklenen değerlerdir.</p>
+			<p><b>EĞER</b> işlevini uygulamak i&ccedil;in</p>
+			<ol>
+			<li>Sonucu g&ouml;r&uuml;nt&uuml;lemek istediğiniz h&uuml;creyi se&ccedil;in,</li>
+			<li>&Uuml;st ara&ccedil; &ccedil;ubuğunda bulunan <b>İşlev ekle</b> <div class = "icon icon-insertfunction"></div> simgesine tıklayın
+                <br />veya se&ccedil;ilen bir h&uuml;crenin i&ccedil;ine sağ tıklayın ve men&uuml;den <b>İşlev Ekle</b> se&ccedil;eneğini se&ccedil;in
+                <br />veya<div class = "icon icon-function"></div>form&uuml;l &ccedil;ubuğunda bulunan simgeye tıklayın,
+            </li>
+			<li>Listeden <b>Mantıksal</b> işlev grubunu se&ccedil;in,</li>
+			<li><b>EĞER</b> işlevine tıklayın,</li>
+			<li>Virg&uuml;lle ayırarak gerekli bağımsız değişkenleri girin,</li>
+			<li><b>Enter</b> d&uuml;ğmesine basın.</li>
+			</ol>
+			<p>Sonu&ccedil; se&ccedil;ili h&uuml;crede g&ouml;r&uuml;nt&uuml;lenecektir.</p>
+			<p><em>&Ouml;rneğin:</em></p>
+			<p><em>Mantıksal_test</em> = <b>A1&lt;100</b>, <em>değer_doğruysa</em> = <b>0</b>, <em>değer_yanlışsa</em> = <b>1</b> şeklinde &uuml;&ccedil; bağımsız değişken var, burada <b>A1</b> <b>12&apos;dir</b>. Bu mantıksal ifade <b>DOĞRU&apos;dur</b>. Bu nedenle işlev <b>0</b> değerini d&ouml;nd&uuml;r&uuml;r.</p>
+			<p style="text-indent: 150px;"><img alt="EĞER İşlevi: DOĞRU" src="../images/iftrue.png" /></p>
+			<p><b>A1</b> değerini <b>12&apos;den</b> <b>112&apos;ye</b> değiştirirsek, işlev <b>1</b> değerini d&ouml;nd&uuml;r&uuml;r</p>
+			<p style="text-indent: 150px;"><img alt="EĞER İşlevi: YANLIŞ" src="../images/iffalse.png" /></p>
+		</div>
+	</body>
+</html>

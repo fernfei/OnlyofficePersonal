@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Metin kaydırmayı değiştir</title>
+		<meta charset="utf-8" />
+        <meta name="description" content="Change the text wrapping style to specify the way the object is positioned relative to the text." />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Metin kaydırmayı değiştir</h1>
+            <p><b>Kaydırma Stili</b> se&ccedil;eneği, nesnenin metne g&ouml;re konumlandırılma şeklini belirler. <a href="https://www.onlyoffice.com/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Belge D&uuml;zenleyicide</b></a>, <a href="../UsageInstructions/InsertAutoshapes.htm" onclick="onhyperlinkclick(this)">şekiller</a>, <a href="../UsageInstructions/InsertImages.htm" onclick="onhyperlinkclick(this)">g&ouml;r&uuml;nt&uuml;ler</a>, <a href="../UsageInstructions/InsertCharts.htm#" onclick="onhyperlinkclick(this)">grafikler</a>, <a href="../UsageInstructions/InsertTextObjects.htm" onclick="onhyperlinkclick(this)">metin kutuları</a> veya <a href="../UsageInstructions/InsertTables.htm" onclick="onhyperlinkclick(this)">tablolar</a> gibi eklenen nesneler i&ccedil;in metin kaydırma stilini değiştirebilirsiniz.</p>
+            <h3>Şekiller, resimler, grafikler, metin kutuları i&ccedil;in metin kaydırmayı değiştirin</h3>
+            <p>Se&ccedil;ili olan kaydırma stilini değiştirmek i&ccedil;in:</p>
+            <ol>
+                <li>Ayrı bir nesneyi se&ccedil;mek i&ccedil;in sol tıklayın. Bir metin kutusu se&ccedil;mek i&ccedil;in i&ccedil;indeki metne değil, kenarlığına tıklayın.</li>
+                <li>Metin kaydırma ayarlarını a&ccedil;ın:
+                    <ul>
+                        <li>&Uuml;st ara&ccedil; &ccedil;ubuğunda <b>D&uuml;zen</b> sekmesine gidin ve <div class = "icon icon-wrapping_toptoolbar"></div> <b>Kaydırma</b> simgesinin yanındaki oka tıklayın veya</li>
+                        <li>Nesneye sağ tıklayın ve bağlamsal men&uuml;den <b>Kaydırma Stili</b> se&ccedil;eneğini se&ccedil;in veya</li>
+                        <li>Nesneye sağ tıklayın, <b>Gelişmiş Ayarlar</b> se&ccedil;eneğini se&ccedil;in ve nesne <b>Gelişmiş Ayarlar</b> penceresinin <b>Metin Kaydırma</b> sekmesine gidin.</li>
+                    </ul>
+                </li>
+                <li>Gerekli kaydırma stilini se&ccedil;in:
+                    <ul>
+                        <li>
+                            <p><span class="icon icon-wrappingstyle_inline_toptoolbar"></span> <b>Satır İ&ccedil;i</b> - Nesne, bir karakter gibi metnin par&ccedil;ası olarak kabul edilir, bu nedenle metin hareket ettiğinde nesne de hareket eder. Bu durumda konumlandırma se&ccedil;eneklerine erişilemez.</p>
+                            <p>Aşağıdaki stillerden biri se&ccedil;ilirse, nesne metinden bağımsız olarak taşınabilir ve sayfada tam olarak konumlandırılabilir:</p>
+                        </li>
+                        <li><p><span class="icon icon-wrappingstyle_square_toptoolbar"></span> <b>Kare</b> - Metin, nesneyi sınırlayan dikd&ouml;rtgen kutuyu sarar.</p></li>
+                        <li><p><span class="icon icon-wrappingstyle_tight_toptoolbar"></span> <b>Sıkı</b> - Metin, asıl nesnenin kenarlarını sarar.</p></li>
+                        <li><p><span class="icon icon-wrappingstyle_through_toptoolbar"></span> <b>Boyunca</b> - Metin, nesnenin kenarlarını sarar ve nesne i&ccedil;indeki a&ccedil;ık beyaz alanı doldurur. Bu efekti uygulamak i&ccedil;in sağ tıklama men&uuml;s&uuml;nden <b>Kaydırma Sınırını D&uuml;zenle</b> se&ccedil;eneğini kullanın.</p></li>
+                        <li><p><span class="icon icon-wrappingstyle_topandbottom_toptoolbar"></span> <b>&Uuml;ste ve alta</b> - Metin yalnızca nesnenin &uuml;st&uuml;nde ve altındadır.</p></li>
+                        <li><p><span class="icon icon-wrappingstyle_infront_toptoolbar"></span> <b>Metnin &Ouml;n&uuml;ne</b> - Nesne metinle &ouml;rt&uuml;ş&uuml;r.</p></li>
+                        <li><p><span class="icon icon-wrappingstyle_behind_toptoolbar"></span> <b>Metnin Arkasına</b> - Metin nesneyle &ouml;rt&uuml;ş&uuml;r.</p></li>
+                    </ul>
+                </li>
+            </ol>
+            <p><b>Kare</b>, <b>Sıkı</b>, <b>Boyunca</b>, veya <b>&Uuml;ste ve alta</b> stilini se&ccedil;erseniz, her tarafta (&uuml;st, alt, sol, sağ) <b>Metinden Uzaklık</b> gibi bazı ek parametreler ayarlayabilirsiniz. Bu parametrelere erişmek i&ccedil;in nesneye sağ tıklayın, <b>Gelişmiş Ayarlar</b> se&ccedil;eneğini se&ccedil;in ve nesne <b>Gelişmiş Ayarlar</b> penceresinin <b>Metin Kaydırma</b> sekmesine gidin. Gerekli değerleri girin ve <b>Tamam</b> d&uuml;ğmesine tıklayın.</p>
+            <p><b>Satır i&ccedil;i</b> dışında bir kaydırma stili se&ccedil;erseniz, <b>Konum</b> sekmesi nesne <b>Gelişmiş Ayarlar</b> penceresinde de mevcut olur. Bu parametreler hakkında daha fazla bilgi edinmek i&ccedil;in l&uuml;tfen <a href="../UsageInstructions/InsertAutoshapes.htm#position" onclick="onhyperlinkclick(this)">şekiller</a>, <a href="../UsageInstructions/InsertImages.htm#position" onclick="onhyperlinkclick(this)">g&ouml;r&uuml;nt&uuml;ler</a> veya <a href="../UsageInstructions/InsertCharts.htm#position" onclick="onhyperlinkclick(this)">grafikler</a> ile nasıl &ccedil;alışılacağına ilişkin talimatları i&ccedil;eren ilgili sayfalara bakın.</p>
+            <p><b>Satır i&ccedil;i</b> dışında bir kaydırma stili se&ccedil;erseniz, <b>g&ouml;r&uuml;nt&uuml;ler</b> veya <b>şekiller</b> i&ccedil;in kaydırma sınırını da d&uuml;zenleyebilirsiniz. Nesneye sağ tıklayın, bağlamsal men&uuml;den <b>Kaydırma Stili</b> se&ccedil;eneğini tıklayın ve <b>Kaydırma Sınırını D&uuml;zenle</b> se&ccedil;eneğine tıklayın. &Uuml;st ara&ccedil; &ccedil;ubuğunda bulunan  <b>D&uuml;zen</b> sekmesinde <b>Kaydırma</b> -&gt; <b>Kaydırma Sınırını D&uuml;zenle</b> men&uuml;s&uuml;n&uuml; de kullanabilirsiniz. Sınırı &ouml;zelleştirmek i&ccedil;in kaydırma noktalarını s&uuml;r&uuml;kleyin. Yeni bir kaydırma noktası oluşturmak i&ccedil;in kırmızı &ccedil;izgi &uuml;zerinde herhangi bir yere tıklayın ve gerekli konuma s&uuml;r&uuml;kleyin. <span class = "big big-wrap_boundary"></span></p>
+            <h3>Tablolar i&ccedil;in metin kaydırmayı değiştirme</h3>
+            <p><a href="../UsageInstructions/InsertTables.htm" onclick="onhyperlinkclick(this)">Tablolar</a> i&ccedil;in aşağıdaki iki kaydırma stili mevcuttur: <b>Satır i&ccedil;i tablo</b> ve <b>Akış tablosu</b>.</p>
+            <p>Se&ccedil;ili olan kaydırma stilini değiştirmek i&ccedil;in:</p>
+            <ol>
+                <li>Tabloya sağ tıklayın ve <b>Tablo Gelişmiş Ayarları</b> se&ccedil;eneğini se&ccedil;in,</li>
+                <li><b>Tablo Gelişmiş Ayarları</b> penceresinin <b>Metin Kaydırma</b> sekmesine ge&ccedil;iş yapın,
+                </li>
+                <li>
+                    Aşağıdaki se&ccedil;eneklerden birini se&ccedil;in:
+                    <ul>
+                        <li><b>Satır i&ccedil;i tablo</b>, metin tablo ile b&ouml;l&uuml;nd&uuml;ğ&uuml;nde kaydırma stilini se&ccedil;mek ve sola, orta, sağa gibi hizalamayı ayarlamak i&ccedil;in kullanılır.</li>
+                        <li><b>Akış tablosu</b>, metin tablonun etrafına sarıldığında kaydırma stilini se&ccedil;mek i&ccedil;in kullanılır.</li>
+                    </ul>
+                </li>
+            </ol>
+            <p><b>Tablo Gelişmiş Ayarları</b> penceresinin <b>Metin Kaydırma</b> sekmesini kullanarak aşağıdaki ek parametreleri de ayarlayabilirsiniz:</p>
+            <ul>
+                <li>Satır i&ccedil;i tablolar i&ccedil;in tablo <b>Hizalama</b> t&uuml;r&uuml;n&uuml; (sol, orta veya sağ) ve <b>Soldan girintiyi</b> ayarlayabilirsiniz.</li>
+                <li>Akış tabloları i&ccedil;in <a href="../UsageInstructions/InsertTables.htm#position" onclick="onhyperlinkclick(this)">Tablo Konumu</a> sekmesinde <b>Metinden uzaklığı</b> ve tablo <b>konumunu</b> ayarlayabilirsiniz.</li>
+            </ul>
+		</div>
+	</body>
+</html>

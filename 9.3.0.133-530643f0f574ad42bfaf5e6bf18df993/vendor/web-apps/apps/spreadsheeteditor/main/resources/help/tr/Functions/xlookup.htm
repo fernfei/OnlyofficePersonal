@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>&Ccedil;APRAZARA İşlevi</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+			<div class="search-field">
+				<input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+			</div>
+			<h1>&Ccedil;APRAZARA İşlevi</h1>
+			<p><b>&Ccedil;APRAZARA</b> işlevi, arama ve başvuru işlevlerinden biridir. Belirli bir &ouml;ğeyi hem yatay hem de dikey olarak satır satır aramak i&ccedil;in kullanılır. Sonu&ccedil; başka bir s&uuml;tunda d&ouml;nd&uuml;r&uuml;l&uuml;r ve iki boyutlu veri k&uuml;meleri barındırabilir.</p>
+			<p><b>&Ccedil;APRAZARA</b> işlevi s&ouml;z dizimi ş&ouml;yledir:</p>
+			<p style="text-indent: 150px;"><b><em>&Ccedil;APRAZARA(aranan_değer, aranan_dizi, d&ouml;nd&uuml;r&uuml;len_dizi, [bulunamadıysa], [eşleşme_modu], [arama_modu])</em></b></p>
+			<p><em>Burada</em></p>
+			<p style="text-indent: 50px;"><b><em>aranan_değer,</em></b> aranacak bir değerdir.</p>
+			<p style="text-indent: 50px;"><b><em>aranan_dizi,</em></b>&nbsp;i&ccedil;erisinde arama yapılacak bir dizi veya aralıktır.</p>
+			<p style="text-indent: 50px;"><b><em>d&ouml;nd&uuml;r&uuml;len_dizi,</em></b>&nbsp;sonu&ccedil;ların d&ouml;nd&uuml;r&uuml;leceği bir dizi veya aralıktır.</p>
+			<p style="text-indent: 50px;"><b><em>bulunamadıysa,</em></b> isteğe bağlı bir bağımsız değişkendir. Arama sonucu yoksa bağımsız değişken [bulunamadıysa] i&ccedil;inde belirtilen metni d&ouml;nd&uuml;r&uuml;r. Metnin belirtilmemesi durumunda &ldquo;YOK&rdquo; değeri d&ouml;nd&uuml;r&uuml;l&uuml;r.</p>
+			<p style="text-indent: 50px;"><b><em>eşleşme_modu,</em></b> isteğe bağlı bir bağımsız değişkendir. Aşağıdaki değerler mevcuttur:
+            <ul>
+				<li><b><em>0</em></b> (varsayılan olarak ayarlanmıştır) tam eşleşmeyi d&ouml;nd&uuml;r&uuml;r; eşleşme yoksa, bunun yerine &ldquo;YOK&rdquo; değeri d&ouml;nd&uuml;r&uuml;l&uuml;r.</li>
+				<li><b><em>-1</em></b> tam eşleşmeyi d&ouml;nd&uuml;r&uuml;r; hi&ccedil;bir eşleşme yoksa, bir sonraki k&uuml;&ccedil;&uuml;k &ouml;ğe d&ouml;nd&uuml;r&uuml;l&uuml;r.</li>
+				<li><b><em>1</em></b> tam eşleşmeyi d&ouml;nd&uuml;r&uuml;r; hi&ccedil;bir eşleşme yoksa, bir sonraki daha b&uuml;y&uuml;k &ouml;ğe d&ouml;nd&uuml;r&uuml;l&uuml;r.</li>
+				<li><b><em>2</em></b> bir genel arama eşleşmesidir.</li>
+				</ul>
+			</p>
+			<p style="text-indent: 50px;"><b><em>arama_modu,</em></b> isteğe bağlı bir bağımsız değişkendir. Aşağıdaki değerler mevcuttur:
+            <ul>
+				<li><b><em>1,</em></b> ilk &ouml;ğede bir arama başlatır (varsayılan olarak ayarlanmıştır).</li>
+				<li><b><em>-1,</em></b> geriye doğru, yani son &ouml;ğede bir arama başlatır.</li>
+				<li><b><em>2,</em></b> artan d&uuml;zende sıralanmış <b><em>arama_dizisi</em></b> ile ikili bir arama başlatır. Sıralanmazsa ge&ccedil;ersiz sonu&ccedil;lar d&ouml;nd&uuml;r&uuml;l&uuml;r.</li>
+				<li><b><em>-2,</em></b> azalan d&uuml;zende sıralanmış <b><em>arama_dizisi</em></b> ile ikili bir arama başlatır. Sıralanmazsa ge&ccedil;ersiz sonu&ccedil;lar d&ouml;nd&uuml;r&uuml;l&uuml;r.</li>	
+			</ul>
+			</p>
+			<p class="note">
+                Genel arama karakterleri, tek bir karakterle eşleşen soru işaretini (?) ve birden &ccedil;ok karakterle eşleşen yıldız işaretini (*) i&ccedil;erir. Bir soru işareti veya yıldız işareti bulmak istiyorsanız, karakterin &ouml;n&uuml;ne bir yaklaşık işareti (~) yazın.
+            </p>
+			<p><b>&Ccedil;APRAZARA</b> işlevini uygulamak i&ccedil;in</p>
+			<ol>
+				<li>Sonucu g&ouml;r&uuml;nt&uuml;lemek istediğiniz h&uuml;creyi se&ccedil;in,</li>
+				<li>
+                &Uuml;st ara&ccedil; &ccedil;ubuğunda bulunan <b>İşlev ekle</b> <div class = "icon icon-insertfunction"></div> simgesine tıklayın
+                    <br />veya se&ccedil;ilen bir h&uuml;crenin i&ccedil;ine sağ tıklayın ve men&uuml;den <b>İşlev Ekle</b> se&ccedil;eneğini se&ccedil;in
+                    <br />veya<div class = "icon icon-function"></div>form&uuml;l &ccedil;ubuğunda bulunan simgeye tıklayın,
+                </li>
+				<li>Listeden <b>Arama ve Başvuru</b> işlev grubunu se&ccedil;in,</li>
+				<li><b>&Ccedil;APRAZARA</b> işlevine tıklayın,</li>
+				<li>Gerekli bağımsız değişkenleri <b>İşlev Bağımsız Değişkenleri</b> penceresine girin,</li>
+				<li><b>Enter</b> d&uuml;ğmesine basın.</li>
+			</ol>
+			<p>Sonu&ccedil; se&ccedil;ili h&uuml;crede g&ouml;r&uuml;nt&uuml;lenecektir.</p>
+			<p style="text-indent: 150px;"><img alt="ÇAPRAZARA İşlevi" src="../images/xlookup.png" /></p>
+		</div>
+	</body>
+</html>

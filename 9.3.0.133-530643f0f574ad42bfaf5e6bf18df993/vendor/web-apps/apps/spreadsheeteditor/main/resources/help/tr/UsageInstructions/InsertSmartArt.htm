@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>SmartArt Nesneleri Ekle</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="SmartArt Nesneleri Ekle" />
+    <link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+    <link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+    <script type="text/javascript" src="../callback.js"></script>
+    <script type="text/javascript" src="../search/js/page-search.js"></script>
+</head>
+	<body>
+        <div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+            </div>
+            <h1>SmartArt Nesneleri Ekle</h1>
+            <p><b>SmartArt grafikleri</b>, en uygun düzeni seçerek hiyerarşik bir yapıyı görsel olarak temsil etmek için kullanılır. SmartArt nesneleri ekleyin veya üçüncü taraf editörlerinde eklenenleri düzenleyin.</p>
+            <p>Bir SmartArt nesnesi <b>eklemek</b> için,</p>
+            <ol>
+                <li>Ekle sekmesine gidin,</li>
+                <li>SmartArt düğmesine tıklayın,</li>
+                <li>mevcut düzen stillerinden birinin üzerine gelin, örneğin <em>Liste</em> veya <em>İşlem</em>,</li>
+                <li>vurgulanan menü öğesinin sağındaki listeden bir düzen türü seçin.</li>
+            </ol>
+            <p>SmartArt ayarlarını sağ panelde <b>özelleştirebilirsiniz</b>:</p>
+            <p class="note">Lütfen renk, stil ve form türü ayarlarının ayrı ayrı özelleştirilebileceğini unutmayın.</p>
+            <img alt="" src="../images/smartart_settings.png" />
+            <ul>
+                <li>
+                    <b>Doldurma</b> - bu bölümü seçerek SmartArt nesnesi doldurma seçeneğini seçin. Aşağıdaki seçeneklerden birini seçebilirsiniz:
+                    <ul>
+                        <li>
+                            <b>Renk Doldurma</b> - seçilen SmartArt nesnesinin iç boşluğunu doldurmak için katı bir rengi belirtmek için bu seçeneği seçin.
+                            <p><img alt="Renk Doldurma" src="../images/fill_color.png" /></p>
+                        </li>
+                        <li>
+                            <b>Gradyan Doldurma</b> - şekli iki veya daha fazla gradyan renkle doldurmak için bu seçeneği kullanın. Sınırlama olmadan gradyan doldurmanızı özelleştirin. Sağ kenar çubuğunda <b>Doldurma</b> menüsünü açmak için <b>Şekil ayarları</b> <div class="icon icon-shape_settings_icon"></div> simgesine tıklayın:
+                            <p><img alt="Gradyan Doldurma" src="../images/fill_gradient.png" /></p>
+                            <p>Mevcut menü seçenekleri:</p>
+                            <ul>
+                                <li>
+                                    <b>Stil</b> - <b>Lineer</b> veya <b>Radyal</b> arasından seçim yapın:
+                                    <ul>
+                                        <li><b>Lineer</b> , renklerinizi sol- sağa, yukarı-aşağıya veya istediğiniz herhangi bir açıda tek bir yönde akmasını istediğinizde kullanılır. <b>Yön</b> önizleme penceresi, seçilen gradyan rengini gösterir, önceden belirlenmiş bir gradyan yönü seçmek için oku tıklayın. Kesin bir gradyan açısı için <b>Açı</b> ayarlarını kullanın.</li>
+                                        <li><b>Radyal</b>, merkezden hareket etmek için kullanılır, tek bir noktadan başlayarak dışa yayılır.</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <b>Gradyan Noktası</b>, bir rengin diğerine geçiş noktasıdır.
+                                    <ul>
+                                        <li><div class="icon icon-addgradientpoint"></div> <b>Gradyan Noktası Ekle</b> düğmesini veya kaydırıcı çubuğunu kullanarak bir gradyan noktası ekleyin. En fazla 10 gradyan noktası ekleyebilirsiniz. Eklenen her bir sonraki gradyan noktası, mevcut gradyan doldurma görünümünü hiçbir şekilde etkilemeyecektir. Belirli bir gradyan noktasını silmek için <div class="icon icon-removegradientpoint"></div> <b>Gradyan Noktası Kaldır</b> düğmesini kullanın.</li>
+                                        <li>Kaydırma çubuğunu kullanarak gradyan noktasının konumunu değiştirebilir veya hassas bir konum için yüzde <b>Pozisyonunu</b> belirtebilirsiniz.</li>
+                                        <li>Bir gradyan noktasına renk uygulamak için, kaydırma çubuğundaki bir noktaya tıklayın ve sonra <b>Renk</b>'e tıklayarak istediğiniz rengi seçin.</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Resim veya Doku</b> - bu seçeneği seçerek bir görüntü veya önceden tanımlanmış bir dokuyu SmartArt nesnesinin arka planı olarak kullanın.
+                            <p><img alt="Resim veya Doku" src="../images/fill_picture.png" /></p>
+                            <ul>
+                                <li>SmartArt nesnesi için bir arka plan olarak bir görüntü kullanmak isterseniz, bilgisayarınızın sabit disk sürücüsündeki bir <b>Dosyadan</b> seçerek, açılan pencereye uygun URL adresini ekleyerek <b>URL'den</b> veya portalınızda depolanan gerekli resmi seçerek <b>Depolama'dan</b> bir görüntü ekleyebilirsiniz.</li>
+                                <li>
+                                    SmartArt nesnesi için bir dokuyu arka plan olarak kullanmak isterseniz, <b>Dokular</b> menüsünü açın ve gerekli dokuya önceden tanımlanmış dokular menüsünden seçin.
+                                    <p>Şu anda mevcut olan dokular: tuval, karton, koyu kumaş, tane, granit, gri kağıt, örgü, deri, kahverengi kağıt, papirüs, ahşap.</p>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    Seçilen <b>Resim</b>, SmartArt nesnesinin boyutundan daha küçük veya daha büyükse, açılır listeden <b>Uzat</b> veya <b>Döşe</b> ayarını seçebilirsiniz.
+                                    <p><b>Uzat</b> seçeneği, görüntü boyutunu SmartArt nesnesi boyutuna uyacak şekilde ayarlamanıza olanak tanır, böylece alanı tamamen doldurabilir.</p>
+                                    <p><b>Döşe</b> seçeneği, daha büyük görüntünün sadece bir bölümünü orijinal boyutlarını koruyarak göstermenize veya daha küçük görüntüyü orijinal boyutlarını koruyarak SmartArt nesnesi yüzeyinin üstünde tekrarlamanıza olanak tanır, böylece alanı tamamen doldurabilirsiniz.</p>
+                                    <p class="note"><b>Not</b>: Herhangi bir seçilen <b>Doku</b> önceden ayarlanmış bir deseni tamamen doldurur, ancak gerektiğinde <b>Uzat</b> efektini uygulayabilirsiniz.</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Desen</b> - bu seçeneği seçerek düzenli olarak tekrarlanan iki renkli bir tasarımla SmartArt nesnesini doldurun.
+                            <p><img alt="Desen" src="../images/fill_pattern.png" /></p>
+                            <ul>
+                                <li><b>Desen</b> - menüden önceden tanımlanmış tasarımlardan birini seçin.</li>
+                                <li><b>Ön plan rengi</b> - desen öğelerinin rengini değiştirmek için bu renk kutusuna tıklayın.</li>
+                                <li><b>Arka plan rengi</b> - desen arka planının rengini değiştirmek için bu renk kutusuna tıklayın.</li>
+                            </ul>
+                        </li>
+                        <li><b>Dolgu Yok</b> - herhangi bir dolgu kullanmak istemiyorsanız bu seçeneği seçin.</li>
+                        <li>
+                            <b>Çizgi</b> - bu bölümü kullanarak SmartArt nesnesinin çizgi kalınlığını, rengini veya tipini değiştirin.
+                            <ul>
+                                <li>Çizgi kalınlığını değiştirmek için, <b>Boyut</b> açılır menüsünden mevcut seçeneklerden birini seçin. Mevcut seçenekler şunlardır: 0.5 pt, 1 pt, 1.5 pt, 2.25 pt, 3 pt, 4.5 pt, 6 pt. Alternatif olarak, hiçbir çizgi kullanmak istemiyorsanız <b>Çizgi Yok</b> seçeneğini seçin.</li>
+                                <li>Çizgi <b>rengini</b> değiştirmek için, altındaki renk kutusuna tıklayın ve gerekli rengi seçin.</li>
+                                <li>Çizgi <b>tipini</b> değiştirmek için, ilgili açılır menüden gerekli seçeneği seçin (varsayılan olarak katı bir çzigi uygulanır, bunu mevcut kesikli çizgilerden biri ile değiştirebilirsiniz).</li>
+                            </ul>
+                        </li>
+                        <li><b>Gölgeyi göster</b> - SmartArt nesnesinin gölgeli görünmesini sağlamak için bu kutuyu işaretleyin.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p><b>Gelişmiş ayarları göster</b> bağlantısını tıklayarak <a href="../UsageInstructions/InsertAutoshapes.htm#autoshape_advanced" onclick="onhyperlinkclick(this)">gelişmiş ayarları</a> açın.</p>
+        </div>
+	</body>
+</html>

@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+        <title>Zellen externe Links hinzufügen</title>
+		<meta charset="utf-8" />
+        <meta name="description" content="Fügen Sie einer Zelle oder einem Zellbereich in einer anderen Arbeitsmappe einen externen Link hinzu" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+        <div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+            <h1>Zellen externe Links hinzufügen</h1>
+            <p>Im <a href="https://www.onlyoffice.com/de/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Tabellenkalkulationseditor</b></a> können Sie einen externen Link zu einer Zelle oder einem Zellbereich in einer anderen Arbeitsmappe erstellen. Die externen Links zu Zellen können zwischen Dateien innerhalb des aktuellen Portals (im Online-Editor) oder zwischen lokalen Dateien (im Desktop-Editor) erstellt werden.</p>
+            <p class="note">Im Online-Editor muss die Möglichkeit zum Einfügen von Daten über einen externen Link auch auf der Integratorseite (z. B. in einem Dokumentenmanagementsystem eines Drittanbieters) implementiert sein.</p>
+            <p>Wenn sich Daten in der Quellarbeitsmappe ändern, können Sie die Werte in der Zielarbeitsmappe aktualisieren, ohne sie erneut manuell zu kopieren.</p>
+            <p>Um einen externen Link hinzuzufügen,</p>
+            <ol>
+                <li>öffnen Sie die Quellarbeitsmappe und die Zielarbeitsmappe,</li>
+                <li>kopieren Sie in der Quellarbeitsmappe eine Zelle oder einen Zellbereich (Strg+C),</li>
+                <li>fügen Sie in der Zielarbeitsmappe die kopierten Daten ein (Strg+V),</li>
+                <li>klicken Sie auf die Schaltfläche Spezielles Einfügen und wählen Sie die Option <b>Hyperlink einfügen</b> (Strg+N).</li>
+            </ol>
+            <p>Der Link wird hinzugefügt. Wenn Sie auf die Zelle klicken, die einen externen Link enthält, sieht dies in der Formelleiste wie folgt aus: <code>='[SourceWorkbook.xlsx]Sheet1'!A1</code>.</p>
+            <p>Um die hinzugefügten externen Links zu aktualisieren,</p>
+            <ol>
+                <li>wechseln Sie zur Registerkarte <b>Daten</b>,</li>
+                <li>klicken Sie auf die Schaltfläche <b>Externe Links</b>,</li>
+                <li>
+                    wählen Sie den erforderlichen Link in der Liste aus,
+                    <p><img alt="Externe Links" src="../images/externallinks.png" /></p>
+                </li>
+                <li>aktivieren Sie die Option <b>Daten aus den verknüpften Quellen automatisch aktualisieren</b>, um <em>alle Daten</em> stets aktuell zu halten,</li>
+                <li>um <em>bestimmte Werte</em> zu aktualisieren, wählen Sie sie aus und klicken Sie auf die Schaltfläche <b>Werte aktualisieren</b>.</li>
+            </ol>
+            <p>Der Status wird auf „OK“ geändert.</p>
+            <p>Im selben Fenster <b>Externe Links</b> können Sie auf die Schaltfläche <b>Quelle öffnen</b> klicken, um zur Quellarbeitsmappe zu gelangen, oder auf die Schaltfläche <b>Quelle ändern</b> klicken, um den Quelllink zu ändern.</p>
+            <p>Wenn Sie die Arbeitsmappe öffnen, die externe Links enthält, wird die Warnung angezeigt:</p>
+            <p><img alt="Externe Links" src="../images/extlinkwarning.png" /></p>
+            <p>Klicken Sie auf <b>Aktualisieren</b>, um alle externen Links zu aktualisieren.</p>
+            <p>Um die hinzugefügten externen Links zu unterbrechen,</p>
+            <ol>
+                <li>wechseln Sie zur Registerkarte <b>Daten</b>,</li>
+                <li>klicken Sie auf die Schaltfläche <b>Externe Links</b>,</li>
+                <li>wählen Sie den erforderlichen Link in der Liste aus,</li>
+                <li>Um die hinzugefügten externen Links zu unterbrechen, klicken Sie auf die Schaltfläche <b>Verknüpfungen löschen</b> oder klicken Sie auf den Pfeil daneben und wählen Sie aus, ob Sie <b>Verknüpfungen löschen</b> (die derzeit ausgewählt werden) oder <b>Alle Verknüpfungen aufheben</b> möchten.</li>
+            </ol>
+            <p>Die Verknüpfungen werden unterbrochen und die Werte werden nicht aktualisiert.</p>
+        </div>
+	</body>
+</html>

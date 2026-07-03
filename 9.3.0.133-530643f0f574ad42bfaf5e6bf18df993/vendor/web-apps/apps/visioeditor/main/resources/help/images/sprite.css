@@ -1,0 +1,98 @@
+@import "../../../../../common/main/resources/help/images/symbols.css";
+
+.big{
+	background-image: url(../images/big.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.big-checkbox_checked {
+	background-position: 0px 0px;
+	width: 127px;
+	height: 45px;
+}
+
+.icon{
+	background-image: url(../images/icons.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+.icon-pagethumbnails {
+	background-position: 0px 0px;
+	width: 12px;
+	height: 16px;
+}
+
+.icon-chaticon {
+	background-position: -12px 0px;
+	width: 18px;
+	height: 15px;
+}
+
+.icon-gotodocuments {
+	background-position: -30px 0px;
+	width: 18px;
+	height: 15px;
+}
+
+.icon-chaticon_new {
+	background-position: 0px -16px;
+	width: 17px;
+	height: 15px;
+}
+
+.icon-print {
+	background-position: -17px -16px;
+	width: 17px;
+	height: 15px;
+}
+
+.icon-about {
+	background-position: 0px -31px;
+	width: 15px;
+	height: 15px;
+}
+
+.icon-fitpage {
+	background-position: -34px -16px;
+	width: 13px;
+	height: 15px;
+}
+
+.icon-nextpage {
+	background-position: -15px -31px;
+	width: 9px;
+	height: 14px;
+}
+
+.icon-previouspage {
+	background-position: -24px -31px;
+	width: 9px;
+	height: 14px;
+}
+
+.icon-feedbackicon {
+	background-position: -33px -31px;
+	width: 15px;
+	height: 13px;
+}
+
+.icon-zoomin {
+	background-position: -48px 0px;
+	width: 13px;
+	height: 13px;
+}
+
+.icon-fitwidth {
+	background-position: 0px -46px;
+	width: 16px;
+	height: 11px;
+}
+
+.icon-zoomout {
+	background-position: -48px -13px;
+	width: 10px;
+	height: 11px;
+}
+

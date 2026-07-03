@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Yer imi ekleme</title>
+		<meta charset="utf-8" />
+        <meta name="description" content="Bookmarks allow to quickly jump to a certain position in the current document or add a link to this location within the document." />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Yer imi ekleme</h1>
+            <p>Yer imleri, metnin belirli bir b&ouml;l&uuml;m&uuml;ne hızlı bir şekilde erişmenizi veya belgedeki konumuna bir bağlantı eklemenizi sağlar.</p>
+			<p><a href="https://www.onlyoffice.com/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Belge D&uuml;zenleyicide</b></a> bir yer imi eklemek i&ccedil;in:</p>
+			<ol>
+                <li>Yer iminin eklenmesini istediğiniz yeri belirtin:
+                <ul>
+                    <li>Fare imlecini gerekli metin pasajının başına getirin veya</li>
+                    <li>Gerekli metin pasajını se&ccedil;in,</li>
+                </ul>
+                </li>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Başvurular</b> sekmesine ge&ccedil;iş yapın,</li>
+                <li>buradan <div class = "icon icon-bookmark"></div> &Uuml;st ara&ccedil; &ccedil;ubuğundaki <b>Yer İmi</b> simgesine tıklayın,</li>
+				<li><b>Yer İmleri</b> penceresinde, <b>Yer imi adını</b> girin ve <b>Ekle</b> d&uuml;ğmesine tıklayın - aşağıda g&ouml;sterilen yer imi listesine bir yer imi eklenecektir,
+                    <p class="note"><b>Not</b>: Yer imi adı bir harfle başlamalıdır, ancak rakamlar da i&ccedil;erebilir. Yer imi adı boşluk i&ccedil;eremez ancak &quot;_&quot; alt &ccedil;izgi karakterini i&ccedil;erebilir.</p>
+                    <p><img alt="Yer imleri penceresi" src="../images/bookmark_window.png" /></p>
+                </li>
+			</ol>
+            <p>Metin i&ccedil;inde eklenen yer imlerinden birine erişmek i&ccedil;in:</p>
+            <ol>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <div class = "icon icon-bookmark"></div> <b>Başvurular</b> sekmesindeki <b>Yer İmi</b> simgesine tıklayın,</li>
+                <li><b>Yer İmleri</b> penceresinde, erişmek istediğiniz yer imini se&ccedil;in. Listede gerekli yer imini kolayca bulmak i&ccedil;in yer imleri listesini metinde <b>İsme</b> veya <b>Konuma</b> g&ouml;re sıralayabilirsiniz,</li>
+                <li>Listedeki gizli yer imlerini g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in <b>Gizli yer imleri</b> se&ccedil;eneğini işaretleyin (bu yer imleri, belgenin belirli bir b&ouml;l&uuml;m&uuml;ne referanslar eklerken program tarafından otomatik olarak oluşturulan yer imleridir. &Ouml;rneğin, belgedeki belirli bir başlığa k&ouml;pr&uuml; oluşturursanız, belge d&uuml;zenleyici otomatik olarak bu bağlantının hedefine gizli bir yer imi oluşturur).</li>
+                <li><b>Git</b> d&uuml;ğmesine tıklayın - İmle&ccedil;, se&ccedil;ili yer iminin metne eklendiği yere konumlanır veya ilgili metin pasajı se&ccedil;ilir,</li>
+                <li>
+                    <b>Bağlantıyı Al</b> d&uuml;ğmesine tıklayın - Bağlantıyı, belgedeki yer imi konumunu belirten dosyaya kopyalamak i&ccedil;in <b>Kopyala</b> d&uuml;ğmesine basabileceğiniz yeni bir pencere a&ccedil;ılacaktır. Bu bağlantıyı bir tarayıcının adres &ccedil;ubuğuna yapıştırıp Enter tuşuna bastığınızda, belge se&ccedil;ilen yer iminin eklendiği yerde a&ccedil;ılacaktır.
+                    <p><img alt="Yer imleri penceresi" src="../images/bookmark_window2.png" /></p>
+                    <p class="note"><b>Not</b>: Bu bağlantıyı diğer kullanıcılarla paylaşmak istiyorsanız, <b>İşbirliği</b> sekmesindeki <b>Paylaşım</b> se&ccedil;eneğini kullanarak kendilerine ilgili erişim haklarını sağlamanız gerekir.</p>
+                </li>
+                <li>Pencereyi kapatmak i&ccedil;in <b>Kapat</b> d&uuml;ğmesine tıklayın.</li>
+            </ol>
+            <p>Bir yer imini silmek i&ccedil;in, yer imi listesinden se&ccedil;in ve <b>Sil</b> d&uuml;ğmesine tıklayın.</p>
+            <p>Bağlantı oluştururken yer imlerini nasıl kullanacağınızı &ouml;ğrenmek i&ccedil;in l&uuml;tfen <a href="../UsageInstructions/AddHyperlinks.htm" onclick="onhyperlinkclick(this)">K&ouml;pr&uuml; ekle</a> b&ouml;l&uuml;m&uuml;ne bakın.</p>
+
+		</div>
+	</body>
+</html>

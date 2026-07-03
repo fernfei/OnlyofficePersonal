@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>XVERGLEICH-Funktion</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+			<div class="search-field">
+				<input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+			</div>
+			<h1>XVERGLEICH-Funktion</h1>
+			<p>Die <b>XVERGLEICH</b>-Funktion ist eine der Suchen- und Bezügefunktionen. Sie wird verwendet, um die relative Position eines Elements in einem Array zurückzugeben. Standardmäßig ist eine genaue Übereinstimmung erforderlich.</p>
+			<p class="note">Bitte beachten Sie, dass dies eine Matrixformel ist. Um mehr zu erfahren, lesen Sie bitte den Artikel <a href="../UsageInstructions/InsertArrayFormulas.htm" onclick="onhyperlinkclick(this)">Matrixformeln einfügen</a>.</p>
+			<p>Die Formelsyntax der Funktion <b>XVERGLEICH</b> ist:</p>
+			<p style="text-indent: 150px;"><b><em>XVERGLEICH(lookup_value, lookup_array, [match_mode], [search_mode])</em></b></p>
+			<p><em>dabei gilt</em></p>
+			<p style="text-indent: 50px;"><b><em>lookup_value</em></b> ist ein Wert, nach dem es gesucht werden muss.</p>
+			<p style="text-indent: 50px;"><b><em>lookup_array</em></b> ist ein Array oder Bereich, in dem es gesucht werden soll.</p>
+			<p style="text-indent: 50px;">
+				<b><em>match_mode</em></b> ist ein optionales Argument. Folgende Werte stehen zur Verfügung:
+				<ul>
+					<li><b><em>0</em></b> (standardmäßig festgelegt) gibt die genaue Übereinstimmung zurück; Wenn es keine Übereinstimmung gibt, wird stattdessen „N/A“ zurückgegeben.</li>
+					<li><b><em>-1</em></b> gibt die genaue Übereinstimmung zurück; ist keine vorhanden, wird der nächstkleinere Artikel zurückgegeben.</li>
+					<li><b><em>1</em></b> gibt die genaue Übereinstimmung zurück; Ist keine vorhanden, wird der nächstgrößere Artikel zurückgegeben.</li>
+					<li><b><em>2</em></b> ist ein Wildcard-Match.</li>
+				</ul>
+			</p>
+			<p style="text-indent: 50px;">
+				<b><em>search_mode</em></b> ist ein optionales Argument. Folgende Werte stehen zur Verfügung:
+				<ul>
+					<li><b><em>1</em></b> startet eine Suche beim ersten Element (standardmäßig festgelegt).</li>
+					<li><b><em>-1</em></b> startet eine Rückwärtssuche, also beim letzten Eintrag.</li>
+					<li><b><em>2</em></b>startet eine binäre Suche, wobei das <b><em>lookup_array</em></b> in aufsteigender Reihenfolge sortiert wird. Bei Nichtsortierung werden ungültige Ergebnisse zurückgegeben.</li>
+					<li><b><em>-2</em></b> startet eine binäre Suche, wobei das <b><em>lookup_array</em></b> in absteigender Reihenfolge sortiert wird. Bei Nichtsortierung werden ungültige Ergebnisse zurückgegeben.</li>
+				</ul>
+			</p>
+			<p class="note">
+				Zu den Platzhalterzeichen gehören das Fragezeichen (?), das einem einzelnen Zeichen entspricht, und das Sternchen (*), das mehreren Zeichen entspricht. Wenn Sie ein Fragezeichen oder ein Sternchen suchen möchten, geben Sie vor dem Zeichen eine Tilde (~) ein.
+			</p>
+			<p>Anwendung der Funktion <b>XVERGLEICH</b>:</p>
+			<ol>
+				<li>Wählen Sie die Zelle aus, in der Sie das Ergebnis anzeigen möchten.</li>
+				<li>
+					Klicken Sie auf das Symbol <b>Funktion</b> <div class="icon icon-insertfunction"></div> in der oberen Symbolleiste
+					<br />oder klicken Sie mit der rechten Maustaste in eine ausgewählte Zelle und wählen Sie die Option <b>Funktion einfügen</b> aus dem Menü
+					<br />oder klicken Sie auf das Symbol <div class="icon icon-function"></div> in der Bearbeitungsleiste.
+				</li>
+				<li>Wählen Sie aus der Liste die Funktionsgruppe <b>Suchen und Bezüge</b>.</li>
+				<li>Klicken Sie auf die Funktion <b>XVERGLEICH</b>.</li>
+				<li>Geben Sie die erforderlichen Argumente ein, indem Sie sie durch Kommas trennen.</li>
+				<li>Drücken Sie die <b>Eingabe</b>-Taste.</li>
+			</ol>
+			<p>Das Ergebnis wird in der ausgewählten Zelle angezeigt.</p>
+			<!--<p style="text-indent: 150px;"><img alt="XMATCH Function" src="../images/xmatch.png" /></p>-->
+		</div>
+	</body>
+</html>

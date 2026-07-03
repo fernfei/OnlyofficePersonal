@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>PROB Function</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>PROB Function</h1>
+			<p>The <b>PROB</b> function is one of the <a href="../UsageInstructions/InsertFunction.htm#statistical" onclick="onhyperlinkclick(this)">statistical functions</a>. It is used to return the probability that values in a range are between lower and upper limits.</p>
+			<h3>Syntax</h3> 
+			<p><b><em>PROB(x_range, prob_range, [lower_limit], [upper_limit])</em></b></p> 
+			<p>The <b>PROB</b> function has the following arguments:</p>
+			<table style="width: 40%">
+                <tr>
+                    <th style="background-color: #f4f4f4" width="150ch"><b>Argument</b></th>
+                    <th style="background-color: #f4f4f4"><b>Description</b></th>
+                </tr>
+                <tr>
+                    <td><b><em>x_range</em></b></td>
+                    <td>The selected range of cells containing numeric values you want to associate the probabilities with.</td>
+                </tr>
+				<tr>
+                    <td><b><em>prob_range</em></b></td>
+                    <td>A set of probabilities associated with values in <b><em>x_range</em></b>, the selected range of cells containing numeric values greater than 0 but less than 1. The sum of the values in <b><em>prob_range</em></b> should be equal to 1, otherwise the function will return the <b>#NUM!</b> error.</td>
+                </tr>
+				<tr>
+                    <td><b><em>lower_limit</em></b></td>
+                    <td>The lower bound of the value, a numeric value entered manually or included into the cell you make reference to.</td>
+                </tr>
+				<tr>
+                    <td><b><em>upper_limit</em></b></td>
+                    <td>The upper bound of the value, a numeric value entered manually or included into the cell you make reference to. It is an optional argument. If it is omitted, the function will return the probability equal to <b><em>lower_limit</em></b>.</td>
+                </tr>
+            </table>
+			
+			<h3>Notes</h3>
+			<p><b><em>x_range</em></b> should contain the same number of elements as <b><em>prob_range</em></b>.</p>				
+			<p><a href="../UsageInstructions/InsertFunction.htm#applyfunction" onclick="onhyperlinkclick(this)">How to apply</a> the <b>PROB</b> function.</p>
+			
+			<h3>Examples</h3>
+            <p>The figure below displays the result returned by the <b>PROB</b> function.</p>
+			<p><img alt="PROB Function" src="../images/prob.png" /></p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>LOOKUP Function</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="The LOOKUP function is one of the lookup and reference functions. Learn how to use the LOOKUP function in Excel sheets and compatible files with ONLYOFFICE." />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>LOOKUP Function</h1>
+			<p>The <b>LOOKUP</b> function is one of the <a href="../UsageInstructions/InsertFunction.htm#lookupreference" onclick="onhyperlinkclick(this)">lookup and reference functions</a>. It is used to return a value from a selected range (row or column containing the data in ascending order).</p>
+			<h3>Syntax</h3> 
+			<p><b><em>LOOKUP(lookup_value, lookup_vector, [result_vector])</em></b></p> 
+			<p>The <b>LOOKUP</b> function has the following arguments:</p> 
+			<table style="width: 40%">
+                <tr>
+                    <th style="background-color: #f4f4f4" width="150ch"><b>Argument</b></th>
+                    <th style="background-color: #f4f4f4"><b>Description</b></th>
+                </tr>
+                <tr>
+                    <td><b><em>lookup_value</em></b></td>
+                    <td>A value to search for.</td>
+                </tr>
+				<tr>
+                    <td><b><em>lookup_vector</em></b></td>
+                    <td>A single row or column containing data sorted in ascending order.</td>
+                </tr>
+				<tr>
+                    <td><b><em>result_vector</em></b></td>
+                    <td>A single row or column of data that is the same size as the <b><em>lookup_vector</em></b>.</td>
+                </tr>
+            </table>
+			
+			<h3>Notes</h3> 
+			<p>The function searches for the <b><em>lookup_value</em></b> in the <b><em>lookup_vector</em></b> and returns the value from the same position in the <b><em>result_vector</em></b>.</p>
+			<p>If the <b><em>lookup_value</em></b> is smaller than all of the values in the <b><em>lookup_vector</em></b>, the function will return the <b>#N/A</b> error. If there is not a value that strictly matches the <b><em>lookup_value</em></b>, the function chooses the largest value in the <b><em>lookup_vector</em></b> that is less than or equal to the value.</p>
+			<p><a href="../UsageInstructions/InsertFunction.htm#applyfunction" onclick="onhyperlinkclick(this)">How to apply</a> the <b>LOOKUP</b> function.</p>
+			
+			<h3>Examples</h3>
+            <p>The figure below displays the result returned by the <b>LOOKUP</b> function.</p>
+			<p><img class="gif" alt="lookup function gif" src="../images/lookup_function.gif" /></p>
+		</div>
+	</body>
+</html>

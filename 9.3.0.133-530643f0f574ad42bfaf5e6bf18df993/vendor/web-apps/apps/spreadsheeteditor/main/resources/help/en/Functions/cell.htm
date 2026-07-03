@@ -1,0 +1,195 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>CELL Function</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>CELL Function</h1>
+			<p>The <b>CELL</b> function is one of the <a href="../UsageInstructions/InsertFunction.htm#information" onclick="onhyperlinkclick(this)">information functions</a>. It is used to return information about the formatting, location, or contents of a cell.</p>
+			<h3>Syntax</h3> 
+			<p><b><em>CELL(info_type, [reference])</em></b></p> 
+            <p>The <b>CELL</b> function has the following arguments:</p>
+            <table style="width: 40%">
+                <tr>
+                    <th style="background-color: #f4f4f4" width="150ch"><b>Argument</b></th>
+                    <th style="background-color: #f4f4f4"><b>Description</b></th>
+                </tr>
+                <tr>
+                    <td><b><em>info_type</em></b></td>
+                    <td>A text value that specifies which information about the cell you want to get. This is the required argument. The available values are listed in the table below.</td>
+                </tr>
+                <tr>
+                    <td><b><em>reference</em></b></td>
+                    <td>A cell that you want to get information about. If it is omitted, the information is returned for the last changed cell. If the <em>reference</em> argument is specified as a range of cells, the function returns the information for the upper-left cell of the range.</td>
+                </tr>
+            </table>
+            <p>The <b><em>info_type</em></b> argument can be one of the following:</p>
+            <table style="width: 40%">
+                <tr>
+                    <th style="background-color: #f4f4f4"><b>Text value</b></th>
+                    <th style="background-color: #f4f4f4"><b>Type of information</b></th>
+                </tr>
+                <tr>
+                    <td><b><em>"address"</em></b></td>
+                    <td>Returns the reference to the cell.</td>
+                </tr>
+                <tr>
+                    <td><b><em>"col"</em></b></td>
+                    <td>Returns the column number where the cell is located.</td>
+                </tr>
+                <tr>
+                    <td><b><em>"color"</em></b></td>
+                    <td>Returns 1 if the cell is formatted in color for negative values; otherwise returns 0.</td>
+                </tr>
+                <tr>
+                    <td><b><em>"contents"</em></b></td>
+                    <td>Returns the value that the cell contains.</td>
+                </tr>
+                <tr>
+                    <td><b><em>"filename"</em></b></td>
+                    <td>Returns the filename of the file that contains the cell.</td>
+                </tr>
+                <tr>
+                    <td><b><em>"format"</em></b></td>
+                    <td>Returns a text value corresponding to the number format of the cell. The text values are listed in the table below.</td>
+                </tr>
+                <tr>
+                    <td><b><em>"parentheses"</em></b></td>
+                    <td>Returns 1 if the cell is formatted with parentheses for positive or all values; otherwise returns 0.</td>
+                </tr>
+                <tr>
+                    <td><b><em>"prefix"</em></b></td>
+                    <td>Returns the single quotation mark (') if the text in the cell is left-aligned, the double quotation mark (") if the text is right-aligned, the caret (^) if the text is centered, <!--the backslash (\) if the text is fill-aligned,-->and an empty text ("") if the cell contains anything else.</td>
+                </tr>
+                <tr>
+                    <td><b><em>"protect"</em></b></td>
+                    <td>Returns 0 if the cell is not locked; returns 1 if the cell is locked.</td>
+                </tr>
+                <tr>
+                    <td><b><em>"row"</em></b></td>
+                    <td>Returns the row number where the cell is located.</td>
+                </tr>
+                <tr>
+                    <td><b><em>"type"</em></b></td>
+                    <td>Returns "b" for an empty cell, "l" for a text value, and "v" for any other value in the cell.</td>
+                </tr>
+                <tr>
+                    <td><b><em>"width"</em></b></td>
+                    <td>Returns the width of the cell, rounded off to an integer.</td>
+                </tr>
+            </table>
+            <p>Below you can see the text values which the function returns for the <em>"format"</em> argument</p>
+            <table style="width: 40%">
+                <tr>
+                    <th style="background-color: #f4f4f4"><b>Number format</b></th>
+                    <th style="background-color: #f4f4f4"><b>Returned text value</b></th>
+                </tr>
+                <tr>
+                    <td><b><em>General</em></b></td>
+                    <td>G</td>
+                </tr>
+                <tr>
+                    <td><b><em>0</em></b></td>
+                    <td>F0</td>
+                </tr>
+                <tr>
+                    <td><b><em>#,##0</em></b></td>
+                    <td>,0</td>
+                </tr>
+                <tr>
+                    <td><b><em>0.00</em></b></td>
+                    <td>F2</td>
+                </tr>
+                <tr>
+                    <td><b><em>#,##0.00</em></b></td>
+                    <td>,2</td>
+                </tr>
+                <tr>
+                    <td><b><em>$#,##0_);($#,##0)</em></b></td>
+                    <td>C0</td>
+                </tr>
+                <tr>
+                    <td><b><em>$#,##0_);[Red]($#,##0)</em></b></td>
+                    <td>C0-</td>
+                </tr>
+                <tr>
+                    <td><b><em>$#,##0.00_);($#,##0.00)</em></b></td>
+                    <td>C2</td>
+                </tr>
+                <tr>
+                    <td><b><em>$#,##0.00_);[Red]($#,##0.00)</em></b></td>
+                    <td>C2-</td>
+                </tr>
+                <tr>
+                    <td><b><em>0%</em></b></td>
+                    <td>P0</td>
+                </tr>
+                <tr>
+                    <td><b><em>0.00%</em></b></td>
+                    <td>P2</td>
+                </tr>
+                <tr>
+                    <td><b><em>0.00E+00</em></b></td>
+                    <td>S2</td>
+                </tr>
+                <tr>
+                    <td><b><em># ?/? or # ??/??</em></b></td>
+                    <td>G</td>
+                </tr>
+                <tr>
+                    <td><b><em>m/d/yy or m/d/yy h:mm or mm/dd/yy</em></b></td>
+                    <td>D4</td>
+                </tr>
+                <tr>
+                    <td><b><em>d-mmm-yy or dd-mmm-yy</em></b></td>
+                    <td>D1</td>
+                </tr>
+                <tr>
+                    <td><b><em>d-mmm or dd-mmm</em></b></td>
+                    <td>D2</td>
+                </tr>
+                <tr>
+                    <td><b><em>mmm-yy</em></b></td>
+                    <td>D3</td>
+                </tr>
+                <tr>
+                    <td><b><em>mm/dd</em></b></td>
+                    <td>D5</td>
+                </tr>
+                <tr>
+                    <td><b><em>h:mm AM/PM</em></b></td>
+                    <td>D7</td>
+                </tr>
+                <tr>
+                    <td><b><em>h:mm:ss AM/PM</em></b></td>
+                    <td>D6</td>
+                </tr>
+                <tr>
+                    <td><b><em>h:mm</em></b></td>
+                    <td>D9</td>
+                </tr>
+                <tr>
+                    <td><b><em>h:mm:ss</em></b></td>
+                    <td>D8</td>
+                </tr>
+            </table>
+            <h3>Notes</h3>
+            <p>Please note that this is an array formula. To learn more, please read the <a href="../UsageInstructions/InsertArrayFormulas.htm" onclick="onhyperlinkclick(this)">Insert array formulas</a> article.</p>
+            <p><a href="../UsageInstructions/InsertFunction.htm#applyfunction" onclick="onhyperlinkclick(this)">How to apply</a> the <b>CELL</b> function.</p>
+			
+			<h3>Examples</h3>
+            <p>The figure below displays the result returned by the <b>CELL</b> function.</p>
+			<p><img alt="CELL Function" src="../images/cell.png" /></p>
+		</div>
+	</body>
+</html>

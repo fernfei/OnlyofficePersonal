@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>OnlyOffice</title>
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon"/>
+    <script type="text/javascript" src="9.3.0.133-530643f0f574ad42bfaf5e6bf18df993/vendor/web-apps/apps/api/documents/api.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #editor {
+            width: 100%;
+            height:100%;
+        }
+        .container {
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div id="editor"></div>
+</div>
+
+<script>
+    // 声明：本宿主只要文件流、不要浏览器下载。内层编辑器(x2t.downloadFile)会沿父窗口链读取此标志。
+    window.OO_FILE_STREAM_ONLY = true;
+
+    var docEditor = null;
+    // 记录父窗口发起的保存请求，劫持的 x2t.downloadFile 拿到字节时据此回传
+    var pendingSave = null;
+    // 非保存的文件流（用户点下载/自动保存）回退处理：'autosave'=回传父窗口；'download'=本窗口浏览器下载
+    var streamFallback = 'autosave';
+
+    function postToParent(msg, transfer) {
+        if (window.parent && window.parent !== window) {
+            window.parent.postMessage(msg, '*', transfer || []);
+        }
+    }
+
+    // 编辑器事件：文档打开完成
+    function onDocumentReady() {
+        postToParent({ type: 'onlyoffice-document-ready' });
+        // 告诉编辑器：只通过文件流对外提供、不要触发浏览器下载（WASM 可能稍晚就绪，重试）
+        var tries = 0;
+        var timer = setInterval(function () {
+            if (setStreamOnlyFlag() || ++tries > 50) clearInterval(timer);
+        }, 200);
+    }
+
+    // 在内层编辑器窗口设置标志：导出时只给文件流、不触发浏览器下载
+    function setStreamOnlyFlag() {
+        try {
+            var frame = document.querySelector('#editor iframe');
+            if (frame && frame.contentWindow) {
+                frame.contentWindow.OO_FILE_STREAM_ONLY = true;
+                return true;
+            }
+        } catch (e) {}
+        return false;
+    }
+
+    // 编辑器通过 x2t.downloadFile 对外抛出的文件流，关联当前保存请求并回传父窗口上传
+    function handleFileStream(data) {
+        var req = pendingSave;
+        pendingSave = null;
+        var buffer = data && data.buffer;
+        // 非保存流程（用户点击下载）且配置为下载模式 → 直接在本窗口触发浏览器下载
+        if (!req && streamFallback === 'download') {
+            if (buffer) {
+                try {
+                    var blob = new Blob([buffer], { type: 'application/octet-stream' });
+                    var href = URL.createObjectURL(blob);
+                    var a = document.createElement('a');
+                    a.href = href;
+                    a.download = data.fileName || ('document.' + (data.fileType || 'docx'));
+                    document.body.appendChild(a);
+                    a.click();
+                    setTimeout(function () { URL.revokeObjectURL(href); a.remove(); }, 1500);
+                } catch (e) {}
+            }
+            return;
+        }
+        if (!buffer) {
+            postToParent({ type: 'onlyoffice-saved', requestId: req && req.requestId, ok: false, error: '未获取到文件流' });
+            return;
+        }
+        postToParent({
+            type: 'onlyoffice-saved',
+            requestId: req && req.requestId,
+            ok: true,
+            buffer: buffer,
+            fileType: data.fileType || '',
+            fileName: data.fileName || ''
+        }, [buffer]);
+    }
+
+    // 父窗口请求保存：触发 downloadAs（离线走 x2t 转换），文件由 x2t.downloadFile 以流抛出
+    function handleSaveCommand(data) {
+        if (!docEditor) {
+            postToParent({ type: 'onlyoffice-saved', requestId: data && data.requestId, ok: false, error: '编辑器未就绪' });
+            return;
+        }
+        setStreamOnlyFlag();
+        pendingSave = { requestId: data && data.requestId, format: data && data.format };
+        try {
+            if (data && data.format) {
+                docEditor.downloadAs(data.format);
+            } else {
+                docEditor.downloadAs();
+            }
+        } catch (e) {
+            pendingSave = null;
+            postToParent({ type: 'onlyoffice-saved', requestId: data && data.requestId, ok: false, error: String((e && e.message) || e) });
+        }
+    }
+
+    // 编辑器事件：报错时若有进行中的保存，及时通知父窗口失败
+    function onEditorError(event) {
+        if (pendingSave) {
+            var requestId = pendingSave.requestId;
+            pendingSave = null;
+            postToParent({ type: 'onlyoffice-saved', requestId: requestId, ok: false, error: '编辑器错误: ' + JSON.stringify(event && event.data) });
+        }
+    }
+
+    // 编辑器事件：用户点击编辑器自带的关闭按钮
+    function onRequestClose() {
+        postToParent({ type: 'onlyoffice-request-close' });
+    }
+
+    // 编辑器事件：文档修改状态变化（true=有未保存修改）
+    function onDocStateChange(event) {
+        postToParent({ type: 'onlyoffice-state-change', modified: !!(event && event.data) });
+    }
+
+    // 编辑器事件：标题/元信息变化，用于把文档标题同步成模板名称
+    function onMetaChange(event) {
+        var title = event && event.data && event.data.title;
+        if (title) postToParent({ type: 'onlyoffice-rename', title: title });
+    }
+
+    // 编辑器事件：用户在编辑器里重命名文档
+    function onRequestRename(event) {
+        var data = event && event.data;
+        var title = typeof data === 'string' ? data : (data && (data.title || data.name));
+        if (!title) return;
+        // 应用新标题到编辑器
+        if (docEditor && docEditor.setMetaData) {
+            try { docEditor.setMetaData({ title: title }); } catch (e) {}
+        }
+        postToParent({ type: 'onlyoffice-rename', title: title });
+    }
+
+    // 编辑器事件：用户用「下载/另存为」保存副本，回传文件内容供上传
+    function onRequestSaveAs(event) {
+        var data = event && event.data;
+        var url = typeof data === 'string' ? data : (data && (data.url || data.fileUrl) || '');
+        var fileType = (data && data.fileType) || '';
+        if (!url) {
+            postToParent({ type: 'onlyoffice-saveas', ok: false, error: 'onRequestSaveAs 未返回文件地址' });
+            return;
+        }
+        fetch(url).then(function (r) {
+            if (!r.ok) throw new Error('下载失败 HTTP ' + r.status);
+            return r.arrayBuffer();
+        }).then(function (buf) {
+            postToParent({ type: 'onlyoffice-saveas', ok: true, buffer: buf, fileType: fileType }, [buf]);
+        }).catch(function (e) {
+            postToParent({ type: 'onlyoffice-saveas', ok: false, error: String((e && e.message) || e) });
+        });
+    }
+
+    // 文件后缀 -> documentType 映射
+    function detectDocumentType(fileType) {
+        var ft = (fileType || '').toLowerCase();
+        var cell = ['xls', 'xlsx', 'xlsm', 'xlt', 'xltx', 'xltm', 'ods', 'fods', 'csv'];
+        var slide = ['ppt', 'pptx', 'pptm', 'pot', 'potx', 'potm', 'odp', 'fodp', 'pps', 'ppsx'];
+        var pdf = ['pdf', 'oxps', 'xps'];
+        if (cell.indexOf(ft) > -1) return 'cell';
+        if (slide.indexOf(ft) > -1) return 'slide';
+        if (pdf.indexOf(ft) > -1) return 'pdf';
+        return 'word';
+    }
+
+    // 从 url 推断后缀
+    function detectFileTypeFromUrl(url) {
+        if (!url) return '';
+        var clean = url.split('?')[0].split('#')[0];
+        var dot = clean.lastIndexOf('.');
+        return dot > -1 ? clean.substring(dot + 1).toLowerCase() : '';
+    }
+
+    function hashCode(str) {
+        var h = 0;
+        for (var i = 0; i < str.length; i++) {
+            h = (h << 5) - h + str.charCodeAt(i);
+            h |= 0;
+        }
+        return h;
+    }
+
+    // 规整配置：补全 documentType / fileType / key / 尺寸
+    function normalizeConfig(docConfig) {
+        docConfig = docConfig || {};
+        docConfig.document = docConfig.document || {};
+
+        if (!docConfig.document.fileType) {
+            docConfig.document.fileType = detectFileTypeFromUrl(docConfig.document.url);
+        }
+        if (!docConfig.documentType) {
+            docConfig.documentType = detectDocumentType(docConfig.document.fileType);
+        }
+        // OnlyOffice 要求每个文档有唯一 key
+        if (!docConfig.document.key) {
+            docConfig.document.key = 'doc-' + Math.abs(hashCode(
+                (docConfig.document.url || '') + '|' + (docConfig.document.title || '')
+            ));
+        }
+        if (!docConfig.document.title) {
+            docConfig.document.title = '文档.' + (docConfig.document.fileType || 'docx');
+        }
+        if (docConfig.height == null) docConfig.height = '100%';
+        if (docConfig.width == null) docConfig.width = '100%';
+        return docConfig;
+    }
+
+    function loadOnlyoffice(docConfig) {
+        if (docEditor) {
+            try { docEditor.destroyEditor(); } catch (e) {}
+            docEditor = null;
+        }
+        pendingSave = null;
+        // 读取并剥离自定义字段：非保存文件流的回退处理模式
+        streamFallback = (docConfig && docConfig.streamFallback) || 'autosave';
+        if (docConfig) { delete docConfig.streamFallback; }
+        docConfig = normalizeConfig(docConfig);
+        // 事件回调含函数，无法经 postMessage 传入，统一在 iframe 内注入
+        docConfig.events = docConfig.events || {};
+        docConfig.events.onDocumentReady = onDocumentReady;
+        // downloadAs 要求声明 onDownloadAs 才会执行；离线版实际不回调它，文件由劫持的 x2t.downloadFile 捕获
+        docConfig.events.onDownloadAs = function () {};
+        docConfig.events.onError = onEditorError;
+        docConfig.events.onRequestClose = onRequestClose;
+        docConfig.events.onDocumentStateChange = onDocStateChange;
+        docConfig.events.onMetaChange = onMetaChange;
+        docConfig.events.onRequestRename = onRequestRename;
+        docConfig.events.onRequestSaveAs = onRequestSaveAs;
+        docEditor = new DocsAPI.DocEditor('editor', docConfig);
+    }
+
+    function getUrlParams() {
+        var safeDecode = function (str) {
+            try {
+                return decodeURIComponent(str.replace(/\+/g, ' '));
+            } catch (e) {
+                return str.replace(/\+/g, ' ').replace(/%[^0-9A-Fa-f]/g, function (match) {
+                    try { return decodeURIComponent(match); } catch (e2) { return match; }
+                });
+            }
+        };
+
+        var query = window.location.search.substring(1);
+        var params = {};
+        query.split('&').forEach(function (pair) {
+            var kv = pair.split('=').map(safeDecode);
+            if (kv[0]) params[kv[0]] = kv[1] || '';
+        });
+        return params;
+    }
+
+    // 父窗口通过 postMessage 注入配置（用于较长的文档 url，规避 URL 长度限制）
+    window.addEventListener('message', function (event) {
+        var data = event.data;
+        if (!data) return;
+        if (data.type === 'onlyoffice-config' && data.docConfig) {
+            var cfg = typeof data.docConfig === 'string' ? JSON.parse(data.docConfig) : data.docConfig;
+            loadOnlyoffice(cfg);
+        } else if (data.type === 'onlyoffice-save') {
+            handleSaveCommand(data);
+        } else if (data.type === 'onlyoffice-file-stream') {
+            // 来自内层编辑器 x2t.downloadFile 抛出的文件流
+            handleFileStream(data);
+        }
+    });
+
+    window.onload = function () {
+        if (typeof DocsAPI === 'undefined') {
+            alert('OnlyOffice API 未加载，请检查文档服务器地址');
+            return;
+        }
+
+        // 优先 URL 参数
+        if (window.location.search) {
+            var queryParams = getUrlParams();
+            if (queryParams['docConfig']) {
+                loadOnlyoffice(JSON.parse(queryParams['docConfig']));
+                return;
+            }
+        }
+
+        // 否则通知父窗口已就绪，等待 postMessage 注入配置
+        if (window.parent && window.parent !== window) {
+            window.parent.postMessage({ type: 'onlyoffice-ready' }, '*');
+        }
+    };
+</script>
+</body>
+</html>

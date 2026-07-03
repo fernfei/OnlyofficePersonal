@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Verileri gruplama</title>
+		<meta charset="utf-8" />
+        <meta name="description" content="Group rows and columns to structure data in a spreadsheet." />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Verileri gruplama</h1>
+            <p>Satırları ve s&uuml;tunları gruplandırma ve ayrıca bir ana hat oluşturma yeteneği, b&uuml;y&uuml;k miktarda veri i&ccedil;eren bir elektronik tablo ile &ccedil;alışmayı kolaylaştırmanızı sağlar. <a href="https://www.onlyoffice.com/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Elektronik Tablo D&uuml;zenleyicisinde</b></a>, yalnızca gerekli verileri g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in gruplandırılmış satırları ve s&uuml;tunları daraltabilir veya genişletebilirsiniz. &Ccedil;ok katmanlı gruplandırılmış satır/s&uuml;tun yapısı oluşturmak da m&uuml;mk&uuml;nd&uuml;r. Gerektiğinde, &ouml;nceden gruplandırılmış satırların veya s&uuml;tunların grubunu &ccedil;&ouml;zebilirsiniz.</p>
+            <h3>Satırları ve s&uuml;tunları gruplandırma</h3>
+            <p>Satırları veya s&uuml;tunları gruplandırmak i&ccedil;in:</p>
+            <ol>
+                <li>Gruplandırmanız gereken h&uuml;cre aralığını se&ccedil;in.</li>
+                <li><b>Veri</b>&nbsp;sekmesine ge&ccedil;in ve &uuml;st ara&ccedil; &ccedil;ubuğunda&nbsp;gerekli se&ccedil;eneklerden birini kullanın:
+                <ul>
+                    <li>Burada <div class = "icon icon-groupicon"></div> <b>Gruplandır</b> d&uuml;ğmesine tıklayın, ardından a&ccedil;ılan <b>Gruplandır</b> penceresinde <b>Satırlar</b> veya <b>S&uuml;tunlar</b> se&ccedil;eneğini se&ccedil;in ve <b>Tamam</b> d&uuml;ğmesine tıklayın,
+                    <p><img alt="Gruplandır penceresi" src="../images/groupewindow.png" /></p>
+                    </li>
+                    <li>Burada <div class = "icon icon-groupicon"></div> <b>Gruplandır</b> d&uuml;ğmesinin altındaki aşağı oka tıklayın ve men&uuml;den <b>Satırları gruplandır</b> se&ccedil;eneğini se&ccedil;in,</li>
+                    <li>Burada <div class = "icon icon-groupicon"></div> <b>Grup</b> d&uuml;ğmesinin altındaki oka tıklayın ve men&uuml;den <b>S&uuml;tunları gruplandır</b> se&ccedil;eneğini se&ccedil;in.</li>
+                </ul>
+                </li>
+            </ol>
+            <p>Se&ccedil;ilen satırlar veya s&uuml;tunlar gruplanacak ve oluşturulan ana hat, satırların solunda ve/veya s&uuml;tunların &uuml;zerinde g&ouml;r&uuml;nt&uuml;lenecektir.</p>
+            <p><img alt="Gruplandırılan satırlar ve sütunlar " src="../images/groupedrows.png" /></p>
+            <p>Gruplandırılmış satırları/s&uuml;tunları gizlemek i&ccedil;in <span class = "icon icon-collapserowsicon"></span> <b>Daralt</b> simgesine tıklayın. Daraltılmış satırları/s&uuml;tunları g&ouml;stermek i&ccedil;in <span class="icon icon-expandrowsicon"></span> <b>Genişlet</b> simgesine tıklayın.</p>
+            <h5>&Ccedil;er&ccedil;eveyi değiştirme</h5>
+            <p>Gruplandırılmış satırların veya s&uuml;tunların ana hattını değiştirmek i&ccedil;in <b>Gruplandır</b> a&ccedil;ılır men&uuml;s&uuml;ndeki se&ccedil;enekleri kullanabilirsiniz. <b>Ayrıntı altında &ouml;zet satırlar</b> ve <b>Ayrıntı sağında &ouml;zet s&uuml;tunlar</b> se&ccedil;enekleri varsayılan olarak se&ccedil;ilidir. <b>Daralt</b> <span class="icon icon-collapserowsicon"></span> ve <b>Genişlet</b> <span class="icon icon-expandrowsicon"></span> d&uuml;ğmelerinin konumunun değiştirilmesine izin verirler.</p>
+            <ul>
+                <li>&Ouml;zet satırlarını ayrıntıların &uuml;zerinde g&ouml;r&uuml;nt&uuml;lemek istiyorsanız <b>Ayrıntı altında &ouml;zet satırlar</b> se&ccedil;eneğinin işaretini kaldırın.</li>
+                <li>&Ouml;zet s&uuml;tunlarını ayrıntıların solunda g&ouml;r&uuml;nt&uuml;lemek istiyorsanız <b>Ayrıntı sağında &ouml;zet s&uuml;tunları</b> se&ccedil;eneğinin işaretini kaldırın.</li>
+            </ul>
+            <h5>&Ccedil;ok katmanlı gruplar oluşturma</h5>
+            <p>&Ccedil;ok katmanlı bir yapı oluşturmak i&ccedil;in &ouml;nceden oluşturulmuş satır/s&uuml;tun grubundan bir h&uuml;cre aralığı se&ccedil;in ve yeni se&ccedil;ilen aralığı yukarıda a&ccedil;ıklandığı gibi gruplandırın. Bundan sonra, seviye numarasına sahip simgeleri kullanarak grupları seviyeye g&ouml;re gizleyebilir ve g&ouml;sterebilirsiniz: <span class="icon icon-levelnumbericons"></span>.</p>
+            <p>&Ouml;rneğin, ana grup i&ccedil;inde i&ccedil; i&ccedil;e bir grup oluşturursanız, &uuml;&ccedil; katman kullanılabilir. 8&apos;e kadar katman oluşturmak m&uuml;mk&uuml;nd&uuml;r.</p>
+            <p><img alt="Çok katmanlı yapı" src="../images/multilevelstructure.png" /></p>
+            <ul>
+                <li>T&uuml;m gruplandırılmış verileri gizleyen katmana ge&ccedil;mek i&ccedil;in <div class = "icon icon-firstlevelicon"></div> ilk katman simgesine tıklayın:
+                    <p><img alt="İlk katman" src="../images/firstlevel.png" /></p>
+                </li>
+                <li>Ana grubun ayrıntılarını g&ouml;r&uuml;nt&uuml;leyen, ancak i&ccedil; i&ccedil;e ge&ccedil;miş grup verilerini gizleyen katmana ge&ccedil;mek i&ccedil;in <div class = "icon icon-secondlevelicon"></div> ikinci katman simgesine tıklayın:
+                    <p><img alt="İkinci katman" src="../images/secondlevel.png" /></p>
+                </li>
+                <li>T&uuml;m ayrıntıları g&ouml;steren katmana ge&ccedil;mek i&ccedil;in <div class = "icon icon-thirdlevelicon"></div> &uuml;&ccedil;&uuml;nc&uuml; katman simgesine tıklayın:
+                    <p><img alt="Üçüncü katman" src="../images/thirdlevel.png" /></p>
+                </li>
+            </ul>
+            <p>Belirli bir katmana karşılık gelen verileri g&ouml;r&uuml;nt&uuml;lemek veya gizlemek i&ccedil;in ana hat i&ccedil;indeki <span class="icon icon-collapserowsicon"></span> <b>Daralt</b> ve <span class="icon icon-expandrowsicon"></span> <b>Genişlet</b> simgelerini kullanmak da m&uuml;mk&uuml;nd&uuml;r.</p>
+            <h3>&Ouml;nceden gruplandırılmış satır ve s&uuml;tunların grubunu &ccedil;&ouml;zme</h3>
+            <p>&Ouml;nceden gruplandırılmış satır ve s&uuml;tunların grubunu &ccedil;&ouml;zmek i&ccedil;in:</p>
+            <ol>
+                <li>Grubunu &ccedil;&ouml;zmeniz gereken gruplandırılmış h&uuml;cre aralığını se&ccedil;in.</li>
+                <li>
+                    <b>Veri</b>&nbsp;sekmesine ge&ccedil;in ve &uuml;st ara&ccedil; &ccedil;ubuğunda&nbsp;gerekli se&ccedil;eneklerden birini kullanın:
+                    <ul>
+                        <li>Burada <div class = "icon icon-ungroupicon"></div> <b>Grubu &Ccedil;&ouml;z</b> d&uuml;ğmesine tıklayın, ardından a&ccedil;ılan <b>Gruplandır</b> penceresinde <b>Satırlar</b> veya <b>S&uuml;tunlar</b> se&ccedil;eneğini se&ccedil;in ve <b>Tamam</b> d&uuml;ğmesine tıklayın,
+                        <p><img alt="Gruplandır penceresi" src="../images/groupewindow.png" /></p>
+                        </li>
+                        <li>Burada <div class = "icon icon-ungroupicon"></div> <b>Grubu &Ccedil;&ouml;z</b> d&uuml;ğmesi altındaki aşağı oka tıklayın, ardından satırların grubunu &ccedil;&ouml;zmek ve satırların ana hatlarını temizlemek i&ccedil;in men&uuml;den <b>Satırların grubunu &ccedil;&ouml;z</b> se&ccedil;eneğini se&ccedil;in,</li>
+                        <li>Burada <div class = "icon icon-ungroupicon"></div> <b>Grubu &Ccedil;&ouml;z</b> d&uuml;ğmesi altındaki oka tıklayın ve s&uuml;tunların grubunu &ccedil;&ouml;zmek ve s&uuml;tunların ana hatlarını temizlemek i&ccedil;in men&uuml;den <b>S&uuml;tunların grubunu &ccedil;&ouml;z</b> se&ccedil;eneğini se&ccedil;in,</li>
+                        <li>Burada <div class = "icon icon-ungroupicon"></div> <b>Grubu &Ccedil;&ouml;z</b> d&uuml;ğmesi altındaki aşağı oka tıklayın ve mevcut grupları kaldırmadan satırların ve s&uuml;tunların ana hatlarını temizlemek i&ccedil;in men&uuml;den <b>Ana Hattı Temizle</b> se&ccedil;eneğini se&ccedil;in.</li>
+                    </ul>
+                </li>
+            </ol>
+		</div>
+	</body>
+</html>

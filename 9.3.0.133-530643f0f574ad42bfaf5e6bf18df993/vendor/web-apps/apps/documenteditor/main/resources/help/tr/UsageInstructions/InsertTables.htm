@@ -1,0 +1,214 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tablo ekleme</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Add a table to your document and adjust its properties" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Tablo ekleme</h1>
+            <h3>Tablo ekle</h3>
+			<p><a href="https://www.onlyoffice.com/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Belge D&uuml;zenleyicide</b></a> bir tablo eklemek i&ccedil;in</p>
+			<ol>
+                <li>İmleci tablonun eklenmesi gereken yere getirin,</li>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Ekle</b> sekmesine ge&ccedil;iş yapın,</li>
+				<li>&Uuml;st ara&ccedil; &ccedil;ubuğunda <div class = "icon icon-table"></div> <b>Tablo</b> simgesine tıklayın,</li>
+				<li>&Ouml;nceden tanımlanmış h&uuml;cre sayısına sahip bir tablo
+                    <ul>
+						<li><p>(maksimum 10&apos;a 8 h&uuml;cre) i&ccedil;in ya da</p>
+						<p>Hızlı bir şekilde tablo eklemek istiyorsanız, sadece satır sayısını (maksimum 8) ve s&uuml;tun sayısını (maksimum 10) se&ccedil;in.</p></li>
+						<li><p>&Ouml;zel bir tablo i&ccedil;in tablo oluşturma se&ccedil;eneğini se&ccedil;in</p>
+						<p>10&apos;a 8&apos;den fazla h&uuml;cre tablosuna ihtiyacınız varsa, sırasıyla gerekli sayıda satır ve s&uuml;tun girebileceğiniz pencereyi a&ccedil;acak <b>&Ouml;zel Tablo Ekle</b> se&ccedil;eneği se&ccedil;in, ardından <b>Tamam</b> d&uuml;ğmesine tıklayın.</p>
+						<p><img alt="Özel tablo" src="../images/customtable.png" /></p>
+						</li>
+                        <li>Fareyi kullanarak bir tablo &ccedil;izmek istiyorsanız, <b>Tablo &Ccedil;iz</b> se&ccedil;eneğini se&ccedil;in. Farklı boyutlarda satırlar ve s&uuml;tunlar i&ccedil;eren bir tablo oluşturmak istiyorsanız bu se&ccedil;enek yararlı olabilir. Fare imleci bir kaleme d&ouml;n&uuml;şecektir <div class = "icon icon-pencil_tool"></div>. Tablo eklemek istediğiniz yere bir dikd&ouml;rtgen &ccedil;izin, ardından tablo kenarlığı i&ccedil;inde yatay &ccedil;izgiler &ccedil;izerek satırları ve dikey &ccedil;izgiler &ccedil;izerek s&uuml;tunları ekleyin.</li>
+                        <li>
+                            Mevcut bir metni tabloya d&ouml;n&uuml;şt&uuml;rmek istiyorsanız, <b>Metni Tabloya D&ouml;n&uuml;şt&uuml;r</b> se&ccedil;eneğini se&ccedil;in. Bu &ouml;zellik, bir tablo halinde d&uuml;zenlemeye karar verdiğiniz bazı metinleriniz olduğunda yararlı olabilir. <b>Metni Tabloya D&ouml;n&uuml;şt&uuml;r</b> penceresi 3 b&ouml;l&uuml;mden oluşur:
+                            <p><img alt="Metni Tabloya Dönüştür" src="../images/converttotable.png" /></p>
+                            <ul>
+                                <li><b>Tablo Boyutu</b>. Metninizi dağıtmak istediğiniz gerekli s&uuml;tun/satır sayısını se&ccedil;in. Yukarı/aşağı ok tuşlarını kullanabilir ya da sayıyı klavye aracılığıyla manuel olarak girebilirsiniz.</li>
+                                <li><b>Otomatik Sığdırma Davranışı</b>. Metin sığdırma davranışını ayarlamak i&ccedil;in gereken se&ccedil;eneği işaretleyin: <b>Sabit s&uuml;tun genişliği</b> (varsayılan olarak <em>Otomatik</em> olarak ayarlıdır. Yukarı/aşağı ok tuşlarını kullanabilir ya da sayıyı klavyeden manuel olarak girebilirsiniz), <b>İ&ccedil;eriğe otomatik sığdır</b> (s&uuml;tun genişliği metin uzunluğuna karşılık gelir), <b>Pencereye otomatik sığdır</b> (s&uuml;tun genişliği sayfa genişliğine karşılık gelir).</li>
+                                <li><b>Metin Ayırıcı</b>. Metniniz i&ccedil;in bir sınırlayıcı t&uuml;r&uuml; ayarlamak &uuml;zere gerekli se&ccedil;eneği işaretleyin: <b>Paragraflar</b>, <b>Sekmeler</b>, <b>Noktalı Virg&uuml;l</b> ve <b>Diğer</b> (tercih edilen sınırlayıcıyı manuel olarak girin).</li>
+                                <li>Metninizi tabloya d&ouml;n&uuml;şt&uuml;rmek i&ccedil;in <b>Tamam</b> d&uuml;ğmesine tıklayın.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            OLE nesnesi olarak bir tablo eklemek istiyorsanız:
+                            <ol>
+                                <li><b>Elektronik Tablo Ekle</b> se&ccedil;eneğini se&ccedil;in.</li>
+                                <li>Gerekli verileri girebileceğiniz ve <a href="../../../../../../spreadsheeteditor/main/resources/help/en/UsageInstructions/FontTypeSizeStyle.htm">yazı tipi, t&uuml;r&uuml; ve stilini se&ccedil;me</a>, <a href="../../../../../../spreadsheeteditor/main/resources/help/en/UsageInstructions/ChangeNumberFormat.htm">sayı bi&ccedil;imini ayarlama</a>, <a href="../../../../../../spreadsheeteditor/main/resources/help/en/UsageInstructions/InsertFunction.htm">işlevler ekleme</a>, <a href="../../../../../../spreadsheeteditor/main/resources/help/en/UsageInstructions/FormattedTables.htm">tabloları bi&ccedil;imlendirme</a> vb gibi Elektronik Tablo D&uuml;zenleyici bi&ccedil;imlendirme ara&ccedil;larını kullanarak bi&ccedil;imlendirebileceğiniz ilgili pencere g&ouml;r&uuml;n&uuml;r.
+                                <p><img alt="OLE tablosu" src="../../../../../../common/main/resources/help/tr/images/ole_table.png" /></p></li>
+                                <li>Konu başlığı, pencerenin sağ &uuml;st k&ouml;şesindeki <span class="icon icon-visible_area"></span> <b>G&ouml;r&uuml;n&uuml;r alan</b> d&uuml;ğmesini i&ccedil;erir. Nesne belgeye eklendiğinde g&ouml;sterilecek alanı se&ccedil;mek i&ccedil;in <b>G&ouml;r&uuml;n&uuml;r Alanı D&uuml;zenle</b> se&ccedil;eneğini se&ccedil;in, diğer veriler kaybolmaz, sadece gizlenir. Hazır olduğunda <b>Tamamlandı</b> d&uuml;ğmesine tıklayın.</li>
+                                <li>Mavi bir kenarlığı olacak se&ccedil;ili alanı g&ouml;rmek i&ccedil;in <b>G&ouml;r&uuml;n&uuml;r Alanı G&ouml;ster</b> d&uuml;ğmesine tıklayın.</li>
+                                <li>Hazır olduğunda, <b>Kaydet ve &Ccedil;ık</b> d&uuml;ğmesine tıklayın.</li>
+                            </ol>
+                        </li>
+					</ul>
+				</li>
+				<li>Tablo eklendikten sonra &ouml;zelliklerini, boyutunu ve konumunu değiştirebilirsiniz.</li>
+			</ol>
+            <p>Bir tabloyu yeniden boyutlandırmak i&ccedil;in fare imlecini sağ alt k&ouml;şesindeki <span class = "icon icon-resizetable_handle"></span> tutamacın &uuml;zerine getirin ve tablo gerekli boyuta gelene kadar s&uuml;r&uuml;kleyin.</p>
+            <p><span class = "big big-resizetable"></span></p>
+            <p>Belirli bir s&uuml;tunun genişliğini veya bir satırın y&uuml;ksekliğini manuel olarak da değiştirebilirsiniz. İmlecin &ccedil;ift y&ouml;nl&uuml; oka <span class = "icon icon-changecolumnwidth"></span> d&ouml;n&uuml;şmesi i&ccedil;in fare imlecini s&uuml;tunun sağ kenarının &uuml;zerine getirin ve gerekli genişliği ayarlamak i&ccedil;in kenarlığı sola veya sağa s&uuml;r&uuml;kleyin. Tek bir satırın y&uuml;ksekliğini manuel olarak değiştirmek i&ccedil;in fare imlecini satırın alt kenarının &uuml;zerine getirin, b&ouml;ylece imle&ccedil; &ccedil;ift y&ouml;nl&uuml; oka <span class = "icon icon-changerowheight"></span> d&ouml;n&uuml;ş&uuml;r ve kenarlığı yukarı veya aşağı s&uuml;r&uuml;kleyin.</p>
+            <p>Bir tabloyu taşımak i&ccedil;in sol &uuml;st k&ouml;şesindeki <span class = "icon icon-movetable_handle"></span> tutamacı tutun ve belgede gerekli yere s&uuml;r&uuml;kleyin.</p>
+            <p>Tabloya bir başlık da ekleyebilirsiniz. Tabloların başlıkları ile &ccedil;alışma hakkında daha fazla bilgi edinmek i&ccedil;in l&uuml;tfen <a href="../UsageInstructions/AddCaption.htm" onclick="onhyperlinkclick(this)">bu yazıya</a> bakın.</p>
+            <hr />
+            <h3>Bir tablo veya bir b&ouml;l&uuml;m&uuml;n&uuml; se&ccedil;in</h3>
+            <p>Tablonun tamamını se&ccedil;mek i&ccedil;in sol &uuml;st k&ouml;şesindeki <span class = "icon icon-movetable_handle"></span> tutamacı tutun.</p>
+            <p>Belirli bir h&uuml;creyi se&ccedil;mek i&ccedil;in fare imlecini gerekli h&uuml;crenin sol tarafına getirin, b&ouml;ylece imle&ccedil; siyah oka <span class = "icon icon-selectcellpointer"></span> d&ouml;n&uuml;ş&uuml;r, ardından sol tıklayın.</p>
+            <p>Belirli bir satırı se&ccedil;mek i&ccedil;in fare imlecini tablonun sol kenarına, gerekli satırın yanına getirin, b&ouml;ylece imle&ccedil; yatay siyah oka <span class = "icon icon-selectrowpointer"></span> d&ouml;n&uuml;ş&uuml;r, ardından sol tıklayın.</p>
+            <p>Belirli bir s&uuml;tunu se&ccedil;mek i&ccedil;in fare imlecini gerekli s&uuml;tunun &uuml;st kenarlığına getirin, b&ouml;ylece imle&ccedil; aşağı doğru siyah oka <span class = "icon icon-selectcolumnpointer"></span> d&ouml;n&uuml;ş&uuml;r, ardından sol tıklayın.</p>
+            <p>Bağlamsal men&uuml;den veya sağ kenar &ccedil;ubuğundaki <b>Satırlar ve S&uuml;tunlar</b> b&ouml;l&uuml;m&uuml;nden se&ccedil;enekleri kullanarak bir h&uuml;cre, satır, s&uuml;tun veya tablo se&ccedil;mek de m&uuml;mk&uuml;nd&uuml;r.</p>
+            <p class="note">
+                <b>Not</b>: Bir tabloda hareket etmek i&ccedil;in <a href="../HelpfulHints/KeyboardShortcuts.htm#workwithtables" onclick="onhyperlinkclick(this)">klavye kısayollarını</a> kullanabilirsiniz.
+            </p>
+            <hr />
+            <h3>Tablo ayarlarını yapma</h3>
+			<p>Bazı tablo &ouml;zellikleri ve yapısı sağ tıklama men&uuml;s&uuml; kullanılarak değiştirilebilir. Men&uuml; se&ccedil;enekleri şunlardır:</p>
+			<ul>
+                <li><b>Kes, Kopyala, Yapıştır</b> - Se&ccedil;ilen metni/nesneyi kesmek veya kopyalamak ve daha &ouml;nce kesilen/kopyalanan metin pasajını veya nesneyi ge&ccedil;erli imle&ccedil; konumuna yapıştırmak i&ccedil;in kullanılan standart se&ccedil;enekler.</li>
+                <li><b>Se&ccedil;</b>, satır, s&uuml;tun, h&uuml;cre veya tablo se&ccedil;mek i&ccedil;in kullanılır.</li>
+				<li><b>Ekle</b>, imlecin bulunduğu satırın &uuml;st&uuml;ne veya altına satır eklemenin yanı sıra imlecin bulunduğu s&uuml;tunun soluna veya sağına s&uuml;tun eklemek i&ccedil;in kullanılır.
+                    <p>Birka&ccedil; satır veya s&uuml;tun eklemek de m&uuml;mk&uuml;nd&uuml;r. <b>Birka&ccedil; Satır/S&uuml;tun</b> se&ccedil;eneğini se&ccedil;erseniz, <b>Birka&ccedil; Ekle</b> penceresi g&ouml;r&uuml;necektir. Listeden <b>Satırlar</b> veya <b>S&uuml;tunlar</b> se&ccedil;eneğini se&ccedil;in, eklemek istediğiniz satır/s&uuml;tun sayısını belirtin, nereye ekleneceklerini se&ccedil;in: <b>İmlecin &uuml;st&uuml;ne</b> veya <b>İmlecin altına</b> ve <b>Tamam</b> d&uuml;ğmesine tıklayın.</p>
+                </li>
+				<li><b>Sil</b>, satır, s&uuml;tun, h&uuml;cre veya tablo silmek i&ccedil;in kullanılır. <b>H&uuml;creler</b> se&ccedil;eneğini se&ccedil;erseniz, <b>H&uuml;creleri sola kaydır</b>, <b>T&uuml;m satırı sil</b>, veya <b>T&uuml;m s&uuml;tunu sil</b> se&ccedil;eneklerini se&ccedil;mek isteyip istemediğinizi se&ccedil;ebileceğiniz bir <b>H&uuml;creleri Sil</b> penceresi a&ccedil;ılacaktır.</li>
+				<li><b>H&uuml;creleri Birleştir</b>, iki veya daha fazla h&uuml;cre se&ccedil;ilirse kullanılabilir ve bunları birleştirmek i&ccedil;in kullanılır.
+                    <p>
+                        Silgi aracı ile aralarındaki sınırı silerek h&uuml;creleri birleştirmek de m&uuml;mk&uuml;nd&uuml;r. Bunu yapmak i&ccedil;in &uuml;st ara&ccedil; &ccedil;ubuğundaki <span class = "icon icon-table"></span> <b>Tablo</b> simgesine tıklayın, <b>Tabloyu Sil</b> se&ccedil;eneğini se&ccedil;in. Fare imleci bir silgiye <span class = "icon icon-eraser_tool"></span> d&ouml;n&uuml;şecektir. Fare imlecini, birleştirmek istediğiniz h&uuml;creler arasındaki kenarlığın &uuml;zerine getirin ve silin.
+                    </p>
+                </li>
+				<li><b>H&uuml;creyi B&ouml;l...</b>, h&uuml;crenin b&ouml;l&uuml;neceği gerekli s&uuml;tun ve satır sayısını se&ccedil;ebileceğiniz bir pencere a&ccedil;mak i&ccedil;in kullanılır.
+                    <p>
+                        Kalem aracı ile satırlar veya s&uuml;tunlar &ccedil;izerek bir h&uuml;creyi b&ouml;lmek de m&uuml;mk&uuml;nd&uuml;r. Bunu yapmak i&ccedil;in &uuml;st ara&ccedil; &ccedil;ubuğundaki <span class = "icon icon-table"></span> <b>Tablo</b> simgesine tıklayın, <b>Tablo &Ccedil;iz</b> se&ccedil;eneğini se&ccedil;in. Fare imleci bir kaleme <span class = "icon icon-pencil_tool"></span> d&ouml;n&uuml;şecektir. Bir satır oluşturmak i&ccedil;in yatay bir &ccedil;izgi veya bir s&uuml;tun oluşturmak i&ccedil;in dikey bir &ccedil;izgi &ccedil;izin.
+                    </p>
+                </li>
+				<li><b>Satırları dağıt</b>, se&ccedil;ili h&uuml;creleri, toplam tablo y&uuml;ksekliğini değiştirmeden aynı y&uuml;ksekliğe sahip olacak şekilde ayarlamak i&ccedil;in kullanılır.</li>
+                <li><b>S&uuml;tunları dağıt</b>, se&ccedil;ili h&uuml;creleri, toplam tablo genişliğini değiştirmeden aynı genişliğe sahip olacak şekilde ayarlamak i&ccedil;in kullanılır.</li>
+                <li><b>H&uuml;cre Dikey Hizalaması</b>, metni se&ccedil;ilen h&uuml;crede &uuml;ste, ortaya veya alta hizalamak i&ccedil;in kullanılır.</li>
+                <li><b>Metin Y&ouml;n&uuml;</b> - Bir h&uuml;credeki metin y&ouml;n&uuml;n&uuml; değiştirmek i&ccedil;in kullanılır. Metni yatay, dikey olarak yukarıdan aşağıya (<b>Metni Aşağı D&ouml;nd&uuml;r</b>) veya dikey olarak aşağıdan yukarıya (<b>Metni Yukarı D&ouml;nd&uuml;r</b>) yerleştirebilirsiniz.</li>
+				<li><b>Tablo Gelişmiş Ayarları</b>, &apos;Tablo - Gelişmiş Ayarlar&apos; penceresini a&ccedil;mak i&ccedil;in kullanılır.</li>
+				<li><b>K&ouml;pr&uuml;</b>, k&ouml;pr&uuml; eklemek i&ccedil;in kullanılır.</li>
+				<li><b>Paragraf Gelişmiş Ayarları</b>, &apos;Paragraf - Gelişmiş Ayarlar&apos; penceresini a&ccedil;mak i&ccedil;in kullanılır.</li>
+			</ul>
+			<hr />
+			<p><img class="floatleft"alt="Sağ Kenar Çubuğu - Tablo Ayarları" src="../images/right_table.png" /></p>
+            <p>Tablo &ouml;zelliklerini sağ kenar &ccedil;ubuğundan da değiştirebilirsiniz:</p>
+			<ul style="margin-left: 280px;">
+				<li><p><b>Satırlar</b> ve <b>S&uuml;tunlar</b>, vurgulanmasını istediğiniz tablo b&ouml;l&uuml;mlerini se&ccedil;mek i&ccedil;in kullanılır.</p>
+					<p>Satırlar i&ccedil;in:</p>
+					<ul>
+						<li><i>Konu Başlığı</i> - ilk satırı vurgulamak i&ccedil;in</li>
+						<li><i>Toplam</i> - son satırı vurgulamak i&ccedil;in</li>
+						<li><i>Şeritli</i> - diğer t&uuml;m satırları vurgulamak i&ccedil;in</li>
+					</ul>
+					<p>S&uuml;tunlar i&ccedil;in:</p>
+					<ul>
+						<li><i>İlk</i> - ilk s&uuml;tunu vurgulamak i&ccedil;in</li>
+						<li><i>Son</i> - son s&uuml;tunu vurgulamak i&ccedil;in</li>
+						<li><i>Şeritli</i> - diğer t&uuml;m s&uuml;tunları vurgulamak i&ccedil;in</li>
+					</ul>
+				</li>
+				<li><p><b>Şablondan Se&ccedil;</b>, mevcut olanlardan bir tablo şablonu se&ccedil;mek i&ccedil;in kullanılır.</p></li>
+				<li><p><b>Kenarlıklar Stili</b>, kenarlık boyutunu, rengini, stilini ve arka plan rengini se&ccedil;mek i&ccedil;in kullanılır.</p></li>
+				<li><p><b>Satırlar ve S&uuml;tunlar</b>, tabloyla satır ve s&uuml;tun se&ccedil;me, silme, ekleme, h&uuml;creleri birleştirme, h&uuml;cre b&ouml;lme gibi bazı işlemleri ger&ccedil;ekleştirmek i&ccedil;in kullanılır.</p></li>
+                <li><p><b>Satır ve S&uuml;tun Boyutu</b>, se&ccedil;ili h&uuml;crenin genişliğini ve y&uuml;ksekliğini ayarlamak i&ccedil;in kullanılır. Bu b&ouml;l&uuml;mde ayrıca se&ccedil;ilen t&uuml;m h&uuml;crelerin eşit y&uuml;ksekliğe sahip olması i&ccedil;in <b>Satırları dağıtabilir</b> veya se&ccedil;ilen t&uuml;m h&uuml;crelerin eşit genişliğe sahip olması i&ccedil;in <b>S&uuml;tunları dağıtabilirsiniz</b>.</p></li>
+                <li><p><b>Form&uuml;l ekle</b>, se&ccedil;ilen tablo h&uuml;cresine <a href="../UsageInstructions/AddFormulasInTables.htm" onclick="onhyperlinkclick(this)">form&uuml;l eklemek</a> i&ccedil;in kullanılır.</p></li>
+                <li><p><b>Her sayfanın &uuml;st kısmında başlık satırı olarak tekrarla</b>, uzun tablolarda her sayfanın başına aynı başlık satırını eklemek i&ccedil;in kullanılır.</p></li>
+                <li><p><b>Tabloyu Metne D&ouml;n&uuml;şt&uuml;r</b>, tabloyu d&uuml;z metin bi&ccedil;iminde d&uuml;zenlemek i&ccedil;in kullanılır. <b>Tabloyu Metne D&ouml;n&uuml;şt&uuml;r</b> penceresi, d&ouml;n&uuml;şt&uuml;rme sınırlayıcısı t&uuml;r&uuml;n&uuml; ayarlar: <b>Paragraf işaretleri</b>, <b>Sekmeler</b>, <b>Noktalı Virg&uuml;ller</b> ve <b>Diğer</b> (tercih edilen sınırlayıcıyı manuel olarak girin). Tablonun her h&uuml;cresindeki metin, gelecekteki metnin ayrı ve &ouml;zel bir &ouml;ğesi olarak kabul edilir.</p></li>
+				<li><p><b>Gelişmiş ayarları g&ouml;ster</b>, &apos;Tablo - Gelişmiş Ayarlar&apos; penceresini a&ccedil;mak i&ccedil;in kullanılır.</p></li>
+			</ul>
+			<hr />
+            <h3>Tablo gelişmiş ayarlarını yapma</h3>
+            <p>Tablo gelişmiş ayarlarını değiştirmek i&ccedil;in tabloya fare ile sağ tıklayın ve sağ tıklama men&uuml;s&uuml;nden <b>Tablo Gelişmiş Ayarları</b> se&ccedil;eneğini se&ccedil;in veya sağ kenar &ccedil;ubuğundaki <b>Gelişmiş ayarları g&ouml;ster</b> bağlantısını kullanın. Tablo &ouml;zellikleri penceresi a&ccedil;ılacaktır:</p>
+            <p><img alt="Tablo - Gelişmiş Ayarlar" src="../images/table_properties_1.png" /></p>
+            <p><b>Tablo</b> sekmesi, t&uuml;m tablonun &ouml;zelliklerini değiştirmeye izin verir.</p>
+            <ul>
+                <li><b>Tablo Boyutu</b> b&ouml;l&uuml;m&uuml;, aşağıdaki parametreleri i&ccedil;erir:
+                <ul>
+                    <li>
+                        <b>Genişlik</b> - Varsayılan olarak, tablo genişliği sayfa genişliğine uyacak şekilde otomatik olarak ayarlanır, yani tablo, sayfanın sol ve sağ kenar boşluğu arasındaki t&uuml;m alanı kaplar. Bu kutuyu işaretleyebilir ve gerekli tablo genişliğini manuel olarak belirleyebilirsiniz.
+                    </li>
+                    <li><b>&Ouml;l&ccedil;&uuml; Birimi,</b> tablo genişliğini mutlak birimlerde, yani <b>Santimetre</b>/<b>Nokta</b>/<b>İn&ccedil;</b> (<b>Dosya</b> -> <b>Gelişmiş Ayarlar...</b> Sekmesinde belirtilen se&ccedil;eneğe bağlı olarak) veya toplam sayfa genişliğinin <b>Y&uuml;zdesinde</b> belirtmeyi sağlar.
+                        <p class="note"><b>Not</b>: Satır y&uuml;ksekliğini ve s&uuml;tun genişliğini değiştirerek tablo boyutunu manuel olarak da ayarlayabilirsiniz. &Ccedil;ift y&ouml;nl&uuml; oka d&ouml;n&uuml;şene kadar fare imlecini satır/s&uuml;tun kenarlığının &uuml;zerinde hareket ettirin ve kenarlığı s&uuml;r&uuml;kleyin. S&uuml;tun genişliğini değiştirmek i&ccedil;in yatay cetveldeki <span class = "icon icon-columnwidthmarker"></span> işaret&ccedil;ileri ve satır y&uuml;ksekliğini değiştirmek i&ccedil;in dikey cetveldeki <span class = "icon icon-rowheightmarker"></span> işaret&ccedil;ileri de kullanabilirsiniz.</p>
+                    </li>
+                    <li><b>İ&ccedil;eriği sığdırmak i&ccedil;in otomatik olarak yeniden boyutlandır</b> - Her s&uuml;tunun genişliğini, h&uuml;crelerindeki metne g&ouml;re otomatik olarak değiştirmenizi sağlar.</li>
+                </ul>
+                </li>
+                <li><b>Varsayılan H&uuml;cre Kenar Boşlukları</b> b&ouml;l&uuml;m&uuml;, h&uuml;crelerin i&ccedil;indeki metin ile varsayılan olarak kullanılan h&uuml;cre kenarlığı arasındaki boşluğu değiştirmeyi sağlar.</li>
+                <li><b>Se&ccedil;enekler</b> b&ouml;l&uuml;m&uuml; aşağıdaki parametreleri değiştirmeyi sağlar:
+                    <ul>
+                        <li><b>H&uuml;creler arasındaki boşluk</b> - <b>Tablo Arka Planı</b> rengi ile doldurulacak h&uuml;cre aralığı.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p><img alt="Tablo - Gelişmiş Ayarlar" src="../images/table_properties_5.png" /></p>
+            <p><b>H&uuml;cre</b> sekmesi, belirli h&uuml;crelerin &ouml;zelliklerini değiştirmeye izin verir. &Ouml;ncelikle, t&uuml;m h&uuml;crelerinin &ouml;zelliklerini değiştirmek i&ccedil;in gerekli h&uuml;creyi veya t&uuml;m tabloyu se&ccedil;meniz gerekir.</p>
+            <ul>
+                <li>
+                    <b>H&uuml;cre Boyutu</b> b&ouml;l&uuml;m&uuml;, aşağıdaki parametreleri i&ccedil;erir:
+                    <ul>
+                        <li><b>Tercih edilen genişlik</b> - Tercih edilen h&uuml;cre genişliğini ayarlamayı sağlar. Bu, bir h&uuml;crenin sığmaya &ccedil;alıştığı boyuttur, ancak bazı durumlarda bu tam değeri sığdırmak m&uuml;mk&uuml;n olmayabilir. &Ouml;rneğin, bir h&uuml;cre i&ccedil;indeki metin belirtilen genişliği aşarsa, tercih edilen h&uuml;cre genişliğinin değişmeden kalması i&ccedil;in bir sonraki satıra b&ouml;l&uuml;n&uuml;r, ancak yeni bir s&uuml;tun eklerseniz tercih edilen genişlik azalır.</li>
+                        <li><b>&Ouml;l&ccedil;&uuml; Birimi,</b> h&uuml;cre genişliğini mutlak birimlerde, yani <b>Santimetre</b>/<b>Nokta</b>/<b>İn&ccedil;</b> (<b>Dosya</b> -> <b>Gelişmiş Ayarlar...</b> Sekmesinde belirtilen se&ccedil;eneğe bağlı olarak) veya toplam tablo genişliğinin <b>Y&uuml;zdesinde</b> belirtmeyi sağlar.
+                            <p class="note"><b>Not</b>: H&uuml;cre genişliğini manuel olarak da ayarlayabilirsiniz. Bir s&uuml;tundaki tek bir h&uuml;creyi toplam s&uuml;tun genişliğinden daha geniş veya daha dar yapmak i&ccedil;in gerekli h&uuml;creyi se&ccedil;in ve fare imlecini &ccedil;ift y&ouml;nl&uuml; oka d&ouml;n&uuml;şene kadar sağ kenarlığının &uuml;zerinde hareket ettirin, ardından kenarlığı s&uuml;r&uuml;kleyin. Bir s&uuml;tundaki t&uuml;m h&uuml;crelerin genişliğini değiştirmek i&ccedil;in s&uuml;tun genişliğini değiştirmek &uuml;zere yatay cetveldeki <span class = "icon icon-columnwidthmarker"></span> işaret&ccedil;ileri kullanın.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li><b>H&uuml;cre Kenar Boşlukları</b>, h&uuml;crelerin i&ccedil;indeki metin ile h&uuml;cre kenarlığı arasındaki boşluğu değiştirmeyi sağlar. Varsayılan olarak, standart değerler kullanılır (varsayılan, bu değerler <b>Tablo</b> sekmesinde de değiştirilebilir), ancak <b>Varsayılan kenar boşluklarını kullan</b> kutusunun işaretini kaldırabilir ve gerekli değerleri manuel olarak girebilirsiniz.</li>
+                <li>
+                    <b>H&uuml;cre Se&ccedil;enekleri</b> b&ouml;l&uuml;m&uuml; aşağıdaki parametreleri değiştirmeyi sağlar:
+                    <ul>
+                        <li><b>Metni kaydır</b> se&ccedil;eneği varsayılan olarak se&ccedil;ilidir. Metni, genişliğini aşan bir h&uuml;cre i&ccedil;indeki bir sonraki satıra kaydırmayı, satır y&uuml;ksekliğini genişletmeyi ve s&uuml;tun genişliğinin değişmeden kalmasını sağlar.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p><img alt="Tablo - Gelişmiş Ayarlar" src="../images/table_properties_3.png" /></p>
+            <p><b>Kenarlıklar ve Arka Plan</b> sekmesi aşağıdaki parametreleri i&ccedil;erir:</p>
+            <ul>
+                <li>
+                    <b>Kenarlık</b> parametreleri (boyut, renk ve varlık veya yokluk) - Kenarlık boyutunu ayarlayın, rengini se&ccedil;in ve h&uuml;crelerde nasıl g&ouml;r&uuml;nt&uuml;leneceğini se&ccedil;in.
+                <p class="note">
+                    <b>Not</b>: <span class = "icon icon-noborders"></span> d&uuml;ğmesine tıklayarak se&ccedil;erseniz veya diyagramdaki t&uuml;m sınırların se&ccedil;imini manuel olarak kaldırırsanız, bunlar belgede noktalı bir &ccedil;izgi ile g&ouml;sterilir.
+                    Tamamen kaybolmalarını sağlamak i&ccedil;in &uuml;st ara&ccedil; &ccedil;ubuğunun <b>Ev</b> sekmesinde bulunan <b>Yazdırılamayan karakterler</b> <span class = "icon icon-nonprintingcharacters"></span> simgesine tıklayın ve <b>Gizli Tablo Kenarlıkları</b> se&ccedil;eneğini se&ccedil;in.
+                </p>
+                </li>
+                <li><b>H&uuml;cre Arkaplanı</b> - H&uuml;crelerdeki arka planın rengi (yalnızca bir veya daha fazla h&uuml;cre se&ccedil;ildiğinde veya <b>Tablo</b> sekmesinde <b>H&uuml;creler arasında boşluğa izin ver</b> se&ccedil;eneği se&ccedil;ildiğinde kullanılabilir).</li>
+                <li><b>Tablo Arka Planı</b> - Tablo arka planının rengi veya <b>Tablo</b> sekmesinde <b>H&uuml;creler arasında boşluğa izin ver</b> se&ccedil;eneği se&ccedil;ildiğinde h&uuml;creler arasındaki boşluk arka planı.</li>
+            </ul>
+            <p id="position"><img alt="Tablo - Gelişmiş Ayarlar" src="../images/table_properties_4.png" /></p>
+			<p><b>Tablo Konumu</b> sekmesi yalnızca <b>Metin kaydırma</b> sekmesinde <b>Akış tablosu</b> se&ccedil;eneği se&ccedil;ildiğinde kullanılabilir ve aşağıdaki parametreleri i&ccedil;erir:</p>
+			<ul>
+				<li><b>Yatay</b> parametreler, kenar boşluğuna, sayfaya veya metne <b>g&ouml;re</b> tablo <b>hizalamasını</b> (sol, orta, sağ) ve ayrıca kenar boşluğu, sayfa veya metnin <b>sağına</b> g&ouml;re tablo konumunu i&ccedil;erir.</li>
+				<li><b>Dikey</b> parametreler, kenar boşluğuna, sayfaya veya metne <b>g&ouml;re</b> tablo <b>hizalamasını</b> (sol, orta, sağ) ve ayrıca kenar boşluğu, sayfa veya metnin <b>altına</b> g&ouml;re tablo konumunu i&ccedil;erir.</li>
+				<li><b>Se&ccedil;enekler</b> b&ouml;l&uuml;m&uuml; aşağıdaki parametreleri değiştirmeyi sağlar:
+                <ul>
+                    <li><b>Nesneyi metinle taşı</b>, tablonun metinle birlikte hareket etmesini sağlar.</li>
+                    <li><b>&Ouml;rt&uuml;şmeye izin ver</b>, iki tablonun tek bir b&uuml;y&uuml;k tabloda birleştirilip birleştirilmeyeceğini veya sayfada yan yana s&uuml;r&uuml;klediğinizde &uuml;st &uuml;ste binip binmeyeceğini kontrol eder.</li>
+                </ul>
+                </li>
+			</ul>
+            <p><img alt="Tablo - Gelişmiş Ayarlar" src="../images/table_properties_2.png" /></p>
+            <p><b>Metin Kaydırma</b> sekmesi aşağıdaki parametreleri i&ccedil;erir:</p>
+            <ul>
+                <li>Metin <b>kaydırma stili</b> - <b>Satır i&ccedil;i tablo</b> veya <b>Akış tablosu</b>. Tablonun metne g&ouml;re konumlandırılma şeklini değiştirmek i&ccedil;in gerekli se&ccedil;eneği kullanın: ya metnin bir par&ccedil;ası olur (satır i&ccedil;i stilini se&ccedil;erseniz) ya da her taraftan atlanır (akış tablosunu se&ccedil;erseniz).</li>
+                <li>
+                    Kaydırma stilini se&ccedil;tikten sonra hem satır i&ccedil;i hem de akış tabloları i&ccedil;in ek kaydırma parametreleri ayarlanabilir:
+                    <ul>
+                        <li>Satır i&ccedil;i tablo i&ccedil;in tablo <b>hizalamasını</b> ve <b>soldan girintiyi</b> belirtebilirsiniz.</li>
+                        <li>Akış tablosu i&ccedil;in <b>Tablo Konumu</b> sekmesinde <b>Metinden uzaklığı</b> ve tablo <b>konumunu</b> belirtebilirsiniz.</li>
+                    </ul>
+                </li>
+            </ul>
+            <p><img alt="Tablo - Gelişmiş Ayarlar" src="../images/table_properties_6.png" /></p>
+            <p><b>Alternatif Metin</b> sekmesi, tablonun i&ccedil;eriğini daha iyi anlamalarına yardımcı olmak i&ccedil;in g&ouml;rme veya bilişsel bozuklukları olan kişilere okunacak bir <b>Başlık</b> ve <b>A&ccedil;ıklama</b> belirtmeye olanak tanır.</p>
+
+		</div>
+	</body>
+</html>

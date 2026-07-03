@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Metin nesneleri ekleme</title>
+		<meta charset="utf-8" />
+        <meta name="description" content="Insert text objects such as text boxes and Text Art to make your text more impressive" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Metin nesneleri ekleme</h1>
+            <p><a href="https://www.onlyoffice.com/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Belge D&uuml;zenleyicide</b></a>, metninizi daha belirgin hale getirebilir ve belgenin belirli bir b&ouml;l&uuml;m&uuml;ne dikkat &ccedil;ekebilir, bir metin kutusu (i&ccedil;ine metin girmeye izin veren dikd&ouml;rtgen bir &ccedil;er&ccedil;eve) veya bir Text Art nesnesi (metne bazı efektlerin uygulanmasına izin veren &ouml;nceden tanımlanmış bir yazı tipi stili ve rengi olan bir metin kutusu) ekleyebilirsiniz.</p>
+			<h3>Bir metin nesnesi ekleme</h3>
+            <p>Sayfada herhangi bir yere bir metin nesnesi ekleyebilirsiniz. Bunu yapmak i&ccedil;in</p>
+            <ol>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Ekle</b> sekmesine ge&ccedil;iş yapın,</li>
+                <li>Gerekli metin nesne t&uuml;r&uuml;n&uuml; se&ccedil;in:
+                <ul>
+                    <li>
+                        Bir metin kutusu eklemek i&ccedil;in <div class = "icon icon-inserttexticon"></div> &Uuml;st ara&ccedil; &ccedil;ubuğunda <b>Metin Kutusu</b> simgesine tıklayın, ardından metin kutusunun eklenmesi gereken yere tıklayın, fare d&uuml;ğmesini basılı tutun ve boyutunu belirtmek i&ccedil;in metin kutusu kenarlığını s&uuml;r&uuml;kleyin. Fare d&uuml;ğmesini bıraktığınızda, eklenen metin kutusunda ekleme noktası belirerek metninizi girmenizi sağlar.
+                        <p class="note"><b>Not</b>: &Uuml;st ara&ccedil; &ccedil;ubuğunda bulunan <span class = "icon icon-insertautoshape"></span> <b>Şekil</b> simgesine tıklayarak ve <b>Basit şekiller</b> grubundan <span class = "icon icon-text_autoshape"></span> şekil se&ccedil;erek de bir metin kutusu eklemek m&uuml;mk&uuml;nd&uuml;r.</p>
+                    </li>
+                    <li>Bir Text Art nesnesi eklemek i&ccedil;in <div class = "icon icon-inserttextarticon"></div> &Uuml;st ara&ccedil; &ccedil;ubuğunda bulunan <b>Text Art</b> simgesine tıklayın, ardından istediğiniz stil şablonuna tıklayın &ndash; Text Art nesnesi imlecin mevcut konumuna eklenecektir. Metin kutusundaki varsayılan metni fare ile se&ccedil;in ve kendi metninizle değiştirin.</li>
+                </ul>
+                </li>
+                <li>Değişiklikleri uygulamak ve belgeye geri d&ouml;nmek i&ccedil;in metin nesnesinin dışına tıklayın.</li>
+            </ol>
+            <p>Metin nesnesinin i&ccedil;indeki metin, metin nesnesinin bir par&ccedil;asıdır (metin nesnesini hareket ettirdiğinizde veya d&ouml;nd&uuml;rd&uuml;ğ&uuml;n&uuml;zde, metin de onunla birlikte hareket eder veya d&ouml;ner).</p>
+            <p>Eklenen metin nesnesi, i&ccedil;inde metin bulunan dikd&ouml;rtgen bir &ccedil;er&ccedil;eveyi temsil ettiğinden (Text Art nesnelerinin varsayılan olarak g&ouml;r&uuml;nmez metin kutusu kenarları vardır) ve bu &ccedil;er&ccedil;eve yaygın kullanılan bir otomatik şekil olduğundan, hem şekli hem de metin &ouml;zelliklerini değiştirebilirsiniz.</p>
+            <p>Eklenen metin nesnesini silmek i&ccedil;in metin kutusu kenarlığına tıklayın ve klavyede <b>Delete</b> tuşuna basın. Metin kutusundaki metin de silinecektir.</p>
+            <h3>Metin kutusunu bi&ccedil;imlendirme</h3>
+            <p>&Ouml;zelliklerini değiştirebilmek i&ccedil;in kenarlığına tıklayarak metin kutusunu se&ccedil;in. Metin kutusu se&ccedil;ildiğinde, kenarları d&uuml;z (kesikli değil) &ccedil;izgi halinde g&ouml;r&uuml;nt&uuml;lenir.</p>
+            <p><img alt="Metin kutusu seçilmiş" src="../images/textbox_boxselected.png" /></p>
+            <ul>
+                <li>Metin kutusunu <a href="../UsageInstructions/InsertAutoshapes.htm#shape_resize" onclick="onhyperlinkclick(this)">yeniden boyutlandırmak, taşımak, d&ouml;nd&uuml;rmek</a> i&ccedil;in şeklin kenarlarındaki &ouml;zel tutama&ccedil;ları kullanın.</li>
+                <li>Metin kutusu <a href="../UsageInstructions/InsertAutoshapes.htm#shape_fill" onclick="onhyperlinkclick(this)">dolgusunu</a>, <a href="../UsageInstructions/InsertAutoshapes.htm#shape_stroke" onclick="onhyperlinkclick(this)">&ccedil;izgisini</a>, <a href="../UsageInstructions/InsertAutoshapes.htm#shape_wrapping" onclick="onhyperlinkclick(this)">kaydırma stilini</a> d&uuml;zenlemek veya dikd&ouml;rtgen kutuyu farklı bir şekil ile <b>değiştirmek</b> i&ccedil;in sağ ara&ccedil; &ccedil;ubuğundaki <b>Şekil ayarları</b> simgesine tıklayın <div class = "icon icon-shape_settings_icon"></div> ve ilgili se&ccedil;enekleri kullanın.</li>
+                <li>Metin kutusunu sayfada <b>hizalamak</b>, metin kutularını diğer nesnelere g&ouml;re <b>d&uuml;zenlemek</b>, bir metin kutusunu <b>d&ouml;nd&uuml;rmek veya ters &ccedil;evirmek</b>, <b>kaydırma stilini</b> değiştirmek veya şekil <b>gelişmiş ayarlarına</b> erişmek i&ccedil;in metin kutusu kenarlığına sağ tıklayın ve <a href="../UsageInstructions/InsertAutoshapes.htm#shape_rightclickmenu" onclick="onhyperlinkclick(this)">bağlamsal men&uuml; se&ccedil;eneklerini</a> kullanın. Nesneleri d&uuml;zenleme ve hizalama hakkında daha fazla bilgi edinmek i&ccedil;in l&uuml;tfen <a href="../UsageInstructions/AlignArrangeObjects.htm" onclick="onhyperlinkclick(this)">bu yazıya</a> bakın.</li>
+            </ul>
+            <h3>Metin kutusundaki metni bi&ccedil;imlendirme</h3>
+            <p>&Ouml;zelliklerini değiştirmek i&ccedil;in metin kutusundaki metne tıklayın. Metin se&ccedil;ildiğinde, metin kutusu kenarlıkları kesikli &ccedil;izgi halinde g&ouml;r&uuml;nt&uuml;lenir.</p>
+            <p><img alt="Metin seçilmiş" src="../images/textbox_textselected.png" /></p>
+            <p class="note"><b>Not</b>: Metin kutusu (metnin kendisi değil) se&ccedil;ildiğinde metin bi&ccedil;imlendirmesini değiştirmek de m&uuml;mk&uuml;nd&uuml;r. Bu durumda, değişiklikler metin kutusundaki t&uuml;m metne uygulanır. Bazı yazı tipi bi&ccedil;imlendirme se&ccedil;enekleri (yazı tipi, boyut, renk ve s&uuml;sleme stilleri) &ouml;nceden se&ccedil;ilmiş metin par&ccedil;asına ayrı ayrı uygulanabilir.</p>
+            <p>Metni metin kutusunda <b>d&ouml;nd&uuml;rmek</b> i&ccedil;in metne sağ tıklayın, <b>Metin Y&ouml;n&uuml;</b> se&ccedil;eneğini se&ccedil;in ve ardından aşağıdaki mevcut se&ccedil;eneklerden birini se&ccedil;in: <b>Yatay</b> (varsayılan olarak se&ccedil;ilidir), <b>Metni Aşağı D&ouml;nd&uuml;r</b> (yukarıdan aşağıya dikey bir y&ouml;n ayarlar) veya <b>Metni Yukarı D&ouml;nd&uuml;r</b> (aşağıdan yukarıya dikey bir y&ouml;n ayarlar).</p>
+            <p>Metni metin kutusunda <b>dikey olarak hizalamak</b> i&ccedil;in metne sağ tıklayın, <b>Dikey Hizalama</b> se&ccedil;eneğini se&ccedil;in ve ardından aşağıdaki mevcut se&ccedil;eneklerden birini se&ccedil;in: <b>&Uuml;ste Hizala</b>, <b>Ortaya Hizala</b> veya <b>Alta Hizala</b>.</p>
+            <p>Uygulayabileceğiniz diğer bi&ccedil;imlendirme se&ccedil;enekleri, normal metin i&ccedil;in olanlarla aynıdır. Gerekli işlem hakkında daha fazla bilgi edinmek i&ccedil;in l&uuml;tfen ilgili yardım b&ouml;l&uuml;mlerine bakın:</p>
+            <ul>
+                <li>Metin kutusundaki <a href="../UsageInstructions/AlignText.htm" onclick="onhyperlinkclick(this)">metni yatay olarak hizalandırabilir</a>,</li>
+                <li><a href="../UsageInstructions/FontTypeSizeColor.htm" onclick="onhyperlinkclick(this)">Yazı tipi, boyutu, rengini</a> ayarlayabilir, <a href="../UsageInstructions/DecorationStyles.htm" onclick="onhyperlinkclick(this)">s&uuml;sleme stillerini</a> ve <a href="../UsageInstructions/FormattingPresets.htm" onclick="onhyperlinkclick(this)">bi&ccedil;imlendirme &ouml;n ayarlarını</a> uygulayabilir,</li>
+                <li>Metin kutusundaki &ccedil;ok satırlı metin i&ccedil;in <a href="../UsageInstructions/LineSpacing.htm" onclick="onhyperlinkclick(this)">satır aralığını</a> ayarlayabilir, <a href="../UsageInstructions/ParagraphIndents.htm" onclick="onhyperlinkclick(this)">paragraf girintilerini</a> değiştirebilir, <a href="../UsageInstructions/SetTabStops.htm" onclick="onhyperlinkclick(this)">sekme duraklarını</a> ayarlayabilir,</li>
+                <li><a href="../UsageInstructions/AddHyperlinks.htm" onclick="onhyperlinkclick(this)">K&ouml;pr&uuml;</a> ekleyebilirsiniz.</li>
+            </ul>
+            <p>Ayrıca sağ kenar &ccedil;ubuğunda <b>Text Art ayarları</b> <span class = "icon icon-textart_settings_icon"></span> simgesini tıklayarak bazı stil parametrelerini değiştirebilirsiniz.</p>
+            <h3>Text Art stilini d&uuml;zenleme</h3>
+            <p>Bir metin nesnesi se&ccedil;in ve sağ kenar &ccedil;ubuğunda <b>Text Art ayarları</b> <span class = "icon icon-textart_settings_icon"></span> simgesine tıklayın.</p>
+            <p><img alt="Text Art ayar sekmesi" src="../images/right_textart.png" /></p>
+            <p>Galeriden yeni bir <b>Şablon</b> se&ccedil;erek uygulanan metin stilini değiştirin. Farklı bir yazı tipi, boyutu vb. se&ccedil;erek temel stili de değiştirebilirsiniz.</p>
+            <p>Yazı tipi <b>Dolgusunu</b> değiştirme. Aşağıdaki se&ccedil;enekleri se&ccedil;ebilirsiniz:</p>
+            <ul>
+                <li>
+                    <b>Renk Dolgusu</b> - Harflerin i&ccedil; boşluğunu dolduracak d&uuml;z rengi belirtmek i&ccedil;in bu se&ccedil;eneği se&ccedil;in.
+                    <p><img alt="Renk Dolgusu" src="../images/fill_color.png" /></p>
+                    <p id="color">Aşağıdaki renkli kutuya tıklayın ve mevcut <a href="../UsageInstructions/ChangeColorScheme.htm" onclick="onhyperlinkclick(this)">renk gruplarından</a> gerekli rengi se&ccedil;in veya istediğiniz herhangi bir rengi belirleyin:</p>
+                </li>
+                <li>
+                    <b>Gradyan Dolgu</b> - Harfleri birbirinden yumuşak bir şekilde değişen iki renkle doldurmak i&ccedil;in bu se&ccedil;eneği se&ccedil;in.
+                    <p><img alt="Gradyan Dolgu" src="../images/fill_gradient.png" /></p>
+                    <ul>
+                        <li><b>Stil</b> - Aşağıdaki mevcut se&ccedil;eneklerden birini se&ccedil;in: <b>Doğrusal</b> (renkler d&uuml;z bir &ccedil;izgide, yani yatay/dikey eksen boyunca veya &ccedil;apraz olarak 45 derecelik bir a&ccedil;ıda değişir) veya <b>Radyal</b> (renkler merkezden kenarlara doğru dairesel bir yolda değişir).</li>
+                        <li><b>Y&ouml;n</b> - men&uuml;den bir şablon se&ccedil;in. <b>Doğrusal</b> gradyan se&ccedil;ilirse aşağıdaki y&ouml;nler kullanılabilir: sol &uuml;stten sağ alta, &uuml;stten alta, sağ &uuml;stten sol alta, soldan sağa, yukarıdan aşağıya, sağdan sola, sağ alttan sol &uuml;ste, alttan yukarıya, sol alttan sağ &uuml;ste, soldan sağa. <b>Radyal</b> gradyan se&ccedil;ilirse yalnızca bir şablon kullanılabilir.</li>
+                        <li><b>Gradyan</b> - ilk renge karşılık gelen renk kutusunu etkinleştirmek i&ccedil;in gradyan &ccedil;ubuğunun altındaki sol kaydırıcıya <div class = "icon icon-gradientslider"></div> tıklayın. Paletteki ilk rengi se&ccedil;mek i&ccedil;in sağdaki renk kutusuna tıklayın. Gradyan durağını, yani bir rengin diğerine d&ouml;n&uuml;şt&uuml;ğ&uuml; noktayı ayarlamak i&ccedil;in kaydırıcıyı s&uuml;r&uuml;kleyin. İkinci rengi belirtmek ve gradyan durağını ayarlamak i&ccedil;in gradyan &ccedil;ubuğunun altındaki sağ kaydırıcıyı kullanın.</li>
+                    </ul>
+                    <p class="note"><b>Not</b>: Bu iki se&ccedil;enekten biri se&ccedil;ilirse, kaydırıcıyı s&uuml;r&uuml;kleyerek veya y&uuml;zde değerini manuel olarak girerek <b>opaklık</b> seviyesini de ayarlayabilirsiniz. Varsayılan değer <b>%100</b>&apos;d&uuml;r. Tam opaklığa karşılık gelir. <b>%0</b> değeri tam şeffaflığa karşılık gelir.</p>
+                </li>
+                <li><b>Dolgu Yok</b> - Herhangi bir dolgu kullanmak istemiyorsanız bu se&ccedil;eneği se&ccedil;in.</li>
+            </ul>
+            <p>Yazı tipi <b>&Ccedil;izgi</b> genişliğini, rengini ve t&uuml;r&uuml;n&uuml; ayarlayın.</p>
+            <ul>
+                <li>&Ccedil;izgi genişliğini değiştirmek i&ccedil;in <b>Boyut</b> a&ccedil;ılır listesinden mevcut se&ccedil;eneklerden birini se&ccedil;in. Mevcut se&ccedil;enekler şunlardır: 0,5 puan, 1 puan, 1,5 puan, 2,25 puan, 3 puan, 4,5 puan, 6 puan Alternatif olarak, herhangi bir &ccedil;izgi kullanmak istemiyorsanız <b>&Ccedil;izgi Yok</b> se&ccedil;eneğini se&ccedil;in.</li>
+                <li>&Ccedil;izgi <b>rengini</b> değiştirmek i&ccedil;in aşağıdaki renkli kutuya tıklayın ve <a href="../UsageInstructions/ChangeColorScheme.htm" onclick="onhyperlinkclick(this)">gerekli rengi se&ccedil;in</a>.</li>
+                <li>&Ccedil;izgi <b>t&uuml;r&uuml;n&uuml;</b> değiştirmek i&ccedil;in ilgili a&ccedil;ılır listeden gerekli se&ccedil;eneği se&ccedil;in (varsayılan olarak d&uuml;z bir &ccedil;izgi uygulanır, bunu mevcut kesikli &ccedil;izgilerden biri ile değiştirebilirsiniz).</li>
+            </ul>
+            <p><b>D&ouml;n&uuml;şt&uuml;r</b> galerisinden gerekli metin d&ouml;n&uuml;şt&uuml;rme t&uuml;r&uuml;n&uuml; se&ccedil;erek bir metin efekti uygulayın. Pembe elmas şeklindeki tutamacı s&uuml;r&uuml;kleyerek metin bozulmasının derecesini ayarlayabilirsiniz.</p>
+            <p><img alt="Text Art Dönüşümü" src="../images/textart_transformation.png" /></p>
+		</div>
+	</body>
+</html>

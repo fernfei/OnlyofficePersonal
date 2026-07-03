@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sayfayı koruma</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Protecting sheets to prevent the unwanted changes and to restrict the editing abilities of other users" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+			<div class="search-field">
+				<input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+			</div>
+
+			<h1>Sayfayı koruma</h1>
+			<p><b>Sayfayı Koru</b> se&ccedil;eneği, sayfaları korumanızı ve verilerde istenmeyen değişiklikleri &ouml;nlemek ve diğer kullanıcıların d&uuml;zenleme yeteneklerini kısıtlamak i&ccedil;in bir sayfada diğer kullanıcılar tarafından yapılan değişiklikleri kontrol etmenizi sağlar. Bir sayfayı şifreli veya şifresiz olarak koruyabilirsiniz. Şifre kullanmazsanız, herkes sayfanın korumasını kaldırabilir.</p>
+			<p>Sayfayı korumak i&ccedil;in:</p>
+			<ol>
+				<li>
+                    <b>Koru</b> sekmesine gidin ve &uuml;st ara&ccedil; &ccedil;ubuğunda <b>Sayfayı Koru</b> simgesine tıklayın.
+                    <p>veya</p>
+					<p>Korumak istediğiniz sayfa sekmesine sağ tıklayın ve se&ccedil;enekler listesinden <b>Koru</b> se&ccedil;eneğini se&ccedil;in</p>
+					<p><img alt="Sayfayı Koru Sekmesi" src="../images/protect_sheettab.png" /></p>
+				</li>
+			<li>A&ccedil;ılan <b>Sayfayı Koru</b> penceresinde, bu sayfanın korumasını kaldırmak i&ccedil;in bir şifre ayarlamak istiyorsanız, şifreyi girin ve onaylayın.
+            <p><img alt="Sayfayı Koru" src="../images/protect_sheet.png" /></p>
+			<p class="note">Kaybetmeniz veya unutmanız halinde parolayı yenilemeniz gerekir. L&uuml;tfen parolayı g&uuml;venli bir yerde saklayın.</p>
+			</li> 
+			<li>Kullanıcıların yapabileceği işlemleri se&ccedil;mek i&ccedil;in <b>Bu sayfanın t&uuml;m kullanıcılarına izin ver</b> listesindeki kutuları işaretleyin. <b>Kilitli h&uuml;creleri se&ccedil;</b> ve <b>Kilitlenmemiş h&uuml;creleri se&ccedil;</b> se&ccedil;eneklerine varsayılan olarak izin verilir.
+                <details class="details-example">
+                        <summary>Bir kullanıcının yapmasına izin verilen işlemler.</summary>
+                        <ul>
+                            <li>Kilitli h&uuml;creleri se&ccedil;</li>
+                            <li>Kilitlenmemiş h&uuml;creleri se&ccedil;</li>
+                            <li>H&uuml;creleri bi&ccedil;imlendir</li>
+                            <li>S&uuml;tunları bi&ccedil;imlendir</li>
+                            <li>Satırları bi&ccedil;imlendir</li>
+                            <li>S&uuml;tun ekle</li>
+                            <li>Satır ekle</li>
+							<li>K&ouml;pr&uuml; ekle</li>
+							<li>S&uuml;tun sil</li>
+							<li>Satır sil</li>
+							<li>Sırala</li>
+							<li>Otomatik Filtreyi kullan</li>
+							<li>&Ouml;zet Tablo ve &Ouml;zet Grafik kullan</li>
+							<li>Nesneleri d&uuml;zenle</li>
+							<li>Senaryoları d&uuml;zenle</li>
+                        </ul>
+                    </details>
+			</li>
+		<li>Korumayı etkinleştirmek i&ccedil;in <b>Koru</b> d&uuml;ğmesine tıklayın. &Uuml;st ara&ccedil; &ccedil;ubuğundaki <b>Sayfayı Koru</b> d&uuml;ğmesi, sayfa korunduğunda vurgulanmış olarak kalır.
+            <p><img alt="Sayfayı Koru Vurgulanmış" src="../images/protectsheet_highlighted.png" /></p>
+		</li>
+		<li>Sayfanın korumasını kaldırmak i&ccedil;in:
+                <ul>
+					<li><b>Sayfayı Koru</b> d&uuml;ğmesine tıklayın
+                    <p>veya</p>
+					<p>Korunan sayfa sekmesine sağ tıklayın ve se&ccedil;enekler listesinden <b>Korumayı Kaldır</b> se&ccedil;eneğini se&ccedil;in</p>
+					<p><img alt="Sayfa Korumasını Kaldır Sekmesi" src="../images/unprotect_sheettab.png" /></p>
+					</li>
+					<li>İstenirse bir şifre girin ve <b>Sayfanın korumasını kaldır</b> penceresinde <b>Tamam</b> d&uuml;ğmesine tıklayın.
+                    <p><img alt="Sayfanın Korumasını Kaldır" src="../images/unprotect_sheet.png" /></p>
+					</li>
+				</ul>
+			</ol>
+		</div>
+	</body>
+</html>

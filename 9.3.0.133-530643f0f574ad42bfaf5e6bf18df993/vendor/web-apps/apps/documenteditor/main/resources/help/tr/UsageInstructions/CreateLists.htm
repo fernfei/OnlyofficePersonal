@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Liste oluşturma</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Create bulleted and numbered lists in the document changing the lists outline" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+        <div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+            </div>
+            <h1>Liste oluşturma</h1>
+            <p><a href="https://www.onlyoffice.com/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Belge D&uuml;zenleyicide</b></a> bir liste oluşturmak i&ccedil;in</p>
+            <ol>
+                <li>İmleci listenin başlatılacağı konuma getirin (bu yeni bir satır veya &ouml;nceden girilmiş bir metin olabilir),</li>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Giriş</b> sekmesine ge&ccedil;iş yapın,</li>
+                <li>
+                    Başlatmak istediğiniz liste t&uuml;r&uuml;n&uuml; se&ccedil;in:
+                    <ul>
+                        <li>İşaret&ccedil;ili <b>Sırasız liste</b>, &uuml;st ara&ccedil; &ccedil;ubuğundaki <b>Madde İşaretleri</b> <div class = "icon icon-bullets"></div> simgesi kullanılarak oluşturulur.</li>
+                        <li>
+                            Rakam veya harf i&ccedil;eren <b>Sıralı liste</b>, &uuml;st ara&ccedil; &ccedil;ubuğundaki <b>Numaralandırma</b> <div class = "icon icon-numbering"></div> simgesi kullanılarak oluşturulur.
+                            <p class="note">Listenin nasıl g&ouml;r&uuml;neceğini se&ccedil;mek i&ccedil;in <b>Madde İşaretleri</b> veya <b>Numaralandırma</b> simgesinin yanındaki aşağı oka tıklayın.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>Satırın sonundaki <b>Enter</b> tuşuna her bastığınızda, sıralı veya sırasız yeni bir liste &ouml;ğesi g&ouml;r&uuml;necektir. Bunu durdurmak i&ccedil;in <b>Backspace</b> tuşuna basın ve sık kullanılan metin paragraflarını yazmaya devam edin.</li>
+            </ol>
+            <p>1 rakamını nokta veya k&ouml;şeli parantez ve ardından bir boşluk ile <b>1.</b>, <b>1)</b> girdiğinizde program ayrıca numaralı listeleri otomatik olarak oluşturur. Madde işaretli listeler, <b>-</b>, <b>*</b> karakterlerini ve ardından bir boşluk girdiğinizde otomatik olarak oluşturulabilir.</p>
+            <p>Ayrıca, listelerdeki metin girintilerini ve i&ccedil; i&ccedil;e ge&ccedil;melerini, &uuml;st ara&ccedil; &ccedil;ubuğunun <b>Giriş</b> sekmesindeki <b>&Ccedil;ok d&uuml;zeyli liste</b> <span class = "icon icon-outline"></span>, <b>Girintiyi azalt</b> <span class = "icon icon-decreaseindent"></span> ve <b>Girintiyi artır</b> <span class = "icon icon-increaseindent"></span> simgelerini işaretleyerek de değiştirebilirsiniz.</p>
+            <p>Liste d&uuml;zeyini değiştirmek i&ccedil;in <b>Numaralandırma</b> <span class = "icon icon-numbering"></span>, <b>Madde İşaretleri</b> <span class = "icon icon-bullets"></span> veya <b>&Ccedil;ok d&uuml;zeyli liste</b> <span class = "icon icon-outline"></span> simgesine tıklayın ve <b>Liste D&uuml;zeyini Değiştir</b> se&ccedil;eneğini se&ccedil;in veya imleci satırın başına getirin ve listenin bir sonraki d&uuml;zeyine ge&ccedil;mek i&ccedil;in klavyedeki <b>Sekme</b> tuşuna basın. Gerekli liste d&uuml;zeyi ile devam edin.</p>
+            <p><img alt="Liste düzeyini değiştirme" src="../images/listlevel.png" /></p>
+            <p class="note">Ek girinti ve boşluk parametreleri sağ kenar &ccedil;ubuğundan ve gelişmiş ayarlar penceresinden değiştirilebilir. Bununla ilgili daha fazla bilgi edinmek i&ccedil;in <a href="ParagraphIndents.htm" onclick="onhyperlinkclick(this)">Paragraf girintilerini değiştirme</a> ve <a href="LineSpacing.htm" onclick="onhyperlinkclick(this)">Paragraf satır aralığını ayarlama</a> b&ouml;l&uuml;m&uuml;n&uuml; okuyun.</p>
+
+            <h3>Listeleri birleştirme ve b&ouml;lme</h3>
+            <p>Bir listeyi bir &ouml;ncekiyle birleştirmek i&ccedil;in:</p>
+            <ol>
+                <li>İkinci listenin ilk &ouml;ğesine sağ tıklayın,</li>
+                <li>Bağlamsal men&uuml;den <b>&Ouml;nceki liste ile birleştir</b> se&ccedil;eneğini kullanın.</li>
+            </ol>
+            <p>Listeler birleştirilerek ilk liste numaralandırmasına g&ouml;re numaralandırmaya devam edilir.</p>
+
+            <p>Bir listeyi ayırmak i&ccedil;in:</p>
+            <ol>
+                <li>Yeni bir liste başlatmak istediğiniz liste &ouml;ğesine sağ tıklayın,</li>
+                <li>Bağlamsal men&uuml;den <b>Listeyi b&ouml;l</b> se&ccedil;eneğini kullanın.</li>
+            </ol>
+            <p>Listeler birleştirilerek ilk liste numaralandırmasına g&ouml;re numaralandırmaya devam edilir.</p>
+
+            <h3>Numaralandırmayı değiştirme</h3>
+            <p>İkinci listede sıralı numaralandırmaya &ouml;nceki liste numaralandırmasına g&ouml;re devam etmek i&ccedil;in:</p>
+            <ol>
+                <li>İkinci listenin ilk &ouml;ğesine sağ tıklayın,</li>
+                <li>Bağlamsal men&uuml;den <b>Numaralandırmaya devam et</b> se&ccedil;eneğini kullanın.</li>
+            </ol>
+            <p>Numaralandırma, ilk liste numaralandırmasına g&ouml;re devam eder.</p>
+
+            <p>Belirli bir numaralandırma başlangı&ccedil; değeri ayarlamak i&ccedil;in:</p>
+            <ol>
+                <li>Yeni bir numaralandırma değeri uygulamak istediğiniz liste &ouml;ğesine sağ tıklayın,</li>
+                <li>Bağlamsal men&uuml;den <b>Numaralandırma değerini ayarla</b> se&ccedil;eneğini kullanın,</li>
+                <li>A&ccedil;ılan yeni pencerede gerekli sayısal değeri ayarlayın ve <b>Tamam</b> d&uuml;ğmesine tıklayın.</li>
+            </ol>
+
+            <h3>Liste ayarlarını değiştirme</h3>
+            <p>Madde işareti/sayı t&uuml;r&uuml;, hizalama, boyut ve renk gibi madde işaretli veya numaralı liste ayarlarını değiştirmek i&ccedil;in:</p>
+            <ol>
+                <li>Mevcut bir liste &ouml;ğesine tıklayın veya liste olarak bi&ccedil;imlendirmek istediğiniz metni se&ccedil;in,</li>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Giriş</b> <div class = "icon icon-bullets"></div> sekmesindek <b>Madde İşaretleri</b> veya <div class = "icon icon-numbering"></div> <b>Numaralandırma</b> simgesine tıklayın,</li>
+                <li><b>Liste Ayarları</b>&nbsp;se&ccedil;eneğini se&ccedil;in,</li>
+                <li>
+                    <b>Liste Ayarları</b> penceresi a&ccedil;ılacaktır. Madde işaretli liste ayarları penceresi aşağıdaki gibi g&ouml;r&uuml;n&uuml;r:
+                    <p><img alt="Madde İşaretli Liste Ayarları penceresi" src="../images/bulletedlistsettings.png" /></p>
+                    <p>Numaralı liste ayarları penceresi aşağıdaki gibi g&ouml;r&uuml;n&uuml;r:</p>
+                    <p><img alt="Numaralı Liste Ayarları penceresi" src="../images/orderedlistsettings.png" /></p>
+                    <p>Madde işaretli liste i&ccedil;in <b>madde işareti</b> olarak kullanılan bir karakter ve numaralı liste i&ccedil;in numaralandırma <b>t&uuml;r&uuml;</b> se&ccedil;ebilirsiniz. <b>Hizalama</b>, <b>Boyut</b> ve <b>Renk</b> se&ccedil;enekleri hem madde işaretli hem de numaralı listeler i&ccedil;in aynıdır.</p>
+                    <ul>
+                        <li><b>Madde İşareti</b>, madde işaretli liste i&ccedil;in kullanılan gerekli karakteri se&ccedil;meyi sağlar. <b>Yazı Tipi ve Sembol</b> alanına tıkladığınızda, <b>Sembol</b> penceresi g&ouml;r&uuml;necek ve mevcut karakterlerden birini se&ccedil;ebileceksiniz. Sembollerle &ccedil;alışma hakkında daha fazla bilgi edinmek i&ccedil;in l&uuml;tfen <a href="../UsageInstructions/InsertSymbols.htm" onclick="onhyperlinkclick(this)">bu yazıya</a> bakın.</li>
+                        <li><b>T&uuml;r</b>, numaralı liste i&ccedil;in kullanılan gerekli numaralandırma t&uuml;r&uuml;n&uuml; se&ccedil;meyi sağlar. Aşağıdaki se&ccedil;enekler mevcuttur: <em>Hi&ccedil;biri</em>, <em>1, 2, 3,...</em>, <em>a, b, c,...</em>, <em>A, B, C,...</em>, <em>i, ii, iii,...</em>, <em>I, II, III,...</em>.</li>
+                        <li><b>Hizalama</b>, madde işaretlerini/sayıları yatay olarak hizalamada kullanılan gerekli madde işareti/sayı hizalama t&uuml;r&uuml;n&uuml; se&ccedil;meyi sağlar. Aşağıdaki hizalama t&uuml;rleri mevcuttur: <em>Sola</em>, <em>Ortaya</em>, <em>Sağa</em>.</li>
+                        <li><b>Boyut</b>, gerekli madde işareti/sayı boyutunu se&ccedil;meyi sağlar. <b>Metin gibi</b> se&ccedil;eneği varsayılan olarak se&ccedil;ilidir. Bu se&ccedil;enek se&ccedil;ildiğinde, madde işareti veya sayı boyutu metin boyutu ile uyumlu olur. <em>8</em> ile <em>96</em> arasında değişen &ouml;nceden tanımlanmış boyutlardan birini se&ccedil;ebilirsiniz.</li>
+                        <li><b>Renk</b>, gerekli madde işareti/sayı rengini se&ccedil;meyi sağlar. <b>Metin gibi</b> se&ccedil;eneği varsayılan olarak se&ccedil;ilidir. Bu se&ccedil;enek se&ccedil;ildiğinde, madde işareti veya sayı boyutu metin rengi ile uyumlu olur. Otomatik rengi uygulamak i&ccedil;in <b>Otomatik</b> se&ccedil;eneğini se&ccedil;ebilir veya paletteki <em>tema renklerinden</em> veya <em>standart renklerden</em> birini se&ccedil;ebilir veya <em>&ouml;zel</em> bir renk belirleyebilirsiniz.</li>
+                    </ul>
+                    <p>T&uuml;m değişiklikler <b>&Ouml;nizleme</b> alanında g&ouml;r&uuml;nt&uuml;lenir.</p>
+                </li>
+                <li>Değişiklikleri uygulamak ve ayarlar penceresini kapatmak i&ccedil;in <b>Tamam</b> d&uuml;ğmesine tıklayın.</li>
+            </ol>
+            <p>&Ccedil;ok d&uuml;zeyli liste ayarlarını değiştirmek i&ccedil;in</p>
+            <ol>
+                <li>Bir liste &ouml;ğesine tıklayın,</li>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Giriş</b> sekmesindeki <div class = "icon icon-outline"></div> <b>&Ccedil;ok d&uuml;zeyli liste</b> simgesine tıklayın,</li>
+                <li><b>Liste Ayarları</b>&nbsp;se&ccedil;eneğini se&ccedil;in,</li>
+                <li>
+                    <b>Liste Ayarları</b> penceresi a&ccedil;ılacaktır. &Ccedil;ok d&uuml;zeyli liste ayarları penceresi aşağıdaki gibi g&ouml;r&uuml;n&uuml;r:
+                    <p><img alt="Çok Düzeyli Liste Ayarları penceresi" src="../images/multilevellistsettings.png" /></p>
+                    <p>Sol tarafta bulunan <b>D&uuml;zey</b> alanındaki listeden gerekli d&uuml;zeyi se&ccedil;in, ardından se&ccedil;ilen d&uuml;zey i&ccedil;in madde işareti veya sayı g&ouml;r&uuml;n&uuml;m&uuml;n&uuml; ayarlamak i&ccedil;in &uuml;stteki d&uuml;ğmeleri kullanın:</p>
+                    <ul>
+                        <li><b>T&uuml;r</b>, numaralı liste i&ccedil;in kullanılan gerekli numaralandırma t&uuml;r&uuml;n&uuml; veya madde işaretli liste i&ccedil;in kullanılan gerekli karakteri se&ccedil;meyi sağlar. Numaralı liste i&ccedil;in aşağıdaki se&ccedil;enekler mevcuttur: <em>Hi&ccedil;biri</em>, <em>1, 2, 3,...</em>, <em>a, b, c,...</em>, <em>A, B, C,...</em>, <em>i, ii, iii,...</em>, <em>I, II, III,...</em>. Madde işaretli liste i&ccedil;in varsayılan sembollerden birini se&ccedil;ebilir veya <b>Yeni madde işareti</b> se&ccedil;eneğini kullanabilirsiniz. Bu se&ccedil;eneğe tıkladığınızda, <b>Sembol</b> penceresi g&ouml;r&uuml;necek ve mevcut karakterlerden birini se&ccedil;ebileceksiniz. Sembollerle &ccedil;alışma hakkında daha fazla bilgi edinmek i&ccedil;in l&uuml;tfen <a href="../UsageInstructions/InsertSymbols.htm" onclick="onhyperlinkclick(this)">bu yazıya</a> bakın.</li>
+                        <li><b>Hizalama</b>, madde işaretlerini/sayıları paragrafın başlangıcında yatay olarak hizalamada kullanılan gerekli madde işareti/sayı hizalama t&uuml;r&uuml;n&uuml; se&ccedil;meyi sağlar. Aşağıdaki hizalama t&uuml;rleri mevcuttur: <em>Sola</em>, <em>Ortaya</em>, <em>Sağa</em>.</li>
+                        <li><b>Boyut</b>, gerekli madde işareti/sayı boyutunu se&ccedil;meyi sağlar. <b>Metin gibi</b> se&ccedil;eneği varsayılan olarak se&ccedil;ilidir. <em>8</em> ile <em>96</em> arasında değişen &ouml;nceden tanımlanmış boyutlardan birini se&ccedil;ebilirsiniz.</li>
+                        <li><b>Renk</b>, gerekli madde işareti/sayı rengini se&ccedil;meyi sağlar. <b>Metin gibi</b> se&ccedil;eneği varsayılan olarak se&ccedil;ilidir. Bu se&ccedil;enek se&ccedil;ildiğinde, madde işareti veya sayı boyutu metin rengi ile uyumlu olur. Otomatik rengi uygulamak i&ccedil;in <b>Otomatik</b> se&ccedil;eneğini se&ccedil;ebilir veya paletteki <em>tema renklerinden</em> veya <em>standart renklerden</em> birini se&ccedil;ebilir veya <em>&ouml;zel</em> bir renk belirleyebilirsiniz.</li>
+                    </ul>
+                    <p>T&uuml;m değişiklikler <b>&Ouml;nizleme</b> alanında g&ouml;r&uuml;nt&uuml;lenir.</p>
+                </li>
+                <li>Değişiklikleri uygulamak ve ayarlar penceresini kapatmak i&ccedil;in <b>Tamam</b> d&uuml;ğmesine tıklayın.</li>
+            </ol>
+        </div>
+	</body>
+</html>

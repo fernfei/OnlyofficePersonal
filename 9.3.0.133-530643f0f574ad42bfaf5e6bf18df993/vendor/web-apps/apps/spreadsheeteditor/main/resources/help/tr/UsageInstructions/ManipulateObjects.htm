@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Nesneleri işleme</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Move, rotate, resize, reshape and arrange autoshapes, images, charts." />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+        <div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+            </div>
+            <h1>Nesneleri işleme</h1>
+            <p><a href="https://www.onlyoffice.com/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Elektronik Tablo D&uuml;zenleyicisinde</b></a>, &ccedil;alışma sayfanıza eklenen otomatik şekilleri, g&ouml;r&uuml;nt&uuml;leri ve &ccedil;izelgeleri yeniden boyutlandırabilir, taşıyabilir, d&ouml;nd&uuml;rebilir ve d&uuml;zenleyebilirsiniz.</p>
+            <p class="note">
+                <b>Not</b>: Nesnelerle &ccedil;alışırken kullanılabileceğiniz klavye kısayollarının listesini <a href="../HelpfulHints/KeyboardShortcuts.htm#workwithobjects" onclick="onhyperlinkclick(this)">burada</a> bulabilirsiniz.
+            </p>
+            <h3>Nesneleri yeniden boyutlandırma</h3>
+            <p>Bir otomatik şeklin/g&ouml;r&uuml;nt&uuml;n&uuml;n/grafiğin <b>boyutunu</b> değiştirmek i&ccedil;in nesnenin kenarlarında bulunan k&uuml;&ccedil;&uuml;k kareleri<span class="icon icon-resize_square"></span> s&uuml;r&uuml;kleyin. Yeniden boyutlandırırken se&ccedil;ilen nesnenin orijinal oranlarını korumak i&ccedil;in <b>Shift</b> tuşuna basın ve k&ouml;şe simgelerinden birini s&uuml;r&uuml;kleyin.</p>
+            <p class="note"><b>Not</b>: Eklenen grafiği veya resmi yeniden boyutlandırmak i&ccedil;in gerekli nesneyi se&ccedil;tiğinizde etkinleştirilecek olan sağ kenar &ccedil;ubuğunu da kullanabilirsiniz. A&ccedil;mak i&ccedil;in sağdaki <b>Grafik ayarları</b> <span class="icon icon-chartsettingsicon"></span> ya da <b>G&ouml;r&uuml;nt&uuml; ayarları</b> <span class="icon icon-image_settings_icon"></span> simgesine tıklayın.</p>
+            <p><span class="big big-maintain_proportions"></span></p>
+            <h3>Nesneleri taşıma</h3>
+            <p>
+                Bir otomatik şeklin/g&ouml;r&uuml;nt&uuml;n&uuml;n/grafiğin <b>konumunu</b> değiştirmek i&ccedil;in fare imlecini nesnenin &uuml;zerine getirdikten sonra g&ouml;r&uuml;nen Ok<span class="icon icon-arrow"></span> simgesini kullanın.
+                Fare d&uuml;ğmesini bırakmadan nesneyi gerekli konuma s&uuml;r&uuml;kleyin.
+                Nesneyi bir piksellik artışlarla taşımak i&ccedil;in <b>Ctrl</b> tuşuna basın ve klavye oklarını kullanın. Nesneyi tamamen yatay/dikey olarak hareket ettirmek ve d&uuml;şey y&ouml;nde hareket etmesini &ouml;nlemek i&ccedil;in s&uuml;r&uuml;klerken <b>Ctrl</b> tuşuna basın.
+            </p>
+            <h3>Nesneleri d&ouml;nd&uuml;rme</h3>
+            <p>Otomatik şekli/g&ouml;r&uuml;nt&uuml;y&uuml; manuel olarak <b>d&ouml;nd&uuml;rmek</b> i&ccedil;in fare imlecini d&ouml;nd&uuml;rme tutamacının <span class="icon icon-greencircle"></span> &uuml;zerine getirin ve saat y&ouml;n&uuml;nde veya saat y&ouml;n&uuml;n&uuml;n tersine s&uuml;r&uuml;kleyin. D&ouml;n&uuml;ş a&ccedil;ısını 15 derecelik artışlarla sınırlamak i&ccedil;in d&ouml;nd&uuml;r&uuml;rken <b>Shift</b> tuşuna basın.</p>
+            <p>Bir şekli veya g&ouml;r&uuml;nt&uuml;y&uuml; saat y&ouml;n&uuml;n&uuml;n tersine/saat y&ouml;n&uuml;nde 90 derece d&ouml;nd&uuml;rmek veya nesneyi yatay/dikey olarak &ccedil;evirmek i&ccedil;in gerekli nesneyi se&ccedil;tiğinizde etkinleştirilecek olan sağ kenar &ccedil;ubuğunun <b>D&ouml;nd&uuml;rme</b> b&ouml;l&uuml;m&uuml;n&uuml; kullanabilirsiniz. A&ccedil;mak i&ccedil;in sağdaki <b>Şekil ayarları</b> <span class="icon icon-shape_settings_icon"></span> simgesine ya da <b>G&ouml;r&uuml;nt&uuml; ayarları</b> <span class="icon icon-image_settings_icon"></span> simgesine tıklayın. Aşağıdaki işlemler i&ccedil;in d&uuml;ğmelerden birine tıklayın:</p>
+            <ul>
+                <li><div class = "icon icon-rotatecounterclockwise"></div> Nesneyi saat y&ouml;n&uuml;n&uuml;n tersine 90 derece d&ouml;nd&uuml;rmek i&ccedil;in</li>
+                <li><div class = "icon icon-rotateclockwise"></div> Nesneyi saat y&ouml;n&uuml;nde 90 derece d&ouml;nd&uuml;rmek i&ccedil;in</li>
+                <li><div class = "icon icon-fliplefttoright"></div> Nesneyi yatay olarak &ccedil;evirmek i&ccedil;in (soldan sağa)</li>
+                <li><div class = "icon icon-flipupsidedown"></div> Nesneyi dikey olarak &ccedil;evirmek i&ccedil;in (baş aşağı)</li>
+            </ul>
+            <p>G&ouml;r&uuml;nt&uuml;ye veya şekle sağ tıklayıp bağlamsal men&uuml;den <b>D&ouml;nd&uuml;r</b> se&ccedil;eneğini se&ccedil;ebilir ve ardından mevcut d&ouml;nd&uuml;rme se&ccedil;eneklerinden birini de kullanabilirsiniz.</p>
+            <p>Bir şekli veya g&ouml;r&uuml;nt&uuml;y&uuml; tam olarak belirlenmiş bir a&ccedil;ıyla d&ouml;nd&uuml;rmek i&ccedil;in sağ kenar &ccedil;ubuğundaki <b>Gelişmiş ayarları g&ouml;ster</b> bağlantısına tıklayın ve <b>Gelişmiş Ayarlar</b> penceresinin <b>D&ouml;nd&uuml;rme</b> sekmesini kullanın. Derece cinsinden &ouml;l&ccedil;&uuml;len gerekli değeri <b>A&ccedil;ı</b> alanında belirtin ve <b>Tamam</b> d&uuml;ğmesine tıklayın.</p>
+            <h3>Otomatik şekilleri yeniden şekillendirme</h3>
+            <p>Şekilli oklar veya belirtme &ccedil;izgileri gibi bazı şekilleri değiştirirken, sarı renkli baklava şeklindeki <span class="icon icon-yellowdiamond"></span> simgesi de kullanabilir. Şeklin bazı y&ouml;nlerini, &ouml;rneğin bir ok başının uzunluğunu ayarlamanızı sağlar.</p>
+            <p><span class="big big-reshaping"></span></p>
+            <p>Bir otomatik şekli yeniden şekillendirmek i&ccedil;in&nbsp;<b>bağlam men&uuml;s&uuml;nden</b> <b>Noktaları D&uuml;zenle</b> se&ccedil;eneğini kullanın.</p>
+            <p><b>Noktaları D&uuml;zenle</b> se&ccedil;eneği, şeklinizin eğriliğini &ouml;zelleştirmek veya değiştirmek i&ccedil;in kullanılır.</p>
+            <ol>
+                <li>
+                    Bir şeklin d&uuml;zenlenebilir bağlantı noktalarını etkinleştirmek i&ccedil;in şekle sağ tıklayın ve men&uuml;den <b>Nokta D&uuml;zenle</b> se&ccedil;eneğini se&ccedil;in. Etkin hale gelen siyah kareler iki &ccedil;izginin birleştiği noktalardır ve kırmızı &ccedil;izgi şeklin ana hatlarını &ccedil;izer. Noktayı yeniden konumlandırmak ve şeklin dış hatlarını değiştirmek i&ccedil;in tıklayın ve s&uuml;r&uuml;kleyin.
+                    <p><img alt="Noktaları Düzenle Menüsü" src="../images/editpoints_rightclick.png" /></p>
+                </li>
+                <li>
+                    Bağlantı noktasına tıkladığınızda, u&ccedil;larında beyaz kareler olan iki mavi &ccedil;izgi g&ouml;r&uuml;necektir. Bunlar, bir eğri oluşturmanıza ve bir eğrinin d&uuml;zg&uuml;nl&uuml;ğ&uuml;n&uuml; değiştirmenize izin veren Bezier tutama&ccedil;larıdır.
+                    <p><span class = "big big-editpoints_example"></span></p>
+                </li>
+                <li>
+                    Bağlantı noktaları etkin olduğu s&uuml;rece bunları ekleyebilir ve silebilirsiniz:
+                    <ul>
+                        <li><b>Şekle nokta eklemek i&ccedil;in</b> <b>Ctrl</b> tuşuna basın ve bağlantı noktası eklemek istediğiniz konumu tıklayın.</li>
+                        <li><b>Bir noktayı silmek i&ccedil;in</b> Ctrl tuşuna basın ve gereksiz noktayı tıklayın.</li>
+                    </ul>
+                </li>
+            </ol>
+            <h3>Nesneleri hizalama</h3>
+            <p><em>İki veya daha fazla</em> se&ccedil;ili nesneyi birbiriyle ilişkili olarak <b>hizalamak</b> i&ccedil;in nesneleri fare ile se&ccedil;erken <b>Ctrl</b> tuşuna basılı tutun, ardından &uuml;st ara&ccedil; &ccedil;ubuğunun <b>D&uuml;zen</b> sekmesinde bulunan <span class="icon icon-align_toptoolbar"></span> <b>Hizala</b> simgesine tıklayın ve listeden gerekli hizalama t&uuml;r&uuml;n&uuml; se&ccedil;in:</p>
+            <ul>
+                <li><b>Sola Hizala</b> <div class = "icon icon-alignobjectleft"></div> - Nesneleri birbirine g&ouml;re en soldaki nesnenin sol kenarına hizalamak i&ccedil;in kullanılır,</li>
+                <li><b>Merkeze Hizala</b> <div class = "icon icon-alignobjectcenter"></div> - Nesneleri birbirine g&ouml;re merkezde hizalamak i&ccedil;in kullanılır,</li>
+                <li><b>Sağa Hizala</b> <div class = "icon icon-alignobjectright"></div> - Nesneleri birbirine g&ouml;re en sağdaki nesnenin sağ kenarına hizalamak i&ccedil;in kullanılır,</li>
+                <li><b>&Uuml;ste Hizala</b> <div class = "icon icon-alignobjecttop"></div> - Nesneleri birbirine g&ouml;re en &uuml;stteki nesnenin &uuml;st kenarına hizalamak i&ccedil;in kullanılır,</li>
+                <li><b>Ortaya Hizala</b> <div class = "icon icon-alignobjectmiddle"></div> - Nesneleri birbirine g&ouml;re ortaya hizalamak i&ccedil;in kullanılır,</li>
+                <li><b>Alta Hizala</b> <div class = "icon icon-alignobjectbottom"></div> - Nesneleri birbirine g&ouml;re en alttaki nesnenin alt kenarına hizalamak i&ccedil;in kullanılır.</li>
+            </ul>
+            <p>Alternatif olarak, se&ccedil;ili nesnelere sağ tıklayıp bağlamsal men&uuml;den <b>Hizala</b> se&ccedil;eneğini se&ccedil;ebilir ve ardından mevcut hizalama se&ccedil;eneklerinden birini kullanabilirsiniz.</p>
+            <p class="note"><b>Not</b>: İkiden az nesne se&ccedil;erseniz hizalama se&ccedil;enekleri devre dışı bırakılır.</p>
+            <h3>Nesneleri Dağıtma</h3>
+            <p><em>&Uuml;&ccedil; veya daha fazla</em> se&ccedil;ili nesneyi, aralarında eşit mesafe olacak şekilde en dıştaki se&ccedil;ili iki nesne arasında yatay veya dikey olarak <b>dağıtmak</b> i&ccedil;in &uuml;st ara&ccedil; &ccedil;ubuğunun <b>D&uuml;zen</b> sekmesinde bulunan <span class="icon icon-align_toptoolbar"></span> <b>Hizala</b> simgesine tıklayın ve listeden gerekli dağıtım t&uuml;r&uuml;n&uuml; se&ccedil;in:</p>
+            <ul>
+                <li><b>Yatay Dağıt</b> <div class = "icon icon-distributehorizontally"></div> - Nesneleri en soldaki ve en sağdaki se&ccedil;ilen nesneler arasında eşit olarak dağıtmak i&ccedil;in kullanılır.</li>
+                <li><b>Dikey Dağıt</b> <div class = "icon icon-distributevertically"></div> - Nesneleri en &uuml;stteki ve en alttaki se&ccedil;ilen nesneler arasında eşit olarak dağıtmak i&ccedil;in kullanılır.</li>
+            </ul>
+            <p>Alternatif olarak, se&ccedil;ili nesnelere sağ tıklayıp bağlamsal men&uuml;den <b>Hizala</b> se&ccedil;eneğini se&ccedil;ebilir ve ardından mevcut dağıtma se&ccedil;eneklerinden birini kullanabilirsiniz.</p>
+            <p class="note"><b>Not</b>: &Uuml;&ccedil;ten az nesne se&ccedil;erseniz dağıtım se&ccedil;enekleri devre dışı bırakılır.</p>
+            <h3>Birden &ccedil;ok nesneyi gruplandırma</h3>
+            <p>Birden &ccedil;ok nesneyi aynı anda işlemek i&ccedil;in <b>gruplandırabilirsiniz</b>. Nesneleri fare ile se&ccedil;erken <b>Ctrl</b> tuşuna basılı tutun, &uuml;st ara&ccedil; &ccedil;ubuğunda bulunan <b>D&uuml;zen</b> sekmesindeki <span class="icon icon-group_toptoolbar"></span> <b>Gruplandır</b> simgesinin yanındaki oka tıklayın ve listeden gerekli se&ccedil;eneği se&ccedil;in:</p>
+            <ul>
+                <li><b>Gruplandırma</b> <div class = "icon icon-group"></div> - birka&ccedil; nesneyi tek bir nesne gibi aynı anda d&ouml;nd&uuml;r&uuml;lebilmeleri, taşınabilmeleri, yeniden boyutlandırılabilmeleri, hizalanabilmeleri, d&uuml;zenlenebilmeleri, kopyalanabilmeleri, yapıştırılabilmeleri ve bi&ccedil;imlendirilebilmeleri i&ccedil;in bir grupta birleştirmek i&ccedil;in.</li>
+                <li><b>Grubu &Ccedil;&ouml;zme</b> <div class = "icon icon-ungroup"></div> - &ouml;nceden birleştirilmiş se&ccedil;ili nesne grubunu &ccedil;&ouml;zmek i&ccedil;in.</li>
+            </ul>
+            <p>Alternatif olarak, se&ccedil;ili nesnelere sağ tıklayıp bağlamsal men&uuml;den <b>D&uuml;zenle</b> se&ccedil;eneğini se&ccedil;ebilir ve ardından <b>Gruplandır</b> veya <b>Grubu &Ccedil;&ouml;z</b> se&ccedil;eneğini kullanabilirsiniz.</p>
+            <p class="note"><b>Not</b>: İkiden az nesne se&ccedil;erseniz <b>Gruplandır</b> se&ccedil;eneği devre dışı bırakılır. <b>Grubu &Ccedil;&ouml;z</b> se&ccedil;eneği yalnızca &ouml;nceden birleştirilmiş nesnelerden oluşan bir grup se&ccedil;ildiğinde kullanılabilir.</p>
+            <p><img alt="Birden çok nesneyi gruplandırma" src="../images/grouping.png" /></p>
+            <h3 id="arrange">Birden &ccedil;ok nesneyi d&uuml;zenleme</h3>
+            <p>Se&ccedil;ili nesneyi veya birden &ccedil;ok nesneyi (&ouml;rneğin, birka&ccedil; nesne birbiriyle &ccedil;akıştığında sıralarını değiştirmek i&ccedil;in) <b>d&uuml;zenlemek</b> i&ccedil;in &uuml;st ara&ccedil; &ccedil;ubuğunun <b>D&uuml;zen</b> sekmesinde bulunan <span class="icon icon-bringforward_toptoolbar"></span> <b>&Ouml;ne Getir</b> ve <span class="icon icon-sendbackward_toptoolbar"></span> <b>Arkaya G&ouml;nder</b> simgelerini kullanabilir ve listeden gerekli d&uuml;zenleme t&uuml;r&uuml;n&uuml; se&ccedil;ebilirsiniz.</p>
+            <p>Se&ccedil;ili nesneyi/nesneleri &ouml;ne getirmek i&ccedil;in &uuml;st ara&ccedil; &ccedil;ubuğunun <b>D&uuml;zen</b> sekmesinde bulunan <span class="icon icon-bringforward_toptoolbar"></span> <b>&Ouml;ne Getir</b> simgesinin yanındaki oka tıklayın ve listeden gerekli d&uuml;zenleme t&uuml;r&uuml;n&uuml; se&ccedil;in:</p>
+            <ul>
+                <li><b>&Ouml;n Plana Getir</b> <div class = "icon icon-bringtofront"></div> - Nesneyi/nesneleri diğer t&uuml;m nesnelerin &ouml;n&uuml;ne taşımak i&ccedil;in kullanılır,</li>
+                <li><b>&Ouml;ne Getir</b> <div class = "icon icon-bringforward"></div> - Se&ccedil;ili nesneyi/nesneleri diğer nesnelerle ilişkili olarak bir d&uuml;zey ileri taşımak i&ccedil;in kullanılır.</li>
+            </ul>
+            <p>Se&ccedil;ili nesneyi/nesneleri arkaya g&ouml;ndermek i&ccedil;in &uuml;st ara&ccedil; &ccedil;ubuğunun <b>D&uuml;zen</b> sekmesinde bulunan <span class="icon icon-sendbackward_toptoolbar"></span> <b>Arkaya G&ouml;nder</b> simgesinin yanındaki oka tıklayın ve listeden gerekli d&uuml;zenleme t&uuml;r&uuml;n&uuml; se&ccedil;in:</p>
+            <ul>
+                <li><b>Arka Plana G&ouml;nder</b> <div class = "icon icon-sendtoback"></div> - nesneyi/nesneleri diğer t&uuml;m nesnelerin arkasına taşımak i&ccedil;in,</li>
+                <li><b>Arkaya G&ouml;nder</b> <div class = "icon icon-sendbackward"></div> - se&ccedil;ili nesneyi/nesneleri diğer nesnelerle ilişkili olarak bir d&uuml;zey geri taşımak i&ccedil;in.</li>
+            </ul>
+            <p>Alternatif olarak, se&ccedil;ili nesnelere sağ tıklayıp bağlamsal men&uuml;den <b>D&uuml;zenle</b> se&ccedil;eneğini se&ccedil;ebilir ve ardından mevcut d&uuml;zenleme se&ccedil;eneklerinden birini kullanabilirsiniz.</p>
+        </div>
+	</body>
+</html>

@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>HYPERLINK Function</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>HYPERLINK Function</h1>
+			<p>The <b>HYPERLINK</b> function is one of the <a href="../UsageInstructions/InsertFunction.htm#lookupreference" onclick="onhyperlinkclick(this)">lookup and reference functions</a>. It is used to create a shortcut that jumps to another location in the current workbook, or opens a document stored on a network server, an intranet, or the Internet.</p>
+			<h3>Syntax</h3> 
+			<p><b><em>HYPERLINK(link_location, [friendly_name])</em></b></p> 
+			<p>The <b>HYPERLINK</b> function has the following arguments:</p> 
+			<table style="width: 40%">
+                <tr>
+                    <th style="background-color: #f4f4f4" width="150ch"><b>Argument</b></th>
+                    <th style="background-color: #f4f4f4"><b>Description</b></th>
+                </tr>
+                <tr>
+                    <td><b><em>link_location</em></b></td>
+                    <td>The path and file name to the document to be opened. <span class="onlineDocumentFeatures">In the <em>online version</em>, the path can be a URL address only.</span> <b><em>link_location</em></b> can also refer to a certain place in the current workbook, for example, to a certain cell or a named range. The value can be specified as a text string enclosed to the quotation marks or a reference to a cell containing the link as a text string.</td>
+                </tr>
+				<tr>
+                    <td><b><em>friendly_name</em></b></td>
+                    <td>A text displayed in the cell. It is an optional argument. If it is omitted, the <b><em>link_location</em></b> value is displayed in the cell.</td>
+                </tr>
+            </table>
+			
+			<h3>Notes</h3>
+			<p>Please note that this is an array formula. To learn more, please read the <a href="../UsageInstructions/InsertArrayFormulas.htm" onclick="onhyperlinkclick(this)">Insert array formulas</a> article.</p>	
+			<p><a href="../UsageInstructions/InsertFunction.htm#applyfunction" onclick="onhyperlinkclick(this)">How to apply</a> the <b>HYPERLINK</b> function.</p>
+			
+			<h3>Examples</h3>
+            <p>The figure below displays the result returned by the <b>HYPERLINK</b> function.</p>
+            <p>To open the link click on it. To select a cell that contains a link without opening the link click and hold the mouse button.</p>
+			<p><img alt="HYPERLINK Function" src="../images/hyperlinkfunction.png" /></p>
+		</div>
+	</body>
+</html>

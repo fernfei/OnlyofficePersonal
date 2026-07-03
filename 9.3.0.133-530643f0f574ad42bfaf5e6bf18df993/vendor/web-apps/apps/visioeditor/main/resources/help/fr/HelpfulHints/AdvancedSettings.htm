@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Paramètres avancés de la Visionneuse de diagrammes</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Les paramètres avancés de la Visionneuse de diagrammes"/>
+    <link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+    <link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+    <script type="text/javascript" src="../callback.js"></script>
+    <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+</head>
+<body>
+    <div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Rechercher" type="text" onkeypress="doSearch(event)">
+        </div>
+        <h1>Paramètres avancés de la Visionneuse de diagrammes</h1>
+        <p>La <!--<a href="https://www.onlyoffice.com/en/pdf-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)">--><b>Visionneuse de diagrammes</b><!--</a>--> vous permet de modifier les paramètres avancés. Pour accéder les paramètres avancés, ouvrez l'onglet <b>Fichier</b> de la barre d'outils supérieure et sélectionnez l'option <b>Paramètres avancés.</b></p>
+        <p>Les paramètres avancés sont groupés comme suit:</p>
+
+        <h3>Apparence</h3>
+        <ol>
+            <li>
+                <b>Thème d'interface</b> permet de modifier les jeux de couleurs de l'interface d'éditeur.
+                    <ul>
+                        <li>L'option <b>Identique à système</b> permet d'utiliser le thème système par l'éditeur.</li>
+                        <li>Le mode <b>Claire</b> comprend l'affichage des éléments de l'interface utilisateur en couleurs standard rouge brique, blanc et gris claire à contraste réduit et est destiné à un travail de jour.</li>
+                        <li>Le mode <b>Claire classique</b> comprend l'affichage en couleurs standards rouge brique, blanc et gris claire.</li>
+                        <li>Le mode <b>Sombre</b> comprend l'affichage en tons sombres noir, gris foncé et gris claire destinés à un travail de nuit.</li>
+                        <li>Le mode <b>Contraste élevé sombre</b> comprend l'affichage des éléments de l'interface utilisateur en couleurs noir, gris foncé et blanc à plus de contraste et est destiné à mettre en surbrillance la zone de travail du fichier.</li>
+                        <li>Le mode <b>Gris</b> comprend l'affichage en tons de gris plus claires et apparaît en couleurs uniformes claires.</li>
+                    </ul>
+            </li>
+            <li>L'option <b>Style d'onglet</b> sert à modifier le style de mise en surbrillance de l'onglet: <em>Remplissage</em> sert à remplir l'onglet sélectionné avec une couleur plus foncée ou Ligne pour souligner l'onglet sélectionnée.</li>
+            <li>L'option Utiliser la couleur de la barre d'outils comme arrière-plan des onglets sert à remplir les onglet avec la couleur de l'arrière plan de l'interface.</li>
+        </ol>
+
+        <h3>Espace de travail</h3>
+        <ol>
+            <li>L'option <b>Activer la prise en charge du lecteur d'écran</b> sert à activer la prise en charge du logiciel lecteur d'écran.</li>
+            <li>L'option <b>Utiliser la touche Alt pour naviguer dans l'interface utilisateur à l'aide du clavier</b> sert à activer l'utilisation de la touche <em>Alt</em> / <em>Option</em> dans raccourcis clavier.</li>
+            <li>
+                L'option <b>Valeur du zoom par défaut</b> sert à définir la valeur de zoom par défaut en la sélectionnant de la liste des options disponibles entre 50% et 500%. Vous pouvez également choisir l'option <em>Ajuster à la page</em>, <em>Ajuster à la largeur</em> ou <em>Récemment utilisés</em>.
+                <p class="note">L'option <em>Récemment utilisés</em> se réfère à la dernière mise à l'échelle au cours de la session actuelle.</p>
+            </li>
+            <li>
+                L'option <b>Hinting de la police</b> sert à sélectionner le type d'affichage de la police dans la Visionneuse de diagrammes.
+                <ul>
+                    <li>Choisissez <b>Comme Windows</b> si vous aimez la façon dont les polices sont habituellement affichées sous Windows, c'est à dire en utilisant la police de Windows.</li>
+                    <li>Choisissez <b>Comme OS X</b> si vous aimez la façon dont les polices sont habituellement affichées sous Mac, c'est à dire sans hinting.</li>
+                    <li>Choisissez <b>Natif</b> si vous voulez que votre texte sera affiché avec les hintings intégrés dans les fichiers de polices.</li>
+                    <li>
+                        <b>Mise en cache par défaut</b> sert à sélectionner cache de police. Il n'est pas recommandé de désactiver ce mode-ci sans raison évidente. C'est peut être utile dans certains cas, par exemple les problèmes d'accélération matérielle activé sous Google Chrome.
+                        <p>La Visionneuse de diagrammes gère deux modes de mise en cache:</p>
+                        <ol>
+                            <li>Dans le <b>premier mode de mise en cache</b>, chaque lettre est mis en cache comme une image indépendante.</li>
+                            <li>Dans le <b>deuxième mode de mise en cache</b> l'image d'une certaine taille est sélectionnée avec les lettres dynamiques et avec de l'allocation/libération de la mémoire mis en place. La deuxième image est créée s'il y a de mémoire suffisante etc.</li>
+                        </ol>
+                        <p>Le <b>Mode de mise en cache par défaut</b> est activé en fonction du navigateur utilisé:</p>
+                        <ul>
+                            <li>Avec la <b>mise en cache par défaut</b> activée, dans Internet Explorer (v. 9, 10, 11) le <b>deuxième mode de mise en cache</b> est utilisé, le <b>premier mode de mise en cache </b>est utilisé dans les autres navigateurs.</li>
+                            <li>Avec la <b>mise en cache par défaut</b> désactivée, dans Internet Explorer (v. 9, 10, 11) le <b>premier mode de mise en cache</b> est utilisé, le <b>deuxième mode de mise en cache </b> est utilisé dans les autres navigateurs.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <p>Pour enregistrer toutes les modifications, cliquez sur le bouton <b>Appliquer</b>.</p>
+    </div>
+</body>
+</html>

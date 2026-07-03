@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Fonctions de recherche et remplacement</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Description des fonctions de recherche et remplacement dans l'éditeur de classeurs" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Rechercherh" type="text" onkeypress="doSearch(event)">
+        </div>
+		<h1>Fonctions de recherche et remplacement</h1>
+		<p>Pour rechercher les caractères, les mots et les phrases nécessaires dans <a href="https://www.onlyoffice.com/fr/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>l'éditeur de classeurs</b></a>, cliquez sur l'icône Rechercher <span class="icon icon-searchicon"></span> de la barre latérale gauche, sur l'icône <span class="icon icon-search_icon_header"></span> dans le coin supérieur droit ou utilisez le raccourci <em>Ctrl+F (Commande+F pour MacOS)</em> pour ouvrir la petite barre de recherche ou le raccourci <em>Ctrl+ H</em> pour ouvrir le panneau de recherche.</p>
+		<p>Une petite barre <b>Recherche</b> apparaîtra dans le coin supérieur droit de l'espace de travail. La barre inclut le champ de saisie de la requête de recherche, affiche le nombre de résultats de recherche et les contrôles pour basculer entre le résultat précédent ou suivant et masquer la barre.</p>
+			<p><img alt="Petite barre Recherche" src="../../../../../../common/main/resources/help/fr/images/find_small.png" /></p>
+			<p>Pour accéder aux paramètres avancés, cliquez sur l'icône <span class="icon icon-search_advanced"></span>.</p>
+			<p>Le panneau <b>Rechercher et remplacer</b> s'affiche.</p>
+			<img alt="Fenêtre Rechercher et remplacer" src="../images/search_window.png" />
+			<ol>
+				<li>Saisissez le texte à rechercher dans le champ de saisie <b>Rechercher</b>.</li>
+				<li>Pour naviguer à travers des occurrences, cliquez sur les boutons fléchés. Le bouton <div class="icon icon-searchdownbutton"></div> affiche l'occurrence suivante et le bouton <div class="icon icon-searchupbutton"></div> affiche l'occurrence précédente.</li>
+				<li>S'il vous faut remplacer une ou plusieurs occurrences des caractères trouvés, saisissez le texte de remplacement dans le champ de saisie <b>Remplacer par</b>. Vous pouvez remplacer une seule occurrence qui est mise en surbrillance ou toutes occurrences en cliquant sur le bouton correspondant <b>Remplacer</b> ou <b>Remplacer tout</b>. Le bouton <div class="icon icon-replace"></div> <b>Remplacer</b> se trouve également sous l'onglet <b>Accueil</b>.</li>
+				<li>
+					Indiquez les paramètres de recherche en activant les options appropriées:
+					<ul>
+						<li><b>Dans </b>sert à rechercher des données dans la <em>Feuille de calcul</em> active, dans le <em>Classeur</em> entier ou dans une <em>Plage spécifique</em>. Dans ce dernier cas, le champ <b>Sélectionner une plage de données</b> deviendra disponible pour saisir la plage de données nécessaire.</li>
+						<li><b>Recherche</b> sert à définir la direction de la recherche: à droite <b>dans lignes</b> ou en bas <b>dans colonnes</b>.</li>
+						<li><b>Rechercher dans</b> sert à spécifier si vous voulez rechercher la <b>Valeur</b> des cellules ou les <b>Formules</b>sous-jacentes.</li>
+					</ul>
+				</li>
+				<li>
+					Indiquez les paramètres de recherche en activant les options appropriées en dessous du champ de saisie:
+					<ul>
+						<li><b>Sensible aux caractères</b> sert à passer toutes les occurrences tenant compte de la casse (par exemple, quand vous rechercher le mot «Éditeur», les mots «éditeur» et «ÉDITEUR» ne sont pas affichés).</li>
+						<li><b>Contenu complet de la cellule</b> sert à rechercher des cellules contenant uniquement les caractères que vous avez indiqué dans votre requête de recherche (par ex. si vous recherchez '56' et cette option est active, les cellules contenant '0.56' ou '156' etc. ne seront pas renvoyées).</li>
+					</ul>
+				</li>
+			</ol>
+			<p>Toutes les occurrences seront mises en surbrillance dans le fichier et seront affichés sous forme de liste sur le panneau <b>Recherche</b> de gauche. Utilisez la liste pour passer à l'occurrence nécessaire ou utilisez les boutons de navigation <span class="icon icon-searchupbutton"></span> et <span class="icon icon-searchdownbutton"></span>.</p> 
+		</div>
+	</body>
+</html>

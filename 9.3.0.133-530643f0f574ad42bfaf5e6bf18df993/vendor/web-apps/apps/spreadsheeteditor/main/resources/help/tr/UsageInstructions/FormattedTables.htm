@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bi&ccedil;imlendirilmiş tabloları kullanma</title>
+		<meta charset="utf-8" />
+        <meta name="description" content="Apply a table template to the selected cell range and automatically enable the filter." />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+        <div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+            </div>
+            <h1>Bi&ccedil;imlendirilmiş tabloları kullanma</h1>
+            <h3>Yeni bir bi&ccedil;imlendirilmiş tablo oluşturma</h3>
+            <p>Verilerle &ccedil;alışmanızı kolaylaştırmak i&ccedil;in <a href="https://www.onlyoffice.com/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Elektronik Tablo D&uuml;zenleyicisi,</b></a> se&ccedil;ilen h&uuml;cre aralığına bir tablo şablonu uygulamanızı ve filtreyi otomatik olarak etkinleştirmenizi sağlar. Bunu yapmak i&ccedil;in</p>
+            <ol>
+                <li>Bi&ccedil;imlendirmeniz gereken h&uuml;cre aralığını se&ccedil;in,</li>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Giriş</b> sekmesinde bulunan <div class = "icon icon-tabletemplate"></div> <b>Tablo şablonu olarak bi&ccedil;imlendir</b> simgesine tıklayın.</li>
+                <li>Galeride gerekli şablonu se&ccedil;in,</li>
+                <li>A&ccedil;ılan a&ccedil;ılır pencerede, tablo olarak bi&ccedil;imlendirilecek h&uuml;cre aralığını işaretleyin,</li>
+                <li>Tablo başlıklarının se&ccedil;ilen h&uuml;cre aralığına eklenmesini istiyorsanız <b>Başlık</b> se&ccedil;eneğini işaretleyin, aksi takdirde başlık satırı en &uuml;ste eklenir ve se&ccedil;ilen h&uuml;cre aralığı bir satır aşağı taşınır,</li>
+                <li>Se&ccedil;ilen şablonu uygulamak i&ccedil;in <b>Tamam</b> d&uuml;ğmesine tıklayın.</li>
+            </ol>
+            <p>Şablon se&ccedil;ilen h&uuml;cre aralığına uygulanacak ve tablo başlıklarını d&uuml;zenleyebilecek ve verilerinizle &ccedil;alışmak i&ccedil;in <a href="SortData.htm" onclick="onhyperlinkclick(this)">filtreyi uygulayabileceksiniz</a>.</p>
+            <p><b>Giriş</b> sekmesinde bulunan <b>Tablo</b> d&uuml;ğmesini kullanarak bi&ccedil;imlendirilmiş bir tablo eklemek de m&uuml;mk&uuml;nd&uuml;r. Bu durumda, varsayılan tablo şablonu uygulanır.</p>
+            <p class="note"><b>Not</b>: Yeni bir bi&ccedil;imlendirilmiş tablo oluşturduğunuzda, <a href="UseNamedRanges.htm" onclick="onhyperlinkclick(this)">varsayılan ad</a> (<em>Tablo 1</em>, <em>Tablo 2</em>, vb.) tabloya otomatik olarak atanacaktır. Bu adı daha anlamlı hale getirmek i&ccedil;in değiştirebilir ve başka &ccedil;alışmalar i&ccedil;in kullanabilirsiniz.</p>
+            <p>Tablonun son satırının altındaki h&uuml;creye (tabloda Toplam satırı yoksa) veya tablonun son s&uuml;tununun sağındaki h&uuml;creye yeni bir değer girerseniz, bi&ccedil;imlendirilmiş tablo yeni bir satır veya s&uuml;tun i&ccedil;erecek şekilde otomatik olarak genişletilir. Tabloyu genişletmek istemiyorsanız, g&ouml;r&uuml;necek <b>Yapıştır</b> &ouml;zel d&uuml;ğmesine tıklayın ve <b>Tablo otomatik genişletmesini geri al</b> se&ccedil;eneğini se&ccedil;in. Bu işlemi geri aldığınızda, <b>Tablo otomatik genişletmesini yenile</b> se&ccedil;eneği bu men&uuml;de kullanılabilir olacaktır.</p>
+            <p><img alt="Tablo otomatik genişletmesini geri alma" src="../images/undoautoexpansion.png" /></p>
+            <p class="note"><b>Not</b>: Tablo otomatik genişletmesini etkinleştirmek/devre dışı bırakmak i&ccedil;in <b>Yapıştır</b> &ouml;zel d&uuml;ğme men&uuml;s&uuml;nde <b>Tabloları otomatik olarak genişletmeyi durdur</b> se&ccedil;eneğini se&ccedil;in veya <b>Gelişmiş Ayarlar</b> -&gt; <b>Yazım Denetimi</b> -&gt; <b>Yazım D&uuml;zeltme</b> -&gt; <b>Otomatik D&uuml;zeltme Se&ccedil;enekleri</b> -&gt; <b>Yazarken Otomatik Bi&ccedil;imlendir</b> adımına gidin.</p>
+            <h3>Satır ve s&uuml;tun se&ccedil;me</h3>
+            <p>Bi&ccedil;imlendirilmiş tabloda t&uuml;m bir satırı se&ccedil;mek i&ccedil;in fare imlecini siyah oka <span class="icon icon-selectrow_cursor"></span> d&ouml;n&uuml;şene kadar tablo satırının sol tarafına getirin, ardından sol tıklayın.</p>
+            <p><img alt="Satır seçme" src="../images/selectrow.png" /></p>
+            <p>Bi&ccedil;imlendirilmiş tabloda t&uuml;m bir s&uuml;tunu se&ccedil;mek i&ccedil;in fare imlecini siyah oka <span class="icon icon-selectcolumn_cursor"></span> d&ouml;n&uuml;şene kadar s&uuml;tun başlığının &uuml;st kenarına getirin, ardından sol tıklayın. Bir kez tıklarsanız, s&uuml;tun verileri se&ccedil;ilecektir (aşağıdaki resimde g&ouml;sterildiği gibi); iki kez tıklarsanız, başlık dahil t&uuml;m s&uuml;tun se&ccedil;ilecektir.</p>
+            <p><img alt="Sütun seçme" src="../images/selectcolumn.png" /></p>
+            <p>Bi&ccedil;imlendirilmiş t&uuml;m bir tabloyu se&ccedil;mek i&ccedil;in fare imlecini k&ouml;şegen siyah oka <span class="icon icon-selecttable_cursor"></span> d&ouml;n&uuml;şene kadar bi&ccedil;imlendirilmiş tablonun &uuml;st sol k&ouml;şesine getirin, ardından sol tıklayın.</p>
+            <p><img alt="Tablo seçme" src="../images/selecttable.png" /></p>
+            <h3>Bi&ccedil;imlendirilmiş tabloları d&uuml;zenleme</h3>
+            <p>Bazı tablo ayarları, tablo i&ccedil;erisinde fare ile en az bir h&uuml;cre se&ccedil;ip <b>Tablo ayarları</b> simgesine tıkladığınızda a&ccedil;ılacak olan sağ kenar &ccedil;ubuğunun <b>Tablo ayarları</b> <span class="icon icon-table_settings_icon"></span> sekmesi kullanılarak değiştirilebilir.</p>
+            <p><img alt="Tablo ayarları sekmesi" src="../images/tablesettingstab.png" /></p>
+            <p>&Uuml;stteki <b>Satırlar</b> ve <b>S&uuml;tunlar</b> b&ouml;l&uuml;mleri, belirli satırları/s&uuml;tunları belirli bir bi&ccedil;imlendirme uygulayarak vurgulamanızı veya a&ccedil;ık&ccedil;a diğerlerinden ayırmak i&ccedil;in farklı satırları/s&uuml;tunları farklı arka plan renkleriyle vurgulamanızı sağlar. Aşağıdaki se&ccedil;enekler mevcuttur:</p>
+            <ul>
+                <li><b>Başlık</b> - Başlık satırını g&ouml;r&uuml;nt&uuml;lemenizi sağlar.</li>
+                <li>
+                    <b>Toplam</b> - Tablonun en altına <b>&Ouml;zet</b> satırını ekler.
+                    <p class="note"><b>Not</b>: Bu se&ccedil;enek se&ccedil;ilirse, &ouml;zet değerleri hesaplamak i&ccedil;in bir işlev de se&ccedil;ebilirsiniz. <b>&Ouml;zet</b> satırında bir h&uuml;cre se&ccedil;tikten sonra, <span class="icon icon-dropdownarrow"></span> d&uuml;ğmesi h&uuml;crenin sağında kullanılabilir olacaktır. Buna tıklayarak listeden gerekli işlevi se&ccedil;in: <em>Ortalama</em>, <em>Saydır</em>, <em>Maks.</em>, <em>Min.</em>, <em>Topla</em>, <em>StdSapma</em>, veya <em>Var</em>. <em>Daha fazla işlev</em> se&ccedil;eneği, <b>İşlev Ekle</b> penceresini a&ccedil;manızı ve başka herhangi bir işlevi se&ccedil;menizi sağlar. <em>Hi&ccedil;biri</em> se&ccedil;eneğini se&ccedil;erseniz, <b>&Ouml;zet</b> satırında se&ccedil;ili olan h&uuml;cre, bu s&uuml;tun i&ccedil;in bir &ouml;zet değeri g&ouml;r&uuml;nt&uuml;lemez.</p>
+                    <p><img alt="Özet" src="../images/summary.png" /></p>
+                </li>
+                <li><b>Şeritli</b> - Tek ve &ccedil;ift satırlar i&ccedil;in arka plan rengi değişimini etkinleştirir.</li>
+                <li><b>Filtre d&uuml;ğmesi</b> - Başlık satırının her h&uuml;cresinde a&ccedil;ılır <div class = "icon icon-dropdownarrow"></div> okları g&ouml;r&uuml;nt&uuml;lemenizi sağlar. Bu se&ccedil;enek yalnızca <b>Başlık</b> se&ccedil;eneği se&ccedil;ildiğinde kullanılabilir.</li>
+                <li><b>İlk</b> - Tablodaki en soldaki s&uuml;tunu &ouml;zel bi&ccedil;imlendirme ile vurgular.</li>
+                <li><b>Son</b> - Tablodaki en sağdaki s&uuml;tunu &ouml;zel bi&ccedil;imlendirme ile vurgular.</li>
+                <li><b>Şeritli</b> - Tek ve &ccedil;ift s&uuml;tunlar i&ccedil;in arka plan rengi değişimini etkinleştirir.</li>
+            </ul>
+            <p>
+                <b>Şablondan Se&ccedil;</b> b&ouml;l&uuml;m&uuml;, &ouml;nceden tanımlanmış tablo stillerinden birini se&ccedil;menizi sağlar. Her şablon, arka plan rengi, kenarlık stili, satır/s&uuml;tun şeritleri vb. gibi belirli bi&ccedil;imlendirme parametrelerini birleştirir.
+                Yukarıdaki <b>Satırlar</b> ve/veya <b>S&uuml;tunlar</b> b&ouml;l&uuml;mlerinde işaretlenen se&ccedil;eneklere bağlı olarak, ayarlanan şablonlar farklı şekilde g&ouml;r&uuml;nt&uuml;lenecektir. &Ouml;rneğin, <b>Satırlar</b> b&ouml;l&uuml;m&uuml;nde <b>Başlık</b> se&ccedil;eneğini ve <b>S&uuml;tunlar</b> b&ouml;l&uuml;m&uuml;nde <b>Şeritli</b> se&ccedil;eneğini se&ccedil;tiyseniz, g&ouml;r&uuml;nt&uuml;lenen şablonlar listesi yalnızca başlık satırı ve şeritli s&uuml;tunların etkinleştirildiği şablonları i&ccedil;erecektir:</p>
+            <p>
+            <span class="big big-templateslist"></span></p>
+            <p>Mevcut tablo stilini (arka plan rengi, kenarlıklar vb.) tablonun kendisini kaldırmadan kaldırmak istiyorsanız, şablon listesinden <b>Hi&ccedil;biri</b> şablonunu uygulayın:</p>
+            <p><span class="big big-nonetemplate"></span></p>
+            <p><b>Tabloyu yeniden boyutlandır</b> b&ouml;l&uuml;m&uuml;, tablo bi&ccedil;imlendirmesinin uygulandığı h&uuml;cre aralığını değiştirmenizi sağlar. <b>Veri Se&ccedil;</b> d&uuml;ğmesi - Yeni bir a&ccedil;ılır pencere a&ccedil;ılacaktır. Giriş alanındaki h&uuml;cre aralığı bağlantısını değiştirin veya &ccedil;alışma sayfasında fare ile gerekli aralığı se&ccedil;in ve <b>Tamam</b> d&uuml;ğmesine tıklayın.</p>
+            <p class="note"><b>Not</b>: Başlıklar aynı satırda kalmalı ve tablo aralığı orijinal tablo aralığıyla &ouml;rt&uuml;şmelidir.</p>
+            <p><img alt="Tabloyu yeniden boyutlandırma" src="../images/resizetable.png" /></p>
+            <p><b>Satırlar ve S&uuml;tunlar</b> <span class="icon icon-rowsandcolumns"></span> b&ouml;l&uuml;m&uuml;, aşağıdaki işlemleri yapmanızı sağlar:</p>
+            <ul>
+                <li>Bir satır, s&uuml;tun, başlık satırı hari&ccedil; t&uuml;m s&uuml;tun verilerini veya başlık satırı dahil t&uuml;m tabloyu <b>se&ccedil;in</b>.</li>
+                <li>Se&ccedil;ili olanın &uuml;st&uuml;ne veya altına yeni bir satır ve se&ccedil;ili olanın soluna veya sağına yeni bir s&uuml;tun <b>ekleyin</b>.</li>
+                <li>Bir satır, s&uuml;tun (imle&ccedil; konumuna veya se&ccedil;ime bağlı olarak) veya t&uuml;m tabloyu <b>silin</b>.</li>
+            </ul>
+            <p class="note"><b>Not</b>: <b>Satırlar ve S&uuml;tunlar</b> b&ouml;l&uuml;m&uuml; se&ccedil;eneklerine <b>sağ tıklama men&uuml;s&uuml;nden</b> de erişilebilir.</p>
+            <p><span class="icon icon-removeduplicates"></span> <b>Yinelenenleri kaldır</b> se&ccedil;eneği, bi&ccedil;imlendirilmiş tablodan yinelenen değerleri kaldırmak istiyorsanız kullanılabilir. Yinelenenleri kaldırma hakkında daha fazla bilgi i&ccedil;in l&uuml;tfen <a href="RemoveDuplicates.htm" onclick="onhyperlinkclick(this)">bu sayfaya</a> bakın.</p>
+            <p><span class="icon icon-converttorange"></span> <b>Aralığa d&ouml;n&uuml;şt&uuml;r</b> se&ccedil;eneği, filtreyi kaldırarak, ancak tablo stilini koruyarak (yani h&uuml;cre ve yazı tipi renkleri vb.) tabloyu d&uuml;zenli bir veri aralığına d&ouml;n&uuml;şt&uuml;rmek istiyorsanız kullanılabilir. Bu se&ccedil;eneği uyguladığınızda, sağ kenar &ccedil;ubuğundaki <b>Tablo ayarları</b> sekmesi kullanılamaz.</p>
+            <p><span class="icon icon-insertslicer"></span> <b>Dilimleyici ekle</b> se&ccedil;eneği, bi&ccedil;imlendirilmiş tablo i&ccedil;in bir dilimleyici oluşturmak i&ccedil;in kullanılır. Dilimleyiciler ile &ccedil;alışma hakkında daha fazla bilgi i&ccedil;in l&uuml;tfen <a href="Slicers.htm" onclick="onhyperlinkclick(this)">bu sayfaya</a> bakın.</p>
+            <p><span class="icon icon-insertpivot"></span> <b>&Ouml;zet tablo ekle</b> se&ccedil;eneği, bi&ccedil;imlendirilmiş tablonun tabanında &ouml;zet bir tablo oluşturmak i&ccedil;in kullanılır. &Ouml;zet tabloları kaldırma hakkında daha fazla bilgi i&ccedil;in l&uuml;tfen <a href="PivotTables.htm" onclick="onhyperlinkclick(this)">bu sayfaya</a> bakın.</p>
+            <h3>Bi&ccedil;imlendirilen tablo gelişmiş ayarlarını yapma</h3>
+            <p>Gelişmiş tablo &ouml;zelliklerini değiştirmek i&ccedil;in sağ kenar &ccedil;ubuğundaki <b>Gelişmiş ayarları g&ouml;ster</b> bağlantısını kullanın. &apos;Tablo - Gelişmiş Ayarlar&apos; penceresi a&ccedil;ılacaktır:</p>
+            <p><img alt="Tablo - Gelişmiş Ayarlar" src="../images/tableadvancedsettings.png" /></p>
+            <p><b>Alternatif Metin</b> sekmesi, tablonun hangi bilgileri i&ccedil;erdiğini daha iyi anlamalarına yardımcı olmak i&ccedil;in g&ouml;rme veya bilişsel bozuklukları olan kişilere okunacak bir <b>Başlık</b> ve <b>A&ccedil;ıklama</b> belirtmenizi sağlar.</p>
+            <p class="note"><b>Not</b>: Tablo otomatik genişletmesini etkinleştirmek/devre dışı bırakmak i&ccedil;in <b>Gelişmiş Ayarlar</b> -&gt; <b>Yazım Denetimi</b> -&gt; <b>Yazım D&uuml;zeltme</b> -&gt; <b>Otomatik D&uuml;zeltme Se&ccedil;enekleri</b> -&gt; <b>Yazarken Otomatik Bi&ccedil;imlendir</b> adımına gidin.</p>
+            <h3>Bi&ccedil;imlendirilmiş Tablolara Form&uuml;l Eklemek i&ccedil;in Otomatik Form&uuml;l Tamamlama &ouml;zelliğini kullanma</h3>
+            <p><b>Otomatik Form&uuml;l Tamamlama</b> listesi, form&uuml;lleri bi&ccedil;imlendirilmiş tablolara uyguladığınızda mevcut t&uuml;m se&ccedil;enekleri g&ouml;r&uuml;nt&uuml;ler. Form&uuml;l&uuml;n&uuml;zdeki bir tabloya tablonun i&ccedil;ine veya dışına bir başvuru ekleyebilirsiniz. Başvuru olarak h&uuml;cre adresleri yerine s&uuml;tunlar ve &ouml;ğe adları kullanılır.</p>
+            <p>Aşağıdaki &ouml;rnekte, TOPLA işlevindeki bir tabloya başvuru g&ouml;sterlmektedir.</p>
+                <ol>
+                    <li>
+                        Bir h&uuml;cre se&ccedil;in ve eşittir işaretiyle başlayan bir form&uuml;l yazmaya başlayın, <b>Form&uuml;l Otomatik Tamamlama</b> listesinden gerekli işlevi se&ccedil;in. A&ccedil;ma parantezinden sonra, <em>tablo adını</em> yazmaya başlayın ve <b>Form&uuml;l Otomatik Tamamlama</b> listesinden uygun adı se&ccedil;in.
+                        <p><img alt="Tablo formülleri" src="../images/tableformulas.png" />
+                    </li>
+                    <li>
+                        Ardından, form&uuml;lde kullanılabilecek s&uuml;tunları ve &ouml;ğeleri i&ccedil;eren a&ccedil;ılır listeyi a&ccedil;mak i&ccedil;in bir a&ccedil;ılış ayracı [ yazın. Fare işaret&ccedil;isini listede &uuml;zerine getirdiğinizde başvuruyu a&ccedil;ıklayan bir ipucu g&ouml;r&uuml;n&uuml;r.
+                        <p><img alt="Tablo formülleri" src="../images/tableformulas1.png" />
+                        </li>
+                </ol>
+            <p class="note"><b>Not</b>: Her başvuru bir a&ccedil;ılış ve bir kapanış parantezi i&ccedil;ermelidir. Form&uuml;l s&ouml;zdizimini kontrol etmeyi unutmayın.</p>
+        </div>
+	</body>
+</html>

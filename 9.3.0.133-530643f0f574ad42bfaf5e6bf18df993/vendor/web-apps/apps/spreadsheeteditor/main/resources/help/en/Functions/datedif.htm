@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>DATEDIF Function</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>DATEDIF Function</h1>
+			<p>The <b>DATEDIF</b> function is one of the <a href="../UsageInstructions/InsertFunction.htm#datetime" onclick="onhyperlinkclick(this)">date and time functions</a>. It is used to return the difference between two date values (start date and end date), based on the interval (unit) specified.</p>
+            <h3>Syntax</h3> 
+			<p><b><em>DATEDIF(start_date, end_date, unit)</em></b></p> 
+            <p>The <b>DATEDIF</b> function has the following arguments:</p>
+            <table style="width: 40%">
+                <tr>
+                    <th style="background-color: #f4f4f4" width="150ch"><b>Argument</b></th>
+                    <th style="background-color: #f4f4f4"><b>Description</b></th>
+                </tr>
+                <tr>
+                    <td><b><em>start_date</em></b></td>
+                    <td>The starting date of a period.</td>
+                </tr>
+                <tr>
+                    <td><b><em>end_date</em></b></td>
+                    <td>The ending date of a period.</td>
+                </tr>
+                <tr>
+                    <td><b><em>unit</em></b></td>
+                    <td>The specified interval. The possible values are listed in the table below.</td>
+                </tr>
+            </table>
+            <p>The <b><em>unit</em></b> argument can be one of the following:</p>
+            <table style="width: 40%">
+				<tr>
+                    <th style="background-color: #f4f4f4"><b>Unit</b></th>
+                    <th style="background-color: #f4f4f4"><b>Interval Explanation</b></th>
+				</tr>
+				<tr>
+                    <td><b><em>Y</em></b></td>
+					<td>The number of complete years.</td>
+				</tr>
+				<tr>
+                    <td><b><em>M</em></b></td>
+					<td>The number of complete months.</td>
+				</tr>
+				<tr>
+                    <td><b><em>D</em></b></td>
+					<td>The number of days.</td>
+				</tr>
+				<tr>
+                    <td><b><em>MD</em></b></td>
+					<td>The difference between the days (months and years are ignored).</td>
+				</tr>
+				<tr>
+                    <td><b><em>YM</em></b></td>
+					<td>The difference between the months (days and years are ignored).</td>
+				</tr>
+				<tr>
+                    <td><b><em>YD</em></b></td>
+					<td>The difference between the days (years are ignored).</td>
+				</tr>
+			</table>
+            <h3>Notes</h3>
+            <p>If the <b><em>start_date</em></b> is greater than the <b><em>end_date</em></b>, the result will be #NUM!.</p>
+            <p><a href="../UsageInstructions/InsertFunction.htm#applyfunction" onclick="onhyperlinkclick(this)">How to apply</a> the <b>DATEDIF</b> function.</p>
+            <h3>Examples</h3>
+            <p>There are three arguments: <em>start-date</em> = <b>A1</b> = <b>3/16/2018</b>; <em>end-date</em> = <b>A2</b> = <b>9/16/2018</b>; <em>unit</em> = <b>"D"</b>. So the function returns the difference between two dates in days.</p>
+			<p><img alt="DATEDIF Function" src="../images/datedif.png" /></p>
+		</div>
+	</body>
+</html>

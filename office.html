@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONLYOFFICE Personal</title>
+    <link rel="icon" href="./assets/favicon.ico" type="image/x-icon"/>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg: #f7f8fa;
+            --card: #ffffff;
+            --border: #e4e7ec;
+            --text: #1f2329;
+            --text-2: #646a73;
+            --text-3: #8f959e;
+            --accent: #245bdb;
+            --accent-hover: #1c4cba;
+            --word: #2b579a;
+            --cell: #217346;
+            --slide: #c43e1c;
+            --pdf: #b3261e;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', 'Segoe UI', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 920px;
+            margin: 0 auto;
+            padding: 48px 24px 64px;
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .header p {
+            color: var(--text-2);
+            font-size: 0.9rem;
+            margin-top: 6px;
+        }
+
+        .section {
+            margin-top: 36px;
+        }
+
+        .section-title {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--text-3);
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+            margin-bottom: 12px;
+        }
+
+        /* 文件类型图标 */
+        .badge {
+            width: 38px;
+            height: 38px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.95rem;
+            flex-shrink: 0;
+            user-select: none;
+        }
+
+        .badge.word  { background: var(--word); }
+        .badge.cell  { background: var(--cell); }
+        .badge.slide { background: var(--slide); }
+        .badge.pdf   { background: var(--pdf); font-size: 0.7rem; }
+
+        /* 新建文档 */
+        .create-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+            gap: 12px;
+        }
+
+        .doc-card {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 14px 16px;
+            cursor: pointer;
+            transition: border-color 0.15s ease, box-shadow 0.15s ease;
+        }
+
+        .doc-card:hover {
+            border-color: #c0c6cf;
+            box-shadow: 0 2px 8px rgba(31, 35, 41, 0.06);
+        }
+
+        .doc-card .name {
+            font-size: 0.92rem;
+            font-weight: 500;
+        }
+
+        .doc-card .sub {
+            font-size: 0.78rem;
+            color: var(--text-3);
+            margin-top: 2px;
+        }
+
+        /* 打开文档 */
+        .open-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+        }
+
+        .panel {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 16px;
+        }
+
+        .panel h3 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .drop-zone {
+            border: 1px dashed #c0c6cf;
+            border-radius: 8px;
+            padding: 22px 16px;
+            text-align: center;
+            color: var(--text-2);
+            font-size: 0.88rem;
+            cursor: pointer;
+            transition: border-color 0.15s ease, background 0.15s ease;
+        }
+
+        .drop-zone:hover,
+        .drop-zone.dragover {
+            border-color: var(--accent);
+            background: #f4f7ff;
+            color: var(--accent);
+        }
+
+        .url-row {
+            display: flex;
+            gap: 8px;
+        }
+
+        .url-row input {
+            flex: 1;
+            min-width: 0;
+            padding: 8px 12px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 0.88rem;
+            color: var(--text);
+            background: var(--bg);
+        }
+
+        .url-row input:focus {
+            outline: none;
+            border-color: var(--accent);
+            background: #fff;
+        }
+
+        .url-tip {
+            font-size: 0.78rem;
+            color: var(--text-3);
+            margin-top: 10px;
+        }
+
+        .btn {
+            background: var(--accent);
+            color: #fff;
+            border: none;
+            padding: 8px 18px;
+            border-radius: 8px;
+            font-size: 0.88rem;
+            cursor: pointer;
+            white-space: nowrap;
+            transition: background 0.15s ease;
+        }
+
+        .btn:hover { background: var(--accent-hover); }
+
+        /* 最近文件 */
+        .file-table {
+            background: var(--card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .file-item {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px 16px;
+            cursor: pointer;
+            transition: background 0.15s ease;
+        }
+
+        .file-item + .file-item {
+            border-top: 1px solid var(--border);
+        }
+
+        .file-item:hover { background: #f7f8fa; }
+
+        .file-item .info {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .file-item .name {
+            font-size: 0.92rem;
+            font-weight: 500;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .file-item .sub {
+            font-size: 0.78rem;
+            color: var(--text-3);
+            margin-top: 2px;
+        }
+
+        .file-item .actions {
+            display: flex;
+            gap: 4px;
+            flex-shrink: 0;
+            opacity: 0;
+            transition: opacity 0.15s ease;
+        }
+
+        .file-item:hover .actions { opacity: 1; }
+
+        .mini-btn {
+            border: none;
+            background: none;
+            border-radius: 6px;
+            padding: 6px 10px;
+            font-size: 0.82rem;
+            color: var(--text-2);
+            cursor: pointer;
+        }
+
+        .mini-btn:hover {
+            background: #eceef1;
+            color: var(--text);
+        }
+
+        .mini-btn.del:hover {
+            background: #fdeceb;
+            color: var(--pdf);
+        }
+
+        .empty-tip {
+            text-align: center;
+            color: var(--text-3);
+            font-size: 0.88rem;
+            padding: 32px;
+            background: var(--card);
+            border: 1px dashed var(--border);
+            border-radius: 10px;
+        }
+
+        /* 编辑器全屏覆盖层 */
+        #editorOverlay {
+            position: fixed;
+            inset: 0;
+            background: #fff;
+            display: none;
+            flex-direction: column;
+            z-index: 100;
+        }
+
+        #editorOverlay.show { display: flex; }
+
+        .editor-bar {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 16px;
+            background: #fff;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .editor-bar .title {
+            flex: 1;
+            font-size: 0.9rem;
+            font-weight: 500;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .editor-bar .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: #ff8800;
+            display: none;
+            flex-shrink: 0;
+        }
+
+        .editor-bar .dot.show { display: block; }
+
+        .bar-btn {
+            background: none;
+            color: var(--text-2);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 6px 16px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: background 0.15s ease;
+        }
+
+        .bar-btn:hover { background: var(--bg); }
+
+        .bar-btn.primary {
+            background: var(--accent);
+            border-color: var(--accent);
+            color: #fff;
+        }
+
+        .bar-btn.primary:hover { background: var(--accent-hover); }
+        .bar-btn:disabled { opacity: 0.5; cursor: default; }
+
+        #editorFrameBox {
+            flex: 1;
+            position: relative;
+        }
+
+        #editorFrameBox iframe {
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* 轻提示 */
+        #toast {
+            position: fixed;
+            left: 50%;
+            bottom: 36px;
+            transform: translateX(-50%);
+            background: #1f2329;
+            color: #fff;
+            padding: 9px 20px;
+            border-radius: 8px;
+            font-size: 0.85rem;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s ease;
+            z-index: 200;
+        }
+
+        #toast.show { opacity: 1; }
+
+        @media (max-width: 720px) {
+            .open-grid { grid-template-columns: 1fr; }
+            .file-item .actions { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>ONLYOFFICE Personal</h1>
+        <p>完全本地化的办公套件 — 文件不出浏览器，最近文件保存在本机 IndexedDB</p>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">新建文档</h2>
+        <div class="create-grid">
+            <div class="doc-card" onclick="createNewDoc('docx')">
+                <span class="badge word">W</span>
+                <div>
+                    <div class="name">文档</div>
+                    <div class="sub">Word · docx</div>
+                </div>
+            </div>
+            <div class="doc-card" onclick="createNewDoc('xlsx')">
+                <span class="badge cell">X</span>
+                <div>
+                    <div class="name">表格</div>
+                    <div class="sub">Excel · xlsx</div>
+                </div>
+            </div>
+            <div class="doc-card" onclick="createNewDoc('pptx')">
+                <span class="badge slide">P</span>
+                <div>
+                    <div class="name">演示文稿</div>
+                    <div class="sub">PowerPoint · pptx</div>
+                </div>
+            </div>
+            <div class="doc-card" onclick="createNewDoc('pdf')">
+                <span class="badge pdf">PDF</span>
+                <div>
+                    <div class="name">PDF</div>
+                    <div class="sub">可编辑 · pdf</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">打开文档</h2>
+        <div class="open-grid">
+            <div class="panel">
+                <h3>本地文件</h3>
+                <div class="drop-zone" id="dropZone" onclick="document.getElementById('fileInput').click()">
+                    点击选择文件，或将文件拖拽到此处
+                </div>
+                <input type="file" id="fileInput" hidden
+                       accept=".doc,.docx,.xls,.xlsx,.csv,.ppt,.pptx,.pdf,.odt,.ods,.odp,.txt,.rtf"
+                       onchange="handleFileInput(event)">
+            </div>
+            <div class="panel">
+                <h3>网络链接</h3>
+                <div class="url-row">
+                    <input type="url" id="urlInput" placeholder="https://example.com/document.docx"
+                           onkeydown="if(event.key==='Enter')openFromUrl()">
+                    <button class="btn" onclick="openFromUrl()">打开</button>
+                </div>
+                <p class="url-tip">目标地址需允许跨域访问（CORS）</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 class="section-title">最近文件</h2>
+        <div id="fileList"></div>
+    </div>
+</div>
+
+<!-- 编辑器覆盖层：内嵌 onlyoffice.html，通过 postMessage 协议交互 -->
+<div id="editorOverlay">
+    <div class="editor-bar">
+        <span class="title" id="editorTitle"></span>
+        <span class="dot" id="modifiedDot" title="有未保存修改"></span>
+        <button class="bar-btn primary" id="saveBtn" onclick="saveCurrent()">保存</button>
+        <button class="bar-btn" onclick="downloadCurrent()">下载</button>
+        <button class="bar-btn" onclick="closeEditor()">关闭</button>
+    </div>
+    <div id="editorFrameBox"></div>
+</div>
+
+<div id="toast"></div>
+
+<script>
+    'use strict'
+
+    /* ---------- 文件类型 ---------- */
+
+    // 后缀 -> documentType
+    function documentTypeOf(ext) {
+        ext = (ext || '').toLowerCase()
+        if (['xls', 'xlsx', 'xlsm', 'ods', 'csv'].includes(ext)) return 'cell'
+        if (['ppt', 'pptx', 'odp', 'pps', 'ppsx'].includes(ext)) return 'slide'
+        if (['pdf', 'oxps', 'xps', 'djvu'].includes(ext)) return 'pdf'
+        return 'word'
+    }
+
+    const BADGES = {
+        word: { cls: 'word', label: 'W' },
+        cell: { cls: 'cell', label: 'X' },
+        slide: { cls: 'slide', label: 'P' },
+        pdf: { cls: 'pdf', label: 'PDF' }
+    }
+
+    function extOf(name) {
+        const dot = name.lastIndexOf('.')
+        return dot > -1 ? name.substring(dot + 1).toLowerCase() : ''
+    }
+
+    function mimeOf(ext) {
+        return ({
+            docx: 'application/vnd.openxmlformats-officedocument.wordprocessingml.document',
+            xlsx: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+            pptx: 'application/vnd.openxmlformats-officedocument.presentationml.presentation',
+            pdf: 'application/pdf'
+        })[ext] || 'application/octet-stream'
+    }
+
+    function formatSize(bytes) {
+        if (!bytes) return '0 B'
+        const units = ['B', 'KB', 'MB', 'GB']
+        const i = Math.min(Math.floor(Math.log(bytes) / Math.log(1024)), units.length - 1)
+        return (bytes / Math.pow(1024, i)).toFixed(i ? 1 : 0) + ' ' + units[i]
+    }
+
+    /* ---------- IndexedDB：最近文件（含真实文件字节，刷新后仍可打开） ---------- */
+
+    const DB_NAME = 'onlyoffice-personal'
+    const STORE = 'files'
+    let dbPromise = null
+
+    function openDB() {
+        if (dbPromise) return dbPromise
+        dbPromise = new Promise((resolve, reject) => {
+            const req = indexedDB.open(DB_NAME, 1)
+            req.onupgradeneeded = () => req.result.createObjectStore(STORE, { keyPath: 'id' })
+            req.onsuccess = () => resolve(req.result)
+            req.onerror = () => reject(req.error)
+        })
+        return dbPromise
+    }
+
+    function idbRequest(mode, fn) {
+        return openDB().then(db => new Promise((resolve, reject) => {
+            const tx = db.transaction(STORE, mode)
+            const req = fn(tx.objectStore(STORE))
+            req.onsuccess = () => resolve(req.result)
+            req.onerror = () => reject(req.error)
+        }))
+    }
+
+    const idb = {
+        put: (record) => idbRequest('readwrite', s => s.put(record)),
+        get: (id) => idbRequest('readonly', s => s.get(id)),
+        del: (id) => idbRequest('readwrite', s => s.delete(id)),
+        all: () => idbRequest('readonly', s => s.getAll())
+    }
+
+    /* ---------- 最近文件列表 ---------- */
+
+    async function refreshFileList() {
+        const box = document.getElementById('fileList')
+        let files = []
+        try {
+            files = await idb.all()
+        } catch (e) {
+            box.innerHTML = '<p class="empty-tip">当前浏览器不支持 IndexedDB，最近文件不可用</p>'
+            return
+        }
+        if (!files.length) {
+            box.innerHTML = '<p class="empty-tip">暂无文件，新建或打开的文档会出现在这里</p>'
+            return
+        }
+        files.sort((a, b) => b.updatedAt - a.updatedAt)
+        box.innerHTML = '<div class="file-table">' + files.map(f => {
+            const badge = BADGES[documentTypeOf(f.fileType)]
+            return `
+            <div class="file-item" onclick="openRecent('${f.id}')">
+                <span class="badge ${badge.cls}">${badge.label}</span>
+                <div class="info">
+                    <div class="name">${escapeHtml(f.name)}</div>
+                    <div class="sub">${formatSize(f.size)} · ${new Date(f.updatedAt).toLocaleString()}</div>
+                </div>
+                <div class="actions" onclick="event.stopPropagation()">
+                    <button class="mini-btn" onclick="downloadRecent('${f.id}')">下载</button>
+                    <button class="mini-btn del" onclick="deleteRecent('${f.id}')">删除</button>
+                </div>
+            </div>`
+        }).join('') + '</div>'
+    }
+
+    function escapeHtml(str) {
+        return String(str).replace(/[&<>"']/g, c => ({
+            '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'
+        })[c])
+    }
+
+    // 同名文件自动加序号
+    async function uniqueName(name) {
+        const files = await idb.all().catch(() => [])
+        const names = new Set(files.map(f => f.name))
+        if (!names.has(name)) return name
+        const dot = name.lastIndexOf('.')
+        const base = dot > -1 ? name.substring(0, dot) : name
+        const ext = dot > -1 ? name.substring(dot) : ''
+        for (let i = 1; ; i++) {
+            const candidate = `${base}(${i})${ext}`
+            if (!names.has(candidate)) return candidate
+        }
+    }
+
+    async function saveRecord(record) {
+        record.updatedAt = Date.now()
+        await idb.put(record)
+        refreshFileList()
+    }
+
+    /* ---------- 入口：新建 / 本地文件 / 网络链接 ---------- */
+
+    async function createNewDoc(ext) {
+        const names = { docx: '新建Word文档', xlsx: '新建Excel表格', pptx: '新建演示文稿', pdf: '新建PDF文档' }
+        const record = {
+            id: 'f-' + Date.now(),
+            name: await uniqueName(`${names[ext]}.${ext}`),
+            fileType: ext,
+            size: 0,
+            blob: null   // 首次保存后才有内容
+        }
+        // PDF 需要空白模板作基底，其余类型编辑器支持无 url 新建
+        if (ext === 'pdf') {
+            try {
+                const resp = await fetch('./assets/empty.pdf')
+                record.blob = await resp.blob()
+                record.size = record.blob.size
+            } catch (e) {
+                toast('空白 PDF 模板加载失败')
+                return
+            }
+        }
+        await saveRecord(record)
+        openEditor(record)
+    }
+
+    async function importFile(file) {
+        const ext = extOf(file.name)
+        const record = {
+            id: 'f-' + Date.now() + '-' + Math.random().toString(36).slice(2, 6),
+            name: await uniqueName(file.name),
+            fileType: ext,
+            size: file.size,
+            blob: file
+        }
+        await saveRecord(record)
+        return record
+    }
+
+    async function handleFileInput(event) {
+        const file = event.target.files[0]
+        event.target.value = ''
+        if (file) openEditor(await importFile(file))
+    }
+
+    async function openFromUrl() {
+        const input = document.getElementById('urlInput')
+        const url = input.value.trim()
+        if (!url) return toast('请输入文档链接')
+        toast('正在下载...')
+        try {
+            const resp = await fetch(url)
+            if (!resp.ok) throw new Error('HTTP ' + resp.status)
+            const blob = await resp.blob()
+            const rawName = decodeURIComponent(url.split('?')[0].split('#')[0].split('/').pop() || '') || '网络文档.docx'
+            const record = {
+                id: 'f-' + Date.now(),
+                name: await uniqueName(rawName),
+                fileType: extOf(rawName) || 'docx',
+                size: blob.size,
+                blob: blob
+            }
+            await saveRecord(record)
+            input.value = ''
+            openEditor(record)
+        } catch (e) {
+            toast('下载失败：' + e.message + '（请确认链接有效且允许跨域）')
+        }
+    }
+
+    /* ---------- 最近文件操作 ---------- */
+
+    async function openRecent(id) {
+        const record = await idb.get(id)
+        if (record) openEditor(record)
+    }
+
+    async function downloadRecent(id) {
+        const record = await idb.get(id)
+        if (!record) return
+        if (!record.blob) return toast('该文档尚无内容，请先打开并保存')
+        triggerDownload(record.blob, record.name)
+    }
+
+    async function deleteRecent(id) {
+        await idb.del(id)
+        refreshFileList()
+    }
+
+    function triggerDownload(blob, name) {
+        const url = URL.createObjectURL(blob)
+        const a = document.createElement('a')
+        a.href = url
+        a.download = name
+        a.click()
+        setTimeout(() => URL.revokeObjectURL(url), 1500)
+    }
+
+    /* ---------- 编辑器：iframe + postMessage 协议 ---------- */
+
+    // 当前编辑会话；协议详见 docs/使用文档.md
+    let session = null
+
+    function openEditor(record) {
+        closeEditor(true)
+        const box = document.getElementById('editorFrameBox')
+        const frame = document.createElement('iframe')
+        frame.src = './onlyoffice.html'
+        box.appendChild(frame)
+
+        session = {
+            record: record,
+            frame: frame,
+            blobUrl: record.blob ? URL.createObjectURL(record.blob) : '',
+            modified: false,
+            saveSeq: 0,
+            pending: {}
+        }
+        document.getElementById('editorTitle').textContent = record.name
+        document.getElementById('modifiedDot').classList.remove('show')
+        document.getElementById('editorOverlay').classList.add('show')
+    }
+
+    function pushConfig() {
+        const s = session
+        if (!s) return
+        s.frame.contentWindow.postMessage({
+            type: 'onlyoffice-config',
+            docConfig: {
+                document: {
+                    url: s.blobUrl || undefined,
+                    title: s.record.name,
+                    fileType: s.record.fileType,
+                    key: s.record.id + '-' + (s.record.updatedAt || 0),
+                    permissions: { edit: true, download: true, print: true }
+                },
+                documentType: documentTypeOf(s.record.fileType),
+                editorConfig: { mode: 'edit', lang: 'zh-CN' }
+            }
+        }, '*')
+    }
+
+    // 触发保存，取回编辑后的文件流（ArrayBuffer -> Blob）
+    function requestSave() {
+        const s = session
+        if (!s) return Promise.reject(new Error('编辑器未打开'))
+        const requestId = 'save-' + (++s.saveSeq)
+        return new Promise((resolve, reject) => {
+            const timer = setTimeout(() => {
+                delete s.pending[requestId]
+                reject(new Error('保存超时'))
+            }, 30000)
+            s.pending[requestId] = {
+                resolve: (blob) => { clearTimeout(timer); resolve(blob) },
+                reject: (err) => { clearTimeout(timer); reject(err) }
+            }
+            s.frame.contentWindow.postMessage(
+                { type: 'onlyoffice-save', requestId, format: s.record.fileType }, '*')
+        })
+    }
+
+    // 把文件流写回 IndexedDB
+    async function persistBlob(blob) {
+        const s = session
+        if (!s) return
+        s.record.blob = blob
+        s.record.size = blob.size
+        await saveRecord(s.record)
+        s.modified = false
+        document.getElementById('modifiedDot').classList.remove('show')
+    }
+
+    async function saveCurrent() {
+        const btn = document.getElementById('saveBtn')
+        btn.disabled = true
+        try {
+            await persistBlob(await requestSave())
+            toast('已保存到最近文件')
+        } catch (e) {
+            toast('保存失败：' + e.message)
+        } finally {
+            btn.disabled = false
+        }
+    }
+
+    async function downloadCurrent() {
+        try {
+            const blob = await requestSave()
+            await persistBlob(blob)
+            triggerDownload(new Blob([blob], { type: mimeOf(session.record.fileType) }), session.record.name)
+        } catch (e) {
+            toast('下载失败：' + e.message)
+        }
+    }
+
+    function closeEditor(silent) {
+        const s = session
+        if (!s) return
+        if (!silent && s.modified && !confirm('文档有未保存的修改，确定关闭？')) return
+        Object.values(s.pending).forEach(p => p.reject(new Error('编辑器已关闭')))
+        if (s.blobUrl) URL.revokeObjectURL(s.blobUrl)
+        s.frame.remove()
+        session = null
+        document.getElementById('editorOverlay').classList.remove('show')
+    }
+
+    // 接收 onlyoffice.html 的协议消息
+    window.addEventListener('message', async (event) => {
+        const d = event.data
+        const s = session
+        if (!d || !s || event.source !== s.frame.contentWindow) return
+
+        switch (d.type) {
+            case 'onlyoffice-ready':          // iframe 就绪 -> 注入文档配置
+                pushConfig()
+                break
+            case 'onlyoffice-saved': {        // 保存结果（带 requestId）或自动保存流
+                const p = d.requestId && s.pending[d.requestId]
+                if (p) {
+                    delete s.pending[d.requestId]
+                    d.ok && d.buffer ? p.resolve(new Blob([d.buffer])) : p.reject(new Error(d.error || '保存失败'))
+                } else if (d.ok && d.buffer) {
+                    await persistBlob(new Blob([d.buffer]))
+                    toast('已自动保存')
+                }
+                break
+            }
+            case 'onlyoffice-saveas':         // 用户在编辑器里"保存副本"
+                if (d.ok && d.buffer) {
+                    const ext = d.fileType || s.record.fileType
+                    const base = s.record.name.replace(/\.[^.]+$/, '')
+                    triggerDownload(new Blob([d.buffer], { type: mimeOf(ext) }), `${base}-副本.${ext}`)
+                }
+                break
+            case 'onlyoffice-rename':         // 用户在编辑器里重命名
+                if (d.title) {
+                    s.record.name = /\.[^.]+$/.test(d.title) ? d.title : `${d.title}.${s.record.fileType}`
+                    document.getElementById('editorTitle').textContent = s.record.name
+                    saveRecord(s.record)
+                }
+                break
+            case 'onlyoffice-state-change':   // 修改状态
+                s.modified = !!d.modified
+                document.getElementById('modifiedDot').classList.toggle('show', s.modified)
+                break
+            case 'onlyoffice-request-close':  // 编辑器自带的关闭按钮
+                closeEditor()
+                break
+        }
+    })
+
+    // 有未保存修改时提示再离开
+    window.addEventListener('beforeunload', (e) => {
+        if (session && session.modified) e.preventDefault()
+    })
+
+    /* ---------- 拖拽上传 & 提示 ---------- */
+
+    function setupDragAndDrop() {
+        const zone = document.getElementById('dropZone')
+        zone.addEventListener('dragover', e => { e.preventDefault(); zone.classList.add('dragover') })
+        zone.addEventListener('dragleave', () => zone.classList.remove('dragover'))
+        zone.addEventListener('drop', async e => {
+            e.preventDefault()
+            zone.classList.remove('dragover')
+            const files = [...e.dataTransfer.files]
+            if (!files.length) return
+            let last = null
+            for (const file of files) last = await importFile(file)
+            if (files.length === 1) openEditor(last)   // 多文件仅入列表，单文件直接打开
+            else toast(`已添加 ${files.length} 个文件到最近文件`)
+        })
+    }
+
+    let toastTimer = null
+    function toast(msg) {
+        const el = document.getElementById('toast')
+        el.textContent = msg
+        el.classList.add('show')
+        clearTimeout(toastTimer)
+        toastTimer = setTimeout(() => el.classList.remove('show'), 2500)
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+        refreshFileList()
+        setupDragAndDrop()
+    })
+</script>
+</body>
+</html>

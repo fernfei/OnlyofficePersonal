@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>IFS Function</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="The IFS function is one of the logical functions. Learn how to use the IFS formula in Excel sheets and compatible files with ONLYOFFICE." />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>IFS Function</h1>
+			<p>The <b>IFS</b> function is one of the <a href="../UsageInstructions/InsertFunction.htm#logical" onclick="onhyperlinkclick(this)">logical functions</a>. It checks whether one or more conditions are met and returns a value that corresponds to the first TRUE condition.</p>
+			<h3>Syntax</h3> 
+			<p><b><em>IFS(logical_test1, value_if_true1, [logical_test2, value_if_true2], ...)</em></b></p> 
+			<p>The <b>IFS</b> function has the following arguments:</p>
+            <table style="width: 40%">
+                <tr>
+                    <th style="background-color: #f4f4f4" width="150ch"><b>Argument</b></th>
+                    <th style="background-color: #f4f4f4"><b>Description</b></th>
+                </tr>
+                <tr>
+                    <td><b><em>logical_test1</em></b></td>
+                    <td>The first condition to be evaluated to TRUE or FALSE.</td>
+                </tr>
+				<tr>
+                    <td><b><em>value_if_true1</em></b></td>
+                    <td>The value that returns if the <b><em>logical_test1</em></b> is TRUE.</td>
+                </tr>
+				<tr>
+                    <td><b><em>logical_test2, value_if_true2, ...</em></b></td>
+                    <td>Additional conditions and values to return. These arguments are optional. You can check up to 127 conditions.</td>
+                </tr>
+            </table>
+			
+			<h3>Notes</h3>
+			<p><a href="../UsageInstructions/InsertFunction.htm#applyfunction" onclick="onhyperlinkclick(this)">How to apply</a> the <b>IFS</b> function.</p>
+			
+			<h3>Examples</h3>
+            <p>There are the following arguments: <em>logical_test1</em> = <b>A1&lt;100</b>, <em>value_if_true1</em> = <b>1</b>, <em>logical_test2</em> = <b>A1&gt;100</b>, <em>value_if_true2</em> = <b>2</b>, where <b>A1</b> is <b>120</b>. The second logical expression is <b>TRUE</b>. So the function returns <b>2</b>.</p>
+			<p><img alt="IFS Function" src="../images/ifs.png" /></p>
+		</div>
+	</body>
+</html>

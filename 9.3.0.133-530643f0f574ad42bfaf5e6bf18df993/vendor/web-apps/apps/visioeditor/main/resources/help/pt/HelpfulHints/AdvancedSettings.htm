@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Configurações avançadas do Visualizador de Diagramas</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Configurações avançadas do Visualizador de Diagramas" />
+    <link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+    <link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+    <script type="text/javascript" src="../callback.js"></script>
+    <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+</head>
+<body>
+    <div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+        <h1>Configurações avançadas do Visualizador de Diagramas</h1>
+        <p>O <b>Visualizador de Diagramas</b> permite que você altere suas configurações avançadas. Para acessá-las, abra a guia <b>Arquivo</b> na barra de ferramentas superior e selecione a opção <b>Configurações Avançadas</b>.</p>
+        <p>As configurações avançadas estão agrupadas da seguinte forma:</p>
+
+        <h3>Aparência</h3>
+        <ol>
+            <li>
+                A opção <b>Tema da interface</b> é usada para alterar o esquema de cores da interface do editor.
+                    <ul>
+                        <li>A opção <b>O mesmo que o sistema</b> faz com que o editor siga o tema da interface do seu sistema.</li>
+                        <li>O esquema de cores <b>Claro</b> incorpora as cores padrão tijolo vermelho, branco e cinza claro com menos contraste nos elementos da interface do usuário, adequado para trabalhar durante o dia.</li>
+                        <li>O esquema de cores <b>Clássico claro</b> incorpora as cores padrão tijolo vermelho, branco e cinza claro.</li>
+                        <li>O esquema de cores <b>Escuro</b> incorpora as cores preto, cinza escuro e cinza claro, adequadas para trabalhar à noite.</li>
+                        <li>O esquema de cores <b>Contraste Escuro</b> incorpora as cores preto, cinza escuro e branco com mais contraste nos elementos da interface do usuário, destacando a área de trabalho do arquivo.</li>
+                        <li>O esquema de cores <b>Cinza</b> incorpora uma cor cinza mais clara e apresenta um esquema de cores uniformemente claro.</li>
+                    </ul>
+            </li>
+            <li>A opção <b>Estilo de guia</b> é usado para alterar o tipo de destaque da guia: <em>Preencher</em> para preencher a guia selecionada com uma cor mais escura, or <em>Linha</em> para sublinhar a guia selecionada.</li>
+            <li>A opção <b>Usar a cor da barra de ferramentas como plano de fundo das guias</b> é usado para preencher as guias com a mesma cor da interface do plano de fundo da guia.</li>
+        </ol>
+
+        <h3>Área de trabalho</h3>
+        <ol>
+            <li>A opção <b>Habilitar o suporte ao leitor de tela</b> é usado para habilitar o suporte ao software leitor de tela.</li>
+            <li>A opção <b>Use a tecla Alt para navegar na interface do usuário usando o teclado</b> é usado para habilitar o uso da tecla <em>Alt</em> / <em>Option</em> em atalhos de teclado.</li>
+            <li>
+                A opção <b>Valor de zoom padrão</b> é usado para definir o valor padrão do zoom, selecionando-o na lista de opções disponíveis de 50% a 500%. Você também pode escolher a opção <em>Ajustar à página</em>, <em>Ajustar à largura</em>, ou <em>Usado por último</em>.
+                <p class="note">A opção <em>Usado por último</em> refere-se à última configuração de escala durante a sessão atual.</p>
+            </li>
+            <li>
+                A opção <b>Dicas de fonte</b> é usada para selecionar como as fontes são exibidas no Visualizador de Diagramas.
+                <ul>
+                    <li>Escolha <b>Como Windows</b> se você gosta da forma como as fontes são normalmente exibidas no Windows, ou seja, usando as dicas de fontes do Windows.</li>
+                    <li>Escolha <b>Como SO X</b> se você gosta da forma como as fontes são normalmente exibidas em um Mac, ou seja, sem qualquer tipo de dica.</li>
+                    <li>Escolha <b>Nativo</b> se você deseja que seu texto seja exibido com dicas incorporadas nos arquivos de fonte.</li>
+                    <li>
+                        <b>Modo de cache padrão</b> - usado para selecionar o modo de cache para os caracteres da fonte. Não é recomendável trocá-lo sem motivo. Isso pode ser útil apenas em alguns casos, por exemplo, quando ocorre um problema no navegador Google Chrome com a aceleração de hardware ativada.
+                        <p>O Visualizador de Diagramas possui dois modos de cache:</p>
+                        <ol>
+                            <li>No <b>primeiro modo de cache</b>, cada letra é armazenada em cache como uma imagem separada.</li>
+                            <li>No <b>segundo modo de cache</b>, é selecionada uma imagem de determinado tamanho onde as letras são colocadas dinamicamente, e também é implementado um mecanismo para alocar/remover memória nessa imagem. Se não houver memória suficiente, é criada uma segunda imagem, etc.</li>
+                        </ol>
+                        <p>A configuração <b>Modo de cache padrão</b> aplica os dois modos de cache mencionados acima separadamente para diferentes navegadores:</p>
+                        <ul>
+                            <li>Quando a configuração <b>Modo de cache padrão</b> está habilitada, o Internet Explorer (v. 9, 10, 11) utiliza o <b>segundo modo de cache</b>, outros navegadores utilizam o <b>primeiro modo de cache</b>.</li>
+                            <li>Quando a configuração <b>Modo de cache padrão</b> está desabilitada, o Internet Explorer (v. 9, 10, 11) utiliza o <b>primeiro modo de cache</b>, outros navegadores utilizam o <b>segundo modo de cache</b>.</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+        <p>Para salvar as alterações feitas, clique no botão <b>Aplicar</b>.</p>
+    </div>
+</body>
+</html>

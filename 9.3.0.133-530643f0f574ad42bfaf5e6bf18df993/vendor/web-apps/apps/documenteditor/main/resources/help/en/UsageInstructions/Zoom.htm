@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Zoom</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="The description of the Zoom plugin for ONLYOFFICE editors, which allows you to host and join meetings right in the editors" />
+    <link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+    <link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+    <script type="text/javascript" src="../callback.js"></script>
+    <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+</head>
+<body>
+    <div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+        <h1>Zoom</h1>
+        <p>The <b>Zoom</b> plugin allows you to host or schedule Zoom meetings directly in the editor in just a few clicks.</p>
+        <p class="note">The plugin is compatible with the <a href="https://git.onlyoffice.com/ONLYOFFICE/DocumentServer" target="_blank" onclick="onhyperlinkclick(this)">self-hosted</a> version of ONLYOFFICE editors and can be added to ONLYOFFICE instances manually using the <a href="https://helpcenter.onlyoffice.com/ONLYOFFICE-Editors/Editors-User-Guides/AllEditors/Plugin-manager.aspx" target="_blank" onclick="onhyperlinkclick(this)">Plugin Manager</a>.</p>
+
+        <h3>Installation</h3>
+        <p>To install the <b>Zoom</b> plugin,</p>
+        <ol>            
+            <li>Go to the <b>Plugins</b> tab.</li>
+            <li>Open the <b>Plugin Manager</b>.</li>
+            <li>Find <div class="icon icon-zoom_icon"></div> <b>Zoom</b> on the marketplace and click the <b>Install</b> button below.</li>
+            <li>Click the <div class="icon icon-zoom_icon"></div> <b>Zoom</b> icon in the <b>Plugins</b> tab.</li>
+            <li>Proceed with the plugin configuration.</li>
+        </ol>
+        <p class="note">For more details, please refer to the <a href="https://api.onlyoffice.com/docs/plugin-and-macros/tutorials/installing/" target="_blank" onclick="onhyperlinkclick(this)">ONLYOFFICE API documentation</a>.</p>
+
+        <h3>Configuration</h3>
+        <ol>
+            <li>
+                Register the editor as the <b>JWT</b> app on the <a href="https://marketplace.zoom.us/develop/create" target="_blank" onclick="onhyperlinkclick(this)">Zoom Develop</a> page to use the meeting schedule. Fill in all the necessary fields and activate the app. A <b>JWT token</b> will be assigned to the app.
+                <p>If you need help filling in the fields, please refer to the <a href="https://marketplace.zoom.us/docs/guides/build/jwt-app/" target="_blank" onclick="onhyperlinkclick(this)">official Zoom documentation</a>.</p>
+            </li>
+            <li>
+                Create a <b>Meeting SDK</b> app on the <a href="https://marketplace.zoom.us/develop/create" target="_blank" onclick="onhyperlinkclick(this)">Zoom Develop</a> page to start joining meetings. Fill in all the necessary fields and activate the app. <b>SDK credentials</b> will be assigned to the app.
+                <p>If you need help filling in the fields, please refer to the <a href="https://marketplace.zoom.us/docs/guides/build/sdk-app/" target="_blank" onclick="onhyperlinkclick(this)">official Zoom documentation</a>.</p>
+            </li>
+            <li>Enter the generated <b>SDK Key</b>, <b>SDK Secret</b>, and <b>JWT Token</b> into the corresponding fields in the left panel of the ONLYOFFICE editor and click <b>Save</b>.</li>
+        </ol>
+        <p><img alt="Zoom settings" src="../../../../../../common/main/resources/help/en/images/zoom_left.png" /></p>
+
+        <h3>How to use</h3>
+        <ol>
+            <li>Go to the <b>Plugins</b> tab.</li>
+            <li>Click the <div class="icon icon-zoom_icon"></div> <b>Zoom</b> icon.</li>
+            <li>
+                Add your meeting topic and choose whether you want to <b>Start meeting</b> or <b>Schedule meeting</b>.
+                <ul>
+                    <li><b>Start meeting</b> - a new meeting will be created. All details are displayed in the editor chat. Press the <code>Alt + Q</code> key combination to access the chat quickly.</li>
+                    <li><b>Schedule meeting</b> - set all required parameters for the upcoming meeting, such as time, date, duration. Access the <b>Advanced settings</b> for more parameters. Click <b>Save</b> when you are ready.</li>
+                </ul>
+                <p class="note">Meeting notifications are sent to the <b>Chat</b> for online editors and to the <b>Comments</b> for desktop editors.</p>
+            </li>
+            <li>Click the <b>Reconfigure</b> button to set the parameters once again.</li>
+            <li>Click the <b>Meeting mode</b> button to enter the meeting menu where you can set such parameters as <b>Name</b>, <b>Meeting ID</b>, <b>Email</b>, and <b>Password</b>. Select your <b>role</b>, <b>meeting region</b>, and <b>meeting language</b>.</li>
+            <li>Click the <b>Join</b> button to enter the meeting or click the <b>Copy direct join link</b> button to copy the meeting link to your clipboard.</li>
+            <li>Once you enter the meeting, a Zoom window will open within the plugin panel. Like in your usual Zoom call, here you can enable or disable microphone and camera, perform various actions, and enter the full screen mode.</li>
+        </ol>
+        <p class="note">A black window may appear in the <b>Safari</b> browser when joining a meeting. For the problem to disappear, you need to resize the plugin window or zoom in on the browser page.</p>
+    </div>
+</body>
+</html>

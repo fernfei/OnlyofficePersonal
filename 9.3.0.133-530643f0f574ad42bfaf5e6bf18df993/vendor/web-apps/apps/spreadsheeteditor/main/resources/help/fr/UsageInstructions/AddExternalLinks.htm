@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ajouter des liens externes vers des cellules</title>
+		<meta charset="utf-8" />
+        <meta name="description" content="Ajouter des liens externes vers des cellules ou des plages de cellules d'un autre classeur" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Rechercher" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Ajouter des liens externes vers des cellules</h1>
+			<p>Dans <a href="https://www.onlyoffice.com/fr/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>l'éditeur de classeurs</b></a>, il est possible de créer un lien externe vers une cellule ou une plage de cellules d'un autre classeur. C'est possible de créer des liens externes entre les fichiers stockés sur le portail actuel (depuis l'éditeur en ligne) ou sur l'ordinateur (depuis l'éditeur du bureau).</p>
+            <p>Lors de la modification de données dans le classeur source, vous pouvez actualiser les données dans le classeur de destination sans les copier manuellement encore une fois.</p>
+			<p>Pour ajouter un lien externe,</p>
+            <ol>
+				<li>ouvrez le classeur source et le classeur de destination,</li>                
+                <li>dans le classeur source, copiez la cellule ou la plage de cellules (Ctrl+C),</li>
+                <li>dans le classeur de destination, collez les données copiés (Ctrl+V),</li>
+                <li>cliquez sur le bouton Collage spécial et sélectionnez l'option <b>Coller avec liaison</b> (Ctrl+N).</li>				
+			</ol>
+            <p>La liaison sera crée. Lorsque vous cliquez sur la cellule comportant un lien externe, cette cellule s'affiche dans la barre de formule ainsi: <code>='[SourceWorkbook.xlsx]Sheet1'!A1</code>.</p>          
+            <p>Pour actualiser les liens externes que vous avez ajouté,</p>
+            <ol>
+                <li>passez à l'onglet <b>Données,</b></li>
+                <li>cliquez sur le bouton <b>Liens externes</b>,</li>
+                <li>sélectionnez le lien nécessaire de la liste,
+                    <p><img alt="Liens externes" src="../images/externallinks.png" /></p>
+                </li>
+                <li>cliquez sur <b>Mettre à jour les valeurs</b> ou cliquez sur la flèche à côté et sélectionnez <b>Mettre à jour les valeurs</b> (l'option sélectionnée actuellement) ou <b>Tout mettre à jour</b>.</li>
+            </ol>
+            <p>L'état va devenir OK.</p>
+            <p>Un avertissement s'affichera lorsque vous ouvrez le classeur comportant les liens externes: </p>
+            <p><img alt="Liens externes" src="../images/extlinkwarning.png" /></p>
+            <p>Cliquez sur <b>Mettre à jour</b> pour actualiser tous les liens externes.</p>
+            <p>Pour rompre la liaison,</p>
+            <ol>
+                <li>passez à l'onglet <b>Données</b>,</li>
+                <li>cliquez sur le bouton <b>Liens externes</b>,</li>
+                <li>sélectionnez le lien nécessaire de la liste,</li>
+                <li>cliquez sur <b>Rompre les liaisons</b> ou cliquez sur la flèche à côté de ce bouton pour sélectionner <b>Rompre les valeurs</b> (l'option sélectionnée actuellement) ou <b>Rompre toutes les liaisons</b>.</li>
+            </ol>
+            <p>Les liaisons seront rompus et les valeurs ne seront pas actualisées.</p>
+		</div>
+	</body>
+</html>

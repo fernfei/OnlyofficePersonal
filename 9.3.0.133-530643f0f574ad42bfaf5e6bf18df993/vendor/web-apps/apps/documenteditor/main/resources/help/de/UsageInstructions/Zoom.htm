@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Zoom</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Die Beschreibung des Zoom-Plugins für ONLYOFFICE-Editoren, mit dem Sie Meetings direkt in den Editoren veranstalten und daran teilnehmen können" />
+    <link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+    <link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+    <script type="text/javascript" src="../callback.js"></script>
+    <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+</head>
+<body>
+    <div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+        <h1>Zoom</h1>
+        <p>Mit dem <b>Zoom</b>-Plugin können Sie Zoom-Meetings mit nur wenigen Klicks direkt im Editor veranstalten oder planen.</p>
+        <p class="note">Das Plugin ist mit der <a href="https://git.onlyoffice.com/ONLYOFFICE/DocumentServer" target="_blank" onclick="onhyperlinkclick(this)">selbstgehosteten</a> Version der ONLYOFFICE-Editoren kompatibel und kann mit der <a href="https://helpcenter.onlyoffice.com/ONLYOFFICE-Editors/Editors-User-Guides/AllEditors/Plugin-manager.aspx" target="_blank" onclick="onhyperlinkclick(this)">Plugin-Verwaltung</a> manuell zu ONLYOFFICE-Instanzen hinzugefügt werden.</p>
+
+        <h3>Installation</h3>
+        <p>Um das <b>Zoom</b>-Plugin zu installieren,</p>
+        <ol>            
+            <li>Gehen Sie zur Registerkarte <b>Plugins</b>.</li>
+            <li>Öffnen Sie die <b>Plugin-Verwaltung</b>.</li>
+            <li>Suchen Sie <div class="icon icon-zoom_icon"></div> <b>Zoom</b> auf dem Marktplatz und klicken Sie unten auf die Schaltfläche <b>Installieren</b>.</li>
+            <li>Klicken Sie auf der Registerkarte <b>Plugins</b> auf das Symbol <div class="icon icon-zoom_icon"></div> <b>Zoom</b>.</li>
+            <li>Fahren Sie mit der Plugin-Konfiguration fort.</li>
+        </ol>
+        <p class="note">Weitere Informationen finden Sie in der <a href="https://api.onlyoffice.com/docs/plugin-and-macros/tutorials/installing/" target="_blank" onclick="onhyperlinkclick(this)">ONLYOFFICE-API-Dokumentation</a>.</p>
+
+        <h3>Konfiguration</h3>
+        <ol>
+            <li>
+                Registrieren Sie den Editor als <b>JWT</b>-App auf der Seite <a href="https://marketplace.zoom.us/develop/create" target="_blank" onclick="onhyperlinkclick(this)">Zoom Develop</a>, um den Meeting-Plan zu verwenden. Füllen Sie alle erforderlichen Felder aus und aktivieren Sie die App. Der App wird ein <b>JWT-Token</b> zugewiesen.
+                <p>Wenn Sie Hilfe beim Ausfüllen der Felder benötigen, lesen Sie bitte die <a href="https://marketplace.zoom.us/docs/guides/build/jwt-app/" target="_blank" onclick="onhyperlinkclick(this)">offizielle Zoom-Dokumentation</a>.</p>
+            </li>
+            <li>
+                Erstellen Sie eine <b>Meeting SDK</b>-App auf der Seite <a href="https://marketplace.zoom.us/develop/create">Zoom Develop</a> , um mit der Teilnahme an Meetings zu beginnen. Füllen Sie alle erforderlichen Felder aus und aktivieren Sie die App. <b>SDK-Anmeldedaten</b> werden der App zugewiesen.
+                <p>Wenn Sie Hilfe beim Ausfüllen der Felder benötigen, lesen Sie bitte die <a href="https://marketplace.zoom.us/docs/guides/build/sdk-app/" target="_blank" onclick="onhyperlinkclick(this)">offizielle Zoom-Dokumentation</a>.</p>
+            </li>
+            <li>Geben Sie den generierten <b>SDK-Schlüssel</b>, <b>SDK-Secret</b> und <b>JWT-Token</b> in die entsprechenden Felder im linken Bereich des ONLYOFFICE-Editors ein und klicken Sie auf <b> Speichern</b>.</li>
+        </ol>
+        <p><img alt="Zoom settings" src="../../../../../../common/main/resources/help/de/images/zoom_left.png" /></p>
+
+        <h3>Verwendung</h3>
+        <ol>
+            <li>Gehen Sie zur Registerkarte <b>Plugins</b>.</li>
+            <li>Klicken Sie auf das Symbol <div class="icon icon-zoom_icon"></div> <b>Zoom</b>.</li>
+            <li>Fügen Sie Ihr Besprechungsthema hinzu und wählen Sie aus, ob Sie <b>Start a meeting</b> oder <b>Schedule a meeting</b> möchten.</li>
+            <li>Meeting-Benachrichtigungen werden für Online-Editoren an den <b>Chat</b> und für Desktop-Editoren an die <b>Kommentare</b> gesendet.</li>
+        </ol>
+        <p class="note">Beim Beitritt zu einem Meeting kann im <b>Safari</b>-Browser ein schwarzes Fenster erscheinen. Damit das Problem verschwindet, müssen Sie die Größe des Plugin-Fensters ändern oder die Browserseite vergrößern.</p>
+    </div>
+</body>
+</html>

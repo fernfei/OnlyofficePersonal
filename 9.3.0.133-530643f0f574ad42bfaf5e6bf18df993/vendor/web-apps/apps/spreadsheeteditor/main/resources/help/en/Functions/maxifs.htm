@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>MAXIFS Function</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>MAXIFS Function</h1>
+			<p>The <b>MAXIFS</b> function is one of the <a href="../UsageInstructions/InsertFunction.htm#statistical" onclick="onhyperlinkclick(this)">statistical functions</a>. It is used to return the maximum value among cells specified by a given set of conditions or criteria.</p>
+			<h3>Syntax</h3> 
+			<p><b><em>MAXIFS(max_range, criteria_range1, criteria1, [criteria_range2, criteria2], ...)</em></b></p>
+			<p>The <b>MAXIFS</b> function has the following arguments:</p> 
+            <table style="width: 40%">
+                <tr>
+                    <th style="background-color: #f4f4f4" width="150ch"><b>Argument</b></th>
+                    <th style="background-color: #f4f4f4"><b>Description</b></th>
+                </tr>
+                <tr>
+                    <td><b><em>max_range</em></b></td>
+                    <td>The range of cells in which the maximum will be determined.</td>
+                </tr>
+				<tr>
+                    <td><b><em>criteria_range1</em></b></td>
+                    <td>The first selected range of cells to apply the <em>criteria1</em> to.</td>
+                </tr>
+				<tr>
+                    <td><b><em>criteria1</em></b></td>
+                    <td>The first condition that must be met. It is applied to the <em>criteria_range1</em> and used to determine which cells in the <em>max_range</em> will be evaluated as maximum.</td>
+                </tr>
+				<tr>
+                    <td><b><em>criteria_range2, criteria2</em></b></td>
+                    <td>Additional ranges of cells and their corresponding criteria. These arguments are optional.</td>
+                </tr>
+            </table>
+			
+			<h3>Notes</h3>
+            <p>You can use wildcard characters when specifying criteria. The question mark "?" can replace any single character and the asterisk "*" can be used instead of any number of characters.</p>
+			<p><a href="../UsageInstructions/InsertFunction.htm#applyfunction" onclick="onhyperlinkclick(this)">How to apply</a> the <b>MAXIFS</b> function.</p>
+			
+			<h3>Examples</h3>
+            <p>The figure below displays the result returned by the <b>MAXIFS</b> function.</p>
+			<p><img alt="MAXIFS Function" src="../images/maxifs.png" /></p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<title>View Settings and Navigation Tools</title>
+	<meta charset="utf-8" />
+	<meta name="description" content="The description of view settings and navigation tools such as zoom, previous/next page buttons" />
+	<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+	<link type="text/css" rel="stylesheet" href="../../images/sprite.css" />
+	<script type="text/javascript" src="../callback.js"></script>
+	<script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+</head>
+<body>
+	<div class="mainpart">
+		<div class="search-field">
+			<input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+		</div>
+		<h1>View Settings and Navigation Tools</h1>
+		<p>The <!--<a href="https://www.onlyoffice.com/en/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)">--><b>PDF Editor</b><!--</a>--> offers several tools to help you view and navigate your PDF: zoom, navigate headings, set the interface theme, etc.</p>
+		<h3>Adjust the view settings</h3>
+		<p>
+			To adjust default view settings and set the most convenient mode to work with the PDF, go to the <b>View</b> tab and select which interface elements you want to be hidden or shown.
+			You can select the following options on the <b>View</b> tab:
+		</p>
+		<ul>
+			<li><b>Headings</b> – to show the PDF headers in the left panel.</li>
+			<li><b>Zoom</b> – to set the required zoom value from 50% to 500% from the drop-down list. The same option can be found on the <b>Home</b> tab as well.</li>
+			<li><b>Fit to Page</b> - to fit the whole PDF page to the visible part of the working area.</li>
+			<li><b>Fit to Width</b> - to fit the PDF page width to the visible part of the working area.</li>
+			<li><b>Interface Theme</b> – choose one of the available interface themes from the drop-down menu: <em>Same as system</em>, <em>Light</em>, <em>Classic Light</em>, <em>Dark</em>, <em>Contrast Dark</em>, <em>Gray</em>, <em>Modern Light</em>, and <em>Modern Dark</em>. When the <em>Dark</em>, <em>Contrast Dark</em> or <em>Modern Dark</em> theme is enabled, the <b>Dark Document</b> switcher becomes active; use it to set the working area to white or dark gray.</li>
+			<li>
+				<b>Always Show Toolbar</b> – when this option is disabled, the top toolbar that contains commands will be hidden while tab names remain visible.
+				<p class="note">Alternatively, you can just double-click any tab to hide the top toolbar or display it again.</p>
+			</li>
+			<li><b>Status Bar</b> – when this option is disabled, the bottommost bar where the <b>Zoom</b>, <b>Fit to page</b>, <b>Fit to width</b> buttons are situated will be hidden. To show the hidden <b>Status Bar</b>, enable this option.</li>
+			<li><b>Left Panel</b> - when disabled, hides the left panel where <b>Search</b>, <b>Comments</b>, etc. buttons are located. To show the left panel, check this box.</li>
+		</ul>
+		<p>
+			When the <b>Comments</b> <span class="onlineDocumentFeatures"> or <b>Chat</b></span> panel is opened, the width of the left sidebar is adjusted by simple drag-and-drop:
+			move the mouse cursor over the left sidebar border so that it turns into the bidirectional arrow and drag the border to the right to extend the width of the sidebar. To restore its original width, move the border to the left.
+		</p>
+		<h3 id="navigationtools">Use the Navigation Tools</h3>
+		<h4>Navigating pages</h4>
+		<p>Go to the <b>Home</b> tab, where page navigation buttons are located.</p>
+		<ul>
+			<li><div class="icon icon-pagenumber"></div> - displays the page number and the total number of pages in the PDF. Click the field and enter the required page number manually and press <code>Enter</code> to jump directly to it. The same page number indicator can be found in the bottom left corner as well.</li>
+			<li><div class="icon icon-firstpage"></div> - jump to the first page of the PDF.</li>
+			<li><div class="icon icon-nextpage"></div> - go to the next page of the PDF. The same button can be found in the bottom left corner as well.</li>
+			<li><div class="icon icon-previouspage"></div> - go to the previous page of the PDF. The same button can be found in the bottom left corner as well.</li>
+			<li><div class="icon icon-lastpage"></div> - jump to the last page of the PDF.</li>
+		</ul>
+		<h4>Headings</h4>
+		<p>Click the <b>Settings</b> icon to the right of the <span class="icon icon-navigationicon"></span> <b>Headings</b> panel and use one of the available options from the menu:</p>
+		<p>
+			<img alt="NavigationPanel" src="../images/navigationpanel_viewer.png" />
+			<ul>
+				<li><b>Expand all</b> - to expand all levels of headings at the <b>Headings</b> panel.</li>
+				<li><b>Collapse all</b> - to collapse all levels of headings, excepting <em>level 1</em>, at the <b>Headings</b> panel.</li>
+				<li><b>Expand to level</b> - to expand the heading structure to the selected level. E.g., if you select <em>level 3</em>, then levels 1, 2 and 3 will be expanded, while level 4 and all lower levels will be collapsed.</li>
+				<li><b>Font size</b> – to customize font size of the <b>Headings</b> panel text by choosing one of the available presets: <em>Small</em>, <em>Medium</em>, and <em>Large</em>.</li>
+				<li><b>Wrap long headings</b> – to wrap long heading text.</li>
+			</ul>
+		<p>To manually expand or collapse separate heading levels, use the arrows to the left of the headings.</p>
+		<p>To close the <b>Headings</b> panel, click the <span class="icon icon-navigationicon"></span> <b>Headings</b> icon on the left sidebar once again.</p>
+		<h4>Page Thumbnails</h4>
+		<p>Click <span class="icon icon-search_options"></span> on the <span class="icon icon-pagethumbnails"></span> <b>Page Thumbnails</b> panel to access the <b>Thumbnails Settings</b>:</p>
+		<p><img alt="Page thumbnails settings" src="../images/pagethumbnails_settings.png" /></p>
+		<ul>
+			<li>Drag the slider to set the thumbnail size.</li>
+			<li>The <b>Highlight visible part of page</b> is active by default to indicate the area that is currently on the screen. Click it to disable.</li>
+		</ul>
+		<p>Click a page with the right mouse button to access the following options: <em>Insert blank page before</em> (the current one), <em>Insert blank page after</em> (the current one), <em>Rotate page right</em>, <em>Rotate page left</em>, <em>Delete page</em>. These options are available only in the <b>Edit PDF</b> mode.</p>
+		<p>To close the <b>Page Thumbnails panel</b>, click the <span class="icon icon-pagethumbnails"></span> <b>Page Thumbnails</b> icon on the left sidebar once again.</p>
+		<h4>Zoom</h4>
+		<p>The <b>Zoom</b> buttons are situated in the right lower corner and are used to zoom in and out of the current PDF.</p>
+		<p>
+			To change the currently selected zoom value that is displayed in percent, click it and select one of the available zoom options from the list (50% / 75% / 100% / 125% / 150% / 175% / 200% / 300% / 400% / 500%)
+			or use the <b>Zoom in</b> <span class="icon icon-zoomin"></span> or <b>Zoom out</b> <span class="icon icon-zoomout"></span> buttons. The set scaling is maintained for all files during the current session.
+		</p>
+		<p>Click the <b>Fit to width</b> <span class="icon icon-fitwidth"></span> icon to fit the document page width to the visible part of the working area.</p>
+		<p>To fit the whole document page to the visible part of the working area, click the <b>Fit to page</b> <span class="icon icon-fitpage"></span> icon.</p>
+		<p>Zoom settings are also available on the <a href="../ProgramInterface/ViewTab.htm" onclick="onhyperlinkclick(this)">View</a> tab.</p>
+	</div>
+</body>
+</html>

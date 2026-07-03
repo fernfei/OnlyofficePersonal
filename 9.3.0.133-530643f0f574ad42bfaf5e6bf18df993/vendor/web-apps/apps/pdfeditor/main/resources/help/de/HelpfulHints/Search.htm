@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Suchfunktion</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Die Beschreibung der Suchfunktion im PDF-Editor" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+			<div class="search-field">
+				<input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+			</div>
+			<h1>Suchfunktion</h1>
+			<p>Um nach den erforderlichen Zeichen, Wörtern oder Ausdrücken zu suchen, die im aktuell bearbeiteten PDF verwendet werden, klicken Sie auf das Symbol <span class="icon icon-searchicon"></span> in der linken Seitenleiste des <!--<a href="https://www.onlyoffice.com/en/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)">--><b>PDF-Editors</b><!--</a>-->, das Symbol <span class="icon icon-search_icon_header"></span> in der oberen rechten Ecke, oder verwenden Sie die Tastenkombination <em>Strg+F</em> (<em>Command+F</em> für macOS), um das kleine Suchfeld zu öffnen, oder die Tastenkombination <em>Strg+H</em>, um das vollständige Suchfenster zu öffnen.</p>
+			<p>Ein kleiner <b>Suchen</b>-Bereich öffnet sich in der oberen rechten Ecke des Arbeitsbereichs. Das Bedienfeld enthält das Textfeld zum Eingeben einer Suchanfrage, die Anzahl der Suchergebnisse sowie Steuerelemente zum Wechseln zum vorherigen oder nächsten Ergebnis und zum Schließen der Leiste.</p>
+			<p><img alt="Suchen Kleines Panel" src="../../../../../../common/main/resources/help/de/images/find_small.png" /></p>
+			<p>Um auf die erweiterten Einstellungen zuzugreifen, klicken Sie auf das Symbol <span class="icon icon-search_advanced"></span> oder verwenden Sie die Tastenkombination <em>Strg+H</em>.</p>
+			<p>Das Fenster <b>Suchen</b> wird geöffnet:</p>
+			<p><img alt="Suchen" src="../images/search_window.png" /></p>
+			<ol>
+				<li>Geben Sie Ihre Anfrage in das entsprechende Dateneingabefeld <b>Suchen</b> ein.</li>
+				<li>Um zwischen den gefundenen Vorkommen zu navigieren, klicken Sie auf eine der Pfeilschaltflächen. Die Schaltfläche <div class="icon icon-searchdownbutton"></div> zeigt das nächste Vorkommen an, während die Schaltfläche <div class="icon icon-searchupbutton"></div> das vorherige Vorkommen anzeigt.</li>
+				<li>
+					Geben Sie Suchparameter an, indem Sie die erforderlichen Optionen unter den Eingabefeldern aktivieren:
+					<ul>
+						<li>Die Option <b>Groß-/Kleinschreibung beachten</b> wird verwendet, um nur die Vorkommen zu finden, die in der gleichen Groß-/Kleinschreibung wie Ihre Anfrage eingegeben wurden (z. B. wenn Ihre Anfrage „Editor“ lautet und diese Option ausgewählt ist, werden Wörter wie „Editor“ oder „EDITOR“ usw. nicht gefunden).</li>
+						<li>Die Option <b>Nur ganze Wörter</b> wird verwendet, um nur ganze Wörter hervorzuheben.</li>
+					</ul>
+				</li>
+			</ol>
+			<p>Alle Vorkommen werden in der Datei hervorgehoben und als Liste im Bereich <b>Suchen</b> auf der linken Seite angezeigt. Verwenden Sie die Liste, um zum gewünschten Vorkommen zu springen, oder verwenden Sie die Navigationsschaltflächen <span class="icon icon-searchupbutton"></span> und <span class="icon icon-searchdownbutton"></span>.</p>
+			<!--<p>The <b>PDF Editor</b> supports search for special characters. To find a special character, enter it into the search box.</p>
+	<details class="details-example">
+		<summary>The list of special characters that can be used in searches</summary>
+		<table>
+			<tr>
+				<td><b>Special character</b></td>
+				<td><b>Description</b></td>
+			</tr>
+			<tr>
+				<td>^l</td>
+				<td>Line break</td>
+			</tr>
+			<tr>
+				<td>^t</td>
+				<td>Tab stop</td>
+			</tr>
+			<tr>
+				<td>^?</td>
+				<td>Any symbol</td>
+			</tr>
+			<tr>
+				<td>^#</td>
+				<td>Any digit</td>
+			</tr>
+			<tr>
+				<td>^$</td>
+				<td>Any letter</td>
+			</tr>
+			<tr>
+				<td>^n</td>
+				<td>Column break</td>
+			</tr>
+			<tr>
+				<td>^e</td>
+				<td>Endnote</td>
+			</tr>
+			<tr>
+				<td>^f</td>
+				<td>Footnote</td>
+			</tr>
+			<tr>
+				<td>^g</td>
+				<td>Graphic element</td>
+			</tr>
+			<tr>
+				<td>^m</td>
+				<td>Page break</td>
+			</tr>
+			<tr>
+				<td>^~</td>
+				<td>Non-breaking hyphen</td>
+			</tr>
+			<tr>
+				<td>^s</td>
+				<td>Non-breaking space</td>
+			</tr>
+			<tr>
+				<td>^^</td>
+				<td>Escaping the caret itself</td>
+			</tr>
+			<tr>
+				<td>^w</td>
+				<td>Any space</td>
+			</tr>
+			<tr>
+				<td>^+</td>
+				<td>Em dash</td>
+			</tr>
+			<tr>
+				<td>^=</td>
+				<td>En dash</td>
+			</tr>
+			<tr>
+				<td>^y</td>
+				<td>Any dash</td>
+			</tr>
+		</table>
+	</details>
+	<details class="details-example">
+		<summary>Special characters that may be used for replacement too:</summary>
+		<table>
+			<tr>
+				<td><b>Special character</b></td>
+				<td><b>Description</b></td>
+			</tr>
+			<tr>
+				<td>^l</td>
+				<td>Line break</td>
+			</tr>
+			<tr>
+				<td>^t</td>
+				<td>Tab stop</td>
+			</tr>
+			<tr>
+				<td>^n</td>
+				<td>Column break</td>
+			</tr>
+			<tr>
+				<td>^m</td>
+				<td>Page break</td>
+			</tr>
+			<tr>
+				<td>^~</td>
+				<td>Non-breaking hyphen</td>
+			</tr>
+			<tr>
+				<td>^s</td>
+				<td>Non-breaking space</td>
+			</tr>
+			<tr>
+				<td>^+</td>
+				<td>Em dash</td>
+			</tr>
+			<tr>
+				<td>^=</td>
+				<td>En dash</td>
+			</tr>
+		</table>
+	</details>-->
+
+		</div>
+	</body>
+</html>

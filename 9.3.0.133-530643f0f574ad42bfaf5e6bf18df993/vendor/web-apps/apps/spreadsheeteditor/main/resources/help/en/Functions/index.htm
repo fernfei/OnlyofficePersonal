@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>INDEX Function</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>INDEX Function</h1>
+			<p>The <b>INDEX</b> function is one of the <a href="../UsageInstructions/InsertFunction.htm#lookupreference" onclick="onhyperlinkclick(this)">lookup and reference functions</a>. It is used to return a value within a range of cells on the base of a specified row and column number. The <b>INDEX</b> function has two forms. <!--The array form is used to return a value within a single range of cells. The reference form is used to return a value within an array that contains several ranges of cells.--></p>
+			<p>The <b>INDEX</b> function syntax in the array form is:</p> 
+			<p><b><em>INDEX(array, row_num, [column_num])</em></b></p>
+            <p>The <b>INDEX</b> function has the following arguments:</p> 
+            <table style="width: 40%">
+                <tr>
+                    <th style="background-color: #f4f4f4" width="150ch"><b>Argument</b></th>
+                    <th style="background-color: #f4f4f4"><b>Description</b></th>
+                </tr>
+                <tr>
+                    <td><b><em>array</em></b></td>
+                    <td>A range of cells.</td>
+                </tr>
+				<tr>
+                    <td><b><em>row_num</em></b></td>
+                    <td>A row number you wish to return a value from. If it is omitted, <em><b>column_num</b></em> is required.</td>
+                </tr>
+				<tr>
+                    <td><b><em>column_num</em></b></td>
+                    <td>A column number you wish to return a value from. If it is omitted, <em><b>row_num</b></em> is required.</td>
+                </tr>
+            </table>
+
+            <p>The <b>INDEX</b> function syntax in the reference form is:</p>
+            <p><b><em>INDEX(reference, row_num, [column_num], [area_num])</em></b></p>
+            <p>The <b>INDEX</b> function has the following arguments:</p>
+            <table style="width: 40%">
+                <tr>
+                    <th style="background-color: #f4f4f4" width="150ch"><b>Argument</b></th>
+                    <th style="background-color: #f4f4f4"><b>Description</b></th>
+                </tr>
+                <tr>
+                    <td><b><em>reference</em></b></td>
+                    <td>A reference to a range of cells<!--or several ranges enclosed in parentheses and separated by commas-->.</td>
+                </tr>
+                <tr>
+                    <td><b><em>row_num</em></b></td>
+                    <td>A row number you wish to return a value from. If it is omitted, <em><b>column_num</b></em> is required.</td>
+                </tr>
+                <tr>
+                    <td><b><em>column_num</em></b></td>
+                    <td>A column number you wish to return a value from. If it is omitted, <em><b>row_num</b></em> is required.</td>
+                </tr>
+                <tr>
+                    <td><b><em>area_num</em></b></td>
+                    <td>An area to use in case the array contains several ranges. It is an optional argument. If it is omitted, the function will assume <b><em>area_num</em></b> to be 1.</td>
+                </tr>
+            </table>
+			
+			<h3>Notes</h3>
+            <p>Please note that this is an array formula. To learn more, please read the <a href="../UsageInstructions/InsertArrayFormulas.htm" onclick="onhyperlinkclick(this)">Insert array formulas</a> article.</p>
+			<p><a href="../UsageInstructions/InsertFunction.htm#applyfunction" onclick="onhyperlinkclick(this)">How to apply</a> the <b>INDEX</b> function.</p>
+			
+			<h3>Examples</h3>
+            <p>The figure below displays the result returned by the <b>INDEX</b> function.</p>
+			<p><img alt="INDEX Function" src="../images/index_1.png" /></p>
+		</div>
+	</body>
+</html>

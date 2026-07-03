@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>HAFTASAY İşlevi</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>HAFTASAY İşlevi</h1>
+			<p><b>HAFTASAY</b> işlevi, tarih ve saat işlevlerinden biridir. Belirtilen tarihin yıl i&ccedil;inde denk geldiği hafta sayısını vermek i&ccedil;in kullanılır.</p>
+			<p><b>HAFTASAY</b> işlevi s&ouml;z dizimi ş&ouml;yledir:</p> 
+			<p style="text-indent: 150px;"><b><em>HAFTASAY(seri_numarası, [d&ouml;nd&uuml;r_t&uuml;r&uuml;])</em></b></p> 
+			<p><em>Burada</em></p> 
+			<p style="text-indent: 50px;"><b><em>seri_numarası,</em></b> <a href="Date.htm" onclick="onhyperlinkclick(this)">Tarih</a> işlevi veya başka bir tarih ve saat işlevi kullanılarak girilen, hafta i&ccedil;indeki tarihi temsil eden sayıdır.</p>
+			<p style="text-indent: 50px;"><b><em>d&ouml;nd&uuml;r_t&uuml;r&uuml;,</em></b> haftanın hangi g&uuml;n başladığını belirlemek i&ccedil;in kullanılan sayısal bir değerdir. Aşağıdakilerden biri olabilir:</p>
+			<table style="width: 40%">
+				<tr>
+					<td><b>Sayısal değer</b></td>
+					<td><b>Haftanın başlangı&ccedil; g&uuml;n&uuml;</b></td>
+                    <td><b>Sistem</b></td>
+				</tr>
+				<tr>
+					<td>1 veya atlanır</td>
+					<td>Pazar</td>
+                    <td>1</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Pazartesi</td>
+                    <td>1</td>
+				</tr>
+                <tr>
+                    <td>11</td>
+                    <td>Pazartesi</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Salı</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>&Ccedil;arşamba</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Perşembe</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Cuma</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>Cumartesi</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>Pazar</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>21</td>
+                    <td>Pazartesi</td>
+                    <td>2</td>
+                </tr>
+			</table>
+            <p><b><em>D&ouml;nd&uuml;r_t&uuml;r&uuml;</em></b> 1-17 olarak ayarlandığında, <b>Sistem 1</b> kullanılır. Bu, bir yılın ilk haftasının 1 Ocak&apos;ı i&ccedil;eren hafta olduğu anlamına gelir.</p>
+            <p><b><em>D&ouml;nd&uuml;r_t&uuml;r&uuml;</em></b> 21 olarak ayarlandığında, <b>Sistem 2</b> kullanılır. Bu, bir yılın ilk haftasının, yılın ilk Perşembe g&uuml;n&uuml;n&uuml; i&ccedil;eren hafta olduğu anlamına gelir. Sistem 2, ISO 8601 standardına g&ouml;re Avrupa&apos;da yaygın olarak kullanılmaktadır.</p>
+			<p><b>HAFTASAY</b> işlevini uygulamak i&ccedil;in</p>
+			<ol>
+			<li>Sonucu g&ouml;r&uuml;nt&uuml;lemek istediğiniz h&uuml;creyi se&ccedil;in,</li>
+			<li>&Uuml;st ara&ccedil; &ccedil;ubuğunda bulunan <b>İşlev ekle</b> <div class = "icon icon-insertfunction"></div> simgesine tıklayın
+                <br />veya se&ccedil;ilen bir h&uuml;crenin i&ccedil;ine sağ tıklayın ve men&uuml;den <b>İşlev Ekle</b> se&ccedil;eneğini se&ccedil;in
+                <br />veya<div class = "icon icon-function"></div>form&uuml;l &ccedil;ubuğunda bulunan simgeye tıklayın,
+            </li>
+			<li>Listeden <b>Tarih ve saat</b> işlev grubunu se&ccedil;in,</li>
+			<li><b>HAFTASAY</b> işlevine tıklayın,</li>
+			<li>Virg&uuml;lle ayırarak gerekli bağımsız değişkenleri girin,</li>
+			<li><b>Enter</b> d&uuml;ğmesine basın.</li>
+			</ol>
+			<p>Sonu&ccedil; se&ccedil;ili h&uuml;crede g&ouml;r&uuml;nt&uuml;lenecektir.</p>
+			<p style="text-indent: 150px;"><img alt="HAFTASAY İşlevi" src="../images/weeknum.png" /></p>
+		</div>
+	</body>
+</html>
