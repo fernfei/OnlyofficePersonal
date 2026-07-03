@@ -4,7 +4,7 @@
 
 ONLYOFFICE running offline, entirely in the browser. It uses `x2t.wasm` for document conversion, so there is no Document Server and no backend of any kind — open a static page and you can edit Word, Excel, PowerPoint and PDF files, with everything staying on your machine.
 
-[中文](README.md) ｜ [Live Demo](https://fernfei.github.io/OnlyofficePersonal/office.html)
+[中文](README.md) ｜ [Live Demo](https://fernfei.github.io/office.html)
 
 ![Main interface](docs/imgs/img.png)
 

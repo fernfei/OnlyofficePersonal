@@ -4,7 +4,7 @@
 
 在浏览器里跑的离线版 ONLYOFFICE。基于 `x2t.wasm` 做文档转换，不需要 Document Server，也不需要任何后端——打开一个静态页面就能编辑 Word、Excel、PPT 和 PDF，文件全程留在本地。
 
-[English](README_EN.md) ｜ [在线体验](https://fernfei.github.io/OnlyofficePersonal/office.html)
+[English](README_EN.md) ｜ [在线体验](https://fernfei.github.io/office.html)
 
 ![主界面](docs/imgs/img.png)
 
