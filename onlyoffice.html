@@ -238,6 +238,22 @@
         streamFallback = (docConfig && docConfig.streamFallback) || 'autosave';
         if (docConfig) { delete docConfig.streamFallback; }
         docConfig = normalizeConfig(docConfig);
+
+        // 注册文档 URL 到 Service Worker（PDF 编辑器需要通过 /downloadfile/<key> 加载）
+        if (docConfig.document && docConfig.document.key && docConfig.document.url && 'serviceWorker' in navigator) {
+            navigator.serviceWorker.ready.then(function(registration) {
+                if (registration.active) {
+                    registration.active.postMessage({
+                        type: 'register-document-url',
+                        key: docConfig.document.key,
+                        url: docConfig.document.url
+                    });
+                }
+            }).catch(function(e) {
+                console.warn('Failed to register document URL to SW:', e);
+            });
+        }
+
         // 事件回调含函数，无法经 postMessage 传入，统一在 iframe 内注入
         docConfig.events = docConfig.events || {};
         docConfig.events.onDocumentReady = onDocumentReady;

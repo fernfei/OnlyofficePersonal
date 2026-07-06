@@ -96,8 +96,43 @@ self.addEventListener('activate', (event) => {
 	event.waitUntil(activateWorker());
 });
 
+// 存储 document key -> URL 的映射（用于 PDF 编辑器的 /downloadfile/<key> 请求）
+let g_documentUrlMap = {};
+
+self.addEventListener('message', function(event) {
+	const data = event.data;
+	if (data && data.type === 'register-document-url') {
+		// 注册或更新文档 URL 映射
+		g_documentUrlMap[data.key] = data.url;
+	} else if (data && data.type === 'unregister-document-url') {
+		// 清理映射
+		delete g_documentUrlMap[data.key];
+	}
+});
+
 self.addEventListener('fetch', (event) => {
 	let request = event.request;
+
+	// 拦截 PDF 编辑器的 /downloadfile/<key> 请求，代理到实际的 document.url
+	if (request.url.indexOf('/downloadfile/') > -1) {
+		event.respondWith(
+			new Promise(function(resolve) {
+				const key = request.url.split('/downloadfile/').pop().split('?')[0];
+				const url = g_documentUrlMap[key];
+				if (url) {
+					fetch(url).then(resolve).catch(function(err) {
+						console.error('Failed to fetch document:', err);
+						resolve(new Response('Document not found', { status: 404 }));
+					});
+				} else {
+					console.warn('No URL mapping for key:', key);
+					resolve(new Response('No URL mapping', { status: 404 }));
+				}
+			})
+		);
+		return;
+	}
+
 	if (request.method !== "GET" || !patternPrefix.test(request.url)) {
 		return;
 	}
