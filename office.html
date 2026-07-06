@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ONLYOFFICE Personal</title>
     <link rel="icon" href="./assets/favicon.ico" type="image/x-icon"/>
+    <script src="./assets/office-config.js"></script>
     <style>
         * {
             margin: 0;
@@ -474,11 +475,7 @@
 
     // 后缀 -> documentType
     function documentTypeOf(ext) {
-        ext = (ext || '').toLowerCase()
-        if (['xls', 'xlsx', 'xlsm', 'ods', 'csv'].includes(ext)) return 'cell'
-        if (['ppt', 'pptx', 'odp', 'pps', 'ppsx'].includes(ext)) return 'slide'
-        if (['pdf', 'oxps', 'xps', 'djvu'].includes(ext)) return 'pdf'
-        return 'word'
+        return OfficeConfig.documentTypeOf(ext)
     }
 
     const BADGES = {
@@ -615,7 +612,7 @@
         // PDF 需要空白模板作基底，其余类型编辑器支持无 url 新建
         if (ext === 'pdf') {
             try {
-                const resp = await fetch('./assets/empty-plain.pdf')
+                const resp = await fetch('./assets/empty.pdf')
                 record.blob = await resp.blob()
                 record.size = record.blob.size
             } catch (e) {
@@ -724,31 +721,39 @@
         document.getElementById('editorOverlay').classList.add('show')
     }
 
-    function pushConfig() {
+    async function binaryOpenBuffer(config, record) {
+        if (!config.localOpenFromBinary) return null
+        if (!record.blob) throw new Error('本地文档缺少文件内容')
+        return record.blob.arrayBuffer()
+    }
+
+    async function pushConfig() {
         const s = session
         if (!s) return
-        const docType = documentTypeOf(s.record.fileType)
-        const docCfg = {
-            url: s.blobUrl || undefined,
-            title: s.record.name,
-            fileType: s.record.fileType,
-            key: s.record.id + '-' + (s.record.updatedAt || 0),
-            permissions: { edit: true, download: true, print: true }
-        }
-        // PDF 需要 directUrl 避免 404 错误；
-        // 设置 isForm:true 强制走 Word 编辑器（documenteditor），因为 PDF 编辑器在离线环境下无法正常加载
-        if (docType === 'pdf' && s.blobUrl) {
-            docCfg.directUrl = s.blobUrl
-            docCfg.isForm = true
-        }
-        s.frame.contentWindow.postMessage({
+        const docConfig = OfficeConfig.buildOnlyofficeConfig({
+            record: s.record,
+            blobUrl: s.blobUrl
+        })
+        const openBuffer = await binaryOpenBuffer(docConfig, s.record)
+        const message = {
             type: 'onlyoffice-config',
-            docConfig: {
-                document: docCfg,
-                documentType: docType,
-                editorConfig: { mode: 'edit', lang: 'zh-CN' }
-            }
-        }, '*')
+            docConfig: docConfig
+        }
+        const transfer = []
+        if (openBuffer) {
+            message.openBuffer = openBuffer
+            transfer.push(openBuffer)
+        }
+        s.frame.contentWindow.postMessage(message, '*', transfer)
+    }
+
+    function reportEditorOpenError(error) {
+        console.error(error)
+        toast('打开失败：' + ((error && error.message) || error))
+    }
+
+    function pushConfigSafely() {
+        pushConfig().catch(reportEditorOpenError)
     }
 
     // 触发保存，取回编辑后的文件流（ArrayBuffer -> Blob）
@@ -823,7 +828,10 @@
 
         switch (d.type) {
             case 'onlyoffice-ready':          // iframe 就绪 -> 注入文档配置
-                pushConfig()
+                pushConfigSafely()
+                break
+            case 'onlyoffice-open-error':
+                toast('打开失败：' + (d.error || '未知错误'))
                 break
             case 'onlyoffice-saved': {        // 保存结果（带 requestId）或自动保存流
                 const p = d.requestId && s.pending[d.requestId]
