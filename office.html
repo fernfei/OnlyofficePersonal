@@ -615,7 +615,7 @@
         // PDF 需要空白模板作基底，其余类型编辑器支持无 url 新建
         if (ext === 'pdf') {
             try {
-                const resp = await fetch('./assets/empty.pdf')
+                const resp = await fetch('./assets/empty-plain.pdf')
                 record.blob = await resp.blob()
                 record.size = record.blob.size
             } catch (e) {
@@ -727,17 +727,25 @@
     function pushConfig() {
         const s = session
         if (!s) return
+        const docType = documentTypeOf(s.record.fileType)
+        const docCfg = {
+            url: s.blobUrl || undefined,
+            title: s.record.name,
+            fileType: s.record.fileType,
+            key: s.record.id + '-' + (s.record.updatedAt || 0),
+            permissions: { edit: true, download: true, print: true }
+        }
+        // PDF 需要 directUrl 避免 404 错误；
+        // 设置 isForm:true 强制走 Word 编辑器（documenteditor），因为 PDF 编辑器在离线环境下无法正常加载
+        if (docType === 'pdf' && s.blobUrl) {
+            docCfg.directUrl = s.blobUrl
+            docCfg.isForm = true
+        }
         s.frame.contentWindow.postMessage({
             type: 'onlyoffice-config',
             docConfig: {
-                document: {
-                    url: s.blobUrl || undefined,
-                    title: s.record.name,
-                    fileType: s.record.fileType,
-                    key: s.record.id + '-' + (s.record.updatedAt || 0),
-                    permissions: { edit: true, download: true, print: true }
-                },
-                documentType: documentTypeOf(s.record.fileType),
+                document: docCfg,
+                documentType: docType,
                 editorConfig: { mode: 'edit', lang: 'zh-CN' }
             }
         }, '*')

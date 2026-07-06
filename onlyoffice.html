@@ -223,12 +223,12 @@
         if (!docConfig.document.title) {
             docConfig.document.title = '文档.' + (docConfig.document.fileType || 'docx');
         }
-        // 打开 PDF 时编辑器会调用 checkExtendedPDF 探测是否为表单 PDF：
-        // 有 directUrl 则直接 fetch，否则回退到服务器端路由 /downloadfile/<key>（离线版没有该路由，会 404）。
-        // 离线版 document.url 本身可直接 fetch（blob/直链），补成 directUrl 即可避开 404。
+        // PDF 离线加载修复：directUrl 避免探测阶段 404（探测默认走 /downloadfile/<key>，离线版无此路由）
         if (!docConfig.document.directUrl && docConfig.document.url) {
             docConfig.document.directUrl = docConfig.document.url;
         }
+        // 注意：不设置 isForm，让 SDK 自然探测并路由到正确编辑器。
+        // 探测页 common/index.html 在某些情况下有 bug（不通知重定向），但加了 directUrl 后应该能正常工作。
         if (docConfig.height == null) docConfig.height = '100%';
         if (docConfig.width == null) docConfig.width = '100%';
         return docConfig;
