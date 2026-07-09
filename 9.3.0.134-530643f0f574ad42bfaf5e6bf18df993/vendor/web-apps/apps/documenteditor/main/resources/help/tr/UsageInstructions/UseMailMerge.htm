@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Adres-Mektup Birleştirmeyi Kullanma</title>
+		<meta charset="utf-8" />
+        <meta name="description" content="Use Mail Merge to create a lot of personalized letters and send them to recipients" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Adres-Mektup Birleştirmeyi Kullanma</h1>
+            <p class="note"><b>Not</b>: Bu se&ccedil;enek yalnızca <em>&ccedil;evrimi&ccedil;i s&uuml;r&uuml;mde</em> mevcuttur.</p>
+			<p><b>Adres-Mektup Birleştirme</b> &ouml;zelliği, bir metin belgesinden alınan ortak bir i&ccedil;eriği ve bir elektronik tablodan (&ouml;rneğin bir m&uuml;şteri listesi) alınan bazı &ouml;zel bileşenleri (adlar, tebrikler vb. gibi değişkenler) birleştiren bir belge grubu oluşturmak i&ccedil;in kullanılır. &Ccedil;ok sayıda kişiselleştirilmiş mektup oluşturmanız ve bunları alıcılara g&ouml;ndermeniz gerekiyorsa yararlı olabilir.</p>
+        <ul>
+            <li><b>Bir veri kaynağı hazırlayın ve ana belgeye y&uuml;kleyin</b>
+            <ol>
+                <li>Adres-mektup birleştirme i&ccedil;in kullanılan bir veri kaynağı, portalınızda depolanan <b>.xlsx</b> bi&ccedil;imli elektronik bir tablo olmalıdır. Mevcut bir elektronik tabloyu a&ccedil;ın veya yeni bir elektronik tablo oluşturun ve aşağıdaki gereksinimleri karşıladığından emin olun.
+                <li>Her s&uuml;tunun ilk h&uuml;cresindeki değerler birleştirme alanlarını (yani metne ekleyebileceğiniz değişkenleri) belirleyeceğinden, elektronik tablonun s&uuml;tun başlıklarını i&ccedil;eren bir başlık satırı olmalıdır. Her s&uuml;tun, bir değişken i&ccedil;in bir dizi ger&ccedil;ek değer i&ccedil;ermelidir. Elektronik tablodaki her satır ayrı bir kayda (yani, belirli bir alıcıya ait bir dizi değere) karşılık gelmelidir. Birleştirme işlemi sırasında, her kayıt i&ccedil;in ana belgenin bir kopyası oluşturulacak ve ana metne eklenen her birleştirme alanı, ilgili s&uuml;tundaki ger&ccedil;ek değerle değiştirilecektir. Sonu&ccedil;ları e-posta ile g&ouml;nderecekseniz, elektronik tabloda ayrıca alıcıların e-posta adreslerini i&ccedil;eren bir s&uuml;tun bulunmalıdır.</li>
+                <li>
+                    Mevcut bir metin belgesini a&ccedil;ın veya yeni bir tane oluşturun. Birleştirilen belgenin her s&uuml;r&uuml;m&uuml; i&ccedil;in aynı olacak ana metni i&ccedil;ermelidir. &Uuml;st ara&ccedil; &ccedil;ubuğunda bulunan <b>Giriş</b> sekmesindeki <div class = "icon icon-mailmergeicon"></div> <b>Adres-Mektup Birleştirme</b> simgesine tıklayın ve veri kaynağı konumunu se&ccedil;in: <b>Dosyadan</b>, <b>URL&apos;den</b> veya <b>Bellekten</b>.
+                    <p><img alt="Adres-Mektup Birleştirme Seçenekleri" src="../images/mailmerge_options.png" /></p>
+                </li>
+                <li>
+                    Gerekli dosyayı se&ccedil;in veya bir URL yapıştırın ve <b>Tamam</b> d&uuml;ğmesine tıklayın.
+                    <p>Veri kaynağı y&uuml;klendikten sonra, <b>Adres-Mektup Birleştirme ayarlama</b> sekmesi sağ kenar &ccedil;ubuğunda olacaktır.</p>
+                    <p><img alt="Adres-Mektup Birleştirme ayarlama sekmesi" src="../images/right_mailmerge.png" /></p>
+                </li>
+            </ol>
+                <li><b>Alıcı listesini doğrulayın veya değiştirin</b>
+                <ol>
+                    <li>Se&ccedil;ilen veri kaynağının i&ccedil;eriğinin g&ouml;r&uuml;nt&uuml;lendiği <b>Adres-Mektup Birleştirme Alıcıları</b> penceresini a&ccedil;mak i&ccedil;in sağ kenar &ccedil;ubuğunun &uuml;st kısmındaki <b>Alıcı listesini d&uuml;zenle</b> d&uuml;ğmesine tıklayın.
+                    <p><img alt="Adres-Mektup Birleştirme Alıcıları penceresi" src="../images/mailmergerecipients.png" /></p>
+                    </li>
+                    <li>
+                        A&ccedil;ılan pencerede yeni bilgiler ekleyebilir, mevcut verileri d&uuml;zenleyebilir veya gerekirse silebilirsiniz. Verilerle &ccedil;alışmayı basitleştirmek i&ccedil;in pencerenin &uuml;st kısmındaki simgeleri kullanabilirsiniz:
+                        <ul>
+                            <li><div class = "icon icon-copy"></div> ve <div class = "icon icon-paste"></div> - kopyalanan verileri kopyalayıp yapıştırmak i&ccedil;in</li>
+                            <li><div class = "icon icon-undo1"></div> ve <div class = "icon icon-redo1"></div> - eylemleri geri almak ve geri alınan eylemleri yeniden yapmak i&ccedil;in</li>
+                            <li><div class = "icon icon-sortatoz"></div> ve <div class = "icon icon-sortztoa"></div> - verilerinizi se&ccedil;ilen bir h&uuml;cre aralığında artan veya azalan d&uuml;zende sıralamak i&ccedil;in</li>
+                            <li><div class = "icon icon-sortandfilter"></div> - &ouml;nceden se&ccedil;ilen h&uuml;cre aralığı i&ccedil;in filtreyi etkinleştirmek veya uygulanan filtreyi kaldırmak i&ccedil;in</li>
+                            <li>
+                                <div class = "icon icon-clearfilter"></div> - uygulanan t&uuml;m filtre parametrelerini temizlemek i&ccedil;in
+                                <p class="note"><b>Not</b>: filtrenin nasıl kullanılacağı hakkında daha fazla bilgi edinmek i&ccedil;in l&uuml;tfen <b>Elektronik Tablo D&uuml;zenleyicisi</b> yardımının <b>Verileri sıralama ve filtreleme</b> b&ouml;l&uuml;m&uuml;ne bakın.</p>
+                            </li>
+                            <li>
+                                <div class = "icon icon-searchicon"></div> - belirli bir değeri aramak ve gerekirse başka bir değerle değiştirmek i&ccedil;in
+                                <p class="note"><b>Not</b>: Bul ve Değiştir aracının nasıl kullanılacağı hakkında daha fazla bilgi edinmek i&ccedil;in l&uuml;tfen <b>Elektronik Tablo D&uuml;zenleyicisi</b> yardımının <b>Arama ve Değiştirme İşlevleri</b> b&ouml;l&uuml;m&uuml;ne bakın.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Gerekli t&uuml;m değişiklikler yapıldıktan sonra, <b>Kaydet ve &Ccedil;ık</b> d&uuml;ğmesine tıklayın. Değişiklikleri iptal etmek i&ccedil;in <b>Kapat</b> d&uuml;ğmesine tıklayın.</li>
+                </ol>
+                </li>
+                <li><b>Birleştirme alanları ekleme ve sonu&ccedil;ları kontrol etme</b>
+                <ol>
+                    <li>Fare imlecini birleştirme alanının eklenmesi gereken yere getirin, sağ kenar &ccedil;ubuğundaki <b>Birleştirme Alanı Ekle</b> d&uuml;ğmesine tıklayın ve listeden gerekli alanı se&ccedil;in. Kullanılabilir alanlar, se&ccedil;ilen veri kaynağının her s&uuml;tununun ilk h&uuml;cresindeki verilere karşılık gelir. Gerekli t&uuml;m alanlar herhangi bir yere eklenebilir.
+                        <p><img alt="Alanları Birleştir bölümü" src="../images/mergefields.png" /></p>
+                    </li>
+                    <li>Eklenen alanları metinde daha belirgin hale getirmek i&ccedil;in sağ kenar &ccedil;ubuğundaki <b>Birleştirme alanlarını vurgula</b> değiştiricisini a&ccedil;ın.
+                        <p><img alt="Eklenen alanlara sahip ana belge" src="../images/insertedfields.png" /></p>
+                    </li>
+                    <li>Veri kaynağından alınan ger&ccedil;ek değerlerle değiştirilen birleştirme alanlarının bulunduğu metni g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in sağ kenar &ccedil;ubuğundaki <b>Sonu&ccedil;ları &ouml;nizle</b> değiştiricisini a&ccedil;ın. Her kayıt i&ccedil;in birleştirilmiş belgenin s&uuml;r&uuml;mlerini &ouml;nizlemek i&ccedil;in ok d&uuml;ğmelerini kullanın.
+                        <p><img alt="Sonuçları önizle" src="../images/previewinsertedfields.png" /></p>
+                    </li>
+                </ol>
+                <ul>
+                    <li>Eklenen bir alanı silmek i&ccedil;in <b>Sonu&ccedil;ları &ouml;nizle</b> modunu devre dışı bırakın, fare ile alanı se&ccedil;in ve klavyede <b>Delete</b> tuşuna basın.</li>
+                    <li>Eklenen bir alanı değiştirmek i&ccedil;in <b>Sonu&ccedil;ları &ouml;nizle</b> modunu devre dışı bırakın, fare ile alanı se&ccedil;in, sağ kenar &ccedil;ubuğundaki <b>Birleştirme Alanı Ekle</b> d&uuml;ğmesine tıklayın ve listeden yeni bir alan se&ccedil;in.</li>
+                </ul>
+                </li>
+                <li><b>Birleştirme parametrelerini belirleme</b>
+                <ol>
+                    <li>Birleştirme t&uuml;r&uuml;n&uuml; se&ccedil;in. Toplu posta g&ouml;ndermeye başlayabilir veya sonucu daha sonra yazdırmak veya d&uuml;zenlemek i&ccedil;in PDF veya Docx dosyası olarak kaydedebilirsiniz. <b>Birleştir</b> listesinden gerekli se&ccedil;eneği se&ccedil;in:
+                        <p><img alt="Birleştirme türü seçimi" src="../images/mergeto.png" /></p>
+                        <ul>
+                            <li>Daha sonra yazdırılabilecek t&uuml;m birleştirilmiş kopyaları i&ccedil;eren tek bir PDF belgesi oluşturmak i&ccedil;in <b>PDF</b></li>
+                            <li>Daha sonra ayrı ayrı d&uuml;zenlenebilecek t&uuml;m birleştirilmiş kopyaları i&ccedil;eren tek bir Docx belgesi oluşturmak i&ccedil;in <b>Docx</b></li>
+                            <li>
+                                Sonu&ccedil;ları e-posta ile alıcılara g&ouml;ndermek i&ccedil;in <b>E-posta</b>
+                                <p class="note"><b>Not</b>: Alıcıların e-posta adresleri, y&uuml;klenen veri kaynağında belirtilmelidir ve portalınızdaki <b>Posta</b> mod&uuml;l&uuml;nde en az bir e-posta hesabınızın bağlı olması gerekir.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Uygulanacak t&uuml;m gerekli kayıtları se&ccedil;in:
+                        <ul>
+                            <li>Y&uuml;klenen veri kaynağından t&uuml;m kayıtlar i&ccedil;in birleştirilmiş belgeler oluşturmak i&ccedil;in <b>T&uuml;m kayıtlar</b> (bu se&ccedil;enek varsayılan olarak se&ccedil;ilidir)</li>
+                            <li>Şu anda g&ouml;r&uuml;nt&uuml;lenen kayıt i&ccedil;in birleştirilmiş bir belge oluşturmak i&ccedil;in <b>Mevcut kayıt</b></li>
+                            <li>
+                                Bir kayıt aralığı i&ccedil;in birleştirilmiş belgeler oluşturmak i&ccedil;in <b>G&ouml;nderen</b> ... <b>Alıcı</b> (bu durumda istenen aralıktaki ilk kaydın numarası ve son kayıt olmak &uuml;zere iki değer belirtmeniz gerekir)
+                                <p class="note"><b>Not</b>: İzin verilen maksimum alıcı sayısı 100&apos;d&uuml;r. Veri kaynağınızda 100&apos;den fazla alıcı varsa, l&uuml;tfen adres-mektup birleştirmeyi aşamalı olarak ger&ccedil;ekleştirin: 1&apos;den 100&apos;e kadar olan değerleri belirtin, adres-mektup birleştirme işlemi bitene kadar bekleyin, ardından 101&apos;den N&apos;ye vb. kadar olan değerleri belirterek işlemi tekrarlayın.</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Birleştirmeyi tamamlama
+                        <ul>
+                            <li>Birleştirme sonu&ccedil;larını bir dosya olarak kaydetmeye karar verdiyseniz,
+                            <ul>
+                                <li>Dosyayı bilgisayarınıza kaydetmek i&ccedil;in <b>İndir</b> d&uuml;ğmesine tıklayın. İndirilen dosyayı varsayılan <em>İndirilenler</em> klas&ouml;r&uuml;nde bulabilirsiniz.</li>
+                                <li>Dosyayı portalınıza kaydetmek i&ccedil;in <b>Kaydet</b> d&uuml;ğmesine tıklayın. A&ccedil;ılan <b>Kaydedilecek klas&ouml;r</b> penceresinde, dosya adını değiştirebilir ve dosyayı kaydetmek istediğiniz klas&ouml;r&uuml; belirtebilirsiniz. Ayrıca birleştirme işlemi bittiğinde sonucu kontrol etmek i&ccedil;in <b>Birleştirilmiş belgeyi yeni sekmede a&ccedil;</b> kutusunu da işaretleyebilirsiniz. Son olarak <b>Kaydedilecek klas&ouml;r</b> penceresinde <b>Kaydet</b> se&ccedil;eneğine tıklayın.</li>
+                            </ul>
+                            </li>
+                            <li><b>E-posta</b> se&ccedil;eneğini se&ccedil;tiyseniz, <b>Birleştir</b> d&uuml;ğmesi sağ kenar &ccedil;ubuğunda bulunacaktır. Tıkladıktan sonra <b>E-postaya G&ouml;nder</b> penceresi a&ccedil;ılır:
+                                <p><img alt="E-postaya Gönder penceresi" src="../images/sendtoemail.png" /></p>
+                            <ul>
+                                <li><b>G&ouml;nderen</b> listesinde, <b>Posta</b> mod&uuml;l&uuml;ne bağlı birka&ccedil; hesabınız varsa, gerekli posta hesabını se&ccedil;in.</li>
+                                <li><b>Alıcı</b> listesinde, bu se&ccedil;enek otomatik olarak se&ccedil;ilmemişse, alıcıların e-posta adreslerine karşılık gelen birleştirme alanını se&ccedil;in.</li>
+                                <li>Mesaj konunuzu <b>Konu Satırı</b> alanına girin.</li>
+                                <li>Listeden posta bi&ccedil;imini se&ccedil;in: <b>HTML</b>, <b>DOCX olarak ekle</b> veya <b>PDF olarak ekle</b>. Son iki se&ccedil;enekten biri se&ccedil;ildiğinde, ayrıca ekler i&ccedil;in <b>Dosya adı</b> belirtmeniz ve <b>İletiyi</b> (alıcılara g&ouml;nderilecek mektubunuzun metni) girmeniz gerekir.</li>
+                                <li><b>G&ouml;nder</b> d&uuml;ğmesine tıklayın.</li>
+                            </ul>
+                            <p>Postalama bittiğinde, <b>G&ouml;nderen</b> alanında belirtilen e-posta adresinize bir bildirim alacaksınız.</p>
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+                </li>
+            </ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Slaytları y&ouml;netme</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Add new blank slides, duplicate, move or delete them" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Slaytları y&ouml;netme</h1>
+			<p>Varsayılan olarak, yeni oluşturulan bir sunuda boş bir <em>Başlık Slaytı</em> bulunur. <a target="_blank" href="https://www.onlyoffice.com/presentation-editor.aspx" onclick="onhyperlinkclick(this)"><b>Sunu D&uuml;zenleyicide</b></a>, yeni slaytlar oluşturabilir, slayt listesinde başka bir yere yapıştırmak i&ccedil;in bir slaytı kopyalayabilir, slaytları &ccedil;oğaltabilir, sıralarını değiştirmek i&ccedil;in slaytları taşıyabilir, gereksiz slaytları silebilir ve bazı slaytları gizli olarak işaretleyebilirsiniz.</p>
+			<p><b>Yeni bir <em>Başlık ve İ&ccedil;erik</em> slaytı oluşturmak i&ccedil;in:</b></p>
+			<ul>
+				<li>&Uuml;st ara&ccedil; &ccedil;ubuğundaki <div class = "icon icon-addslide"></div> <b>Giriş</b> veya <b>Ekle</b> sekmesindeki simgenin yanındaki <b>Slayt Ekle</b> simgesine veya</li>
+				<li>Listedeki herhangi bir slayta sağ tıklayın ve bağlamsal men&uuml;den <b>Yeni Slayt</b> se&ccedil;eneğini se&ccedil;in veya</li>
+                <li><b>Ctrl+M</b> tuş kombinasyonunu kullanın.</li>
+			</ul>
+            <p><b>Farklı bir d&uuml;zende yeni bir slayt oluşturmak i&ccedil;in:</b></p>
+            <ol>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğundaki <div class = "icon icon-addslide"></div> <b>Giriş</b> veya <b>Ekle</b> sekmesindeki simgenin <b>Slayt Ekle</b> simgesine tıklayın,</li>
+                <li>
+                    Men&uuml;den gerekli d&uuml;zende bir slayt se&ccedil;in.
+                    <p class="note"><b>Not</b>: Eklenen slaytın d&uuml;zenini istediğiniz zaman değiştirebilirsiniz. Bunun nasıl yapılacağı hakkında ek bilgi i&ccedil;in l&uuml;tfen <a href="../UsageInstructions/SetSlideParameters.htm#changelayout" onclick="onhyperlinkclick(this)">Slayt parametrelerini ayarla</a> b&ouml;l&uuml;m&uuml;ne bakın.</p>
+                </li>
+            </ol>
+			<p>Soldaki mevcut slaytlar listesinde se&ccedil;ilen slayttan sonra yeni bir slayt eklenecektir.</p>
+			<p><b>Slaytı &ccedil;oğaltmak i&ccedil;in:</b></p>
+			<ol>
+				<li>Soldaki mevcut slaytlar listesinden bir veya birden fazla slayt se&ccedil;in,</li>
+				<li>Fareye sağ tıklayın ve bağlam men&uuml;s&uuml;nden <b>Slaytı &Ccedil;oğalt</b> se&ccedil;eneğini se&ccedil;in veya <b>Giriş</b> veya <b>Ekle</b> sekmesine gidin, <b>Slayt ekle</b> d&uuml;ğmesine tıklayın ve&nbsp;<b>Slaytı &Ccedil;oğalt</b>&nbsp;men&uuml; se&ccedil;eneğini se&ccedil;in.</li>
+			</ol>
+			<p>&Ccedil;oğaltılan slayt, slayt listesinde se&ccedil;ili olandan sonra eklenir.</p>
+			<p><b>Slaytları kopyalamak i&ccedil;in:</b></p>
+			<ol>
+				<li>Soldaki mevcut slaytlar listesinden kopyalamanız gereken bir slaytı veya birden &ccedil;ok slaytı se&ccedil;in,</li>
+				<li><b>Ctrl+C</b> tuş kombinasyonunu kullanın,</li>
+				<li>Slayt listesinde, kopyalanan slaytın yapıştırılacağı slaytı se&ccedil;in,</li>
+				<li><b>Ctrl+V</b> tuş kombinasyonunu kullanın.</li>
+			</ol>
+			<p><b>Mevcut slaytları taşımak i&ccedil;in:</b></p>
+			<ol>
+				<li>Soldaki mevcut slaytlar listesinden gerekli slaytı veya slaytları se&ccedil;in,</li>
+				<li>Fare d&uuml;ğmesini bırakmadan listede gerekli yere s&uuml;r&uuml;kleyin (yatay bir &ccedil;izgi yeni bir konumu g&ouml;sterir).</li>
+			</ol>
+			<p><b>Gereksiz slaytları silmek i&ccedil;in:</b></p>
+			<ol>
+				<li>Soldaki mevcut slaytlar listesinde silmek istediğiniz slayta veya slaytlara sağ tıklayın,</li>
+				<li>Bağlamsal men&uuml;den <b>Slaytı Sil</b> se&ccedil;eneğini se&ccedil;in.</li>
+			</ol>
+            <p><b>Slaytları gizli olarak işaretlemek i&ccedil;in:</b></p>
+            <ol>
+                <li>Soldaki mevcut slaytlar listesinde gizlemek istediğiniz slayta veya slaytlara sağ tıklayın,</li>
+                <li>Bağlamsal men&uuml;den <b>Slaytı Gizle</b> se&ccedil;eneğini se&ccedil;in.</li>
+            </ol>
+            <p>Soldaki slayt listesinde gizli slayta karşılık gelen sayının &uuml;zeri &ccedil;izilecektir. Gizlenen slaytı, slayt listesinde normal bir slayt olarak g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in bir kez daha <b>Slaytı Gizle</b> se&ccedil;eneğine tıklayın. </p>
+            <p><div class = "big big-hidden_slide"></div></p>
+            <p class="note"><b>Not</b>: Kitlenize bazı slaytları g&ouml;stermek istemiyor, ancak gerektiğinde bunlara erişmek istiyorsanız bu se&ccedil;eneği kullanın. Slayt g&ouml;sterisini <a href="../UsageInstructions/PreviewPresentation.htm#presenter" onclick="onhyperlinkclick(this)"><b>Sunucu</b> modunda</a> başlatırsanız, soldaki listede mevcut t&uuml;m slaytları g&ouml;rebilirsiniz ve gizlenen slaytların numaralarının &uuml;zeri &ccedil;izilir. Gizli olarak işaretlenmiş bir slaytı başkalarına g&ouml;stermek isterseniz, soldaki slayt listesinden slayta tıklamanız yeterlidir ve slayt g&ouml;r&uuml;nt&uuml;lenecektir.</p>
+            <p><b>Mevcut t&uuml;m slaytları aynı anda se&ccedil;mek i&ccedil;in:</b></p>
+			<ol>
+				<li>Soldaki mevcut slaytlar listesinden herhangi bir slayta sağ tıklayın,</li>
+				<li>Bağlamsal men&uuml;den <b>T&uuml;m&uuml;n&uuml; Se&ccedil;</b> se&ccedil;eneğini se&ccedil;in.</li>
+			</ol>
+			<p><b>Birka&ccedil; slayt se&ccedil;mek i&ccedil;in:</b></p>
+			<ol>
+				<li><b>Ctrl</b> tuşuna basılı tutun,</li>
+				<li>Soldaki mevcut slaytlar listesinden sol tıklayarak gerekli slaytları se&ccedil;in.</li>
+			</ol>
+            <p class="note"><b>Not</b>: Slaytları y&ouml;netmek i&ccedil;in kullanılabilecek t&uuml;m tuş kombinasyonları <a href="../HelpfulHints/KeyboardShortcuts.htm#manageslides" onclick="onhyperlinkclick(this)">Klavye Kısayolları</a> sayfasında verilmiştir.</p>
+		</div>
+	</body>
+</html>

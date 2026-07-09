@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Otomatik şekil ekleme ve bi&ccedil;imlendirme</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Add an autoshape to your spreadsheet and adjust its properties." />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Otomatik şekil ekleme ve bi&ccedil;imlendirme</h1>
+			<h3>Otomatik şekil ekleme</h3>
+			<p><a href="https://www.onlyoffice.com/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Elektronik Tablo D&uuml;zenleyicisinde</b></a> otomatik bir şekil eklemek i&ccedil;in</p>
+			<ol>
+				<li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Ekle</b> sekmesine ge&ccedil;iş yapın,</li>
+				<li>Burada <div class = "icon icon-insertautoshape"></div> <b>Şekil</b> simgesine tıklayın,</li>
+				<li><b>Şekil Galerisinden</b> mevcut otomatik şekil gruplarından birini se&ccedil;in: <em>Son Kullanılan Şekiller</em>, <em>Basit Şekiller</em>, <em>Şekilli Oklar</em>, <em>Matematik</em>, <em>Grafikler</em>, <em>Yıldızlar ve Şeritler</em>, <em>A&ccedil;ıklama Balonları</em>, <em>D&uuml;ğmeler</em>, <em>Dikd&ouml;rtgenler</em>, <em>&Ccedil;izgiler</em>,</li>
+				<li>Se&ccedil;ili grup i&ccedil;inde gerekli otomatik şekle tıklayın,</li>
+				<li>İmleci şeklin eklenmesi gereken yere getirin,</li>
+				<li>Şekil eklendikten sonra <a href="ManipulateObjects.htm" onclick="onhyperlinkclick(this)">boyutunu, &ouml;zelliklerini ve konumunu</a> ve ayarlarını değiştirebilirsiniz.
+            </ol>
+			<h3>Otomatik şekil ayarlarını yapma</h3>
+			<p>Bazı otomatik şekil ayarları, eklenen otomatik şekli fare ile se&ccedil;ip <b>Şekil ayarları</b> simgesine tıkladığınızda a&ccedil;ılacak olan sağ kenar &ccedil;ubuğundaki <b>Şekil ayarları</b> <span class="icon icon-shape_settings_icon"></span> sekmesi kullanılarak değiştirilebilir. Aşağıdaki ayarlar değiştirilebilir:</p>
+			<ul>
+			<li id="shape_fill"><b>Dolgu</b>, otomatik şekil dolgusunu se&ccedil;mek i&ccedil;in bu b&ouml;l&uuml;m&uuml; kullanın. Aşağıdaki se&ccedil;enekleri se&ccedil;ebilirsiniz:
+            <ul>
+				<li><b>Renk Dolgusu</b> - Se&ccedil;ilen otomatik şeklin i&ccedil; boşluğunu dolduracak d&uuml;z rengi belirtmek i&ccedil;in bu se&ccedil;eneği se&ccedil;in.
+                <p><img alt="Renk Dolgusu" src="../images/fill_color.png" /></p>
+				<p id="color">Aşağıdaki renkli kutuya tıklayın ve mevcut renk gruplarından gerekli rengi se&ccedil;in veya istediğiniz herhangi bir rengi belirleyin:</p>
+					<ul>
+						<li><b>Tema Renkleri</b> - Elektronik tablonun se&ccedil;ilen renk d&uuml;zenine karşılık gelen renkler.</li>
+						<li><b>Standart Renkler</b> - Varsayılan renkler k&uuml;mesi.</li>
+						<li><b>&Ouml;zel Renk</b> - Mevcut paletlersw ihtiyacınız olan renk yoksa bu başlığa tıklayın. Dikey renk kaydırıcısını hareket ettirerek gerekli renk aralığını se&ccedil;in ve renk se&ccedil;iciyi b&uuml;y&uuml;k kare renk alanı i&ccedil;inde s&uuml;r&uuml;kleyerek belirli rengi ayarlayın. Renk se&ccedil;ici ile bir renk se&ccedil;tiğinizde, uygun RGB ve sRGB renk değerleri sağdaki alanlarda g&ouml;r&uuml;nt&uuml;lenecektir. Bir rengi RGB renk modeli temelinde, gerekli sayısal değerleri <b>R</b>, <b>G</b>, <b>B</b> (Kırmızı, Yeşil, Mavi) alanlarına girerek de belirleyebilir veya sRGB onaltılık kodunu <b>#</b> işareti ile işaretlenmiş alana girebilirsiniz. Se&ccedil;ilen renk <b>Yeni</b> &ouml;nizleme kutusunda g&ouml;r&uuml;n&uuml;r. Nesne &ouml;nceden herhangi bir &ouml;zel renkle doldurulmuşsa, bu renk <b>Ge&ccedil;erli</b> kutusunda g&ouml;r&uuml;nt&uuml;lenir, b&ouml;ylece başlangı&ccedil;taki ve değiştirilmiş renkleri karşılaştırabilirsiniz. Renk belirtildiğinde, <b>Ekle</b> d&uuml;ğmesine tıklayın. &Ouml;zel renk, otomatik şeklinize uygulanacak ve <b>&Ouml;zel renk</b> paletine eklenecektir.
+                        </li>
+					</ul>
+				</li>
+				<li><b>Gradyan Dolgu</b> - Şekli iki veya daha fazla soluk renkle doldurmak i&ccedil;in bu se&ccedil;eneği kullanın. Gradyan dolgunuzu hi&ccedil;bir kısıtlama olmadan &ouml;zelleştirin. Sağ kenar &ccedil;ubuğunda <b>Dolgu</b> men&uuml;s&uuml;n&uuml;<div class = "icon icon-shape_settings_icon"></div>a&ccedil;mak i&ccedil;in <b>Şekil ayarları</b> simgesine tıklayın:
+                <p><img alt="Gradyan Dolgu" src="../images/fill_gradient.png" /></p>
+                <p>Mevcut men&uuml; se&ccedil;enekleri:</p>
+				    <ul>
+				    <li><b>Stil</b>, <b>Doğrusal</b> veya <b>Radyal</b> arasında se&ccedil;im yapmak i&ccedil;in bu se&ccedil;eneği kullanın:
+                        <ul>
+							<li><b>Doğrusal</b>, renklerinizin soldan sağa, yukarıdan aşağıya veya se&ccedil;tiğiniz herhangi bir a&ccedil;ıda tek bir y&ouml;nde akmasına ihtiya&ccedil; duyduğunuzda kullanılır. <b>Y&ouml;n</b> &ouml;nizleme penceresi, se&ccedil;ilen gradyan rengini g&ouml;r&uuml;nt&uuml;ler, &ouml;nceden ayarlanmış bir gradyan y&ouml;n&uuml; se&ccedil;mek i&ccedil;in oka tıklayın. Hassas bir gradyan a&ccedil;ısı i&ccedil;in&nbsp;<b>A&ccedil;ı</b>&nbsp;ayarlarını kullanın.</li>
+                            <li><b>Radyal</b>, tek bir noktadan başlayıp dışa doğru yayıldığından merkezden hareket etmek i&ccedil;in kullanılır.</li>
+                        </ul>
+                    </li>
+				    <li><b>Gradyan Noktası</b>, bir renkten diğerine ge&ccedil;işte kullanılan &ouml;zel bir noktadır.
+                        <ul>
+                            <li>Belirli bir gradyan noktasını silmek i&ccedil;in <div class = "icon icon-addgradientpoint"></div> <b>Gradyan Noktası Ekle</b> d&uuml;ğmesini veya kaydırma &ccedil;ubuğunu kullanın. En fazla 10 gradyan noktası ekleyebilirsiniz. Eklenen her sonraki gradyan noktası, mevcut gradyan dolgu g&ouml;r&uuml;n&uuml;m&uuml;n&uuml; hi&ccedil;bir şekilde etkilemez. Belirli bir gradyan noktasını silmek i&ccedil;in<div class = "icon icon-removegradientpoint"></div><b>Gradyan Noktasını Kaldır</b> d&uuml;ğmesini kullanın.</li>
+                            <li>Gradyan noktasının konumunu değiştirmek i&ccedil;in kaydırma &ccedil;ubuğunu kullanın veya kesin konum i&ccedil;in y&uuml;zde cinsinden <b>Konum</b> belirtin.</li>
+                            <li>Bir gradyan noktasına renk uygulamak i&ccedil;in kaydırma &ccedil;ubuğunda bir noktaya ve ardından&nbsp;istediğiniz rengi se&ccedil;mek i&ccedil;in&nbsp;<b>Renk</b> se&ccedil;eneğine tıklayın.</li>
+                        </ul>
+                    </li>
+				    </ul>
+				</li>
+				<li><b>Resim veya Doku</b>, şekil arka planı olarak bir g&ouml;r&uuml;nt&uuml;y&uuml; veya &ouml;nceden tanımlanmış bir dokuyu kullanmak i&ccedil;in bu se&ccedil;eneği se&ccedil;in.
+                <p><img alt="Resim veya Doku Dolgusu" src="../images/fill_picture.png" /></p>
+					<ul>
+						<li>Şekil arka planı olarak bir g&ouml;r&uuml;nt&uuml; kullanmak isterseniz, <b>Resim Se&ccedil;</b> d&uuml;ğmesine tıklayabilir ve bilgisayarınızın sabit disk s&uuml;r&uuml;c&uuml;s&uuml;nden se&ccedil;erek <b>Dosyadan</b>, ONLYOFFICE dosya y&ouml;neticinizi kullanarak <b>Bellekten</b> veya a&ccedil;ılan pencereye uygun URL adresini girerek <b>URL&apos;den</b> bir resim ekleyebilirsiniz. </li>
+						<li>Şekil arka planı olarak bir doku kullanmak isterseniz, <b>Dokudan</b> men&uuml;s&uuml;n&uuml; a&ccedil;ın ve gerekli doku &ouml;n ayarını se&ccedil;in.
+                        <p>Mevcut durumda, kanvas, karton, koyu renkli kumaş, kumlanma, granit, gri kağıt, &ouml;rg&uuml;, deri, kahverengi kağıt, papir&uuml;s, ahşap dokuları mevcuttur.</p>
+						</li>
+					</ul>
+					<ul>
+						<li>Se&ccedil;ili <b>Resmin</b> otomatik şeklin sahip olduğundan daha az veya daha fazla boyutu varsa, a&ccedil;ılır listeden <b>Uzat</b> veya <b>D&ouml;şe</b> ayarını se&ccedil;in.
+                        <p><b>Uzat</b> se&ccedil;eneği, g&ouml;r&uuml;nt&uuml; boyutunu otomatik şekil boyutuna uyacak şekilde ayarlamanızı sağlar, b&ouml;ylece g&ouml;r&uuml;nt&uuml; alanı tamamen doldurabilir.</p>
+						<p><b>D&ouml;şe</b> se&ccedil;eneği, daha b&uuml;y&uuml;k g&ouml;r&uuml;nt&uuml;n&uuml;n orijinal boyutlarını koruyarak yalnızca bir b&ouml;l&uuml;m&uuml;n&uuml; g&ouml;r&uuml;nt&uuml;lemenizi veya alanı tamamen doldurabilmesi i&ccedil;in otomatik şekil y&uuml;zeyi &uuml;zerinde orijinal boyutlarını koruyarak daha k&uuml;&ccedil;&uuml;k g&ouml;r&uuml;nt&uuml;y&uuml; tekrarlamanızı sağlar.</p>
+						<p class="note"><b>Not</b>: Se&ccedil;ilen herhangi bir <b>Doku</b> &ouml;n ayarı, alanı tamamen doldurur, ancak gerekirse <b>Uzat</b> etkisini uygulayabilirsiniz.</p>
+						</li>
+					</ul>
+				</li>
+				<li><b>Desen</b> - Şekli d&uuml;zenli olarak tekrarlanan &ouml;ğelerden oluşan iki renkli bir tasarımla doldurmak i&ccedil;in bu se&ccedil;eneği se&ccedil;in.
+                <p><img alt="Desen Dolgusu" src="../images/fill_pattern.png" /></p>
+						<ul>
+							<li><b>Desen</b> - Men&uuml;den &ouml;nceden tanımlanmış tasarımlardan birini se&ccedil;in.</li>
+							<li><b>&Ouml;n plan rengi</b> - Desen &ouml;ğelerinin rengini değiştirmek i&ccedil;in bu renk kutusuna tıklayın.</li>
+							<li><b>Arka plan rengi</b> - Desen arka planının rengini değiştirmek i&ccedil;in bu renk kutusuna tıklayın.</li>
+						</ul>
+				</li>
+				<li><b>Dolgu Yok</b> - Herhangi bir dolgu kullanmak istemiyorsanız bu se&ccedil;eneği se&ccedil;in.</li>
+			</ul>
+			</li>
+			<li><b>Opaklık</b> - Kaydırıcıyı s&uuml;r&uuml;kleyerek veya y&uuml;zde değerini manuel olarak girerek <b>Opaklık</b> seviyesini ayarlamak i&ccedil;in bu b&ouml;l&uuml;m&uuml; kullanın. Varsayılan değer <b>%100</b>&apos;d&uuml;r. Tam opaklık anlamına gelir. <b>%0</b> değeri tam şeffaflık anlamına gelir.</li>
+			<li id="shape_stroke"><b>&Ccedil;izgi</b> - Otomatik şekil &ccedil;izgisinin genişliğini, rengini veya t&uuml;r&uuml;n&uuml; değiştirmek i&ccedil;in bu b&ouml;l&uuml;m&uuml; kullanın.
+                <ul>
+				<li>&Ccedil;izgi genişliğini değiştirmek i&ccedil;in <b>Boyut</b> a&ccedil;ılır listesinden mevcut se&ccedil;eneklerden birini se&ccedil;in. Mevcut se&ccedil;enekler şunlardır: 0,5 puan, 1 puan, 1,5 puan, 2,25 puan, 3 puan, 4,5 puan, 6 puan Alternatif olarak, herhangi bir &ccedil;izgi kullanmak istemiyorsanız  <b>&Ccedil;izgi Yok</b> se&ccedil;eneğini se&ccedil;in.</li>
+				<li>&Ccedil;izgi <b>rengini</b> değiştirmek i&ccedil;in aşağıdaki renkli kutuya tıklayın ve gerekli rengi se&ccedil;in.</li>
+                <li>&Ccedil;izgi <b>t&uuml;r&uuml;n&uuml;</b> değiştirmek i&ccedil;in ilgili a&ccedil;ılır listeden gerekli se&ccedil;eneği se&ccedil;in (varsayılan olarak d&uuml;z bir &ccedil;izgi uygulanır, bunu mevcut kesikli &ccedil;izgilerden biri ile değiştirebilirsiniz).</li>
+				</ul>
+			</li>
+            <li>
+                <b>D&ouml;nd&uuml;rme</b>, şekli saat y&ouml;n&uuml;nde veya saat y&ouml;n&uuml;n&uuml;n tersine 90 derece d&ouml;nd&uuml;rmek ve ayrıca şekli yatay veya dikey olarak d&ouml;nd&uuml;rmek i&ccedil;in kullanılır. Aşağıdaki işlemler i&ccedil;in d&uuml;ğmelerden birine tıklayın:
+                <ul>
+                   <li><div class = "icon icon-rotatecounterclockwise"></div> Şekli saat y&ouml;n&uuml;n&uuml;n tersine 90 derece d&ouml;nd&uuml;rmek i&ccedil;in</li>
+                   <li><div class = "icon icon-rotateclockwise"></div> Şekli saat y&ouml;n&uuml;nde 90 derece d&ouml;nd&uuml;rmek i&ccedil;in</li>
+                   <li><div class = "icon icon-fliplefttoright"></div> Şekli yatay olarak &ccedil;evirmek i&ccedil;in (soldan sağa)</li>
+                   <li><div class = "icon icon-flipupsidedown"></div> Şekli dikey olarak &ccedil;evirmek i&ccedil;in (baş aşağı)</li>
+                </ul>
+            </li>
+			<li><b>Otomatik Şekli Değiştir</b> - Mevcut otomatik şekli a&ccedil;ılır listeden se&ccedil;ilen başka bir otomatik şekil ile değiştirmek i&ccedil;in bu b&ouml;l&uuml;m&uuml; kullanın.</li>
+            <li><b>G&ouml;lgeli g&ouml;ster</b> - Şekli g&ouml;lgeli olarak g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in bu se&ccedil;eneği işaretleyin.</li>
+			</ul>
+			<hr />
+            <h3>Şekil gelişmiş ayarlarını yapma</h3>
+            <p id="shape_advanced">Otomatik şeklin <b>gelişmiş ayarlarını</b> değiştirmek i&ccedil;in sağ kenar &ccedil;ubuğundaki <b>Gelişmiş ayarları g&ouml;ster</b> bağlantısını kullanın. &apos;Şekil- Gelişmiş Ayarlar&apos; penceresi a&ccedil;ılacaktır:</p>
+            <p><img alt="Şekil - Gelişmiş Ayarlar" src="../images/shape_properties.png" /></p>
+            <p><b>Boyut</b> sekmesi aşağıdaki parametreleri i&ccedil;erir:</p>
+			<ul>
+				<li><b>Genişlik</b> ve <b>Y&uuml;kseklik</b> - Otomatik şeklin genişliği ve/veya y&uuml;ksekliğini değiştirmek i&ccedil;in bu se&ccedil;enekleri kullanın. <b>Sabit oranlar</b> d&uuml;ğmesine tıklanırsa <div class = "icon icon-constantproportions"></div> (bu durumda ş&ouml;yle g&ouml;r&uuml;n&uuml;r), <div class = "icon icon-constantproportionsactivated"></div> orijinal şekil en boy oranı korunarak genişlik ve y&uuml;kseklik birlikte değiştirilir.</li>
+			</ul>
+            <p><img alt="Şekil - Gelişmiş Ayarlar" src="../images/shape_properties_5.png" /></p>
+            <p><b>D&ouml;nd&uuml;rme</b> sekmesi aşağıdaki parametreleri i&ccedil;erir:</p>
+            <ul>
+                <li><b>A&ccedil;ı</b> - Şekli tam olarak belirlenmiş bir a&ccedil;ıya g&ouml;re d&ouml;nd&uuml;rmek i&ccedil;in bu se&ccedil;eneği kullanın. Derece cinsinden &ouml;l&ccedil;&uuml;len gerekli değeri alana girin veya sağdaki okları kullanarak ayarlayın.</li>
+                <li><b>Ters &ccedil;evrilmiş</b> - Şekli yatay olarak (soldan sağa) &ccedil;evirmek i&ccedil;in <b>Yatay</b> veya şekli dikey olarak (baş aşağı) &ccedil;evirmek i&ccedil;in <b>Dikey</b> kutusunu işaretleyin.</li>
+            </ul>
+			<p><img alt="Şekil - Gelişmiş Ayarlar" src="../images/shape_properties_1.png" /></p>
+			<p><b>Kalınlıklar ve Oklar</b> sekmesi aşağıdaki parametreleri i&ccedil;erir:</p>
+			<ul>
+				<li><b>&Ccedil;izgi Stili</b> - Bu se&ccedil;enek grubu, aşağıdaki parametreleri belirtmenizi sağlar:
+                <ul>
+				<li><b>Başlangı&ccedil; Tipi</b> - Bu se&ccedil;enek, &ccedil;izginin sonu i&ccedil;in stili ayarlamanızı sağlar, bu nedenle yalnızca &ccedil;izgiler, s&uuml;rekli &ccedil;izgiler vb. gibi a&ccedil;ık ana hatları olan şekillere uygulanabilir:
+                    <ul>
+					<li><b>D&uuml;z</b> - Bitiş noktaları d&uuml;z olacaktır.</li>
+					<li><b>Yuvarlak</b> - Bitiş noktaları yuvarlak olacaktır.</li>
+					<li><b>Kare</b> - Bitiş noktaları kare olacaktır.</li>
+					</ul>
+				</li>
+				<li><b>Birleştirme T&uuml;r&uuml;</b> - Bu se&ccedil;enek, iki &ccedil;izginin kesişimi i&ccedil;in stili ayarlamanızı sağlar, &ouml;rneğin, bir s&uuml;rekli &ccedil;izgiye veya &uuml;&ccedil;gen veya dikd&ouml;rtgen dış hattın k&ouml;şelerine efekt verebilir:
+                    <ul>
+					<li><b>Yuvarlak</b> - K&ouml;şe yuvarlak olacaktır.</li>
+					<li><b>Eğik</b> - K&ouml;şe, a&ccedil;ılı bir bi&ccedil;imde kesilecektir.</li>
+					<li><b>G&ouml;nye</b> - K&ouml;şe sivriltilecektir. Keskin a&ccedil;ılı şekiller ile uyuşur.</li>
+					</ul>
+					<p class="note"><b>Not</b>: B&uuml;y&uuml;k bir anahat genişliği kullanırsanız, efekt daha belirgin olur.</p>
+				</li>
+				</ul>
+				</li>
+				<li><b>Oklar</b> - Bu se&ccedil;enek grubu, <b>&Ccedil;izgiler</b> şekil grubundan bir şekil se&ccedil;ilirse kullanılabilir. A&ccedil;ılır listelerden uygun se&ccedil;eneği se&ccedil;erek okun <b>Başlangı&ccedil;</b> ve <b>Bitiş Stilini</b> ve <b>Boyutunu</b> ayarlamanızı sağlar.</li>
+			</ul>
+            <p id="internalmargins"><img alt="Şekil - Gelişmiş Ayarlar" src="../images/shape_properties_2.png" /></p>
+            <p><b>Metin Kutusu</b> sekmesi, <b>Şekli metni sığdıracak şekilde yeniden boyutlandırmanızı</b>, <b>Metnin şekilden taşmasına izin vermenizi</b> veya otomatik şeklin <b>&Uuml;st</b>, <b>Alt</b>, <b>Sol</b> ve <b>Sağ</b> i&ccedil; kenar boşluklarını (yani, şeklin i&ccedil;indeki metin ile otomatik şeklin sınırları arasındaki mesafeyi) değiştirmenizi sağlar.</p>
+            <p class="note"><b>Not</b>: Bu sekme yalnızca otomatik şekle metin eklenirse kullanılabilir, aksi takdirde sekme devre dışı bırakılır.</p>
+            <p id="columns"><img alt="Şekil Özellikleri - Sütunlar sekmesi" src="../images/shape_properties_4.png" /></p>
+            <p><b>S&uuml;tunlar</b> sekmesi, gerekli <b>S&uuml;tun sayısını</b> (16&apos;ya kadar) ve <b>S&uuml;tunlar arasındaki boşluğu</b> belirterek otomatik şekil i&ccedil;ine metin s&uuml;tunları eklemenizi sağlar. <b>Tamam</b> d&uuml;ğmesine tıkladığınızda, zaten var olan metin veya otomatik şekle girdiğiniz diğer herhangi bir metin s&uuml;tunlarda g&ouml;r&uuml;necek ve bir s&uuml;tundan diğerine akacaktır.</p>
+            <p><img alt="Şekil - Gelişmiş Ayarlar: Hücreye Uydurma" src="../images/shape_properties_6.png" /></p>
+            <p><b>H&uuml;creye Uydurma</b> sekmesi aşağıdaki parametreleri i&ccedil;erir:</p>
+            <ul>
+                <li><b>H&uuml;crelerle taşıma ve boyutlandırma</b> - Bu se&ccedil;enek, şekli arkasındaki h&uuml;creye uydurmanıza olanak tanır. H&uuml;cre hareket ederse (&ouml;rneğin bazı satırları/s&uuml;tunları ekler veya silerseniz), şekil h&uuml;cre ile birlikte taşınır. H&uuml;crenin genişliğini veya y&uuml;ksekliğini artırır veya azaltırsanız, şeklin boyutu da değişir.</li>
+                <li><b>Taşı ama h&uuml;crelerle boyutlandırma</b> - Bu se&ccedil;enek, şeklin yeniden boyutlandırılmasını &ouml;nleyerek şekli arkasındaki h&uuml;creye uydurmayı sağlar. H&uuml;cre hareket ederse şekil h&uuml;cre ile birlikte taşınır, ancak h&uuml;cre boyutunu değiştirirseniz şekil boyutları değişmeden kalır.</li>
+                <li><b>H&uuml;crelerle taşıma veya boyutlandırma</b> - Bu se&ccedil;enek, h&uuml;cre konumu veya boyutu değiştirilmişse şeklin taşınmasını veya yeniden boyutlandırılmasını &ouml;nlemeyi sağlar.</li>
+            </ul>
+            <p><img alt="Şekil - Gelişmiş Ayarlar: Alternatif metin" src="../images/shape_properties_3.png" /></p>
+            <p><b>Alternatif Metin</b> sekmesi, şeklin hangi bilgileri i&ccedil;erdiğini daha iyi anlamalarına yardımcı olmak i&ccedil;in g&ouml;rme veya bilişsel bozuklukları olan kişilere okunacak bir <b>Başlık</b> ve <b>A&ccedil;ıklama</b> belirtmenizi sağlar.</p>            
+		    <hr />
+			<h3>Otomatik şekle metin ekleme ve bi&ccedil;imlendirme</h3>
+			<p>Otomatik şekle bir metin eklemek i&ccedil;in fareyle şekli se&ccedil;in ve metninizi yazmaya başlayın. Metin, otomatik şeklin bir par&ccedil;ası olacaktır (şekli hareket ettirdiğinizde veya d&ouml;nd&uuml;rd&uuml;ğ&uuml;n&uuml;zde, metin de onunla birlikte hareket eder veya d&ouml;ner).</p>
+            <p>Otomatik şekil i&ccedil;indeki metne uygulayabileceğiniz t&uuml;m bi&ccedil;imlendirme se&ccedil;enekleri <a href="InsertTextObjects.htm#textbox_textformatting" onclick="onhyperlinkclick(this)">burada</a> verilmiştir.</p>
+            <hr />
+            <h3>Bağlayıcıları kullanarak otomatik şekilleri birleştirme</h3>
+            <p>Nesneler arasındaki bağımlılıkları g&ouml;stermek i&ccedil;in (&ouml;rneğin, bir akış şeması oluşturmak istiyorsanız) bağlantı noktalı &ccedil;izgileri kullanarak otomatik şekilleri bağlayabilirsiniz. Bunu yapmak i&ccedil;in</p>
+            <ol>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <div class = "icon icon-insertautoshape"></div> <b>Ekle</b> sekmesinde bulunan <b>Şekil</b> simgesine tıklayın,</li>
+                <li>Men&uuml;den <b>&Ccedil;izgiler</b> grubunu se&ccedil;in,
+                <p><img alt="Şekiller - Çizgiler" src="../images/connectors.png" /></p>
+                </li>
+                <li>Se&ccedil;ili grup i&ccedil;inde gerekli şekle tıklayın (bağlayıcı olmayan son &uuml;&ccedil; şekil hari&ccedil;, yani <em>Eğri</em>, <em>Karalama</em> ve <em>Serbest Form</em>),</li>
+                <li>Fare imlecini ilk otomatik şeklin &uuml;zerine getirin ve şekil taslağında g&ouml;r&uuml;nen <div class = "icon icon-connectionpoint"></div> bağlantı noktalarından birine tıklayın,
+                <p><span class="big big-connectors_firstshape"></span></p>
+                </li>
+                <li>Fare imlecini ikinci otomatik şekle doğru s&uuml;r&uuml;kleyin ve ana hattındaki gerekli bağlantı noktasına tıklayın.
+                <p><span class="big big-connectors_secondshape"></span></p>
+                </li>
+            </ol>
+            <p>Birleştirilen otomatik şekilleri hareket ettirirseniz, bağlayıcı şekillere bağlı kalır ve onlarla birlikte hareket eder.</p>
+            <p><span class="big big-connectors_moveshape"></span></p>
+            <p>Ayrıca bağlayıcıyı şekillerden ayırabilir ve ardından başka bağlantı noktalarına bağlayabilirsiniz.</p>
+			<h3>Şekle Makro Atama</h3>
+            <p>Herhangi bir şekle makro atayarak, elektronik tablodaki bir makroya hızlı ve kolay erişim sağlayabilirsiniz. Bir makro atadığınızda, şekil bir d&uuml;ğme kontrol&uuml; olarak g&ouml;r&uuml;n&uuml;r ve makroyu her tıklattığınızda &ccedil;alıştırabilirsiniz.</p>
+            <p>Makro atamak i&ccedil;in:</p>
+            <ul type="circle">
+                <li>
+                    Makro atamak i&ccedil;in şekle sağ tıklayın ve a&ccedil;ılır men&uuml;den <b>Makro Ata</b> se&ccedil;eneğini se&ccedil;in.
+                    <p><img alt="Menüde Makro Ata" src="../images/assignmacro_rightclickshape.png" /></p>
+                </li>
+                <li>
+                <b>Makro Ata</b> diyalog kutusu a&ccedil;ılacaktır</li>
+                <li>Listeden bir makro se&ccedil;in veya makro adını yazın ve onaylamak i&ccedil;ib <b>Tamam</b> d&uuml;ğmesine tıklayın.
+                <p><img alt="Makro Ata" src="../images/assignmacro.png" /></p>
+                </li>
+            </ul>
+		</div>
+	</body>
+</html>

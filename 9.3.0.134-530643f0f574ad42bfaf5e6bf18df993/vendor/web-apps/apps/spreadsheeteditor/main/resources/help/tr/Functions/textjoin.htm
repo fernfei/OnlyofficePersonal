@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>METİNBİRLEŞTİR İşlevi</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>METİNBİRLEŞTİR İşlevi</h1>
+			<p><b>METİNBİRLEŞTİR</b> işlevi, metin ve veri işlevlerinden biridir. Birden &ccedil;ok aralık ve/veya dizeden gelen metni birleştirmek i&ccedil;in kullanılır ve birleştirilecek her metin değeri arasında belirttiğiniz bir sınırlayıcı i&ccedil;erir ve sınırlayıcı boş bir metin dizesiyse, bu işlev aralıkları etkili bir şekilde birleştirir. Bu işlev, <b>ARALIKBİRLEŞTİR</b> işlevine benzer, ancak farkı <b>ARALIKBİRLEŞTİR</b> işlevinin sınırlayıcı kabul edememesidir.</p>
+			<p><b>METİNBİRLEŞTİR</b> işlevi s&ouml;z dizimi ş&ouml;yledir:</p> 
+			<p style="text-indent: 150px;"><b><em>METİNBİRLEŞTİR(sınırlayıcı, boşları_yoksay, metin1 [, metin2], …)</em></b></p> 
+			<p>Burada</p>
+            <p style="text-indent: 50px;"><b><em>sınırlayıcı,</em></b> metin değerleri arasına eklenecek sınırlayıcıdır. &Ccedil;ift tırnak i&ccedil;ine alınmış ( <b>&quot;,&quot;</b> (virg&uuml;l), <b>&quot; &quot;</b> (boşluk), <b>&quot;\&quot;</b> (ters eğik &ccedil;izgi) vb. gibi) bir metin dizisi olarak veya bir h&uuml;creye veya h&uuml;cre aralığına başvuru olarak belirtilebilir.</p>
+            <p style="text-indent: 50px;"><b><em>boşları_yoksay,</em></b> boş h&uuml;crelerin yok sayılıp sayılmayacağını belirten mantıksal bir değerdir. Değer DOĞRU olarak ayarlandığında boş h&uuml;creler dikkate alınmaz.</p>
+            <p style="text-indent: 50px;"><b><em>metin1(2),</em></b> en fazla 252 veri değeridir. Her değer bir metin dizesi veya bir h&uuml;cre aralığına başvuru olabilir.</p>
+            <p><b>METİNBİRLEŞTİR</b> işlevini uygulamak i&ccedil;in</p>
+			<ol>
+			<li>Sonucu g&ouml;r&uuml;nt&uuml;lemek istediğiniz h&uuml;creyi se&ccedil;in,</li>
+			<li>&Uuml;st ara&ccedil; &ccedil;ubuğunda bulunan <b>İşlev ekle</b> <div class = "icon icon-insertfunction"></div> simgesine tıklayın
+                <br />veya se&ccedil;ilen bir h&uuml;crenin i&ccedil;ine sağ tıklayın ve men&uuml;den <b>İşlev Ekle</b> se&ccedil;eneğini se&ccedil;in
+                <br />veya<div class = "icon icon-function"></div>form&uuml;l &ccedil;ubuğunda bulunan simgeye tıklayın,
+            </li>
+			<li>Listeden <b>Metin ve veri</b> işlev grubunu se&ccedil;in,</li>
+			<li><b>METİNBİRLEŞTİR</b> işlevine tıklayın,</li>
+			<li>Virg&uuml;lle ayırarak gerekli bağımsız değişkenleri girin,</li>
+			<li><b>Enter</b> d&uuml;ğmesine basın.</li>
+			</ol>
+			<p>Sonu&ccedil; se&ccedil;ili h&uuml;crede g&ouml;r&uuml;nt&uuml;lenecektir.</p>
+			<p style="text-indent: 150px;"><img alt="METİNBİRLEŞTİR İşlevi" src="../images/textjoin.png" /></p>
+		</div>
+	</body>
+</html>

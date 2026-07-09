@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Pixabay</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Description of the Pixabay plugin for ONLYOFFICE editors, which allows you to add free pictures to your presentation from Pixabay service" />
+    <link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+    <link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+    <script type="text/javascript" src="../callback.js"></script>
+    <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+</head>
+<body>
+    <div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+        </div>
+        <h1>Pixabay</h1>
+        <p>The <b>Pixabay</b> plugin allows you to add pictures to your presentation from an open collection of Pixabay service that offers copyright free images.</p>
+        <p class="note">The plugin is compatible with the <a href="https://git.onlyoffice.com/ONLYOFFICE/DocumentServer" target="_blank" onclick="onhyperlinkclick(this)">self-hosted</a> and the <a href="https://git.onlyoffice.com/ONLYOFFICE/DesktopEditors" target="_blank" onclick="onhyperlinkclick(this)">desktop</a> versions of the ONLYOFFICE editors and can be added to ONLYOFFICE instances manually using the <a href="https://helpcenter.onlyoffice.com/ONLYOFFICE-Editors/Editors-User-Guides/AllEditors/Plugin-manager.aspx" target="_blank" onclick="onhyperlinkclick(this)">Plugin Manager</a>.</p>
+
+        <h3>Installation</h3>
+        <p>To install the <b>Pixabay</b> plugin,</p>
+        <ol>
+            <li>Go to the <b>Plugins</b> tab.</li>
+            <li>Open the <b>Plugin Manager</b>.</li>
+            <li>Find <div class="icon icon-pixabay_store_icon"></div> on the marketplace and click the <b>Install</b> button below.</li>
+            <li>Click the <div class="icon icon-pixabay_icon"></div> <b>Pixabay</b> icon in the <b>Plugins</b> tab.</li>
+            <li>Proceed with the plugin configuration.</li>
+        </ol>
+        <p class="note">For more details, please refer to the <a href="https://api.onlyoffice.com/docs/plugin-and-macros/get-started/overview/" target="_blank" onclick="onhyperlinkclick(this)">ONLYOFFICE API documentation</a>.</p>
+
+        <h3>Configuration</h3>
+        <ol>
+            <li>Log in to your <b>Pixabay</b> account or register a new one.</li>
+            <li>Go to the <b>Search Images</b> section of the <a href="https://pixabay.com/api/docs" target="_blank" onclick="onhyperlinkclick(this)"><b>Pixabay API page</b></a>.</li>
+            <li>
+                Scroll down to the <b>Parameters</b> list and copy the link under the <b>Key</b> parameter. If you are not logged in, press <b>Login</b> next to the <b>Key</b> parameter.
+                <p><img alt="Pixabay API key" src="../../../../../../common/main/resources/help/en/images/pixabay_apikey.png" /></p>
+            </li>
+            <li>Paste the key to the <b>API key</b> field on the left panel of the <b>Plugins</b> tab in the <b>Presentation Editor</b>.</li>
+            <li>Click <b>Save</b>.</li>
+        </ol>
+        <p><img alt="Pixabay Panel" src="../../../../../../common/main/resources/help/en/images/pixabay_left.png" /></p>
+
+        <h3>How to use</h3>
+        <ol>
+            <li>Go to the <b>Plugins</b> tab.</li>
+            <li>Click the <div class="icon icon-pixabay_icon"></div> <b>Pixabay</b> icon.</li>
+            <li>On the left panel that opens, type in the keyword you associate with the image you are looking for.</li>
+            <li>
+                Use the <b>Show settings</b> button to refine your search by <b>Language</b>, <b>Image type</b>, <b>Orientation</b> and <b>Category</b>. Click <b>Hide settings</b> to reduce the search section.
+                <p><img alt="Pixabay settings" src="../../../../../../common/main/resources/help/en/images/pixabay_settings.png" /></p>
+            </li>
+            <li> Click <b>Search</b>.</li>
+            <li>Scroll through search results and click the image to add it to your presentation.</li>
+        </ol>
+        <p><img alt="Pixabay Results" src="../images/pixabay_results.png" /></p>
+    </div>
+</body>
+</html>

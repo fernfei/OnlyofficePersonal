@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>K&ouml;pr&uuml; ekle</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Add hyperlinks to a word or text fragment leading to an external website" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>K&ouml;pr&uuml; ekle</h1>
+			<p><a href="https://www.onlyoffice.com/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Belge D&uuml;zenleyicide</b></a> bir k&ouml;pr&uuml; eklemek i&ccedil;in,</p>
+			<ol>
+				<li>İmleci k&ouml;pr&uuml; olarak g&ouml;r&uuml;nt&uuml;lemek istediğiniz metne getirin,</li>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Ekle</b> veya <b>Başvurular</b> sekmesine ge&ccedil;iş yapın,</li>
+				<li>&Uuml;st ara&ccedil; &ccedil;ubuğundaki <div class = "icon icon-addhyperlink"></div> <b>K&ouml;pr&uuml;</b> simgesine tıklayın,</li>
+				<li>Ardından <b>K&ouml;pr&uuml; Ayarları</b> penceresi g&ouml;r&uuml;necek olup buradan k&ouml;pr&uuml; parametrelerini belirtebileceksiniz:
+                    <ul>
+						<li>
+                            Eklemek istediğiniz bağlantı t&uuml;r&uuml;n&uuml; se&ccedil;in:
+                            <p><b>Dış Bağlantı</b> se&ccedil;eneğini kullanın ve <b>harici</b> bir web sitesine y&ouml;nlendiren bir k&ouml;pr&uuml; eklemeniz gerekiyorsa aşağıdaki <b>Bağla</b> alanına <em>http://www.example.com</em> bi&ccedil;iminde bir URL girin. <b>Yerel</b> bir dosyaya k&ouml;pr&uuml;ye k&ouml;pr&uuml; eklemeniz gerekirse, URL&apos;yi <b>Bağla</b> alanına <em>file://path/Document.docx</em> (Windows i&ccedil;in) veya <em>file:///path/Document.docx</em> (MacOS ve Linux i&ccedil;in) bi&ccedil;iminde girin.</p>
+							<p class="note"><em>file://path/Document.docx</em> veya <em>file:///path/Document.docx</em> k&ouml;pr&uuml;s&uuml; yalnızca d&uuml;zenleyicinin masa&uuml;st&uuml; s&uuml;r&uuml;m&uuml;nde a&ccedil;ılabilir. Web d&uuml;zenleyicide, bağlantıyı yalnızca ekleyebilirsiniz, ancak a&ccedil;amazsınız.</p>
+							<p><img alt="Köprü Ayarları penceresi" src="../../../../../../common/main/resources/help/tr/images/hyperlinkwindow.png" /></p>
+							<p><b>Belgeye Yerleştir</b> se&ccedil;eneğini kullanın ve belge metninde mevcut <a href="../UsageInstructions/FormattingPresets.htm" onclick="onhyperlinkclick(this)">başlıklardan</a> birini veya aynı belgede belirli bir yere g&ouml;t&uuml;ren bir k&ouml;pr&uuml; eklemeniz gerekiyorsa daha &ouml;nce eklenen <a href="../UsageInstructions/InsertBookmarks.htm" onclick="onhyperlinkclick(this)">yer imlerinden</a> birini se&ccedil;in.</p>
+							<p><img alt="Köprü Ayarları penceresi" src="../images/hyperlinkwindow1.png" /></p>
+						</li>
+						<li><b>G&ouml;r&uuml;nt&uuml;le</b> - Tıklanabilir olacak ve &uuml;st alanda belirtilen adrese y&ouml;nlendirecek bir metin girin.</li>
+						<li><b>Ekran İpucu metni</b> - G&ouml;sterilecek k&ouml;pr&uuml; ile ilgili kısa bir not veya etiket i&ccedil;eren k&uuml;&ccedil;&uuml;k a&ccedil;ılır bir pencerede g&ouml;r&uuml;n&uuml;r olacak bir metin girin.</li>
+					</ul>
+				</li>
+				<li><b>Tamam</b> d&uuml;ğmesine tıklayın.</li>
+			</ol>
+            <p>K&ouml;pr&uuml; eklemek i&ccedil;in ayrıca <b>Ctrl+K</b> tuş kombinasyonunu da kullanabilir veya k&ouml;pr&uuml;n&uuml;n ekleneceği konumda sağ tıklayıp sağ tıklama men&uuml;s&uuml;ndeki <b>k&ouml;pr&uuml;</b> se&ccedil;eneğini se&ccedil;ebilirsiniz.</p>
+			<p class="note"><b>Not</b>: fare ile veya <a href="../HelpfulHints/KeyboardShortcuts.htm#textselection" onclick="onhyperlinkclick(this)">klavyeyi kullanarak</a> bir karakter, kelime, kelime kombinasyonu,
+            metin pasajı se&ccedil;mek ve ardından yukarıda a&ccedil;ıklandığı gibi <b>K&ouml;pr&uuml; Ayarları</b> penceresini a&ccedil;mak da m&uuml;mk&uuml;nd&uuml;r. Bu durumda, <b>G&ouml;r&uuml;nt&uuml;le</b> alanı, se&ccedil;tiğiniz metin par&ccedil;asıyla doldurulacaktır.</p>
+			<p>İmleci eklenen k&ouml;pr&uuml;n&uuml;n &uuml;zerine getirdiğinizde, belirttiğiniz metni i&ccedil;eren Ekran İpucu g&ouml;r&uuml;necektir.
+            <b>CTRL</b> tuşuna basarak ve belgenizdeki bağlantıya tıklayarak bağlantıyı takip edebilirsiniz. </p>
+			<p>Eklenen k&ouml;pr&uuml;y&uuml; d&uuml;zenlemek veya silmek i&ccedil;in fareye sağ tıklayın, <b>K&ouml;pr&uuml;</b> se&ccedil;eneğini ve ardından ger&ccedil;ekleştirmek istediğiniz eylemi, yani <b>K&ouml;pr&uuml;y&uuml; D&uuml;zenle</b> veya <b>K&ouml;pr&uuml;y&uuml; Kaldır</b> se&ccedil;eneğini se&ccedil;in.</p>
+		</div>
+	</body>
+</html>

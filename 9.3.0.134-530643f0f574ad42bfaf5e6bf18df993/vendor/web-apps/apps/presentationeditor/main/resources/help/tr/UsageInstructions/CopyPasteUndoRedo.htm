@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Kopyalama/yapıştırma, eylemlerinizi geri alma/yineleme</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Perform the basic operations with the presentation: copy, paste, undo, redo" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+        <div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+            </div>
+            <h1>Kopyalama/yapıştırma, eylemlerinizi geri alma/yineleme</h1>
+            <h3>Temel pano işlemlerini kullanın</h3>
+            <p><a target="_blank" href="https://www.onlyoffice.com/presentation-editor.aspx" onclick="onhyperlinkclick(this)"><b>Sunu D&uuml;zenleyici</b></a> se&ccedil;ilen nesneleri (slaytlar, metin pasajları, otomatik şekiller) kesmek, kopyalamak ve yapıştırmak veya eylemlerinizi geri almak/yinelemek i&ccedil;in sağ tıklama men&uuml;s&uuml;ndeki ilgili se&ccedil;enekleri, klavye kısayollarını veya &uuml;st ara&ccedil; &ccedil;ubuğunun herhangi bir sekmesinde bulunan simgeleri kullanın:</p>
+            <ul>
+                <li><b>Kes</b> &ndash; Bir nesne se&ccedil;in ve se&ccedil;ili nesneyi silmek ve bilgisayarın pano belleğine g&ouml;ndermek i&ccedil;in sağ tıklama men&uuml;s&uuml;nden <b>Kes</b> se&ccedil;eneğini veya &uuml;st ara&ccedil; &ccedil;ubuğundaki <b>Kes</b> <div class="icon icon-cut"></div> simgesini kullanın. <span class="onlineDocumentFeatures">Kesilen veri daha sonra aynı sunudaki başka bir yere eklenebilir.</span></li>
+                <li><b>Kopyala</b> &ndash; Bir nesne se&ccedil;in ve se&ccedil;ili nesneyi bilgisayarın pano belleğine kopyalamak i&ccedil;in sağ tıklama men&uuml;s&uuml;nden <b>Kopyala</b> se&ccedil;eneğini veya veya &uuml;st ara&ccedil; &ccedil;ubuğundaki <b>Kopyala</b> <div class = "icon icon-copy"></div > simgesini kullanın. <span class="onlineDocumentFeatures">Kopyalanan nesne daha sonra aynı sunudaki başka bir yere eklenebilir.</span></li>
+                <li><b>Yapıştır</b> &ndash; Sununuzda daha &ouml;nce kopyalanan nesneyi yapıştırmanız gereken yeri bulun ve sağ tıklama men&uuml;s&uuml;nden <b>Yapıştır</b> se&ccedil;eneğini veya  &uuml;st ara&ccedil; &ccedil;ubuğundaki <b>Yapıştır</b> <div class = "icon icon-paste"></div> simgesini kullanın. Nesne mevcut imle&ccedil; konumuna eklenecektir. <span class="onlineDocumentFeatures">Nesne daha &ouml;nce aynı sunudan kopyalanabilir.</span></li>
+            </ul>
+            <p><span class="onlineDocumentFeatures">&Ccedil;evrimi&ccedil;i <em>s&uuml;r&uuml;mde</em>, aşağıdaki tuş kombinasyonları yalnızca başka bir sunumdan/sunuma veya başka bir programdan/programa veri kopyalamak veya yapıştırmak i&ccedil;in kullanılır,</span> <span class="desktopDocumentFeatures">masa&uuml;st&uuml; <em> s&uuml;r&uuml;mde</em>, herhangi bir kopyalama/yapıştırma işlemi i&ccedil;in ilgili d&uuml;ğmeler/men&uuml; se&ccedil;enekleri ve tuş kombinasyonları kullanılabilir:</span></p>
+            <ul>
+                <li><b>Ctrl+C</b> kopyalama işlemi tuş kombinasyonu,</li>
+                <li><b>Ctrl+V</b> yapıştırma işlemi tuş kombinasyonu,</li>
+                <li><b>Ctrl+X</b> kesme işlemi tuş kombinasyonu,</li>
+            </ul>
+            <h3>&Ouml;zel Yapıştır &ouml;zelliğini kullanın</h3>
+            <p class="note"><b>Not</b>: İşbirliği d&uuml;zenlemesi i&ccedil;in <b>&Ouml;zel Yapıştır</b> &ouml;zelliği yalnızca <b>Sıkı</b> birlikte d&uuml;zenleme modunda kullanılabilir.</p>
+            <p>Kopyalanan veri yapıştırıldıktan sonra, <b>&Ouml;zel Yapıştır</b> <span class="icon icon-pastespecialbutton"></span> d&uuml;ğmesi eklenen metin pasajının/nesnenin yanında g&ouml;r&uuml;n&uuml;r. Gerekli yapıştırma se&ccedil;eneğini se&ccedil;mek i&ccedil;in bu d&uuml;ğmeye tıklayın veya se&ccedil;eneğin yanında parantez i&ccedil;inde verilen harf tuşuyla birlikte <em>Ctrl</em> tuşunu kullanın.</p>
+            <p>Metin pasajlarını yapıştırırken aşağıdaki se&ccedil;enekler mevcuttur:</p>
+            <ul>
+                <li><em>Hedef temayı kullan (Ctrl+H)</em> - Ge&ccedil;erli sununun teması tarafından belirtilen bi&ccedil;imlendirmenin uygulanmasına izin verir. Bu se&ccedil;enek varsayılan olarak kullanılır.</li>
+                <li><em>Kaynak bi&ccedil;imlendirmesini koru (Ctrl+K)</em> - Kopyalanan metnin kaynak bi&ccedil;imlendirmesini korumayı sağlar.</li>
+                <li><em>Resim (Ctrl+U)</em> - Metnin d&uuml;zenlenemeyecek şekilde g&ouml;r&uuml;nt&uuml; olarak yapıştırılmasına izin verir.</li>
+                <li><em>Yalnızca metni koru (Ctrl+T)</em> - Metnin orijinal bi&ccedil;imlendirmesi olmadan yapıştırılmasına izin verir.</li>
+            </ul>
+            <p><img alt="Yapıştırma se&ccedil;enekleri" src="../images/pastespecial.png" /></p>
+            <p>Nesneleri (otomatik şekiller, grafikler, tablolar) yapıştırırken aşağıdaki se&ccedil;enekler mevcuttur:</p>
+            <ul>
+                <li><em>Hedef temayı kullan (Ctrl+H)</em> - Ge&ccedil;erli sununun teması tarafından belirtilen bi&ccedil;imlendirmenin uygulanmasına izin verir. Bu se&ccedil;enek varsayılan olarak kullanılır.</li>
+                <li><em>Resim (Ctrl+U)</em> - Nesnenin d&uuml;zenlenemeyecek şekilde g&ouml;r&uuml;nt&uuml; olarak yapıştırılmasına izin verir.</li>
+            </ul>
+            <p>Yapıştırdıktan sonra <b>&Ouml;zel Yapıştır</b> d&uuml;ğmesinin otomatik g&ouml;r&uuml;nmesini etkinleştirmek/devre dışı bırakmak i&ccedil;in <b>Dosya</b> sekmesi &gt; <b>Gelişmiş Ayarlar</b> se&ccedil;eneğine gidin ve <b>İ&ccedil;erik yapıştırıldığında Yapıştırma Se&ccedil;enekleri d&uuml;ğmesini g&ouml;ster</b> onay kutusunu işaretleyin/işaretini kaldırın.</p>
+            <h3>Geri Al/Yinele işlemlerini kullanma</h3>
+            <p>İşlemlerinizi geri almak/yinelemek i&ccedil;in d&uuml;zenleyici başlığının sol tarafındaki ilgili simgeleri veya klavye kısayollarını kullanın:</p>
+            <ul>
+                <li><b>Geri alma</b> - Ger&ccedil;ekleştirdiğiniz son işlemi geri almak i&ccedil;in <b>Geri al</b> <div class = "icon icon-undo"></div> simgesini kullanın.</li>
+                <li>
+                    <b>Yineleme</b> - Son geri alınan işlemi yeniden yapmak i&ccedil;in <b>Yinele</b> <div class = "icon icon-redo"></div> simgesini kullanın.
+                    <p>Geri almak i&ccedil;in <b>Ctrl+Z</b> tuş kombinasyonunu veya yinelemek i&ccedil;in <b>Ctrl+Y</b> tuş kombinasyonunu kullanabilirsiniz.</p>
+                </li>
+            </ul>
+            <p class="note">
+                <b>Not</b>: Bir sunuyu <b>Hızlı</b> modda birlikte d&uuml;zenlediğinizde, son geri alınan işlemi <b>Yinele</b> se&ccedil;eneği mevcut değildir.
+            </p>
+
+        </div>
+	</body>
+</html>

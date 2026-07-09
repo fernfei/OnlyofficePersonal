@@ -1,0 +1,235 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Insérer et mettre en forme des formes automatiques</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Ajoter une forme automatique à votre présentation et définir ses paramètres." />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+        <div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Rechercher" type="text" onkeypress="doSearch(event)">
+            </div>
+            <h1>Insérer et mettre en forme des formes automatiques</h1>
+            <h3>Insérer une forme automatique</h3>
+            <p>Pour <b>ajouter</b> une forme automatique à une diapositive dans <a target="_blank" href="https://www.onlyoffice.com/fr/presentation-editor.aspx" onclick="onhyperlinkclick(this)"><b>l'éditeur de présentations</b></a>,</p>
+            <ol>
+                <li>sélectionnez la diapositive à laquelle vous voulez ajouter une forme automatique dans la liste des diapositives à gauche,</li>
+                <li>
+                    cliquez sur <div class="icon icon-insertautoshape"></div> <b>Forme</b> dans l'onglet <b>Accueil</b> ou sur <div class="big big-shapegallery"></div> la flèche déroulante de la <b>Galerie de formes</b> dans l'onglet <b>Insertion</b> de la barre d'outils supérieure,
+                </li>
+                <li>sélectionnez l'un des groupes des formes automatiques disponibles depuis la <b>Galerie de formes</b>: <b>Récemment utilisé</b>, <b>Formes de base</b>, <b>Flèches figurées</b>, <b>Maths</b>, <b>Graphiques</b>, <b>Étoiles et rubans</b>, <b>Légendes</b>, <b>Boutons</b>, <b>Rectangles</b>, <b>Lignes</b>,</li>
+                <li>cliquez sur la forme automatique nécessaire du groupe sélectionné,</li>
+                <li>
+                    dans la zone d'édition de la diapositive, placez le curseur de la souris à l'endroit où vous voulez insérer la forme,
+                    <p class="note"><b>Remarque</b>: vous pouvez cliquer et faire glisser pour étirer la forme.</p>
+                </li>
+                <li>
+                    une fois ajoutée, vous pouvez <a href="../UsageInstructions/ManipulateObjects.htm" onclick="onhyperlinkclick(this)">modifier le taille, la position</a> et les paramètres de la forme. Vous pouvez sauvegarder la forme en tant qu'image sur votre ordinateur à l'aide de l'option <b>Enregistrer en tant qu'image</b> dans le menu contextuel.
+                    <p class="note"><b>Remarque</b>: pour ajouter une légende à la forme, assurez-vous que la forme est sélectionnée sur la diapositive et commencez à taper le texte. Le texte que vous ajoutez fait partie de la forme (lorsque vous déplacez ou faites pivoter la forme, le texte se déplace avec la forme).</p>
+                </li>
+            </ol>
+            <p>Il est également possible d'ajouter une forme à une disposition de diapositive. Pour en savoir plus, veuillez consulter <a href="../UsageInstructions/SetSlideParameters.htm#addtolayout" onclick="onhyperlinkclick(this)">cet article</a>.</p>
+            <hr />
+            <h3>Copier la mise en forme du style de la forme automatique</h3>
+            <p>Pour <b>copier</b> la mise en forme du style d'une forme automatique,</p>
+            <ol>
+                <li>sélectionnez la forme automatique dont vous souhaitez copier la mise en forme en utilisant la souris ou  <a href="../HelpfulHints/KeyboardShortcuts.htm#textselection" onclick="onhyperlinkclick(this)">le clavier</a>,</li>
+                <li>cliquez l'icône <b>Copier le style</b> <div class="icon icon-copystyle"></div> sous l'onglet Accueil de la barre d'outils supérieure ( le pointeur de la souris ressemblera à ceci <div class="icon icon-paste_style"></div>),</li>
+                <li>sélectionnez la forme automatique à laquelle vous souhaitez appliquer la mise en forme.</li>
+            </ol>
+            <!--<p>To <b>apply the copied formatting</b> to multiple autoshapes,</p>
+    <ol>
+        <li>select the autoshape whose formatting you need to copy with the mouse or <a href="../HelpfulHints/KeyboardShortcuts.htm#textselection" onclick="onhyperlinkclick(this)">use the keyboard</a>,</li>
+        <li>double-click the <b>Copy style</b> <div class="icon icon-copystyle"></div> icon on the <b>Home</b> tab of the top toolbar (the mouse pointer will look like this <div class="icon icon-paste_style"></div> and the <b>Copy style</b> icon will remain selected: <div class="icon icon-copystyle_selected"></div>),</li>
+        <li>select the necessary autoshapes one by one to apply the same formatting to each of them,</li>
+        <li>to exit this mode, click the <b>Copy style</b> <div class="icon icon-copystyle_selected"></div> icon once again or press the <b>Esc</b> key on the keyboard.</li>
+    </ol>
+    <p>To <b>quickly remove the applied formatting</b> from your shape,</p>
+    <ol>
+        <li>select the autoshape whose formatting you want to remove,</li>
+        <li>click the <b>Clear style</b> <div class="icon icon-clearstyle"></div> icon on the <b>Home</b> tab of the top toolbar.</li>
+    </ol>-->
+            <hr />
+            <h3>Ajuster les paramètres de la forme automatique</h3>
+            <p id="shape_rightclickmenu">Pour aligner et organiser les formes automatiques, utilisez le menu contextuel. Les options du menu sont les suivantes:</p>
+            <ul>
+                <li><b>Couper</b>, <b>Copier</b>, <b>Coller</b> - les options nécessaires pour couper ou coller le texte / l'objet sélectionné et coller un passage de texte précédemment coupé / copié ou un objet à la position actuelle du curseur.</li>
+                <li>Organiser sert à placer la forme sélectionnée au premier plan, envoyer à l'arrière-plan, avancer ou reculer ainsi que grouper ou dégrouper des formes pour effectuer des opérations avec plusieurs à la fois. . Pour en savoir plus sur l'organisation des objets, vous pouvez vous référer à <a href="../UsageInstructions/AlignArrangeObjects.htm" onclick="onhyperlinkclick(this)">cette page</a>.</li>
+                <li><b>Aligner</b> sert à aligner la forme automatique à gauche, au centre, à droite, en haut, au milieu ou en bas. Pour en savoir plus sur l'alignement des objets, veuillez consulter <a href="../UsageInstructions/AlignArrangeObjects.htm" onclick="onhyperlinkclick(this)">cette page</a>.</li>
+                <li><b>Rotation</b> permet de faire pivoter la forme automatique de 90 degrés dans le sens des aiguilles d'une montre ou dans le sens inverse des aiguilles d'une montre, ainsi que de retourner la forme automatique horizontalement ou verticalement.</li>
+                <li><b>Enregistrer en tant qu'image</b> sert à sauvegarder la forme automatique en tant qu'image sur votre ordinateur.</li>
+                <li>
+                    <b>Modifier les points</b> sert à personnaliser ou modifier le contour d'une forme.
+                    <ol>
+                        <li>Pour activer les points d'ancrage modifiables, faites un clic droit sur la forme et sélectionnez <b>Modifier les points</b> dans le menu ou cliquez sur <b>Modifier la forme</b> > <b>Modifier les points</b> du panneau droit. Les carreaux noirs qui apparaissent sont les points de rencontre entre deux lignes et la ligne rouge trace le contour de la forme. Cliquez sur l'un de ces points et faites-le glisser pour repositionner et modifier le contour de la forme.</li>
+                        <li>
+                            Lorsque vous cliquez sur le point d'ancrage, deux lignes bleus avec des carreaux blancs apparaissent. Ce sont les points de contrôle Bézier permettant de créer une courbe et de modifier la finesse de la courbe.
+                            <p><img alt="Modifier les points" src="../images/editpoints_example.png" /></p>
+                        </li>
+                        <li>
+                            Autant que les points d'ancrage sont actifs, vous pouvez les modifier et supprimer.
+                            <p>Pour ajouter un point de contrôle à une forme, maintenez la touche <b>Ctrl</b> enfoncée et cliquez sur l'emplacement du point de contrôle souhaité.</p>
+                            <p>Pour supprimer un point, maintenez la touche <b>Ctrl</b> enfoncée et cliquez sur le point superflu.</p>
+                        </li>
+                    </ol>
+                </li>
+                <li><b>Paramètres avancés de la forme automatique </b>sert à ouvrir la fenêtre Forme - Paramètres avancés.</li>
+                <li>Ajouter à la mise en page sert à fusionner la forme automatique avec l'arrière-plan de la mise en page de la diapositive.</li>
+            </ul>
+            <hr />
+            <p>Certains paramètres de la forme automatique peuvent être modifiés sous l'onglet <b>Paramètres de la forme</b> de la barre latérale droite. Pour l'activer, cliquez sur la forme automatique et sélectionnez l'icône <b>Paramètres de la forme</b> <span class="icon icon-shape_settings_icon"></span> à droite. Vous pouvez y modifier les paramètres suivants:</p>
+            <p><img class="floatleft" alt="Onglet Paramètres de la forme" src="../images/shapesettingstab.png" /></p>
+            <ul style="margin-left: 280px;">
+                <li>
+                    <b>Remplissage</b> - utilisez cette section pour sélectionner le remplissage de la forme automatique. Les options disponibles sont les suivantes:
+                    <ul>
+                        <li><b>Couleur de remplissage</b> - sert à spécifier la couleur unie à utiliser pour remplir la forme sélectionnée.</li>
+                        <li><b>Remplissage en dégradé</b> - sélectionnez cette option pour spécifier deux couleurs et remplir la forme avec une transition douce entre elles.</li>
+                        <li><b>Image ou Texture</b> - utilisez une image ou une texture prédéfinie en tant que l'arrière-plan de la forme.</li>
+                        <li><b>Modèle</b> - sélectionnez cette option pour choisir un modèle à deux couleurs composé d'éléments répétés.</li>
+                        <li>Aucun remplissage - sélectionnez cette option si vous ne voulez pas utiliser un remplissage.</li>
+                    </ul>
+                    <p>Pour en savoir plus consultez la section    <a href="../UsageInstructions/FillObjectsSelectColor.htm" onclick="onhyperlinkclick(this)">Remplir les objets et sélectionner les couleurs</a> .</p>
+                </li>
+                <li id="shapestroke">
+                    <b>Trait</b> - sert à régler la taille, la couleur et le type du contour de la forme.
+                    <ul>
+                        <li>Pour modifier la <b>largeur</b> du trait, sélectionnez l'une des options disponibles depuis la liste déroulante <b>Taille</b>. Les options disponibles sont les suivantes: 0,5 pt, 1 pt, 1,5 pt, 2,25 pt, 3 pt, 4,5 pt, 6 pt ou <b>Pas de ligne</b> si vous ne voulez pas de contour.</li>
+                        <li>Pour changer la <b>couleur</b> du contour, cliquez sur la case colorée et <a href="../UsageInstructions/FillObjectsSelectColor.htm" onclick="onhyperlinkclick(this)">sélectionnez la couleur voulue</a>. Vous pouvez utiliser la <b>couleur de thème</b> sélectionnée, une <b>couleur standard</b> ou choisir une <b>couleur personnalisée</b>.</li>
+                        <li>Pour modifier le <b>type</b> de contour, sélectionnez l'option voulue dans la liste déroulante correspondante (une ligne continue est appliquée par défaut, vous pouvez la remplacer par l'une des lignes pointillées disponibles).</li>
+                        <li>Pour modifier <b>l'opacité</b> du trait, saisissez la valeur manuellement ou utilisez le curseur approprié.</li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Rotation</b> permet de faire pivoter la forme de 90 degrés dans le sens des aiguilles d'une montre ou dans le sens inverse des aiguilles d'une montre, ainsi que de retourner l'image horizontalement ou verticalement. Cliquez sur l'un des boutons:
+                    <ul>
+                        <li><div class="icon icon-rotatecounterclockwise"></div> pour faire pivoter la forme de 90 degrés dans le sens inverse des aiguilles d'une montre</li>
+                        <li><div class="icon icon-rotateclockwise"></div> pour faire pivoter la forme de 90 degrés dans le sens des aiguilles d'une montre</li>
+                        <li><div class="icon icon-fliplefttoright"></div> pour retourner la forme horizontalement (de gauche à droite)</li>
+                        <li><div class="icon icon-flipupsidedown"></div> pour retourner la forme verticalement (à l'envers)</li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Modifier la forme </b>sert à modifier le contour de la forme ou à remplacer la forme actuelle par une autre en la sélectionnant de la liste déroulante.
+                    <ul>
+                        <li>
+                            <b>Modifier les points</b> sert à personnaliser ou modifier le contour d'une forme.
+                            <ol>
+                                <li>
+                                    Lorsque vous cliquez sur le point d'ancrage, deux lignes bleus avec des carreaux blancs apparaissent. Ce sont les points de contrôle Bézier permettant de créer une courbe et de modifier la finesse de la courbe.
+                                    <p><img alt="Modifier les points" src="../images/editpoints_example.png" /></p>
+                                </li>
+                                <li>
+                                    Autant que les points d'ancrage sont actifs, vous pouvez les modifier et supprimer.
+                                    <p>Pour ajouter un point de contrôle à une forme, maintenez la touche <b>Ctrl</b> enfoncée et cliquez sur l'emplacement du point de contrôle souhaité.</p>
+                                    <p>Pour supprimer un point, maintenez la touche <b>Ctrl</b> enfoncée et cliquez sur le point superflu.</p>
+                                </li>
+                            </ol>
+                        </li>
+                        <li><b>Modifier la forme</b> sert à remplacer la forme existante. Sélectionnez une autre forme dans la galerie de formas de la liste déroulante,</li>
+                    </ul>
+                </li>
+                <li>
+                    Ombre - accédez ce menu pour sélectionner l'un des styles d'ombre pour une forme.
+                    <ul>
+                        <li>Aucune ombre - désactivez cette option pour afficher une ombre et vice versa.</li>
+                        <li>Couleur - sélectionnez l'une des couleurs disponibles de la palette <b>Couleurs de thème</b> ou Couleurs standard; utilisez l'outil <b>Pipette</b> pour copier la couleur d'un autre objet du document; ou cliquez sur <b>Plus de couleurs</b> dans le menu pour créer une couleur personnalisée.</li>
+                        <li>
+                            Ajuster l'ombre - créez une ombre personnalisée utilisant les curseurs suivants:
+                            <p><img alt="Ajuster l'ombre" src="../../../../../../common/main/resources/help/fr/images/adjust_shadow.png" /></p>
+                            <ul>
+                                <li>Transparence - réglez la transparence de l'ombre.</li>
+                                <li>Taille - réglez la taille de l'ombre.</li>
+                                <li>Angle - réglez l'angle de l'ombre par rapport à l'objet.</li>
+                                <li>Distance - réglez la distance entre l'ombre et l'objet.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <hr />
+            <p>Pour modifier les <b>paramètres avancés</b> d'une forme automatique, cliquez sur la forme avec le bouton droit de la souris et sélectionnez l'option <b>Paramètres avancés de la forme</b> dans menu contextuel ou cliquez avec le bouton gauche sur <b>Afficher les paramètres avancés</b> sur la barre latérale droite. La fenêtre paramètres de la forme s'ouvre:</p>
+            <p><img alt="Paramètres de la forme - Onglet Taille" src="../images/shape_properties1.png" /></p>
+            <p>L'onglet <b>Emplacement</b> vous permet de modifier la <b>Largeur</b> et/ou la <b>Hauteur</b> de la forme automatique. Lorsque le bouton  <b>Verrouiller les proportions</b> est activé <span class="icon icon-constantproportions"></span> (dans ce cas, il ressemble à ceci <span class="icon icon-constantproportionsactivated"></span>), la largeur et la hauteur seront changées en même temps et le ratio d'aspect de la forme automatique originale sera préservé.</p>
+            <p>Vous pouvez également saisir la position exacte en utilisant les champs <b>Horizontalement</b> et <b>Verticalement</b> ainsi que le champ <b>De</b> dans lesquels vous pouvez accéder aux paramètres tels que <b>Coin supérieur gauche</b> et <b>Au centre</b>.</p>
+            <p><img alt="Forme - Paramètres avancés" src="../images/shape_properties5.png" /></p>
+            <p>L'onglet <b>Rotation</b> comporte les paramètres suivants:</p>
+            <ul>
+                <li><b>Angle</b> - utilisez cette option pour faire pivoter la forme d'un angle exactement spécifié. Entrez la valeur souhaitée mesurée en degrés dans le champ ou réglez-la à l'aide des flèches situées à droite. </li>
+                <li><b>Retourné</b> - cochez la case <b>Horizontalement</b> pour retourner la forme horizontalement (de gauche à droite) ou la case <b>Verticalement</b> pour retourner l'image verticalement (à l'envers).</li>
+            </ul>
+            <p><img alt="Paramètres de la forme - Poids et flèches" src="../images/shape_properties.png" /></p>
+            <p>L'onglet <b>Poids et flèches</b> contient les paramètres suivants:</p>
+            <ul>
+                <li>
+                    <b>Style de la ligne</b> - ce groupe d'options vous permet de spécifier les paramètres suivants:
+                    <ul>
+                        <li>
+                            <b>Type de bouchon</b> - cette option permet de définir le style de la fin du trait, ainsi elle peut être appliquée seulement aux formes avec un contour ouvert telles que des lignes, des polylignes etc.:
+                            <ul>
+                                <li><b>Plat</b> - les points finaux seront plats.</li>
+                                <li><b>Arrondi</b> - les points finaux seront arrondis.</li>
+                                <li><b>Carré</b> - les points finaux seront carrés.</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <b>Type de jointure</b> - cette option permet de définir le style de l'intersection de deux lignes, par exemple, une polyligne, les coins du triangle ou le contour du rectangle:
+                            <ul>
+                                <li><b>Arrondi</b> - le coin sera arrondi.</li>
+                                <li><b>Plaque</b> - le coin sera coupé d'une manière angulaire.</li>
+                                <li><b>Onglet</b> - l'angle sera aiguisé. Bien adapté pour les formes à angles vifs.</li>
+                            </ul>
+                            <p class="note"><b>Remarque</b>: l'effet sera plus visible si vous utilisez un contour plus épais.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li><b>Flèches</b> - ce groupe d'options est disponible pour les formes du groupe Lignes. Il est possible de définir le <b>Style de début</b>, le <b>Style final</b> et la <b>Taille</b> des flèches en sélectionnant l'option appropriée de la liste déroulante.</li>
+            </ul>
+            <p id="internalmargins"><img alt="Paramètres de la forme - Zone de texte" src="../images/shape_properties3.png" /></p>
+            <p>
+                L'onglet <b>Zone de texte</b> comprend les options suivantes:
+                <ul>
+                    <li><b>Ajuster automatiquement</b> - pour modifier la façon dont le texte est affiché à l'intérieur de la forme: 
+L'onglet Marges intérieures - afin de changer les marges internes En haut, En bas, A gauche et A droite de la forme automatique (c'est-à-dire la distance entre le texte à l'intérieur de la forme et les bordures de la forme automatique). <b>Ne pas ajuster automatiquement</b>, <b>Rétrécir le texte dans la zone de débordement uniquement</b>, <b>Redimensionner la forme pour ajuster le texte</b>.</li>
+                    <li><b>Marges intérieures</b> permet de modifier les marges intérieures de la forme <b>En haut</b>, <b>En bas</b>, <b>À gauche</b>, <b>À droite</b> (c'est-à-dire la distance entre le texte à l'intérieur de la forme et les bordures de la forme automatique).</li>
+                </ul>
+            </p>
+            <p class="note"><b>Remarque</b>: cet onglet n'est disponible que si tu texte est ajouté dans la forme automatique, sinon l'onglet est désactivé.</p>
+            <p id="columns"><img alt="Paramètres de la forme - L'onglet Colonnes" src="../images/shape_properties2.png" /></p>
+            <p>L'onglet <b>Colonnes</b> permet d'ajouter des colonnes de texte dans la forme automatique en spécifiant le <b>Nombre de colonnes</b> nécessaires (jusqu'à 16) et <b>Espacement entre les colonnes</b>. Une fois que vous avez cliqué sur OK, le texte qui existe déjà ou tout autre texte que vous entrez dans la forme automatique apparaîtra dans les colonnes et circulera d'une colonne à l'autre.</p>
+            <p><img alt="Paramètres de la forme - Onglet Texte de remplacement" src="../images/shape_properties4.png" /></p>
+            <p>L'onglet <b>Texte de remplacement</b> permet de spécifier un <b>Titre</b> et une <b>Description</b> qui sera lue aux personnes avec des déficiences cognitives ou visuelles pour les aider à mieux comprendre l'information inclus dans la forme.</p>
+            <hr />
+            <p>Pour <b>remplacer</b> la forme automatique, cliquez dessus avec le bouton gauche de la souris et utilisez la liste déroulante <b>Modifier la forme automatique</b> dans l'onglet <b>Paramètres de la forme</b> de la barre latérale droite.</p>
+            <p>Pour <b>supprimer</b> la forme automatique ajoutée, cliquez avec le bouton gauche de la souris et appuyez sur la touche <b>Supprimer</b>.</p>
+            <p>Pour apprendre à <b>aligner</b> une forme automatique sur la diapositive ou à <b>organiser</b> plusieurs images, veuillez consulter la section <a href="../UsageInstructions/AlignArrangeObjects.htm" onclick="onhyperlinkclick(this)">Aligner et organiser les objets sur une diapositive</a>.</p>
+            <hr />
+            <h3>Joindre des formes automatiques à l'aide de connecteurs</h3>
+            <p>Vous pouvez connecter des formes automatiques à l'aide de lignes munies de points de connexion pour démontrer les dépendances entre les objets (par exemple, si vous souhaitez créer un diagramme). Pour ce faire,</p>
+            <ol>
+                <li>cliquez sur  <div class="icon icon-insertautoshape"></div> <b>Forme</b> dans l'onglet <b>Accueil</b> ou <b>Insertion</b> de la barre d'outils supérieure,</li>
+                <li>
+                    sélectionnez le groupe <b>Lignes</b> dans le menu,
+                    <p><img alt="Formes - Lignes" src="../images/connectors.png" /></p>
+                </li>
+                <li>cliquez sur la forme souhaitée dans le groupe sélectionné (à l'exception des trois dernières formes qui ne sont pas des connecteurs, à savoir les formes <em>Courbe</em>, <em>Dessin à main levée</em> et <em>Forme libre</em>),</li>
+                <li>
+                    faites glisser le curseur de la souris vers la première forme automatique et cliquez sur l'un des points de connexion <div class="icon icon-connectionpoint"></div> qui s'affiche sur le contour de la forme,
+                    <p><span class="big big-connectors_firstshape"></span></p>
+                </li>
+                <li>
+                    faites glisser le curseur de la souris vers la deuxième forme automatique et cliquez sur le point de connexion voulu sur son contour.
+                    <p><span class="big big-connectors_secondshape"></span></p>
+                </li>
+            </ol>
+            <p>Si vous déplacez les formes automatiques jointes, le connecteur reste attaché aux formes et se déplace avec elles. </p>
+            <p><span class="big big-connectors_moveshape"></span></p>
+            <p>Vous pouvez également détacher le connecteur des formes, puis l'attacher à d'autres points de connexion.</p>
+        </div>
+	</body>
+</html>

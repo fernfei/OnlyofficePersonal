@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>GETPIVOTDATA Function</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+			<div class="search-field">
+				<input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+			</div>
+			<h1>GETPIVOTDATA Function</h1>
+			<p>The <b>GETPIVOTDATA</b> function is one of the <a href="../UsageInstructions/InsertFunction.htm#lookupreference" onclick="onhyperlinkclick(this)">lookup and reference functions</a>. It is used to extract data stored in a PivotTable.</p>
+			<h3>Syntax</h3>
+			<p><b><em>GETPIVOTDATA(data_field, pivot_table, [field], [item], …)</em></b></p>
+			<p>The <b>GETPIVOTDATA</b> function has the following arguments:</p>
+			<table style="width: 40%">
+				<tr>
+					<th style="background-color: #f4f4f4" width="150ch"><b>Argument</b></th>
+					<th style="background-color: #f4f4f4"><b>Description</b></th>
+				</tr>
+				<tr>
+					<td><b><em>data_field</em></b></td>
+					<td>Is used to set the name of the PivotTable field that contains the required data. The argument needs to be in quotes.</td>
+				</tr>
+				<tr>
+					<td><b><em>pivot_table</em></b></td>
+					<td>Is used to refer to any cell, range of cells, or named range of cells in a PivotTable. The argument is used to determine which PivotTable contains the required data.</td>
+				</tr>
+				<tr>
+					<td><b><em>field</em>, <em>item</em></b></td>
+					<td>A field/item pair. There are up to 126 pairs of field names and item names that may be used to describe the required data. The pairs can be in any order.</td>
+				</tr>
+			</table>
+			
+			<h3>Examples</h3>
+            <p>The figure below displays the result returned by the <b>GETPIVOTDATA</b> function.</p>
+			<p><img alt="GETPIVOTDATA Function" src="../images/GETPIVOTDATA.png" /></p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>ANA_PARA_&Ouml;DEMESİ İşlevi</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>ANA_PARA_&Ouml;DEMESİ İşlevi</h1>
+			<p><b>ANA_PARA_&Ouml;DEMESİ</b> işlevi, finansal işlevlerden biridir. Bir yatırım i&ccedil;in belirli bir faiz oranı ve sabit &ouml;deme planı temelinde yapılan ana &ouml;demesini hesaplamak i&ccedil;in kullanılır.</p>
+			<p><b>ANA_PARA_&Ouml;DEMESİ</b> işlevi s&ouml;z dizimi ş&ouml;yledir:</p> 
+			<p style="text-indent: 150px;"><b><em>ANA_PARA_&Ouml;DEMESİ(oran, d&ouml;nem, &ouml;deme-sayısı, mevcut-değer [, [gelecekteki-değer] [,[t&uuml;r]]])</em></b></p> 
+			<p><em>Burada</em></p> 
+				<p style="text-indent: 50px;"><b><em>oran,</em></b> yatırımın faiz oranıdır.</p> 
+                <p style="text-indent: 50px;"><b><em>d&ouml;nem,</em></b> ana &ouml;demesini bulmak istediğiniz d&ouml;nemdir. Değer <b><em>1</em></b> ile <b><em>&ouml;deme sayısı</em></b> arasında olmalıdır.</p> 
+				<p style="text-indent: 50px;"><b><em>&ouml;deme-sayısı,</em></b> &ouml;deme sayısıdır.</p> 
+				<p style="text-indent: 50px;"><b><em>bug&uuml;nk&uuml;-değer,</em></b> &ouml;demelerin bug&uuml;nk&uuml; değeridir.</p>
+                <p style="text-indent: 50px;"><b><em>gelecekteki-değer,</em></b> gelecekteki bir değerdir (yani, son &ouml;deme yapıldıktan sonra kalan nakit bakiyesidir). İsteğe bağlı bir bağımsız değişkendir. Atlanırsa, işlev <b><em>gelecekteki-değerin</em></b> 0 olduğunu varsayar.</p>
+				<p style="text-indent: 50px;"><b><em>t&uuml;r,</em></b> &ouml;demelerin yapılacağı d&ouml;nemdir. İsteğe bağlı bir bağımsız değişkendir. 0 olarak ayarlanırsa veya atlanırsa işlev, &ouml;demelerin d&ouml;nem sonunda &ouml;denmesi gerektiğini varsayar. Eğer <b><em>t&uuml;r</em></b> 1&apos;e ayarlanır ise, &ouml;demeler d&ouml;nem başında yapılır.</p>
+			<p class="note"><b>Not:</b> &ouml;denen nakit (tasarrufa &ouml;denen mevduat gibi) negatif sayılarla temsil edilir; alınan nakit (temett&uuml; &ccedil;ekleri gibi) pozitif sayılarla g&ouml;sterilir. <em>Oran</em> ve <em>&ouml;deme sayısı</em> birimleri tutarlı olmalıdır: aylık &ouml;deme durumunda <em>oran</em> i&ccedil;in N%/12 ve <em>&ouml;deme sayısı</em> i&ccedil;in N*12 kullanın; &uuml;&ccedil; aylık &ouml;demeler durumunda <em>oran</em> i&ccedil;in N%/14 ve <em>&ouml;deme sayısı</em> i&ccedil;in N*14 kullanın; yıllık &ouml;demeler durumunda <em>oran</em> i&ccedil;in N% ve <em>&ouml;deme sayısı</em> i&ccedil;in N kullanın</p>
+			<p>Sayısal değerler, başvurduğunuz h&uuml;creye manuel olarak girilebilir veya eklenebilir.</p>
+			<p><b>ANA_PARA_&Ouml;DEMESİ</b> işlevini uygulamak i&ccedil;in</p>
+			<ol>
+			<li>Sonucu g&ouml;r&uuml;nt&uuml;lemek istediğiniz h&uuml;creyi se&ccedil;in,</li>
+			<li>&Uuml;st ara&ccedil; &ccedil;ubuğunda bulunan <b>İşlev ekle</b> <div class = "icon icon-insertfunction"></div> simgesine tıklayın
+                <br />veya se&ccedil;ilen bir h&uuml;crenin i&ccedil;ine sağ tıklayın ve men&uuml;den <b>İşlev Ekle</b> se&ccedil;eneğini se&ccedil;in
+                <br />veya<div class = "icon icon-function"></div>form&uuml;l &ccedil;ubuğunda bulunan simgeye tıklayın,
+            </li>
+			<li>Listeden <b>Finansal</b> işlev grubunu se&ccedil;in,</li>
+			<li><b>ANA_PARA_&Ouml;DEMESİ</b> işlevine tıklayın,</li>
+			<li>Virg&uuml;lle ayırarak gerekli bağımsız değişkenleri girin,</li>
+			<li><b>Enter</b> d&uuml;ğmesine basın.</li>
+			</ol>
+			<p>Sonu&ccedil; se&ccedil;ili h&uuml;crede g&ouml;r&uuml;nt&uuml;lenecektir.</p>
+			<p style="text-indent: 150px;"><img alt="ANA_PARA_ÖDEMESİ İşlevi" src="../images/ppmt.png" /></p>
+		</div>
+	</body>
+</html>

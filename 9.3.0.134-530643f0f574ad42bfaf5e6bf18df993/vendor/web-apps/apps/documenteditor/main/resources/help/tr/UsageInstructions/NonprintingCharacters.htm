@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Yazdırılamayan karakterleri g&ouml;ster/gizle</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Show or hide nonprinting characters while formatting text, creating tables, and editing documents" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Yazdırılamayan karakterleri g&ouml;ster/gizle</h1>
+			<p><a href="https://www.onlyoffice.com/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Belge D&uuml;zenleyicide</b></a>, bir belgeyi d&uuml;zenlemenize yardımcı olan yazdırılamayan karakterlerin g&ouml;r&uuml;nt&uuml;lenmesini etkinleştirebilirsiniz. Bunlar, &ccedil;eşitli bi&ccedil;imlendirme &ouml;ğelerinin bulunduğunu g&ouml;sterir, ancak ekranda g&ouml;r&uuml;nt&uuml;lenseler bile belgeyle birlikte yazdırılamazlar.</p>
+			<p>Yazdırılamayan karakterleri g&ouml;stermek veya gizlemek i&ccedil;in &uuml;st ara&ccedil; &ccedil;ubuğunda bulunan <b>Giriş</b> sekmesindeki <b>Yazdırılamayan karakterler</b> <span class = "icon icon-nonprintingcharacters"></span> simgesine tıklayın. Alternatif olarak, <em>Ctrl+Shift+Num8</em> tuş kombinasyonunu kullanabilirsiniz.</p>
+			<p>Yazdırılamayan karakterler şunları i&ccedil;erir:</p>
+			<table>
+				<tr>
+					<td>Boşluklar</td>
+					<td><div class = "icon icon-space"></div></td>
+					<td>Klavyede <b>Boşluk tuşuna</b> bastığınızda eklenir. Karakterler arasında bir boşluk oluşturur.</td>
+				</tr>
+				<tr>
+					<td>Sekmeler</td>
+					<td><div class = "icon icon-tab"></div></td>
+					<td><b>Tab</b> tuşuna bastığınızda eklenir. İmleci bir sonraki sekme durağına ilerletmede kullanılır.</td>
+				</tr>
+				<tr>
+					<td>Paragraf işaretleri (yani zorunlu d&ouml;n&uuml;şler)</td>
+					<td><div class = "icon icon-hard"></div></td>
+					<td><b>Enter</b> tuşuna bastığınızda eklenir. Bir paragrafı bitirir ve sonrasına biraz boşluk ekler. Ayrıca paragraf bi&ccedil;imlendirmesi hakkında bilgi i&ccedil;erir.</td>
+				</tr>
+				<tr>
+					<td>Satır sonları (yani zorunlu olmayan d&ouml;n&uuml;şler)</td>
+					<td><div class = "icon icon-soft"></div></td>
+					<td><b>Shift+Enter</b> tuş kombinasyonuna bastığınızda eklenir. Ge&ccedil;erli satırı sonlandırır ve metin satırlarını birbirine yakınlaştırır. Zorunlu olmayan d&ouml;n&uuml;ş, &ouml;ncelikle başlıklarda ve konu başlıklarında kullanılır.</td>
+				</tr>
+				<tr>
+					<td>B&ouml;l&uuml;nemez boşluklar</td>
+					<td><div class = "icon icon-nonbreakspace"></div></td>
+					<td><b>Ctrl+Shift+Spacebar</b> tuş kombinasyonunu kullandığınızda eklenir. Karakterler arasında yeni bir satır başlatmada kullanılamayacak bir boşluk oluşturur.</td>
+				</tr>
+				<tr>
+					<td>Sayfa sonları</td>
+					<td><div class = "big big-pagebreak"></div></td>
+					<td>&Uuml;st ara&ccedil; &ccedil;ubuğundaki <div class = "icon icon-pagebreak1"></div> <b>Ekle</b> veya <b>D&uuml;zen</b> sekmelerinde bulunan <b>Sonlar</b> simgesini kullandığınızda ve ardından <b>Sayfa Sonu Ekle</b> alt men&uuml; se&ccedil;eneklerinden birini se&ccedil;tiğinizde eklenir (b&ouml;l&uuml;m sonu g&ouml;stergesi se&ccedil;ilen se&ccedil;eneğe g&ouml;re değişir: Sonraki Sayfa, S&uuml;rekli Sayfa, &Ccedil;ift Sayfa veya Tek Sayfa).</td>
+				</tr>
+				<tr>
+					<td>B&ouml;l&uuml;m sonları</td>
+					<td><div class = "big big-sectionbreak"></div></td>
+					<td>&Uuml;st ara&ccedil; &ccedil;ubuğundaki <div class = "icon icon-pagebreak1"></div> <b>Ekle</b> veya <b>D&uuml;zen</b> sekmesinde bulunan <b>Sonlar</b> simgesini kullandığınızda ve ardından <b>B&ouml;l&uuml;m Sonu Ekle</b> alt men&uuml; se&ccedil;eneklerinden birini se&ccedil;tiğinizde eklenir (b&ouml;l&uuml;m sonu g&ouml;stergesi se&ccedil;ilen se&ccedil;eneğe g&ouml;re değişir: Sonraki Sayfa, S&uuml;rekli Sayfa, &Ccedil;ift Sayfa veya Tek Sayfa).</td>
+				</tr>
+                <tr>
+                    <td>S&uuml;tun sonları</td>
+                    <td><div class = "big big-columnbreak"></div></td>
+                    <td>&Uuml;st ara&ccedil; &ccedil;ubuğundaki <div class = "icon icon-pagebreak1"></div> <b>Ekle</b> veya <b>D&uuml;zen</b> sekmesinde bulunan <b>Sonlar</b> simgesini kullandığınızda ve ardından <b>S&uuml;tun Sonu Ekle</b> se&ccedil;eneğini se&ccedil;tiğinizde eklenir.</td>
+                </tr>
+				<tr>
+					<td>Tablolarda h&uuml;cre sonu ve satır sonu işaretleri</td>
+					<td><div class = "icon icon-cellrow"></div></td>
+					<td>Sırasıyla tek bir h&uuml;creye ve bir satıra ait bi&ccedil;imlendirme kodlarını i&ccedil;erir.</td>
+				</tr>
+				<tr>
+					<td>Paragrafın solundaki kenar boşluğunda k&uuml;&ccedil;&uuml;k siyah kare</td>
+					<td><div class = "icon icon-square"></div></td>
+					<td>Paragraf se&ccedil;eneklerinden en az birinin, &ouml;rneğin, <b>Satırları birlikte tut</b>, <b>&Ouml;nce sayfa sonu</b> uygulandığını g&ouml;sterir.</td>
+				</tr>
+				<tr>
+					<td>Tutturucu sembolleri</td>
+					<td><div class = "icon icon-anchor"></div></td>
+					<td>Y&uuml;zer nesnelerin konumunu belirtir (sarma stili <b>Metin G&ouml;vdesine Eklenenden</b> farklı olan nesneler), &ouml;rneğin resimler, otomatik şekiller, &ccedil;izelgeler. Tutturucusunu g&ouml;r&uuml;n&uuml;r kılmak i&ccedil;in bir nesne se&ccedil;melisiniz.</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

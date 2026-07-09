@@ -1,0 +1,703 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>&Ccedil;EVİR İşlevi</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+        <div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+            </div>
+            <h1>&Ccedil;EVİR İşlevi</h1>
+            <p><b>&Ccedil;EVİR</b> işlevi, m&uuml;hendislik işlevlerinden biridir. Bir sayıyı bir &ouml;l&ccedil;&uuml;m sisteminden diğerine d&ouml;n&uuml;şt&uuml;rmek i&ccedil;in kullanılır. &Ouml;rneğin, &Ccedil;EVİR, mil cinsinden bir mesafe tablosunu kilometre cinsinden bir mesafe tablosuna &ccedil;evirebilir.</p>
+            <p><b>&Ccedil;EVİR</b> işlevi s&ouml;z dizimi ş&ouml;yledir:</p>
+            <p style="text-indent: 150px;"><b><em>&Ccedil;EVİR(sayı; birimden, birime)</em></b></p>
+            <p><em>Burada</em></p>
+            <p style="text-indent: 50px;"><b><em>sayı,</em></b> d&ouml;n&uuml;şt&uuml;r&uuml;lecek herhangi bir değerdir,</p>
+            <p style="text-indent: 50px;"><b><em>birimden,</em></b> asıl &ouml;l&ccedil;&uuml; birimidir. Tırnak i&ccedil;ine alınmış bir metin dizesidir. Olası değerler aşağıdaki tabloda listelenmiştir.</p>
+            <p style="text-indent: 50px;"><b><em>birime,</em></b> <b><em>sayının</em></b> d&ouml;n&uuml;şt&uuml;r&uuml;lmesi gereken &ouml;l&ccedil;&uuml; birimidir. Tırnak i&ccedil;ine alınmış bir metin dizesidir. Olası değerler aşağıdaki tabloda listelenmiştir.</p>
+            <p class="note"><b>Not:</b> <b><em>birimden</em></b> ve <b><em>birime</em></b> uyumlu olmalıdır, yani aynı &ouml;l&ccedil;&uuml;m t&uuml;r&uuml;ne ait olmalıdır.</p>
+            <h3>Ağırlık ve k&uuml;tle</h3>
+            <table style="width: 40%">
+                <tr>
+                    <td width="50%"><b>Birim</b></td>
+                    <td width="50%"><b>Metin değeri</b></td>
+                </tr>
+                <tr>
+                    <td>Gram</td>
+                    <td>&quot;g&quot;</td>
+                </tr>
+                <tr>
+                    <td>Slug</td>
+                    <td>&quot;sg&quot;</td>
+                </tr>
+                <tr>
+                    <td>Pound k&uuml;tle (İngiliz tartı sistemi)</td>
+                    <td>&quot;lbm&quot;</td>
+                </tr>
+                <tr>
+                    <td>U (atomik k&uuml;tle birimi)</td>
+                    <td>&quot;u&quot;</td>
+                </tr>
+                <tr>
+                    <td>Ounce k&uuml;tle (İngiliz tartı sistemi)</td>
+                    <td>&quot;ozm&quot;</td>
+                </tr>
+                <tr>
+                    <td>Gren</td>
+                    <td>&quot;gren&quot;</td>
+                </tr>
+                <tr>
+                    <td>ABD (kısa) y&uuml;z libre</td>
+                    <td>&quot;cwt&quot; veya &quot;shweight&quot;</td>
+                </tr>
+                <tr>
+                    <td>İngiliz y&uuml;z libre</td>
+                    <td>&quot;uk_cwt&quot; veya &quot;lcwt&quot; (&quot;hweight&quot;)</td>
+                </tr>
+                <tr>
+                    <td>Stone</td>
+                    <td>&quot;stone&quot;</td>
+                </tr>
+                <tr>
+                    <td>Ton</td>
+                    <td>&quot;ton&quot;</td>
+                </tr>
+                <tr>
+                    <td>İngiliz ton</td>
+                    <td>&quot;uk_ton&quot; veya &quot;LTON&quot; (&quot;brton&quot;)</td>
+                </tr>
+            </table>
+            <h3>Uzaklık</h3>
+            <table style="width: 40%">
+                <tr>
+                    <td width="50%"><b>Birim</b></td>
+                    <td width="50%"><b>Metin değeri</b></td>
+                </tr>
+                <tr>
+                    <td>Metre</td>
+                    <td>&quot;m&quot;</td>
+                </tr>
+                <tr>
+                    <td>Kara mili</td>
+                    <td>&quot;mi&quot;</td>
+                </tr>
+                <tr>
+                    <td>Deniz mili</td>
+                    <td>&quot;Nmi&quot;</td>
+                </tr>
+                <tr>
+                    <td>İn&ccedil;</td>
+                    <td>&quot;in&quot;</td>
+                </tr>
+                <tr>
+                    <td>Kadem</td>
+                    <td>&quot;ft&quot;</td>
+                </tr>
+                <tr>
+                    <td>Yarda</td>
+                    <td>&quot;yd&quot;</td>
+                </tr>
+                <tr>
+                    <td>Angstrom</td>
+                    <td>&quot;ang&quot;</td>
+                </tr>
+                <tr>
+                    <td>Ell</td>
+                    <td>&quot;ell&quot;</td>
+                </tr>
+                <tr>
+                    <td>Işık yılı</td>
+                    <td>&quot;ly&quot;</td>
+                </tr>
+                <tr>
+                    <td>Parsek</td>
+                    <td>&quot;parsec&quot; veya &quot;pc&quot;</td>
+                </tr>
+                <tr>
+                    <td>Pika (1/72 in&ccedil;)</td>
+                    <td>&quot;Pikapt&quot; veya &quot;Pika&quot;</td>
+                </tr>
+                <tr>
+                    <td>Pika (1/6 in&ccedil;)</td>
+                    <td>&quot;pica&quot;</td>
+                </tr>
+                <tr>
+                    <td>ABD kara mili</td>
+                    <td>&quot;survey_mi&quot;</td>
+                </tr>
+            </table>
+            <h3>Zaman</h3>
+            <table style="width: 40%">
+                <tr>
+                    <td width="50%"><b>Birim</b></td>
+                    <td width="50%"><b>Metin değeri</b></td>
+                </tr>
+                <tr>
+                    <td>Yıl</td>
+                    <td>&quot;yl&quot;</td>
+                </tr>
+                <tr>
+                    <td>G&uuml;n</td>
+                    <td>&quot;g&uuml;n&quot; veya &quot;g&quot;</td>
+                </tr>
+                <tr>
+                    <td>Saat</td>
+                    <td>&quot;sa&quot;</td>
+                </tr>
+                <tr>
+                    <td>Dakika</td>
+                    <td>&quot;dk&quot; veya &quot;dak&quot;</td>
+                </tr>
+                <tr>
+                    <td>Saniye</td>
+                    <td>&quot;san&quot; veya &quot;sn&quot;</td>
+                </tr>
+            </table>
+            <h3>Basın&ccedil;</h3>
+            <table style="width: 40%">
+                <tr>
+                    <td width="50%"><b>Birim</b></td>
+                    <td width="50%"><b>Metin değeri</b></td>
+                </tr>
+                <tr>
+                    <td>Paskal</td>
+                    <td>&quot;Pa&quot; (veya &quot;p&quot;)</td>
+                </tr>
+                <tr>
+                    <td>Atmosfer</td>
+                    <td>&quot;atm&quot; (veya &quot;at&quot;)</td>
+                </tr>
+                <tr>
+                    <td>mm Civa</td>
+                    <td>&quot;mmHg&quot;</td>
+                </tr>
+                <tr>
+                    <td>PSI</td>
+                    <td>&quot;psi&quot;</td>
+                </tr>
+                <tr>
+                    <td>Tor</td>
+                    <td>&quot;Torr&quot;</td>
+                </tr>
+            </table>
+            <h3>Kuvvet</h3>
+            <table style="width: 40%">
+                <tr>
+                    <td width="50%"><b>Birim</b></td>
+                    <td width="50%"><b>Metin değeri</b></td>
+                </tr>
+                <tr>
+                    <td>Newton</td>
+                    <td>&quot;N&quot;</td>
+                </tr>
+                <tr>
+                    <td>Din</td>
+                    <td>&quot;dyn&quot; (veya &quot;dy&quot;)</td>
+                </tr>
+                <tr>
+                    <td>Libre kuvvet</td>
+                    <td>&quot;lbf&quot;</td>
+                </tr>
+                <tr>
+                    <td>Pond</td>
+                    <td>&quot;pond&quot;</td>
+                </tr>
+            </table>
+            <h3>Enerji</h3>
+            <table style="width: 40%">
+                <tr>
+                    <td width="50%"><b>Birim</b></td>
+                    <td width="50%"><b>Metin değeri</b></td>
+                </tr>
+                <tr>
+                    <td>J&uuml;l</td>
+                    <td>&quot;J&quot;</td>
+                </tr>
+                <tr>
+                    <td>Erg</td>
+                    <td>&quot;e&quot;</td>
+                </tr>
+                <tr>
+                    <td>Termodinamik kalori</td>
+                    <td>&quot;c&quot;</td>
+                </tr>
+                <tr>
+                    <td>BT kalori</td>
+                    <td>&quot;kal&quot;</td>
+                </tr>
+                <tr>
+                    <td>Elektron volt</td>
+                    <td>&quot;eV&quot; (veya &quot;ev&quot;)</td>
+                </tr>
+                <tr>
+                    <td>Beygir g&uuml;c&uuml;-saat</td>
+                    <td>&quot;HPh&quot; (veya &quot;hh&quot;)</td>
+                </tr>
+                <tr>
+                    <td>Vat-saat</td>
+                    <td>&quot;Wh&quot; (veya &quot;wh&quot;)</td>
+                </tr>
+                <tr>
+                    <td>Ayak libre</td>
+                    <td>&quot;flb&quot;</td>
+                </tr>
+                <tr>
+                    <td>BTU</td>
+                    <td>&quot;BTU&quot; (veya &quot;btu&quot;)</td>
+                </tr>
+            </table>
+            <h3>G&uuml;&ccedil;</h3>
+            <table style="width: 40%">
+                <tr>
+                    <td width="50%"><b>Birim</b></td>
+                    <td width="50%"><b>Metin değeri</b></td>
+                </tr>
+                <tr>
+                    <td>Beygir g&uuml;c&uuml;</td>
+                    <td>&quot;HP&quot; (veya &quot;h&quot;)</td>
+                </tr>
+                <tr>
+                    <td>Pferdest&auml;rke</td>
+                    <td>&quot;PS&quot;</td>
+                </tr>
+                <tr>
+                    <td>Vat</td>
+                    <td>&quot;W&quot; (veya &quot;w&quot;)</td>
+                </tr>
+            </table>
+            <h3>Manyetizm</h3>
+            <table style="width: 40%">
+                <tr>
+                    <td width="50%"><b>Birim</b></td>
+                    <td width="50%"><b>Metin değeri</b></td>
+                </tr>
+                <tr>
+                    <td>Tesla</td>
+                    <td>&quot;T&quot;</td>
+                </tr>
+                <tr>
+                    <td>Gauss</td>
+                    <td>&quot;ga&quot;</td>
+                </tr>
+            </table>
+            <h3>Sıcaklık</h3>
+            <table style="width: 40%">
+                <tr>
+                    <td width="50%"><b>Birim</b></td>
+                    <td width="50%"><b>Metin değeri</b></td>
+                </tr>
+                <tr>
+                    <td>Santigrat Derece</td>
+                    <td>&quot;C&quot; (veya &quot;cel&quot;)</td>
+                </tr>
+                <tr>
+                    <td>Fahrenhayt Derece</td>
+                    <td>&quot;F&quot; (veya &quot;fah&quot;)</td>
+                </tr>
+                <tr>
+                    <td>Kelvin</td>
+                    <td>&quot;K&quot; (veya &quot;kel&quot;)</td>
+                </tr>
+                <tr>
+                    <td>Rankin Derece</td>
+                    <td>&quot;Rank&quot;</td>
+                </tr>
+                <tr>
+                    <td>Reaumur Derece</td>
+                    <td>&quot;Reau&quot;</td>
+                </tr>
+            </table>
+            <h3>Hacim (veya sıvı &ouml;l&ccedil;&uuml;s&uuml;)</h3>
+            <table style="width: 40%">
+                <tr>
+                    <td width="50%"><b>Birim</b></td>
+                    <td width="50%"><b>Metin değeri</b></td>
+                </tr>
+                <tr>
+                    <td>&Ccedil;ay kaşığı</td>
+                    <td>&quot;tsp&quot;</td>
+                </tr>
+                <tr>
+                    <td>Modern &ccedil;ay kaşığı</td>
+                    <td>&quot;tspm&quot;</td>
+                </tr>
+                <tr>
+                    <td>Yemek kasigi</td>
+                    <td>&quot;tbs&quot;</td>
+                </tr>
+                <tr>
+                    <td>Sıvı ons</td>
+                    <td>&quot;oz&quot;</td>
+                </tr>
+                <tr>
+                    <td>Bardak</td>
+                    <td>&quot;cup&quot;</td>
+                </tr>
+                <tr>
+                    <td>ABD pint &ouml;l&ccedil;&uuml; birimi</td>
+                    <td>&quot;pt&quot; (veya &quot;us_pt&quot;)</td>
+                </tr>
+                <tr>
+                    <td>İngiliz pint &ouml;l&ccedil;&uuml; birimi</td>
+                    <td>&quot;uk_pt&quot;</td>
+                </tr>
+                <tr>
+                    <td>Kuart</td>
+                    <td>&quot;qt&quot;</td>
+                </tr>
+                <tr>
+                    <td>İngiliz kuart (İngiltere)</td>
+                    <td>&quot;uk_qt&quot;</td>
+                </tr>
+                <tr>
+                    <td>Galon</td>
+                    <td>&quot;gal&quot;</td>
+                </tr>
+                <tr>
+                    <td>İngiliz galon (İngiltere)</td>
+                    <td>&quot;uk_gal&quot;</td>
+                </tr>
+                <tr>
+                    <td>Litre</td>
+                    <td>&quot;l&quot; veya &quot;L&quot; (&quot;lt&quot;)</td>
+                </tr>
+                <tr>
+                    <td>K&uuml;bik angstrom</td>
+                    <td>&quot;ang3&quot; veya &quot;ang^3&quot;</td>
+                </tr>
+                <tr>
+                    <td>ABD petrol varili</td>
+                    <td>&quot;barrel&quot;</td>
+                </tr>
+                <tr>
+                    <td>ABD kilesi</td>
+                    <td>&quot;bushel&quot;</td>
+                </tr>
+                <tr>
+                    <td>Fit k&uuml;p</td>
+                    <td>&quot;ft3&quot; veya &quot;ft^3&quot;</td>
+                </tr>
+                <tr>
+                    <td>İn&ccedil; k&uuml;p</td>
+                    <td>&quot;in3&quot; veya &quot;in^3&quot;</td>
+                </tr>
+                <tr>
+                    <td>K&uuml;bik ışık yılı</td>
+                    <td>&quot;ly3&quot; veya &quot;ly^3&quot;</td>
+                </tr>
+                <tr>
+                    <td>Metrek&uuml;p</td>
+                    <td>&quot;m3&quot; veya &quot;m^3&quot;</td>
+                </tr>
+                <tr>
+                    <td>Mil k&uuml;p</td>
+                    <td>&quot;mi3&quot; veya &quot;mi^3&quot;</td>
+                </tr>
+                <tr>
+                    <td>Yarda k&uuml;p</td>
+                    <td>&quot;yd3&quot; veya &quot;yd^3&quot;</td>
+                </tr>
+                <tr>
+                    <td>K&uuml;bik deniz mili</td>
+                    <td>&quot;Nmi3&quot; veya &quot;Nmi^3&quot;</td>
+                </tr>
+                <tr>
+                    <td>K&uuml;bik Pika</td>
+                    <td>&quot;Picapt3&quot;, &quot;Picapt^3&quot;, &quot;Pica3&quot; veya &quot;Pica^3&quot;</td>
+                </tr>
+                <tr>
+                    <td>Br&uuml;t Kayıtlı Ton</td>
+                    <td>&quot;GRT&quot; (&quot;regton&quot;)</td>
+                </tr>
+                <tr>
+                    <td>&Ouml;l&ccedil;&uuml;m tonu (navlun tonu)</td>
+                    <td>&quot;MTON&quot;</td>
+                </tr>
+            </table>
+            <h3>Alan</h3>
+            <table style="width: 40%">
+                <tr>
+                    <td width="50%"><b>Birim</b></td>
+                    <td width="50%"><b>Metin değeri</b></td>
+                </tr>
+                <tr>
+                    <td>Uluslararası d&ouml;n&uuml;m</td>
+                    <td>&quot;uk_acre&quot;</td>
+                </tr>
+                <tr>
+                    <td>ABD kara d&ouml;n&uuml;m&uuml;</td>
+                    <td>&quot;us_acre&quot;</td>
+                </tr>
+                <tr>
+                    <td>Angstrom kare</td>
+                    <td>&quot;ang2&quot; veya &quot;ang^2&quot;</td>
+                </tr>
+                <tr>
+                    <td>Ar</td>
+                    <td>&quot;ar&quot;</td>
+                </tr>
+                <tr>
+                    <td>Fit kare</td>
+                    <td>&quot;ft2&quot; veya &quot;ft^2&quot;</td>
+                </tr>
+                <tr>
+                    <td>Hektar</td>
+                    <td>&quot;ha&quot;</td>
+                </tr>
+                <tr>
+                    <td>İn&ccedil; kare</td>
+                    <td>&quot;in2&quot; veya &quot;in^2&quot;</td>
+                </tr>
+                <tr>
+                    <td>Işık yılı kare</td>
+                    <td>&quot;ly2&quot; veya &quot;ly^2&quot;</td>
+                </tr>
+                <tr>
+                    <td>Metrekare</td>
+                    <td>&quot;m2&quot; veya &quot;m^2&quot;</td>
+                </tr>
+                <tr>
+                    <td>Morgen</td>
+                    <td>&quot;Morgen&quot;</td>
+                </tr>
+                <tr>
+                    <td>Mil kare</td>
+                    <td>&quot;mi2&quot; veya &quot;mi^2&quot;</td>
+                </tr>
+                <tr>
+                    <td>Deniz mili kare</td>
+                    <td>&quot;Nmi2&quot; veya &quot;Nmi^2&quot;</td>
+                </tr>
+                <tr>
+                    <td>Pica kare</td>
+                    <td>&quot;Picapt2&quot;, &quot;Pica2&quot;, &quot;Pica^2&quot; veya &quot;Picapt^2&quot;</td>
+                </tr>
+                <tr>
+                    <td>Yarda kare</td>
+                    <td>&quot;yd2&quot; veya &quot;yd^2&quot;</td>
+                </tr>
+            </table>
+            <h3>Bilgi</h3>
+            <table style="width: 40%">
+                <tr>
+                    <td width="50%"><b>Birim</b></td>
+                    <td width="50%"><b>Metin değeri</b></td>
+                </tr>
+                <tr>
+                    <td>Bit</td>
+                    <td>&quot;bit&quot;</td>
+                </tr>
+                <tr>
+                    <td>Bayt</td>
+                    <td>&quot;bayt&quot;</td>
+                </tr>
+            </table>
+            <h3>Hız</h3>
+            <table style="width: 40%">
+                <tr>
+                    <td width="50%"><b>Birim</b></td>
+                    <td width="50%"><b>Metin değeri</b></td>
+                </tr>
+                <tr>
+                    <td>Deniz natı</td>
+                    <td>&quot;admkn&quot;</td>
+                </tr>
+                <tr>
+                    <td>Nat</td>
+                    <td>&quot;kn&quot;</td>
+                </tr>
+                <tr>
+                    <td>Metre/saat</td>
+                    <td>&quot;m/h&quot; veya &quot;m/hr&quot;</td>
+                </tr>
+                <tr>
+                    <td>Metre/saniye</td>
+                    <td>&quot;m/s&quot; veya &quot;m/sec&quot;</td>
+                </tr>
+                <tr>
+                    <td>Mil/saat</td>
+                    <td>&quot;mph&quot;</td>
+                </tr>
+            </table>
+            <p><b><em>Birimden</em></b> ve <b><em>birime</em></b> değerleri ile &ouml;nekleri kullanmak da m&uuml;mk&uuml;nd&uuml;r, &ouml;rneğin &quot;g&quot; biriminden &ouml;nce &quot;k&quot; &ouml;n ekini eklerseniz, kilogramı ifade eden &quot;kg&quot; değerini alırsınız.</p>
+            <h3>&Ouml;nekler</h3>
+            <table style="width: 40%">
+                <tr>
+                    <td><b>&Ouml;nek</b></td>
+                    <td><b>&Ccedil;arpan</b></td>
+                    <td><b>Metin değeri</b></td>
+                </tr>
+                <tr>
+                    <td>yotta</td>
+                    <td>1E+24</td>
+                    <td>&quot;Y&quot;</td>
+                </tr>
+                <tr>
+                    <td>zetta</td>
+                    <td>1E+21</td>
+                    <td>&quot;Z&quot;</td>
+                </tr>
+                <tr>
+                    <td>exa</td>
+                    <td>1E+18</td>
+                    <td>&quot;E&quot;</td>
+                </tr>
+                <tr>
+                    <td>peta</td>
+                    <td>1E+15</td>
+                    <td>&quot;P&quot;</td>
+                </tr>
+                <tr>
+                    <td>tera</td>
+                    <td>1E+12</td>
+                    <td>&quot;T&quot;</td>
+                </tr>
+                <tr>
+                    <td>giga</td>
+                    <td>1E+09</td>
+                    <td>&quot;G&quot;</td>
+                </tr>
+                <tr>
+                    <td>mega</td>
+                    <td>1E+06</td>
+                    <td>&quot;M&quot;</td>
+                </tr>
+                <tr>
+                    <td>kilo</td>
+                    <td>1E+03</td>
+                    <td>&quot;k&quot;</td>
+                </tr>
+                <tr>
+                    <td>hekto</td>
+                    <td>1E+02</td>
+                    <td>&quot;h&quot;</td>
+                </tr>
+                <tr>
+                    <td>dekao</td>
+                    <td>1E+01</td>
+                    <td>&quot;da&quot; veya &quot;e&quot;</td>
+                </tr>
+                <tr>
+                    <td>deci</td>
+                    <td>1E-01</td>
+                    <td>&quot;d&quot;</td>
+                </tr>
+                <tr>
+                    <td>santi</td>
+                    <td>1E-02</td>
+                    <td>&quot;c&quot;</td>
+                </tr>
+                <tr>
+                    <td>mili</td>
+                    <td>1E-03</td>
+                    <td>&quot;m&quot;</td>
+                </tr>
+                <tr>
+                    <td>mikro</td>
+                    <td>1E-06</td>
+                    <td>&quot;u&quot;</td>
+                </tr>
+                <tr>
+                    <td>nano</td>
+                    <td>1E-09</td>
+                    <td>&quot;n&quot;</td>
+                </tr>
+                <tr>
+                    <td>piko</td>
+                    <td>1E-12</td>
+                    <td>&quot;p&quot;</td>
+                </tr>
+                <tr>
+                    <td>femto</td>
+                    <td>1E-15</td>
+                    <td>&quot;f&quot;</td>
+                </tr>
+                <tr>
+                    <td>atto</td>
+                    <td>1E-18</td>
+                    <td>&quot;a&quot;</td>
+                </tr>
+                <tr>
+                    <td>zepto</td>
+                    <td>1E-21</td>
+                    <td>&quot;z&quot;</td>
+                </tr>
+                <tr>
+                    <td>yokto</td>
+                    <td>1E-24</td>
+                    <td>&quot;y&quot;</td>
+                </tr>
+            </table>
+            <h3>İkili &Ouml;nekler</h3>
+            <table style="width: 40%">
+                <tr>
+                    <td><b>&Ouml;nek</b></td>
+                    <td><b>&Ouml;nek değeri</b></td>
+                    <td><b>Metin değeri</b></td>
+                </tr>
+                <tr>
+                    <td>yobi</td>
+                    <td>2^80 = 1 208 925 819 614 629 174 706 176</td>
+                    <td>&quot;Yi&quot;</td>
+                </tr>
+                <tr>
+                    <td>zebi</td>
+                    <td>2^70 = 1 180 591 620 717 411 303 424</td>
+                    <td>&quot;Zi&quot;</td>
+                </tr>
+                <tr>
+                    <td>exbi</td>
+                    <td>2^60 = 1 152 921 504 606 846 976</td>
+                    <td>&quot;Ei&quot;</td>
+                </tr>
+                <tr>
+                    <td>pebi</td>
+                    <td>2^50 = 1 125 899 906 842 624</td>
+                    <td>&quot;Pi&quot;</td>
+                </tr>
+                <tr>
+                    <td>tebi</td>
+                    <td>2^40 = 1 099 511 627 776</td>
+                    <td>&quot;Ti&quot;</td>
+                </tr>
+                <tr>
+                    <td>gibi</td>
+                    <td>2^30 = 1 073 741 824</td>
+                    <td>&quot;Gi&quot;</td>
+                </tr>
+                <tr>
+                    <td>mebi</td>
+                    <td>2^20 = 1 048 576</td>
+                    <td>&quot;Mi&quot;</td>
+                </tr>
+                <tr>
+                    <td>kibi</td>
+                    <td>2^10 = 1024</td>
+                    <td>&quot;ki&quot;</td>
+                </tr>
+            </table>
+            <p><b>&Ccedil;EVİR</b> işlevini uygulamak i&ccedil;in</p>
+            <ol>
+                <li>Sonucu g&ouml;r&uuml;nt&uuml;lemek istediğiniz h&uuml;creyi se&ccedil;in,</li>
+                <li>
+                    &Uuml;st ara&ccedil; &ccedil;ubuğunda bulunan <b>İşlev ekle</b> <div class = "icon icon-insertfunction"></div> simgesine tıklayın
+                    <br />veya se&ccedil;ilen bir h&uuml;crenin i&ccedil;ine sağ tıklayın ve men&uuml;den <b>İşlev Ekle</b> se&ccedil;eneğini se&ccedil;in
+                    <br />veya<div class = "icon icon-function"></div>form&uuml;l &ccedil;ubuğunda bulunan simgeye tıklayın,
+                </li>
+                <li>Listeden <b>M&uuml;hendislik</b> işlev grubunu se&ccedil;in,</li>
+                <li><b>&Ccedil;EVİR</b> işlevine tıklayın,</li>
+                <li>Virg&uuml;lle ayırarak gerekli bağımsız değişkenleri girin,</li>
+                <li><b>Enter</b> d&uuml;ğmesine basın.</li>
+            </ol>
+            <p>Sonu&ccedil; se&ccedil;ili h&uuml;crede g&ouml;r&uuml;nt&uuml;lenecektir.</p>
+            <p style="text-indent: 150px;"><img alt="ÇEVİR İşlevi" src="../images/convert.png" /></p>
+        </div>
+	</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Функция поиска</title>
+		<meta charset="utf-8" />
+        <meta name="description" content="Описание функции поиска по PDF" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+        <div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Поиск" type="text" onkeypress="doSearch(event)">
+            </div>
+            <h1>Функция поиска</h1>
+            <p>Чтобы найти нужные символы, слова или фразы, использованные в PDF-файле, который вы в данный момент редактируете, нажмите на значок <span class="icon icon-searchicon"></span>, расположенный на левой боковой панели <b>Редактора PDF</b>, или значок <span class="icon icon-search_icon_header"></span>, расположенный в правом верхнем углу. Вы также можете использовать сочетание клавиш <em>Ctrl+F</em> (<em>Command+F</em> для MacOS), чтобы открыть маленькую панель поиска, или сочетание клавиш <em>Ctrl+H</em>, чтобы открыть расширенную панель поиска.</p>
+            <p>В правом верхнем углу рабочей области откроется маленькая панель <b>Поиск</b>. Панель включает в себя текстовое поле для ввода поискового запроса, количество результатов поиска и элементы управления для перехода к предыдущему, следующему результату и закрытия панели.</p>
+            <p><img alt="Маленькая панель Поиск" src="../../../../../../common/main/resources/help/ru/images/find_small.png" /></p>
+            <p>Чтобы открыть дополнительные параметры, нажмите значок <span class="icon icon-search_advanced"></span> или используйте сочетание клавиш <em>Ctrl+H</em>.</p>
+            <p>Откроется панель <b>Поиск</b>:</p>
+            <p><img alt="Панель Поиск" src="../images/search_window.png" /></p>
+            <ol>
+                <li>Введите запрос в соответствующее поле ввода данных <b>Поиск</b>.</li>
+                <li>Для навигации по найденным вхождениям нажмите одну из кнопок со стрелками. Кнопка <div class="icon icon-searchdownbutton"></div> показывает следующее вхождение, а кнопка <div class="icon icon-searchupbutton"></div> показывает предыдущее.</li>
+                <li>
+                    Задайте параметры поиска, отметив нужные опции, расположенные под полями ввода:
+                    <ul>
+                        <li><b>С учетом регистра</b> - используется для поиска только тех вхождений, которые набраны в таком же регистре, что и ваш запрос, (например, если Вы ввели запрос 'Редактор', такие слова, как 'редактор' или 'РЕДАКТОР' и т.д. не будут найдены).</li>
+                        <li><b>Только слово целиком</b> - используется для подсветки только слов целиком.</li>
+                    </ul>
+                </li>
+            </ol>
+            <p>Все вхождения будут подсвечены в файле и показаны в виде списка на панели <b>Поиск</b> слева. Используйте список для перехода к нужному вхождению или используйте кнопки навигации <span class="icon icon-searchupbutton"></span> и <span class="icon icon-searchdownbutton"></span>.</p>
+            
+        </div>
+	</body>
+</html>

@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Insérer des numéros de page</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Inssérer des numéros de page pour parcourir facilement un document" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Rechercher" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Insérer des numéros de page</h1>
+			<p>Pour insérer des numéros de page dans <a href="https://www.onlyoffice.com/fr/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>l'éditeur de documents</b></a>,</p>
+			<ol>
+                <li>passez à l'onglet <b>Insertion</b> de la barre d'outils supérieure,</li>
+                <li>cliquez sur l'icône <b>En-tête/Pied de page</b> <div class = "icon icon-headerfooter"></div> de la barre d'outils supérieure,</li>
+				<li>sélectionnez le sous-menu <b>Insérer le numéro de page</b>,</li>
+				<li>sélectionnez l'une des options suivantes:
+					<ul>
+						<li>Pour ajouter des numéros de pages dans un document, sélectionnez l'emplacement du numéro sur la page.</li>
+						<li>Pour insérer un numéro de page à la position actuelle du curseur, sélectionnez l'option <b>À la position actuelle</b>.
+                            <p class="note">
+                                <b>Remarque</b>: pour insérer le numéro de la page actuelle à la position actuelle du curseur vous pouvez également utiliser le raccourci <em>Ctrl+Shift+P</em>.
+                            </p>
+                        </li>
+					</ul>
+				</li>
+			</ol>
+			<p>OU</p>
+			<ol>
+				<li>passez à l'onglet <b>Insertion</b> de la barre d'outils supérieure,</li>
+				<li>cliquez sur l'icône <b>En-tête/Pied de page</b> <div class="icon icon-headerfooter"></div> de la barre d'outils supérieure,</li>
+				<li>cliquez sur <b>Insérer le numéro de page</b> dans le menu et sélectionnez l'emplacement du numéro de page.</li>
+			</ol>
+            <p>Pour insérer le nombre total de pages dans un document (par ex., si vous souhaitez ajouter <em>Page X sur Y</em>):</p>
+            <ol>
+                <li>placez le curseur à l'endroit où vous voulez insérer le numéro total de pages,</li>
+                <li>cliquez sur l'icône <b>En-tête/Pied de page</b> <div class = "icon icon-headerfooter"></div> de la barre d'outils supérieure,</li>
+                <li>sélectionnez l'option Insérer le nombre de pages.</li>
+            </ol>
+			<hr />
+			<p>Pour modifier les paramètres du nombre de page,</p>
+			<ol>
+				<li>double-cliquez sur le nombre de pages,</li>
+				<li>
+					modifiez les paramètres actuels sur la barre latérale droite: 
+					<p><img alt="Barre latérale droite - Paramètres de l'en-tête et du pied de page" src="../images/right_headerfooter.png" /></p>
+					<ul>
+						<li>Définissez <b>Emplacement</b> des numéros en haut ou en bas de la page en conséquence.</li>
+						<li>Activez l'option <b>Première page différente</b> pour appliquer un numéro différent à la première page ou si vous ne voulez  ajouter le numéro. </li>
+						<li>Utilisez l'option <b>Pages paires et impaires différentes</b> pour insérer des numéros de page différents pour les pages paires et impaires. </li>
+						<li>
+							L'option <b>Lier au précédent</b> est disponible si vous avez déjà ajouté des <a href="../UsageInstructions/SectionBreaks.htm" onclick="onhyperlinkclick(this)">sections</a> dans votre document. Sinon, elle sera grisée. En outre, cette option est non disponible pour toute première section (c'est-à-dire quand un en-tête ou un pied qui appartient à la première section est choisi). Par défaut, cette case est cochée, de sorte que la numérotation unifiée est appliquée à toutes les sections. Si vous sélectionnez une zone d'en-tête ou de pied de page, vous verrez que cette zone est marquée par l'étiquette <b>Identique au précédent</b>. Désactivez l'option <b>Lier au précédent</b> pour utiliser des numéros de page différents pour chaque section du document. L'étiquette <b>Identique au précédent</b> ne sera plus affichée.
+							<p><img alt="Étiquette Identique au précédent" src="../images/sameasprevious_label.png" /></p>
+						</li>				
+						<li>
+							<p>La section <b>Numérotation des pages</b> sert à configurer les paramètres de numérotation des pages à travers des différentes <a href="../UsageInstructions/SectionBreaks.htm" onclick="onhyperlinkclick(this)">sections</a> du document.</p>
+							<p>L'option <b>Continuer à partir de la section précédente </b>est active par défaut pour maintenir la numérotation séquentielle après un saut de section.</p>
+							<p>Si vous voulez démarrer la numérotation des pages avec un chiffre ou nombre spécifique sur cette section du document, activez l'option <b>Commencer par</b> e et saisissez la valeur initiale dans le champ à droite.</p>
+							<p>Utilisez le menu déroulant <b>Format de nombre</b> pour modifier rapidement le format des numéros de page, par ex., <em>"I, II, III, IV..."</em></p>
+						</li>
+					</ul>
+				</li>
+			</ol>
+			<p>Pour revenir au document, double-cliquez sur la zone de travail.</p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>PDF speichern, herunterladen, drucken</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="Speichern, laden Sie Ihre PDFs herunter und drucken Sie sie aus" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+			<div class="search-field">
+				<input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+			</div>
+			<h1>PDF speichern, herunterladen, drucken</h1>
+			<h3>Speichern</h3>
+			<p class="onlineDocumentFeatures">Standardmäßig speichert der <!--online <a href="https://www.onlyoffice.com/en/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)">--><b>PDF-Editor</b><!--</a>--> Ihre Datei während der Bearbeitung automatisch alle 2 Sekunden, um Datenverluste im Falle eines unerwarteten Progammabsturzes zu verhindern. <!--Wenn Sie die Datei im <b>Schnellmodus</b> co-editieren, fordert der Timer 25 Mal pro Sekunde Aktualisierungen an und speichert vorgenommene Änderungen. Wenn Sie die Datei im Modus <b>Strikt</b> co-editieren, werden Änderungen automatisch alle 10 Minuten gespeichert. Sie können den bevorzugten Co-Modus nach Belieben auswählen oder die Funktion <b>AutoSpeichern</b> auf der Seite <a href="../HelpfulHints/AdvancedSettings.htm" onclick="onhyperlinkclick(this)">Erweiterte Einstellungen</a> deaktivieren.--></p>
+			<p>Um Ihr aktuelles PDF manuell im aktuellen Format und Speicherort zu speichern:</p>
+			<ul>
+				<li>Verwenden Sie das Symbol <b>Speichern</b> <div class="icon icon-save"></div> im linken Bereich der Kopfzeile des Editors oder</li>
+				<!--<li>use the <b>Ctrl+S</b> key combination, or</li>-->
+				<li>wechseln Sie in der oberen Menüleiste in die Registerkarte <b>Datei</b> und wählen Sie die Option <b>Speichern</b>.</li>
+			</ul>
+			<!--<p class="note desktopDocumentFeatures">In the <em>desktop version</em>, to prevent data from loss in case program closes unexpectedly, you can turn on the <b>Autorecover</b> option on the <a href="../HelpfulHints/AdvancedSettings.htm" onclick="onhyperlinkclick(this)">Advanced Settings</a> page.</p>
+	<div class="desktopDocumentFeatures">
+		<p>In the <em>desktop version</em>, you can save the document with another name, in a new location or format,</p>
+		<ol>
+			<li>click the <b>File</b> tab of the top toolbar,</li>
+			<li>select the <b>Save as</b> option,</li>
+			<li>choose one of the available formats depending on your needs: DOCX, DOCXF, OFORM, DOTX, ODT, OTT, RTF, TXT, HTML, FB2, EPUB, PDF, PDF/A. You can also choose the <b>Document template</b> (DOTX or OTT) option.</li>
+		</ol>
+	</div>-->
+			<div class="onlineDocumentFeatures">
+				<h3>Herunterladen</h3>
+				<p>In der <em>Online-Version</em> können Sie das daraus resultierende PDF auf der Festplatte Ihres Computers speichern.</p>
+				<ol>
+					<li>Klicken Sie in der oberen Menüleiste auf die Registerkarte <b>Datei</b>.</li>
+					<li>Wählen Sie die Option <b>Herunterladen als</b>.</li>
+					<li>Wählen Sie das gewünschte Format aus: DOCX, DOTX, EPUB, FB2, HTML, JPG, ODT, OTT, PDF, PDF/A, PNG, RTF oder TXT.</li>
+				</ol>
+				<h3>Kopie speichern</h3>
+				<p>In der <em>Online-Version</em> können Sie die eine Kopie der Datei in Ihrem Portal speichern.</p>
+				<ol>
+					<li>Klicken Sie in der oberen Menüleiste auf die Registerkarte <b>Datei</b>.</li>
+					<li>Wählen Sie die Option <b>Kopie speichern als</b>.</li>
+					<li>Wählen Sie das gewünschte Format aus: DOCX, DOTX, EPUB, FB2, HTML, JPG, ODT, OTT, PDF, PDF/A, PNG, RTF oder TXT.</li>
+					<li>Wählen Sie den gewünschten Speicherort auf dem Portal aus und klicken Sie <b>Speichern</b>.</li>
+				</ol>
+			</div>
+			<h3 id="print">Drucken</h3>
+			<p>Um das aktuelle PDF auszudrucken,</p>
+			<ul>
+				<li>klicken Sie auf das Symbol <b>Drucken</b> <div class="icon icon-print"></div> im linken Bereich der Kopfzeile des Editors oder</li>
+				<li>nutzen Sie die Tastenkombination <b>STRG+P</b> oder</li>
+				<li>wechseln Sie in der oberen Menüleiste in die Registerkarte <b>Datei</b> und wählen Sie die Option <b>Drucken</b>.</li>
+			</ul>
+			<div class="note">
+				Der Firefox-Browser ermöglicht das Drucken, ohne das Dokument zuerst als PDF-Datei herunterzuladen.
+			</div>
+			<p><img alt="Druckeinstellungen Fenster" src="../images/printsettingswindow.png" /></p>
+			<p>Passen Sie im sich öffnenden Fenster <b>Drucken</b> die folgenden Parameter an:</p>
+			<ul id="printtitles">
+				<li><b>Ziel</b> - wählen Sie das Ziel der gedruckten Datei, z. B. <b>Als PDF speichern</b>, <b>Microsoft XPS Document Writer</b>, <b>Microsoft Print to PDF</b>, <b>Fax</b> usw.</li>
+				<li><b>Seiten</b> - wählen Sie eine der Optionen zum Drucken der Seiten: <b>Alle</b>, <b>Aktuell</b>, <b>Ungerade</b>, <b>Gerade</b> oder <b>Benutzerdefiniert</b>. Im letzteren Fall müssen Sie die Seitenanzahl manuell eingeben.</li>
+				<li>
+					<b>Farbmodus</b> - wählen Sie, ob Ihre Datei in <b>Farbe</b> oder <b>Schwarz-weiß</b> gedruckt werden soll. Bitte beachten Sie, dass diese Einstellung verfügbar ist, wenn der Parameter <em>Microsoft XPS Document Writer</em> im <b>Ziel</b>-Feld ausgewählt ist. Für den Parameter <em>Fax</em> im <b>Ziel</b>-Feld ist der Farbmodus standardmäßig auf <b>Schwarz-weiß</b> eingestellt.
+					<p>Klicken Sie auf die Überschrift <b>Mehr Einstellungen</b>, um die erweiterten Einstellungen zu öffnen.</p>
+				</li>
+				<li><b>Papiergröße</b> - wählen Sie eine der verfügbaren Größen aus der Dropdown-Liste aus oder legen Sie eine benutzerdefinierte Größe fest.</li>
+				<li><b>Skalierung</b> - legen Sie die Skalierung der Datei beim Drucken fest. Über die Checkbox <b>Skalierung</b> und das entsprechende Eingabefeld können Sie <b>An Seitenbreite anpassen</b> oder die Skalierung manuell einstellen.</li>
+				<li><b>Seiten pro Blatt</b> - legen Sie die Anzahl der auf einem Blatt gedruckten Seiten fest, z. B. <b>zwei</b>, <b>sechs</b>, <b>neun</b> usw.</li>
+				<li><b>Ränder</b> - Definieren Sie die Seitenränder. Sie können entweder <b>Standard</b>-Ränder oder benutzerdefinierte Ränder in Zoll wählen. Für benutzerdefinierte Ränder legen Sie bitte die erforderlichen Werte für den oberen, unteren, linken und rechten Rand manuell fest. Sie können auch die Option <b>Keine</b> wählen, um keine Ränder zu haben.</li>
+				<li><b>Einstellungen</b> - aktivieren Sie das Kontrollkästchen <b>Kopf- und Fußzeile drucken</b>, um sie zu drucken, oder deaktivieren Sie dieses Kontrollkästchen, um keine Kopf- und Fußzeilen zu drucken.</li>
+				<li><b>Mit Systemdialog drucken</b> - klicken Sie auf diese Überschrift, um den Systemdialog zur Konfiguration des Druckvorgangs zu öffnen.</li>
+			</ul>
+			<p><span class="desktopDocumentFeatures">Die Druckoptionen der <em>Desktopversion</em> lauten wie folgt: Wählen Sie einen Drucker aus der Liste <b>Drucker</b>, wählen Sie den <b>Druckbereich</b>, geben Sie die <b>Seiten</b> und die Anzahl der zu druckenden <b>Kopien</b> ein, wählen Sie die <b>Druckseiten</b>, die <b>Seitengröße</b>, die <b>Seitenausrichtung</b> und die <b>Ränder</b>. Um zusätzliche Druckereigenschaften einzurichten, rufen Sie das Systemdruckdialogfeld über die Option <b>Drucken über den Systemdialog</b> auf. Um den Einrichtungsvorgang abzuschließen, verwenden Sie die Schaltfläche <b>Drucken</b> oder <b>In PDF drucken</b>. Über die Schaltfläche <b>Schnelldruck</b> in der oberen Symbolleiste können Sie die Datei mit dem zuletzt ausgewählten Drucker oder dem Standarddrucker drucken.</span></p>
+		</div>
+	</body>
+</html>

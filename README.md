@@ -15,7 +15,7 @@
 - **可集成**：`onlyoffice.html` 提供一套 postMessage 协议，能嵌进你自己的系统，取回编辑后的文件流。
 - **纯静态**：任意静态服务器都能托管，也可以直接打包进前端工程。
 
-基于 ONLYOFFICE 9.3 编译产物。
+基于 ONLYOFFICE 9.3 编译产物，**内置 `x2t.wasm` 已升级为最新的 9.4 版本**。
 
 ## 快速开始
 
@@ -56,7 +56,7 @@ PDF 编辑
 
 ## 集成到自己的系统
 
-把仓库整体（`onlyoffice.html`、产物目录 `9.3.0.133-*`、`assets/`、`blank/`）放到前端工程的静态目录下，用 iframe 嵌入 `onlyoffice.html`，通过 postMessage 注入文档、取回文件流。
+把仓库整体（`onlyoffice.html`、产物目录 `9.3.0.134-*`、`assets/`、`blank/`）放到前端工程的静态目录下，用 iframe 嵌入 `onlyoffice.html`，通过 postMessage 注入文档、取回文件流。
 
 - **[使用文档](docs/使用文档.md)**：三种集成方式、docConfig 配置、消息协议、保存文件流、文件名与重命名、另存为、连接器（Automation API），以及一份 Vue 组件封装。
 - **[文件流提取原理](docs/集成教程-文件流提取.md)**：离线版没有保存回调，这篇讲清楚字节是怎么从 `x2t.downloadFile` 里取出来的。
@@ -65,7 +65,7 @@ PDF 编辑
 
 ```
 OnlyofficePersonal/
-├── 9.3.0.133-*/          # ONLYOFFICE 编译产物（web-apps / sdkjs / fonts）
+├── 9.3.0.134-*/          # ONLYOFFICE 编译产物（web-apps / sdkjs / fonts）
 ├── assets/               # favicon、空白 PDF 等静态资源
 ├── blank/                # 新建文档用的空白模板
 ├── docs/                 # 文档与截图

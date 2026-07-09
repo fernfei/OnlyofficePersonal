@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>H&Uuml;CRE İşlevi</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>H&Uuml;CRE İşlevi</h1>
+			<p><b>H&Uuml;CRE</b> işlevi, bilgi işlevlerinden biridir. Bir h&uuml;crenin bi&ccedil;imlendirmesi, konumu veya i&ccedil;eriği hakkında bilgi d&ouml;nd&uuml;rmek i&ccedil;in kullanılır.</p>
+			<p><b>H&Uuml;CRE</b> işlevi s&ouml;z dizimi ş&ouml;yledir:</p> 
+			<p style="text-indent: 150px;"><b><em>H&Uuml;CRE(bilgi_t&uuml;r&uuml;, [başvuru])</em></b></p> 
+            <p>Burada:</p>
+            <p style="text-indent: 50px;"><b><em>bilgi_t&uuml;r&uuml;,</em></b> h&uuml;cre hakkında hangi bilgileri almak istediğinizi belirten bir metin değeridir. Gerekli bir bağımsız değişkendir. Mevcut değerler aşağıdaki tabloda listelenmiştir.</p>
+            <p style="text-indent: 50px;"><b><em>[başvuru],</em></b> hakkında bilgi almak istediğiniz h&uuml;credir. Atlanırsa, son değiştirilen h&uuml;cre i&ccedil;in bilgi d&ouml;nd&uuml;r&uuml;l&uuml;r. Eğer <em>başvuru</em> bağımsız değişkeni bir h&uuml;cre aralığı olarak belirtilirse işlev, aralığın sol &uuml;st h&uuml;cresi i&ccedil;in bilgi d&ouml;nd&uuml;r&uuml;r.</p>
+            <table style="width: 40%">
+                <tr>
+                    <td><b>Metin değeri</b></td>
+                    <td><b>Bilgi t&uuml;r&uuml;</b></td>
+                </tr>
+                <tr>
+                    <td>&quot;adres&quot;</td>
+                    <td>H&uuml;creye başvuruyu d&ouml;nd&uuml;r&uuml;r.</td>
+                </tr>
+                <tr>
+                    <td>&quot;s&uuml;t&quot;</td>
+                    <td>H&uuml;crenin bulunduğu s&uuml;tun numarasını d&ouml;nd&uuml;r&uuml;r.</td>
+                </tr>
+                <tr>
+                    <td>&quot;renk&quot;</td>
+                    <td>H&uuml;cre negatif değerler i&ccedil;in renkli bi&ccedil;imlendirilmişse 1 değerini; aksi takdirde 0 değerini d&ouml;nd&uuml;r&uuml;r.</td>
+                </tr>
+                <tr>
+                    <td>&quot;i&ccedil;erik&quot;</td>
+                    <td>H&uuml;crenin i&ccedil;erdiği değeri d&ouml;nd&uuml;r&uuml;r.</td>
+                </tr>
+                <tr>
+                    <td>&quot;dosya adı&quot;</td>
+                    <td>H&uuml;creyi i&ccedil;eren dosyanın dosya adını d&ouml;nd&uuml;r&uuml;r.</td>
+                </tr>
+                <tr>
+                    <td>&quot;bi&ccedil;im&quot;</td>
+                    <td>H&uuml;crenin sayı bi&ccedil;imine karşılık gelen bir metin değeri d&ouml;nd&uuml;r&uuml;r. Metin değerleri aşağıdaki tabloda listelenmiştir.</td>
+                </tr>
+                <tr>
+                    <td>&quot;parantez&quot;</td>
+                    <td>H&uuml;cre pozitif değerler veya t&uuml;m değerler i&ccedil;in parantezler ile bi&ccedil;imlendirilmişse 1 değerini; aksi takdirde 0 değerini d&ouml;nd&uuml;r&uuml;r.</td>
+                </tr>
+                <tr>
+                    <td>&quot;&ouml;nek&quot;</td>
+                    <td>H&uuml;credeki metin sola hizalıysa tek tırnak (&apos;), metin sağa hizalıysa &ccedil;ift tırnak (&quot;), metin ortalanmışsa d&uuml;zeltme imi (^) <!--the backslash (\) if the text is fill-aligned,-->ve h&uuml;cre başka bir şey i&ccedil;eriyorsa boş bir metin (&quot;&quot;) d&ouml;nd&uuml;r&uuml;r.</td>
+                </tr>
+                <tr>
+                    <td>&quot;koru&quot;</td>
+                    <td>H&uuml;cre kilitli değilse 0 d&ouml;nd&uuml;r&uuml;r; h&uuml;cre kilitliyse 1 d&ouml;nd&uuml;r&uuml;r.</td>
+                </tr>
+                <tr>
+                    <td>&quot;satır&quot;</td>
+                    <td>H&uuml;crenin bulunduğu satır numarasını d&ouml;nd&uuml;r&uuml;r.</td>
+                </tr>
+                <tr>
+                    <td>&quot;t&uuml;r&quot;</td>
+                    <td>Boş bir h&uuml;cre i&ccedil;in &quot;b&quot;, metin değeri i&ccedil;in &quot;l&quot; ve h&uuml;credeki diğer herhangi bir değer i&ccedil;in &quot;v&quot; değerini d&ouml;nd&uuml;r&uuml;r.</td>
+                </tr>
+                <tr>
+                    <td>&quot;genişlik&quot;</td>
+                    <td>Bir tamsayıya yuvarlanmış olarak h&uuml;crenin genişliğini d&ouml;nd&uuml;r&uuml;r.</td>
+                </tr>
+            </table>
+            <p>Aşağıda, işlevin <em>&quot;bi&ccedil;im&quot;</em> bağımsız değişkeni i&ccedil;in d&ouml;nd&uuml;rd&uuml;ğ&uuml; metin değerlerini g&ouml;rebilirsiniz</p>
+            <table style="width: 40%">
+                <tr>
+                    <td><b>Sayı bi&ccedil;imi</b></td>
+                    <td><b>D&ouml;nd&uuml;r&uuml;len metin değeri</b></td>
+                </tr>
+                <tr>
+                    <td>Genel</td>
+                    <td>G</td>
+                </tr>
+                <tr>
+                    <td>0</td>
+                    <td>F0</td>
+                </tr>
+                <tr>
+                    <td>#,##0</td>
+                    <td>,0</td>
+                </tr>
+                <tr>
+                    <td>0,00</td>
+                    <td>F2</td>
+                </tr>
+                <tr>
+                    <td>#,##0,00</td>
+                    <td>,2</td>
+                </tr>
+                <tr>
+                    <td>$#,##0_);($#,##0)</td>
+                    <td>C0</td>
+                </tr>
+                <tr>
+                    <td>$#,##0_);[Kırmızı]($#,##0)</td>
+                    <td>C0-</td>
+                </tr>
+                <tr>
+                    <td>$#,##0.00_);($#,##0.00)</td>
+                    <td>C2</td>
+                </tr>
+                <tr>
+                    <td>$#,##0,00_);[Kırmızı]($#,##0,00)</td>
+                    <td>C2-</td>
+                </tr>
+                <tr>
+                    <td>0%</td>
+                    <td>P0</td>
+                </tr>
+                <tr>
+                    <td>0,00%</td>
+                    <td>P2</td>
+                </tr>
+                <tr>
+                    <td>0,00E+00</td>
+                    <td>S2</td>
+                </tr>
+                <tr>
+                    <td># ?/? veya # ??/??</td>
+                    <td>G</td>
+                </tr>
+                <tr>
+                    <td>aa/g/yy veya aa/g/yy sa:dd veya aa/gg/yy</td>
+                    <td>D4</td>
+                </tr>
+                <tr>
+                    <td>g-aaa-yy veya gg-aaa-yy</td>
+                    <td>D1</td>
+                </tr>
+                <tr>
+                    <td>g-aaa veya gg-aaa</td>
+                    <td>D2</td>
+                </tr>
+                <tr>
+                    <td>aaa-yy</td>
+                    <td>D3</td>
+                </tr>
+                <tr>
+                    <td>aa/gg</td>
+                    <td>D5</td>
+                </tr>
+                <tr>
+                    <td>sa:dd AM/PM</td>
+                    <td>D7</td>
+                </tr>
+                <tr>
+                    <td>sa:dd:ss AM/PM</td>
+                    <td>D6</td>
+                </tr>
+                <tr>
+                    <td>sa:dd</td>
+                    <td>D9</td>
+                </tr>
+                <tr>
+                    <td>sa:dd:ss</td>
+                    <td>D8</td>
+                </tr>
+            </table>
+            <p><b>H&Uuml;CRE</b> işlevini uygulamak i&ccedil;in</p>
+			<ol>
+			<li>Sonucu g&ouml;r&uuml;nt&uuml;lemek istediğiniz h&uuml;creyi se&ccedil;in,</li>
+			<li>&Uuml;st ara&ccedil; &ccedil;ubuğunda bulunan <b>İşlev ekle</b> <div class = "icon icon-insertfunction"></div> simgesine tıklayın
+                <br />veya se&ccedil;ilen bir h&uuml;crenin i&ccedil;ine sağ tıklayın ve men&uuml;den <b>İşlev Ekle</b> se&ccedil;eneğini se&ccedil;in
+                <br />veya<div class = "icon icon-function"></div>form&uuml;l &ccedil;ubuğunda bulunan simgeye tıklayın,
+            </li>
+			<li>Listeden <b>Bilgi</b> işlev grubunu se&ccedil;in,</li>
+			<li><b>H&Uuml;CRE</b> işlevine tıklayın,</li>
+			<li>Gerekli bağımsız değişkeni girin,</li>
+			<li><b>Enter</b> d&uuml;ğmesine basın.</li>
+			</ol>
+			<p>Sonu&ccedil; se&ccedil;ili h&uuml;crede g&ouml;r&uuml;nt&uuml;lenecektir.</p>
+			<p style="text-indent: 150px;"><img alt="HÜCRE İşlevi" src="../images/cell.png" /></p>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>İ&ccedil;indekiler Tablosu Oluşturma</title>
+		<meta charset="utf-8" />
+        <meta name="description" content="A table of contents contains a list of all the chapters (sections, etc.) in a document and displays the numbers of the pages where each chapter begins." />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>İ&ccedil;indekiler Tablosu Oluşturma</h1>
+            <p>İ&ccedil;indekiler tablosu, bir belgedeki t&uuml;m b&ouml;l&uuml;mlerin (kısımlar vb.) bir listesini i&ccedil;erir ve her b&ouml;l&uuml;m&uuml;n başladığı sayfaların numaralarını g&ouml;r&uuml;nt&uuml;ler. <a href="https://www.onlyoffice.com/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Belge D&uuml;zenleyicide</b></a>, &ccedil;ok sayfalı bir belgede kolayca gezinmeyi ve metnin gerekli b&ouml;l&uuml;m&uuml;ne hızlı ge&ccedil;iş yapmayı sağlar. İ&ccedil;indekiler tablosu, yerleşik stiller kullanılarak bi&ccedil;imlendirilen belge konu başlıkları temelinde otomatik olarak oluşturulur. Bu, belgenin metni değiştirilmişse konu başlıklarını d&uuml;zenlemek ve sayfa numaralarını manuel olarak değiştirmek zorunda kalmadan, oluşturulan i&ccedil;indekiler tablosunu g&uuml;ncellemeyi kolaylaştırır.</p>
+            <h2>İ&ccedil;indekiler tablosundaki konu başlığı yapısı</h2>
+            <p><b>Konu başlıklarını bi&ccedil;imlendirme</b></p>
+            <p>Her şeyden &ouml;nce, &ouml;nceden tanımlanmış stillerden birini kullanarak belgenizdeki konu başlıklarını bi&ccedil;imlendirin. Bunu yapmak i&ccedil;in</p>
+            <ol>
+                <li>İ&ccedil;indekiler tablosuna eklemek istediğiniz metni se&ccedil;in.</li>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunda bulunan <b>Giriş</b> sekmesinin sağ tarafındaki stil men&uuml;s&uuml;n&uuml; a&ccedil;ın.</li>
+                <li>Uygulanacak gerekli stile tıklayın. Varsayılan olarak, <em>Konu Başlığı 1 - Konu Başlığı 9</em> stillerini kullanabilirsiniz.
+                    <p class="note">Konu başlıklarını bi&ccedil;imlendirmek i&ccedil;in başka stiller (&ouml;rneğin, <em>Başlık</em>, <em>Altyazı</em> vb.) kullanmak istiyorsanız &ouml;nce i&ccedil;indekiler tablosu ayarlarını yapmanız gerekir (aşağıdaki ilgili b&ouml;l&uuml;me bakın). Mevcut bi&ccedil;imlendirme stilleri hakkında daha fazla bilgi edinmek i&ccedil;in l&uuml;tfen <a href="../UsageInstructions/FormattingPresets.htm" onclick="onhyperlinkclick(this)">bu sayfaya</a> bakın.</p>
+                </li>
+            </ol>
+            <p>Metni hızlı bir şekilde konu başlığı olarak eklemek i&ccedil;in</p>
+            <ol>
+                <li>İ&ccedil;indekiler tablosuna eklemek istediğiniz metni se&ccedil;in.</li>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğundaki <b>Başvurular</b> sekmesine gidin.</li>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğundaki <b>Metin ekle</b> d&uuml;ğmesine tıklayın.</li>
+                <li>Gerekli konu başlığı seviyesini se&ccedil;in.</li>
+            </ol>
+            <p id="navigation"><b>Konu başlıklarını y&ouml;netme</b></p>
+            <p>Konu başlıkları bi&ccedil;imlendirildikten sonra, ilgili i&ccedil; i&ccedil;e yerleştirme d&uuml;zeyleriyle birlikte t&uuml;m konu başlıkları listesini g&ouml;r&uuml;nt&uuml;leyen paneli a&ccedil;mak i&ccedil;in sol kenar &ccedil;ubuğundaki <span class = "icon icon-navigationicon"></span> <b>Konu Başlıkları</b> simgesine tıklayın. Bu panel, konu başlığı yapısını y&ouml;netmenin yanı sıra belge metnindeki konu başlıkları arasında kolayca gezinmeyi sağlar.</p>
+            <p>Listedeki bir konu başlığına sağ tıklayın ve men&uuml;deki mevcut se&ccedil;eneklerden birini kullanın:</p>
+            <p><img alt="Konu başlıkları paneli" src="../images/navigationpanel.png" /></p>
+            <ul>
+                <li>Se&ccedil;ili olan konu başlığını hiyerarşik yapıda bir &uuml;st seviyeye, &ouml;rneğin <em>Konu Başlığı 2&apos;den</em> ile <em>Konu Başlığı 1&apos;e</em> taşımak i&ccedil;in <b>Y&uuml;kselt</b>.</li>
+                <li>Se&ccedil;ili olan konu başlığını hiyerarşik yapıda bir alt seviyeye, &ouml;rneğin <em>Konu Başlığı 1&apos;den</em> ile <em>Konu Başlığı 2&apos;ye</em> indirmek i&ccedil;in <b>İndir</b>.</li>
+                <li>Se&ccedil;ili olandan &ouml;nce aynı d&uuml;zeyde yeni bir boş konu başlığı eklemek i&ccedil;in <b>&Ouml;ncesinde yeni konu başlığı</b>.</li>
+                <li>Se&ccedil;ili olandan sonra aynı d&uuml;zeyde yeni bir boş konu başlığı eklemek i&ccedil;in <b>Sonrasında yeni konu başlığı</b>.</li>
+                <li>Se&ccedil;ili olandan sonra yeni bir boş konu başlığı (yani daha d&uuml;ş&uuml;k seviyeli bir konu başlığı) eklemek i&ccedil;in <b>Yeni konu başlığı</b>.
+                <p>Konu başlığı veya alt konu başlığı eklendiğinde, listede eklenen boş konu başlığına tıklayın ve kendi metninizi yazın. Bu hem belge metninde hem de <b>Konu Başlıkları</b> panelinde yapılabilir.</p>
+                </li>
+                <li>Belgedeki mevcut konu başlığının altındaki metni se&ccedil;mek i&ccedil;in (bu konu başlığının t&uuml;m alt konu başlıkları ile ilgili metin dahil) <b>İ&ccedil;erik se&ccedil;</b>.</li>
+                <li><b>T&uuml;m&uuml;n&uuml; genişlet</b> - <b>Başlıklar</b> panelindeki t&uuml;m başlık d&uuml;zeylerini genişletir.</li>
+                <li><b>T&uuml;m&uuml;n&uuml; daralt</b> -  <em>Seviye 1</em> hari&ccedil; olmak &uuml;zere, <b>Konu Başlıkları</b> panelindeki t&uuml;m konu başlık d&uuml;zeylerini daraltır.</li>
+                <li><b>Seviyeye genişlet</b> - Konu başlığı yapısını se&ccedil;ilen seviyeye genişletir. &Ouml;rneğin, <em>seviye 3&apos;&uuml;</em> se&ccedil;erseniz, ardından seviye 1, 2 ve 3 genişletilirken seviye 4 ve t&uuml;m alt seviyeler daraltılır.</li>
+            </ul>
+            <p>Ayrı konu başlığı d&uuml;zeylerini manuel olarak genişletmek veya daraltmak i&ccedil;in konu başlıklarının solundaki okları kullanın.</p>
+            <p><b>Konu Başlıkları</b>&nbsp;panelini kapatmak i&ccedil;in sol kenar &ccedil;ubuğundaki <span class = "icon icon-navigationicon"></span>&nbsp;<b>Konu Başlıkları</b> simgesine bir kez daha tıklayın.</p>
+            <h2>Belgeye bir İ&ccedil;indekiler Tablosu ekleme</h2>
+            <p>Belgenize bir i&ccedil;indekiler tablosu eklemek i&ccedil;in</p>
+            <ol>
+                <li>Ekleme noktasını, i&ccedil;indekiler tablosunun eklenmesi gereken yere getirin.</li>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Başvurular</b> sekmesine ge&ccedil;iş yapın.</li>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunda bulunan <div class = "icon icon-tocicon"></div> <b>İ&ccedil;indekiler</b> simgesine veya<br />
+                bu simgenin yanındaki oka tıklayın ve men&uuml;den gerekli d&uuml;zen se&ccedil;eneğini se&ccedil;in. Konu başlıklarını, sayfa numaralarını ve kılavuzları veya yalnızca konu başlıklarını g&ouml;r&uuml;nt&uuml;leyen i&ccedil;indekiler tablosunu se&ccedil;ebilirsiniz.
+                <p><img alt="İçindekiler Tablosu seçenekleri" src="../images/tociconmenu.png" /></p>
+                    <p class="note">İ&ccedil;indekiler tablosu g&ouml;r&uuml;n&uuml;m&uuml; daha sonra ayarlardan ayarlanabilir.</p>
+                </li>
+            </ol>
+            <p>İ&ccedil;indekiler tablosu mevcut imle&ccedil; konumuna eklenecektir. Konumunu değiştirmek i&ccedil;in i&ccedil;indekiler tablosu alanını (i&ccedil;erik kontrol&uuml;) se&ccedil;ebilir ve istediğiniz yere s&uuml;r&uuml;kleyebilirsiniz. Bunu yapmak i&ccedil;in i&ccedil;indekiler alanının sol &uuml;st k&ouml;şesindeki <span class = "icon icon-toccontentcontrol"></span> d&uuml;ğmesine tıklayın ve fare d&uuml;ğmesini bırakmadan belge metninde başka bir konuma s&uuml;r&uuml;kleyin.</p>
+            <p><img alt="İçindekiler tablosunu taşıma" src="../images/tocmove.png" /></p>
+            <p>Konu başlıkları arasında gezinmek i&ccedil;in <b>Ctrl</b> tuşuna basın ve i&ccedil;indekiler tablosu alanında gerekli konu başlığına tıklayın. İlgili sayfaya gideceksiniz.</p>
+            <h2>Oluşturulan İ&ccedil;indekiler Tablosunu ayarlama</h2>
+            <p><b>İ&ccedil;indekiler Tablosunu G&uuml;ncelleme</b></p>
+            <p>İ&ccedil;indekiler tablosu oluşturulduktan sonra, yeni b&ouml;l&uuml;mler ekleyerek, sıralarını değiştirerek, bazı paragrafları kaldırarak veya bir konu başlığına ilişkin metni, &ouml;nceki veya sonraki b&ouml;l&uuml;me karşılık gelen sayfa numaralarının değişebileceği şekilde genişleterek metninizi d&uuml;zenlemeye devam edebilirsiniz. Bu durumda, t&uuml;m değişiklikleri otomatik olarak uygulamak i&ccedil;in <b>Yenile</b> se&ccedil;eneğini kullanın.</p>
+            <p>&Uuml;st ara&ccedil; &ccedil;ubuğunda bulunan <b>Başvurular</b> sekmesindeki <span class = "icon icon-tocrefreshicon"></span> <b>Yenile</b> d&uuml;ğmesine tıklayın ve men&uuml;den gerekli se&ccedil;eneği se&ccedil;in:</p>
+            <ul>
+                <li>Belgeye eklediğiniz konu başlıklarını eklemek, belgeden sildiklerinizi kaldırmak, d&uuml;zenlenen (yeniden adlandırılan) konu başlıklarını ve sayfa numaralarını g&uuml;ncellemek i&ccedil;in <b>T&uuml;m tabloyu yenile</b>.</li>
+                <li>Konu başlıklarında değişiklik yapmadan sayfa numaralarını g&uuml;ncellemek i&ccedil;in <b>Yalnızca sayfa numaralarını yenile</b>.</li>
+            </ul>
+            <p>Alternatif olarak, belge metnindeki i&ccedil;indekiler tablosunu se&ccedil;ebilir ve yukarıda belirtilen se&ccedil;enekleri g&ouml;r&uuml;nt&uuml;lemek i&ccedil;in i&ccedil;indekiler tablosu alanının &uuml;st kısmındaki <span class = "icon icon-tocrefreshiconcc"></span> <b>Yenile</b> simgesine tıklayabilirsiniz.</p>
+            <p><img alt="İçindekiler tablosunu yenileme" src="../images/tocrefreshcc.png" /></p>
+            <p>İ&ccedil;indekiler tablosu i&ccedil;inde herhangi bir yere sağ tıklamak ve bağlamsal men&uuml;den ilgili se&ccedil;enekleri kullanmak da m&uuml;mk&uuml;nd&uuml;r.</p>
+            <p><img alt="Bağlamsal menü" src="../images/tocrefreshcontextual.png" /></p>
+            <p><b>İ&ccedil;indekiler Tablosu ayarlarını d&uuml;zenleme</b></p>
+            <p>İ&ccedil;indekiler tablosu ayarlarını a&ccedil;mak i&ccedil;in aşağıdaki şekillerde ilerleyebilirsiniz:</p>
+            <ul>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunda bulunan <div class = "icon icon-tocicon"></div> <b>İ&ccedil;indekiler Tablosu</b> simgesine tıklayın ve men&uuml;den <b>Ayarlar</b> se&ccedil;eneğini se&ccedil;in.</li>
+                <li>Belge metninde i&ccedil;indekiler tablosunu se&ccedil;in, alan adının yanındaki oka tıklayın ve men&uuml;den <b>Ayarlar</b> se&ccedil;eneğini se&ccedil;in.
+                <p><img alt="İçindekiler Tablosu seçenekleri" src="../images/tocsettingscc.png" /></p>    
+                </li>
+                <li>İ&ccedil;indekiler tablosu i&ccedil;inde herhangi bir yere sağ tıklayın ve bağlamsal men&uuml;den <b>İ&ccedil;indekiler tablosu ayarlarını</b> kullanın.</li>
+            </ul>
+            <p>Aşağıdaki ayarları yapabileceğiniz yeni bir pencere a&ccedil;ılacaktır:</p>
+            <p><img alt="İçindekiler Tablosu ayarları penceresi" src="../images/tocsettingswindow.png" /></p> 
+            <ul>
+                <li><b>Sayfa numaralarını g&ouml;ster</b> - Bu se&ccedil;enek sayfa numaralarını g&ouml;r&uuml;nt&uuml;lemeyi sağlar.</li>
+                <li><b>Sayfa numaralarını sağa hizala</b> - Bu se&ccedil;enek, sayfa numaralarını sayfanın sağ tarafında hizalamayı sağlar.</li>
+                <li><b>Kılavuz</b> - Bu se&ccedil;enek gerekli kılavuz t&uuml;r&uuml;n&uuml; se&ccedil;menizi sağlar. Kılavuz, bir konu başlığı ile karşılık gelen sayfa numarası arasındaki boşluğu dolduran bir karakter satırıdır (noktalar veya kısa &ccedil;izgiler). Kılavuz kullanmak istemiyorsanız <b>Hi&ccedil;biri</b> se&ccedil;eneğini de se&ccedil;ebilirsiniz.</li>
+                <li><b>İ&ccedil;indekiler Tablosunu bağlantı olarak bi&ccedil;imlendir</b> - Bu se&ccedil;enek varsayılan olarak işaretlidir. İşareti kaldırırsanız, <b>Ctrl</b> tuşuna basarak ve ilgili konu başlığına tıklayarak gerekli b&ouml;l&uuml;me ge&ccedil;emezsiniz.</li>
+                <li><b>İ&ccedil;indekiler tablosunu şuradan oluştur</b> - Bu b&ouml;l&uuml;m, i&ccedil;indekiler tablosunu oluşturmak i&ccedil;in kullanılacak varsayılan stillerin yanı sıra gerekli sayıda anahat d&uuml;zeyini belirlemeyi sağlar. Gerekli se&ccedil;enek d&uuml;ğmesini se&ccedil;in:
+                    <ul>
+                        <li>
+                            <b>Anahat d&uuml;zeyleri</b> - Bu se&ccedil;enek se&ccedil;ildiğinde, kullanılan hiyerarşik d&uuml;zeylerin sayısını ayarlayabilirsiniz. D&uuml;zey sayısını azaltmak veya artırmak i&ccedil;in (1&apos;den 9&apos;a kadar değerler mevcuttur) <b>D&uuml;zeyler</b> alanındaki oklara tıklayın. &Ouml;rneğin, 3 değerini se&ccedil;erseniz, 4 - 9 d&uuml;zeylerine sahip konu başlıkları i&ccedil;indekiler tablosuna dahil edilmeyecektir.
+                        </li>
+                        <li>
+                            <b>Se&ccedil;ilen stiller</b> - Bu se&ccedil;enek se&ccedil;ildiğinde, i&ccedil;indekiler tablosunu oluşturmak i&ccedil;in kullanılabilecek ek stiller belirleyebilir ve bunların her birine karşılık gelen anahat d&uuml;zeyini atayabilirsiniz. Stilin sağındaki alanda istediğiniz d&uuml;zey değerini belirtin. Ayarları kaydettikten sonra i&ccedil;indekiler tablosu oluştururken bu stili kullanabileceksiniz.
+                            <p><img alt="İçindekiler Tablosu ayarları penceresi" src="../images/tocsettingswindow2.png" /></p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <b>Stiller</b> - Bu se&ccedil;enek, i&ccedil;indekiler tablosunun istenen g&ouml;r&uuml;n&uuml;m&uuml;n&uuml; se&ccedil;meyi sağlar. A&ccedil;ılır listeden gerekli stili se&ccedil;in. Yukarıdaki &ouml;nizleme alanı, i&ccedil;indekiler tablosunun nasıl g&ouml;r&uuml;nmesi gerektiğini g&ouml;sterir.
+                    <p><em>Basit</em>, <em>Standart</em>, <em>Modern</em>, <em>Klasik</em> olmak &uuml;zere d&ouml;rt varsayılan stil mevcuttur. <em>Mevcut</em> se&ccedil;eneği, i&ccedil;indekiler tablosu stilini &ouml;zelleştirirseniz  kullanılır.</p>
+                </li>
+            </ul>
+            <p>Değişiklikleri uygulamak i&ccedil;in ayarlar penceresindeki <b>Tamam</b> d&uuml;ğmesine tıklayın.</p>
+            <p><b>İ&ccedil;indekiler Tablosu stilini &ouml;zelleştirme</b></p>
+            <p><b>İ&ccedil;indekiler</b> ayarlar penceresindeki varsayılan i&ccedil;indekiler tablosu stillerinden birini uyguladıktan sonra, i&ccedil;indekiler alanındaki metnin ihtiyacınız olduğu gibi g&ouml;r&uuml;nmesi i&ccedil;in bu stili ayrıca değiştirebilirsiniz.</p>
+            <ol>
+                <li>&Ouml;rneğin i&ccedil;indekiler tablosu i&ccedil;erik kontrol&uuml;n&uuml;n sol &uuml;st k&ouml;şesindeki d&uuml;ğmeye tıklayarak <div class = "icon icon-toccontentcontrol"></div> İ&ccedil;indekiler Tablosu alanındaki metni se&ccedil;in.</li>
+                <li>Yazı tipi tipini, boyutunu, rengini değiştirerek veya yazı tipi s&uuml;sleme stillerini uygulayarak i&ccedil;indekiler tablosu &ouml;ğelerini bi&ccedil;imlendirin.</li>
+                <li>Sonu&ccedil; olarak, her d&uuml;zeydeki &ouml;ğeler i&ccedil;in stilleri g&uuml;ncelleyin. Stili g&uuml;ncellemek i&ccedil;in bi&ccedil;imlendirilmiş &ouml;ğeye sağ tıklayın, bağlamsal men&uuml;den <b>Stil Olarak Bi&ccedil;imlendir</b> se&ccedil;eneğini tıklayın ve <b>toc N stilini g&uuml;ncelle</b> se&ccedil;eneğine tıklayın (<em>toc 2</em> stili, <em>d&uuml;zey 2</em>&apos;ye sahip &ouml;ğelere, <em>toc 3</em> stili, <em>d&uuml;zey 3</em>&apos;e sahip &ouml;ğelere vb. karşılık gelir).
+                    <p><img alt="İçindekiler Tablosu stilini güncelleme" src="../images/toccustomize.png" /></p>
+                </li>
+                <li>İ&ccedil;indekiler tablosunu yenileyin.</li>
+            </ol>
+            <p><b>İ&ccedil;indekiler Tablosunu Kaldırma</b></p>
+            <p>İ&ccedil;indekiler tablosunu belgeden kaldırmak i&ccedil;in:</p>
+            <ul>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunda bulunan <div class = "icon icon-tocicon"></div> <b>İ&ccedil;indekiler Tablosu</b> simgesine tıklayın ve <b>İ&ccedil;indekiler tablosunu kaldır</b> se&ccedil;eneğini se&ccedil;in</li>
+                <li>veya i&ccedil;indekiler i&ccedil;erik kontrol başlığının yanındaki oka tıklayın ve <b>İ&ccedil;indekiler tablosunu kaldır</b> se&ccedil;eneğini kullanın.</li>
+            </ul>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,174 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tablolarda form&uuml;l kullanma</title>
+		<meta charset="utf-8" />
+        <meta name="description" content="Insert formulas into the table cells to perform simple calculations on data" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Tablolarda form&uuml;l kullanma</h1>
+            <h3>Form&uuml;l ekleme</h3>
+			<p><a href="https://www.onlyoffice.com/document-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Belge D&uuml;zenleyicide</b></a>, form&uuml;ller ekleyerek tablo h&uuml;crelerindeki veriler &uuml;zerinde basit hesaplamalar yapabilirsiniz. Bir tablo h&uuml;cresine form&uuml;l eklemek i&ccedil;in</p>
+			<ol>
+				<li>İmleci sonucu g&ouml;r&uuml;nt&uuml;lemek istediğiniz h&uuml;crenin i&ccedil;ine getirin,</li>
+                <li>Sağ kenar &ccedil;ubuğundaki <b>Form&uuml;l ekle</b> d&uuml;ğmesine tıklayın,</li>
+				<li>A&ccedil;ılan <b>Form&uuml;l Ayarları</b> penceresinde gerekli form&uuml;l&uuml; <b>Form&uuml;l</b> alanına girin.
+                    <p>Gerekli form&uuml;l&uuml; <em>=A1*B2</em> gibi yaygın matematiksel işle&ccedil;leri (+, -, *, /) kullanarak manuel olarak girebilirsiniz veya <em>=PRODUCT(A1,B2)</em> gibi g&ouml;m&uuml;l&uuml; işlevlerden birini se&ccedil;mek i&ccedil;in <b>Yapıştırma İşlevi</b> a&ccedil;ılır listesini kullanın.</p>
+                <p><img alt="Formül ekleme" src="../images/formula_settings.png" /></p>
+				</li>
+                <li>Gerekli değişkenleri <b>Form&uuml;l</b> alanında parantez i&ccedil;inde manuel olarak belirtin. İşlev birka&ccedil; değişken gerektiriyorsa, bunlar virg&uuml;lle ayrılmalıdır.</li>
+                <li>Sonucu belirli bir sayı bi&ccedil;iminde g&ouml;r&uuml;nt&uuml;lemek istiyorsanız <b>Sayı Bi&ccedil;imi</b> a&ccedil;ılır listesini kullanın,</li>
+				<li><b>Tamam</b> d&uuml;ğmesine tıklayın.</li>
+			</ol>
+            <p>Sonu&ccedil; se&ccedil;ili h&uuml;crede g&ouml;r&uuml;nt&uuml;lenecektir.</p>
+            <p>Eklenen form&uuml;l&uuml; d&uuml;zenlemek i&ccedil;in h&uuml;credeki sonucu se&ccedil;in ve sağ kenar &ccedil;ubuğundaki <b>Form&uuml;l ekle</b> d&uuml;ğmesine tıklayın, <b>Form&uuml;l Ayarları</b> penceresinde gerekli değişiklikleri yapın ve <b>Tamam</b> d&uuml;ğmesine tıklayın.</p>
+            <hr />
+            <h3>H&uuml;crelere başvuru ekleme</h3>
+            <p>H&uuml;cre aralıklarına hızlı bir şekilde başvuru eklemek i&ccedil;in aşağıdaki değişkenleri kullanabilirsiniz:</p>
+            <ul>
+                <li><b>YUKARIYA</b> - se&ccedil;ili h&uuml;crenin &uuml;zerindeki s&uuml;tundaki t&uuml;m h&uuml;crelere başvuru</li>
+                <li><b>SOLA</b> - se&ccedil;ili h&uuml;crenin solundaki satırdaki t&uuml;m h&uuml;crelere başvuru</li>
+                <li><b>ALTA</b> - se&ccedil;ili h&uuml;crenin altındaki s&uuml;tundaki t&uuml;m h&uuml;crelere başvuru</li>
+                <li><b>SAĞA</b> - se&ccedil;ili h&uuml;crenin sağındaki s&uuml;tundaki t&uuml;m h&uuml;crelere başvuru</li>
+            </ul>
+            <p>Bu değişkenler ORTALAMA, SAY, MAKS., MİN., &Ccedil;ARP, TOPLA işlevleriyle birlikte kullanılabilir.</p>
+            <p>Başvuruları belirli bir h&uuml;creye(&ouml;rneğin, <em>A1</em>) veya bir h&uuml;cre grubuna (&ouml;rneğin, <em>A1:B3</em>) manuel olarak da girebilirsiniz.</p>
+            <h3>Yer imlerini kullanma</h3>
+            <p>Tablonuzdaki belirli h&uuml;crelere bazı <a href="../UsageInstructions/InsertBookmarks.htm" onclick="onhyperlinkclick(this)">yer imleri</a> eklediyseniz, form&uuml;l girerken bu yer imlerini değişken olarak kullanabilirsiniz.</p>
+            <p><b>Form&uuml;l Ayarları</b> penceresinde, imleci değişkenin eklenmesini istediğiniz <b>Form&uuml;l</b> alanındaki parantezlerin i&ccedil;ine yerleştirin ve &ouml;nceden eklenen yer imlerinden birini se&ccedil;mek i&ccedil;in <b>Yer İmini Yapıştır</b> a&ccedil;ılır listesini kullanın.</p>
+            <h3>Form&uuml;l sonu&ccedil;larını g&uuml;ncelleme</h3>
+            <p>Tablo h&uuml;crelerindeki bazı değerleri değiştirirseniz form&uuml;l sonu&ccedil;larını manuel olarak g&uuml;ncellemeniz gerekir:</p>
+            <ul>
+                <li>Tek bir form&uuml;l sonucunu g&uuml;ncellemek i&ccedil;in gerekli sonucu se&ccedil;in ve <b>F9</b> tuşuna basın veya sonuca sağ tıklayın ve men&uuml;den <b>Alanı g&uuml;ncelle</b> se&ccedil;eneğini kullanın.</li>
+                <li>Birka&ccedil; form&uuml;l sonucunu g&uuml;ncellemek i&ccedil;in gerekli h&uuml;creleri veya t&uuml;m tabloyu se&ccedil;in ve <b>F9</b> tuşuna basın.</li>
+            </ul>
+            <hr />
+            <h3>G&ouml;m&uuml;l&uuml; işlevler</h3>
+            <p>Aşağıdaki standart matematik, istatistiksel ve mantıksal işlevleri kullanabilirsiniz:</p>
+            <table>
+                <tr>
+                    <td width="20%"><b>Kategori</b></td>
+                    <td width="20%"><b>İşlev</b></td>
+                    <td width="35%"><b>A&ccedil;ıklama</b></td>
+                    <td width="25%"><b>&Ouml;rnek</b></td>
+                </tr>
+                <tr>
+                    <td>Matematiksel</td>
+                    <td>ABS(x)</td>
+                    <td>İşlev, bir sayının mutlak değerini vermek i&ccedil;in kullanılır.</td>
+                    <td>=ABS(-10)<br />10 sonucunu bildirir</td>
+                </tr>
+                <tr>
+                    <td>Mantıksal</td>
+                    <td>VE(mantıksal1, mantıksal2, ...)</td>
+                    <td>İşlev, girdiğiniz mantıksal değerin DOĞRU veya YANLIŞ olup olmadığını kontrol etmek i&ccedil;in kullanılır. T&uuml;m değişkenler DOĞRU ise işlev 1 (DOĞRU) sonucunu bildirir.</td>
+                    <td>=VE(1&gt;0,1&gt;3)<br />0 sonucunu bildirir</td>
+                </tr>
+                <tr>
+                    <td>İstatistiksel</td>
+                    <td>ORTALAMA(değişken listesi)</td>
+                    <td>İşlev, veri aralığını analiz etmek ve ortalama değeri bulmak i&ccedil;in kullanılır.</td>
+                    <td>=ORTALAMA(4,10)<br />7 sonucunu bildirir</td>
+                </tr>
+                <tr>
+                    <td>İstatistiksel</td>
+                    <td>SAYIM(değişken listesi)</td>
+                    <td>İşlev, boş h&uuml;creleri veya metin i&ccedil;erenleri yok sayarak sayıları i&ccedil;eren se&ccedil;ili h&uuml;crelerin sayısını saymak i&ccedil;in kullanılır.</td>
+                    <td>=SAYIM(A1: B3)<br />6 sonucunu bildirir</td>
+                </tr>
+                <tr>
+                    <td>Mantıksal</td>
+                    <td>TANIMLI()</td>
+                    <td>İşlev, h&uuml;crede bir değer tanımlanıp tanımlanmadığını değerlendirir. İşlev, değer tanımlanıp hatasız hesaplanırsa 1, değer tanımlanmaz veya hatalı hesaplanırsa 0 sonucunu bildirir.</td>
+                    <td>= TANIMLI(A1)</td>
+                </tr>
+                <tr>
+                    <td>Mantıksal</td>
+                    <td>YANLIŞ()</td>
+                    <td>İşlev 0 (YANLIŞ) sonucunu bildirir ve herhangi bir değişken <b>gerektirmez</b>.</td>
+                    <td>=YANLIŞ<br />0 sonucunu bildirir</td>
+                </tr>
+                <tr>
+                    <td>Mantıksal</td>
+                    <td>EĞER(mantıksal_test, değer_doğruysa, değer_yanlışsa)</td>
+                    <td>İşlev, mantıksal ifadeyi kontrol etmek ve DOĞRU ise bir değer, YANLIŞ ise başka bir değer vermek i&ccedil;in kullanılır.</td>
+                    <td>=EĞER(3&gt;1,1,0)<br />1 sonucunu bildirir</td>
+                </tr>
+                <tr>
+                    <td>Matematiksel</td>
+                    <td>INT(x)</td>
+                    <td>İşlev, belirtilen sayının tamsayı kısmını analiz etmek ve vermek i&ccedil;in kullanılır.</td>
+                    <td>=INT(2.5)<br />2 sonucunu bildirir</td>
+                </tr>
+                <tr>
+                    <td>İstatistiksel</td>
+                    <td>MAKS(sayı1, sayı2, ...)</td>
+                    <td>İşlev, veri aralığını analiz etmek ve en b&uuml;y&uuml;k sayıyı bulmak i&ccedil;in kullanılır.</td>
+                    <td>=MAKS(15,18,6)<br />18 sonucunu bildirir</td>
+                </tr>
+                <tr>
+                    <td>İstatistiksel</td>
+                    <td>MİN(sayı1, sayı2, ...)</td>
+                    <td>İşlev, veri aralığını analiz etmek ve en k&uuml;&ccedil;&uuml;k sayıyı bulmak i&ccedil;in kullanılır.</td>
+                    <td>=MİN(15,18,6)<br />6 sonucunu bildirir</td>
+                </tr>
+                <tr>
+                    <td>Matematiksel</td>
+                    <td>MOD(x, y)</td>
+                    <td>İşlev, bir sayının belirtilen b&ouml;lene b&ouml;l&uuml;nmesinden sonra kalanı vermek i&ccedil;in kullanılır.</td>
+                    <td>=MOD(6,3)<br />0 sonucunu bildirir</td>
+                </tr>
+                <tr>
+                    <td>Mantıksal</td>
+                    <td>(mantıksal)DEĞİL</td>
+                    <td>İşlev, girdiğiniz mantıksal değerin DOĞRU veya YANLIŞ olup olmadığını kontrol etmek i&ccedil;in kullanılır. İşlev, değişken YANLIŞ ise 1 (DOĞRU) ve değişken DOĞRU ise 0 (YANLIŞ) sonucunu bildirir.</td>
+                    <td>=(2&gt;5)DEĞİL<br />0 sonucunu bildirir</td>
+                </tr>
+                <tr>
+                    <td>Mantıksal</td>
+                    <td>VEYA(mantıksal1, mantıksal2, ...)</td>
+                    <td>İşlev, girdiğiniz mantıksal değerin DOĞRU veya YANLIŞ olup olmadığını kontrol etmek i&ccedil;in kullanılır. T&uuml;m değişkenler YANLIŞ ise işlev 0 (YANLIŞ) sonucunu bildirir.</td>
+                    <td>=VEYA(1&gt;0,1&gt;3)<br />1 sonucunu bildirir</td>
+                </tr>
+                <tr>
+                    <td>Matematiksel</td>
+                    <td>&Ccedil;ARPIM(değişken listesi)</td>
+                    <td>İşlev, se&ccedil;ilen h&uuml;cre aralığındaki t&uuml;m sayıları &ccedil;arpmak ve &ccedil;arpım sonucunu vermek i&ccedil;in kullanılır.</td>
+                    <td>=&Ccedil;ARPIM(2,5)<br />10 sonucunu bildirir</td>
+                </tr>
+                <tr>
+                    <td>Matematiksel</td>
+                    <td>YUVARLAMA(x, sayı_basamak)</td>
+                    <td>İşlev, sayıyı istenen basamak sayısına yuvarlamak i&ccedil;in kullanılır.</td>
+                    <td>=YUVARLAMA(2.25,1)<br />2.3 sonucunu bildirir</td>
+                </tr>
+                <tr>
+                    <td>Matematiksel</td>
+                    <td>İŞARET(x)</td>
+                    <td>İşlev, bir sayının işaretini vermek i&ccedil;in kullanılır. Sayı pozitifse, işlev <b>1</b> sonucunu bildirir. Sayı negatifse, işlev <b>-1</b> sonucunu bildirir. Sayı <b>0</b> ise, işlev <b>0</b> sonucunu bildirir.</td>
+                    <td>=İŞARET(-12)<br />-1 sonucunu bildirir</td>
+                </tr>
+                <tr>
+                    <td>Matematiksel</td>
+                    <td>TOPLAMA(değişken listesi)</td>
+                    <td>İşlev, se&ccedil;ilen h&uuml;cre aralığındaki t&uuml;m sayıları toplamak ve toplama sonucunu vermek i&ccedil;in kullanılır.</td>
+                    <td>=TOPLAMA(5,3,2)<br />10 sonucunu bildirir</td>
+                </tr>
+                <tr>
+                    <td>Mantıksal</td>
+                    <td>DOĞRU()</td>
+                    <td>İşlev, 1 (DOĞRU) sonucunu bildirir ve herhangi bir değişken <b>gerektirmez</b>.</td>
+                    <td>=DOĞRU<br />1 sonucunu bildirir</td>
+                </tr>
+            </table>
+		</div>
+	</body>
+</html>

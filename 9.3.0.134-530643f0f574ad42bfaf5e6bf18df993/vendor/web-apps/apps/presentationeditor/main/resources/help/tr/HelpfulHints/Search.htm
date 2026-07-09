@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Arama ve Değiştirme İşlevi</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="The description of the search and replace function in Presentation Editor" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+        <div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+            </div>
+            <h1>Arama ve Değiştirme İşlevi</h1>
+            <p>
+                <a target="_blank" href="https://www.onlyoffice.com/en/presentation-editor.aspx" onclick="onhyperlinkclick(this)">Sunu D&uuml;zenleyicide</a> <span class="icon icon-search_icon_header"></span> gerekli karakterleri, s&ouml;zc&uuml;kleri veya ifadeleri <b>aramak</b> i&ccedil;in sol kenar &ccedil;ubuğunda bulunan <b></b> simgesine,
+                sağ &uuml;st k&ouml;şede bulunan <span class="icon icon-searchicon"></span> simgesine tıklayın veya k&uuml;&ccedil;&uuml;k Bul panelini a&ccedil;mak i&ccedil;in <em>Ctrl+F</em> (MacOS i&ccedil;in <em>Command+F</em>) veya b&uuml;y&uuml;k Bul panelini a&ccedil;mak i&ccedil;in <em>Ctrl+H</em> tuş kombinasyonunu kullanın.
+            </p>
+            <p>&Ccedil;alışma alanının sağ &uuml;st k&ouml;şesinde k&uuml;&ccedil;&uuml;k bir <b>Bul</b> paneli a&ccedil;ılacaktır.</p>
+            <p><img alt="Küçük bul paneli" src="../../../../../../common/main/resources/help/tr/images/find_small.png" /></p>
+            <p>Gelişmiş ayarlara erişmek i&ccedil;in <span class="icon icon-search_advanced"></span> simgesine tıklayın.</p>
+            <p><b>Bul ve Değiştir</b> paneli a&ccedil;ılacaktır:</p>
+            <img alt="Bul ve Değiştir Penceresi" src="../images/search_window.png" />
+            <ol>
+                <li>Sorgunuzu ilgili <b>Bul</b> veri giriş alanına yazın.</li>
+                <li>Bulunan karakterlerden bir veya daha fazla sayıda tekrarını değiştirmeniz gerekiyorsa, değiştirme metnini karşılık gelen <b>Şununla değiştir</b> veri giriş alanına yazın. İlgili <b>Değiştir</b> d&uuml;ğmesine tıklayarak vurgulanan tek bir tekrarı ve <b>T&uuml;m&uuml;n&uuml; Değiştir</b> d&uuml;ğmesine tıklayarak t&uuml;m tekrarları değiştirmeyi se&ccedil;ebilirsiniz.</li>
+                <li>Bulunan tekrarlar arasında gezinmek i&ccedil;in ok d&uuml;ğmelerinden birine tıklayın. D&uuml;ğmesi <div class="icon icon-searchdownbutton"></div> bir sonraki tekrarı g&ouml;sterirken <div class="icon icon-searchupbutton"></div> d&uuml;ğmesi bir &ouml;ncekini g&ouml;sterir.</li>
+                <li>
+                    Giriş alanlarının altındaki gerekli se&ccedil;enekleri işaretleyerek arama parametrelerini belirtin:
+                    <ul>
+                        <li><b>B&uuml;y&uuml;k-K&uuml;&ccedil;&uuml;k Harfe Duyarlı</b> - Sadece sorgunuzla aynı şekilde yazılan tekrarları bulmak i&ccedil;in kullanılır (&ouml;rneğin, sorgunuz &apos;Edit&ouml;r&apos; ise ve bu se&ccedil;enek işaretlenmişse, &apos;edit&ouml;r&apos; veya &apos;EDIT&Ouml;R&apos; vb. s&ouml;zc&uuml;kler bulunmaz).</li>
+                        <li><b>Sadece Tam S&ouml;zc&uuml;kler</b> - Yalnızca tam s&ouml;zc&uuml;kleri vurgulamak i&ccedil;in kullanılır.</li>
+                    </ul>
+                </li>
+            </ol>
+            <p>Girdiğiniz karakterleri i&ccedil;eren se&ccedil;ilen y&ouml;ndeki ilk slayt, slayt listesinde vurgulanır ve gerekli karakterlerin ana hatları &ccedil;izilerek &ccedil;alışma alanında g&ouml;r&uuml;nt&uuml;lenir. Aradığınız slayt değilse, girdiğiniz karakterleri i&ccedil;eren bir sonraki slaytı bulmak i&ccedil;in se&ccedil;ilen d&uuml;ğmeye tekrar tıklayın.</p>
+        </div>
+	</body>
+</html>

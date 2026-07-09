@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>TXT/CSV dosyasından veri alma</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="How to import data from Text/CSV file" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+			<div class="search-field">
+				<input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+			</div>
+			<h1>TXT/CSV dosyasından veri alma</h1>
+			<p>Bir .txt/.csv dosyasından hızlı bir şekilde veri almanız ve hepsini bir elektronik tabloda d&uuml;zg&uuml;n bir şekilde d&uuml;zenlemeniz gerekiyorsa, <b>Veri</b> sekmesinde bulunan <b>TXT/CSV dosyasından veri al</b> se&ccedil;eneğini kullanın.</p>
+			<h2 id="step1">Adım 1. Dosyayı i&ccedil;e aktarma</h2>
+			<ol>
+				<li><b>Veri</b> sekmesinde <b>Veri al</b> se&ccedil;eneğine tıklayın.</li>
+				<li>İki i&ccedil;e aktarma se&ccedil;eneğinden birini se&ccedil;in:
+                <ul>
+					<li><b>Yerel TXT/CSV&apos;den</b>: Sabit diskinizde gerekli dosyayı bulun, se&ccedil;in ve <b>A&ccedil;</b> se&ccedil;eneğine tıklayın.</li>
+					<li><b>TXT/CSV web adresinden</b>: Dosyanın veya web sayfasının bağlantısını <b>Bir veri URL&apos;si yapıştır</b> alanına yapıştırın ve <b>Tamam</b> d&uuml;ğmesine tıklayın.
+                        <p class="note">
+                            ONLYOFFICE portalında veya bir &uuml;&ccedil;&uuml;nc&uuml; taraf belleğinde depolanan bir dosyayı g&ouml;r&uuml;nt&uuml;leme veya d&uuml;zenleme bağlantısı bu durumda kullanılamaz. L&uuml;tfen dosyayı <b>indirmek</b> i&ccedil;in bağlantıyı kullanın.
+                        </p>
+                    </li>
+				</ul>
+				</li>
+			</ol>
+			<h2 id="step2">Adım 2. Ayarları yapılandırma</h2>
+			<p><b>Metin İ&ccedil;eri Aktarma Sihirbazı</b> d&ouml;rt b&ouml;l&uuml;mden oluşur: <b>Kodlama</b>, <b>Sınırlayıcı</b>, <b>&Ouml;n İzleme</b>, ve <b>Verilerin koyulacağı yeri se&ccedil;me</b>.</p>
+			<p><img alt="Metin İçeri Aktarma Sihirbazı" src="../images/textimport.png" /></p>
+			<ol>
+				<li><b>Kodlama</b>. Varsayılan olarak parametre <em>UTF-8</em> olarak ayarlanmıştır. Olduğu gibi bırakın veya a&ccedil;ılır men&uuml;y&uuml; kullanarak ihtiyacınız olan t&uuml;r&uuml; se&ccedil;in.</li>
+                <li>
+                    <b>Sınırlayıcı</b>. Parametre, d&uuml;z metni farklı h&uuml;crelere dağıtmak i&ccedil;in kullanılan sınırlayıcı t&uuml;r&uuml;n&uuml; ayarlar. Mevcut sınırlayıcılar <em>Virg&uuml;l</em>, <em>Noktalı virg&uuml;l</em>, <em>İki nokta</em>, <em>Sekme</em>, <em>Boşluk</em> ve <em>Diğer</em> (manuel olarak girin) değerleridir.
+                    <p>Sayısal olarak tanınan veriler i&ccedil;in ayarları yapılandırmak &uuml;zere sağda bulunan <b>Gelişmiş</b> d&uuml;ğmesine tıklayın:</p>
+                    <p><img alt="Veri İçe Aktarma Gelişmiş Ayarları" src="../images/dataimport_advanced.png" /></p>
+                    <ul>
+                        <li>Bir <b>Ondalık ayırıcı</b> ve <b>Binlik ayırıcı</b> ayarlayın. Varsayılan ayırıcılar ondalık i&ccedil;in <b>&quot;.&quot;</b> ve binler i&ccedil;in <b>&quot;,&quot;</b> se&ccedil;enekleridir.</li>
+                        <li>
+                            Bir <b>Metin niteleyici</b> se&ccedil;in. <b>Metin niteleyici,</b> verileri i&ccedil;e aktarırken metnin nerede başladığını ve bittiğini tespit etmek i&ccedil;in kullanılan bir karakterdir. Mevcut se&ccedil;enekler şunlardır: <b>(yok)</b>, <b>ikili alıntı</b> ve <b>tek alıntı</b>.
+                        </li>
+                    </ul>
+                </li>
+				<li><b>&Ouml;n İzleme</b>. Bu b&ouml;l&uuml;m, elektronik tablo h&uuml;crelerinde metnin nasıl d&uuml;zenleneceğini g&ouml;sterir.</li>
+				<li><b>Verilerin koyulacağı yeri se&ccedil;me</b>. Alana gerekli aralığı girin veya sağdaki <b>Veri se&ccedil;</b> d&uuml;ğmesini kullanarak se&ccedil;in.</li>
+				<li>Dosyayı i&ccedil;e aktarmak ve <b>Metin İ&ccedil;eri Aktarma Sihirbazından</b> &ccedil;ıkmak i&ccedil;in <b>Tamam</b> d&uuml;ğmesine tıklayın.</li>
+			</ol>
+		</div>
+	</body>
+</html>

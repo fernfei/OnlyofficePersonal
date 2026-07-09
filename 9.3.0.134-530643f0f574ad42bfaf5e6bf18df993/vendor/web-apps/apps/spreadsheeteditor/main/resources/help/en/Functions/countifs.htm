@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>COUNTIFS Function</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="The COUNTIFS function is one of the statistical functions. Learn how to use the COUNTIFS formula in Excel sheets and compatible files with ONLYOFFICE." />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>COUNTIFS Function</h1>
+			<p>The <b>COUNTIFS</b> function is one of the <a href="../UsageInstructions/InsertFunction.htm#statistical" onclick="onhyperlinkclick(this)">statistical functions</a>. It is used to count the number of the selected cells based on multiple criteria.</p>
+			<h3>Syntax</h3> 
+			<p><b><em>COUNTIFS(criteria_range1, criteria1, [criteria_range2, criteria2]...)</em></b></p> 
+			<p>The <b>COUNTIFS</b> function has the following arguments:</p> 
+            <table style="width: 40%">
+                <tr>
+                    <th style="background-color: #f4f4f4" width="150ch"><b>Argument</b></th>
+                    <th style="background-color: #f4f4f4"><b>Description</b></th>
+                </tr>
+                <tr>
+                    <td><b><em>criteria_range1</em></b></td>
+                    <td>The first selected range of cells to apply the <em>criteria1</em> to. It is a required argument.</td>
+                </tr>
+				<tr>
+                    <td><b><em>criteria1</em></b></td>
+                    <td>The first condition that must be met. It is applied to the <em>criteria_range1</em> and used to determine the cells in the <em>criteria_range1</em> to count. It can be a value entered manually or included into the cell you make reference to. It is a required argument.</td>
+                </tr>
+				<tr>
+                    <td><b><em>criteria_range2, criteria2</em></b></td>
+                    <td>Additional ranges of cells and their corresponding criteria. These arguments are optional. You can add up to 127 ranges and corresponding criteria.</td>
+                </tr>
+            </table>
+			
+			<h3>Notes</h3>
+            <p>You can use wildcard characters when specifying criteria. The question mark "?" can replace any single character and the asterisk "*" can be used instead of any number of characters. If you want to find a question mark or asterisk, type a tilde (~) before the character.</p>
+			<p><a href="../UsageInstructions/InsertFunction.htm#applyfunction" onclick="onhyperlinkclick(this)">How to apply</a> the <b>COUNTIFS</b> function.</p>
+			
+			<h3>Examples</h3>
+            <p>The figure below displays the result returned by the <b>COUNTIFS</b> function.</p>
+			<p><img alt="COUNTIFS Function" src="../images/countifs.png" /></p>
+		</div>
+	</body>
+</html>

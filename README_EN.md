@@ -15,7 +15,7 @@ ONLYOFFICE running offline, entirely in the browser. It uses `x2t.wasm` for docu
 - **Embeddable**: `onlyoffice.html` exposes a postMessage protocol so you can embed it in your own app and get the edited file back as a byte stream.
 - **Static only**: host it on any static server, or bundle it straight into a frontend project.
 
-Built from ONLYOFFICE 9.3.
+Built from ONLYOFFICE 9.3, with the bundled **`x2t.wasm` upgraded to the latest 9.4 release**.
 
 ## Quick start
 
@@ -56,7 +56,7 @@ PDF editing
 
 ## Integrating into your own app
 
-Copy the whole repo (`onlyoffice.html`, the `9.3.0.133-*` build directory, `assets/`, `blank/`) into your frontend's static folder, embed `onlyoffice.html` in an iframe, then inject documents and retrieve file streams over postMessage.
+Copy the whole repo (`onlyoffice.html`, the `9.3.0.134-*` build directory, `assets/`, `blank/`) into your frontend's static folder, embed `onlyoffice.html` in an iframe, then inject documents and retrieve file streams over postMessage.
 
 - **[Integration guide](docs/使用文档.md)** (Chinese): the three ways to integrate, docConfig options, the message protocol, saving file streams, rename, save-as, the Automation API connector, plus a Vue component wrapper.
 - **[How the file stream works](docs/集成教程-文件流提取.md)** (Chinese): the offline build has no save callback — this explains how the bytes are pulled out of `x2t.downloadFile`.
@@ -65,7 +65,7 @@ Copy the whole repo (`onlyoffice.html`, the `9.3.0.133-*` build directory, `asse
 
 ```
 OnlyofficePersonal/
-├── 9.3.0.133-*/          # ONLYOFFICE build (web-apps / sdkjs / fonts)
+├── 9.3.0.134-*/          # ONLYOFFICE build (web-apps / sdkjs / fonts)
 ├── assets/               # favicon, blank PDF and other static assets
 ├── blank/                # blank templates for creating new documents
 ├── docs/                 # documentation and screenshots

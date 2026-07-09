@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Adlandırılmış aralıkları kullanma</title>
+		<meta charset="utf-8" />
+        <meta name="description" content="Use named ranges to simplify working with formulas" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Adlandırılmış aralıkları kullanma</h1>
+            <p>Adlar, bir h&uuml;creye veya h&uuml;cre aralığına atanabilen ve <a href="https://www.onlyoffice.com/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Elektronik Tablo D&uuml;zenleyicisinde</b></a> form&uuml;llerle &ccedil;alışmayı basitleştirmek i&ccedil;in kullanılabilen anlamlı g&ouml;sterim bi&ccedil;imleridir. Bir form&uuml;l oluştururken, h&uuml;cre aralığına başvuru kullanmak yerine bağımsız değişkeni olarak bir ad ekleyebilirsiniz. &Ouml;rneğin, <em>Yıllık gelir</em> adını bir h&uuml;cre aralığına atarsanız, <em>=TOPLA(B1:B12)</em> yerine <em>=TOPLA(Yıllık_Gelir)</em> değerini girmek m&uuml;mk&uuml;n olacaktır. B&ouml;ylece form&uuml;ller daha net hale gelir. Bu &ouml;zellik, &ccedil;ok sayıda form&uuml;l&uuml;n bir ve aynı h&uuml;cre aralığına başvuru olduğu durumda da yararlı olabilir. Aralık adresi değiştirilirse, t&uuml;m form&uuml;lleri tek tek d&uuml;zenlemek yerine, Ad Y&ouml;neticisini kullanarak d&uuml;zeltmeyi tek seferde yapabilirsiniz.</p>
+			<p>Kullanılabilecek iki t&uuml;r ad vardır:</p>
+            <ul>
+                <li><b>Tanımlı ad</b> – Belirli bir h&uuml;cre aralığı i&ccedil;in belirtebileceğiniz isteğe bağlı bir addır. Tanımlı adlar, <a href="SavePrintDownload.htm#printarea" onclick="onhyperlinkclick(this)">yazdırma alanlarını</a> ayarlarken otomatik olarak oluşturulan adları da i&ccedil;erir.</li>
+                <li><b>Tablo adı</b> – <a href="FormattedTables.htm" onclick="onhyperlinkclick(this)">Yeni bi&ccedil;imlendirilmiş bir tabloya</a> (<em>Tablo 1</em>, <em>Tablo 2</em> vs.) otomatik olarak atanan varsayılan bir addır. Bu adı daha sonra d&uuml;zenleyebilirsiniz.</li>
+            </ul>
+            <p>Eğer <a href="Slicers.htm" onclick="onhyperlinkclick(this)">bi&ccedil;imlendirilmiş bir tablo i&ccedil;in bir dilimleyici</a> oluşturduysanız, <b>Ad Y&ouml;neticisinde</b> otomatik olarak atanmış bir dilimleyici adı da g&ouml;r&uuml;nt&uuml;lenecektir (<em>Dilimleyici_S&uuml;tunu1</em>, <em>Dilimleyici_S&uuml;tunu12</em> vb. Bu ad, kaynak veri k&uuml;mesindeki s&uuml;tun başlığına karşılık gelen <em>Dilimleyici_</em> b&ouml;l&uuml;m&uuml; ve alan adından oluşur). Bu adı daha sonra d&uuml;zenleyebilirsiniz.</p>
+            <p>İsimler ayrıca <b>Kapsama</b>, yani bir adın tanındığı konuma g&ouml;re de sınıflandırılır. Bir ad, t&uuml;m &ccedil;alışma kitabı (bu &ccedil;alışma kitabı i&ccedil;erisindeki herhangi bir &ccedil;alışma sayfası i&ccedil;in tanınacaktır) veya ayrı bir &ccedil;alışma sayfası (yalnızca belirtilen &ccedil;alışma sayfası i&ccedil;in tanınacaktır) kapsamına alınabilir. Her ad tek bir kapsamda benzersiz olmalıdır, aynı isimler farklı kapsamlarda kullanılabilir.</p>
+            <h3>Yeni adlar oluşturma</h3>
+			<p>Bir se&ccedil;im i&ccedil;in tanımlanmış yeni bir ad oluşturmak i&ccedil;in:</p>
+			<ol>
+			<li>Ad atamak istediğiniz h&uuml;creyi veya h&uuml;cre aralığını se&ccedil;in.</li>
+			<li>Uygun bir şekilde yeni bir ad penceresi a&ccedil;ın:
+                <ul>
+                    <li>Se&ccedil;ime sağ tıklayın ve bağlamsal men&uuml;den <b>Ad Tanımla</b> se&ccedil;eneğini se&ccedil;in veya</li>
+                    <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Giriş</b> sekmesinde bulunan <div class = "icon icon-namedranges"></div> <b>Adlandırılmış aralıklar</b> simgesine tıklayın ve men&uuml;den <b>Ad Tanımla</b> se&ccedil;eneğini se&ccedil;in veya</li>
+                    <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun&nbsp; <div class = "icon icon-namedrangesicon"></div> <b>Form&uuml;l</b>&nbsp;sekmesinde bulunan <b>Adlandırılmış aralıklar</b> d&uuml;ğmesine tıklayın ve men&uuml;den&nbsp;<b>Ad y&ouml;neticisi</b> se&ccedil;eneğini se&ccedil;in. A&ccedil;ılan pencerede <b>Yeni</b> se&ccedil;eneği se&ccedil;in.</li>
+                </ul>
+                <p><b>Yeni Ad</b> penceresi a&ccedil;ılacaktır:</p>
+                <p><img alt="Yeni Ad penceresi" src="../images/newnamewindow.png" /></p>
+            </li>
+            <li>Metin giriş alanına gerekli <b>Adı</b> girin.
+            <p class="note"><b>Not</b>: Bir ad bir sayı ile başlayamaz, boşluk veya noktalama işaretleri i&ccedil;eremez. Alt &ccedil;izgilere (_) izin verilir. B&uuml;y&uuml;k-k&uuml;&ccedil;&uuml;k harf olması &ouml;nemli değildir.</p>   
+            </li>
+            <li><b>Kapsam</b> adını belirtin. <em>&Ccedil;alışma Kitabı</em> kapsamı varsayılan olarak se&ccedil;ilidir, ancak listeden se&ccedil;erek ayrı bir &ccedil;alışma sayfası belirleyebilirsiniz.</li>
+            <li>Se&ccedil;ilen <b>Veri Aralığı</b> adresini kontrol edin. Gerekirse değiştirebilirsiniz. Simgeye <div class = "icon icon-changerange"></div> tıklayın - <b>Veri Aralığı Se&ccedil;in</b> penceresi a&ccedil;ılacaktır.
+            <p><img alt="Veri Aralığı Seç penceresi" src="../images/selectdatarange.png" /></p>
+            <p>Giriş alanındaki h&uuml;cre aralığı bağlantısını değiştirin veya &ccedil;alışma sayfasında fare ile yeni bir aralık se&ccedil;in ve <b>Tamam</b> d&uuml;ğmesine tıklayın.</p> 
+            </li>
+            <li>Yeni adı kaydetmek i&ccedil;in <b>Tamam</b> se&ccedil;eneğine tıklayın.</li>
+			</ol>
+            <p>Se&ccedil;ilen h&uuml;cre aralığı i&ccedil;in hızlı bir şekilde yeni bir ad oluşturmak i&ccedil;in form&uuml;l &ccedil;ubuğunun solunda bulunan ad kutusuna da istediğiniz adı girip <b>Enter</b> tuşuna basabilirsiniz. Bu şekilde oluşturulan ad, <em>&Ccedil;alışma Kitabı</em> kapsamına alınır.</p>
+            <p><img alt="Ad Kutusu" src="../images/namefield.png" /></p>
+			<h3>Adları y&ouml;netme</h3>
+            <p>Mevcut t&uuml;m adlara <b>Ad Y&ouml;neticisinden</b> erişilebilir. A&ccedil;mak i&ccedil;in:</p>
+            <ul>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Giriş</b> sekmesinde bulunan <div class = "icon icon-namedranges"></div> <b>Adlandırılmış aralıklar</b> simgesine tıklayın ve men&uuml;den <b>Ad y&ouml;neticisi</b> se&ccedil;eneğini se&ccedil;in veya</li>
+                <li>ad alanındaki oka tıklayın ve <b>Ad Y&ouml;neticisi</b> se&ccedil;eneğini se&ccedil;in.</li>
+            </ul>
+            <p><b>Ad Y&ouml;neticisi</b> penceresi a&ccedil;ılacaktır:</p>
+            <p><img alt="Ad Yöneticisi penceresi" src="../images/namemanagerwindow.png" /></p>
+            <p>Size kolaylık sağlaması i&ccedil;in g&ouml;r&uuml;nt&uuml;lenmesini istediğiniz ad kategorisini se&ccedil;erek adları filtreleyebilirsiniz: <b>T&uuml;m&uuml;</b>, <b>Tanımlı adlar</b>, <b>Tablo adları</b>, <b>Sayfa Kapsamına Alınan Adlar</b> veya <b>&Ccedil;alışma Kitabı Kapsamına Alınan Adlar</b>. Se&ccedil;ilen kategoriye ait isimler listede g&ouml;r&uuml;nt&uuml;lenecek, diğer adlar gizlenecektir.</p>
+            <p>G&ouml;r&uuml;nt&uuml;lenen listenin sıralama d&uuml;zenini değiştirmek i&ccedil;in bu penceredeki <b>Adlandırılmış Aralıklar</b> veya <b>Kapsam</b> başlıklarına tıklayabilirsiniz.</p>
+            <p><b>Bir adı d&uuml;zenlemek i&ccedil;in</b> listeden ilgili adı se&ccedil;in ve <b>D&uuml;zenle</b> d&uuml;ğmesine tıklayın. <b>Adı D&uuml;zenle</b> penceresi a&ccedil;ılacaktır:</p>
+            <p><img alt="Adı Düzenle penceresi" src="../images/editnamewindow.png" /></p>
+            <p>Tanımlı bir ad i&ccedil;in adı ve başvurduğu veri aralığını değiştirebilirsiniz. Tablo adı i&ccedil;in yalnızca adı değiştirebilirsiniz. Gerekli t&uuml;m değişiklikler yapıldığında, uygulamak i&ccedil;in <b>Tamam</b> d&uuml;ğmesine tıklayın. Değişiklikleri iptal etmek i&ccedil;in <b>İptal</b> d&uuml;ğmesine tıklayın. D&uuml;zenlenen ad bir form&uuml;lde kullanılıyorsa, form&uuml;l buna g&ouml;re otomatik olarak değiştirilir.</p>
+            <p><b>Bir adı silmek i&ccedil;in</b> listeden ilgili adı se&ccedil;in ve <b>Sil</b> d&uuml;ğmesine tıklayın.</p>
+            <p class="note"><b>Not</b>: Bir form&uuml;lde kullanılan adı silerseniz, form&uuml;l artık &ccedil;alışmaz (<em>#AD?</em> hata değerini verir).</p>  
+            <p>Ayrıca <b>Yeni</b> d&uuml;ğmesine tıklayarak <b>Ad Y&ouml;neticisi</b> penceresinde yeni bir ad da oluşturabilirsiniz.</p>
+			<h3 id="usingnames">Elektronik tablo ile &ccedil;alışırken adları kullanma</h3>
+            <p><b>H&uuml;cre aralıklarında hızlıca gezinmek i&ccedil;in</b> ad kutusundaki oka tıklayabilir ve ad listesinden gerekli adı se&ccedil;ebilirsiniz - &ccedil;alışma sayfasında bu ada karşılık gelen veri aralığı se&ccedil;ilecektir.</p>
+            <p><img alt="Ad listesi" src="../images/namelist.png" /></p>
+            <p class="note"><b>Not</b>: Ad listesi, ge&ccedil;erli &ccedil;alışma sayfasını ve t&uuml;m &ccedil;alışma kitabını kapsayan tanımlı adları ve tablo adlarını g&ouml;r&uuml;nt&uuml;ler.</p>
+            <p><b>Bir form&uuml;l&uuml;n bağımsız değişkeni olarak bir ad eklemek i&ccedil;in</b>:</p>
+            <ol>
+                <li>Ekleme noktasını adı eklemeniz gereken yere getirin.</li>
+                <li>Aşağıdaki adımlardan birini uygulayın:
+                    <ul>
+                        <li>Gerekli adlandırılmış aralığın adını klavyeyi kullanarak manuel olarak girin. İlk harfleri yazdıktan sonra, <b>Form&uuml;l Otomatik Tamamlama</b> listesi g&ouml;r&uuml;nt&uuml;lenecektir. Siz yazarken, girilen karakterlerle eşleşen &ouml;ğeler (form&uuml;ller ve adlar) burada g&ouml;r&uuml;nt&uuml;lenir. Gerekli <b>tanımlanmış adı</b> veya <b>tablo adını</b> listeden se&ccedil;ebilir ve &ccedil;ift tıklayarak veya <b>Sekme</b> tuşuna basarak form&uuml;le ekleyebilirsiniz.</li>
+                        <li>
+                            Ya da &uuml;st ara&ccedil; &ccedil;ubuğunun <b>Giriş</b> sekmesinde bulunan <div class = "icon icon-namedranges"></div> <b>Adlandırılmış aralıklar</b> simgesine tıklayabilir, men&uuml;den <b>Adı yapıştır</b> se&ccedil;eneğini, <b>Adı Yapıştır</b> penceresinden gerekli adı se&ccedil;ebilir <b>Tamam</b> d&uuml;ğmesine tıklayabilirsiniz:
+                            <p><img alt="Adı Yapıştır penceresi" src="../images/pastenamewindow.png" /></p>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+            <p class="note"><b>Not</b>: <b>Adı Yapıştır</b> penceresi, ge&ccedil;erli &ccedil;alışma sayfasını ve t&uuml;m &ccedil;alışma kitabını kapsayan tanımlı adları ve tablo adlarını g&ouml;r&uuml;nt&uuml;ler.</p>  
+            <p id="internallink"><b>Bir adı dahili k&ouml;pr&uuml; olarak kullanmak i&ccedil;in</b>:</p>
+            <ol>
+                <li>Ekleme noktasını k&ouml;pr&uuml;y&uuml; eklemeniz gereken yere getirin.</li>
+                <li><b>Ekle</b> sekmesine gidin ve <div class = "icon icon-addhyperlink"></div> <b>K&ouml;pr&uuml;</b> d&uuml;ğmesine tıklayın.</li>
+                <li>A&ccedil;ılan <b>K&ouml;pr&uuml; Ayarları</b> penceresinde, <b>Dahili Veri Aralığı</b> sekmesini se&ccedil;in ve adlandırılmış bir aralık se&ccedil;in.
+                    <p><img alt="Köprü Ayarları" src="../images/name_hyperlink.png" /></p>
+                </li>
+                <li><b>Tamam</b> d&uuml;ğmesine tıklayın.</li>
+            </ol>
+		</div>
+	</body>
+</html>

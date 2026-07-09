@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Metin nesneleri ekleme</title>
+		<meta charset="utf-8" />
+        <meta name="description" content="Insert text objects such as text boxes and Text Art to draw attention to a specific part of the spreadsheet" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+        <div class="search-field">
+            <input id="search" class="searchBar" placeholder="Arama" type="text" onkeypress="doSearch(event)">
+        </div>
+			<h1>Metin nesneleri ekleme</h1>
+            <p><a href="https://www.onlyoffice.com/spreadsheet-editor.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Elektronik Tablo D&uuml;zenleyicisinde,</b></a> elektronik tablonun belirli bir b&ouml;l&uuml;m&uuml;ne dikkat &ccedil;ekebilirsiniz, bunun i&ccedil;in bir metin kutusu (i&ccedil;ine metin girmenizi sağlayan dikd&ouml;rtgen bir &ccedil;er&ccedil;eve) veya bir Text Art nesnesi (bazı metin efektlerini uygulamanızı sağlayan &ouml;nceden tanımlanmış bir yazı tipi stili ve rengi olan bir metin kutusu) ekleyin.</p>
+			<h3>Bir metin nesnesi ekleme</h3>
+            <p>&Ccedil;alışma sayfasında herhangi bir yere bir metin nesnesi ekleyebilirsiniz. Bunu yapmak i&ccedil;in</p>
+            <ol>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Ekle</b> sekmesine ge&ccedil;iş yapın,</li>
+                <li>Gerekli metin nesne t&uuml;r&uuml;n&uuml; se&ccedil;in:
+                <ul>
+                    <li>Bir metin kutusu eklemek i&ccedil;in <div class = "icon icon-inserttexticon"></div> &Uuml;st ara&ccedil; &ccedil;ubuğunda <b>Metin Kutusu</b> simgesine tıklayın, ardından metin kutusunun eklenmesi gereken yere tıklayın, fare d&uuml;ğmesini basılı tutun ve boyutunu belirtmek i&ccedil;in metin kutusu kenarlığını s&uuml;r&uuml;kleyin. Fare d&uuml;ğmesini bıraktığınızda, eklenen metin kutusunda ekleme noktası belirerek metninizi girmenizi sağlar.
+                        <p class="note">&Uuml;st ara&ccedil; &ccedil;ubuğunda bulunan <span class="icon icon-insertautoshape"></span> <b>Şekil</b> simgesine tıklayarak ve <b>Basit Şekiller</b> grubundan Metin Ekle <span class="icon icon-text_autoshape"></span> otomatik şeklini se&ccedil;erek de bir metin kutusu eklemek m&uuml;mk&uuml;nd&uuml;r.</p>
+                    </li>
+                    <li>Bir Text Art nesnesi eklemek i&ccedil;in <div class = "icon icon-inserttextarticon"></div> &Uuml;st ara&ccedil; &ccedil;ubuğunda bulunan <b>Text Art</b> simgesine tıklayın, ardından istediğiniz stil şablonuna tıklayın &ndash; Text Art nesnesi &ccedil;alışma sayfasının mevcut konumuna eklenecektir. Metin kutusundaki varsayılan metni fare ile se&ccedil;in ve kendi metninizle değiştirin.</li>
+                </ul>
+                </li>
+                <li>Değişiklikleri uygulamak ve sayfaya geri d&ouml;nmek i&ccedil;in metin nesnesinin dışına tıklayın.</li>
+            </ol>
+            <p>Metin nesnesinin i&ccedil;indeki metin, metin nesnesinin bir par&ccedil;asıdır (metin nesnesini hareket ettirdiğinizde veya d&ouml;nd&uuml;rd&uuml;ğ&uuml;n&uuml;zde, metin de onunla birlikte hareket eder veya d&ouml;ner).</p>
+            <p>Eklenen metin nesnesi, i&ccedil;inde metin bulunan dikd&ouml;rtgen bir &ccedil;er&ccedil;eveyi temsil ettiğinden (Text Art nesnelerinin varsayılan olarak g&ouml;r&uuml;nmez metin kutusu kenarları vardır) ve bu &ccedil;er&ccedil;eve yaygın kullanılan bir otomatik şekil olduğundan, hem şekli hem de metin &ouml;zelliklerini değiştirebilirsiniz.</p>
+            <p>Eklenen metin nesnesini silmek i&ccedil;in metin kutusu kenarlığına tıklayın ve klavyede <b>Delete</b> tuşuna basın. Metin kutusundaki metin de silinecektir.</p>
+            <h3>Metin kutusunu bi&ccedil;imlendirme</h3>
+            <p>&Ouml;zelliklerini değiştirmek i&ccedil;in kenarlığına tıklayarak metin kutusunu se&ccedil;in. Metin kutusu se&ccedil;ildiğinde, kenarları d&uuml;z (kesikli değil) &ccedil;izgi halinde g&ouml;r&uuml;nt&uuml;lenir.</p>
+            <p><img alt="Metin kutusu seçili" src="../images/textbox_boxselected.png" /></p>
+            <ul>
+                <li>Metin kutusunu manuel olarak <a href="ManipulateObjects.htm" onclick="onhyperlinkclick(this)">yeniden boyutlandırmak, taşımak, d&ouml;nd&uuml;rmek</a> i&ccedil;in şeklin kenarlarındaki &ouml;zel tutama&ccedil;ları kullanın.</li>
+                <li>Metin kutusu <a href="InsertAutoshapes.htm#shape_fill" onclick="onhyperlinkclick(this)">dolgusunu</a>, <a href="InsertAutoshapes.htm#shape_stroke" onclick="onhyperlinkclick(this)">&ccedil;izgisini</a> d&uuml;zenlemek i&ccedil;in dikd&ouml;rtgen kutuyu farklı bir şekil ile <b>değiştirin</b> veya <a href="InsertAutoshapes.htm#shape_advanced" onclick="onhyperlinkclick(this)">şekil gelişmiş ayarları</a> b&ouml;l&uuml;m&uuml;n&uuml; a&ccedil;ın, sağ kenar &ccedil;ubuğundaki <b>Şekil ayarları</b> simgesine tıklayın<div class = "icon icon-shape_settings_icon"></div>ve ilgili se&ccedil;enekleri kullanın.</li>
+                <li>Metin kutularını diğer nesnelere g&ouml;re <b>d&uuml;zenlemek</b>, birbiriyle ilişkili olarak <b>birden &ccedil;ok metin kutusunu hizalamak</b>, bir metin kutusunu <b>d&ouml;nd&uuml;rmek veya &ccedil;evirmek</b> i&ccedil;in metin kutusu kenarlığına sağ tıklayın ve bağlamsal men&uuml; se&ccedil;eneklerini kullanın. Nesneleri d&uuml;zenleme ve hizalama hakkında daha fazla bilgi edinmek i&ccedil;in l&uuml;tfen <a href="../UsageInstructions/ManipulateObjects.htm" onclick="onhyperlinkclick(this)">bu yazıya</a> bakın.</li>
+                <li>Metin kutusu i&ccedil;erisinde <b>metin s&uuml;tunları</b> oluşturmak i&ccedil;in metin kutusu kenarlığına sağ tıklayın, <b>Şekil Gelişmiş Ayarları</b> se&ccedil;eneğine tıklayın ve <b>Şekil - Gelişmiş Ayarlar</b> penceresinde <a href="../UsageInstructions/InsertAutoshapes.htm#columns" onclick="onhyperlinkclick(this)"><b>S&uuml;tunlar</b></a> sekmesine ge&ccedil;in.</li>
+            </ul>
+            <h3 id="textbox_textformatting">Metin kutusundaki metni bi&ccedil;imlendirme</h3>
+            <p>&Ouml;zelliklerini değiştirmek i&ccedil;in metin kutusundaki metne tıklayın. Metin se&ccedil;ildiğinde, metin kutusu kenarlıkları kesikli &ccedil;izgi halinde g&ouml;r&uuml;nt&uuml;lenir.</p>
+            <p><img alt="Metin seçili" src="../images/textbox_textselected.png" /></p>
+            <p class="note">Metin kutusu (metnin kendisi değil) se&ccedil;ildiğinde metin bi&ccedil;imlendirmesini değiştirmek de m&uuml;mk&uuml;nd&uuml;r. Bu durumda, değişiklikler metin kutusundaki metnin tamamına uygulanır. Bazı yazı tipi bi&ccedil;imlendirme se&ccedil;enekleri (yazı tipi, boyut, renk ve s&uuml;sleme stilleri) &ouml;nceden se&ccedil;ilmiş metin par&ccedil;asına ayrı ayrı uygulanabilir.</p>
+            <ul>
+                <li><b>Yazı tipi bi&ccedil;imlendirme ayarlarını,</b> &uuml;st ara&ccedil; &ccedil;ubuğunun <b>Giriş</b> sekmesinde bulunan <a href="../UsageInstructions/FontTypeSizeStyle.htm" onclick="onhyperlinkclick(this)">ilgili simgeleri</a> kullanarak yapın(yazı tipini, boyutunu, rengini değiştirin ve dekorasyon stillerini uygulayın). Bazı ek yazı tipi ayarları da paragraf &ouml;zellikleri penceresinin <b>Yazı tipi</b> sekmesinde değiştirilebilir. Buna erişmek i&ccedil;in metin kutusundaki metne sağ tıklayın ve <b>Paragraf Gelişmiş Ayarları</b> se&ccedil;eneğini se&ccedil;in.</li>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Giriş</b> sekmesinde veya <a href="../UsageInstructions/InsertTextObjects.htm#textadvancedsettings" onclick="onhyperlinkclick(this)"><b>Paragraf - Gelişmiş Ayarlar</b></a> penceresinde bulunan <a href="../UsageInstructions/AlignText.htm" onclick="onhyperlinkclick(this)">ilgili simgeleri</a> kullanarak <b>metni yatay olarak hizalayın</b>.</li>
+                <li>&Uuml;st ara&ccedil; &ccedil;ubuğunun <b>Giriş</b> sekmesinde bulunan <a href="../UsageInstructions/AlignText.htm" onclick="onhyperlinkclick(this)">ilgili simgeleri</a> kullanarak <b>metni dikey olarak hizalayın</b>. Ayrıca metne sağ tıklayabilir, <b>Dikey Hizalama</b> se&ccedil;eneğini ve ardından mevcut <b>&Uuml;ste Hizala</b>, <b>Merkeze Hizala</b> veya <b>Alta Hizala</b> se&ccedil;eneklerinden birini se&ccedil;ebilirsiniz.</li>
+                <li>Metin kutusundaki metni <b>D&ouml;nd&uuml;rme</b>. Bunu yapmak i&ccedil;in metne sağ tıklayın, <b>Metin Y&ouml;n&uuml;</b> se&ccedil;eneğini ve ardından mevcut <b>Yatay</b> (varsayılan olarak se&ccedil;ilidir), <b>Metni Aşağı D&ouml;nd&uuml;r</b> (yukarıdan aşağıya dikey bir y&ouml;n ayarlar) veya <b>Metni Yukarı D&ouml;nd&uuml;r</b> (aşağıdan yukarıya dikey bir y&ouml;n ayarlar) se&ccedil;eneklerinden birini se&ccedil;in.</li>
+                <li>
+                    <b>Madde işaretli ve numaralandırılmış liste</b> oluşturma. Bunu yapmak i&ccedil;in metne sağ tıklayın, bağlamsal men&uuml;den <b>Madde İşaretleri ve Numaralandırma</b> se&ccedil;eneğini ve ardından mevcut madde işareti karakterlerinden veya numaralandırma stillerinden birini se&ccedil;in.
+                    <p><img alt="Madde işaretleri ve numaralandırma" src="../images/bulletsandnumbering.png" /></p>
+                    <p><b>Liste Ayarları</b> se&ccedil;eneği, ilgili liste t&uuml;r&uuml; i&ccedil;in ayarları yapabileceğiniz <b>Liste Ayarları</b> penceresini a&ccedil;manızı sağlar:</p>
+                    <p><img alt="Madde işaretli liste ayarları" src="../images/bulletedlistsettings.png" /></p>
+                    <p><b>T&uuml;r (madde işaretli)</b> - Madde işaretli liste i&ccedil;in gerekli karakteri se&ccedil;menizi sağlar. <b>Yeni madde işareti</b> se&ccedil;eneğine tıkladığınızda, <b>Sembol</b> penceresi a&ccedil;ılır ve mevcut karakterlerden birini se&ccedil;ebilirsiniz. Sembollerle &ccedil;alışma hakkında daha fazla bilgi edinmek i&ccedil;in l&uuml;tfen <a href="../UsageInstructions/InsertSymbols.htm" onclick="onhyperlinkclick(this)">bu yazıya</a> bakın.</p>
+                    <p><b>Yeni g&ouml;r&uuml;nt&uuml;</b> se&ccedil;eneğine tıkladığınızda, madde işaretleri i&ccedil;in <em>Dosyadan</em>, <em>URL&apos;den</em>, veya <em>Bellekten</em> yeni resimler se&ccedil;ebileceğiniz yeni bir <b>İ&ccedil;e aktar</b> alanı g&ouml;r&uuml;n&uuml;r.</p>
+                    <p><img alt="Numaralandırma liste ayarları" src="../images/numberedlistsettings.png" /></p>
+                    <p><b>T&uuml;r (numaralandırma)</b> - Numaralandırılmış liste i&ccedil;in gerekli karakteri se&ccedil;menizi sağlar.</p>
+                    <ul>
+                        <li><b>Boyut</b> - Ge&ccedil;erli metin boyutuna bağlı olarak gerekli madde işareti/numara boyutunu se&ccedil;menizi sağlar. Değer %25 ila %400 arasında değişebilir.</li>
+                        <li><b>Renk</b> - Gerekli madde işareti/numara rengini se&ccedil;menizi sağlar. Paletteki tema renklerinden veya <em>standart renklerden</em> birini se&ccedil;ebilir veya <em>&ouml;zel</em> bir renk belirleyebilirsiniz.</li>
+                        <li><b>Numaralandırma başlangıcı</b> - Numaralandırmayı başlatmak istediğiniz gerekli sayısal değeri ayarlarmanızı sağlar.</li>
+                    </ul>
+                </li>
+                <li><a href="../UsageInstructions/AddHyperlinks.htm" onclick="onhyperlinkclick(this)">K&ouml;pr&uuml;</a> ekleme.</li>
+                <li>
+                    Metin kutusu i&ccedil;indeki &ccedil;ok satırlı metin i&ccedil;in <b>satır ve paragraf aralığını,</b> <b>Paragraf ayarları</b> simgesine tıklarsanız a&ccedil;ılacak olan sağ kenar &ccedil;ubuğunun <b>Paragraf ayarları</b> sekmesini kullanarak ayarlayabilirsiniz <div class = "icon icon-textsettings"></div>. Paragraf i&ccedil;indeki metin satırları i&ccedil;in satır y&uuml;ksekliğini ve ge&ccedil;erli paragraf ile &ouml;nceki veya sonraki paragraflar arasındaki kenar boşluklarını ayarlayın.
+                    <p><img alt="Paragraf ayarları sekmesi" src="../images/textsettingstab.png" /></p>
+                    <ul>
+                        <li><b>Satır Aralığı</b> - Paragraf i&ccedil;indeki metin satırları i&ccedil;in satır y&uuml;ksekliğini ayarlayın. Aşağıdaki iki se&ccedil;enek arasından se&ccedil;im yapabilirsiniz: <b>&Ccedil;oklu</b> (1&apos;den b&uuml;y&uuml;k sayılarla ifade edilebilecek satır aralığını ayarlar), <b>Tam</b> (sabit satır aralığını ayarlar). Sağdaki alanda gerekli değeri belirleyebilirsiniz.</li>
+                        <li>
+                            <b>Paragraf Aralığı</b> - Paragraflar arasındaki boşluk miktarını ayarlar.
+                            <ul>
+                                <li><b>&Ouml;nceki</b> - Paragraftan &ouml;nceki boşluk miktarını ayarlar.</li>
+                                <li><b>Sonraki</b> - Paragraftan sonraki boşluk miktarını ayarlar.</li>
+                            </ul>
+                            <p class="note">Bu parametreleri ayrıca <a href="../UsageInstructions/InsertTextObjects.htm#textadvancedsettings" onclick="onhyperlinkclick(this)"><b>Paragraf Gelişmiş Ayarları</b></a> penceresinde de bulabilirsiniz.</p>
+                        </li>
+                    </ul>
+                </li>
+                </ul>
+                <h3 id="textadvancedsettings">Paragraf gelişmiş ayarlarını yapma</h3>
+                <p>Paragrafın <b>gelişmiş ayarlarını</b> değiştirme (metin kutusu i&ccedil;indeki &ccedil;ok satırlı metin i&ccedil;in <b>paragraf girintilerini</b> ve <b>sekme duraklarını</b> ayarlayabilir ve bazı <b>yazı tipi bi&ccedil;imlendirme ayarlarını</b> uygulayabilirsiniz). İmleci gerekli paragrafın i&ccedil;ine getirin - <b>Paragraf ayarları</b> sekmesi sağ kenar &ccedil;ubuğunda etkinleştirilecektir. <b>Gelişmiş ayarları g&ouml;ster</b> bağlantısına tıklayın. Bir metin kutusundaki metne sağ tıklayıp bağlamsal men&uuml;den <b>Paragraf Gelişmiş Ayarlar</b> &ouml;ğesini de kullanabilirsiniz. Paragraf &ouml;zellikleri penceresi a&ccedil;ılacaktır:<p/>
+                    <p><img alt="Paragraf Özellikleri - Girintiler ve Boşluk sekmesi" src="../images/textadvancedsettings1.png" /></p>
+                    <p><b>Girintiler ve Boşluk</b> sekmesi:</p>
+                    <ul>
+                        <li>Paragraf metni i&ccedil;in <b>hizalama</b> tipini değiştirmenizi,</li>
+                        <li>
+                            Paragraf <b>girintilerini</b> metin kutusunun <a href="../UsageInstructions/InsertAutoshapes.htm#internalmargins" onclick="onhyperlinkclick(this)">i&ccedil; kenar boşluklarına</a> g&ouml;re değiştirmenizi sağlar.
+                            <ul>
+                                <li><b>Sol</b> - Paragraf aralığını gerekli sayısal değeri belirterek metin kutusunun <b>sol</b> tarafından ayarlayın,</li>
+                                <li><b>Sağ</b> - Paragraf aralığını gerekli sayısal değeri belirterek metin kutusunun <b>sağ</b> tarafından ayarlayın,</li>
+                                <li><b>&Ouml;zel</b> - Paragrafın <b>ilk satırı</b> i&ccedil;in bir girinti ayarlayın: karşılık gelen men&uuml; &ouml;ğesini (<b>(hi&ccedil;biri)</b>, <b>İlk satır</b>, <b>Asılı</b>) se&ccedil;in ve <b>İlk satır</b> veya <b>Asılı</b> i&ccedil;in belirtilmiş varsayılan sayısal değeri değiştirin</li>
+                            </ul>
+                        </li>
+                        <li>Paragraf <b>satır aralığını</b> değiştirin.</li>
+                    </ul>
+                    <p><img alt="Paragraf Özellikleri - Yazı Tipi sekmesi" src="../images/textadvancedsettings2.png" /></p>
+                    <p><b>Yazı Tipi</b> sekmesi aşağıdaki parametreleri i&ccedil;erir:</p>
+                    <ul>
+                        <li><b>&Uuml;st&uuml; &ccedil;izili</b>, metnin &uuml;st&uuml;n&uuml; harflerin arasından ge&ccedil;en bir &ccedil;izgi ile &ccedil;izmek i&ccedil;in kullanılır.</li>
+                        <li><b>&Uuml;st&uuml; &ccedil;ift &ccedil;izili,</b> metnin &uuml;st&uuml;n&uuml; harflerin arasından ge&ccedil;en &ccedil;ift bir &ccedil;izgi ile &ccedil;izmek i&ccedil;in kullanılır.</li>
+                        <li><b>&Uuml;st Simge</b> se&ccedil;eneği, metni k&uuml;&ccedil;&uuml;ltmek ve kesirlerde olduğu gibi metin satırının &uuml;st kısmına yerleştirmek i&ccedil;in kullanılır.</li>
+                        <li><b>Alt Simge</b> se&ccedil;eneği, metni k&uuml;&ccedil;&uuml;ltmek ve kimyasal form&uuml;llerde olduğu gibi metin satırının alt kısmına yerleştirmek i&ccedil;in kullanılır.</li>
+                        <li><b>K&uuml;&ccedil;&uuml;k harfler</b>, t&uuml;m harfleri k&uuml;&ccedil;&uuml;k yapmak i&ccedil;in kullanılır.</li>
+                        <li><b>T&uuml;m&uuml; b&uuml;y&uuml;k harf</b>, t&uuml;m harfleri b&uuml;y&uuml;k yapmak i&ccedil;in kullanılır.</li>
+                        <li><b>Karakter Boşluğu,</b> karakterler arasındaki boşluğu ayarlamak i&ccedil;in kullanılır. <b>Genişletilmiş</b> boşluk bırakmayı uygulamak i&ccedil;in varsayılan değeri artırın veya <b>Daraltılmış</b> boşluk bırakmayı uygulamak i&ccedil;in varsayılan değeri azaltın. Ok d&uuml;ğmelerini kullanın veya kutuya gerekli değeri girin.
+                        <p>T&uuml;m değişiklikler aşağıdaki &ouml;nizleme alanında g&ouml;r&uuml;nt&uuml;lenecektir.</p>
+                        </li>
+                    </ul>
+                    <p><img alt="Paragraf Özellikleri - Sekme sekmesi" src="../images/textadvancedsettings3.png" /></p>
+                    <p><b>Sekme</b> sekmesi, sekme duraklarını, yani, klavyede <b>Sekme</b> tuşuna bastığınızda imlecin ilerlediği konumu değiştirmenizi sağlar.</p>
+                    <ul>
+                        <li><b>Varsayılan Sekme</b> 2,54 cm olarak ayarlanmıştır. Ok tuşlarını kullanarak veya kutuya gerekli değeri girerek bu değeri azaltabilir veya artırabilirsiniz.</li>
+                        <li><b>Sekme Konumu</b> - &Ouml;zel sekme duraklarını ayarlamak i&ccedil;in kullanılır. Gerekli değeri bu kutuya girin, ok d&uuml;ğmelerini kullanarak daha hassas bir şekilde ayarlayın ve <b>Belirt</b> d&uuml;ğmesine tıklayın. &Ouml;zel sekme konumunuz aşağıdaki alandaki listeye eklenecektir.</li>
+                        <li>
+                            <b>Hizalama</b>, yukarıdaki listedeki sekme konumlarının her biri i&ccedil;in gerekli hizalama t&uuml;r&uuml;n&uuml; ayarlamak i&ccedil;in kullanılır. Listeden gerekli sekme konumunu se&ccedil;in, <b>Hizala</b> a&ccedil;ılır listesinden <b>Sola</b>, <b>Ortaya</b> veya <b>Sağa</b> se&ccedil;eneğini se&ccedil;in ve <b>Belirt</b> d&uuml;ğmesine basın.
+                            <ul>
+                                <li><b>Sola</b> - Metninizi sekme durağı konumunda sol tarafa hizalar ve siz yazarken metin sekme durağının sağına doğru hareket eder.</li>
+                                <li><b>Ortaya</b> - Metni sekme durağı konumunda ortalar.</li>
+                                <li><b>Sağa</b> - Metninizi sekme durağı konumunda sağ tarafa hizalar ve siz yazarken metin sekme durağının soluna doğru hareket eder.</li>
+                            </ul>
+                            <p>Sekme duraklarını listeden silmek i&ccedil;in bir sekme durağı se&ccedil;in ve <b>Kaldır</b> veya <b>Hepsini Kaldır</b> d&uuml;ğmesine tıklayın.</p>
+                        </li>
+                    </ul>
+             <h3>Metin Kutusuna Makro Atama</h3>
+            <p>Herhangi bir metin kutusuna makro atayarak, elektronik tablodaki bir makroya hızlı ve kolay erişim sağlayabilirsiniz. Bir makro atadığınızda, metin kutusu bir d&uuml;ğme kontrol&uuml; olarak g&ouml;r&uuml;n&uuml;r ve makroyu her tıklattığınızda &ccedil;alıştırabilirsiniz.</p>
+            <p>Makro atamak i&ccedil;in:</p>
+            <ul type="circle">
+                <li>
+                    Makro atamak i&ccedil;in g&ouml;r&uuml;nt&uuml;ye metin kutusuna sağ tıklayın ve a&ccedil;ılır men&uuml;den <b>Makro Ata</b> se&ccedil;eneğini se&ccedil;in.
+                    <p><img alt="Menüde Makro Ata" src="../images/assignmacro_rightclickshape.png" /></p>
+                </li>
+                <li><b>Makro Ata</b> diyalog kutusu a&ccedil;ılacaktır</li>
+                <li>
+                    Listeden bir makro se&ccedil;in veya makro adını yazın ve onaylamak i&ccedil;ib <b>Tamam</b> d&uuml;ğmesine tıklayın.
+                    <p><img alt="Makro Ata" src="../images/assignmacro.png" /></p>
+                </li>
+            </ul>
+            <h3>Text Art stilini d&uuml;zenleme</h3>
+            <p>Bir metin nesnesi se&ccedil;in ve sağ kenar &ccedil;ubuğunda <b>Text Art ayarları</b> <span class="icon icon-textart_settings_icon"></span> simgesine tıklayın.</p>
+            <p><img alt="Text Art ayar sekmesi" src="../images/right_textart.png" /></p>
+            <ul>
+                <li>Galeriden yeni bir <b>Şablon</b> se&ccedil;erek uygulanan metin stilini değiştirin. Farklı bir yazı tipi, boyutu vb. se&ccedil;erek temel stili de değiştirebilirsiniz.</li>
+                <li>Yazı tipi <a href="InsertAutoshapes.htm#shape_fill" onclick="onhyperlinkclick(this)">dolgusunu</a> ve <a href="InsertAutoshapes.htm#shape_stroke" onclick="onhyperlinkclick(this)">&ccedil;izgisini</a> değiştirin. Mevcut se&ccedil;enekler, otomatik şekiller i&ccedil;in olanlarla aynıdır.</li>
+                <li><b>D&ouml;n&uuml;şt&uuml;r</b> galerisinden gerekli metin d&ouml;n&uuml;şt&uuml;rme t&uuml;r&uuml;n&uuml; se&ccedil;erek bir metin efekti uygulayın. Pembe elmas şeklindeki tutamacı s&uuml;r&uuml;kleyerek metin bozulmasının derecesini ayarlayabilirsiniz.</li>
+            </ul>
+            <p><img alt="Text Art Dönüşümü" src="../images/textart_transformation.png" /></p>
+		</div>
+	</body>
+</html>

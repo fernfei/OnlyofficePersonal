@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>WEEKDAY Function</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+		<div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+			<h1>WEEKDAY Function</h1>
+			<p>The <b>WEEKDAY</b> function is one of the <a href="../UsageInstructions/InsertFunction.htm#datetime" onclick="onhyperlinkclick(this)">date and time functions</a>. It is used to determine which day of the week the specified date is.</p>
+			<h3>Syntax</h3> 
+			<p><b><em>WEEKDAY(serial_number, [return_type])</em></b></p> 
+			<p>The <b>WEEKDAY</b> function has the following arguments:</p> 
+			<table style="width: 40%">
+                <tr>
+                    <th style="background-color: #f4f4f4" width="150ch"><b>Argument</b></th>
+                    <th style="background-color: #f4f4f4"><b>Description</b></th>
+                </tr>
+                <tr>
+                    <td><b><em>serial_number</em></b></td>
+                    <td>A number representing the date of the day you are trying to find, entered using the <a href="Date.htm" onclick="onhyperlinkclick(this)">DATE</a> function or other date and time function.</td>
+                </tr>
+				<tr>
+                    <td><b><em>return_type</em></b></td>
+                    <td>A numeric value used to determine the type of the value to be returned. The possible values are listed in the table below.</td>
+                </tr>
+            </table>
+			<p>The <b><em>return_type</em></b> argument can be one of the following:</p>
+			<table style="width: 40%">
+				<tr>
+					<th style="background-color: #f4f4f4"><b>Numeric value</b></th>
+					<th style="background-color: #f4f4f4"><b>Explanation</b></th>
+				</tr>
+				<tr>
+					<td><b><em>1 or omitted</em></b></td>
+					<td>Returns a number from 1 (Sunday) to 7 (Saturday)</td>
+				</tr>
+				<tr>
+					<td><b><em>2</em></b></td>
+					<td>Returns a number from 1 (Monday) to 7 (Sunday).</td>
+				</tr>
+				<tr>
+					<td><b><em>3</em></b></td>
+					<td>Returns a number from 0 (Monday) to 6 (Sunday).</td>
+				</tr>
+			</table>
+            <h3>Notes</h3>
+            <p><a href="../UsageInstructions/InsertFunction.htm#applyfunction" onclick="onhyperlinkclick(this)">How to apply</a> the <b>WEEKDAY</b> function.</p>
+			
+			<h3>Examples</h3>
+            <p>The figure below displays the result returned by the <b>WEEKDAY</b> function.</p>
+			<p><img alt="WEEKDAY Function" src="../images/weekday.png" /></p>
+		</div>
+	</body>
+</html>

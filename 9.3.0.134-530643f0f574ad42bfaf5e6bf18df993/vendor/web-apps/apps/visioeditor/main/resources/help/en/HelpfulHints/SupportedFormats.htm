@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<title>Supported Formats of Electronic Diagrams</title>
+		<meta charset="utf-8" />
+		<meta name="description" content="The list of diagram formats supported by Diagram Viewer" />
+		<link type="text/css" rel="stylesheet" href="../../../../../../common/main/resources/help/editor.css" />
+		<link type = "text/css" rel = "stylesheet" href = "../../images/sprite.css" />
+        <script type="text/javascript" src="../callback.js"></script>
+        <script type="text/javascript" src="../../../../../../common/main/resources/help/search/js/page-search.js"></script>
+	</head>
+	<body>
+        <div class="mainpart">
+            <div class="search-field">
+                <input id="search" class="searchBar" placeholder="Search" type="text" onkeypress="doSearch(event)">
+            </div>
+            <h1>Supported Formats of Electronic Diagrams</h1>
+            <p>
+                Electronic diagrams are one of the most frequently used computer files.
+                Due to the highly developed modern computer network, it's more convenient to distribute electronic diagrams than printed ones.
+                Nowadays, a lot of devices are used for document presentation, so there are plenty of proprietary and open file formats.
+                The <a href="https://www.onlyoffice.com/en/diagram-viewer.aspx" target="_blank" onclick="onhyperlinkclick(this)"><b>Diagram Viewer</b></a> handles the most popular of them.
+            </p>
+            <p class="note">While uploading or opening the file for editing, it will be converted to the Office Open XML format. It's done to speed up the file processing and increase the interoperability.</p>
+            <p>The following table contains the formats which can be opened for viewing and/or editing.</p>
+            <table>
+                    <tr class="tableHeader">
+                        <td><b>Formats</b></td>
+                        <td><b>Description</b></td>
+                        <td>View natively</td>
+                        <td>View after conversion to OOXML</td>
+                        <td>Edit natively</td>
+                        <td>Edit after conversion to OOXML</td>
+                    </tr>
+                    <tr>
+                        <td>JPG/JPEG</td>
+                        <td>Joint Photographic Experts Group<br />A raster image file format that uses compression to store data</td>
+                        <td>+</td>
+                        <td>+</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>PDF</td>
+                        <td>Portable Document Format<br>File format used to represent documents regardless of the used software, hardware, and operating systems</td>
+                        <td>-</td>
+                        <td>+</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>PDF/A</td>
+                        <td>Portable Document Format / A<br>An ISO-standardized version of the Portable Document Format (PDF) specialized for use in the archiving and long-term preservation of electronic documents </td>
+                        <td>-</td>
+                        <td>+</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>PNG</td>
+                        <td>Portable Network Graphics<br>A raster-graphics file format that supports lossless data compression</td>
+                        <td>+</td>
+                        <td>+</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>VSDM</td>
+                        <td>A macro-enabled drawing file type used by Microsoft Visio</td>
+                        <td>+</td>
+                        <td>+</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>VSDX</td>
+                        <td>File format designed primarily to store scanned documents, especially those containing a combination of text, line drawings, and photographs</td>
+                        <td>+</td>
+                        <td>+</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>VSSM</td>
+                        <td>Microsoft Visio Stencil files that support macros</td>
+                        <td>+</td>
+                        <td>+</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>VSSX</td>
+                        <td>XML-based Microsoft Visio Stencil files</td>
+                        <td>+</td>
+                        <td>+</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>VSTM</td>
+                        <td>Macro-enabled drawing template created by Microsoft Visio</td>
+                        <td>+</td>
+                        <td>+</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>VSTX</td>
+                        <td>A drawing template created by Microsoft Visio</td>
+                        <td>+</td>
+                        <td>+</td>
+                        <td>-</td>
+                        <td>-</td>
+                    </tr>
+            </table>
+            <p>The following table contains the formats in which you can download a document from the <b>File</b> -&gt; <b>Download as</b> menu.</p>
+            <table>
+                    <tr class="tableHeader">
+                        <td><b>Input format</b></td>
+                        <td><b>Can be downloaded as</b></td>
+                    </tr>
+                    <tr>
+                        <td>JPG</td>
+                        <td>PDF, PDF/A, PNG, VSDX</td>
+                    </tr>
+                    <tr>
+                        <td>PDF</td>
+                        <td>JPG, PDF/A, PNG, VSDX</td>
+                    </tr>
+                    <tr>
+                        <td>PDF/A</td>
+                        <td>JPG, PDF, PNG, VSDX</td>
+                    </tr>
+                    <tr>
+                        <td>PNG</td>
+                        <td>JPG, PDF, PDF/A, VSDX</td>
+                    </tr>
+                    <tr>
+                        <td>VSDM</td>
+                        <td>BMP, GIF, JPG, PDF, PDF/A, PNG</td>
+                    </tr>
+                    <tr>
+                        <td>VSDX</td>
+                        <td>BMP, GIF, JPG, PDF, PDF/A, PNG</td>
+                    </tr>
+                    <tr>
+                        <td>VSSM</td>
+                        <td>BMP, GIF, JPG, PDF, PDF/A, PNG</td>
+                    </tr>
+                    <tr>
+                        <td>VSSX</td>
+                        <td>BMP, GIF, JPG, PDF, PDF/A, PNG</td>
+                    </tr>
+                    <tr>
+                        <td>VSTM</td>
+                        <td>BMP, GIF, JPG, PDF, PDF/A, PNG</td>
+                    </tr>
+                    <tr>
+                        <td>VSTX</td>
+                        <td>BMP, GIF, JPG, PDF, PDF/A, PNG</td>
+                    </tr>
+            </table>
+            <p>You can also refer to the conversion matrix on <a href="https://api.onlyoffice.com/docs/docs-api/additional-api/conversion-api/conversion-tables/#diagram-document-file-formats" target="_blank" onclick="onhyperlinkclick(this)"><b>api.onlyoffice.com</b></a> to see whether you can convert your diagrams into the most known file formats.</p>
+        </div>
+	</body>
+</html>
