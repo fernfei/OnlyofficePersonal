@@ -764,9 +764,7 @@
         if (fileExt.indexOf('.') === -1) {
             fileExt = '.' + fileExt;
         }
-        if (targetExt.indexOf('.') === -1) {
-            targetExt = '.' + targetExt;
-        }
+        targetExt = '.' + targetExt.substring(targetExt.lastIndexOf('.') + 1);
         if (fileExt === targetExt) {
             return handleFileData(obj.binary);
         }
