@@ -584,6 +584,30 @@
         return Promise.all(promises);
     };
 
+    // 无扩展名/未知扩展名时按文件头嗅探图片类型
+    // （Word 公式、数学符号等媒体文件解包后可能不带后缀，扩展名不可用）
+    function sniffImageMime(bytes) {
+        if (!bytes || bytes.length < 4) return null;
+        if (bytes[0] === 0x89 && bytes[1] === 0x50 && bytes[2] === 0x4E && bytes[3] === 0x47) return 'image/png';
+        if (bytes[0] === 0xFF && bytes[1] === 0xD8 && bytes[2] === 0xFF) return 'image/jpeg';
+        if (bytes[0] === 0x47 && bytes[1] === 0x49 && bytes[2] === 0x46 && bytes[3] === 0x38) return 'image/gif';
+        if (bytes[0] === 0x42 && bytes[1] === 0x4D) return 'image/bmp';
+        if (bytes.length >= 12 && bytes[0] === 0x52 && bytes[1] === 0x49 && bytes[2] === 0x46 && bytes[3] === 0x46 &&
+            bytes[8] === 0x57 && bytes[9] === 0x45 && bytes[10] === 0x42 && bytes[11] === 0x50) return 'image/webp';
+        // WMF（placeable header）
+        if (bytes[0] === 0xD7 && bytes[1] === 0xCD && bytes[2] === 0xC6 && bytes[3] === 0x9A) return 'image/x-wmf';
+        // EMF：头 4 字节 01 00 00 00，偏移 40 处为 " EMF"
+        if (bytes.length > 44 && bytes[0] === 0x01 && bytes[1] === 0x00 && bytes[2] === 0x00 && bytes[3] === 0x00 &&
+            bytes[40] === 0x20 && bytes[41] === 0x45 && bytes[42] === 0x4D && bytes[43] === 0x46) return 'image/x-emf';
+        // SVG：文本格式，前 1KB 内出现 <svg 标签（兼容带 XML 声明/BOM/注释的情况）
+        var head = '';
+        for (var i = 0; i < Math.min(bytes.length, 1024); i++) {
+            head += String.fromCharCode(bytes[i]);
+        }
+        if (/<svg[\s>]/i.test(head)) return 'image/svg+xml';
+        return null;
+    }
+
     X2TConverter.prototype.readMediaFiles = function () {
         if (!this.x2tModule) return {};
 
@@ -601,7 +625,15 @@
                         var fileData = self.x2tModule.FS.readFile('/working/media/' + file, {
                             encoding: 'binary'
                         });
-                        var blob = new Blob([fileData]);
+                        // 按扩展名设置 MIME type：SVG 在 <img> 中必须是 image/svg+xml 才能渲染，
+                        // 不指定 type 的 blob 会被当作 text/plain 导致矢量图不显示；
+                        // 无扩展名或未知扩展名（如 Word 数学符号）时回落到文件头嗅探
+                        var ext = (file.indexOf('.') !== -1 ? file.split('.').pop() : '').toLowerCase();
+                        var mime = ext ? self.getMimeTypeFromExtension(ext) : 'application/octet-stream';
+                        if (mime === 'application/octet-stream') {
+                            mime = sniffImageMime(fileData) || 'application/octet-stream';
+                        }
+                        var blob = new Blob([fileData], {type: mime});
                         var mediaUrl = URL.createObjectURL(blob);
                         media['media/' + file] = mediaUrl;
                     } catch (error) {
