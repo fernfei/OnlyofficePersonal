@@ -52,23 +52,23 @@ function putInCache(request, response) {
 		});
 }
 
-function cacheFirst(event) {
+function networkFirst(event) {
 	let request = event.request;
-	return caches.match(request, {cacheName: g_cacheName})
-		.then(function (responseFromCache) {
-			if (responseFromCache) {
-				return responseFromCache;
-			} else {
-				return fetch(request)
-					.then(function (responseFromNetwork) {
-						//todo 0 or 1223?
-						//ensure response safe to cache
-						if (responseFromNetwork.status === 200) {
-							event.waitUntil(putInCache(request, responseFromNetwork.clone()));
-						}
-						return responseFromNetwork;
-					});
+	return fetch(request)
+		.then(function (responseFromNetwork) {
+			if (responseFromNetwork.status === 200) {
+				event.waitUntil(putInCache(request, responseFromNetwork.clone()));
 			}
+			return responseFromNetwork;
+		})
+		.catch(function (networkError) {
+			// Keep offline support, but never prefer stale assets while the server is reachable.
+			return caches.match(request, {cacheName: g_cacheName}).then(function (responseFromCache) {
+				if (responseFromCache) {
+					return responseFromCache;
+				}
+				throw networkError;
+			});
 		});
 }
 function activateWorker(event) {
@@ -107,5 +107,5 @@ self.addEventListener('fetch', (event) => {
 			return;
 	}
 
-	event.respondWith(cacheFirst(event));
+	event.respondWith(networkFirst(event));
 });

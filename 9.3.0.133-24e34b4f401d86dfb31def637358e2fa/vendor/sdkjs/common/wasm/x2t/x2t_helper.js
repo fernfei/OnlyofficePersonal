@@ -340,6 +340,14 @@
     }
 
 
+    const PDF_OUTPUT_FORMAT = 513;
+    const CANVAS_PDF_INPUT_FORMAT = 8196;
+    const PDF_ORIGIN_PATH = '/working/origin.pdf';
+    const PDF_OUTPUT_PATH = '/working/merged.pdf';
+    const PDF_CHANGES_DIR = '/working/changes';
+    const PDF_CHANGES_PATH = PDF_CHANGES_DIR + '/changes0.json';
+    const PDF_PARAMS_PATH = '/working/pdf-params.xml';
+
     function X2TConverter() {
         this.x2tModule = null;
         this.initPromise = null;
@@ -797,8 +805,30 @@
             fileExt = '.' + fileExt;
         }
         targetExt = '.' + targetExt.substring(targetExt.lastIndexOf('.') + 1);
+        if (fileExt === '.pdf' && obj.pdfChanges) {
+            var mergedPdf = await this._convertPdfFromChanges(obj);
+            if (targetExt === '.pdf') {
+                return mergedPdf;
+            }
+            return this._convertDocument({
+                ...obj,
+                'binary': mergedPdf.binary,
+                'fileExt': 'pdf',
+                'targetExt': targetExt,
+                'pdfChanges': null
+            });
+        }
         if (fileExt === targetExt) {
-            return handleFileData(obj.binary);
+            var binary = await handleFileData(obj.binary);
+            var extension = fileExt.substring(1).toLowerCase();
+            return {
+                fileName: this.sanitizeFileName(obj.fileName),
+                fileExt: fileExt,
+                type: this.DOCUMENT_TYPE_MAP[extension] || extension,
+                media: {},
+                binary: binary,
+                size: binary.length
+            };
         }
         if (fileExt === '.pdf') {
             return this._convertDocument({...obj, 'fileExt': 'pdf', 'targetExt': targetExt});
@@ -813,10 +843,67 @@
         if (isTypedArray(bin) && bin.length >= 4) {
             let sig = String.fromCharCode(bin[0], bin[1], bin[2], bin[3]);
             if (sig !== 'DOCY' && sig !== 'XLSY' && sig !== 'PPTY' && sig !== 'VSDY') {
-                formatFrom = 8196; // AVS_OFFICESTUDIO_FILE_CANVAS_PDF
+                formatFrom = CANVAS_PDF_INPUT_FORMAT;
             }
         }
         return this._convertDocument({...obj, 'fileExt': 'bin', 'targetExt': targetExt, 'formatFrom': formatFrom});
+    };
+
+    X2TConverter.prototype._ensureDirectory = function (directoryPath) {
+        if (!this.x2tModule.FS.analyzePath(directoryPath).exists) {
+            this.x2tModule.FS.mkdir(directoryPath);
+        }
+    };
+
+    X2TConverter.prototype._clearDirectory = function (directoryPath) {
+        var fileSystem = this.x2tModule.FS;
+        fileSystem.readdir(directoryPath).forEach(function (fileName) {
+            if (fileName !== '.' && fileName !== '..') {
+                fileSystem.unlink(directoryPath + '/' + fileName);
+            }
+        });
+    };
+
+    X2TConverter.prototype._writePdfChangesInput = async function (obj) {
+        var original = await handleFileData(obj.binary);
+        var changes = await handleFileData(obj.pdfChanges);
+        this._ensureDirectory(PDF_CHANGES_DIR);
+        this._clearDirectory(PDF_CHANGES_DIR);
+        this.x2tModule.FS.writeFile(PDF_ORIGIN_PATH, original);
+        this.x2tModule.FS.writeFile(PDF_CHANGES_PATH, changes);
+    };
+
+    X2TConverter.prototype._createPdfChangesParams = function () {
+        return '<m_sFontDir>/working/fonts/</m_sFontDir>\n' +
+            '<m_nFormatTo>' + PDF_OUTPUT_FORMAT + '</m_nFormatTo>\n' +
+            '<m_bFromChanges>true</m_bFromChanges>\n';
+    };
+
+    X2TConverter.prototype._convertPdfFromChanges = async function (obj) {
+        try {
+            await this.initialize();
+            await this.writeMediaFiles(obj.medias);
+            await this.fetchFonts();
+            await this._writePdfChangesInput(obj);
+            var params = this.createConversionParams(
+                PDF_ORIGIN_PATH,
+                PDF_OUTPUT_PATH,
+                this._createPdfChangesParams()
+            );
+            this.x2tModule.FS.writeFile(PDF_PARAMS_PATH, params);
+            this.executeConversion(PDF_PARAMS_PATH);
+            var result = this.x2tModule.FS.readFile(PDF_OUTPUT_PATH);
+            return {
+                fileName: this.sanitizeFileName(obj.fileName),
+                fileExt: '.pdf',
+                type: 'pdf',
+                media: this.readMediaFiles(),
+                binary: result,
+                size: result.length
+            };
+        } catch (error) {
+            throw new Error('Document conversion failed: ' + error);
+        }
     };
 
 
@@ -874,7 +961,7 @@
                     var pdfData = '';
                     if (targetExt.toLowerCase() === '.pdf') {
                         pdfData = "<m_sFontDir>/working/fonts/</m_sFontDir>\n" +
-                            '<m_nFormatTo>513</m_nFormatTo>\n' +
+                            '<m_nFormatTo>' + PDF_OUTPUT_FORMAT + '</m_nFormatTo>\n' +
                             '<m_bIsPDFA>true</m_bIsPDFA>\n';
                         // Add conversion rules for PDF with enhanced configuration
                     }
